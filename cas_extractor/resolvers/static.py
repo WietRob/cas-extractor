@@ -35,6 +35,9 @@ class StaticResolver(BaseResolver):
                         pattern_matched="local_function_call",
                         inferred_type=None,
                         reasoning=f"Found function '{name}' in local module",
+                        source_kind="local_function",
+                        source_symbol=name,
+                        evidence_path=[f"local function {name}"],
                     )
                 ],
             )
@@ -51,6 +54,12 @@ class StaticResolver(BaseResolver):
                         pattern_matched="imported_call",
                         inferred_type=None,
                         reasoning=f"Found import '{name}' -> '{target}'",
+                        source_kind="import_direct",
+                        source_symbol=name,
+                        evidence_path=[
+                            f"from ... import {name}",
+                            f"{name} -> {target}",
+                        ],
                     )
                 ],
             )
@@ -66,6 +75,9 @@ class StaticResolver(BaseResolver):
                         pattern_matched="builtin_skip",
                         inferred_type=None,
                         reasoning=f"'{name}' is a builtin, skipping",
+                        source_kind="builtin",
+                        source_symbol=name,
+                        evidence_path=[f"builtin {name}"],
                     )
                 ],
             )
@@ -100,6 +112,12 @@ class QualifiedAttrResolver(BaseResolver):
                         pattern_matched="qualified_attribute_call",
                         inferred_type=None,
                         reasoning=f"Found import '{obj_name}' -> '{target}'",
+                        source_kind="import_qualified",
+                        source_symbol=obj_name,
+                        evidence_path=[
+                            f"import {obj_name}",
+                            f"{obj_name}.{method_name}",
+                        ],
                     )
                 ],
             )
@@ -140,6 +158,9 @@ class SelfDispatchResolver(BaseResolver):
                         pattern_matched="self_method_call",
                         inferred_type=context.enclosing_class.qname,
                         reasoning=f"self.{method_name}() resolves to {target}",
+                        source_kind="self_dispatch",
+                        source_symbol=method_name,
+                        evidence_path=[f"self.{method_name}()"],
                     )
                 ],
             )
@@ -180,6 +201,9 @@ class ClsDispatchResolver(BaseResolver):
                         pattern_matched="cls_method_call",
                         inferred_type=context.enclosing_class.qname,
                         reasoning=f"cls.{method_name}() in @classmethod resolves to {target}",
+                        source_kind="cls_dispatch",
+                        source_symbol=method_name,
+                        evidence_path=[f"cls.{method_name}()"],
                     )
                 ],
             )
@@ -219,6 +243,7 @@ class SuperDispatchResolver(BaseResolver):
         )
 
         if resolved:
+            base_class = resolved.rsplit(".", 1)[0]
             return ResolutionResult(
                 callee=resolved,
                 resolution_type="super_dispatch",
@@ -227,8 +252,14 @@ class SuperDispatchResolver(BaseResolver):
                     ResolutionStep(
                         heuristic=self.name,
                         pattern_matched="super_method_call",
-                        inferred_type=resolved.rsplit(".", 1)[0],
+                        inferred_type=base_class,
                         reasoning=f"super().{method_name}() resolves to {resolved}",
+                        source_kind="super_dispatch",
+                        source_symbol=method_name,
+                        evidence_path=[
+                            f"super().{method_name}()",
+                            f"-> {base_class}.{method_name}",
+                        ],
                     )
                 ],
             )

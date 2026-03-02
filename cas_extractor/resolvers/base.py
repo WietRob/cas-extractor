@@ -38,6 +38,9 @@ class ResolutionStep:
     pattern_matched: str
     inferred_type: str | None
     reasoning: str
+    source_kind: str = ""
+    source_symbol: str = ""
+    evidence_path: list[str] = field(default_factory=list)
 
 
 @dataclass

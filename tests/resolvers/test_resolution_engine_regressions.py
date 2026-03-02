@@ -237,6 +237,22 @@ def assert_trace_has(result: ResolutionResult, heuristic: str, hint: str = ""):
     )
 
 
+def assert_provenance(
+    result: ResolutionResult,
+    source_kind: str,
+    source_symbol: str,
+    hint: str = "",
+):
+    assert result.trace, f"Expected trace. {hint}"
+    step = result.trace[0]
+    assert step.source_kind == source_kind, (
+        f"Expected source_kind='{source_kind}', got '{step.source_kind}'. {hint}"
+    )
+    assert step.source_symbol == source_symbol, (
+        f"Expected source_symbol='{source_symbol}', got '{step.source_symbol}'. {hint}"
+    )
+
+
 class TestGateAH26H27:
     def test_gate_a_propagation(self):
         engine = create_resolution_engine(
@@ -257,6 +273,9 @@ class TestGateAH26H27:
             results, "send", "H2.6/2.7", "Gate A: self.client.send() via H2.6/2.7"
         )
         assert_trace_has(r, "H2.6/2.7", "Gate A: trace should show H2.6/2.7")
+        assert_provenance(
+            r, "self_attr_propagated", "client", "Gate A: provenance check"
+        )
 
 
 class TestGateBH28:
@@ -274,6 +293,9 @@ class TestGateBH28:
 
         r = assert_resolved_by(results, "build", "H2.8", "Gate B: x.build() via H2.8")
         assert_trace_has(r, "H2.8", "Gate B: trace should show H2.8")
+        assert_provenance(
+            r, "factory_return", "builder_factory", "Gate B: provenance check"
+        )
 
     def test_gate_b_disabled(self):
         engine = create_resolution_engine(enable_h28_factory_return=False)
@@ -574,6 +596,7 @@ class TestGateCQualifiedAttr:
         assert_trace_has(
             r, "qualified_attr", "Gate C: trace should show qualified_attr"
         )
+        assert_provenance(r, "import_qualified", "ast", "Gate C: provenance check")
 
 
 class TestQualifiedAttrBoundary:

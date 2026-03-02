@@ -47,6 +47,9 @@ class LocalVarResolver(BaseResolver):
                     pattern_matched="local_var_assignment",
                     inferred_type=class_qname,
                     reasoning=f"Found local var '{obj_name}' = {class_qname}() in same scope",
+                    source_kind="local_var",
+                    source_symbol=obj_name,
+                    evidence_path=[f"{obj_name} = {class_qname}()"],
                 )
             ],
         )
@@ -86,6 +89,9 @@ class ConstructorResolver(BaseResolver):
                             pattern_matched="constructor_chain",
                             inferred_type=ci.qname,
                             reasoning=f"Found ClassName() = {ci.qname}()",
+                            source_kind="constructor",
+                            source_symbol=class_name,
+                            evidence_path=[f"{class_name}()"],
                         )
                     ],
                 )
@@ -106,6 +112,11 @@ class ConstructorResolver(BaseResolver):
                                 pattern_matched="constructor_chain_imported",
                                 inferred_type=ci.qname,
                                 reasoning=f"Found imported class {class_name} -> {ci.qname}",
+                                source_kind="constructor",
+                                source_symbol=class_name,
+                                evidence_path=[
+                                    f"{class_name}() via import {qualified}"
+                                ],
                             )
                         ],
                     )
@@ -163,6 +174,9 @@ class ClassInitSelfAttrResolver(BaseResolver):
                     pattern_matched="self_attr_init",
                     inferred_type=class_qname,
                     reasoning=f"Found self.{attr_name} = {class_qname}() in __init__",
+                    source_kind="self_attr_init",
+                    source_symbol=attr_name,
+                    evidence_path=[f"self.{attr_name} = {class_qname}() in __init__"],
                 )
             ],
         )
@@ -219,6 +233,11 @@ class MethodLocalSelfAttrResolver(BaseResolver):
                     pattern_matched="self_attr_method_local",
                     inferred_type=class_qname,
                     reasoning=f"Found self.{attr_name} = {class_qname}() in same method",
+                    source_kind="self_attr_method_local",
+                    source_symbol=attr_name,
+                    evidence_path=[
+                        f"self.{attr_name} = {class_qname}() in {context.enclosing_func}"
+                    ],
                 )
             ],
         )
@@ -279,6 +298,12 @@ class PropagatedSelfAttrResolver(BaseResolver):
                     pattern_matched="self_attr_propagated",
                     inferred_type=class_qname,
                     reasoning=f"Found self.{attr_name} = {class_qname}() via helper chain propagation",
+                    source_kind="self_attr_propagated",
+                    source_symbol=attr_name,
+                    evidence_path=[
+                        f"self.{attr_name} assigned in helper chain",
+                        f"propagated to {context.enclosing_func}",
+                    ],
                 )
             ],
         )
@@ -376,6 +401,13 @@ class FactoryReturnResolver(BaseResolver):
             return None
 
         target = f"{ci.qname}.{method_name}"
+
+        factory_name = None
+        for fname, ftype in context.factory_return_types.items():
+            if ftype == class_qname:
+                factory_name = fname
+                break
+
         return ResolutionResult(
             callee=target,
             resolution_type="factory_return_dispatch",
@@ -386,6 +418,12 @@ class FactoryReturnResolver(BaseResolver):
                     pattern_matched="factory_return",
                     inferred_type=class_qname,
                     reasoning=f"Found factory return type '{class_qname}' for variable '{obj_name}'",
+                    source_kind="factory_return",
+                    source_symbol=factory_name or obj_name,
+                    evidence_path=[
+                        f"{obj_name} = {factory_name or 'factory'}()",
+                        f"{factory_name or 'factory'} -> {class_qname}",
+                    ],
                 )
             ],
         )

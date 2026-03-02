@@ -173,6 +173,141 @@ def check_deterministic_ordering() -> bool:
     return True
 
 
+def check_provenance_fields() -> bool:
+    print("\n" + "=" * 60)
+    print("GATE 6: Provenance Fields")
+    print("=" * 60)
+
+    manifest_path = Path(
+        "sprint-v050-engine/06-golden/v050-product-baseline/manifest.json"
+    )
+
+    if not manifest_path.exists():
+        print(f"❌ GATE 6 FAILED: Manifest not found at {manifest_path}")
+        return False
+
+    with open(manifest_path) as f:
+        manifest = json.load(f)
+
+    edges = manifest.get("edges", [])
+    if not edges:
+        print("⚠️  GATE 6 SKIPPED: No edges to check")
+        return True
+
+    provenance_coverage = {
+        "source_kind": 0,
+        "source_symbol": 0,
+        "evidence_path": 0,
+    }
+    total_with_trace = 0
+
+    for edge in edges:
+        resolution_detail = edge.get("resolution_detail", {})
+        trace = resolution_detail.get("trace", [])
+        if trace:
+            total_with_trace += 1
+            step = trace[0]
+            if step.get("source_kind"):
+                provenance_coverage["source_kind"] += 1
+            if step.get("source_symbol"):
+                provenance_coverage["source_symbol"] += 1
+            if step.get("evidence_path"):
+                provenance_coverage["evidence_path"] += 1
+
+    if total_with_trace == 0:
+        print("⚠️  GATE 6 SKIPPED: No edges with trace (baseline predates v0.6.0)")
+        print(
+            "   Regenerate baseline with: python scripts/build_golden_manifest.py <dir>"
+        )
+        return True
+
+    coverage_pct = {
+        k: (v / total_with_trace * 100) if total_with_trace > 0 else 0
+        for k, v in provenance_coverage.items()
+    }
+
+    print(f"  Edges with trace: {total_with_trace}")
+    print(
+        f"  source_kind coverage: {provenance_coverage['source_kind']}/{total_with_trace} ({coverage_pct['source_kind']:.1f}%)"
+    )
+    print(
+        f"  source_symbol coverage: {provenance_coverage['source_symbol']}/{total_with_trace} ({coverage_pct['source_symbol']:.1f}%)"
+    )
+    print(
+        f"  evidence_path coverage: {provenance_coverage['evidence_path']}/{total_with_trace} ({coverage_pct['evidence_path']:.1f}%)"
+    )
+
+    min_coverage = 80.0
+    all_pass = all(pct >= min_coverage for pct in coverage_pct.values())
+
+    if all_pass:
+        print(f"✅ GATE 6 PASSED: All provenance fields >= {min_coverage}% coverage")
+        return True
+    else:
+        print(f"❌ GATE 6 FAILED: Provenance coverage below {min_coverage}%")
+        return False
+
+    with open(manifest_path) as f:
+        manifest = json.load(f)
+
+    edges = manifest.get("edges", [])
+    if not edges:
+        print("⚠️  GATE 6 SKIPPED: No edges to check")
+        return True
+
+    provenance_coverage = {
+        "source_kind": 0,
+        "source_symbol": 0,
+        "evidence_path": 0,
+    }
+    total_resolved = 0
+
+    for edge in edges:
+        heuristic = edge.get("heuristic", "")
+        if heuristic and heuristic not in ("none", "skip"):
+            total_resolved += 1
+            resolution_detail = edge.get("resolution_detail", {})
+            trace = resolution_detail.get("trace", [])
+            if trace:
+                step = trace[0]
+                if step.get("source_kind"):
+                    provenance_coverage["source_kind"] += 1
+                if step.get("source_symbol"):
+                    provenance_coverage["source_symbol"] += 1
+                if step.get("evidence_path"):
+                    provenance_coverage["evidence_path"] += 1
+
+    if total_resolved == 0:
+        print("⚠️  GATE 6 SKIPPED: No resolved edges")
+        return True
+
+    coverage_pct = {
+        k: (v / total_resolved * 100) if total_resolved > 0 else 0
+        for k, v in provenance_coverage.items()
+    }
+
+    print(f"  Total resolved edges: {total_resolved}")
+    print(
+        f"  source_kind coverage: {provenance_coverage['source_kind']}/{total_resolved} ({coverage_pct['source_kind']:.1f}%)"
+    )
+    print(
+        f"  source_symbol coverage: {provenance_coverage['source_symbol']}/{total_resolved} ({coverage_pct['source_symbol']:.1f}%)"
+    )
+    print(
+        f"  evidence_path coverage: {provenance_coverage['evidence_path']}/{total_resolved} ({coverage_pct['evidence_path']:.1f}%)"
+    )
+
+    min_coverage = 80.0
+    all_pass = all(pct >= min_coverage for pct in coverage_pct.values())
+
+    if all_pass:
+        print(f"✅ GATE 6 PASSED: All provenance fields >= {min_coverage}% coverage")
+        return True
+    else:
+        print(f"❌ GATE 6 FAILED: Provenance coverage below {min_coverage}%")
+        return False
+
+
 def main():
     print("Resolution Gate Runner")
     print("=" * 60)
@@ -183,6 +318,7 @@ def main():
         ("Parity Check", check_parity),
         ("Mandatory Heuristics", check_mandatory_heuristics),
         ("Deterministic Ordering", check_deterministic_ordering),
+        ("Provenance Fields", check_provenance_fields),
     ]
 
     results = {}

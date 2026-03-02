@@ -765,6 +765,9 @@ def _extract_calls_from_tree(
                             "pattern": step.pattern_matched,
                             "inferred_type": step.inferred_type,
                             "reasoning": step.reasoning,
+                            "source_kind": step.source_kind,
+                            "source_symbol": step.source_symbol,
+                            "evidence_path": step.evidence_path,
                         }
                         for step in result.trace
                     ]
