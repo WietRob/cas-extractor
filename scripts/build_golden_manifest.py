@@ -43,7 +43,7 @@ def build_manifest(baseline_dir: Path) -> dict:
     heuristic_counts: Counter[str] = Counter()
 
     for yaml_file in baseline_dir.glob("EVID-py.*.yaml"):
-        if yaml_file.name.endswith(".callgraph.yaml"):
+        if ".callgraph-" in yaml_file.name:
             with open(yaml_file) as f:
                 data = yaml.safe_load(f)
 
@@ -61,6 +61,8 @@ def build_manifest(baseline_dir: Path) -> dict:
                     }
                 )
                 heuristic_counts[heuristic] += 1
+
+    edges.sort(key=lambda e: (e["from"], e["to"], e["heuristic"]))
 
     return {
         "edge_count": len(edges),

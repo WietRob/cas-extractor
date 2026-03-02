@@ -6,6 +6,8 @@ Checks:
 1. Resolver regression tests pass
 2. Golden manifest matches current baseline
 3. No only-engine edges (parity gate)
+4. Mandatory heuristics present
+5. Deterministic ordering verified
 
 Exit codes:
   0: All gates pass
@@ -19,7 +21,6 @@ from pathlib import Path
 
 
 def run_pytest() -> bool:
-    """Run regression tests. Returns True if all pass."""
     print("=" * 60)
     print("GATE 1: Resolver Regression Tests")
     print("=" * 60)
@@ -43,7 +44,6 @@ def run_pytest() -> bool:
 
 
 def check_golden_manifest() -> bool:
-    """Check golden manifest exists and is valid."""
     print("\n" + "=" * 60)
     print("GATE 2: Golden Manifest")
     print("=" * 60)
@@ -77,7 +77,6 @@ def check_golden_manifest() -> bool:
 
 
 def check_parity() -> bool:
-    """Check no only-engine edges in baseline."""
     print("\n" + "=" * 60)
     print("GATE 3: Parity Check")
     print("=" * 60)
@@ -102,6 +101,78 @@ def check_parity() -> bool:
     return False
 
 
+def check_mandatory_heuristics() -> bool:
+    print("\n" + "=" * 60)
+    print("GATE 4: Mandatory Heuristics")
+    print("=" * 60)
+
+    manifest_path = Path(
+        "sprint-v050-engine/06-golden/v050-product-baseline/manifest.json"
+    )
+
+    if not manifest_path.exists():
+        print(f"❌ GATE 4 FAILED: Manifest not found at {manifest_path}")
+        return False
+
+    with open(manifest_path) as f:
+        manifest = json.load(f)
+
+    if manifest.get("edge_count", 0) == 0:
+        print("⚠️  GATE 4 SKIPPED: Empty baseline")
+        return True
+
+    mandatory = {"static", "qualified_attr"}
+    present = set(manifest.get("heuristics", {}).keys())
+    missing = mandatory - present
+
+    if missing:
+        print(f"❌ GATE 4 FAILED: Missing mandatory heuristics: {missing}")
+        return False
+
+    print(f"  Present heuristics: {sorted(present)}")
+    print("✅ GATE 4 PASSED: All mandatory heuristics present")
+    return True
+
+
+def check_deterministic_ordering() -> bool:
+    print("\n" + "=" * 60)
+    print("GATE 5: Deterministic Ordering")
+    print("=" * 60)
+
+    manifest_path = Path(
+        "sprint-v050-engine/06-golden/v050-product-baseline/manifest.json"
+    )
+
+    if not manifest_path.exists():
+        print(f"❌ GATE 5 FAILED: Manifest not found at {manifest_path}")
+        return False
+
+    with open(manifest_path) as f:
+        manifest = json.load(f)
+
+    edges = manifest.get("edges", [])
+    if not edges:
+        print("⚠️  GATE 5 SKIPPED: No edges to check")
+        return True
+
+    sort_keys = [
+        (e.get("from", ""), e.get("to", ""), e.get("heuristic", "")) for e in edges
+    ]
+    sorted_keys = sorted(sort_keys)
+
+    if sort_keys != sorted_keys:
+        print("❌ GATE 5 FAILED: Edges not in sorted order")
+        first_diff = next(
+            i for i in range(len(sort_keys)) if sort_keys[i] != sorted_keys[i]
+        )
+        print(f"  First mismatch at index {first_diff}")
+        return False
+
+    print(f"  {len(edges)} edges in sorted order")
+    print("✅ GATE 5 PASSED: Deterministic ordering verified")
+    return True
+
+
 def main():
     print("Resolution Gate Runner")
     print("=" * 60)
@@ -110,6 +181,8 @@ def main():
         ("Regression Tests", run_pytest),
         ("Golden Manifest", check_golden_manifest),
         ("Parity Check", check_parity),
+        ("Mandatory Heuristics", check_mandatory_heuristics),
+        ("Deterministic Ordering", check_deterministic_ordering),
     ]
 
     results = {}

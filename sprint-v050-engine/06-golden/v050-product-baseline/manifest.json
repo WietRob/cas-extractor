@@ -1,7 +1,1628 @@
 {
-  "edge_count": 0,
-  "heuristics": {},
-  "edges": [],
+  "edge_count": 231,
+  "heuristics": {
+    "static": 177,
+    "qualified_attr": 54
+  },
+  "edges": [
+    {
+      "from": "extractors.python_calls._annotate_parents",
+      "to": "ast.iter_child_nodes",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "extractors.python_calls._annotate_parents",
+      "to": "ast.walk",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "extractors.python_calls._build_class_method_summaries",
+      "to": "extractors.python_calls._build_method_local_self_attr_types",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls._build_factory_return_types",
+      "to": "ast.iter_child_nodes",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "extractors.python_calls._build_factory_return_types",
+      "to": "extractors.python_calls._get_direct_return_class",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls._build_init_self_attr_types",
+      "to": "ast.walk",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "extractors.python_calls._build_init_self_attr_types",
+      "to": "extractors.python_calls._infer_class_from_expr",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls._build_init_self_attr_types",
+      "to": "extractors.python_calls._infer_class_from_expr",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls._build_local_var_types",
+      "to": "ast.walk",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "extractors.python_calls._build_local_var_types",
+      "to": "extractors.python_calls._infer_class_from_expr",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls._build_local_var_types",
+      "to": "extractors.python_calls._infer_class_from_expr",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls._build_method_local_self_attr_types",
+      "to": "ast.walk",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "extractors.python_calls._build_method_local_self_attr_types",
+      "to": "extractors.python_calls._infer_class_from_expr",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls._build_method_local_self_attr_types",
+      "to": "extractors.python_calls._infer_class_from_expr",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls._extract_calls_from_tree",
+      "to": "ast.walk",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "extractors.python_calls._extract_calls_from_tree",
+      "to": "ast.walk",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "extractors.python_calls._extract_calls_from_tree",
+      "to": "cas_extractor.models.evidence.Anchor",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls._extract_calls_from_tree",
+      "to": "cas_extractor.models.evidence.CallEntry",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls._extract_calls_from_tree",
+      "to": "cas_extractor.resolvers.CallContext",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls._extract_calls_from_tree",
+      "to": "cas_extractor.resolvers.create_resolution_engine",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls._extract_calls_from_tree",
+      "to": "cas_extractor.utils.fingerprint.fingerprint_ast",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls._extract_calls_from_tree",
+      "to": "extractors.python_calls._build_class_method_summaries",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls._extract_calls_from_tree",
+      "to": "extractors.python_calls._build_local_var_types",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls._extract_calls_from_tree",
+      "to": "extractors.python_calls._build_method_local_self_attr_types",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls._extract_calls_from_tree",
+      "to": "extractors.python_calls._extract_source",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls._extract_calls_from_tree",
+      "to": "extractors.python_calls._find_enclosing_context",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls._extract_calls_from_tree",
+      "to": "extractors.python_calls._find_enclosing_func_node",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls._extract_calls_from_tree",
+      "to": "extractors.python_calls._get_resolution_source",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls._extract_calls_from_tree",
+      "to": "extractors.python_calls._propagate_self_attr_summaries",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls._extract_calls_from_tree",
+      "to": "extractors.python_calls._resolve_call",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls._find_enclosing_context",
+      "to": "ast.unparse",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "extractors.python_calls._find_enclosing_context",
+      "to": "extractors.python_calls.ClassInfo",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls._get_direct_return_class",
+      "to": "ast.walk",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "extractors.python_calls._get_self_calls_in_method",
+      "to": "ast.walk",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "extractors.python_calls._propagate_self_attr_summaries",
+      "to": "extractors.python_calls.propagate",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls._propagate_self_attr_summaries.propagate",
+      "to": "extractors.python_calls._get_self_calls_in_method",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls._propagate_self_attr_summaries.propagate",
+      "to": "extractors.python_calls.propagate",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls._resolve_call",
+      "to": "extractors.python_calls._resolve_in_bases",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls._resolve_call",
+      "to": "extractors.python_calls._resolve_super_method",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls._resolve_in_bases",
+      "to": "extractors.python_calls._find_class_by_name",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls._resolve_super_method",
+      "to": "extractors.python_calls._find_class_by_name",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls.extract_calls",
+      "to": "ast.parse",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "extractors.python_calls.extract_calls",
+      "to": "ast.parse",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "extractors.python_calls.extract_calls",
+      "to": "ast.parse",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "extractors.python_calls.extract_calls",
+      "to": "ast.parse",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "extractors.python_calls.extract_calls",
+      "to": "ast.unparse",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "extractors.python_calls.extract_calls",
+      "to": "ast.walk",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "extractors.python_calls.extract_calls",
+      "to": "ast.walk",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "extractors.python_calls.extract_calls",
+      "to": "extractors.python_calls.ClassInfo",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls.extract_calls",
+      "to": "extractors.python_calls._annotate_parents",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls.extract_calls",
+      "to": "extractors.python_calls._build_class_method_summaries",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls.extract_calls",
+      "to": "extractors.python_calls._build_factory_return_types",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls.extract_calls",
+      "to": "extractors.python_calls._build_init_self_attr_types",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls.extract_calls",
+      "to": "extractors.python_calls._extract_calls_from_tree",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls.extract_calls",
+      "to": "extractors.python_calls._path_to_module",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls.extract_calls",
+      "to": "extractors.python_calls._path_to_module",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls.extract_calls",
+      "to": "extractors.python_calls._path_to_module",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls.extract_calls",
+      "to": "extractors.python_calls._path_to_module",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_calls.extract_calls",
+      "to": "pathlib.Path",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_imports.extract_imports",
+      "to": "ast.iter_child_nodes",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "extractors.python_imports.extract_imports",
+      "to": "ast.parse",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "extractors.python_imports.extract_imports",
+      "to": "cas_extractor.models.evidence.Anchor",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_imports.extract_imports",
+      "to": "cas_extractor.models.evidence.Anchor",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_imports.extract_imports",
+      "to": "cas_extractor.models.evidence.ImportEntry",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_imports.extract_imports",
+      "to": "cas_extractor.models.evidence.ImportEntry",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_imports.extract_imports",
+      "to": "cas_extractor.utils.fingerprint.fingerprint_ast",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_imports.extract_imports",
+      "to": "cas_extractor.utils.fingerprint.fingerprint_ast",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_imports.extract_imports",
+      "to": "extractors.python_imports._extract_source",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_imports.extract_imports",
+      "to": "extractors.python_imports._extract_source",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_imports.extract_imports",
+      "to": "extractors.python_imports._path_to_module",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_imports.extract_imports",
+      "to": "extractors.python_imports._resolve_relative_import",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_imports.extract_imports",
+      "to": "pathlib.Path",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_symbols._class_entry",
+      "to": "ast.get_docstring",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "extractors.python_symbols._class_entry",
+      "to": "ast.unparse",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "extractors.python_symbols._class_entry",
+      "to": "cas_extractor.models.evidence.Anchor",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_symbols._class_entry",
+      "to": "cas_extractor.models.evidence.SymbolEntry",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_symbols._class_entry",
+      "to": "cas_extractor.utils.fingerprint.fingerprint_ast",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_symbols._class_entry",
+      "to": "extractors.python_symbols._extract_source",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_symbols._class_entry",
+      "to": "extractors.python_symbols._get_parent_qname",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_symbols._extract_from_module",
+      "to": "ast.get_docstring",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "extractors.python_symbols._extract_from_module",
+      "to": "ast.walk",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "extractors.python_symbols._extract_from_module",
+      "to": "cas_extractor.models.evidence.Anchor",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_symbols._extract_from_module",
+      "to": "cas_extractor.models.evidence.SymbolEntry",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_symbols._extract_from_module",
+      "to": "cas_extractor.utils.fingerprint.fingerprint_ast",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_symbols._extract_from_module",
+      "to": "extractors.python_symbols._class_entry",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_symbols._extract_from_module",
+      "to": "extractors.python_symbols._function_entry",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_symbols._function_entry",
+      "to": "ast.get_docstring",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "extractors.python_symbols._function_entry",
+      "to": "ast.iter_child_nodes",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "extractors.python_symbols._function_entry",
+      "to": "ast.unparse",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "extractors.python_symbols._function_entry",
+      "to": "ast.unparse",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "extractors.python_symbols._function_entry",
+      "to": "ast.unparse",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "extractors.python_symbols._function_entry",
+      "to": "ast.walk",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "extractors.python_symbols._function_entry",
+      "to": "cas_extractor.models.evidence.Anchor",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_symbols._function_entry",
+      "to": "cas_extractor.models.evidence.SymbolEntry",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_symbols._function_entry",
+      "to": "cas_extractor.utils.fingerprint.fingerprint_ast",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_symbols._function_entry",
+      "to": "extractors.python_symbols._extract_source",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_symbols._function_entry",
+      "to": "extractors.python_symbols._get_parent_qname",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_symbols._get_parent_qname",
+      "to": "ast.iter_child_nodes",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "extractors.python_symbols._get_parent_qname",
+      "to": "ast.walk",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "extractors.python_symbols.extract_symbols",
+      "to": "ast.parse",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "extractors.python_symbols.extract_symbols",
+      "to": "extractors.python_symbols._extract_from_module",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_symbols.extract_symbols",
+      "to": "extractors.python_symbols._path_to_module",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "extractors.python_symbols.extract_symbols",
+      "to": "pathlib.Path",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "generators.artifact_generator",
+      "to": "re.compile",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "generators.artifact_generator._write_yaml",
+      "to": "yaml.dump",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "generators.artifact_generator.generate_from_evidence",
+      "to": "cas_extractor.utils.ids.entity_id",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "generators.artifact_generator.generate_from_evidence",
+      "to": "cas_extractor.utils.ids.entity_id",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "generators.artifact_generator.generate_from_evidence",
+      "to": "cas_extractor.utils.ids.entity_id",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "generators.artifact_generator.generate_from_evidence",
+      "to": "cas_extractor.utils.ids.entity_id",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "generators.artifact_generator.generate_from_evidence",
+      "to": "cas_extractor.utils.ids.entity_id",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "generators.artifact_generator.generate_from_evidence",
+      "to": "cas_extractor.utils.ids.entity_id",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "generators.artifact_generator.generate_from_evidence",
+      "to": "cas_extractor.utils.ids.entity_id",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "generators.artifact_generator.generate_from_evidence",
+      "to": "cas_extractor.utils.ids.entity_id",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "generators.artifact_generator.generate_from_evidence",
+      "to": "cas_extractor.utils.ids.entity_id",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "generators.artifact_generator.generate_from_evidence",
+      "to": "cas_extractor.utils.ids.entity_id",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "generators.artifact_generator.generate_from_evidence",
+      "to": "cas_extractor.utils.ids.issue_id",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "generators.artifact_generator.generate_from_evidence",
+      "to": "cas_extractor.utils.ids.issue_id",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "generators.artifact_generator.generate_from_evidence",
+      "to": "cas_extractor.utils.ids.relation_id",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "generators.artifact_generator.generate_from_evidence",
+      "to": "cas_extractor.utils.ids.relation_id",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "generators.artifact_generator.generate_from_evidence",
+      "to": "cas_extractor.utils.ids.relation_id",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "generators.artifact_generator.generate_from_evidence",
+      "to": "cas_extractor.utils.ids.reset_counters",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "generators.artifact_generator.generate_from_evidence",
+      "to": "datetime.datetime.now",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "generators.artifact_generator.generate_from_evidence",
+      "to": "generators.artifact_generator._classify_module",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "generators.artifact_generator.generate_from_evidence",
+      "to": "generators.artifact_generator._classify_module",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "generators.artifact_generator.generate_from_evidence",
+      "to": "generators.artifact_generator._is_param_only_docstring",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "generators.artifact_generator.generate_from_evidence",
+      "to": "generators.artifact_generator._write_yaml",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "generators.artifact_generator.generate_from_evidence",
+      "to": "generators.artifact_generator._write_yaml",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "generators.artifact_generator.generate_from_evidence",
+      "to": "generators.artifact_generator._write_yaml",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "generators.artifact_generator.generate_from_evidence",
+      "to": "generators.artifact_generator._write_yaml",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "generators.artifact_generator.generate_from_evidence",
+      "to": "generators.artifact_generator._write_yaml",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "generators.artifact_generator.generate_from_evidence",
+      "to": "generators.artifact_generator._write_yaml",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "generators.artifact_generator.generate_from_evidence",
+      "to": "os.makedirs",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "generators.artifact_generator.generate_from_evidence",
+      "to": "os.makedirs",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "generators.artifact_generator.generate_from_evidence",
+      "to": "os.makedirs",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "generators.artifact_generator.generate_from_evidence",
+      "to": "pathlib.Path",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "generators.artifact_generator.generate_from_evidence",
+      "to": "yaml.safe_load",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "models.evidence.Anchor",
+      "to": "dataclasses.dataclass",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "models.evidence.EvidenceArtifact",
+      "to": "dataclasses.field",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "models.evidence.SourceInfo",
+      "to": "dataclasses.dataclass",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "models.evidence.SymbolEntry",
+      "to": "dataclasses.field",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "models.evidence.SymbolEntry",
+      "to": "dataclasses.field",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "models.evidence.SymbolEntry",
+      "to": "dataclasses.field",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.base.ResolutionEngine.resolve",
+      "to": "resolvers.base.ResolutionResult",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.base.ResolutionResult",
+      "to": "dataclasses.field",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.create_resolution_engine",
+      "to": "cas_extractor.resolvers.base.ResolutionEngine",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.create_resolution_engine",
+      "to": "cas_extractor.resolvers.heuristics.ClassInitSelfAttrResolver",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.create_resolution_engine",
+      "to": "cas_extractor.resolvers.heuristics.ConstructorResolver",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.create_resolution_engine",
+      "to": "cas_extractor.resolvers.heuristics.FactoryReturnResolver",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.create_resolution_engine",
+      "to": "cas_extractor.resolvers.heuristics.LocalVarResolver",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.create_resolution_engine",
+      "to": "cas_extractor.resolvers.heuristics.MethodLocalSelfAttrResolver",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.create_resolution_engine",
+      "to": "cas_extractor.resolvers.heuristics.PropagatedSelfAttrResolver",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.create_resolution_engine",
+      "to": "cas_extractor.resolvers.heuristics.UnresolvedSelfAttrResolver",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.create_resolution_engine",
+      "to": "cas_extractor.resolvers.static.ClsDispatchResolver",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.create_resolution_engine",
+      "to": "cas_extractor.resolvers.static.QualifiedAttrResolver",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.create_resolution_engine",
+      "to": "cas_extractor.resolvers.static.SelfDispatchResolver",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.create_resolution_engine",
+      "to": "cas_extractor.resolvers.static.StaticResolver",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.create_resolution_engine",
+      "to": "cas_extractor.resolvers.static.SuperDispatchResolver",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.heuristics.ClassInitSelfAttrResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionResult",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.heuristics.ClassInitSelfAttrResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionResult",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.heuristics.ClassInitSelfAttrResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionResult",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.heuristics.ClassInitSelfAttrResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionStep",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.heuristics.ConstructorResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionResult",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.heuristics.ConstructorResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionResult",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.heuristics.ConstructorResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionStep",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.heuristics.ConstructorResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionStep",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.heuristics.FactoryReturnResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionResult",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.heuristics.FactoryReturnResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionStep",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.heuristics.LocalVarResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionResult",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.heuristics.LocalVarResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionStep",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.heuristics.MethodLocalSelfAttrResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionResult",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.heuristics.MethodLocalSelfAttrResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionStep",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.heuristics.PropagatedSelfAttrResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionResult",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.heuristics.PropagatedSelfAttrResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionStep",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.heuristics.UnresolvedSelfAttrResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionResult",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.heuristics.UnresolvedSelfAttrResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionStep",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.static.ClsDispatchResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionResult",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.static.ClsDispatchResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionStep",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.static.QualifiedAttrResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionResult",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.static.QualifiedAttrResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionResult",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.static.QualifiedAttrResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionResult",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.static.QualifiedAttrResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionResult",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.static.QualifiedAttrResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionStep",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.static.QualifiedAttrResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionStep",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.static.QualifiedAttrResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionStep",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.static.QualifiedAttrResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionStep",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.static.SelfDispatchResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionResult",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.static.SelfDispatchResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionStep",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.static.StaticResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionResult",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.static.StaticResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionResult",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.static.StaticResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionResult",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.static.StaticResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionStep",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.static.StaticResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionStep",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.static.StaticResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionStep",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.static.SuperDispatchResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionResult",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "resolvers.static.SuperDispatchResolver.try_resolve",
+      "to": "cas_extractor.resolvers.base.ResolutionStep",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "utils.fingerprint.fingerprint_ast",
+      "to": "ast.dump",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "utils.fingerprint.fingerprint_ast",
+      "to": "ast.fix_missing_locations",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "utils.fingerprint.fingerprint_ast",
+      "to": "ast.parse",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "utils.fingerprint.fingerprint_ast",
+      "to": "hashlib.sha256",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "utils.fingerprint.fingerprint_ast",
+      "to": "hashlib.sha256",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "utils.fingerprint.fingerprint_ast",
+      "to": "textwrap.dedent",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "utils.fingerprint.fingerprint_ast",
+      "to": "utils.fingerprint._ASTNormalizer",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "utils.fingerprint.fingerprint_module",
+      "to": "utils.fingerprint.fingerprint_ast",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "utils.ids.evidence_id",
+      "to": "hashlib.sha256",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "validators.schema_validate._load_schemas",
+      "to": "json.load",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "validators.schema_validate._load_schemas",
+      "to": "pathlib.Path",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "validators.schema_validate.validate_structural",
+      "to": "jsonschema.Draft202012Validator",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "validators.schema_validate.validate_structural",
+      "to": "pathlib.Path",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "validators.schema_validate.validate_structural",
+      "to": "validators.schema_validate.StructuralValidationResult",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "validators.schema_validate.validate_structural",
+      "to": "validators.schema_validate.StructuralValidationResult",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "validators.schema_validate.validate_structural",
+      "to": "validators.schema_validate._load_schemas",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "validators.schema_validate.validate_structural",
+      "to": "yaml.safe_load",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "validators.semantic_validate.validate_semantic",
+      "to": "pathlib.Path",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "validators.semantic_validate.validate_semantic",
+      "to": "validators.semantic_validate.SemanticValidationResult",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "validators.semantic_validate.validate_semantic",
+      "to": "validators.semantic_validate._get_rule_param",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "validators.semantic_validate.validate_semantic",
+      "to": "yaml.safe_load",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "validators.semantic_validate.validate_semantic",
+      "to": "yaml.safe_load",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "writers.evidence_writer._write_artifact",
+      "to": "datetime.datetime.now",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "writers.evidence_writer._write_artifact",
+      "to": "os.makedirs",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "writers.evidence_writer._write_artifact",
+      "to": "yaml.dump",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "qualified_attr"
+    },
+    {
+      "from": "writers.evidence_writer.write_calls_evidence",
+      "to": "cas_extractor.models.evidence.EvidenceArtifact",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "writers.evidence_writer.write_calls_evidence",
+      "to": "cas_extractor.utils.ids.evidence_id",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "writers.evidence_writer.write_calls_evidence",
+      "to": "writers.evidence_writer._resolution_to_kind",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "writers.evidence_writer.write_calls_evidence",
+      "to": "writers.evidence_writer._write_artifact",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "writers.evidence_writer.write_imports_evidence",
+      "to": "cas_extractor.models.evidence.EvidenceArtifact",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "writers.evidence_writer.write_imports_evidence",
+      "to": "cas_extractor.utils.ids.evidence_id",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "writers.evidence_writer.write_imports_evidence",
+      "to": "writers.evidence_writer._write_artifact",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "writers.evidence_writer.write_symbols_evidence",
+      "to": "cas_extractor.models.evidence.EvidenceArtifact",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "writers.evidence_writer.write_symbols_evidence",
+      "to": "cas_extractor.utils.ids.evidence_id",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "writers.evidence_writer.write_symbols_evidence",
+      "to": "writers.evidence_writer._symbol_to_dict",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    },
+    {
+      "from": "writers.evidence_writer.write_symbols_evidence",
+      "to": "writers.evidence_writer._write_artifact",
+      "kind": "call",
+      "resolution": "",
+      "heuristic": "static"
+    }
+  ],
   "manifest_version": "1.0",
   "generated_by": "build_golden_manifest.py"
 }
