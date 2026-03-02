@@ -286,6 +286,283 @@ class TestGateBH28:
         pytest.fail("No call to 'build' found")
 
 
+class TestH28NegativeCompetition:
+    """H2.8 negative and competition tests for v0.5.2."""
+
+    # Fixture: factory var vs direct constructor assignment
+    H28_VS_H1 = """
+class Widget:
+    def render(self):
+        pass
+
+def make_widget() -> Widget:
+    return Widget()
+
+def main():
+    x = make_widget()
+    x.render()
+    y = Widget()
+    y.render()
+"""
+
+    def test_factory_vs_constructor_assignment(self):
+        """H2.8 for factory var, H1 for direct constructor assignment."""
+        engine = create_resolution_engine(
+            enable_h28_factory_return=True,
+            factory_return_types={"make_widget": "Widget"},
+        )
+
+        results = resolve_calls(
+            self.H28_VS_H1,
+            engine,
+            factory_return_types={"make_widget": "Widget"},
+        )
+
+        render_results = [
+            (caller, r) for caller, callee, r in results if "render" in callee
+        ]
+        assert len(render_results) >= 2, (
+            f"Expected 2 render() calls, got {len(render_results)}"
+        )
+
+        heuristics = {r.heuristic for _, r in render_results}
+        assert "H2.8" in heuristics, "x.render() from factory should use H2.8"
+
+    # Fixture: two factories with same return type
+    TWO_FACTORIES_SAME_RETURN = """
+class Service:
+    def run(self):
+        pass
+
+def make_service_a() -> Service:
+    return Service()
+
+def make_service_b() -> Service:
+    return Service()
+
+def main():
+    a = make_service_a()
+    b = make_service_b()
+    a.run()
+    b.run()
+"""
+
+    def test_two_factories_same_return_type(self):
+        """Both factory vars should resolve via H2.8."""
+        engine = create_resolution_engine(
+            enable_h28_factory_return=True,
+            factory_return_types={
+                "make_service_a": "Service",
+                "make_service_b": "Service",
+            },
+        )
+
+        results = resolve_calls(
+            self.TWO_FACTORIES_SAME_RETURN,
+            engine,
+            factory_return_types={
+                "make_service_a": "Service",
+                "make_service_b": "Service",
+            },
+        )
+
+        # Both a.run() and b.run() should resolve via H2.8
+        h28_count = sum(1 for _, _, r in results if r.heuristic == "H2.8")
+        assert h28_count >= 2, f"Expected 2+ H2.8 resolutions, got {h28_count}"
+
+    # Fixture: factory return type not in known classes
+    FACTORY_UNKNOWN_CLASS = """
+def make_unknown():
+    return UnknownClass()
+
+def main():
+    x = make_unknown()
+    x.method()
+"""
+
+    def test_factory_return_unknown_class(self):
+        """H2.8 should not resolve if class not in all_classes."""
+        engine = create_resolution_engine(
+            enable_h28_factory_return=True,
+            factory_return_types={"make_unknown": "UnknownClass"},
+        )
+
+        results = resolve_calls(
+            self.FACTORY_UNKNOWN_CLASS,
+            engine,
+            factory_return_types={"make_unknown": "UnknownClass"},
+        )
+
+        for _, _, r in results:
+            assert r.heuristic != "H2.8", "H2.8 should not resolve unknown class"
+
+    # Fixture: method not on factory return class
+    FACTORY_METHOD_NOT_ON_CLASS = """
+class FixedAPI:
+    def allowed(self):
+        pass
+
+def make_fixed() -> FixedAPI:
+    return FixedAPI()
+
+def main():
+    x = make_fixed()
+    x.allowed()
+    x.forbidden()  # method doesn't exist on FixedAPI
+"""
+
+    def test_factory_method_not_on_class(self):
+        """H2.8 should not resolve if method not in class's methods."""
+        engine = create_resolution_engine(
+            enable_h28_factory_return=True,
+            factory_return_types={"make_fixed": "FixedAPI"},
+        )
+
+        results = resolve_calls(
+            self.FACTORY_METHOD_NOT_ON_CLASS,
+            engine,
+            factory_return_types={"make_fixed": "FixedAPI"},
+        )
+
+        # allowed() should resolve via H2.8
+        allowed_resolved = False
+        for _, _, r in results:
+            if r.heuristic == "H2.8" and "allowed" in r.callee:
+                allowed_resolved = True
+            elif "forbidden" in r.callee:
+                assert r.heuristic != "H2.8", "forbidden() should not resolve via H2.8"
+        assert allowed_resolved, "allowed() should resolve via H2.8"
+
+    # Fixture: local var shadows factory name
+    FACTORY_VAR_SHADOWING = """
+class Engine:
+    def start(self):
+        pass
+
+def create_engine() -> Engine:
+    return Engine()
+
+def main():
+    create_engine = "not a factory call"  # shadows factory name
+    x = create_engine  # not a call
+    y = Engine()  # direct constructor
+    y.start()
+"""
+
+    def test_factory_name_shadowed(self):
+        """When factory name is shadowed, H2.8 should not apply to the shadow."""
+        engine = create_resolution_engine(
+            enable_h28_factory_return=True,
+            factory_return_types={"create_engine": "Engine"},
+        )
+
+        results = resolve_calls(
+            self.FACTORY_VAR_SHADOWING,
+            engine,
+            factory_return_types={"create_engine": "Engine"},
+        )
+
+        # y.start() should still work via H1 (local var from constructor)
+        for _, _, r in results:
+            if "start" in r.callee:
+                assert r.heuristic in ("H1", "H3"), "y.start() should use H1 or H3"
+
+
+class TestH26H27Negative:
+    """H2.6/2.7 propagated self.attr negative tests for v0.5.2."""
+
+    UNINITIALIZED_ATTR = """
+class Client:
+    def send(self):
+        pass
+
+class Service:
+    def run(self):
+        self.client.send()
+"""
+
+    def test_uninitialized_attr_no_propagation(self):
+        """H2.6/2.7 should not resolve when attr never initialized."""
+        engine = create_resolution_engine(enable_h26_h27=True)
+
+        results = resolve_calls(self.UNINITIALIZED_ATTR, engine)
+
+        for _, callee, r in results:
+            if callee == "send":
+                assert r.heuristic != "H2.6/2.7", (
+                    "H2.6/2.7 should not resolve uninitialized attr"
+                )
+
+    def test_h26_h27_disabled(self):
+        """H2.6/2.7 should not resolve when disabled."""
+        engine = create_resolution_engine(enable_h26_h27=False)
+
+        propagated: dict[str, str | None] = {"client": "Client"}
+        results = resolve_calls(
+            self.UNINITIALIZED_ATTR,
+            engine,
+            propagated_self_attr_types=propagated,
+        )
+
+        for _, callee, r in results:
+            if callee == "send":
+                assert r.heuristic != "H2.6/2.7", "H2.6/2.7 disabled should not resolve"
+
+    PROPAGATED_NONE = """
+class Client:
+    def send(self):
+        pass
+
+class Service:
+    def run(self):
+        self.client.send()
+"""
+
+    def test_propagated_value_none(self):
+        """H2.6/2.7 should not resolve when propagated value is None."""
+        engine = create_resolution_engine(enable_h26_h27=True)
+
+        propagated: dict[str, str | None] = {"client": None}
+        results = resolve_calls(
+            self.PROPAGATED_NONE,
+            engine,
+            propagated_self_attr_types=propagated,
+        )
+
+        for _, callee, r in results:
+            if callee == "send":
+                assert r.heuristic != "H2.6/2.7", (
+                    "H2.6/2.7 should not resolve when propagated is None"
+                )
+
+    ATTR_NAME_TYPO = """
+class Client:
+    def send(self):
+        pass
+
+class Service:
+    def run(self):
+        self.clint.send()
+"""
+
+    def test_attr_name_typo(self):
+        """H2.6/2.7 should not resolve similar but wrong attr name."""
+        engine = create_resolution_engine(enable_h26_h27=True)
+
+        propagated: dict[str, str | None] = {"client": "Client"}
+        results = resolve_calls(
+            self.ATTR_NAME_TYPO,
+            engine,
+            propagated_self_attr_types=propagated,
+        )
+
+        for _, callee, r in results:
+            if callee == "send":
+                assert r.heuristic != "H2.6/2.7", (
+                    "H2.6/2.7 should not resolve typo attr 'clint'"
+                )
+
+
 class TestGateCQualifiedAttr:
     def test_gate_c_qualified(self):
         engine = create_resolution_engine()
@@ -297,6 +574,86 @@ class TestGateCQualifiedAttr:
         assert_trace_has(
             r, "qualified_attr", "Gate C: trace should show qualified_attr"
         )
+
+
+class TestQualifiedAttrBoundary:
+    """qualified_attr boundary tests for v0.5.2."""
+
+    LOCAL_VAR_METHOD = """
+class Handler:
+    def process(self):
+        pass
+
+def main():
+    h = Handler()
+    h.process()
+"""
+
+    def test_local_var_not_qualified_attr(self):
+        """Local var.method() should NOT use qualified_attr."""
+        engine = create_resolution_engine()
+        results = resolve_calls(self.LOCAL_VAR_METHOD, engine)
+
+        for _, callee, r in results:
+            if "process" in callee:
+                assert r.heuristic != "qualified_attr", (
+                    "h.process() should not use qualified_attr"
+                )
+
+    IMPORT_ALIAS = """
+import ast as a
+
+def main():
+    a.walk(None)
+"""
+
+    def test_import_alias_uses_qualified_attr(self):
+        """import x as y; y.func() should use qualified_attr."""
+        engine = create_resolution_engine()
+        results = resolve_calls(self.IMPORT_ALIAS, engine)
+
+        r = assert_resolved_by(
+            results, "walk", "qualified_attr", "a.walk() via qualified_attr"
+        )
+        assert r.callee == "ast.walk"
+
+    FROM_IMPORT = """
+from ast import walk, parse
+
+def main():
+    walk(None)
+    parse("")
+"""
+
+    def test_from_import_uses_static(self):
+        """from x import f; f() should use static, not qualified_attr."""
+        engine = create_resolution_engine()
+        results = resolve_calls(self.FROM_IMPORT, engine)
+
+        for _, callee, r in results:
+            if callee in ("walk", "parse"):
+                assert r.heuristic == "static", (
+                    f"{callee}() from from-import should use static"
+                )
+
+    MODULE_NAME_SHADOWED = """
+import ast
+
+def main():
+    ast = "not the module"
+    len(ast)
+"""
+
+    def test_module_shadowed_not_qualified_attr(self):
+        """Shadowed import name should NOT use qualified_attr."""
+        engine = create_resolution_engine()
+        results = resolve_calls(self.MODULE_NAME_SHADOWED, engine)
+
+        for _, callee, r in results:
+            if callee == "len":
+                assert r.heuristic != "qualified_attr", (
+                    "len(ast) where ast is shadowed should not use qualified_attr"
+                )
 
 
 class TestIntegration:
@@ -334,6 +691,37 @@ class TestIntegration:
         h1 = sorted([r.heuristic for _, _, r in r1])
         h2 = sorted([r.heuristic for _, _, r in r2])
         assert h1 == h2, "heuristics should be deterministic"
+
+    def test_deterministic_edge_count(self):
+        engine = create_resolution_engine(
+            enable_h25=True,
+            enable_h26_h27=True,
+            enable_h28_factory_return=True,
+            factory_return_types={
+                "make_client": "Client",
+                "builder_factory": "Builder",
+            },
+        )
+
+        all_code = GATE_A_FIXTURE + GATE_B_FIXTURE + GATE_C_FIXTURE
+        runs = [resolve_calls(all_code, engine) for _ in range(5)]
+
+        counts = [len(r) for r in runs]
+        assert len(set(counts)) == 1, f"Edge counts vary: {counts}"
+
+    def test_deterministic_callee_order(self):
+        engine = create_resolution_engine(
+            enable_h26_h27=True,
+            enable_h28_factory_return=True,
+            factory_return_types={"make_client": "Client"},
+        )
+
+        r1 = resolve_calls(GATE_A_FIXTURE, engine)
+        r2 = resolve_calls(GATE_A_FIXTURE, engine)
+
+        callees1 = [callee for _, callee, _ in r1]
+        callees2 = [callee for _, callee, _ in r2]
+        assert callees1 == callees2, "Callee order should be deterministic"
 
 
 if __name__ == "__main__":
