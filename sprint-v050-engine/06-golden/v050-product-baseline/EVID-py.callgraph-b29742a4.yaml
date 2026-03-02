@@ -1,0 +1,901 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-b29742a4
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-26T06:34:58.595411+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://product
+  root: ./cas_extractor
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ast.iter_child_nodes
+  - symbol: ast.parse
+  - symbol: ast.unparse
+  - symbol: ast.walk
+  - symbol: cas_extractor.models.evidence.Anchor
+  - symbol: cas_extractor.models.evidence.CallEntry
+  - symbol: cas_extractor.resolvers.CallContext
+  - symbol: cas_extractor.resolvers.create_resolution_engine
+  - symbol: cas_extractor.utils.fingerprint.fingerprint_ast
+  - symbol: extractors.python_calls.ClassInfo
+  - symbol: extractors.python_calls._annotate_parents
+  - symbol: extractors.python_calls._build_class_method_summaries
+  - symbol: extractors.python_calls._build_factory_return_types
+  - symbol: extractors.python_calls._build_init_self_attr_types
+  - symbol: extractors.python_calls._build_local_var_types
+  - symbol: extractors.python_calls._build_method_local_self_attr_types
+  - symbol: extractors.python_calls._extract_calls_from_tree
+  - symbol: extractors.python_calls._extract_source
+  - symbol: extractors.python_calls._find_class_by_name
+  - symbol: extractors.python_calls._find_enclosing_context
+  - symbol: extractors.python_calls._find_enclosing_func_node
+  - symbol: extractors.python_calls._get_direct_return_class
+  - symbol: extractors.python_calls._get_resolution_source
+  - symbol: extractors.python_calls._get_self_calls_in_method
+  - symbol: extractors.python_calls._infer_class_from_expr
+  - symbol: extractors.python_calls._path_to_module
+  - symbol: extractors.python_calls._propagate_self_attr_summaries
+  - symbol: extractors.python_calls._resolve_call
+  - symbol: extractors.python_calls._resolve_in_bases
+  - symbol: extractors.python_calls._resolve_super_method
+  - symbol: extractors.python_calls.extract_calls
+  - symbol: extractors.python_calls.propagate
+  - symbol: pathlib.Path
+  edges:
+  - from: extractors.python_calls._annotate_parents
+    to: ast.walk
+    kind: call
+    edge_id: 0
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'ast' -> 'ast.walk'
+    range:
+      start_line: 266
+      start_col: 0
+      end_line: 266
+      end_col: 0
+  - from: extractors.python_calls._build_local_var_types
+    to: ast.walk
+    kind: call
+    edge_id: 1
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'ast' -> 'ast.walk'
+    range:
+      start_line: 288
+      start_col: 0
+      end_line: 288
+      end_col: 0
+  - from: extractors.python_calls._build_init_self_attr_types
+    to: ast.walk
+    kind: call
+    edge_id: 2
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'ast' -> 'ast.walk'
+    range:
+      start_line: 375
+      start_col: 0
+      end_line: 375
+      end_col: 0
+  - from: extractors.python_calls._build_method_local_self_attr_types
+    to: ast.walk
+    kind: call
+    edge_id: 3
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'ast' -> 'ast.walk'
+    range:
+      start_line: 428
+      start_col: 0
+      end_line: 428
+      end_col: 0
+  - from: extractors.python_calls._build_factory_return_types
+    to: ast.iter_child_nodes
+    kind: call
+    edge_id: 4
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'ast' -> 'ast.iter_child_nodes'
+    range:
+      start_line: 499
+      start_col: 0
+      end_line: 499
+      end_col: 0
+  - from: extractors.python_calls._get_direct_return_class
+    to: ast.walk
+    kind: call
+    edge_id: 5
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'ast' -> 'ast.walk'
+    range:
+      start_line: 523
+      start_col: 0
+      end_line: 523
+      end_col: 0
+  - from: extractors.python_calls._get_self_calls_in_method
+    to: ast.walk
+    kind: call
+    edge_id: 6
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'ast' -> 'ast.walk'
+    range:
+      start_line: 559
+      start_col: 0
+      end_line: 559
+      end_col: 0
+  - from: extractors.python_calls._extract_calls_from_tree
+    to: ast.walk
+    kind: call
+    edge_id: 7
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'ast' -> 'ast.walk'
+    range:
+      start_line: 671
+      start_col: 0
+      end_line: 671
+      end_col: 0
+  - from: extractors.python_calls.extract_calls
+    to: extractors.python_calls._path_to_module
+    kind: call
+    edge_id: 8
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_path_to_module' in local module
+    range:
+      start_line: 104
+      start_col: 0
+      end_line: 104
+      end_col: 0
+  - from: extractors.python_calls.extract_calls
+    to: ast.walk
+    kind: call
+    edge_id: 9
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'ast' -> 'ast.walk'
+    range:
+      start_line: 109
+      start_col: 0
+      end_line: 109
+      end_col: 0
+  - from: extractors.python_calls.extract_calls
+    to: extractors.python_calls._path_to_module
+    kind: call
+    edge_id: 10
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_path_to_module' in local module
+    range:
+      start_line: 176
+      start_col: 0
+      end_line: 176
+      end_col: 0
+  - from: extractors.python_calls.extract_calls
+    to: ast.walk
+    kind: call
+    edge_id: 11
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'ast' -> 'ast.walk'
+    range:
+      start_line: 181
+      start_col: 0
+      end_line: 181
+      end_col: 0
+  - from: extractors.python_calls.extract_calls
+    to: extractors.python_calls._annotate_parents
+    kind: call
+    edge_id: 12
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_annotate_parents' in local module
+    range:
+      start_line: 204
+      start_col: 0
+      end_line: 204
+      end_col: 0
+  - from: extractors.python_calls.extract_calls
+    to: extractors.python_calls._path_to_module
+    kind: call
+    edge_id: 13
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_path_to_module' in local module
+    range:
+      start_line: 206
+      start_col: 0
+      end_line: 206
+      end_col: 0
+  - from: extractors.python_calls._annotate_parents
+    to: ast.iter_child_nodes
+    kind: call
+    edge_id: 14
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'ast' -> 'ast.iter_child_nodes'
+    range:
+      start_line: 267
+      start_col: 0
+      end_line: 267
+      end_col: 0
+  - from: extractors.python_calls._build_factory_return_types
+    to: extractors.python_calls._get_direct_return_class
+    kind: call
+    edge_id: 15
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_get_direct_return_class' in local module
+    range:
+      start_line: 503
+      start_col: 0
+      end_line: 505
+      end_col: 0
+  - from: extractors.python_calls._propagate_self_attr_summaries
+    to: extractors.python_calls.propagate
+    kind: call
+    edge_id: 16
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function 'propagate' in local module
+    range:
+      start_line: 622
+      start_col: 0
+      end_line: 622
+      end_col: 0
+  - from: extractors.python_calls._extract_calls_from_tree
+    to: cas_extractor.resolvers.create_resolution_engine
+    kind: call
+    edge_id: 17
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'create_resolution_engine' -> 'cas_extractor.resolvers.create_resolution_engine'
+    range:
+      start_line: 660
+      start_col: 0
+      end_line: 667
+      end_col: 0
+  - from: extractors.python_calls._extract_calls_from_tree
+    to: extractors.python_calls._find_enclosing_context
+    kind: call
+    edge_id: 18
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_find_enclosing_context' in local module
+    range:
+      start_line: 675
+      start_col: 0
+      end_line: 677
+      end_col: 0
+  - from: extractors.python_calls._extract_calls_from_tree
+    to: extractors.python_calls._find_enclosing_func_node
+    kind: call
+    edge_id: 19
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_find_enclosing_func_node' in local module
+    range:
+      start_line: 679
+      start_col: 0
+      end_line: 679
+      end_col: 0
+  - from: extractors.python_calls._extract_calls_from_tree
+    to: extractors.python_calls._extract_source
+    kind: call
+    edge_id: 20
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_extract_source' in local module
+    range:
+      start_line: 811
+      start_col: 0
+      end_line: 811
+      end_col: 0
+  - from: extractors.python_calls._extract_calls_from_tree
+    to: cas_extractor.models.evidence.Anchor
+    kind: call
+    edge_id: 21
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'Anchor' -> 'cas_extractor.models.evidence.Anchor'
+    range:
+      start_line: 812
+      start_col: 0
+      end_line: 818
+      end_col: 0
+  - from: extractors.python_calls._resolve_in_bases
+    to: extractors.python_calls._find_class_by_name
+    kind: call
+    edge_id: 22
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_find_class_by_name' in local module
+    range:
+      start_line: 1032
+      start_col: 0
+      end_line: 1034
+      end_col: 0
+  - from: extractors.python_calls._resolve_super_method
+    to: extractors.python_calls._find_class_by_name
+    kind: call
+    edge_id: 23
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_find_class_by_name' in local module
+    range:
+      start_line: 1052
+      start_col: 0
+      end_line: 1054
+      end_col: 0
+  - from: extractors.python_calls.extract_calls
+    to: pathlib.Path
+    kind: call
+    edge_id: 24
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'Path' -> 'pathlib.Path'
+    range:
+      start_line: 70
+      start_col: 0
+      end_line: 70
+      end_col: 0
+  - from: extractors.python_calls.extract_calls
+    to: ast.parse
+    kind: call
+    edge_id: 25
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'ast' -> 'ast.parse'
+    range:
+      start_line: 100
+      start_col: 0
+      end_line: 100
+      end_col: 0
+  - from: extractors.python_calls.extract_calls
+    to: extractors.python_calls._path_to_module
+    kind: call
+    edge_id: 26
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_path_to_module' in local module
+    range:
+      start_line: 158
+      start_col: 0
+      end_line: 158
+      end_col: 0
+  - from: extractors.python_calls.extract_calls
+    to: extractors.python_calls._build_factory_return_types
+    kind: call
+    edge_id: 27
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_build_factory_return_types' in local module
+    range:
+      start_line: 161
+      start_col: 0
+      end_line: 163
+      end_col: 0
+  - from: extractors.python_calls.extract_calls
+    to: ast.parse
+    kind: call
+    edge_id: 28
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'ast' -> 'ast.parse'
+    range:
+      start_line: 172
+      start_col: 0
+      end_line: 172
+      end_col: 0
+  - from: extractors.python_calls.extract_calls
+    to: ast.parse
+    kind: call
+    edge_id: 29
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'ast' -> 'ast.parse'
+    range:
+      start_line: 200
+      start_col: 0
+      end_line: 200
+      end_col: 0
+  - from: extractors.python_calls.extract_calls
+    to: extractors.python_calls._extract_calls_from_tree
+    kind: call
+    edge_id: 30
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_extract_calls_from_tree' in local module
+    range:
+      start_line: 212
+      start_col: 0
+      end_line: 233
+      end_col: 0
+  - from: extractors.python_calls._build_class_method_summaries
+    to: extractors.python_calls._build_method_local_self_attr_types
+    kind: call
+    edge_id: 31
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_build_method_local_self_attr_types' in local module
+    range:
+      start_line: 480
+      start_col: 0
+      end_line: 482
+      end_col: 0
+  - from: extractors.python_calls._extract_calls_from_tree
+    to: extractors.python_calls._build_local_var_types
+    kind: call
+    edge_id: 32
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_build_local_var_types' in local module
+    range:
+      start_line: 685
+      start_col: 0
+      end_line: 691
+      end_col: 0
+  - from: extractors.python_calls._extract_calls_from_tree
+    to: cas_extractor.resolvers.CallContext
+    kind: call
+    edge_id: 33
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'CallContext' -> 'cas_extractor.resolvers.CallContext'
+    range:
+      start_line: 740
+      start_col: 0
+      end_line: 757
+      end_col: 0
+  - from: extractors.python_calls._extract_calls_from_tree
+    to: extractors.python_calls._resolve_call
+    kind: call
+    edge_id: 34
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_resolve_call' in local module
+    range:
+      start_line: 782
+      start_col: 0
+      end_line: 794
+      end_col: 0
+  - from: extractors.python_calls._extract_calls_from_tree
+    to: cas_extractor.models.evidence.CallEntry
+    kind: call
+    edge_id: 35
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'CallEntry' -> 'cas_extractor.models.evidence.CallEntry'
+    range:
+      start_line: 820
+      start_col: 0
+      end_line: 827
+      end_col: 0
+  - from: extractors.python_calls._find_enclosing_context
+    to: extractors.python_calls.ClassInfo
+    kind: call
+    edge_id: 36
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function 'ClassInfo' in local module
+    range:
+      start_line: 1141
+      start_col: 0
+      end_line: 1145
+      end_col: 0
+  - from: extractors.python_calls.extract_calls
+    to: ast.parse
+    kind: call
+    edge_id: 37
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'ast' -> 'ast.parse'
+    range:
+      start_line: 154
+      start_col: 0
+      end_line: 154
+      end_col: 0
+  - from: extractors.python_calls.extract_calls
+    to: extractors.python_calls._build_init_self_attr_types
+    kind: call
+    edge_id: 38
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_build_init_self_attr_types' in local module
+    range:
+      start_line: 184
+      start_col: 0
+      end_line: 186
+      end_col: 0
+  - from: extractors.python_calls._extract_calls_from_tree
+    to: extractors.python_calls._build_method_local_self_attr_types
+    kind: call
+    edge_id: 39
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_build_method_local_self_attr_types' in local module
+    range:
+      start_line: 693
+      start_col: 0
+      end_line: 699
+      end_col: 0
+  - from: extractors.python_calls._extract_calls_from_tree
+    to: ast.walk
+    kind: call
+    edge_id: 40
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'ast' -> 'ast.walk'
+    range:
+      start_line: 708
+      start_col: 0
+      end_line: 708
+      end_col: 0
+  - from: extractors.python_calls._extract_calls_from_tree
+    to: extractors.python_calls._get_resolution_source
+    kind: call
+    edge_id: 41
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_get_resolution_source' in local module
+    range:
+      start_line: 796
+      start_col: 0
+      end_line: 802
+      end_col: 0
+  - from: extractors.python_calls._resolve_call
+    to: extractors.python_calls._resolve_super_method
+    kind: call
+    edge_id: 42
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_resolve_super_method' in local module
+    range:
+      start_line: 920
+      start_col: 0
+      end_line: 926
+      end_col: 0
+  - from: extractors.python_calls.extract_calls
+    to: extractors.python_calls.ClassInfo
+    kind: call
+    edge_id: 43
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function 'ClassInfo' in local module
+    range:
+      start_line: 114
+      start_col: 0
+      end_line: 118
+      end_col: 0
+  - from: extractors.python_calls.extract_calls
+    to: extractors.python_calls._build_class_method_summaries
+    kind: call
+    edge_id: 44
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_build_class_method_summaries' in local module
+    range:
+      start_line: 188
+      start_col: 0
+      end_line: 194
+      end_col: 0
+  - from: extractors.python_calls._build_local_var_types
+    to: extractors.python_calls._infer_class_from_expr
+    kind: call
+    edge_id: 45
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_infer_class_from_expr' in local module
+    range:
+      start_line: 293
+      start_col: 0
+      end_line: 299
+      end_col: 0
+  - from: extractors.python_calls._build_local_var_types
+    to: extractors.python_calls._infer_class_from_expr
+    kind: call
+    edge_id: 46
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_infer_class_from_expr' in local module
+    range:
+      start_line: 305
+      start_col: 0
+      end_line: 311
+      end_col: 0
+  - from: extractors.python_calls._build_init_self_attr_types
+    to: extractors.python_calls._infer_class_from_expr
+    kind: call
+    edge_id: 47
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_infer_class_from_expr' in local module
+    range:
+      start_line: 384
+      start_col: 0
+      end_line: 390
+      end_col: 0
+  - from: extractors.python_calls._build_init_self_attr_types
+    to: extractors.python_calls._infer_class_from_expr
+    kind: call
+    edge_id: 48
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_infer_class_from_expr' in local module
+    range:
+      start_line: 400
+      start_col: 0
+      end_line: 406
+      end_col: 0
+  - from: extractors.python_calls._build_method_local_self_attr_types
+    to: extractors.python_calls._infer_class_from_expr
+    kind: call
+    edge_id: 49
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_infer_class_from_expr' in local module
+    range:
+      start_line: 437
+      start_col: 0
+      end_line: 443
+      end_col: 0
+  - from: extractors.python_calls._build_method_local_self_attr_types
+    to: extractors.python_calls._infer_class_from_expr
+    kind: call
+    edge_id: 50
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_infer_class_from_expr' in local module
+    range:
+      start_line: 453
+      start_col: 0
+      end_line: 459
+      end_col: 0
+  - from: extractors.python_calls._extract_calls_from_tree
+    to: cas_extractor.utils.fingerprint.fingerprint_ast
+    kind: call
+    edge_id: 51
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'fingerprint_ast' -> 'cas_extractor.utils.fingerprint.fingerprint_ast'
+    range:
+      start_line: 817
+      start_col: 0
+      end_line: 817
+      end_col: 0
+  - from: extractors.python_calls._resolve_call
+    to: extractors.python_calls._resolve_in_bases
+    kind: call
+    edge_id: 52
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_resolve_in_bases' in local module
+    range:
+      start_line: 894
+      start_col: 0
+      end_line: 900
+      end_col: 0
+  - from: extractors.python_calls._extract_calls_from_tree
+    to: extractors.python_calls._build_class_method_summaries
+    kind: call
+    edge_id: 53
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_build_class_method_summaries' in local module
+    range:
+      start_line: 713
+      start_col: 0
+      end_line: 719
+      end_col: 0
+  - from: extractors.python_calls._extract_calls_from_tree
+    to: extractors.python_calls._propagate_self_attr_summaries
+    kind: call
+    edge_id: 54
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_propagate_self_attr_summaries' in local module
+    range:
+      start_line: 725
+      start_col: 0
+      end_line: 730
+      end_col: 0
+  - from: extractors.python_calls._find_enclosing_context
+    to: ast.unparse
+    kind: call
+    edge_id: 55
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'ast' -> 'ast.unparse'
+    range:
+      start_line: 1138
+      start_col: 0
+      end_line: 1138
+      end_col: 0
+  - from: extractors.python_calls.extract_calls
+    to: ast.unparse
+    kind: call
+    edge_id: 56
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'ast' -> 'ast.unparse'
+    range:
+      start_line: 126
+      start_col: 0
+      end_line: 126
+      end_col: 0

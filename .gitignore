@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Environment
+.env
+.env.local
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Binary files
+*.pdf
+*.zip
+*.tar.gz
+*.rar
+
+# Sprint transient outputs (keep curated evidence only)
+sprint-v050-engine/03-evidence-runs/
+sprint-v050-engine/04-functional-proof/gates_test*/
+sprint-v050-engine/05-smoke/engine/
+sprint-v050-engine/05-smoke/legacy/
+sprint-v050-engine/05-smoke/engine_product/
+sprint-v050-engine/05-smoke/engine_product_v2/
+
+# Generated JSON outputs (regenerate from source)
+*.edges.json
+*.nodes.json
+*.calls.json

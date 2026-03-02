@@ -1,0 +1,234 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-f63afe26
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-26T06:34:58.643470+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://product
+  root: ./cas_extractor
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: cas_extractor.models.evidence.EvidenceArtifact
+  - symbol: cas_extractor.utils.ids.evidence_id
+  - symbol: datetime.datetime.now
+  - symbol: os.makedirs
+  - symbol: writers.evidence_writer._resolution_to_kind
+  - symbol: writers.evidence_writer._symbol_to_dict
+  - symbol: writers.evidence_writer._write_artifact
+  - symbol: writers.evidence_writer.write_calls_evidence
+  - symbol: writers.evidence_writer.write_imports_evidence
+  - symbol: writers.evidence_writer.write_symbols_evidence
+  - symbol: yaml.dump
+  edges:
+  - from: writers.evidence_writer._write_artifact
+    to: os.makedirs
+    kind: call
+    edge_id: 0
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'os' -> 'os.makedirs'
+    range:
+      start_line: 213
+      start_col: 0
+      end_line: 213
+      end_col: 0
+  - from: writers.evidence_writer.write_symbols_evidence
+    to: cas_extractor.utils.ids.evidence_id
+    kind: call
+    edge_id: 1
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'evidence_id' -> 'cas_extractor.utils.ids.evidence_id'
+    range:
+      start_line: 48
+      start_col: 0
+      end_line: 48
+      end_col: 0
+  - from: writers.evidence_writer.write_symbols_evidence
+    to: cas_extractor.models.evidence.EvidenceArtifact
+    kind: call
+    edge_id: 2
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'EvidenceArtifact' -> 'cas_extractor.models.evidence.EvidenceArtifact'
+    range:
+      start_line: 53
+      start_col: 0
+      end_line: 59
+      end_col: 0
+  - from: writers.evidence_writer.write_symbols_evidence
+    to: writers.evidence_writer._write_artifact
+    kind: call
+    edge_id: 3
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_write_artifact' in local module
+    range:
+      start_line: 60
+      start_col: 0
+      end_line: 60
+      end_col: 0
+  - from: writers.evidence_writer.write_imports_evidence
+    to: cas_extractor.utils.ids.evidence_id
+    kind: call
+    edge_id: 4
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'evidence_id' -> 'cas_extractor.utils.ids.evidence_id'
+    range:
+      start_line: 82
+      start_col: 0
+      end_line: 82
+      end_col: 0
+  - from: writers.evidence_writer.write_imports_evidence
+    to: cas_extractor.models.evidence.EvidenceArtifact
+    kind: call
+    edge_id: 5
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'EvidenceArtifact' -> 'cas_extractor.models.evidence.EvidenceArtifact'
+    range:
+      start_line: 105
+      start_col: 0
+      end_line: 111
+      end_col: 0
+  - from: writers.evidence_writer.write_imports_evidence
+    to: writers.evidence_writer._write_artifact
+    kind: call
+    edge_id: 6
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_write_artifact' in local module
+    range:
+      start_line: 112
+      start_col: 0
+      end_line: 112
+      end_col: 0
+  - from: writers.evidence_writer.write_calls_evidence
+    to: cas_extractor.utils.ids.evidence_id
+    kind: call
+    edge_id: 7
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'evidence_id' -> 'cas_extractor.utils.ids.evidence_id'
+    range:
+      start_line: 137
+      start_col: 0
+      end_line: 137
+      end_col: 0
+  - from: writers.evidence_writer.write_calls_evidence
+    to: cas_extractor.models.evidence.EvidenceArtifact
+    kind: call
+    edge_id: 8
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'EvidenceArtifact' -> 'cas_extractor.models.evidence.EvidenceArtifact'
+    range:
+      start_line: 178
+      start_col: 0
+      end_line: 184
+      end_col: 0
+  - from: writers.evidence_writer.write_calls_evidence
+    to: writers.evidence_writer._write_artifact
+    kind: call
+    edge_id: 9
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_write_artifact' in local module
+    range:
+      start_line: 185
+      start_col: 0
+      end_line: 185
+      end_col: 0
+  - from: writers.evidence_writer._write_artifact
+    to: yaml.dump
+    kind: call
+    edge_id: 10
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'yaml' -> 'yaml.dump'
+    range:
+      start_line: 236
+      start_col: 0
+      end_line: 238
+      end_col: 0
+  - from: writers.evidence_writer.write_calls_evidence
+    to: writers.evidence_writer._resolution_to_kind
+    kind: call
+    edge_id: 11
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_resolution_to_kind' in local module
+    range:
+      start_line: 150
+      start_col: 0
+      end_line: 150
+      end_col: 0
+  - from: writers.evidence_writer._write_artifact
+    to: datetime.datetime.now
+    kind: call
+    edge_id: 12
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'datetime' -> 'datetime.datetime.now'
+    range:
+      start_line: 215
+      start_col: 0
+      end_line: 215
+      end_col: 0
+  - from: writers.evidence_writer.write_symbols_evidence
+    to: writers.evidence_writer._symbol_to_dict
+    kind: call
+    edge_id: 13
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_symbol_to_dict' in local module
+    range:
+      start_line: 51
+      start_col: 0
+      end_line: 51
+      end_col: 0

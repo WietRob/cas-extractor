@@ -1,0 +1,15 @@
+=== TRACE ASSERTIONS ===
+H2.6/2.7 found: True (expected: True)
+H2.8 found: True (expected: True)
+qualified_attr found: True (expected: True)
+
+=== HEURISTICS ===
+H2.6/2.7: 2
+H2.8: 2
+qualified_attr: 4
+static: 10
+
+=== GATES ===
+G-A (H2.6/2.7): PASS
+G-B (H2.8): PASS
+G-C (qualified_attr): PASS

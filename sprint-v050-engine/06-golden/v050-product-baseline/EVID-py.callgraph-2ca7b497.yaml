@@ -1,0 +1,30 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-2ca7b497
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-26T06:34:58.640119+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://product
+  root: ./cas_extractor
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: hashlib.sha256
+  - symbol: utils.ids.evidence_id
+  edges:
+  - from: utils.ids.evidence_id
+    to: hashlib.sha256
+    kind: call
+    edge_id: 0
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'hashlib' -> 'hashlib.sha256'
+    range:
+      start_line: 44
+      start_col: 0
+      end_line: 44
+      end_col: 0

@@ -1,0 +1,222 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-502cfed8
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-26T06:34:58.624343+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://product
+  root: ./cas_extractor
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: cas_extractor.resolvers.base.ResolutionEngine
+  - symbol: cas_extractor.resolvers.heuristics.ClassInitSelfAttrResolver
+  - symbol: cas_extractor.resolvers.heuristics.ConstructorResolver
+  - symbol: cas_extractor.resolvers.heuristics.FactoryReturnResolver
+  - symbol: cas_extractor.resolvers.heuristics.LocalVarResolver
+  - symbol: cas_extractor.resolvers.heuristics.MethodLocalSelfAttrResolver
+  - symbol: cas_extractor.resolvers.heuristics.PropagatedSelfAttrResolver
+  - symbol: cas_extractor.resolvers.heuristics.UnresolvedSelfAttrResolver
+  - symbol: cas_extractor.resolvers.static.ClsDispatchResolver
+  - symbol: cas_extractor.resolvers.static.QualifiedAttrResolver
+  - symbol: cas_extractor.resolvers.static.SelfDispatchResolver
+  - symbol: cas_extractor.resolvers.static.StaticResolver
+  - symbol: cas_extractor.resolvers.static.SuperDispatchResolver
+  - symbol: resolvers.create_resolution_engine
+  edges:
+  - from: resolvers.create_resolution_engine
+    to: cas_extractor.resolvers.base.ResolutionEngine
+    kind: call
+    edge_id: 0
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'ResolutionEngine' -> 'cas_extractor.resolvers.base.ResolutionEngine'
+    range:
+      start_line: 46
+      start_col: 0
+      end_line: 46
+      end_col: 0
+  - from: resolvers.create_resolution_engine
+    to: cas_extractor.resolvers.static.QualifiedAttrResolver
+    kind: call
+    edge_id: 1
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'QualifiedAttrResolver' -> 'cas_extractor.resolvers.static.QualifiedAttrResolver'
+    range:
+      start_line: 48
+      start_col: 0
+      end_line: 48
+      end_col: 0
+  - from: resolvers.create_resolution_engine
+    to: cas_extractor.resolvers.static.StaticResolver
+    kind: call
+    edge_id: 2
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'StaticResolver' -> 'cas_extractor.resolvers.static.StaticResolver'
+    range:
+      start_line: 49
+      start_col: 0
+      end_line: 49
+      end_col: 0
+  - from: resolvers.create_resolution_engine
+    to: cas_extractor.resolvers.heuristics.LocalVarResolver
+    kind: call
+    edge_id: 3
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'LocalVarResolver' -> 'cas_extractor.resolvers.heuristics.LocalVarResolver'
+    range:
+      start_line: 50
+      start_col: 0
+      end_line: 50
+      end_col: 0
+  - from: resolvers.create_resolution_engine
+    to: cas_extractor.resolvers.heuristics.MethodLocalSelfAttrResolver
+    kind: call
+    edge_id: 4
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'MethodLocalSelfAttrResolver' -> 'cas_extractor.resolvers.heuristics.MethodLocalSelfAttrResolver'
+    range:
+      start_line: 51
+      start_col: 0
+      end_line: 51
+      end_col: 0
+  - from: resolvers.create_resolution_engine
+    to: cas_extractor.resolvers.heuristics.PropagatedSelfAttrResolver
+    kind: call
+    edge_id: 5
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'PropagatedSelfAttrResolver' -> 'cas_extractor.resolvers.heuristics.PropagatedSelfAttrResolver'
+    range:
+      start_line: 52
+      start_col: 0
+      end_line: 52
+      end_col: 0
+  - from: resolvers.create_resolution_engine
+    to: cas_extractor.resolvers.heuristics.FactoryReturnResolver
+    kind: call
+    edge_id: 6
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'FactoryReturnResolver' -> 'cas_extractor.resolvers.heuristics.FactoryReturnResolver'
+    range:
+      start_line: 54
+      start_col: 0
+      end_line: 56
+      end_col: 0
+  - from: resolvers.create_resolution_engine
+    to: cas_extractor.resolvers.heuristics.ClassInitSelfAttrResolver
+    kind: call
+    edge_id: 7
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'ClassInitSelfAttrResolver' -> 'cas_extractor.resolvers.heuristics.ClassInitSelfAttrResolver'
+    range:
+      start_line: 58
+      start_col: 0
+      end_line: 58
+      end_col: 0
+  - from: resolvers.create_resolution_engine
+    to: cas_extractor.resolvers.heuristics.ConstructorResolver
+    kind: call
+    edge_id: 8
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'ConstructorResolver' -> 'cas_extractor.resolvers.heuristics.ConstructorResolver'
+    range:
+      start_line: 59
+      start_col: 0
+      end_line: 59
+      end_col: 0
+  - from: resolvers.create_resolution_engine
+    to: cas_extractor.resolvers.static.SelfDispatchResolver
+    kind: call
+    edge_id: 9
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'SelfDispatchResolver' -> 'cas_extractor.resolvers.static.SelfDispatchResolver'
+    range:
+      start_line: 60
+      start_col: 0
+      end_line: 60
+      end_col: 0
+  - from: resolvers.create_resolution_engine
+    to: cas_extractor.resolvers.static.ClsDispatchResolver
+    kind: call
+    edge_id: 10
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'ClsDispatchResolver' -> 'cas_extractor.resolvers.static.ClsDispatchResolver'
+    range:
+      start_line: 61
+      start_col: 0
+      end_line: 61
+      end_col: 0
+  - from: resolvers.create_resolution_engine
+    to: cas_extractor.resolvers.static.SuperDispatchResolver
+    kind: call
+    edge_id: 11
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'SuperDispatchResolver' -> 'cas_extractor.resolvers.static.SuperDispatchResolver'
+    range:
+      start_line: 62
+      start_col: 0
+      end_line: 62
+      end_col: 0
+  - from: resolvers.create_resolution_engine
+    to: cas_extractor.resolvers.heuristics.UnresolvedSelfAttrResolver
+    kind: call
+    edge_id: 12
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'UnresolvedSelfAttrResolver' -> 'cas_extractor.resolvers.heuristics.UnresolvedSelfAttrResolver'
+    range:
+      start_line: 63
+      start_col: 0
+      end_line: 63
+      end_col: 0

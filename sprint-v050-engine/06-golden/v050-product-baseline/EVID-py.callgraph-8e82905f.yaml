@@ -1,0 +1,30 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-8e82905f
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-26T06:34:58.627639+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://product
+  root: ./cas_extractor
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: resolvers.base.ResolutionEngine.resolve
+  - symbol: resolvers.base.ResolutionResult
+  edges:
+  - from: resolvers.base.ResolutionEngine.resolve
+    to: resolvers.base.ResolutionResult
+    kind: call
+    edge_id: 0
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function 'ResolutionResult' in local module
+    range:
+      start_line: 130
+      start_col: 0
+      end_line: 134
+      end_col: 0

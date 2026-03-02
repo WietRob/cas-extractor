@@ -1,0 +1,46 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-96c28b14
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-26T06:34:58.630713+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://product
+  root: ./cas_extractor
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: cas_extractor.resolvers.base.ResolutionResult
+  - symbol: cas_extractor.resolvers.base.ResolutionStep
+  - symbol: resolvers.heuristics.LocalVarResolver.try_resolve
+  edges:
+  - from: resolvers.heuristics.LocalVarResolver.try_resolve
+    to: cas_extractor.resolvers.base.ResolutionResult
+    kind: call
+    edge_id: 0
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'ResolutionResult' -> 'cas_extractor.resolvers.base.ResolutionResult'
+    range:
+      start_line: 40
+      start_col: 0
+      end_line: 52
+      end_col: 0
+  - from: resolvers.heuristics.LocalVarResolver.try_resolve
+    to: cas_extractor.resolvers.base.ResolutionStep
+    kind: call
+    edge_id: 1
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'ResolutionStep' -> 'cas_extractor.resolvers.base.ResolutionStep'
+    range:
+      start_line: 45
+      start_col: 0
+      end_line: 50
+      end_col: 0

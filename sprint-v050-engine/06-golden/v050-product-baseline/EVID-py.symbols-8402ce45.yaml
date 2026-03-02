@@ -1,0 +1,53 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-8402ce45
+kind: evidence
+type: py.symbols
+created_at: '2026-02-26T06:34:58.375177+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://product
+  root: ./cas_extractor
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: resolvers.base.BaseResolver.__init__
+    kind: method
+    file: resolvers/base.py
+    range:
+      start_line: 86
+      start_col: 0
+      end_line: 87
+      end_col: 0
+    fingerprint: 32c29174c85eb184b2ac51fd8e53c19fcc7deb014519892a4d4f891f93831b79
+    params:
+    - name: self
+    - name: enabled
+      annotation: bool
+  - qualified: resolvers.base.BaseResolver.try_resolve
+    kind: method
+    file: resolvers/base.py
+    range:
+      start_line: 89
+      start_col: 0
+      end_line: 94
+      end_col: 0
+    fingerprint: 0e30f722af8afd7aeac331cdd93cb86aec2c4ecf8666ee24c297ccdc68ef7fcd
+    params:
+    - name: self
+    - name: context
+      annotation: CallContext
+    returns: ResolutionResult | None
+  - qualified: resolvers.base.BaseResolver.can_resolve
+    kind: method
+    file: resolvers/base.py
+    range:
+      start_line: 96
+      start_col: 0
+      end_line: 98
+      end_col: 0
+    fingerprint: 6cb875d8280b98edfbfd27f2dce479303e63d9f684911fb8f08355c7d9756331
+    params:
+    - name: self
+    - name: context
+      annotation: CallContext
+    returns: bool

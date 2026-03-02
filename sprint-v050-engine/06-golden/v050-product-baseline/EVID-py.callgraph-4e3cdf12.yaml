@@ -1,0 +1,136 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-4e3cdf12
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-26T06:34:58.633922+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://product
+  root: ./cas_extractor
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: cas_extractor.resolvers.base.ResolutionResult
+  - symbol: cas_extractor.resolvers.base.ResolutionStep
+  - symbol: resolvers.static.QualifiedAttrResolver.try_resolve
+  edges:
+  - from: resolvers.static.QualifiedAttrResolver.try_resolve
+    to: cas_extractor.resolvers.base.ResolutionResult
+    kind: call
+    edge_id: 0
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'ResolutionResult' -> 'cas_extractor.resolvers.base.ResolutionResult'
+    range:
+      start_line: 142
+      start_col: 0
+      end_line: 154
+      end_col: 0
+  - from: resolvers.static.QualifiedAttrResolver.try_resolve
+    to: cas_extractor.resolvers.base.ResolutionResult
+    kind: call
+    edge_id: 1
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'ResolutionResult' -> 'cas_extractor.resolvers.base.ResolutionResult'
+    range:
+      start_line: 93
+      start_col: 0
+      end_line: 105
+      end_col: 0
+  - from: resolvers.static.QualifiedAttrResolver.try_resolve
+    to: cas_extractor.resolvers.base.ResolutionResult
+    kind: call
+    edge_id: 2
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'ResolutionResult' -> 'cas_extractor.resolvers.base.ResolutionResult'
+    range:
+      start_line: 110
+      start_col: 0
+      end_line: 122
+      end_col: 0
+  - from: resolvers.static.QualifiedAttrResolver.try_resolve
+    to: cas_extractor.resolvers.base.ResolutionResult
+    kind: call
+    edge_id: 3
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'ResolutionResult' -> 'cas_extractor.resolvers.base.ResolutionResult'
+    range:
+      start_line: 128
+      start_col: 0
+      end_line: 140
+      end_col: 0
+  - from: resolvers.static.QualifiedAttrResolver.try_resolve
+    to: cas_extractor.resolvers.base.ResolutionStep
+    kind: call
+    edge_id: 4
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'ResolutionStep' -> 'cas_extractor.resolvers.base.ResolutionStep'
+    range:
+      start_line: 147
+      start_col: 0
+      end_line: 152
+      end_col: 0
+  - from: resolvers.static.QualifiedAttrResolver.try_resolve
+    to: cas_extractor.resolvers.base.ResolutionStep
+    kind: call
+    edge_id: 5
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'ResolutionStep' -> 'cas_extractor.resolvers.base.ResolutionStep'
+    range:
+      start_line: 98
+      start_col: 0
+      end_line: 103
+      end_col: 0
+  - from: resolvers.static.QualifiedAttrResolver.try_resolve
+    to: cas_extractor.resolvers.base.ResolutionStep
+    kind: call
+    edge_id: 6
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'ResolutionStep' -> 'cas_extractor.resolvers.base.ResolutionStep'
+    range:
+      start_line: 115
+      start_col: 0
+      end_line: 120
+      end_col: 0
+  - from: resolvers.static.QualifiedAttrResolver.try_resolve
+    to: cas_extractor.resolvers.base.ResolutionStep
+    kind: call
+    edge_id: 7
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'ResolutionStep' -> 'cas_extractor.resolvers.base.ResolutionStep'
+    range:
+      start_line: 133
+      start_col: 0
+      end_line: 138
+      end_col: 0

@@ -1,0 +1,506 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-3fa1f481
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-26T06:34:58.616767+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://product
+  root: ./cas_extractor
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: cas_extractor.utils.ids.entity_id
+  - symbol: cas_extractor.utils.ids.issue_id
+  - symbol: cas_extractor.utils.ids.relation_id
+  - symbol: cas_extractor.utils.ids.reset_counters
+  - symbol: datetime.datetime.now
+  - symbol: generators.artifact_generator._classify_module
+  - symbol: generators.artifact_generator._is_param_only_docstring
+  - symbol: generators.artifact_generator._write_yaml
+  - symbol: generators.artifact_generator.generate_from_evidence
+  - symbol: os.makedirs
+  - symbol: pathlib.Path
+  - symbol: yaml.dump
+  - symbol: yaml.safe_load
+  edges:
+  - from: generators.artifact_generator.generate_from_evidence
+    to: os.makedirs
+    kind: call
+    edge_id: 0
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'os' -> 'os.makedirs'
+    range:
+      start_line: 76
+      start_col: 0
+      end_line: 76
+      end_col: 0
+  - from: generators.artifact_generator.generate_from_evidence
+    to: os.makedirs
+    kind: call
+    edge_id: 1
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'os' -> 'os.makedirs'
+    range:
+      start_line: 77
+      start_col: 0
+      end_line: 77
+      end_col: 0
+  - from: generators.artifact_generator.generate_from_evidence
+    to: os.makedirs
+    kind: call
+    edge_id: 2
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'os' -> 'os.makedirs'
+    range:
+      start_line: 78
+      start_col: 0
+      end_line: 78
+      end_col: 0
+  - from: generators.artifact_generator.generate_from_evidence
+    to: cas_extractor.utils.ids.reset_counters
+    kind: call
+    edge_id: 3
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'reset_counters' -> 'cas_extractor.utils.ids.reset_counters'
+    range:
+      start_line: 81
+      start_col: 0
+      end_line: 81
+      end_col: 0
+  - from: generators.artifact_generator.generate_from_evidence
+    to: cas_extractor.utils.ids.entity_id
+    kind: call
+    edge_id: 4
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'entity_id' -> 'cas_extractor.utils.ids.entity_id'
+    range:
+      start_line: 172
+      start_col: 0
+      end_line: 172
+      end_col: 0
+  - from: generators.artifact_generator.generate_from_evidence
+    to: generators.artifact_generator._write_yaml
+    kind: call
+    edge_id: 5
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_write_yaml' in local module
+    range:
+      start_line: 255
+      start_col: 0
+      end_line: 255
+      end_col: 0
+  - from: generators.artifact_generator.generate_from_evidence
+    to: generators.artifact_generator._classify_module
+    kind: call
+    edge_id: 6
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_classify_module' in local module
+    range:
+      start_line: 295
+      start_col: 0
+      end_line: 295
+      end_col: 0
+  - from: generators.artifact_generator.generate_from_evidence
+    to: cas_extractor.utils.ids.entity_id
+    kind: call
+    edge_id: 7
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'entity_id' -> 'cas_extractor.utils.ids.entity_id'
+    range:
+      start_line: 302
+      start_col: 0
+      end_line: 302
+      end_col: 0
+  - from: generators.artifact_generator.generate_from_evidence
+    to: cas_extractor.utils.ids.entity_id
+    kind: call
+    edge_id: 8
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'entity_id' -> 'cas_extractor.utils.ids.entity_id'
+    range:
+      start_line: 303
+      start_col: 0
+      end_line: 303
+      end_col: 0
+  - from: generators.artifact_generator.generate_from_evidence
+    to: cas_extractor.utils.ids.entity_id
+    kind: call
+    edge_id: 9
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'entity_id' -> 'cas_extractor.utils.ids.entity_id'
+    range:
+      start_line: 328
+      start_col: 0
+      end_line: 328
+      end_col: 0
+  - from: generators.artifact_generator.generate_from_evidence
+    to: cas_extractor.utils.ids.entity_id
+    kind: call
+    edge_id: 10
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'entity_id' -> 'cas_extractor.utils.ids.entity_id'
+    range:
+      start_line: 329
+      start_col: 0
+      end_line: 329
+      end_col: 0
+  - from: generators.artifact_generator.generate_from_evidence
+    to: cas_extractor.utils.ids.entity_id
+    kind: call
+    edge_id: 11
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'entity_id' -> 'cas_extractor.utils.ids.entity_id'
+    range:
+      start_line: 355
+      start_col: 0
+      end_line: 355
+      end_col: 0
+  - from: generators.artifact_generator.generate_from_evidence
+    to: cas_extractor.utils.ids.entity_id
+    kind: call
+    edge_id: 12
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'entity_id' -> 'cas_extractor.utils.ids.entity_id'
+    range:
+      start_line: 379
+      start_col: 0
+      end_line: 379
+      end_col: 0
+  - from: generators.artifact_generator._write_yaml
+    to: yaml.dump
+    kind: call
+    edge_id: 13
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'yaml' -> 'yaml.dump'
+    range:
+      start_line: 416
+      start_col: 0
+      end_line: 416
+      end_col: 0
+  - from: generators.artifact_generator.generate_from_evidence
+    to: datetime.datetime.now
+    kind: call
+    edge_id: 14
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'datetime' -> 'datetime.datetime.now'
+    range:
+      start_line: 83
+      start_col: 0
+      end_line: 83
+      end_col: 0
+  - from: generators.artifact_generator.generate_from_evidence
+    to: cas_extractor.utils.ids.relation_id
+    kind: call
+    edge_id: 15
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'relation_id' -> 'cas_extractor.utils.ids.relation_id'
+    range:
+      start_line: 309
+      start_col: 0
+      end_line: 309
+      end_col: 0
+  - from: generators.artifact_generator.generate_from_evidence
+    to: generators.artifact_generator._write_yaml
+    kind: call
+    edge_id: 16
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_write_yaml' in local module
+    range:
+      start_line: 322
+      start_col: 0
+      end_line: 322
+      end_col: 0
+  - from: generators.artifact_generator.generate_from_evidence
+    to: cas_extractor.utils.ids.relation_id
+    kind: call
+    edge_id: 17
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'relation_id' -> 'cas_extractor.utils.ids.relation_id'
+    range:
+      start_line: 333
+      start_col: 0
+      end_line: 333
+      end_col: 0
+  - from: generators.artifact_generator.generate_from_evidence
+    to: generators.artifact_generator._write_yaml
+    kind: call
+    edge_id: 18
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_write_yaml' in local module
+    range:
+      start_line: 346
+      start_col: 0
+      end_line: 346
+      end_col: 0
+  - from: generators.artifact_generator.generate_from_evidence
+    to: cas_extractor.utils.ids.issue_id
+    kind: call
+    edge_id: 19
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'issue_id' -> 'cas_extractor.utils.ids.issue_id'
+    range:
+      start_line: 359
+      start_col: 0
+      end_line: 359
+      end_col: 0
+  - from: generators.artifact_generator.generate_from_evidence
+    to: generators.artifact_generator._write_yaml
+    kind: call
+    edge_id: 20
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_write_yaml' in local module
+    range:
+      start_line: 372
+      start_col: 0
+      end_line: 372
+      end_col: 0
+  - from: generators.artifact_generator.generate_from_evidence
+    to: generators.artifact_generator._classify_module
+    kind: call
+    edge_id: 21
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_classify_module' in local module
+    range:
+      start_line: 382
+      start_col: 0
+      end_line: 382
+      end_col: 0
+  - from: generators.artifact_generator.generate_from_evidence
+    to: pathlib.Path
+    kind: call
+    edge_id: 22
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'Path' -> 'pathlib.Path'
+    range:
+      start_line: 85
+      start_col: 0
+      end_line: 85
+      end_col: 0
+  - from: generators.artifact_generator.generate_from_evidence
+    to: yaml.safe_load
+    kind: call
+    edge_id: 23
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'yaml' -> 'yaml.safe_load'
+    range:
+      start_line: 89
+      start_col: 0
+      end_line: 89
+      end_col: 0
+  - from: generators.artifact_generator.generate_from_evidence
+    to: generators.artifact_generator._is_param_only_docstring
+    kind: call
+    edge_id: 24
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_is_param_only_docstring' in local module
+    range:
+      start_line: 238
+      start_col: 0
+      end_line: 238
+      end_col: 0
+  - from: generators.artifact_generator.generate_from_evidence
+    to: cas_extractor.utils.ids.entity_id
+    kind: call
+    edge_id: 25
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'entity_id' -> 'cas_extractor.utils.ids.entity_id'
+    range:
+      start_line: 273
+      start_col: 0
+      end_line: 273
+      end_col: 0
+  - from: generators.artifact_generator.generate_from_evidence
+    to: cas_extractor.utils.ids.relation_id
+    kind: call
+    edge_id: 26
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'relation_id' -> 'cas_extractor.utils.ids.relation_id'
+    range:
+      start_line: 275
+      start_col: 0
+      end_line: 275
+      end_col: 0
+  - from: generators.artifact_generator.generate_from_evidence
+    to: generators.artifact_generator._write_yaml
+    kind: call
+    edge_id: 27
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_write_yaml' in local module
+    range:
+      start_line: 288
+      start_col: 0
+      end_line: 288
+      end_col: 0
+  - from: generators.artifact_generator.generate_from_evidence
+    to: cas_extractor.utils.ids.issue_id
+    kind: call
+    edge_id: 28
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'issue_id' -> 'cas_extractor.utils.ids.issue_id'
+    range:
+      start_line: 394
+      start_col: 0
+      end_line: 394
+      end_col: 0
+  - from: generators.artifact_generator.generate_from_evidence
+    to: generators.artifact_generator._write_yaml
+    kind: call
+    edge_id: 29
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_write_yaml' in local module
+    range:
+      start_line: 407
+      start_col: 0
+      end_line: 407
+      end_col: 0
+  - from: generators.artifact_generator.generate_from_evidence
+    to: cas_extractor.utils.ids.entity_id
+    kind: call
+    edge_id: 30
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'entity_id' -> 'cas_extractor.utils.ids.entity_id'
+    range:
+      start_line: 270
+      start_col: 0
+      end_line: 270
+      end_col: 0
+  - from: generators.artifact_generator.generate_from_evidence
+    to: cas_extractor.utils.ids.entity_id
+    kind: call
+    edge_id: 31
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'entity_id' -> 'cas_extractor.utils.ids.entity_id'
+    range:
+      start_line: 272
+      start_col: 0
+      end_line: 272
+      end_col: 0

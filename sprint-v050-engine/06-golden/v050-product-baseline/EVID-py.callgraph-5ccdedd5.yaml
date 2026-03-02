@@ -1,0 +1,140 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-5ccdedd5
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-26T06:34:58.640540+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://product
+  root: ./cas_extractor
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: json.load
+  - symbol: jsonschema.Draft202012Validator
+  - symbol: pathlib.Path
+  - symbol: validators.schema_validate.StructuralValidationResult
+  - symbol: validators.schema_validate._load_schemas
+  - symbol: validators.schema_validate.validate_structural
+  - symbol: yaml.safe_load
+  edges:
+  - from: validators.schema_validate.validate_structural
+    to: validators.schema_validate._load_schemas
+    kind: call
+    edge_id: 0
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_load_schemas' in local module
+    range:
+      start_line: 55
+      start_col: 0
+      end_line: 55
+      end_col: 0
+  - from: validators.schema_validate.validate_structural
+    to: validators.schema_validate.StructuralValidationResult
+    kind: call
+    edge_id: 1
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function 'StructuralValidationResult' in local module
+    range:
+      start_line: 56
+      start_col: 0
+      end_line: 56
+      end_col: 0
+  - from: validators.schema_validate._load_schemas
+    to: pathlib.Path
+    kind: call
+    edge_id: 2
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'Path' -> 'pathlib.Path'
+    range:
+      start_line: 129
+      start_col: 0
+      end_line: 129
+      end_col: 0
+  - from: validators.schema_validate.validate_structural
+    to: validators.schema_validate.StructuralValidationResult
+    kind: call
+    edge_id: 3
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function 'StructuralValidationResult' in local module
+    range:
+      start_line: 46
+      start_col: 0
+      end_line: 46
+      end_col: 0
+  - from: validators.schema_validate.validate_structural
+    to: pathlib.Path
+    kind: call
+    edge_id: 4
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'Path' -> 'pathlib.Path'
+    range:
+      start_line: 58
+      start_col: 0
+      end_line: 58
+      end_col: 0
+  - from: validators.schema_validate.validate_structural
+    to: yaml.safe_load
+    kind: call
+    edge_id: 5
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'yaml' -> 'yaml.safe_load'
+    range:
+      start_line: 62
+      start_col: 0
+      end_line: 62
+      end_col: 0
+  - from: validators.schema_validate.validate_structural
+    to: jsonschema.Draft202012Validator
+    kind: call
+    edge_id: 6
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: imported_call
+        inferred_type: null
+        reasoning: Found import 'Draft202012Validator' -> 'jsonschema.Draft202012Validator'
+    range:
+      start_line: 93
+      start_col: 0
+      end_line: 93
+      end_col: 0
+  - from: validators.schema_validate._load_schemas
+    to: json.load
+    kind: call
+    edge_id: 7
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'json' -> 'json.load'
+    range:
+      start_line: 134
+      start_col: 0
+      end_line: 134
+      end_col: 0

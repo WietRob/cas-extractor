@@ -1,0 +1,46 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-e5a7e236
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-26T06:34:58.606852+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://product
+  root: ./cas_extractor
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: extractors.python_calls._get_self_calls_in_method
+  - symbol: extractors.python_calls._propagate_self_attr_summaries.propagate
+  - symbol: extractors.python_calls.propagate
+  edges:
+  - from: extractors.python_calls._propagate_self_attr_summaries.propagate
+    to: extractors.python_calls._get_self_calls_in_method
+    kind: call
+    edge_id: 0
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_get_self_calls_in_method' in local module
+    range:
+      start_line: 602
+      start_col: 0
+      end_line: 604
+      end_col: 0
+  - from: extractors.python_calls._propagate_self_attr_summaries.propagate
+    to: extractors.python_calls.propagate
+    kind: call
+    edge_id: 1
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function 'propagate' in local module
+    range:
+      start_line: 609
+      start_col: 0
+      end_line: 609
+      end_col: 0

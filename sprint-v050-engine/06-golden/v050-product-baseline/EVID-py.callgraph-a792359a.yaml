@@ -1,0 +1,141 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-a792359a
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-26T06:34:58.638383+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://product
+  root: ./cas_extractor
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ast.dump
+  - symbol: ast.fix_missing_locations
+  - symbol: ast.parse
+  - symbol: hashlib.sha256
+  - symbol: textwrap.dedent
+  - symbol: utils.fingerprint._ASTNormalizer
+  - symbol: utils.fingerprint.fingerprint_ast
+  - symbol: utils.fingerprint.fingerprint_module
+  edges:
+  - from: utils.fingerprint.fingerprint_ast
+    to: textwrap.dedent
+    kind: call
+    edge_id: 0
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'textwrap' -> 'textwrap.dedent'
+    range:
+      start_line: 57
+      start_col: 0
+      end_line: 57
+      end_col: 0
+  - from: utils.fingerprint.fingerprint_ast
+    to: utils.fingerprint._ASTNormalizer
+    kind: call
+    edge_id: 1
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function '_ASTNormalizer' in local module
+    range:
+      start_line: 63
+      start_col: 0
+      end_line: 66
+      end_col: 0
+  - from: utils.fingerprint.fingerprint_ast
+    to: ast.fix_missing_locations
+    kind: call
+    edge_id: 2
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'ast' -> 'ast.fix_missing_locations'
+    range:
+      start_line: 68
+      start_col: 0
+      end_line: 68
+      end_col: 0
+  - from: utils.fingerprint.fingerprint_ast
+    to: ast.dump
+    kind: call
+    edge_id: 3
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'ast' -> 'ast.dump'
+    range:
+      start_line: 70
+      start_col: 0
+      end_line: 70
+      end_col: 0
+  - from: utils.fingerprint.fingerprint_module
+    to: utils.fingerprint.fingerprint_ast
+    kind: call
+    edge_id: 4
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function 'fingerprint_ast' in local module
+    range:
+      start_line: 75
+      start_col: 0
+      end_line: 75
+      end_col: 0
+  - from: utils.fingerprint.fingerprint_ast
+    to: ast.parse
+    kind: call
+    edge_id: 5
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'ast' -> 'ast.parse'
+    range:
+      start_line: 59
+      start_col: 0
+      end_line: 59
+      end_col: 0
+  - from: utils.fingerprint.fingerprint_ast
+    to: hashlib.sha256
+    kind: call
+    edge_id: 6
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'hashlib' -> 'hashlib.sha256'
+    range:
+      start_line: 71
+      start_col: 0
+      end_line: 71
+      end_col: 0
+  - from: utils.fingerprint.fingerprint_ast
+    to: hashlib.sha256
+    kind: call
+    edge_id: 7
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'hashlib' -> 'hashlib.sha256'
+    range:
+      start_line: 61
+      start_col: 0
+      end_line: 61
+      end_col: 0
