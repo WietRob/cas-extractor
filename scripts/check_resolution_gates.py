@@ -247,66 +247,6 @@ def check_provenance_fields() -> bool:
         print(f"❌ GATE 6 FAILED: Provenance coverage below {min_coverage}%")
         return False
 
-    with open(manifest_path) as f:
-        manifest = json.load(f)
-
-    edges = manifest.get("edges", [])
-    if not edges:
-        print("⚠️  GATE 6 SKIPPED: No edges to check")
-        return True
-
-    provenance_coverage = {
-        "source_kind": 0,
-        "source_symbol": 0,
-        "evidence_path": 0,
-    }
-    total_resolved = 0
-
-    for edge in edges:
-        heuristic = edge.get("heuristic", "")
-        if heuristic and heuristic not in ("none", "skip"):
-            total_resolved += 1
-            resolution_detail = edge.get("resolution_detail", {})
-            trace = resolution_detail.get("trace", [])
-            if trace:
-                step = trace[0]
-                if step.get("source_kind"):
-                    provenance_coverage["source_kind"] += 1
-                if step.get("source_symbol"):
-                    provenance_coverage["source_symbol"] += 1
-                if step.get("evidence_path"):
-                    provenance_coverage["evidence_path"] += 1
-
-    if total_resolved == 0:
-        print("⚠️  GATE 6 SKIPPED: No resolved edges")
-        return True
-
-    coverage_pct = {
-        k: (v / total_resolved * 100) if total_resolved > 0 else 0
-        for k, v in provenance_coverage.items()
-    }
-
-    print(f"  Total resolved edges: {total_resolved}")
-    print(
-        f"  source_kind coverage: {provenance_coverage['source_kind']}/{total_resolved} ({coverage_pct['source_kind']:.1f}%)"
-    )
-    print(
-        f"  source_symbol coverage: {provenance_coverage['source_symbol']}/{total_resolved} ({coverage_pct['source_symbol']:.1f}%)"
-    )
-    print(
-        f"  evidence_path coverage: {provenance_coverage['evidence_path']}/{total_resolved} ({coverage_pct['evidence_path']:.1f}%)"
-    )
-
-    min_coverage = 80.0
-    all_pass = all(pct >= min_coverage for pct in coverage_pct.values())
-
-    if all_pass:
-        print(f"✅ GATE 6 PASSED: All provenance fields >= {min_coverage}% coverage")
-        return True
-    else:
-        print(f"❌ GATE 6 FAILED: Provenance coverage below {min_coverage}%")
-        return False
-
 
 def main():
     print("Resolution Gate Runner")
