@@ -8,6 +8,7 @@ Checks:
 3. No only-engine edges (parity gate)
 4. Mandatory heuristics present
 5. Deterministic ordering verified
+6. Provenance fields coverage (v0.6.0+)
 
 Exit codes:
   0: All gates pass
