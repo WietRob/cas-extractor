@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_encoding.test_terminal_output_response_charset_detection
+kind: entity
+type: py.function
+name: test_terminal_output_response_charset_detection
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_encoding.py
+anchors:
+- type: symbol
+  value: tests.test_encoding.test_terminal_output_response_charset_detection
+- type: fingerprint
+  value: b6118fef576ff6d1ce31ec7a4909974ab6c675a4cd07e92f119bae300984167f
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_encoding

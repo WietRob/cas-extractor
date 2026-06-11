@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-3260
+kind: relation
+type: calls
+from: PYFUNC-tests.test_compress.test_compress_stdin
+to: PYFUNC-fixtures.FILE_CONTENT.strip
+confidence:
+  level: E1
+  direction: confirmed
+evidence:
+- EVID-py.callgraph-a4bb9206
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1

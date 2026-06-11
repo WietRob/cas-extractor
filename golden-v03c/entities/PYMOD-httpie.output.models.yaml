@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.output.models
+kind: entity
+type: py.module
+name: models
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/models.py
+anchors:
+- type: symbol
+  value: httpie.output.models
+- type: fingerprint
+  value: a1d2de40de944a109ef7f97e1678e47eb191a7489bd8ee891161ff5df2ebd993
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output

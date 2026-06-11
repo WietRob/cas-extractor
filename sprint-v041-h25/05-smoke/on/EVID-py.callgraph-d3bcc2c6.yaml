@@ -1,0 +1,405 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-d3bcc2c6
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-22T13:25:47.787182+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://cas_extractor
+  root: cas_extractor
+  revision: git:test
+payload:
+  nodes:
+  - symbol: ?.decorators.append
+  - symbol: ?.p.startswith
+  - symbol: ?.params.append
+  - symbol: ?.py_file.read_text
+  - symbol: ?.py_file.relative_to
+  - symbol: ?.root.rglob
+  - symbol: ?.source.splitlines
+  - symbol: ast.get_docstring
+  - symbol: ast.iter_child_nodes
+  - symbol: ast.parse
+  - symbol: ast.unparse
+  - symbol: ast.walk
+  - symbol: cas_extractor.models.evidence.Anchor
+  - symbol: cas_extractor.models.evidence.SymbolEntry
+  - symbol: cas_extractor.utils.fingerprint.fingerprint_ast
+  - symbol: extractors.python_symbols._class_entry
+  - symbol: extractors.python_symbols._extract_from_module
+  - symbol: extractors.python_symbols._extract_source
+  - symbol: extractors.python_symbols._function_entry
+  - symbol: extractors.python_symbols._get_parent_qname
+  - symbol: extractors.python_symbols._path_to_module
+  - symbol: extractors.python_symbols.extract_symbols
+  - symbol: pathlib.Path
+  edges:
+  - from: extractors.python_symbols._extract_from_module
+    to: ?.source.splitlines
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 69
+      start_col: 0
+      end_line: 69
+      end_col: 0
+  - from: extractors.python_symbols._extract_from_module
+    to: ast.walk
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 85
+      start_col: 0
+      end_line: 85
+      end_col: 0
+  - from: extractors.python_symbols._get_parent_qname
+    to: ast.walk
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 95
+      start_col: 0
+      end_line: 95
+      end_col: 0
+  - from: extractors.python_symbols._function_entry
+    to: extractors.python_symbols._get_parent_qname
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 122
+      start_col: 0
+      end_line: 122
+      end_col: 0
+  - from: extractors.python_symbols._function_entry
+    to: extractors.python_symbols._extract_source
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 124
+      start_col: 0
+      end_line: 124
+      end_col: 0
+  - from: extractors.python_symbols._function_entry
+    to: ast.walk
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 128
+      start_col: 0
+      end_line: 128
+      end_col: 0
+  - from: extractors.python_symbols._function_entry
+    to: cas_extractor.models.evidence.SymbolEntry
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 161
+      start_col: 0
+      end_line: 175
+      end_col: 0
+  - from: extractors.python_symbols._class_entry
+    to: extractors.python_symbols._get_parent_qname
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 186
+      start_col: 0
+      end_line: 186
+      end_col: 0
+  - from: extractors.python_symbols._class_entry
+    to: extractors.python_symbols._extract_source
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 188
+      start_col: 0
+      end_line: 188
+      end_col: 0
+  - from: extractors.python_symbols._class_entry
+    to: cas_extractor.models.evidence.SymbolEntry
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 197
+      start_col: 0
+      end_line: 209
+      end_col: 0
+  - from: extractors.python_symbols.extract_symbols
+    to: ?.root.rglob
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 34
+      start_col: 0
+      end_line: 34
+      end_col: 0
+  - from: extractors.python_symbols.extract_symbols
+    to: ?.py_file.relative_to
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 36
+      start_col: 0
+      end_line: 36
+      end_col: 0
+  - from: extractors.python_symbols.extract_symbols
+    to: extractors.python_symbols._path_to_module
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 47
+      start_col: 0
+      end_line: 47
+      end_col: 0
+  - from: extractors.python_symbols._extract_from_module
+    to: cas_extractor.models.evidence.SymbolEntry
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 72
+      start_col: 0
+      end_line: 83
+      end_col: 0
+  - from: extractors.python_symbols._get_parent_qname
+    to: ast.iter_child_nodes
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 96
+      start_col: 0
+      end_line: 96
+      end_col: 0
+  - from: extractors.python_symbols._function_entry
+    to: ast.iter_child_nodes
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 129
+      start_col: 0
+      end_line: 129
+      end_col: 0
+  - from: extractors.python_symbols._function_entry
+    to: ?.params.append
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 143
+      start_col: 0
+      end_line: 143
+      end_col: 0
+  - from: extractors.python_symbols.extract_symbols
+    to: pathlib.Path
+    kind: call
+    edge_id: 17
+    range:
+      start_line: 32
+      start_col: 0
+      end_line: 32
+      end_col: 0
+  - from: extractors.python_symbols.extract_symbols
+    to: ?.py_file.read_text
+    kind: call
+    edge_id: 18
+    range:
+      start_line: 42
+      start_col: 0
+      end_line: 42
+      end_col: 0
+  - from: extractors.python_symbols.extract_symbols
+    to: ast.parse
+    kind: call
+    edge_id: 19
+    range:
+      start_line: 43
+      start_col: 0
+      end_line: 43
+      end_col: 0
+  - from: extractors.python_symbols.extract_symbols
+    to: extractors.python_symbols._extract_from_module
+    kind: call
+    edge_id: 20
+    range:
+      start_line: 48
+      start_col: 0
+      end_line: 48
+      end_col: 0
+  - from: extractors.python_symbols._function_entry
+    to: ast.unparse
+    kind: call
+    edge_id: 21
+    range:
+      start_line: 149
+      start_col: 0
+      end_line: 149
+      end_col: 0
+  - from: extractors.python_symbols._function_entry
+    to: ?.decorators.append
+    kind: call
+    edge_id: 22
+    range:
+      start_line: 157
+      start_col: 0
+      end_line: 157
+      end_col: 0
+  - from: extractors.python_symbols._function_entry
+    to: cas_extractor.models.evidence.Anchor
+    kind: call
+    edge_id: 23
+    range:
+      start_line: 164
+      start_col: 0
+      end_line: 170
+      end_col: 0
+  - from: extractors.python_symbols._function_entry
+    to: ast.get_docstring
+    kind: call
+    edge_id: 24
+    range:
+      start_line: 174
+      start_col: 0
+      end_line: 174
+      end_col: 0
+  - from: extractors.python_symbols._class_entry
+    to: ?.decorators.append
+    kind: call
+    edge_id: 25
+    range:
+      start_line: 193
+      start_col: 0
+      end_line: 193
+      end_col: 0
+  - from: extractors.python_symbols._class_entry
+    to: cas_extractor.models.evidence.Anchor
+    kind: call
+    edge_id: 26
+    range:
+      start_line: 200
+      start_col: 0
+      end_line: 206
+      end_col: 0
+  - from: extractors.python_symbols._class_entry
+    to: ast.get_docstring
+    kind: call
+    edge_id: 27
+    range:
+      start_line: 208
+      start_col: 0
+      end_line: 208
+      end_col: 0
+  - from: extractors.python_symbols._extract_from_module
+    to: cas_extractor.models.evidence.Anchor
+    kind: call
+    edge_id: 28
+    range:
+      start_line: 75
+      start_col: 0
+      end_line: 81
+      end_col: 0
+  - from: extractors.python_symbols._extract_from_module
+    to: ast.get_docstring
+    kind: call
+    edge_id: 29
+    range:
+      start_line: 82
+      start_col: 0
+      end_line: 82
+      end_col: 0
+  - from: extractors.python_symbols._extract_from_module
+    to: extractors.python_symbols._function_entry
+    kind: call
+    edge_id: 30
+    range:
+      start_line: 87
+      start_col: 0
+      end_line: 87
+      end_col: 0
+  - from: extractors.python_symbols._function_entry
+    to: ast.unparse
+    kind: call
+    edge_id: 31
+    range:
+      start_line: 140
+      start_col: 0
+      end_line: 140
+      end_col: 0
+  - from: extractors.python_symbols._function_entry
+    to: ast.unparse
+    kind: call
+    edge_id: 32
+    range:
+      start_line: 157
+      start_col: 0
+      end_line: 157
+      end_col: 0
+  - from: extractors.python_symbols._function_entry
+    to: ?.decorators.append
+    kind: call
+    edge_id: 33
+    range:
+      start_line: 159
+      start_col: 0
+      end_line: 159
+      end_col: 0
+  - from: extractors.python_symbols._class_entry
+    to: ast.unparse
+    kind: call
+    edge_id: 34
+    range:
+      start_line: 193
+      start_col: 0
+      end_line: 193
+      end_col: 0
+  - from: extractors.python_symbols._class_entry
+    to: ?.decorators.append
+    kind: call
+    edge_id: 35
+    range:
+      start_line: 195
+      start_col: 0
+      end_line: 195
+      end_col: 0
+  - from: extractors.python_symbols.extract_symbols
+    to: ?.p.startswith
+    kind: call
+    edge_id: 36
+    range:
+      start_line: 38
+      start_col: 0
+      end_line: 38
+      end_col: 0
+  - from: extractors.python_symbols._extract_from_module
+    to: extractors.python_symbols._class_entry
+    kind: call
+    edge_id: 37
+    range:
+      start_line: 89
+      start_col: 0
+      end_line: 89
+      end_col: 0
+  - from: extractors.python_symbols._function_entry
+    to: cas_extractor.utils.fingerprint.fingerprint_ast
+    kind: call
+    edge_id: 38
+    range:
+      start_line: 169
+      start_col: 0
+      end_line: 169
+      end_col: 0
+  - from: extractors.python_symbols._class_entry
+    to: cas_extractor.utils.fingerprint.fingerprint_ast
+    kind: call
+    edge_id: 39
+    range:
+      start_line: 205
+      start_col: 0
+      end_line: 205
+      end_col: 0
+  - from: extractors.python_symbols._extract_from_module
+    to: cas_extractor.utils.fingerprint.fingerprint_ast
+    kind: call
+    edge_id: 40
+    range:
+      start_line: 80
+      start_col: 0
+      end_line: 80
+      end_col: 0

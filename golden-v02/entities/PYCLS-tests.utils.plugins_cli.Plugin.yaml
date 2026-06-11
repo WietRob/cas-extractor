@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-tests.utils.plugins_cli.Plugin
+kind: entity
+type: py.class
+name: Plugin
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/utils/plugins_cli.py
+anchors:
+- type: symbol
+  value: tests.utils.plugins_cli.Plugin
+- type: fingerprint
+  value: f0e7ddd68295c9f4d766ca26f15b1cc76fdd52c2ba5b2c8ee74da4a80c5b4d97
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils.plugins_cli

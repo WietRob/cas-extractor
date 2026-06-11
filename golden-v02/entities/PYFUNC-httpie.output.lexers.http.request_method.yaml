@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.lexers.http.request_method
+kind: entity
+type: py.function
+name: request_method
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/output/lexers/http.py
+anchors:
+- type: symbol
+  value: httpie.output.lexers.http.request_method
+- type: fingerprint
+  value: 2209e5cbad85f2f367f75d05c2bcd89a7fe2384aff2db11005ebc86545bfcc0b
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.lexers.http

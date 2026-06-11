@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.utils.http_server.status_custom_msg
+kind: entity
+type: py.function
+name: status_custom_msg
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/utils/http_server.py
+anchors:
+- type: symbol
+  value: tests.utils.http_server.status_custom_msg
+- type: fingerprint
+  value: cfb05ba525212ce5a61d24cf1a47b734077a08e691cdecc8861326583fe62961
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils.http_server

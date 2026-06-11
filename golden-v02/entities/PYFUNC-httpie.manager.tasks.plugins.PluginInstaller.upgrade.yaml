@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.manager.tasks.plugins.PluginInstaller.upgrade
+kind: entity
+type: py.function
+name: upgrade
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/manager/tasks/plugins.py
+anchors:
+- type: symbol
+  value: httpie.manager.tasks.plugins.PluginInstaller.upgrade
+- type: fingerprint
+  value: c815fdbfe88df1f47b77825c7cbe0e5257f1e963b739ff32a0bd507abdad3216
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.manager.tasks.plugins.PluginInstaller

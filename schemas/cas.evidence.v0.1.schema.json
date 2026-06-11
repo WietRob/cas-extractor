@@ -1,0 +1,244 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "cas.evidence.v0.1.schema.json",
+  "title": "CAS Evidence v0.1",
+  "description": "Evidence artifacts - raw measurements from extractors",
+  "type": "object",
+  "required": ["schema", "id", "kind", "type", "created_at", "created_by", "source", "payload"],
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "cas.evidence.v0.1"
+    },
+    "id": {
+      "$ref": "common.v0.1.schema.json#/$defs/evidence_id"
+    },
+    "kind": {
+      "type": "string",
+      "const": "evidence"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "py.symbols",
+        "py.callgraph",
+        "py.importgraph",
+        "web.exports",
+        "web.importgraph",
+        "web.jsx_tree"
+      ]
+    },
+    "created_at": {
+      "$ref": "common.v0.1.schema.json#/$defs/timestamp"
+    },
+    "created_by": {
+      "type": "string",
+      "description": "Extractor identifier, e.g. extractor:py.v0.1"
+    },
+    "source": {
+      "$ref": "common.v0.1.schema.json#/$defs/source"
+    },
+    "payload": {
+      "type": "object",
+      "description": "Type-specific payload, structure depends on 'type' field"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "type": { "const": "py.symbols" }
+        },
+        "required": ["type"]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": ["symbols"],
+            "properties": {
+              "symbols": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["qualified", "kind", "file"],
+                  "properties": {
+                    "qualified": { "type": "string" },
+                    "kind": { "type": "string", "enum": ["module", "class", "function", "method"] },
+                    "file": { "type": "string" },
+                    "params": {
+                      "type": "array",
+                      "items": {
+                        "oneOf": [
+                          { "type": "string" },
+                          {
+                            "type": "object",
+                            "properties": {
+                              "name": { "type": "string" },
+                              "annotation": { "type": "string" },
+                              "default": { "type": "string" }
+                            },
+                            "additionalProperties": false
+                          }
+                        ]
+                      }
+                    },
+                    "returns": { "type": "string" },
+                    "decorators": { "type": "array", "items": { "type": "string" } },
+                    "range": {
+                      "type": "object",
+                      "properties": {
+                        "start_line": { "type": "integer" },
+                        "start_col": { "type": "integer" },
+                        "end_line": { "type": "integer" },
+                        "end_col": { "type": "integer" }
+                      }
+                    },
+                    "fingerprint": { "type": "string" },
+                    "base_classes": { "type": "array", "items": { "type": "string" } }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": { "const": "py.callgraph" }
+        },
+        "required": ["type"]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": ["nodes", "edges"],
+            "properties": {
+              "nodes": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["symbol"],
+                  "properties": {
+                    "symbol": { "type": "string" },
+                    "file": { "type": "string" }
+                  },
+                  "additionalProperties": false
+                }
+              },
+"edges": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["from", "to", "kind"],
+                  "properties": {
+                    "from": { "type": "string" },
+                    "to": { "type": "string" },
+                    "kind": { "type": "string", "enum": ["call", "method_call", "super_call", "callback"] },
+                    "edge_id": { "type": "integer" },
+                    "range": {
+                      "type": "object",
+                      "properties": {
+                        "start_line": { "type": "integer" },
+                        "start_col": { "type": "integer" },
+                        "end_line": { "type": "integer" },
+                        "end_col": { "type": "integer" }
+                      },
+                      "additionalProperties": false
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": { "const": "py.importgraph" }
+        },
+        "required": ["type"]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": ["imports"],
+            "properties": {
+              "imports": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["from", "imports"],
+                  "properties": {
+                    "from": { "type": "string" },
+                    "imports": {
+                      "type": "array",
+                      "items": { "type": "string" }
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "type": { "const": "web.exports" }
+        },
+        "required": ["type"]
+      },
+      "then": {
+        "properties": {
+          "payload": {
+            "type": "object",
+            "required": ["files"],
+            "properties": {
+              "files": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["file", "exports"],
+                  "properties": {
+                    "file": { "type": "string" },
+                    "exports": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": ["name", "kind"],
+                        "properties": {
+                          "name": { "type": "string" },
+                          "kind": { "type": "string" },
+                          "props": { "type": "array", "items": { "type": "string" } },
+                          "fingerprint": { "type": "string" }
+                        },
+                        "additionalProperties": false
+                      }
+                    }
+                  },
+                  "additionalProperties": false
+                }
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      }
+    }
+  ],
+  "additionalProperties": false
+}

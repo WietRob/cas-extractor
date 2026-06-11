@@ -1,0 +1,26 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-2fe356b6
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-22T08:37:44.806595+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  imports:
+  - from: tests.test_httpie_cli
+    imports:
+    - pytest
+    - shutil
+    - json
+    - httpie.sessions.SESSIONS_DIR_NAME
+    - httpie.status.ExitStatus
+    - httpie.cli.options.PARSER_SPEC_VERSION
+    - tests.utils.DUMMY_HOST
+    - tests.utils.httpie
+    - tests.fixtures.SESSION_FILES_PATH
+    - tests.fixtures.SESSION_FILES_NEW
+    - tests.fixtures.SESSION_FILES_OLD
+    - tests.fixtures.read_session_file

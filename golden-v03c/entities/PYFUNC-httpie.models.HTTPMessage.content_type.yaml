@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.models.HTTPMessage.content_type
+kind: entity
+type: py.function
+name: content_type
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/models.py
+anchors:
+- type: symbol
+  value: httpie.models.HTTPMessage.content_type
+- type: fingerprint
+  value: 3292dadf44c1db00cf7a24f982cb6ce9c45d016757c645227689a5b4a7d6e32b
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.models.HTTPMessage

@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-3614
+kind: relation
+type: calls
+from: PYFUNC-tests.test_xml.test_xml_format_options
+to: PYFUNC-httpie.output.formatters.xml.parse_xml
+confidence:
+  level: E1
+  direction: confirmed
+evidence:
+- EVID-py.callgraph-ce912327
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1

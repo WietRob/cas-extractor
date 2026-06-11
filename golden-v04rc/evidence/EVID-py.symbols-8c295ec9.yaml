@@ -1,0 +1,116 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-8c295ec9
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T08:37:44.382522+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: extras.profiling.run
+    kind: module
+    file: extras/profiling/run.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 287
+      end_col: 0
+    fingerprint: fd0b148d502e58a39aeee00b56fe6e9c2f2591cd2f922849b52ee9ef69ee48d2
+  - qualified: extras.profiling.run.call
+    kind: function
+    file: extras/profiling/run.py
+    range:
+      start_line: 60
+      start_col: 0
+      end_line: 62
+      end_col: 0
+    fingerprint: 4ba64f2f850813dc2c65ff6893ef8500cd20c9b8193fc524e871b307275071f6
+  - qualified: extras.profiling.run.Environment
+    kind: class
+    file: extras/profiling/run.py
+    range:
+      start_line: 65
+      start_col: 0
+      end_line: 79
+      end_col: 0
+    fingerprint: f699a6b757e07bc9d5556fd45d1969eb71b6d0e6b3b5cbb5733767765f7a889d
+  - qualified: extras.profiling.run.HTTPieEnvironment
+    kind: class
+    file: extras/profiling/run.py
+    range:
+      start_line: 83
+      start_col: 0
+      end_line: 136
+      end_col: 0
+    fingerprint: 9ddd37bbba213b26d3d4e0716975ddfb6aca1764b859d8fbfa4d331d805d6593
+    decorators:
+    - dataclass
+  - qualified: extras.profiling.run.LocalCommandEnvironment
+    kind: class
+    file: extras/profiling/run.py
+    range:
+      start_line: 140
+      start_col: 0
+      end_line: 145
+      end_col: 0
+    fingerprint: 973b87c89baf0f193a806afaac2fff3dc502fe3cff1db1ec164b6fc0b51d81ba
+    decorators:
+    - dataclass
+  - qualified: extras.profiling.run.dump_results
+    kind: function
+    file: extras/profiling/run.py
+    range:
+      start_line: 148
+      start_col: 0
+      end_line: 165
+      end_col: 0
+    fingerprint: 4ee89bb5cb4c77ce3bac0ba4e2f4679487b8d6440ef88b0df2ae4824628167d3
+    params:
+    - name: results
+      annotation: List[str]
+    - name: file
+      annotation: IO[str]
+    - name: min_speed
+      annotation: Optional[str]
+    returns: None
+  - qualified: extras.profiling.run.compare
+    kind: function
+    file: extras/profiling/run.py
+    range:
+      start_line: 168
+      start_col: 0
+      end_line: 176
+      end_col: 0
+    fingerprint: de48f7981ea78b14129a414e712d55f600d3c45bdad464cc51d6f201b490aeb8
+  - qualified: extras.profiling.run.run
+    kind: function
+    file: extras/profiling/run.py
+    range:
+      start_line: 179
+      start_col: 0
+      end_line: 220
+      end_col: 0
+    fingerprint: dfc3d742f4a0b8d0ba4914072680a8ed18e0485c315a84a4723deaa8c1bca821
+    params:
+    - name: configs
+      annotation: List[Dict[str, Environment]]
+    - name: file
+      annotation: IO[str]
+    - name: debug
+      annotation: bool
+    - name: min_speed
+      annotation: Optional[str]
+    returns: None
+  - qualified: extras.profiling.run.main
+    kind: function
+    file: extras/profiling/run.py
+    range:
+      start_line: 223
+      start_col: 0
+      end_line: 283
+      end_col: 0
+    fingerprint: 25113b78ad7a32424ae424b460fd6acc956ed51bbfde63c0b9960a016855a50b
+    returns: None

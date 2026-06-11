@@ -1,0 +1,181 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-e6f21f49
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:51:32.104336+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: extras.scripts.generate_man_pages.ManPageBuilder.__init__
+    kind: method
+    file: extras/scripts/generate_man_pages.py
+    range:
+      start_line: 42
+      start_col: 0
+      end_line: 43
+      end_col: 0
+    fingerprint: 59c7c46b251755ee86b2d695acfbd29473c2a0407b278d02d7fb585010c04612
+    params:
+    - name: self
+  - qualified: extras.scripts.generate_man_pages.ManPageBuilder.title_line
+    kind: method
+    file: extras/scripts/generate_man_pages.py
+    range:
+      start_line: 45
+      start_col: 0
+      end_line: 55
+      end_col: 0
+    fingerprint: de97b3221dd68e852c1dfdfd1fb460f620b189bfcbb52c10ab303e480fcfbadc
+    params:
+    - name: self
+    - name: full_name
+      annotation: str
+    - name: program_name
+      annotation: str
+    - name: program_version
+      annotation: str
+    - name: last_edit_date
+      annotation: str
+    returns: None
+  - qualified: extras.scripts.generate_man_pages.ManPageBuilder.set_name
+    kind: method
+    file: extras/scripts/generate_man_pages.py
+    range:
+      start_line: 57
+      start_col: 0
+      end_line: 59
+      end_col: 0
+    fingerprint: 8e6ff0eb645be9231020c47b989d3bcc83e0ac6de9f4bc82dc7945e56ce99231
+    params:
+    - name: self
+    - name: program_name
+      annotation: str
+    returns: None
+  - qualified: extras.scripts.generate_man_pages.ManPageBuilder.write
+    kind: method
+    file: extras/scripts/generate_man_pages.py
+    range:
+      start_line: 61
+      start_col: 0
+      end_line: 64
+      end_col: 0
+    fingerprint: 2b8c9ca8735af39bbac70a3e4d1ac0e4784c550fc1f86f836fb3795f97271202
+    params:
+    - name: self
+    - name: text
+      annotation: str
+    returns: None
+  - qualified: extras.scripts.generate_man_pages.ManPageBuilder.separate
+    kind: method
+    file: extras/scripts/generate_man_pages.py
+    range:
+      start_line: 66
+      start_col: 0
+      end_line: 67
+      end_col: 0
+    fingerprint: 984bcc4f70f4f66ae1a9f6ce4635e8e15c630639ea663bce6ebd8467c5463a8b
+    params:
+    - name: self
+    returns: None
+  - qualified: extras.scripts.generate_man_pages.ManPageBuilder.format_desc
+    kind: method
+    file: extras/scripts/generate_man_pages.py
+    range:
+      start_line: 69
+      start_col: 0
+      end_line: 76
+      end_col: 0
+    fingerprint: 95757fada6dc596ea72bd0b7eead33e4a2aa8b621d452845b066ade139a5ee9a
+    params:
+    - name: self
+    - name: desc
+      annotation: str
+    returns: str
+  - qualified: extras.scripts.generate_man_pages.ManPageBuilder.add_comment
+    kind: method
+    file: extras/scripts/generate_man_pages.py
+    range:
+      start_line: 78
+      start_col: 0
+      end_line: 79
+      end_col: 0
+    fingerprint: b5e9f142daa383d0483f45cf030e3c4e97a5c39a8e68dda4d2b629209d523c50
+    params:
+    - name: self
+    - name: comment
+      annotation: str
+    returns: None
+  - qualified: extras.scripts.generate_man_pages.ManPageBuilder.add_options
+    kind: method
+    file: extras/scripts/generate_man_pages.py
+    range:
+      start_line: 81
+      start_col: 0
+      end_line: 85
+      end_col: 0
+    fingerprint: 94136d7dee260a34945773218e73893c3adfc7e56f149c09b114252bd18e6785
+    params:
+    - name: self
+    - name: options
+      annotation: Iterable[str]
+    returns: None
+  - qualified: extras.scripts.generate_man_pages.ManPageBuilder.build
+    kind: method
+    file: extras/scripts/generate_man_pages.py
+    range:
+      start_line: 87
+      start_col: 0
+      end_line: 88
+      end_col: 0
+    fingerprint: 092fb5b59be9e8aac8489785b17ab6193e3d496dbb34e46a7b737ab4b310edcf
+    params:
+    - name: self
+    returns: str
+  - qualified: extras.scripts.generate_man_pages.ManPageBuilder.section
+    kind: method
+    file: extras/scripts/generate_man_pages.py
+    range:
+      start_line: 91
+      start_col: 0
+      end_line: 95
+      end_col: 0
+    fingerprint: fbd2eeed95a6eeee7b8a2d6a3aed351d4f078766364d73c0cb3cacc69013211a
+    decorators:
+    - contextmanager
+    params:
+    - name: self
+    - name: section_name
+      annotation: str
+    returns: Iterator[None]
+  - qualified: extras.scripts.generate_man_pages.ManPageBuilder.underline
+    kind: method
+    file: extras/scripts/generate_man_pages.py
+    range:
+      start_line: 97
+      start_col: 0
+      end_line: 98
+      end_col: 0
+    fingerprint: 04c69aba9e41ade484cfd5df891196200ba98da4f88953fbe44c8ea6d03fb86b
+    params:
+    - name: self
+    - name: text
+      annotation: str
+    returns: str
+  - qualified: extras.scripts.generate_man_pages.ManPageBuilder.boldify
+    kind: method
+    file: extras/scripts/generate_man_pages.py
+    range:
+      start_line: 100
+      start_col: 0
+      end_line: 101
+      end_col: 0
+    fingerprint: 309b85f90c624e678fb7a6f49de6f8e2606d1dfcecbf05cf985effc5edd856a2
+    params:
+    - name: self
+    - name: text
+      annotation: str
+    returns: str

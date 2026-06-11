@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_ssl.test_ssl_version
+kind: entity
+type: py.function
+name: test_ssl_version
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_ssl.py
+anchors:
+- type: symbol
+  value: tests.test_ssl.test_ssl_version
+- type: fingerprint
+  value: 158b1fc643b65efdfc48e32994d0db67a7cb6b0c913e31c15c86e800a7896f4d
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_ssl

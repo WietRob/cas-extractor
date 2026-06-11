@@ -1,0 +1,54 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-e9c58f09
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T17:44:05.293117+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.converter_class
+  - symbol: ?.converter_class.supports
+  - symbol: httpie.output.processing.Conversion.get_converter
+  - symbol: httpie.output.processing.is_valid_mime
+  - symbol: plugins.registry.plugin_manager.get_converters
+  edges:
+  - from: httpie.output.processing.Conversion.get_converter
+    to: httpie.output.processing.is_valid_mime
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 20
+      start_col: 0
+      end_line: 20
+      end_col: 0
+  - from: httpie.output.processing.Conversion.get_converter
+    to: plugins.registry.plugin_manager.get_converters
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 21
+      start_col: 0
+      end_line: 21
+      end_col: 0
+  - from: httpie.output.processing.Conversion.get_converter
+    to: ?.converter_class.supports
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 22
+      start_col: 0
+      end_line: 22
+      end_col: 0
+  - from: httpie.output.processing.Conversion.get_converter
+    to: ?.converter_class
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 23
+      start_col: 0
+      end_line: 23
+      end_col: 0

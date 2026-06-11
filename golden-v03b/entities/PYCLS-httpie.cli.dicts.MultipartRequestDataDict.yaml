@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.cli.dicts.MultipartRequestDataDict
+kind: entity
+type: py.class
+name: MultipartRequestDataDict
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/dicts.py
+anchors:
+- type: symbol
+  value: httpie.cli.dicts.MultipartRequestDataDict
+- type: fingerprint
+  value: 89874fffe339b01e8cd6a5701da28c88133c4d8a4896faf06163f8605ec6d0c9
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.dicts

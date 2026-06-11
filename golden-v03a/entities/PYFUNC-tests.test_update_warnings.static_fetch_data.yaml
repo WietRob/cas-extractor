@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_update_warnings.static_fetch_data
+kind: entity
+type: py.function
+name: static_fetch_data
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_update_warnings.py
+anchors:
+- type: symbol
+  value: tests.test_update_warnings.static_fetch_data
+- type: fingerprint
+  value: 3d6e55f5bdfb68e59b18507bf5c096b051f2ca5f847a3e8244cd512c166b08f6
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_update_warnings

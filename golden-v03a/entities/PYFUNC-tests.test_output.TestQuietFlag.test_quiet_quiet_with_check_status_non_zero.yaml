@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_output.TestQuietFlag.test_quiet_quiet_with_check_status_non_zero
+kind: entity
+type: py.function
+name: test_quiet_quiet_with_check_status_non_zero
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_output.py
+anchors:
+- type: symbol
+  value: tests.test_output.TestQuietFlag.test_quiet_quiet_with_check_status_non_zero
+- type: fingerprint
+  value: ac46d62d9b03030b6cdae115df6f503dfd42d9247cb80d2aa837092a8b20fc4c
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_output.TestQuietFlag

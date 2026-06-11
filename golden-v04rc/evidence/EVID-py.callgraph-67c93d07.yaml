@@ -1,0 +1,220 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-67c93d07
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-22T08:37:45.620846+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: tests.test_auth.test_auth_plugin_netrc_parse
+  - symbol: tests.test_auth.test_basic_auth
+  - symbol: tests.test_auth.test_bearer_auth
+  - symbol: tests.test_auth.test_credentials_in_url
+  - symbol: tests.test_auth.test_credentials_in_url_auth_flag_has_priority
+  - symbol: tests.test_auth.test_digest_auth
+  - symbol: tests.test_auth.test_ignore_netrc
+  - symbol: tests.test_auth.test_ignore_netrc_null_auth
+  - symbol: tests.test_auth.test_ignore_netrc_together_with_auth
+  - symbol: tests.test_auth.test_ignore_netrc_with_auth_type_resulting_in_missing_auth
+  - symbol: tests.test_auth.test_missing_auth
+  - symbol: tests.test_auth.test_netrc
+  - symbol: tests.test_auth.test_only_username_in_url
+  - symbol: tests.test_auth.test_password_prompt
+  - symbol: unittest.mock.patch
+  - symbol: utils.MockEnvironment
+  - symbol: utils.add_auth
+  - symbol: utils.http
+  edges:
+  - from: tests.test_auth.test_password_prompt
+    to: unittest.mock.patch
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 41
+      start_col: 0
+      end_line: 42
+      end_col: 0
+  - from: tests.test_auth.test_basic_auth
+    to: utils.http
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 14
+      start_col: 0
+      end_line: 15
+      end_col: 0
+  - from: tests.test_auth.test_digest_auth
+    to: utils.http
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 22
+      start_col: 0
+      end_line: 23
+      end_col: 0
+  - from: tests.test_auth.test_bearer_auth
+    to: utils.http
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 34
+      start_col: 0
+      end_line: 35
+      end_col: 0
+  - from: tests.test_auth.test_password_prompt
+    to: utils.http
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 44
+      start_col: 0
+      end_line: 45
+      end_col: 0
+  - from: tests.test_auth.test_credentials_in_url
+    to: utils.add_auth
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 51
+      start_col: 0
+      end_line: 52
+      end_col: 0
+  - from: tests.test_auth.test_credentials_in_url
+    to: utils.http
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 53
+      start_col: 0
+      end_line: 53
+      end_col: 0
+  - from: tests.test_auth.test_credentials_in_url_auth_flag_has_priority
+    to: utils.add_auth
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 61
+      start_col: 0
+      end_line: 62
+      end_col: 0
+  - from: tests.test_auth.test_credentials_in_url_auth_flag_has_priority
+    to: utils.http
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 63
+      start_col: 0
+      end_line: 63
+      end_col: 0
+  - from: tests.test_auth.test_missing_auth
+    to: utils.http
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 84
+      start_col: 0
+      end_line: 89
+      end_col: 0
+  - from: tests.test_auth.test_netrc
+    to: unittest.mock.patch
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 97
+      start_col: 0
+      end_line: 97
+      end_col: 0
+  - from: tests.test_auth.test_netrc
+    to: utils.http
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 99
+      start_col: 0
+      end_line: 99
+      end_col: 0
+  - from: tests.test_auth.test_ignore_netrc
+    to: unittest.mock.patch
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 105
+      start_col: 0
+      end_line: 105
+      end_col: 0
+  - from: tests.test_auth.test_ignore_netrc
+    to: utils.http
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 107
+      start_col: 0
+      end_line: 107
+      end_col: 0
+  - from: tests.test_auth.test_ignore_netrc_with_auth_type_resulting_in_missing_auth
+    to: unittest.mock.patch
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 121
+      start_col: 0
+      end_line: 121
+      end_col: 0
+  - from: tests.test_auth.test_ignore_netrc_with_auth_type_resulting_in_missing_auth
+    to: utils.http
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 123
+      start_col: 0
+      end_line: 128
+      end_col: 0
+  - from: tests.test_auth.test_auth_plugin_netrc_parse
+    to: unittest.mock.patch
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 143
+      start_col: 0
+      end_line: 143
+      end_col: 0
+  - from: tests.test_auth.test_auth_plugin_netrc_parse
+    to: utils.http
+    kind: call
+    edge_id: 17
+    range:
+      start_line: 145
+      start_col: 0
+      end_line: 145
+      end_col: 0
+  - from: tests.test_auth.test_only_username_in_url
+    to: utils.MockEnvironment
+    kind: call
+    edge_id: 18
+    range:
+      start_line: 77
+      start_col: 0
+      end_line: 77
+      end_col: 0
+  - from: tests.test_auth.test_ignore_netrc_together_with_auth
+    to: utils.MockEnvironment
+    kind: call
+    edge_id: 19
+    range:
+      start_line: 115
+      start_col: 0
+      end_line: 115
+      end_col: 0
+  - from: tests.test_auth.test_ignore_netrc_null_auth
+    to: utils.MockEnvironment
+    kind: call
+    edge_id: 20
+    range:
+      start_line: 153
+      start_col: 0
+      end_line: 153
+      end_col: 0

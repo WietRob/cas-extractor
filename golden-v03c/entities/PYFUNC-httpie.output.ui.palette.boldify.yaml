@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.ui.palette.boldify
+kind: entity
+type: py.function
+name: boldify
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/ui/palette.py
+anchors:
+- type: symbol
+  value: httpie.output.ui.palette.boldify
+- type: fingerprint
+  value: d455332589811485e56d4d133d00142bb104777500f6c1e4e560a489fb1a7c3f
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.ui.palette

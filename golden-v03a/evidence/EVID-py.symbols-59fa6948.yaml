@@ -1,0 +1,298 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-59fa6948
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:53.120200+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: tests.test_encoding
+    kind: module
+    file: tests/test_encoding.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 222
+      end_col: 0
+    fingerprint: f8926e786f343dc373e05c01ec816d185f7fc2258ffe8ae59d08bcb250b7ab2e
+  - qualified: tests.test_encoding.test_charset_text_pairs
+    kind: function
+    file: tests/test_encoding.py
+    range:
+      start_line: 23
+      start_col: 0
+      end_line: 29
+      end_col: 0
+    fingerprint: 1473399cd62884ebf368593c7f1da39dbeaa4302c582a8997f4703bbca472fb0
+  - qualified: tests.test_encoding.test_unicode_headers
+    kind: function
+    file: tests/test_encoding.py
+    range:
+      start_line: 32
+      start_col: 0
+      end_line: 35
+      end_col: 0
+    fingerprint: e1af47e364751c800881f36cd4b804d56270d24e75f849009e0fb338e5ef9289
+    params:
+    - name: httpbin
+  - qualified: tests.test_encoding.test_unicode_headers_verbose
+    kind: function
+    file: tests/test_encoding.py
+    range:
+      start_line: 38
+      start_col: 0
+      end_line: 42
+      end_col: 0
+    fingerprint: 5f02dcb02c9487987046aeaec90fa2b080bbb7704d6349d34af484389b010986
+    params:
+    - name: httpbin
+  - qualified: tests.test_encoding.test_unicode_raw
+    kind: function
+    file: tests/test_encoding.py
+    range:
+      start_line: 45
+      start_col: 0
+      end_line: 48
+      end_col: 0
+    fingerprint: 9a907d29e3ad5daca2be9d1b05dca66483290aa2ef130721c4c1361385e7b4e3
+    params:
+    - name: httpbin
+  - qualified: tests.test_encoding.test_unicode_raw_verbose
+    kind: function
+    file: tests/test_encoding.py
+    range:
+      start_line: 51
+      start_col: 0
+      end_line: 55
+      end_col: 0
+    fingerprint: 413b68d1c73d081263f16d901d59ed7c0e25c7b702782451730ae3c3bff7cb1f
+    params:
+    - name: httpbin
+  - qualified: tests.test_encoding.test_unicode_form_item
+    kind: function
+    file: tests/test_encoding.py
+    range:
+      start_line: 58
+      start_col: 0
+      end_line: 61
+      end_col: 0
+    fingerprint: b8b7b2eb9499ea421815893487246dfeefe71f06598a7bc6b529b9c4fb3a3a05
+    params:
+    - name: httpbin
+  - qualified: tests.test_encoding.test_unicode_form_item_verbose
+    kind: function
+    file: tests/test_encoding.py
+    range:
+      start_line: 64
+      start_col: 0
+      end_line: 68
+      end_col: 0
+    fingerprint: f5c444f6881eba10ea865a77370c70aa52aa954c9fe0cece21ecdac845709a88
+    params:
+    - name: httpbin
+  - qualified: tests.test_encoding.test_unicode_json_item
+    kind: function
+    file: tests/test_encoding.py
+    range:
+      start_line: 71
+      start_col: 0
+      end_line: 74
+      end_col: 0
+    fingerprint: 6a4dec4c7764ca2dba6adba8d2d7cc2de3268fa8b3f8bdfd028224f79b3e5be5
+    params:
+    - name: httpbin
+  - qualified: tests.test_encoding.test_unicode_json_item_verbose
+    kind: function
+    file: tests/test_encoding.py
+    range:
+      start_line: 77
+      start_col: 0
+      end_line: 81
+      end_col: 0
+    fingerprint: 4c4a002f02c87caf127e8cbe09148d99ad26157d61cab8417fb742905275a4cc
+    params:
+    - name: httpbin
+  - qualified: tests.test_encoding.test_unicode_raw_json_item
+    kind: function
+    file: tests/test_encoding.py
+    range:
+      start_line: 84
+      start_col: 0
+      end_line: 88
+      end_col: 0
+    fingerprint: 11e561224d5c99167c3e0eec65fee0d27c220968734db11be2cc07fe04296d3b
+    params:
+    - name: httpbin
+  - qualified: tests.test_encoding.test_unicode_raw_json_item_verbose
+    kind: function
+    file: tests/test_encoding.py
+    range:
+      start_line: 91
+      start_col: 0
+      end_line: 95
+      end_col: 0
+    fingerprint: 8cfaf48dc03ab0480e826c1cc513bc9b25ee98755ec2604dcdeb51aaa84109b7
+    params:
+    - name: httpbin
+  - qualified: tests.test_encoding.test_unicode_url_query_arg_item
+    kind: function
+    file: tests/test_encoding.py
+    range:
+      start_line: 98
+      start_col: 0
+      end_line: 101
+      end_col: 0
+    fingerprint: 544f15c8dbf99b7dd73057eb131eb43a6d593fd1785f0906ab449fc26a4dd92f
+    params:
+    - name: httpbin
+  - qualified: tests.test_encoding.test_unicode_url_query_arg_item_verbose
+    kind: function
+    file: tests/test_encoding.py
+    range:
+      start_line: 104
+      start_col: 0
+      end_line: 107
+      end_col: 0
+    fingerprint: b16ae3e35bfe2a73def0ccbf61466d6262b0337a06ad8be8056df5d90a3bdfb2
+    params:
+    - name: httpbin
+  - qualified: tests.test_encoding.test_unicode_url
+    kind: function
+    file: tests/test_encoding.py
+    range:
+      start_line: 110
+      start_col: 0
+      end_line: 113
+      end_col: 0
+    fingerprint: f706d35e93731e1d4b7bb41243038a46ad4782478c8cfd175ba36a82b1572396
+    params:
+    - name: httpbin
+  - qualified: tests.test_encoding.test_unicode_url_verbose
+    kind: function
+    file: tests/test_encoding.py
+    range:
+      start_line: 116
+      start_col: 0
+      end_line: 119
+      end_col: 0
+    fingerprint: d30e882ee9fd2a4e42e1034713b06bfc2320dfd89a6b5ebaa81f7d1fe92fdfd8
+    params:
+    - name: httpbin
+  - qualified: tests.test_encoding.test_unicode_basic_auth
+    kind: function
+    file: tests/test_encoding.py
+    range:
+      start_line: 122
+      start_col: 0
+      end_line: 126
+      end_col: 0
+    fingerprint: 44d4ca3ec7133a77bd11d65cb69b793d9a18913efcfe80c67c3e9f106efd4a0d
+    params:
+    - name: httpbin
+  - qualified: tests.test_encoding.test_unicode_digest_auth
+    kind: function
+    file: tests/test_encoding.py
+    range:
+      start_line: 129
+      start_col: 0
+      end_line: 134
+      end_col: 0
+    fingerprint: ce02b62eb3438c3a2f85603607834ab536465e6369e080ee3062760bda858181
+    params:
+    - name: httpbin
+  - qualified: tests.test_encoding.test_terminal_output_response_charset_detection
+    kind: function
+    file: tests/test_encoding.py
+    range:
+      start_line: 139
+      start_col: 0
+      end_line: 147
+      end_col: 0
+    fingerprint: b6118fef576ff6d1ce31ec7a4909974ab6c675a4cd07e92f119bae300984167f
+    decorators:
+    - pytest.mark.parametrize('charset, text', CHARSET_TEXT_PAIRS)
+    - responses.activate
+    params:
+    - name: text
+    - name: charset
+  - qualified: tests.test_encoding.test_terminal_output_response_content_type_charset
+    kind: function
+    file: tests/test_encoding.py
+    range:
+      start_line: 152
+      start_col: 0
+      end_line: 160
+      end_col: 0
+    fingerprint: 6b0e91e33107f7bd9ffaf0aa6a179463e1964335e30c23da36a0bad08faf0bae
+    decorators:
+    - pytest.mark.parametrize('charset, text', CHARSET_TEXT_PAIRS)
+    - responses.activate
+    params:
+    - name: charset
+    - name: text
+  - qualified: tests.test_encoding.test_terminal_output_response_content_type_charset_with_stream
+    kind: function
+    file: tests/test_encoding.py
+    range:
+      start_line: 166
+      start_col: 0
+      end_line: 175
+      end_col: 0
+    fingerprint: 87d45ab22879c021701fcc0d9d1423c618ade07ae48b7817dc9924a55b34bec8
+    decorators:
+    - pytest.mark.parametrize('charset, text', CHARSET_TEXT_PAIRS)
+    - pytest.mark.parametrize('pretty', PRETTY_MAP.keys())
+    - responses.activate
+    params:
+    - name: charset
+    - name: text
+    - name: pretty
+  - qualified: tests.test_encoding.test_terminal_output_response_charset_override
+    kind: function
+    file: tests/test_encoding.py
+    range:
+      start_line: 181
+      start_col: 0
+      end_line: 194
+      end_col: 0
+    fingerprint: 04abedcdfd529faded1a4de49c5ce85ff9a7ae8e46c0f5174f97906754138b61
+    decorators:
+    - pytest.mark.parametrize('charset, text', CHARSET_TEXT_PAIRS)
+    - pytest.mark.parametrize('pretty', PRETTY_MAP.keys())
+    - responses.activate
+    params:
+    - name: charset
+    - name: text
+    - name: pretty
+  - qualified: tests.test_encoding.test_terminal_output_request_content_type_charset
+    kind: function
+    file: tests/test_encoding.py
+    range:
+      start_line: 198
+      start_col: 0
+      end_line: 208
+      end_col: 0
+    fingerprint: dbc580c47c6a0e4399b255b70304ec137e8bb6ac4bfd8aaa352514d9f739998a
+    decorators:
+    - pytest.mark.parametrize('charset, text', CHARSET_TEXT_PAIRS)
+    params:
+    - name: charset
+    - name: text
+  - qualified: tests.test_encoding.test_terminal_output_request_charset_detection
+    kind: function
+    file: tests/test_encoding.py
+    range:
+      start_line: 212
+      start_col: 0
+      end_line: 222
+      end_col: 0
+    fingerprint: 24d6a3ecfffbd8da83392f1a74ed968b25a6659f8a05c4805a53963ed7742130
+    decorators:
+    - pytest.mark.parametrize('charset, text', CHARSET_TEXT_PAIRS)
+    params:
+    - name: charset
+    - name: text

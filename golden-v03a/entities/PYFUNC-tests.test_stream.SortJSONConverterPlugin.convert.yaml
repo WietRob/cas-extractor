@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_stream.SortJSONConverterPlugin.convert
+kind: entity
+type: py.function
+name: convert
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_stream.py
+anchors:
+- type: symbol
+  value: tests.test_stream.SortJSONConverterPlugin.convert
+- type: fingerprint
+  value: 258ff4e7d6235bef2520b71ebc202baeb75f0085f0c417023c0e0efa28328272
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_stream.SortJSONConverterPlugin

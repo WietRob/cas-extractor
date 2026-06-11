@@ -1,0 +1,38 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-4ce18795
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-22T08:37:44.812237+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  imports:
+  - from: tests.utils
+    imports:
+    - re
+    - shlex
+    - os
+    - sys
+    - time
+    - json
+    - tempfile
+    - warnings
+    - pytest
+    - contextlib.suppress
+    - io.BytesIO
+    - pathlib.Path
+    - typing.Any
+    - typing.Optional
+    - typing.Union
+    - typing.List
+    - typing.Iterable
+    - httpie.core
+    - httpie.manager.__main__
+    - httpie.status.ExitStatus
+    - httpie.config.Config
+    - httpie.encoding.UTF8
+    - httpie.context.Environment
+    - httpie.utils.url_as_host

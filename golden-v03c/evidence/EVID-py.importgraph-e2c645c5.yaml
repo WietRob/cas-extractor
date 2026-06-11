@@ -1,0 +1,19 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-e2c645c5
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-21T17:44:04.623132+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  imports:
+  - from: httpie.output.utils
+    imports:
+    - json
+    - re
+    - typing.Tuple
+    - httpie.utils.load_json_preserve_order_and_dupe_keys
+    - httpie.output.lexers.json.PREFIX_REGEX

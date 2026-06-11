@@ -1,0 +1,26 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-1396a461
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T17:44:04.511981+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.test_windows.TestWindowsOnly.test_windows_colorized_output
+    kind: method
+    file: tests/test_windows.py
+    range:
+      start_line: 13
+      start_col: 0
+      end_line: 15
+      end_col: 0
+    fingerprint: 8bd38b34d2045375013ae24f120241a93b4576e6222f0ef6c01fe664fe3e71d7
+    decorators:
+    - pytest.mark.skipif(True, reason='this test for some reason kills the process')
+    params:
+    - name: self
+    - name: httpbin

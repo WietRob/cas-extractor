@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.sessions.Session._add_cookies
+kind: entity
+type: py.function
+name: _add_cookies
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/sessions.py
+anchors:
+- type: symbol
+  value: httpie.sessions.Session._add_cookies
+- type: fingerprint
+  value: ceea842cad3042963fd915dbd835eb441a43dde4c18e3c0e76cf2a85c984b6b6
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.sessions.Session

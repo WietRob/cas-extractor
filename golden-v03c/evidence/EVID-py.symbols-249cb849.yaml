@@ -1,0 +1,241 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-249cb849
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T17:44:04.404572+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.utils
+    kind: module
+    file: httpie/utils.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 309
+      end_col: 0
+    fingerprint: 8101b664f7338c0d6553f8e23c6614fc84d4c328643b7cb9e77a8e12fabf4a3d
+  - qualified: httpie.utils.JsonDictPreservingDuplicateKeys
+    kind: class
+    file: httpie/utils.py
+    range:
+      start_line: 27
+      start_col: 0
+      end_line: 69
+      end_col: 0
+    fingerprint: 6b6c6f95ef904c5ec851c1d3666435565eba480655da9a8ee9976af2cdaaaafe
+  - qualified: httpie.utils.load_json_preserve_order_and_dupe_keys
+    kind: function
+    file: httpie/utils.py
+    range:
+      start_line: 72
+      start_col: 0
+      end_line: 73
+      end_col: 0
+    fingerprint: ac667745752f7f715a6311b2654ec528671c30284c901d0b64b6cdcde3e8f41f
+    params:
+    - name: s
+  - qualified: httpie.utils.repr_dict
+    kind: function
+    file: httpie/utils.py
+    range:
+      start_line: 76
+      start_col: 0
+      end_line: 77
+      end_col: 0
+    fingerprint: 9b90109186379978d02b35d36b83a2ede9afd7d028431bb13f6b9b4e0026bf79
+    params:
+    - name: d
+      annotation: dict
+    returns: str
+  - qualified: httpie.utils.humanize_bytes
+    kind: function
+    file: httpie/utils.py
+    range:
+      start_line: 80
+      start_col: 0
+      end_line: 121
+      end_col: 0
+    fingerprint: 2e4e94961d1f9b1ed97987ad2106944b0921157e5f98ffff8f9a981f2d6b826c
+    params:
+    - name: n
+    - name: precision
+  - qualified: httpie.utils.ExplicitNullAuth
+    kind: class
+    file: httpie/utils.py
+    range:
+      start_line: 124
+      start_col: 0
+      end_line: 130
+      end_col: 0
+    fingerprint: 0ffd39dc4329a6595c43707babe75970bbf99565164efe7354a3f1c608a86a4d
+  - qualified: httpie.utils.get_content_type
+    kind: function
+    file: httpie/utils.py
+    range:
+      start_line: 133
+      start_col: 0
+      end_line: 140
+      end_col: 0
+    fingerprint: 4c38b76bb9cdf5f947cd45464f5baa4eb3b96bc9af76f22289e0402d2f6dd22e
+    params:
+    - name: filename
+  - qualified: httpie.utils.split_cookies
+    kind: function
+    file: httpie/utils.py
+    range:
+      start_line: 143
+      start_col: 0
+      end_line: 153
+      end_col: 0
+    fingerprint: 485f8efdb25d47da21e3541ce175e862d9f032d131fc636cd67d24c570f8ee8a
+    params:
+    - name: cookies
+  - qualified: httpie.utils.get_expired_cookies
+    kind: function
+    file: httpie/utils.py
+    range:
+      start_line: 156
+      start_col: 0
+      end_line: 185
+      end_col: 0
+    fingerprint: 622105d609a99dd547f4b65c0a2d82263d2f1e12885b4bbf99529e6611133ffd
+    params:
+    - name: cookies
+      annotation: str
+    - name: now
+      annotation: float
+    returns: List[dict]
+  - qualified: httpie.utils._max_age_to_expires
+    kind: function
+    file: httpie/utils.py
+    range:
+      start_line: 188
+      start_col: 0
+      end_line: 200
+      end_col: 0
+    fingerprint: e95d41caaf18401dbab0f6788a875dec93799c1e04ef69a1f16abdf56e932c5a
+    params:
+    - name: cookies
+    - name: now
+  - qualified: httpie.utils.parse_content_type_header
+    kind: function
+    file: httpie/utils.py
+    range:
+      start_line: 203
+      start_col: 0
+      end_line: 218
+      end_col: 0
+    fingerprint: be8b856e7360a8dbc0ac34a7317563228f28da0e2a67af64e3dcca9f71ee6477
+    params:
+    - name: header
+  - qualified: httpie.utils.as_site
+    kind: function
+    file: httpie/utils.py
+    range:
+      start_line: 221
+      start_col: 0
+      end_line: 226
+      end_col: 0
+    fingerprint: 377fe69900ed6bc7257d515fdc456ab1b921af8976f0b7839a4694f8e32bfe8a
+    params:
+    - name: path
+      annotation: Path
+    returns: Path
+  - qualified: httpie.utils.get_site_paths
+    kind: function
+    file: httpie/utils.py
+    range:
+      start_line: 229
+      start_col: 0
+      end_line: 245
+      end_col: 0
+    fingerprint: eeabd9472c73618ac2b527e30e30ed245ed8d52ecfcbce3c7c223d4a09358836
+    params:
+    - name: path
+      annotation: Path
+    returns: Iterable[Path]
+  - qualified: httpie.utils.split_iterable
+    kind: function
+    file: httpie/utils.py
+    range:
+      start_line: 248
+      start_col: 0
+      end_line: 255
+      end_col: 0
+    fingerprint: 9a4c975cf737527dbce1ddf11a629b1af88c5dc37f26df99bc29424991b616cb
+    params:
+    - name: iterable
+      annotation: Iterable[T]
+    - name: key
+      annotation: Callable[[T], bool]
+    returns: Tuple[List[T], List[T]]
+  - qualified: httpie.utils.unwrap_context
+    kind: function
+    file: httpie/utils.py
+    range:
+      start_line: 258
+      start_col: 0
+      end_line: 263
+      end_col: 0
+    fingerprint: 9d293535ac82ab74686972dfcf4025d926424cfe5076e41a2212c0640b14aae1
+    params:
+    - name: exc
+      annotation: Exception
+    returns: Optional[Exception]
+  - qualified: httpie.utils.url_as_host
+    kind: function
+    file: httpie/utils.py
+    range:
+      start_line: 266
+      start_col: 0
+      end_line: 267
+      end_col: 0
+    fingerprint: cdc57979fd44a8a12ed400d7cf39aaa182de09c6e80659d831de767b3e9a4247
+    params:
+    - name: url
+      annotation: str
+    returns: str
+  - qualified: httpie.utils.LockFileError
+    kind: class
+    file: httpie/utils.py
+    range:
+      start_line: 270
+      start_col: 0
+      end_line: 271
+      end_col: 0
+    fingerprint: c159d53ea0e6a0e77cdc084bda6964e0af7b8ae0d9736f4eed6892e255c6058a
+  - qualified: httpie.utils.open_with_lockfile
+    kind: function
+    file: httpie/utils.py
+    range:
+      start_line: 275
+      start_col: 0
+      end_line: 290
+      end_col: 0
+    fingerprint: 72ccc34fae3482d11978d034e82a6b2f8e6d8559f95f22f6dd8d04b073ef3fa0
+    decorators:
+    - contextmanager
+    params:
+    - name: file
+      annotation: Path
+    returns: Generator[IO[Any], None, None]
+  - qualified: httpie.utils.is_version_greater
+    kind: function
+    file: httpie/utils.py
+    range:
+      start_line: 293
+      start_col: 0
+      end_line: 309
+      end_col: 0
+    fingerprint: ef5161ee71a7b6d9c951386a1522dd07ce5bf8894a99119e9429ca2f796079ba
+    params:
+    - name: version_1
+      annotation: str
+    - name: version_2
+      annotation: str
+    returns: bool

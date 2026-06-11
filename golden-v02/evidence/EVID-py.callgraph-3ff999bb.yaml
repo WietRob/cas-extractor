@@ -1,0 +1,253 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-3ff999bb
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:34.067223+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.entry_point.load
+  - symbol: ?.self.append
+  - symbol: ?.self.remove
+  - symbol: compat.find_entry_points
+  - symbol: compat.get_dist_name
+  - symbol: compat.importlib_metadata.entry_points
+  - symbol: httpie.plugins.manager.PluginManager.__str__
+  - symbol: httpie.plugins.manager.PluginManager.filter
+  - symbol: httpie.plugins.manager.PluginManager.get_auth_plugin
+  - symbol: httpie.plugins.manager.PluginManager.get_auth_plugin_mapping
+  - symbol: httpie.plugins.manager.PluginManager.get_auth_plugins
+  - symbol: httpie.plugins.manager.PluginManager.get_converters
+  - symbol: httpie.plugins.manager.PluginManager.get_formatters
+  - symbol: httpie.plugins.manager.PluginManager.get_formatters_grouped
+  - symbol: httpie.plugins.manager.PluginManager.get_transport_plugins
+  - symbol: httpie.plugins.manager.PluginManager.iter_entry_points
+  - symbol: httpie.plugins.manager.PluginManager.load_installed_plugins
+  - symbol: httpie.plugins.manager.PluginManager.register
+  - symbol: httpie.plugins.manager.PluginManager.unregister
+  - symbol: httpie.plugins.manager.enable_plugins
+  - symbol: itertools.groupby
+  - symbol: operator.attrgetter
+  - symbol: utils.repr_dict
+  - symbol: warnings.warn
+  edges:
+  - from: httpie.plugins.manager.PluginManager.unregister
+    to: ?.self.remove
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 54
+      start_col: 0
+      end_line: 54
+      end_col: 0
+  - from: httpie.plugins.manager.PluginManager.load_installed_plugins
+    to: httpie.plugins.manager.PluginManager.iter_entry_points
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 67
+      start_col: 0
+      end_line: 67
+      end_col: 0
+  - from: httpie.plugins.manager.PluginManager.get_auth_plugins
+    to: httpie.plugins.manager.PluginManager.filter
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 84
+      start_col: 0
+      end_line: 84
+      end_col: 0
+  - from: httpie.plugins.manager.PluginManager.get_formatters
+    to: httpie.plugins.manager.PluginManager.filter
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 96
+      start_col: 0
+      end_line: 96
+      end_col: 0
+  - from: httpie.plugins.manager.PluginManager.get_converters
+    to: httpie.plugins.manager.PluginManager.filter
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 106
+      start_col: 0
+      end_line: 106
+      end_col: 0
+  - from: httpie.plugins.manager.PluginManager.get_transport_plugins
+    to: httpie.plugins.manager.PluginManager.filter
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 110
+      start_col: 0
+      end_line: 110
+      end_col: 0
+  - from: httpie.plugins.manager.PluginManager.__str__
+    to: utils.repr_dict
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 113
+      start_col: 0
+      end_line: 118
+      end_col: 0
+  - from: httpie.plugins.manager.PluginManager.register
+    to: ?.self.append
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 51
+      start_col: 0
+      end_line: 51
+      end_col: 0
+  - from: httpie.plugins.manager.PluginManager.iter_entry_points
+    to: httpie.plugins.manager.enable_plugins
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 60
+      start_col: 0
+      end_line: 60
+      end_col: 0
+  - from: httpie.plugins.manager.PluginManager.iter_entry_points
+    to: compat.importlib_metadata.entry_points
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 61
+      start_col: 0
+      end_line: 61
+      end_col: 0
+  - from: httpie.plugins.manager.PluginManager.load_installed_plugins
+    to: compat.get_dist_name
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 68
+      start_col: 0
+      end_line: 68
+      end_col: 0
+  - from: httpie.plugins.manager.PluginManager.load_installed_plugins
+    to: httpie.plugins.manager.PluginManager.register
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 80
+      start_col: 0
+      end_line: 80
+      end_col: 0
+  - from: httpie.plugins.manager.PluginManager.get_auth_plugin
+    to: httpie.plugins.manager.PluginManager.get_auth_plugin_mapping
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 92
+      start_col: 0
+      end_line: 92
+      end_col: 0
+  - from: httpie.plugins.manager.PluginManager.load_installed_plugins
+    to: ?.entry_point.load
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 70
+      start_col: 0
+      end_line: 70
+      end_col: 0
+  - from: httpie.plugins.manager.PluginManager.get_auth_plugin_mapping
+    to: httpie.plugins.manager.PluginManager.get_auth_plugins
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 88
+      start_col: 0
+      end_line: 88
+      end_col: 0
+  - from: httpie.plugins.manager.PluginManager.get_formatters_grouped
+    to: itertools.groupby
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 102
+      start_col: 0
+      end_line: 102
+      end_col: 0
+  - from: httpie.plugins.manager.PluginManager.__str__
+    to: httpie.plugins.manager.PluginManager.get_transport_plugins
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 114
+      start_col: 0
+      end_line: 114
+      end_col: 0
+  - from: httpie.plugins.manager.PluginManager.__str__
+    to: httpie.plugins.manager.PluginManager.get_auth_plugins
+    kind: call
+    edge_id: 17
+    range:
+      start_line: 115
+      start_col: 0
+      end_line: 115
+      end_col: 0
+  - from: httpie.plugins.manager.PluginManager.__str__
+    to: httpie.plugins.manager.PluginManager.get_converters
+    kind: call
+    edge_id: 18
+    range:
+      start_line: 116
+      start_col: 0
+      end_line: 116
+      end_col: 0
+  - from: httpie.plugins.manager.PluginManager.__str__
+    to: httpie.plugins.manager.PluginManager.get_formatters
+    kind: call
+    edge_id: 19
+    range:
+      start_line: 117
+      start_col: 0
+      end_line: 117
+      end_col: 0
+  - from: httpie.plugins.manager.PluginManager.iter_entry_points
+    to: compat.find_entry_points
+    kind: call
+    edge_id: 20
+    range:
+      start_line: 64
+      start_col: 0
+      end_line: 64
+      end_col: 0
+  - from: httpie.plugins.manager.PluginManager.load_installed_plugins
+    to: warnings.warn
+    kind: call
+    edge_id: 21
+    range:
+      start_line: 72
+      start_col: 0
+      end_line: 77
+      end_col: 0
+  - from: httpie.plugins.manager.PluginManager.get_formatters_grouped
+    to: httpie.plugins.manager.PluginManager.get_formatters
+    kind: call
+    edge_id: 22
+    range:
+      start_line: 102
+      start_col: 0
+      end_line: 102
+      end_col: 0
+  - from: httpie.plugins.manager.PluginManager.get_formatters_grouped
+    to: operator.attrgetter
+    kind: call
+    edge_id: 23
+    range:
+      start_line: 102
+      start_col: 0
+      end_line: 102
+      end_col: 0

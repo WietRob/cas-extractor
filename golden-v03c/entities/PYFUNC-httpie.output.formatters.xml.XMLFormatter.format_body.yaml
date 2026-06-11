@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.formatters.xml.XMLFormatter.format_body
+kind: entity
+type: py.function
+name: format_body
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/formatters/xml.py
+anchors:
+- type: symbol
+  value: httpie.output.formatters.xml.XMLFormatter.format_body
+- type: fingerprint
+  value: 25845463274f20affd1b896094774dbf326f16b27ebb8028a4c597c4b2cc8d80
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.formatters.xml.XMLFormatter

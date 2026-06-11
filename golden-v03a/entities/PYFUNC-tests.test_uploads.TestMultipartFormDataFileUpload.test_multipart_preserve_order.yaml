@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_uploads.TestMultipartFormDataFileUpload.test_multipart_preserve_order
+kind: entity
+type: py.function
+name: test_multipart_preserve_order
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_uploads.py
+anchors:
+- type: symbol
+  value: tests.test_uploads.TestMultipartFormDataFileUpload.test_multipart_preserve_order
+- type: fingerprint
+  value: 89cc0a6de40cd328610d67daec7868d3e8cd5d8d4a39dc507f5d6439a55e85a9
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_uploads.TestMultipartFormDataFileUpload

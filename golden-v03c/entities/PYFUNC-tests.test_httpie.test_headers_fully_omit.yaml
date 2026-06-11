@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_httpie.test_headers_fully_omit
+kind: entity
+type: py.function
+name: test_headers_fully_omit
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_httpie.py
+anchors:
+- type: symbol
+  value: tests.test_httpie.test_headers_fully_omit
+- type: fingerprint
+  value: 435889694a6aac0a87a12db71f10e2cdbc18fe9946248525a6b8d41efc23c6c5
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_httpie

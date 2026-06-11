@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.downloads.Downloader._get_output_file_from_response
+kind: entity
+type: py.function
+name: _get_output_file_from_response
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/downloads.py
+anchors:
+- type: symbol
+  value: httpie.downloads.Downloader._get_output_file_from_response
+- type: fingerprint
+  value: 35fcc756510af347e5a5be4da150608617abed137a9e91583941e06846edda0c
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.downloads.Downloader

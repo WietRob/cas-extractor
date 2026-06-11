@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-tests.test_transport_plugin
+kind: entity
+type: py.module
+name: test_transport_plugin
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_transport_plugin.py
+anchors:
+- type: symbol
+  value: tests.test_transport_plugin
+- type: fingerprint
+  value: 01846c18173661131a91903a49a8b4f35c33290d29945cb4d8abd0e958a5c0a1
+  algo: sha256
+claims: []
+relations: []
+namespace: tests

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-cas_extractor_generators_artifact_generator._write_yaml
+kind: entity
+type: py.function
+name: _write_yaml
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor_generators_artifact_generator.py
+anchors:
+- type: symbol
+  value: cas_extractor_generators_artifact_generator._write_yaml
+- type: fingerprint
+  value: bda15609f431cc90b338dfa8377a4e309c981ca93871d70f8f525c8e7776943a
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor_generators_artifact_generator

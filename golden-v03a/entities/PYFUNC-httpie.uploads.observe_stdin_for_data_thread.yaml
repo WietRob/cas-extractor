@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.uploads.observe_stdin_for_data_thread
+kind: entity
+type: py.function
+name: observe_stdin_for_data_thread
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/uploads.py
+anchors:
+- type: symbol
+  value: httpie.uploads.observe_stdin_for_data_thread
+- type: fingerprint
+  value: d9e1597e23b45c2f7762efcddeab4e836678231356b508229d46d68fcaee8f73
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.uploads

@@ -1,0 +1,83 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-cec9b73e
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T17:44:05.469227+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: pytest.raises
+  - symbol: tests.test_ssl.TestClientCert.test_cert_and_key
+  - symbol: tests.test_ssl.TestClientCert.test_cert_file_invalid
+  - symbol: tests.test_ssl.TestClientCert.test_cert_file_not_found
+  - symbol: tests.test_ssl.TestClientCert.test_cert_ok_but_missing_key
+  - symbol: tests.test_ssl.TestClientCert.test_cert_pem
+  - symbol: utils.http
+  edges:
+  - from: tests.test_ssl.TestClientCert.test_cert_and_key
+    to: utils.http
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 80
+      start_col: 0
+      end_line: 82
+      end_col: 0
+  - from: tests.test_ssl.TestClientCert.test_cert_pem
+    to: utils.http
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 86
+      start_col: 0
+      end_line: 87
+      end_col: 0
+  - from: tests.test_ssl.TestClientCert.test_cert_file_not_found
+    to: utils.http
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 91
+      start_col: 0
+      end_line: 93
+      end_col: 0
+  - from: tests.test_ssl.TestClientCert.test_cert_file_invalid
+    to: pytest.raises
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 98
+      start_col: 0
+      end_line: 98
+      end_col: 0
+  - from: tests.test_ssl.TestClientCert.test_cert_file_invalid
+    to: utils.http
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 99
+      start_col: 0
+      end_line: 100
+      end_col: 0
+  - from: tests.test_ssl.TestClientCert.test_cert_ok_but_missing_key
+    to: pytest.raises
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 103
+      start_col: 0
+      end_line: 103
+      end_col: 0
+  - from: tests.test_ssl.TestClientCert.test_cert_ok_but_missing_key
+    to: utils.http
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 104
+      start_col: 0
+      end_line: 105
+      end_col: 0

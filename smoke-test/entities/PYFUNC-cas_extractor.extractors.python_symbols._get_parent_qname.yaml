@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-cas_extractor.extractors.python_symbols._get_parent_qname
+kind: entity
+type: py.function
+name: _get_parent_qname
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor/extractors/python_symbols.py
+anchors:
+- type: symbol
+  value: cas_extractor.extractors.python_symbols._get_parent_qname
+- type: fingerprint
+  value: 25d996478c522334379f426971aaa173e66b6ce312d5fc144798dfb96f2f959b
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor.extractors.python_symbols

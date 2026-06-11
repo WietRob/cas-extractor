@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.output.ui.palette.PieColor
+kind: entity
+type: py.class
+name: PieColor
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/ui/palette.py
+anchors:
+- type: symbol
+  value: httpie.output.ui.palette.PieColor
+- type: fingerprint
+  value: 6b7ae02c22aa190c9fc8233296c4fc398fd85bc00e89f1d79949d9ce16e9aca7
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.ui.palette

@@ -1,0 +1,68 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-79e731f9
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T17:44:04.341505+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.manager.compat
+    kind: module
+    file: httpie/manager/compat.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 68
+      end_col: 0
+    fingerprint: 2d724ddd10ca0e5300dd67411df0503681000ab9e5cac4bb9844e9b035159fef
+  - qualified: httpie.manager.compat.PipError
+    kind: class
+    file: httpie/manager/compat.py
+    range:
+      start_line: 10
+      start_col: 0
+      end_line: 15
+      end_col: 0
+    fingerprint: 433c18163bfc955417e4bc9c60e6195cede807dbc9dff41bc80930ff663cc938
+  - qualified: httpie.manager.compat._discover_system_pip
+    kind: function
+    file: httpie/manager/compat.py
+    range:
+      start_line: 18
+      start_col: 0
+      end_line: 42
+      end_col: 0
+    fingerprint: d7d233ec0359bcab15b63cf541b4d635f5ae609919bc93422ea59086c5a25ed8
+    returns: List[str]
+  - qualified: httpie.manager.compat._run_pip_subprocess
+    kind: function
+    file: httpie/manager/compat.py
+    range:
+      start_line: 45
+      start_col: 0
+      end_line: 59
+      end_col: 0
+    fingerprint: b212d3c59a34332964551a58e5de29ce65e005f0c2fcace14d15b7325b775e0f
+    params:
+    - name: pip_executable
+      annotation: List[str]
+    - name: args
+      annotation: List[str]
+    returns: bytes
+  - qualified: httpie.manager.compat.run_pip
+    kind: function
+    file: httpie/manager/compat.py
+    range:
+      start_line: 62
+      start_col: 0
+      end_line: 68
+      end_col: 0
+    fingerprint: 7b90bd77f6bfa70c6f9fd481ead31103ba2c911a5b6892ef088f355a5de9d30a
+    params:
+    - name: args
+      annotation: List[str]
+    returns: bytes

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-cas_extractor.generators.artifact_generator.generate_from_evidence
+kind: entity
+type: py.function
+name: generate_from_evidence
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor/generators/artifact_generator.py
+anchors:
+- type: symbol
+  value: cas_extractor.generators.artifact_generator.generate_from_evidence
+- type: fingerprint
+  value: e5349f326cd74f70d545cb5037e8cdf6081c192bf4dde125aef7bad5a5e70f5c
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor.generators.artifact_generator

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_stream.test_redirected_stream
+kind: entity
+type: py.function
+name: test_redirected_stream
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_stream.py
+anchors:
+- type: symbol
+  value: tests.test_stream.test_redirected_stream
+- type: fingerprint
+  value: aec405e191d84f1a99518049d40991482bf2dbd1f75d12ea15b0c0343452a372
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_stream

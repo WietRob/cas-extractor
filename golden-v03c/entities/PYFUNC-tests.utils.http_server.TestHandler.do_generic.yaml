@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.utils.http_server.TestHandler.do_generic
+kind: entity
+type: py.function
+name: do_generic
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/utils/http_server.py
+anchors:
+- type: symbol
+  value: tests.utils.http_server.TestHandler.do_generic
+- type: fingerprint
+  value: 3934a3f82ff4eed4aaa99f310b4b358f2fa4832885aca63e2add6323a15e0e6a
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils.http_server.TestHandler

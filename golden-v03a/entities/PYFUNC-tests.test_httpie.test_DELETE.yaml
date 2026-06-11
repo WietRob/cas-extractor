@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_httpie.test_DELETE
+kind: entity
+type: py.function
+name: test_DELETE
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_httpie.py
+anchors:
+- type: symbol
+  value: tests.test_httpie.test_DELETE
+- type: fingerprint
+  value: f19523ec31c83f7fc73c43e268f7346e26c3c222bd1d03f70dba648309a6938a
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_httpie

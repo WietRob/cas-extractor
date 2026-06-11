@@ -1,0 +1,63 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-20d65143
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-23T05:34:25.668614+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: /tmp/h26-verify
+  revision: git:test
+payload:
+  nodes:
+  - symbol: test_h26.HTTPClient
+  - symbol: test_h26.HTTPClient.send
+  - symbol: test_h26.TestH26NoConflict.run
+  - symbol: test_h26.TestH26NoConflict.setup1
+  - symbol: test_h26.TestH26NoConflict.setup2
+  edges:
+  - from: test_h26.TestH26NoConflict.setup1
+    to: test_h26.HTTPClient
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 186
+      start_col: 0
+      end_line: 186
+      end_col: 0
+  - from: test_h26.TestH26NoConflict.setup2
+    to: test_h26.HTTPClient
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 189
+      start_col: 0
+      end_line: 189
+      end_col: 0
+  - from: test_h26.TestH26NoConflict.run
+    to: test_h26.TestH26NoConflict.setup1
+    kind: method_call
+    edge_id: 2
+    range:
+      start_line: 192
+      start_col: 0
+      end_line: 192
+      end_col: 0
+  - from: test_h26.TestH26NoConflict.run
+    to: test_h26.TestH26NoConflict.setup2
+    kind: method_call
+    edge_id: 3
+    range:
+      start_line: 193
+      start_col: 0
+      end_line: 193
+      end_col: 0
+  - from: test_h26.TestH26NoConflict.run
+    to: test_h26.HTTPClient.send
+    kind: method_call
+    edge_id: 4
+    range:
+      start_line: 194
+      start_col: 0
+      end_line: 194
+      end_col: 0

@@ -1,0 +1,62 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-7dea3c8d
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T12:13:53.860281+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: httpie.manager.cli.missing_subcommand
+  - symbol: httpie.manager.cli.parser.error
+  - symbol: httpie.manager.core.dispatch_cli_task
+  - symbol: httpie.manager.core.program
+  edges:
+  - from: httpie.manager.core.dispatch_cli_task
+    to: httpie.manager.cli.parser.error
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 28
+      start_col: 0
+      end_line: 28
+      end_col: 0
+  - from: httpie.manager.core.program
+    to: httpie.manager.cli.parser.error
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 35
+      start_col: 0
+      end_line: 35
+      end_col: 0
+  - from: httpie.manager.core.program
+    to: httpie.manager.core.dispatch_cli_task
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 38
+      start_col: 0
+      end_line: 38
+      end_col: 0
+  - from: httpie.manager.core.dispatch_cli_task
+    to: httpie.manager.cli.missing_subcommand
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 28
+      start_col: 0
+      end_line: 28
+      end_col: 0
+  - from: httpie.manager.core.program
+    to: httpie.manager.core.dispatch_cli_task
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 40
+      start_col: 0
+      end_line: 40
+      end_col: 0

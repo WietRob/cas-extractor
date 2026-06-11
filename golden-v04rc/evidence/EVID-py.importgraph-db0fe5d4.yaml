@@ -1,0 +1,39 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-db0fe5d4
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-22T08:37:44.798613+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  imports:
+  - from: httpie.plugins.manager
+    imports:
+    - sys
+    - os
+    - warnings
+    - itertools.groupby
+    - operator.attrgetter
+    - typing.Dict
+    - typing.List
+    - typing.Type
+    - typing.Iterator
+    - typing.Iterable
+    - typing.Optional
+    - typing.ContextManager
+    - pathlib.Path
+    - contextlib.contextmanager
+    - contextlib.nullcontext
+    - httpie.compat.importlib_metadata
+    - httpie.compat.find_entry_points
+    - httpie.compat.get_dist_name
+    - httpie.utils.repr_dict
+    - httpie.utils.get_site_paths
+    - httpie.plugins.AuthPlugin
+    - httpie.plugins.ConverterPlugin
+    - httpie.plugins.FormatterPlugin
+    - httpie.plugins.TransportPlugin
+    - httpie.plugins.base.BasePlugin

@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-3847
+kind: relation
+type: calls
+from: PYFUNC-httpie.uploads.ChunkedUploadStream.__iter__
+to: PYFUNC-_.self.event.set
+confidence:
+  level: E1
+  direction: confirmed
+evidence:
+- EVID-py.callgraph-e6a5cc35
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1

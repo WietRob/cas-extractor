@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.output.streams.RawStream
+kind: entity
+type: py.class
+name: RawStream
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/streams.py
+anchors:
+- type: symbol
+  value: httpie.output.streams.RawStream
+- type: fingerprint
+  value: 10b6178031312b2fc7da4f2f2fa75ded5f30a14f2407907e3aeddbea3f8f61fe
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.streams

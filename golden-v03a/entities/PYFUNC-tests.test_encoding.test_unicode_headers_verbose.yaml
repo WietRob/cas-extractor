@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_encoding.test_unicode_headers_verbose
+kind: entity
+type: py.function
+name: test_unicode_headers_verbose
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_encoding.py
+anchors:
+- type: symbol
+  value: tests.test_encoding.test_unicode_headers_verbose
+- type: fingerprint
+  value: 5f02dcb02c9487987046aeaec90fa2b080bbb7704d6349d34af484389b010986
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_encoding

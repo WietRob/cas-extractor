@@ -1,0 +1,368 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-249cb849
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-22T08:37:45.608914+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.RE_COOKIE_SPLIT.split
+  - symbol: ?.cookie.get
+  - symbol: ?.header.split
+  - symbol: ?.key
+  - symbol: ?.key.lower
+  - symbol: ?.left.append
+  - symbol: ?.max_age.isdigit
+  - symbol: ?.param.find
+  - symbol: ?.param.strip
+  - symbol: ?.right.append
+  - symbol: ?.target_file.touch
+  - symbol: ?.target_file.unlink
+  - symbol: base64.b64encode
+  - symbol: http.cookiejar.parse_ns_headers
+  - symbol: httpie.utils.LockFileError
+  - symbol: httpie.utils._max_age_to_expires
+  - symbol: httpie.utils.as_site
+  - symbol: httpie.utils.get_content_type
+  - symbol: httpie.utils.get_expired_cookies
+  - symbol: httpie.utils.get_site_paths
+  - symbol: httpie.utils.is_expired
+  - symbol: httpie.utils.is_version_greater
+  - symbol: httpie.utils.load_json_preserve_order_and_dupe_keys
+  - symbol: httpie.utils.open_with_lockfile
+  - symbol: httpie.utils.parse_content_type_header
+  - symbol: httpie.utils.repr_dict
+  - symbol: httpie.utils.split_cookies
+  - symbol: httpie.utils.split_iterable
+  - symbol: httpie.utils.split_version
+  - symbol: httpie.utils.unwrap_context
+  - symbol: httpie.utils.url_as_host
+  - symbol: json.loads
+  - symbol: mimetypes.guess_type
+  - symbol: os.fsencode
+  - symbol: pathlib.Path
+  - symbol: pprint.pformat
+  - symbol: sysconfig.get_path
+  - symbol: tempfile.gettempdir
+  - symbol: time.time
+  - symbol: urllib.parse.urlsplit
+  edges:
+  - from: httpie.utils.load_json_preserve_order_and_dupe_keys
+    to: json.loads
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 73
+      start_col: 0
+      end_line: 73
+      end_col: 0
+  - from: httpie.utils.repr_dict
+    to: pprint.pformat
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 77
+      start_col: 0
+      end_line: 77
+      end_col: 0
+  - from: httpie.utils.split_cookies
+    to: ?.RE_COOKIE_SPLIT.split
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 153
+      start_col: 0
+      end_line: 153
+      end_col: 0
+  - from: httpie.utils.get_expired_cookies
+    to: http.cookiejar.parse_ns_headers
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 166
+      start_col: 0
+      end_line: 168
+      end_col: 0
+  - from: httpie.utils.get_expired_cookies
+    to: httpie.utils._max_age_to_expires
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 176
+      start_col: 0
+      end_line: 176
+      end_col: 0
+  - from: httpie.utils.parse_content_type_header
+    to: ?.header.split
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 205
+      start_col: 0
+      end_line: 205
+      end_col: 0
+  - from: httpie.utils.as_site
+    to: sysconfig.get_path
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 222
+      start_col: 0
+      end_line: 225
+      end_col: 0
+  - from: httpie.utils.as_site
+    to: pathlib.Path
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 226
+      start_col: 0
+      end_line: 226
+      end_col: 0
+  - from: httpie.utils.get_content_type
+    to: mimetypes.guess_type
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 140
+      start_col: 0
+      end_line: 140
+      end_col: 0
+  - from: httpie.utils.get_expired_cookies
+    to: time.time
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 161
+      start_col: 0
+      end_line: 161
+      end_col: 0
+  - from: httpie.utils.get_expired_cookies
+    to: httpie.utils.split_cookies
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 167
+      start_col: 0
+      end_line: 167
+      end_col: 0
+  - from: httpie.utils._max_age_to_expires
+    to: ?.cookie.get
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 198
+      start_col: 0
+      end_line: 198
+      end_col: 0
+  - from: httpie.utils.parse_content_type_header
+    to: ?.param.strip
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 210
+      start_col: 0
+      end_line: 210
+      end_col: 0
+  - from: httpie.utils.split_iterable
+    to: ?.key
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 251
+      start_col: 0
+      end_line: 251
+      end_col: 0
+  - from: httpie.utils.unwrap_context
+    to: httpie.utils.unwrap_context
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 261
+      start_col: 0
+      end_line: 261
+      end_col: 0
+  - from: httpie.utils.open_with_lockfile
+    to: pathlib.Path
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 277
+      start_col: 0
+      end_line: 277
+      end_col: 0
+  - from: httpie.utils.open_with_lockfile
+    to: ?.target_file.touch
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 282
+      start_col: 0
+      end_line: 282
+      end_col: 0
+  - from: httpie.utils.open_with_lockfile
+    to: ?.target_file.unlink
+    kind: call
+    edge_id: 17
+    range:
+      start_line: 290
+      start_col: 0
+      end_line: 290
+      end_col: 0
+  - from: httpie.utils.is_version_greater
+    to: httpie.utils.split_version
+    kind: call
+    edge_id: 18
+    range:
+      start_line: 309
+      start_col: 0
+      end_line: 309
+      end_col: 0
+  - from: httpie.utils.is_version_greater
+    to: httpie.utils.split_version
+    kind: call
+    edge_id: 19
+    range:
+      start_line: 309
+      start_col: 0
+      end_line: 309
+      end_col: 0
+  - from: httpie.utils.get_expired_cookies
+    to: ?.cookie.get
+    kind: call
+    edge_id: 20
+    range:
+      start_line: 181
+      start_col: 0
+      end_line: 181
+      end_col: 0
+  - from: httpie.utils.get_expired_cookies
+    to: httpie.utils.is_expired
+    kind: call
+    edge_id: 21
+    range:
+      start_line: 184
+      start_col: 0
+      end_line: 184
+      end_col: 0
+  - from: httpie.utils._max_age_to_expires
+    to: ?.max_age.isdigit
+    kind: call
+    edge_id: 22
+    range:
+      start_line: 199
+      start_col: 0
+      end_line: 199
+      end_col: 0
+  - from: httpie.utils.parse_content_type_header
+    to: ?.param.find
+    kind: call
+    edge_id: 23
+    range:
+      start_line: 213
+      start_col: 0
+      end_line: 213
+      end_col: 0
+  - from: httpie.utils.get_site_paths
+    to: httpie.utils.as_site
+    kind: call
+    edge_id: 24
+    range:
+      start_line: 245
+      start_col: 0
+      end_line: 245
+      end_col: 0
+  - from: httpie.utils.split_iterable
+    to: ?.left.append
+    kind: call
+    edge_id: 25
+    range:
+      start_line: 252
+      start_col: 0
+      end_line: 252
+      end_col: 0
+  - from: httpie.utils.split_iterable
+    to: ?.right.append
+    kind: call
+    edge_id: 26
+    range:
+      start_line: 254
+      start_col: 0
+      end_line: 254
+      end_col: 0
+  - from: httpie.utils.open_with_lockfile
+    to: base64.b64encode
+    kind: call
+    edge_id: 27
+    range:
+      start_line: 276
+      start_col: 0
+      end_line: 276
+      end_col: 0
+  - from: httpie.utils.open_with_lockfile
+    to: tempfile.gettempdir
+    kind: call
+    edge_id: 28
+    range:
+      start_line: 277
+      start_col: 0
+      end_line: 277
+      end_col: 0
+  - from: httpie.utils.open_with_lockfile
+    to: httpie.utils.LockFileError
+    kind: call
+    edge_id: 29
+    range:
+      start_line: 284
+      start_col: 0
+      end_line: 284
+      end_col: 0
+  - from: httpie.utils.parse_content_type_header
+    to: ?.key.lower
+    kind: call
+    edge_id: 30
+    range:
+      start_line: 217
+      start_col: 0
+      end_line: 217
+      end_col: 0
+  - from: httpie.utils.get_site_paths
+    to: httpie.utils.as_site
+    kind: call
+    edge_id: 31
+    range:
+      start_line: 240
+      start_col: 0
+      end_line: 243
+      end_col: 0
+  - from: httpie.utils.open_with_lockfile
+    to: os.fsencode
+    kind: call
+    edge_id: 32
+    range:
+      start_line: 276
+      start_col: 0
+      end_line: 276
+      end_col: 0
+  - from: httpie.utils.get_expired_cookies
+    to: ?.cookie.get
+    kind: call
+    edge_id: 33
+    range:
+      start_line: 184
+      start_col: 0
+      end_line: 184
+      end_col: 0
+  - from: httpie.utils.url_as_host
+    to: urllib.parse.urlsplit
+    kind: call
+    edge_id: 34
+    range:
+      start_line: 267
+      start_col: 0
+      end_line: 267
+      end_col: 0

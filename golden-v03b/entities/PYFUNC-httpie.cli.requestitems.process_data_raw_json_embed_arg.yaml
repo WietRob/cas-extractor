@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.requestitems.process_data_raw_json_embed_arg
+kind: entity
+type: py.function
+name: process_data_raw_json_embed_arg
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/requestitems.py
+anchors:
+- type: symbol
+  value: httpie.cli.requestitems.process_data_raw_json_embed_arg
+- type: fingerprint
+  value: 89c964b60551ec3a3ba47a68c119de92d3b5e5fc44c5d45533754fe2cc6a0dc4
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.requestitems

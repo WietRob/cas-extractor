@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_uploads.TestMultipartFormDataFileUpload.test_non_existent_file_raises_parse_error
+kind: entity
+type: py.function
+name: test_non_existent_file_raises_parse_error
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_uploads.py
+anchors:
+- type: symbol
+  value: tests.test_uploads.TestMultipartFormDataFileUpload.test_non_existent_file_raises_parse_error
+- type: fingerprint
+  value: e1a17317548329c4a1bc9dd44ee08a6b2fce4ca0f387707b2b3dfca8aa3c1a09
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_uploads.TestMultipartFormDataFileUpload

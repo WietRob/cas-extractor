@@ -1,0 +1,114 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-3436d945
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T15:03:56.213121+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.parser.add_argument
+  - symbol: httpie.cli.argparser.HTTPieManagerArgumentParser
+  - symbol: httpie.cli.options.parser_to_parser_spec
+  - symbol: httpie.manager.__main__
+  - symbol: httpie.manager.__main__.program
+  - symbol: httpie.manager.cli
+  - symbol: httpie.manager.cli.generate_subparsers
+  - symbol: httpie.manager.cli.missing_subcommand
+  - symbol: httpie.manager.core
+  - symbol: sys.exit
+  - symbol: textwrap.dedent
+  edges:
+  - from: httpie.manager.__main__
+    to: sys.exit
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 61
+      start_col: 0
+      end_line: 61
+      end_col: 0
+  - from: httpie.manager.__main__
+    to: httpie.manager.__main__.program
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 61
+      start_col: 0
+      end_line: 61
+      end_col: 0
+  - from: httpie.manager.cli
+    to: httpie.cli.argparser.HTTPieManagerArgumentParser
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 129
+      start_col: 0
+      end_line: 140
+      end_col: 0
+  - from: httpie.manager.cli
+    to: ?.parser.add_argument
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 142
+      start_col: 0
+      end_line: 151
+      end_col: 0
+  - from: httpie.manager.cli
+    to: ?.parser.add_argument
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 153
+      start_col: 0
+      end_line: 161
+      end_col: 0
+  - from: httpie.manager.cli
+    to: ?.parser.add_argument
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 163
+      start_col: 0
+      end_line: 171
+      end_col: 0
+  - from: httpie.manager.cli
+    to: httpie.cli.options.parser_to_parser_spec
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 180
+      start_col: 0
+      end_line: 180
+      end_col: 0
+  - from: httpie.manager.cli
+    to: httpie.manager.cli.generate_subparsers
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 181
+      start_col: 0
+      end_line: 181
+      end_col: 0
+  - from: httpie.manager.cli
+    to: textwrap.dedent
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 131
+      start_col: 0
+      end_line: 139
+      end_col: 0
+  - from: httpie.manager.core
+    to: httpie.manager.cli.missing_subcommand
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 20
+      start_col: 0
+      end_line: 20
+      end_col: 0

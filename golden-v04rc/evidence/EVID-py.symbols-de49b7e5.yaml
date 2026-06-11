@@ -1,0 +1,26 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-de49b7e5
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T08:37:44.384295+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: extras.profiling.run.Environment.on_repo
+    kind: method
+    file: extras/profiling/run.py
+    range:
+      start_line: 73
+      start_col: 0
+      end_line: 79
+      end_col: 0
+    fingerprint: 85133ef1737ac56fd72f0b7d91236f66d6efd9f666a3357868317525d78f7ec1
+    decorators:
+    - contextmanager
+    params:
+    - name: self
+    returns: Generator[Tuple[Path, Dict[str, str]], None, None]

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.context.Environment.config
+kind: entity
+type: py.function
+name: config
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/context.py
+anchors:
+- type: symbol
+  value: httpie.context.Environment.config
+- type: fingerprint
+  value: 68339c69c3d2c1e7abc4a59dd067a96ecd040135148b157b613527b5c9b62b25
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.context.Environment

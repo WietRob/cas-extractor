@@ -1,0 +1,69 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-a89a6c65
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-23T17:20:11.131368+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://cas_extractor
+  root: ./cas_extractor
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.resolved.rsplit
+  - symbol: cas_extractor.resolvers.base.ResolutionResult
+  - symbol: cas_extractor.resolvers.base.ResolutionStep
+  - symbol: resolvers.static.SuperDispatchResolver._find_class
+  - symbol: resolvers.static.SuperDispatchResolver._resolve_in_bases
+  - symbol: resolvers.static.SuperDispatchResolver.try_resolve
+  edges:
+  - from: resolvers.static.SuperDispatchResolver.try_resolve
+    to: resolvers.static.SuperDispatchResolver._resolve_in_bases
+    kind: method_call
+    edge_id: 0
+    resolution_source: self.method
+    range:
+      start_line: 206
+      start_col: 0
+      end_line: 212
+      end_col: 0
+  - from: resolvers.static.SuperDispatchResolver.try_resolve
+    to: cas_extractor.resolvers.base.ResolutionResult
+    kind: call
+    edge_id: 1
+    resolution_source: module-level
+    range:
+      start_line: 215
+      start_col: 0
+      end_line: 227
+      end_col: 0
+  - from: resolvers.static.SuperDispatchResolver._resolve_in_bases
+    to: resolvers.static.SuperDispatchResolver._find_class
+    kind: method_call
+    edge_id: 2
+    resolution_source: self.method
+    range:
+      start_line: 235
+      start_col: 0
+      end_line: 237
+      end_col: 0
+  - from: resolvers.static.SuperDispatchResolver.try_resolve
+    to: cas_extractor.resolvers.base.ResolutionStep
+    kind: call
+    edge_id: 3
+    resolution_source: module-level
+    range:
+      start_line: 220
+      start_col: 0
+      end_line: 225
+      end_col: 0
+  - from: resolvers.static.SuperDispatchResolver.try_resolve
+    to: ?.resolved.rsplit
+    kind: call
+    edge_id: 4
+    resolution_source: unresolved
+    range:
+      start_line: 223
+      start_col: 0
+      end_line: 223
+      end_col: 0

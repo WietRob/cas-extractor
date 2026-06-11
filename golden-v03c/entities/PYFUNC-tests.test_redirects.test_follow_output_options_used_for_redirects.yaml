@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_redirects.test_follow_output_options_used_for_redirects
+kind: entity
+type: py.function
+name: test_follow_output_options_used_for_redirects
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_redirects.py
+anchors:
+- type: symbol
+  value: tests.test_redirects.test_follow_output_options_used_for_redirects
+- type: fingerprint
+  value: 88fb9ab0eacbd01e2aa54b85cc2c46676eb11cee04b07a02dea6ae351fa34c36
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_redirects

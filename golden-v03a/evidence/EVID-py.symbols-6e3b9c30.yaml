@@ -1,0 +1,21 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-6e3b9c30
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:53.058386+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.plugins.registry
+    kind: module
+    file: httpie/plugins/registry.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 21
+      end_col: 0
+    fingerprint: 5ab5a6e313106855c6e9221cafd6430df9e65bba69da429b1f0c8d049c3f56c8

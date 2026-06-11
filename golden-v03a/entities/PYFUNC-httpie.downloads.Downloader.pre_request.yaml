@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.downloads.Downloader.pre_request
+kind: entity
+type: py.function
+name: pre_request
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/downloads.py
+anchors:
+- type: symbol
+  value: httpie.downloads.Downloader.pre_request
+- type: fingerprint
+  value: 17f68509e07130afae3cec53ec97825815004ebd10c36a13b040a516b82b45a7
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.downloads.Downloader

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.manager.tasks.plugins.PluginInstaller.__init__
+kind: entity
+type: py.function
+name: __init__
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/manager/tasks/plugins.py
+anchors:
+- type: symbol
+  value: httpie.manager.tasks.plugins.PluginInstaller.__init__
+- type: fingerprint
+  value: 42554294ab814e53e535de18cd6be7e296a0990c915c64a6e31ec0bda1fd9c06
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.manager.tasks.plugins.PluginInstaller

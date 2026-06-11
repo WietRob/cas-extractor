@@ -1,0 +1,102 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-008f25bc
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:51:32.507821+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: tests.test_offline
+    kind: module
+    file: tests/test_offline.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 96
+      end_col: 0
+    fingerprint: 81872ab4e64f3ed5a6af8a5f15c0adfd2f457233aa4cfb6352f423eafc438377
+  - qualified: tests.test_offline.test_offline
+    kind: function
+    file: tests/test_offline.py
+    range:
+      start_line: 5
+      start_col: 0
+      end_line: 10
+      end_col: 0
+    fingerprint: 4be9a2b1a85e74fc19d68d13a7efc1ba7b657fece73502e8aa1b1a488597f764
+  - qualified: tests.test_offline.test_offline_raw
+    kind: function
+    file: tests/test_offline.py
+    range:
+      start_line: 13
+      start_col: 0
+      end_line: 21
+      end_col: 0
+    fingerprint: 50321ddf6ff43eaed22f3eb36e14b492374c13fa01ebf4100c379b8a0c22bfc2
+  - qualified: tests.test_offline.test_offline_raw_empty_should_use_POST
+    kind: function
+    file: tests/test_offline.py
+    range:
+      start_line: 24
+      start_col: 0
+      end_line: 31
+      end_col: 0
+    fingerprint: 7668cddb1d6d7de19e07c789953099a2a9f0fd0f82a6b64477ee6ab911b329bc
+  - qualified: tests.test_offline.test_offline_form
+    kind: function
+    file: tests/test_offline.py
+    range:
+      start_line: 34
+      start_col: 0
+      end_line: 42
+      end_col: 0
+    fingerprint: 4ad2027aaa480013dc1497810a0545fc81fe2a11a1023c49d761c6d45fb0ff6c
+  - qualified: tests.test_offline.test_offline_json
+    kind: function
+    file: tests/test_offline.py
+    range:
+      start_line: 45
+      start_col: 0
+      end_line: 52
+      end_col: 0
+    fingerprint: 1d651d6e7da49f029866165b6eb15759ec7312a15212350b09ffa85b3b16cb7f
+  - qualified: tests.test_offline.test_offline_multipart
+    kind: function
+    file: tests/test_offline.py
+    range:
+      start_line: 55
+      start_col: 0
+      end_line: 63
+      end_col: 0
+    fingerprint: 51c0bf1478463cce76de6faecc73c0c525c06a6669d0c34b5e9a63a7a5647b69
+  - qualified: tests.test_offline.test_offline_from_file
+    kind: function
+    file: tests/test_offline.py
+    range:
+      start_line: 66
+      start_col: 0
+      end_line: 73
+      end_col: 0
+    fingerprint: 0a61db84271ad4c2e84468e619cbb440a117a934de3756e93fd5158673e3fb97
+  - qualified: tests.test_offline.test_offline_chunked
+    kind: function
+    file: tests/test_offline.py
+    range:
+      start_line: 76
+      start_col: 0
+      end_line: 86
+      end_col: 0
+    fingerprint: 3ed5bceade5fd6fbd6af9855f2dcb234b219774f55d2ccb1352dbbc553733f3d
+  - qualified: tests.test_offline.test_offline_download
+    kind: function
+    file: tests/test_offline.py
+    range:
+      start_line: 89
+      start_col: 0
+      end_line: 96
+      end_col: 0
+    fingerprint: d54b8f28b88773e6ea16bf8753a91d89413226be60f23ec5a3de663a5cce7ac2

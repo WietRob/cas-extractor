@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.output.lexers.common
+kind: entity
+type: py.module
+name: common
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/lexers/common.py
+anchors:
+- type: symbol
+  value: httpie.output.lexers.common
+- type: fingerprint
+  value: e4c84ec06a0b3ac7425ea095d14d7d9778e17f9b40514e5bc5d0d66e9aa5a572
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.lexers

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-run_pipeline_timed.export_and_report
+kind: entity
+type: py.function
+name: export_and_report
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: run_pipeline_timed.py
+anchors:
+- type: symbol
+  value: run_pipeline_timed.export_and_report
+- type: fingerprint
+  value: 7aaa10e707a7d5e783b28fe425dde2cfef5ace19282efa073f4ced4d0049c9a8
+  algo: sha256
+claims: []
+relations: []
+namespace: run_pipeline_timed

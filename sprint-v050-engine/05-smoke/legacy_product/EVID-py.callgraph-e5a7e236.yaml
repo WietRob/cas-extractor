@@ -1,0 +1,84 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-e5a7e236
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-26T06:35:11.643381+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://product
+  root: ./cas_extractor
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.callee_attrs.items
+  - symbol: ?.propagated.get
+  - symbol: ?.result.get
+  - symbol: ?.visiting.add
+  - symbol: ?.visiting.discard
+  - symbol: extractors.python_calls._get_self_calls_in_method
+  - symbol: extractors.python_calls._propagate_self_attr_summaries.propagate
+  - symbol: extractors.python_calls.propagate
+  edges:
+  - from: extractors.python_calls._propagate_self_attr_summaries.propagate
+    to: ?.visiting.add
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 599
+      start_col: 0
+      end_line: 599
+      end_col: 0
+  - from: extractors.python_calls._propagate_self_attr_summaries.propagate
+    to: extractors.python_calls._get_self_calls_in_method
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 602
+      start_col: 0
+      end_line: 604
+      end_col: 0
+  - from: extractors.python_calls._propagate_self_attr_summaries.propagate
+    to: ?.visiting.discard
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 618
+      start_col: 0
+      end_line: 618
+      end_col: 0
+  - from: extractors.python_calls._propagate_self_attr_summaries.propagate
+    to: ?.propagated.get
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 600
+      start_col: 0
+      end_line: 600
+      end_col: 0
+  - from: extractors.python_calls._propagate_self_attr_summaries.propagate
+    to: extractors.python_calls.propagate
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 609
+      start_col: 0
+      end_line: 609
+      end_col: 0
+  - from: extractors.python_calls._propagate_self_attr_summaries.propagate
+    to: ?.callee_attrs.items
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 610
+      start_col: 0
+      end_line: 610
+      end_col: 0
+  - from: extractors.python_calls._propagate_self_attr_summaries.propagate
+    to: ?.result.get
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 615
+      start_col: 0
+      end_line: 615
+      end_col: 0

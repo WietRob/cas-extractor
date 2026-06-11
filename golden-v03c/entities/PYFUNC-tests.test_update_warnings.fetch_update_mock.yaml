@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_update_warnings.fetch_update_mock
+kind: entity
+type: py.function
+name: fetch_update_mock
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_update_warnings.py
+anchors:
+- type: symbol
+  value: tests.test_update_warnings.fetch_update_mock
+- type: fingerprint
+  value: 58986b9eabbeaed98616d415ecbeae2ab25774cd8f3f687cf884463ffe1f1ad6
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_update_warnings

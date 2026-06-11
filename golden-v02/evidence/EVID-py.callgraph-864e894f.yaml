@@ -1,0 +1,368 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-864e894f
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:34.144659+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.self.key_value_arg
+  - symbol: fixtures.FILE_CONTENT.rstrip
+  - symbol: httpie.cli.argtypes.KeyValueArg
+  - symbol: httpie.cli.requestitems.RequestItems.from_args
+  - symbol: httpie.utils.load_json_preserve_order_and_dupe_keys
+  - symbol: pytest.raises
+  - symbol: tests.test_cli.TestItemParsing.test_backslash_before_non_special_character_does_not_escape
+  - symbol: tests.test_cli.TestItemParsing.test_escape_longsep
+  - symbol: tests.test_cli.TestItemParsing.test_escape_separator
+  - symbol: tests.test_cli.TestItemParsing.test_invalid_items
+  - symbol: tests.test_cli.TestItemParsing.test_multiple_file_fields_with_same_field_name
+  - symbol: tests.test_cli.TestItemParsing.test_multiple_text_fields_with_same_field_name
+  - symbol: tests.test_cli.TestItemParsing.test_valid_items
+  edges:
+  - from: tests.test_cli.TestItemParsing.test_escape_separator
+    to: httpie.cli.requestitems.RequestItems.from_args
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 31
+      start_col: 0
+      end_line: 41
+      end_col: 0
+  - from: tests.test_cli.TestItemParsing.test_backslash_before_non_special_character_does_not_escape
+    to: httpie.cli.argtypes.KeyValueArg
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 62
+      start_col: 0
+      end_line: 62
+      end_col: 0
+  - from: tests.test_cli.TestItemParsing.test_backslash_before_non_special_character_does_not_escape
+    to: ?.self.key_value_arg
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 63
+      start_col: 0
+      end_line: 63
+      end_col: 0
+  - from: tests.test_cli.TestItemParsing.test_escape_longsep
+    to: httpie.cli.requestitems.RequestItems.from_args
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 67
+      start_col: 0
+      end_line: 69
+      end_col: 0
+  - from: tests.test_cli.TestItemParsing.test_valid_items
+    to: httpie.cli.requestitems.RequestItems.from_args
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 75
+      start_col: 0
+      end_line: 92
+      end_col: 0
+  - from: tests.test_cli.TestItemParsing.test_multiple_file_fields_with_same_field_name
+    to: httpie.cli.requestitems.RequestItems.from_args
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 131
+      start_col: 0
+      end_line: 134
+      end_col: 0
+  - from: tests.test_cli.TestItemParsing.test_multiple_text_fields_with_same_field_name
+    to: httpie.cli.requestitems.RequestItems.from_args
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 138
+      start_col: 0
+      end_line: 144
+      end_col: 0
+  - from: tests.test_cli.TestItemParsing.test_invalid_items
+    to: pytest.raises
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 28
+      start_col: 0
+      end_line: 28
+      end_col: 0
+  - from: tests.test_cli.TestItemParsing.test_valid_items
+    to: httpie.utils.load_json_preserve_order_and_dupe_keys
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 106
+      start_col: 0
+      end_line: 106
+      end_col: 0
+  - from: tests.test_cli.TestItemParsing.test_escape_separator
+    to: ?.self.key_value_arg
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 33
+      start_col: 0
+      end_line: 33
+      end_col: 0
+  - from: tests.test_cli.TestItemParsing.test_escape_separator
+    to: ?.self.key_value_arg
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 34
+      start_col: 0
+      end_line: 34
+      end_col: 0
+  - from: tests.test_cli.TestItemParsing.test_escape_separator
+    to: ?.self.key_value_arg
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 37
+      start_col: 0
+      end_line: 37
+      end_col: 0
+  - from: tests.test_cli.TestItemParsing.test_escape_separator
+    to: ?.self.key_value_arg
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 40
+      start_col: 0
+      end_line: 40
+      end_col: 0
+  - from: tests.test_cli.TestItemParsing.test_escape_longsep
+    to: ?.self.key_value_arg
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 68
+      start_col: 0
+      end_line: 68
+      end_col: 0
+  - from: tests.test_cli.TestItemParsing.test_valid_items
+    to: ?.self.key_value_arg
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 76
+      start_col: 0
+      end_line: 76
+      end_col: 0
+  - from: tests.test_cli.TestItemParsing.test_valid_items
+    to: ?.self.key_value_arg
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 77
+      start_col: 0
+      end_line: 77
+      end_col: 0
+  - from: tests.test_cli.TestItemParsing.test_valid_items
+    to: ?.self.key_value_arg
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 78
+      start_col: 0
+      end_line: 78
+      end_col: 0
+  - from: tests.test_cli.TestItemParsing.test_valid_items
+    to: ?.self.key_value_arg
+    kind: call
+    edge_id: 17
+    range:
+      start_line: 79
+      start_col: 0
+      end_line: 79
+      end_col: 0
+  - from: tests.test_cli.TestItemParsing.test_valid_items
+    to: ?.self.key_value_arg
+    kind: call
+    edge_id: 18
+    range:
+      start_line: 80
+      start_col: 0
+      end_line: 80
+      end_col: 0
+  - from: tests.test_cli.TestItemParsing.test_valid_items
+    to: ?.self.key_value_arg
+    kind: call
+    edge_id: 19
+    range:
+      start_line: 81
+      start_col: 0
+      end_line: 81
+      end_col: 0
+  - from: tests.test_cli.TestItemParsing.test_valid_items
+    to: ?.self.key_value_arg
+    kind: call
+    edge_id: 20
+    range:
+      start_line: 82
+      start_col: 0
+      end_line: 82
+      end_col: 0
+  - from: tests.test_cli.TestItemParsing.test_valid_items
+    to: ?.self.key_value_arg
+    kind: call
+    edge_id: 21
+    range:
+      start_line: 83
+      start_col: 0
+      end_line: 83
+      end_col: 0
+  - from: tests.test_cli.TestItemParsing.test_valid_items
+    to: ?.self.key_value_arg
+    kind: call
+    edge_id: 22
+    range:
+      start_line: 84
+      start_col: 0
+      end_line: 84
+      end_col: 0
+  - from: tests.test_cli.TestItemParsing.test_valid_items
+    to: ?.self.key_value_arg
+    kind: call
+    edge_id: 23
+    range:
+      start_line: 85
+      start_col: 0
+      end_line: 85
+      end_col: 0
+  - from: tests.test_cli.TestItemParsing.test_valid_items
+    to: ?.self.key_value_arg
+    kind: call
+    edge_id: 24
+    range:
+      start_line: 86
+      start_col: 0
+      end_line: 86
+      end_col: 0
+  - from: tests.test_cli.TestItemParsing.test_valid_items
+    to: ?.self.key_value_arg
+    kind: call
+    edge_id: 25
+    range:
+      start_line: 87
+      start_col: 0
+      end_line: 87
+      end_col: 0
+  - from: tests.test_cli.TestItemParsing.test_valid_items
+    to: ?.self.key_value_arg
+    kind: call
+    edge_id: 26
+    range:
+      start_line: 88
+      start_col: 0
+      end_line: 88
+      end_col: 0
+  - from: tests.test_cli.TestItemParsing.test_valid_items
+    to: ?.self.key_value_arg
+    kind: call
+    edge_id: 27
+    range:
+      start_line: 89
+      start_col: 0
+      end_line: 89
+      end_col: 0
+  - from: tests.test_cli.TestItemParsing.test_valid_items
+    to: ?.self.key_value_arg
+    kind: call
+    edge_id: 28
+    range:
+      start_line: 90
+      start_col: 0
+      end_line: 90
+      end_col: 0
+  - from: tests.test_cli.TestItemParsing.test_valid_items
+    to: ?.self.key_value_arg
+    kind: call
+    edge_id: 29
+    range:
+      start_line: 91
+      start_col: 0
+      end_line: 91
+      end_col: 0
+  - from: tests.test_cli.TestItemParsing.test_valid_items
+    to: fixtures.FILE_CONTENT.rstrip
+    kind: call
+    edge_id: 30
+    range:
+      start_line: 101
+      start_col: 0
+      end_line: 101
+      end_col: 0
+  - from: tests.test_cli.TestItemParsing.test_valid_items
+    to: httpie.utils.load_json_preserve_order_and_dupe_keys
+    kind: call
+    edge_id: 31
+    range:
+      start_line: 115
+      start_col: 0
+      end_line: 115
+      end_col: 0
+  - from: tests.test_cli.TestItemParsing.test_valid_items
+    to: fixtures.FILE_CONTENT.rstrip
+    kind: call
+    edge_id: 32
+    range:
+      start_line: 122
+      start_col: 0
+      end_line: 122
+      end_col: 0
+  - from: tests.test_cli.TestItemParsing.test_multiple_file_fields_with_same_field_name
+    to: ?.self.key_value_arg
+    kind: call
+    edge_id: 33
+    range:
+      start_line: 132
+      start_col: 0
+      end_line: 132
+      end_col: 0
+  - from: tests.test_cli.TestItemParsing.test_multiple_file_fields_with_same_field_name
+    to: ?.self.key_value_arg
+    kind: call
+    edge_id: 34
+    range:
+      start_line: 133
+      start_col: 0
+      end_line: 133
+      end_col: 0
+  - from: tests.test_cli.TestItemParsing.test_valid_items
+    to: httpie.utils.load_json_preserve_order_and_dupe_keys
+    kind: call
+    edge_id: 35
+    range:
+      start_line: 112
+      start_col: 0
+      end_line: 112
+      end_col: 0
+  - from: tests.test_cli.TestItemParsing.test_multiple_text_fields_with_same_field_name
+    to: ?.self.key_value_arg
+    kind: call
+    edge_id: 36
+    range:
+      start_line: 140
+      start_col: 0
+      end_line: 140
+      end_col: 0
+  - from: tests.test_cli.TestItemParsing.test_multiple_text_fields_with_same_field_name
+    to: ?.self.key_value_arg
+    kind: call
+    edge_id: 37
+    range:
+      start_line: 141
+      start_col: 0
+      end_line: 141
+      end_col: 0

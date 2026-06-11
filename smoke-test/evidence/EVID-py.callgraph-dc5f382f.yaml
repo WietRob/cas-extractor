@@ -1,0 +1,170 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-dc5f382f
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:35:58.266466+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+payload:
+  nodes:
+  - symbol: ?.parser.add_argument
+  - symbol: ?.parser.parse_args
+  - symbol: argparse.ArgumentParser
+  - symbol: cas_extractor.extractors.python_calls.extract_calls
+  - symbol: cas_extractor.extractors.python_imports.extract_imports
+  - symbol: cas_extractor.extractors.python_symbols.extract_symbols
+  - symbol: cas_extractor.models.evidence.SourceInfo
+  - symbol: cas_extractor.writers.evidence_writer.write_calls_evidence
+  - symbol: cas_extractor.writers.evidence_writer.write_imports_evidence
+  - symbol: cas_extractor.writers.evidence_writer.write_symbols_evidence
+  - symbol: datetime.datetime.now
+  - symbol: extract_python
+  - symbol: extract_python.main
+  edges:
+  - from: extract_python.main
+    to: argparse.ArgumentParser
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 33
+      start_col: 0
+      end_line: 35
+      end_col: 0
+  - from: extract_python.main
+    to: ?.parser.add_argument
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 36
+      start_col: 0
+      end_line: 36
+      end_col: 0
+  - from: extract_python.main
+    to: ?.parser.add_argument
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 37
+      start_col: 0
+      end_line: 37
+      end_col: 0
+  - from: extract_python.main
+    to: ?.parser.add_argument
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 38
+      start_col: 0
+      end_line: 38
+      end_col: 0
+  - from: extract_python.main
+    to: ?.parser.add_argument
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 39
+      start_col: 0
+      end_line: 39
+      end_col: 0
+  - from: extract_python.main
+    to: ?.parser.add_argument
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 40
+      start_col: 0
+      end_line: 40
+      end_col: 0
+  - from: extract_python.main
+    to: ?.parser.parse_args
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 41
+      start_col: 0
+      end_line: 41
+      end_col: 0
+  - from: extract_python.main
+    to: cas_extractor.models.evidence.SourceInfo
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 43
+      start_col: 0
+      end_line: 48
+      end_col: 0
+  - from: extract_python.main
+    to: cas_extractor.writers.evidence_writer.write_symbols_evidence
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 56
+      start_col: 0
+      end_line: 56
+      end_col: 0
+  - from: extract_python.main
+    to: cas_extractor.writers.evidence_writer.write_imports_evidence
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 63
+      start_col: 0
+      end_line: 63
+      end_col: 0
+  - from: extract_python
+    to: extract_python.main
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 80
+      start_col: 0
+      end_line: 80
+      end_col: 0
+  - from: extract_python.main
+    to: cas_extractor.extractors.python_symbols.extract_symbols
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 54
+      start_col: 0
+      end_line: 54
+      end_col: 0
+  - from: extract_python.main
+    to: cas_extractor.extractors.python_imports.extract_imports
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 61
+      start_col: 0
+      end_line: 61
+      end_col: 0
+  - from: extract_python.main
+    to: cas_extractor.writers.evidence_writer.write_calls_evidence
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 71
+      start_col: 0
+      end_line: 71
+      end_col: 0
+  - from: extract_python.main
+    to: cas_extractor.extractors.python_calls.extract_calls
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 69
+      start_col: 0
+      end_line: 69
+      end_col: 0
+  - from: extract_python.main
+    to: datetime.datetime.now
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 47
+      start_col: 0
+      end_line: 47
+      end_col: 0

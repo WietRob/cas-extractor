@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.manager.tasks.sessions.cli_sessions
+kind: entity
+type: py.function
+name: cli_sessions
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/manager/tasks/sessions.py
+anchors:
+- type: symbol
+  value: httpie.manager.tasks.sessions.cli_sessions
+- type: fingerprint
+  value: 8c761179968d74379ed482d9f5c9168defa31fc46fc98750359fd4e54d899ad0
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.manager.tasks.sessions

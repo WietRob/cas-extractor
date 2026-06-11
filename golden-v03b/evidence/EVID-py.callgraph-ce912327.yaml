@@ -1,0 +1,187 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-ce912327
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T15:03:56.509598+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.expected_xml_file.read_text
+  - symbol: ?.file.read_text
+  - symbol: ?.file.with_name
+  - symbol: httpie.output.formatters.xml.parse_xml
+  - symbol: httpie.output.formatters.xml.pretty_xml
+  - symbol: pytest.skip
+  - symbol: responses.add
+  - symbol: tests.test_xml.test_invalid_xml
+  - symbol: tests.test_xml.test_valid_xml
+  - symbol: tests.test_xml.test_xml_format_options
+  - symbol: tests.test_xml.test_xml_xhtml
+  - symbol: utils.http
+  edges:
+  - from: tests.test_xml.test_xml_format_options
+    to: responses.add
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 23
+      start_col: 0
+      end_line: 28
+      end_col: 0
+  - from: tests.test_xml.test_xml_format_options
+    to: utils.http
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 30
+      start_col: 0
+      end_line: 30
+      end_col: 0
+  - from: tests.test_xml.test_valid_xml
+    to: ?.file.read_text
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 43
+      start_col: 0
+      end_line: 43
+      end_col: 0
+  - from: tests.test_xml.test_valid_xml
+    to: ?.file.with_name
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 44
+      start_col: 0
+      end_line: 44
+      end_col: 0
+  - from: tests.test_xml.test_valid_xml
+    to: ?.expected_xml_file.read_text
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 45
+      start_col: 0
+      end_line: 45
+      end_col: 0
+  - from: tests.test_xml.test_valid_xml
+    to: responses.add
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 46
+      start_col: 0
+      end_line: 51
+      end_col: 0
+  - from: tests.test_xml.test_valid_xml
+    to: utils.http
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 53
+      start_col: 0
+      end_line: 53
+      end_col: 0
+  - from: tests.test_xml.test_xml_xhtml
+    to: ?.file.read_text
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 61
+      start_col: 0
+      end_line: 61
+      end_col: 0
+  - from: tests.test_xml.test_xml_xhtml
+    to: ?.file.with_name
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 70
+      start_col: 0
+      end_line: 70
+      end_col: 0
+  - from: tests.test_xml.test_xml_xhtml
+    to: ?.expected_xml_file.read_text
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 71
+      start_col: 0
+      end_line: 71
+      end_col: 0
+  - from: tests.test_xml.test_xml_xhtml
+    to: responses.add
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 72
+      start_col: 0
+      end_line: 77
+      end_col: 0
+  - from: tests.test_xml.test_xml_xhtml
+    to: utils.http
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 79
+      start_col: 0
+      end_line: 79
+      end_col: 0
+  - from: tests.test_xml.test_invalid_xml
+    to: ?.file.read_text
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 89
+      start_col: 0
+      end_line: 89
+      end_col: 0
+  - from: tests.test_xml.test_invalid_xml
+    to: responses.add
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 90
+      start_col: 0
+      end_line: 95
+      end_col: 0
+  - from: tests.test_xml.test_invalid_xml
+    to: utils.http
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 98
+      start_col: 0
+      end_line: 98
+      end_col: 0
+  - from: tests.test_xml.test_valid_xml
+    to: pytest.skip
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 41
+      start_col: 0
+      end_line: 41
+      end_col: 0
+  - from: tests.test_xml.test_xml_format_options
+    to: httpie.output.formatters.xml.pretty_xml
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 18
+      start_col: 0
+      end_line: 18
+      end_col: 0
+  - from: tests.test_xml.test_xml_format_options
+    to: httpie.output.formatters.xml.parse_xml
+    kind: call
+    edge_id: 17
+    range:
+      start_line: 18
+      start_col: 0
+      end_line: 18
+      end_col: 0

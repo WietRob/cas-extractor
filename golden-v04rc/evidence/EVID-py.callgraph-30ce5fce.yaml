@@ -1,0 +1,154 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-30ce5fce
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-22T08:37:45.547654+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.pygments.highlight
+  - symbol: ?.super().__init__
+  - symbol: httpie.output.formatters.colors.ColorFormatter.__init__
+  - symbol: httpie.output.formatters.colors.ColorFormatter.format_body
+  - symbol: httpie.output.formatters.colors.ColorFormatter.format_headers
+  - symbol: httpie.output.formatters.colors.ColorFormatter.format_metadata
+  - symbol: httpie.output.formatters.colors.ColorFormatter.get_formatters
+  - symbol: httpie.output.formatters.colors.ColorFormatter.get_lexer_for_body
+  - symbol: httpie.output.formatters.colors.ColorFormatter.get_style_class
+  - symbol: httpie.output.formatters.colors.get_lexer
+  - symbol: lexers.http.SimplifiedHTTPLexer
+  - symbol: lexers.metadata.MetadataLexer
+  - symbol: pygments.formatters.terminal.TerminalFormatter
+  - symbol: pygments.formatters.terminal256.Terminal256Formatter
+  - symbol: pygments.lexers.text.HttpLexer
+  edges:
+  - from: httpie.output.formatters.colors.ColorFormatter.__init__
+    to: ?.super().__init__
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 58
+      start_col: 0
+      end_line: 58
+      end_col: 0
+  - from: httpie.output.formatters.colors.ColorFormatter.__init__
+    to: lexers.metadata.MetadataLexer
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 79
+      start_col: 0
+      end_line: 79
+      end_col: 0
+  - from: httpie.output.formatters.colors.ColorFormatter.format_body
+    to: httpie.output.formatters.colors.ColorFormatter.get_lexer_for_body
+    kind: method_call
+    edge_id: 2
+    range:
+      start_line: 89
+      start_col: 0
+      end_line: 89
+      end_col: 0
+  - from: httpie.output.formatters.colors.ColorFormatter.get_lexer_for_body
+    to: httpie.output.formatters.colors.get_lexer
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 109
+      start_col: 0
+      end_line: 113
+      end_col: 0
+  - from: httpie.output.formatters.colors.ColorFormatter.__init__
+    to: pygments.lexers.text.HttpLexer
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 67
+      start_col: 0
+      end_line: 67
+      end_col: 0
+  - from: httpie.output.formatters.colors.ColorFormatter.__init__
+    to: pygments.formatters.terminal.TerminalFormatter
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 68
+      start_col: 0
+      end_line: 68
+      end_col: 0
+  - from: httpie.output.formatters.colors.ColorFormatter.__init__
+    to: httpie.output.formatters.colors.ColorFormatter.get_formatters
+    kind: method_call
+    edge_id: 6
+    range:
+      start_line: 72
+      start_col: 0
+      end_line: 72
+      end_col: 0
+  - from: httpie.output.formatters.colors.ColorFormatter.__init__
+    to: lexers.http.SimplifiedHTTPLexer
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 73
+      start_col: 0
+      end_line: 73
+      end_col: 0
+  - from: httpie.output.formatters.colors.ColorFormatter.format_body
+    to: ?.pygments.highlight
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 91
+      start_col: 0
+      end_line: 95
+      end_col: 0
+  - from: httpie.output.formatters.colors.ColorFormatter.get_formatters
+    to: httpie.output.formatters.colors.ColorFormatter.get_style_class
+    kind: method_call
+    edge_id: 9
+    range:
+      start_line: 124
+      start_col: 0
+      end_line: 124
+      end_col: 0
+  - from: httpie.output.formatters.colors.ColorFormatter.get_formatters
+    to: pygments.formatters.terminal256.Terminal256Formatter
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 129
+      start_col: 0
+      end_line: 129
+      end_col: 0
+  - from: httpie.output.formatters.colors.ColorFormatter.get_formatters
+    to: pygments.formatters.terminal256.Terminal256Formatter
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 130
+      start_col: 0
+      end_line: 130
+      end_col: 0
+  - from: httpie.output.formatters.colors.ColorFormatter.format_headers
+    to: ?.pygments.highlight
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 82
+      start_col: 0
+      end_line: 86
+      end_col: 0
+  - from: httpie.output.formatters.colors.ColorFormatter.format_metadata
+    to: ?.pygments.highlight
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 99
+      start_col: 0
+      end_line: 103
+      end_col: 0

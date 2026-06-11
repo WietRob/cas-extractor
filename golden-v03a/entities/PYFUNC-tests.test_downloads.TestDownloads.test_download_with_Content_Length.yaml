@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_downloads.TestDownloads.test_download_with_Content_Length
+kind: entity
+type: py.function
+name: test_download_with_Content_Length
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_downloads.py
+anchors:
+- type: symbol
+  value: tests.test_downloads.TestDownloads.test_download_with_Content_Length
+- type: fingerprint
+  value: b26fc717be8b236e19879b9eeb8253264cf364fb486fa50e3b8a4bddbc154d19
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_downloads.TestDownloads

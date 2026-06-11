@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-cas_extractor.utils.fingerprint._ASTNormalizer.visit_ClassDef
+kind: entity
+type: py.function
+name: visit_ClassDef
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor/utils/fingerprint.py
+anchors:
+- type: symbol
+  value: cas_extractor.utils.fingerprint._ASTNormalizer.visit_ClassDef
+- type: fingerprint
+  value: a4a4a4b5ea57d21b5da4aab787e1368391c596c8880137af15f0a46b5af1c3a6
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor.utils.fingerprint._ASTNormalizer

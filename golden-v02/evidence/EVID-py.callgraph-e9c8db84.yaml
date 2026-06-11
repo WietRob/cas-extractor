@@ -1,0 +1,598 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-e9c8db84
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:33.866440+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.final_dict.values
+  - symbol: ?.final_headers.add
+  - symbol: ?.headers.get
+  - symbol: ?.headers.items
+  - symbol: ?.headers.update
+  - symbol: ?.httpie_session.is_new
+  - symbol: ?.httpie_session.remove_cookies
+  - symbol: ?.httpie_session.save
+  - symbol: ?.httpie_session.update_headers
+  - symbol: ?.name.lower
+  - symbol: ?.new_headers.popone
+  - symbol: ?.new_headers.update
+  - symbol: ?.original_headers.items
+  - symbol: ?.parsed_prepped._asdict
+  - symbol: ?.plugin_cls
+  - symbol: ?.prepared_name.casefold
+  - symbol: ?.requests_session.merge_environment_settings
+  - symbol: ?.requests_session.mount
+  - symbol: ?.requests_session.prepare_request
+  - symbol: ?.requests_session.send
+  - symbol: ?.transport_plugin.get_adapter
+  - symbol: ?.value.encode
+  - symbol: ?.value.strip
+  - symbol: adapters.HTTPieHTTPAdapter
+  - symbol: cli.dicts.HTTPHeadersDict
+  - symbol: cli.nested_json.unwrap_top_level_list_if_needed
+  - symbol: httpie.client.apply_missing_repeated_headers
+  - symbol: httpie.client.build_requests_session
+  - symbol: httpie.client.collect_messages
+  - symbol: httpie.client.dump_request
+  - symbol: httpie.client.ensure_path_as_is
+  - symbol: httpie.client.finalize_headers
+  - symbol: httpie.client.json_dict_to_request_body
+  - symbol: httpie.client.make_default_headers
+  - symbol: httpie.client.make_request_kwargs
+  - symbol: httpie.client.make_send_kwargs
+  - symbol: httpie.client.make_send_kwargs_mergeable_from_env
+  - symbol: httpie.client.max_headers
+  - symbol: httpie.client.transform_headers
+  - symbol: json.dumps
+  - symbol: plugins.registry.plugin_manager.get_transport_plugins
+  - symbol: requests.Request
+  - symbol: requests.Session
+  - symbol: sessions.get_httpie_session
+  - symbol: ssl_.HTTPieCertificate
+  - symbol: ssl_.HTTPieHTTPSAdapter
+  - symbol: time.monotonic
+  - symbol: uploads.compress_request
+  - symbol: uploads.get_multipart_data_and_content_type
+  - symbol: uploads.prepare_request_body
+  - symbol: urllib.parse.urlparse
+  - symbol: urllib.parse.urlunparse
+  - symbol: utils.get_expired_cookies
+  - symbol: utils.repr_dict
+  edges:
+  - from: httpie.client.collect_messages
+    to: httpie.client.make_request_kwargs
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 60
+      start_col: 0
+      end_line: 65
+      end_col: 0
+  - from: httpie.client.collect_messages
+    to: httpie.client.make_send_kwargs
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 66
+      start_col: 0
+      end_line: 66
+      end_col: 0
+  - from: httpie.client.collect_messages
+    to: httpie.client.make_send_kwargs_mergeable_from_env
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 67
+      start_col: 0
+      end_line: 67
+      end_col: 0
+  - from: httpie.client.collect_messages
+    to: httpie.client.build_requests_session
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 68
+      start_col: 0
+      end_line: 72
+      end_col: 0
+  - from: httpie.client.collect_messages
+    to: requests.Request
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 91
+      start_col: 0
+      end_line: 91
+      end_col: 0
+  - from: httpie.client.collect_messages
+    to: ?.requests_session.prepare_request
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 92
+      start_col: 0
+      end_line: 92
+      end_col: 0
+  - from: httpie.client.collect_messages
+    to: httpie.client.transform_headers
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 93
+      start_col: 0
+      end_line: 93
+      end_col: 0
+  - from: httpie.client.build_requests_session
+    to: requests.Session
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 161
+      start_col: 0
+      end_line: 161
+      end_col: 0
+  - from: httpie.client.build_requests_session
+    to: adapters.HTTPieHTTPAdapter
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 164
+      start_col: 0
+      end_line: 164
+      end_col: 0
+  - from: httpie.client.build_requests_session
+    to: ssl_.HTTPieHTTPSAdapter
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 165
+      start_col: 0
+      end_line: 172
+      end_col: 0
+  - from: httpie.client.build_requests_session
+    to: ?.requests_session.mount
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 173
+      start_col: 0
+      end_line: 173
+      end_col: 0
+  - from: httpie.client.build_requests_session
+    to: ?.requests_session.mount
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 174
+      start_col: 0
+      end_line: 174
+      end_col: 0
+  - from: httpie.client.build_requests_session
+    to: plugins.registry.plugin_manager.get_transport_plugins
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 177
+      start_col: 0
+      end_line: 177
+      end_col: 0
+  - from: httpie.client.finalize_headers
+    to: cli.dicts.HTTPHeadersDict
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 193
+      start_col: 0
+      end_line: 193
+      end_col: 0
+  - from: httpie.client.finalize_headers
+    to: ?.headers.items
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 194
+      start_col: 0
+      end_line: 194
+      end_col: 0
+  - from: httpie.client.transform_headers
+    to: httpie.client.apply_missing_repeated_headers
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 227
+      start_col: 0
+      end_line: 230
+      end_col: 0
+  - from: httpie.client.apply_missing_repeated_headers
+    to: cli.dicts.HTTPHeadersDict
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 241
+      start_col: 0
+      end_line: 241
+      end_col: 0
+  - from: httpie.client.make_default_headers
+    to: cli.dicts.HTTPHeadersDict
+    kind: call
+    edge_id: 17
+    range:
+      start_line: 264
+      start_col: 0
+      end_line: 266
+      end_col: 0
+  - from: httpie.client.json_dict_to_request_body
+    to: cli.nested_json.unwrap_top_level_list_if_needed
+    kind: call
+    edge_id: 18
+    range:
+      start_line: 315
+      start_col: 0
+      end_line: 315
+      end_col: 0
+  - from: httpie.client.make_request_kwargs
+    to: httpie.client.make_default_headers
+    kind: call
+    edge_id: 19
+    range:
+      start_line: 343
+      start_col: 0
+      end_line: 343
+      end_col: 0
+  - from: httpie.client.make_request_kwargs
+    to: ?.headers.update
+    kind: call
+    edge_id: 20
+    range:
+      start_line: 346
+      start_col: 0
+      end_line: 346
+      end_col: 0
+  - from: httpie.client.make_request_kwargs
+    to: httpie.client.finalize_headers
+    kind: call
+    edge_id: 21
+    range:
+      start_line: 351
+      start_col: 0
+      end_line: 351
+      end_col: 0
+  - from: httpie.client.ensure_path_as_is
+    to: urllib.parse.urlunparse
+    kind: call
+    edge_id: 22
+    range:
+      start_line: 400
+      start_col: 0
+      end_line: 400
+      end_col: 0
+  - from: httpie.client.collect_messages
+    to: sessions.get_httpie_session
+    kind: call
+    edge_id: 23
+    range:
+      start_line: 51
+      start_col: 0
+      end_line: 57
+      end_col: 0
+  - from: httpie.client.collect_messages
+    to: ?.httpie_session.update_headers
+    kind: call
+    edge_id: 24
+    range:
+      start_line: 75
+      start_col: 0
+      end_line: 75
+      end_col: 0
+  - from: httpie.client.collect_messages
+    to: httpie.client.dump_request
+    kind: call
+    edge_id: 25
+    range:
+      start_line: 89
+      start_col: 0
+      end_line: 89
+      end_col: 0
+  - from: httpie.client.collect_messages
+    to: httpie.client.ensure_path_as_is
+    kind: call
+    edge_id: 26
+    range:
+      start_line: 95
+      start_col: 0
+      end_line: 98
+      end_col: 0
+  - from: httpie.client.collect_messages
+    to: uploads.compress_request
+    kind: call
+    edge_id: 27
+    range:
+      start_line: 100
+      start_col: 0
+      end_line: 103
+      end_col: 0
+  - from: httpie.client.build_requests_session
+    to: ?.plugin_cls
+    kind: call
+    edge_id: 28
+    range:
+      start_line: 178
+      start_col: 0
+      end_line: 178
+      end_col: 0
+  - from: httpie.client.build_requests_session
+    to: ?.requests_session.mount
+    kind: call
+    edge_id: 29
+    range:
+      start_line: 179
+      start_col: 0
+      end_line: 182
+      end_col: 0
+  - from: httpie.client.finalize_headers
+    to: ?.final_headers.add
+    kind: call
+    edge_id: 30
+    range:
+      start_line: 208
+      start_col: 0
+      end_line: 208
+      end_col: 0
+  - from: httpie.client.apply_missing_repeated_headers
+    to: ?.new_headers.popone
+    kind: call
+    edge_id: 31
+    range:
+      start_line: 257
+      start_col: 0
+      end_line: 257
+      end_col: 0
+  - from: httpie.client.apply_missing_repeated_headers
+    to: ?.new_headers.update
+    kind: call
+    edge_id: 32
+    range:
+      start_line: 258
+      start_col: 0
+      end_line: 258
+      end_col: 0
+  - from: httpie.client.json_dict_to_request_body
+    to: json.dumps
+    kind: call
+    edge_id: 33
+    range:
+      start_line: 317
+      start_col: 0
+      end_line: 317
+      end_col: 0
+  - from: httpie.client.make_request_kwargs
+    to: httpie.client.json_dict_to_request_body
+    kind: call
+    edge_id: 34
+    range:
+      start_line: 340
+      start_col: 0
+      end_line: 340
+      end_col: 0
+  - from: httpie.client.make_request_kwargs
+    to: ?.headers.update
+    kind: call
+    edge_id: 35
+    range:
+      start_line: 345
+      start_col: 0
+      end_line: 345
+      end_col: 0
+  - from: httpie.client.make_request_kwargs
+    to: uploads.get_multipart_data_and_content_type
+    kind: call
+    edge_id: 36
+    range:
+      start_line: 354
+      start_col: 0
+      end_line: 358
+      end_col: 0
+  - from: httpie.client.make_request_kwargs
+    to: uploads.prepare_request_body
+    kind: call
+    edge_id: 37
+    range:
+      start_line: 364
+      start_col: 0
+      end_line: 371
+      end_col: 0
+  - from: httpie.client.ensure_path_as_is
+    to: urllib.parse.urlparse
+    kind: call
+    edge_id: 38
+    range:
+      start_line: 394
+      start_col: 0
+      end_line: 394
+      end_col: 0
+  - from: httpie.client.ensure_path_as_is
+    to: urllib.parse.urlparse
+    kind: call
+    edge_id: 39
+    range:
+      start_line: 394
+      start_col: 0
+      end_line: 394
+      end_col: 0
+  - from: httpie.client.ensure_path_as_is
+    to: ?.parsed_prepped._asdict
+    kind: call
+    edge_id: 40
+    range:
+      start_line: 397
+      start_col: 0
+      end_line: 397
+      end_col: 0
+  - from: httpie.client.collect_messages
+    to: ?.requests_session.merge_environment_settings
+    kind: call
+    edge_id: 41
+    range:
+      start_line: 109
+      start_col: 0
+      end_line: 112
+      end_col: 0
+  - from: httpie.client.collect_messages
+    to: time.monotonic
+    kind: call
+    edge_id: 42
+    range:
+      start_line: 119
+      start_col: 0
+      end_line: 119
+      end_col: 0
+  - from: httpie.client.collect_messages
+    to: utils.get_expired_cookies
+    kind: call
+    edge_id: 43
+    range:
+      start_line: 120
+      start_col: 0
+      end_line: 122
+      end_col: 0
+  - from: httpie.client.collect_messages
+    to: ?.httpie_session.is_new
+    kind: call
+    edge_id: 44
+    range:
+      start_line: 137
+      start_col: 0
+      end_line: 137
+      end_col: 0
+  - from: httpie.client.collect_messages
+    to: ?.httpie_session.remove_cookies
+    kind: call
+    edge_id: 45
+    range:
+      start_line: 139
+      start_col: 0
+      end_line: 139
+      end_col: 0
+  - from: httpie.client.collect_messages
+    to: ?.httpie_session.save
+    kind: call
+    edge_id: 46
+    range:
+      start_line: 140
+      start_col: 0
+      end_line: 140
+      end_col: 0
+  - from: httpie.client.finalize_headers
+    to: ?.value.strip
+    kind: call
+    edge_id: 47
+    range:
+      start_line: 200
+      start_col: 0
+      end_line: 200
+      end_col: 0
+  - from: httpie.client.make_send_kwargs_mergeable_from_env
+    to: ssl_.HTTPieCertificate
+    kind: call
+    edge_id: 48
+    range:
+      start_line: 299
+      start_col: 0
+      end_line: 299
+      end_col: 0
+  - from: httpie.client.ensure_path_as_is
+    to: ?.final_dict.values
+    kind: call
+    edge_id: 49
+    range:
+      start_line: 400
+      start_col: 0
+      end_line: 400
+      end_col: 0
+  - from: httpie.client.collect_messages
+    to: httpie.client.max_headers
+    kind: call
+    edge_id: 50
+    range:
+      start_line: 113
+      start_col: 0
+      end_line: 113
+      end_col: 0
+  - from: httpie.client.collect_messages
+    to: ?.requests_session.send
+    kind: call
+    edge_id: 51
+    range:
+      start_line: 114
+      start_col: 0
+      end_line: 118
+      end_col: 0
+  - from: httpie.client.build_requests_session
+    to: ?.transport_plugin.get_adapter
+    kind: call
+    edge_id: 52
+    range:
+      start_line: 181
+      start_col: 0
+      end_line: 181
+      end_col: 0
+  - from: httpie.client.dump_request
+    to: utils.repr_dict
+    kind: call
+    edge_id: 53
+    range:
+      start_line: 189
+      start_col: 0
+      end_line: 189
+      end_col: 0
+  - from: httpie.client.finalize_headers
+    to: ?.value.encode
+    kind: call
+    edge_id: 54
+    range:
+      start_line: 203
+      start_col: 0
+      end_line: 203
+      end_col: 0
+  - from: httpie.client.finalize_headers
+    to: ?.name.lower
+    kind: call
+    edge_id: 55
+    range:
+      start_line: 204
+      start_col: 0
+      end_line: 204
+      end_col: 0
+  - from: httpie.client.make_request_kwargs
+    to: ?.headers.get
+    kind: call
+    edge_id: 56
+    range:
+      start_line: 370
+      start_col: 0
+      end_line: 370
+      end_col: 0
+  - from: httpie.client.apply_missing_repeated_headers
+    to: ?.original_headers.items
+    kind: call
+    edge_id: 57
+    range:
+      start_line: 248
+      start_col: 0
+      end_line: 248
+      end_col: 0
+  - from: httpie.client.apply_missing_repeated_headers
+    to: ?.prepared_name.casefold
+    kind: call
+    edge_id: 58
+    range:
+      start_line: 247
+      start_col: 0
+      end_line: 247
+      end_col: 0

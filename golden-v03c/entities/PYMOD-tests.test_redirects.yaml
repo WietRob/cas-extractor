@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-tests.test_redirects
+kind: entity
+type: py.module
+name: test_redirects
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_redirects.py
+anchors:
+- type: symbol
+  value: tests.test_redirects
+- type: fingerprint
+  value: d0019000a8283b4dcaed21ef985df3255edf5bee4df1c94a48bcd9fd79e58357
+  algo: sha256
+claims: []
+relations: []
+namespace: tests

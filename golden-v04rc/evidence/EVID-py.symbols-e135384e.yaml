@@ -1,0 +1,47 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-e135384e
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T08:37:44.607729+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.test_output.TestColors.test_get_lexer
+    kind: method
+    file: tests/test_output.py
+    range:
+      start_line: 242
+      start_col: 0
+      end_line: 245
+      end_col: 0
+    fingerprint: 93a1d2e708794afa7d61ead0e73637d825d7434c4c2061e09aded4ed0c68b9c3
+    decorators:
+    - pytest.mark.parametrize('mime, explicit_json, body, expected_lexer_name', [('application/json',
+      False, None, 'JSON'), ('application/json+foo', False, None, 'JSON'), ('application/foo+json',
+      False, None, 'JSON'), ('application/json-foo', False, None, 'JSON'), ('application/x-json',
+      False, None, 'JSON'), ('foo/json', False, None, 'JSON'), ('foo/json+bar', False,
+      None, 'JSON'), ('foo/bar+json', False, None, 'JSON'), ('foo/json-foo', False,
+      None, 'JSON'), ('foo/x-json', False, None, 'JSON'), ('application/vnd.comverge.grid+hal+json',
+      False, None, 'JSON'), ('text/plain', True, '{}', 'JSON'), ('text/plain', True,
+      'foo', 'Text only')])
+    params:
+    - name: self
+    - name: mime
+    - name: explicit_json
+    - name: body
+    - name: expected_lexer_name
+  - qualified: tests.test_output.TestColors.test_get_lexer_not_found
+    kind: method
+    file: tests/test_output.py
+    range:
+      start_line: 247
+      start_col: 0
+      end_line: 248
+      end_col: 0
+    fingerprint: 28e94de88114598e2caa79c2eb93c1715076a3f8f4e46632d4aa295f4a87e2e4
+    params:
+    - name: self

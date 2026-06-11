@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.requestitems.convert_json_value_to_form_if_needed
+kind: entity
+type: py.function
+name: convert_json_value_to_form_if_needed
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/cli/requestitems.py
+anchors:
+- type: symbol
+  value: httpie.cli.requestitems.convert_json_value_to_form_if_needed
+- type: fingerprint
+  value: f0a39a981d3bbe6e0d8e94f3742371dd7b0b22045035fe08949c82bf08d2ba17
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.requestitems

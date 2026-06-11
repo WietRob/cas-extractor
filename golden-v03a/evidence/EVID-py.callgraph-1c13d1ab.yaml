@@ -1,0 +1,94 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-1c13d1ab
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T12:13:53.820764+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.self.get
+  - symbol: ?.self.update
+  - symbol: httpie.config.BaseConfigDict.__init__
+  - symbol: httpie.config.Config.__init__
+  - symbol: httpie.config.Config._configured_path
+  - symbol: httpie.config.Config.developer_mode
+  - symbol: httpie.config.Config.plugins_dir
+  - symbol: httpie.config.Config.version_info_file
+  - symbol: pathlib.Path
+  edges:
+  - from: httpie.config.Config.__init__
+    to: pathlib.Path
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 144
+      start_col: 0
+      end_line: 144
+      end_col: 0
+  - from: httpie.config.Config.__init__
+    to: httpie.config.BaseConfigDict.__init__
+    kind: super_call
+    edge_id: 1
+    range:
+      start_line: 145
+      start_col: 0
+      end_line: 145
+      end_col: 0
+  - from: httpie.config.Config.__init__
+    to: ?.self.update
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 146
+      start_col: 0
+      end_line: 146
+      end_col: 0
+  - from: httpie.config.Config.plugins_dir
+    to: httpie.config.Config._configured_path
+    kind: method_call
+    edge_id: 3
+    range:
+      start_line: 159
+      start_col: 0
+      end_line: 159
+      end_col: 0
+  - from: httpie.config.Config.version_info_file
+    to: httpie.config.Config._configured_path
+    kind: method_call
+    edge_id: 4
+    range:
+      start_line: 163
+      start_col: 0
+      end_line: 163
+      end_col: 0
+  - from: httpie.config.Config.developer_mode
+    to: ?.self.get
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 172
+      start_col: 0
+      end_line: 172
+      end_col: 0
+  - from: httpie.config.Config._configured_path
+    to: pathlib.Path
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 153
+      start_col: 0
+      end_line: 155
+      end_col: 0
+  - from: httpie.config.Config._configured_path
+    to: ?.self.get
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 154
+      start_col: 0
+      end_line: 154
+      end_col: 0

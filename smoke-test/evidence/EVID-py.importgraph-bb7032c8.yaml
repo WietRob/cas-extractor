@@ -1,0 +1,21 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-bb7032c8
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-21T11:35:57.528711+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+payload:
+  imports:
+  - from: cas_extractor.extractors.python_symbols
+    imports:
+    - ast
+    - os
+    - pathlib.Path
+    - typing.Iterator
+    - cas_extractor.models.evidence.Anchor
+    - cas_extractor.models.evidence.SymbolEntry
+    - cas_extractor.utils.fingerprint.fingerprint_ast

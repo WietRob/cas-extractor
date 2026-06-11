@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-cas_extractor.validators.semantic_validate.SemanticValidationResult.is_valid
+kind: entity
+type: py.function
+name: is_valid
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor/validators/semantic_validate.py
+anchors:
+- type: symbol
+  value: cas_extractor.validators.semantic_validate.SemanticValidationResult.is_valid
+- type: fingerprint
+  value: fac309266b04809b0b299dbcd0407bae5cacfe6ba42a10b01b4df1d592183b67
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor.validators.semantic_validate.SemanticValidationResult

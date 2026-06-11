@@ -1,0 +1,79 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-8161f05f
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T14:01:21.178352+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://cas-extractor
+  root: .
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: cas_extractor.extractors.python_imports
+    kind: module
+    file: cas_extractor/extractors/python_imports.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 111
+      end_col: 0
+    fingerprint: 1aaafaa0f183a607bffcb2f85a282e0d0958b89cd4fd547c14402ff5111abf19
+  - qualified: cas_extractor.extractors.python_imports.extract_imports
+    kind: function
+    file: cas_extractor/extractors/python_imports.py
+    range:
+      start_line: 15
+      start_col: 0
+      end_line: 79
+      end_col: 0
+    fingerprint: 8bf39df21ea136f9c2eeca08962fd096454a4eda19f09e61dd458d94c2a14ebe
+    params:
+    - name: repo_root
+      annotation: str
+    returns: Iterator[ImportEntry]
+  - qualified: cas_extractor.extractors.python_imports._path_to_module
+    kind: function
+    file: cas_extractor/extractors/python_imports.py
+    range:
+      start_line: 82
+      start_col: 0
+      end_line: 88
+      end_col: 0
+    fingerprint: 392cfe62bde75c17336d1d3260c406710004db53390333b19e2b8b8b8a748a97
+    params:
+    - name: rel_path
+      annotation: Path
+    returns: str
+  - qualified: cas_extractor.extractors.python_imports._resolve_relative_import
+    kind: function
+    file: cas_extractor/extractors/python_imports.py
+    range:
+      start_line: 91
+      start_col: 0
+      end_line: 105
+      end_col: 0
+    fingerprint: ed7e5370bf3c5391e3d6887b38053e8214f1b89e4b5561cfb3b1ef47412b7647
+    params:
+    - name: module
+      annotation: str | None
+    - name: level
+      annotation: int
+    - name: current_module
+      annotation: str
+    returns: str
+  - qualified: cas_extractor.extractors.python_imports._extract_source
+    kind: function
+    file: cas_extractor/extractors/python_imports.py
+    range:
+      start_line: 108
+      start_col: 0
+      end_line: 111
+      end_col: 0
+    fingerprint: 9e8d1c87159a2062fe1ae4ab01d57681aaa037677e77ca794780132cfadea412
+    params:
+    - name: source_lines
+      annotation: list[str]
+    - name: node
+      annotation: ast.AST
+    returns: str

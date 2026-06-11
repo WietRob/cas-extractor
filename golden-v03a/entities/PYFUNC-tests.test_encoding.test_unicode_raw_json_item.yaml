@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_encoding.test_unicode_raw_json_item
+kind: entity
+type: py.function
+name: test_unicode_raw_json_item
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_encoding.py
+anchors:
+- type: symbol
+  value: tests.test_encoding.test_unicode_raw_json_item
+- type: fingerprint
+  value: 11e561224d5c99167c3e0eec65fee0d27c220968734db11be2cc07fe04296d3b
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_encoding

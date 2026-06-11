@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_encoding.test_unicode_form_item
+kind: entity
+type: py.function
+name: test_unicode_form_item
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_encoding.py
+anchors:
+- type: symbol
+  value: tests.test_encoding.test_unicode_form_item
+- type: fingerprint
+  value: b8b7b2eb9499ea421815893487246dfeefe71f06598a7bc6b529b9c4fb3a3a05
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_encoding

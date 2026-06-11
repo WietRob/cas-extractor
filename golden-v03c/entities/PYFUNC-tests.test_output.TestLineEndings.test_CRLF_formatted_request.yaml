@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_output.TestLineEndings.test_CRLF_formatted_request
+kind: entity
+type: py.function
+name: test_CRLF_formatted_request
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_output.py
+anchors:
+- type: symbol
+  value: tests.test_output.TestLineEndings.test_CRLF_formatted_request
+- type: fingerprint
+  value: c20f214ae4f15258c3a3cacd9e206a7db6c3e11cb289420fe6c1e3a900feab98
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_output.TestLineEndings

@@ -1,0 +1,93 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-33596cfc
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:34.336176+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.expected_effective_cookie_header.split
+  - symbol: ?.line.split
+  - symbol: ?.new_cookies_dict.items
+  - symbol: ?.r.splitlines
+  - symbol: json.loads
+  - symbol: tests.test_sessions.TestCookieStorage.test_cookie_storage_priority
+  - symbol: tests.test_sessions.TestCookieStorage.test_existing_and_new_cookies_sent_in_request
+  - symbol: utils.http
+  edges:
+  - from: tests.test_sessions.TestCookieStorage.test_existing_and_new_cookies_sent_in_request
+    to: utils.http
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 484
+      start_col: 0
+      end_line: 489
+      end_col: 0
+  - from: tests.test_sessions.TestCookieStorage.test_existing_and_new_cookies_sent_in_request
+    to: json.loads
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 502
+      start_col: 0
+      end_line: 502
+      end_col: 0
+  - from: tests.test_sessions.TestCookieStorage.test_existing_and_new_cookies_sent_in_request
+    to: ?.new_cookies_dict.items
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 504
+      start_col: 0
+      end_line: 504
+      end_col: 0
+  - from: tests.test_sessions.TestCookieStorage.test_cookie_storage_priority
+    to: utils.http
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 538
+      start_col: 0
+      end_line: 542
+      end_col: 0
+  - from: tests.test_sessions.TestCookieStorage.test_cookie_storage_priority
+    to: json.loads
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 543
+      start_col: 0
+      end_line: 543
+      end_col: 0
+  - from: tests.test_sessions.TestCookieStorage.test_existing_and_new_cookies_sent_in_request
+    to: ?.expected_effective_cookie_header.split
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 498
+      start_col: 0
+      end_line: 498
+      end_col: 0
+  - from: tests.test_sessions.TestCookieStorage.test_existing_and_new_cookies_sent_in_request
+    to: ?.line.split
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 492
+      start_col: 0
+      end_line: 492
+      end_col: 0
+  - from: tests.test_sessions.TestCookieStorage.test_existing_and_new_cookies_sent_in_request
+    to: ?.r.splitlines
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 493
+      start_col: 0
+      end_line: 493
+      end_col: 0

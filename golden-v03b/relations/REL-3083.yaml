@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-3083
+kind: relation
+type: calls
+from: PYFUNC-tests.test_plugins_cli.test_plugin_installation_with_custom_config
+to: PYFUNC-_.httpie_plugins_success
+confidence:
+  level: E1
+  direction: confirmed
+evidence:
+- EVID-py.callgraph-9863e7b4
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1

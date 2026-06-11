@@ -1,0 +1,93 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-28095fcb
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T17:44:05.528506+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.args.insert
+  - symbol: httpie.plugins.registry.plugin_manager.clear
+  - symbol: httpie.plugins.registry.plugin_manager.copy
+  - symbol: httpie.plugins.registry.plugin_manager.extend
+  - symbol: site.getsitepackages
+  - symbol: tests.utils.httpie
+  - symbol: tests.utils.plugins_cli.httpie_plugins.runner
+  - symbol: unittest.mock.patch
+  edges:
+  - from: tests.utils.plugins_cli.httpie_plugins.runner
+    to: ?.args.insert
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 215
+      start_col: 0
+      end_line: 215
+      end_col: 0
+  - from: tests.utils.plugins_cli.httpie_plugins.runner
+    to: httpie.plugins.registry.plugin_manager.copy
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 218
+      start_col: 0
+      end_line: 218
+      end_col: 0
+  - from: tests.utils.plugins_cli.httpie_plugins.runner
+    to: httpie.plugins.registry.plugin_manager.clear
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 222
+      start_col: 0
+      end_line: 222
+      end_col: 0
+  - from: tests.utils.plugins_cli.httpie_plugins.runner
+    to: httpie.plugins.registry.plugin_manager.extend
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 223
+      start_col: 0
+      end_line: 223
+      end_col: 0
+  - from: tests.utils.plugins_cli.httpie_plugins.runner
+    to: ?.args.insert
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 214
+      start_col: 0
+      end_line: 214
+      end_col: 0
+  - from: tests.utils.plugins_cli.httpie_plugins.runner
+    to: site.getsitepackages
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 219
+      start_col: 0
+      end_line: 219
+      end_col: 0
+  - from: tests.utils.plugins_cli.httpie_plugins.runner
+    to: unittest.mock.patch
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 220
+      start_col: 0
+      end_line: 220
+      end_col: 0
+  - from: tests.utils.plugins_cli.httpie_plugins.runner
+    to: tests.utils.httpie
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 221
+      start_col: 0
+      end_line: 221
+      end_col: 0

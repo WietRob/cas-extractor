@@ -1,0 +1,39 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-16a4baca
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T17:44:04.300827+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.cli.nested_json.parse.parse.can_advance
+    kind: function
+    file: httpie/cli/nested_json/parse.py
+    range:
+      start_line: 42
+      start_col: 0
+      end_line: 43
+      end_col: 0
+    fingerprint: b8e066ba16e7a9ba8154e7d67d01e21208734216f9839b798dfa4cca07f330a7
+  - qualified: httpie.cli.nested_json.parse.parse.expect
+    kind: function
+    file: httpie/cli/nested_json/parse.py
+    range:
+      start_line: 46
+      start_col: 0
+      end_line: 67
+      end_col: 0
+    fingerprint: a320db9cf3ba46a64d42f4d4be9c510315556554a77d819a39969429b39e8a5a
+  - qualified: httpie.cli.nested_json.parse.parse.parse_root
+    kind: function
+    file: httpie/cli/nested_json/parse.py
+    range:
+      start_line: 70
+      start_col: 0
+      end_line: 104
+      end_col: 0
+    fingerprint: 41fc041c6a023cbce8ac322337bbb9af807f03b2d8f14a8d1b05855bcd6191a5

@@ -1,0 +1,77 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-ce912327
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:55.265960+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.test_xml
+    kind: module
+    file: tests/test_xml.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 99
+      end_col: 0
+    fingerprint: c6a027137db433f4f3d7da45c67fa3bc40b7d3d119c63b742d47d30ab496bea5
+  - qualified: tests.test_xml.test_xml_format_options
+    kind: function
+    file: tests/test_xml.py
+    range:
+      start_line: 22
+      start_col: 0
+      end_line: 31
+      end_col: 0
+    fingerprint: f9e2f88c46b5d043a7eac6cf45bcf6e5af31052ae4698ab0e098a5e4d0ef29c7
+    decorators:
+    - pytest.mark.parametrize('options, expected_xml', [('xml.format:false', XML_DATA_RAW),
+      ('xml.indent:2', XML_DATA_FORMATTED), ('xml.indent:4', pretty_xml(parse_xml(XML_DATA_RAW),
+      indent=4))])
+    - responses.activate
+    params:
+    - name: options
+    - name: expected_xml
+  - qualified: tests.test_xml.test_valid_xml
+    kind: function
+    file: tests/test_xml.py
+    range:
+      start_line: 36
+      start_col: 0
+      end_line: 54
+      end_col: 0
+    fingerprint: 67581c65466de19c1a1359c92f90f5dd982f9abc416b251851de00175fdc99d8
+    decorators:
+    - pytest.mark.parametrize('file', XML_FILES_VALID)
+    - responses.activate
+    params:
+    - name: file
+  - qualified: tests.test_xml.test_xml_xhtml
+    kind: function
+    file: tests/test_xml.py
+    range:
+      start_line: 58
+      start_col: 0
+      end_line: 80
+      end_col: 0
+    fingerprint: bf31dcd9405c17360d85387a76a24a9cc8e2c6858fd238357c7eb2e89373960d
+    decorators:
+    - responses.activate
+  - qualified: tests.test_xml.test_invalid_xml
+    kind: function
+    file: tests/test_xml.py
+    range:
+      start_line: 85
+      start_col: 0
+      end_line: 99
+      end_col: 0
+    fingerprint: eba6db5b42a7ee37302bd7d2f7ed9ec9bf1b7c1f9247ef01ddd13020ad6e0f55
+    decorators:
+    - pytest.mark.parametrize('file', XML_FILES_INVALID)
+    - responses.activate
+    params:
+    - name: file

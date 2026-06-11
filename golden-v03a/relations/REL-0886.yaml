@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-0886
+kind: relation
+type: contains
+from: PYMOD-httpie.utils.get_expired_cookies
+to: PYFUNC-httpie.utils.get_expired_cookies.is_expired
+confidence:
+  level: E0
+  direction: confirmed
+evidence:
+- EVID-py.symbols-c707037e
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1

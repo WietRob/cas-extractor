@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-cas_extractor.utils.ids.relation_id
+kind: entity
+type: py.function
+name: relation_id
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor/utils/ids.py
+anchors:
+- type: symbol
+  value: cas_extractor.utils.ids.relation_id
+- type: fingerprint
+  value: 3fa2dee6acc80624e36c2ee1f6548f6d65b03c4b1032fa8f913b210a7c447eea
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor.utils.ids

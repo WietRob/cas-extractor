@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.manager.tasks.plugins.PluginInstaller.fail
+kind: entity
+type: py.function
+name: fail
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/manager/tasks/plugins.py
+anchors:
+- type: symbol
+  value: httpie.manager.tasks.plugins.PluginInstaller.fail
+- type: fingerprint
+  value: 4f393e904b09473d3ed8f413900e22490dcedc02cbec4855c06876e94af6e00c
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.manager.tasks.plugins.PluginInstaller

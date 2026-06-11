@@ -1,0 +1,45 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-75f61859
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T09:31:54.597817+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: /tmp/h2-verify
+  revision: git:test
+payload:
+  symbols:
+  - qualified: test_h2.TestFactoryInInit.__init__
+    kind: method
+    file: test_h2.py
+    range:
+      start_line: 75
+      start_col: 0
+      end_line: 76
+      end_col: 0
+    fingerprint: 4ebdac689f0b8dfde61eda048ef9dff0b2598dd50b98ff5bcd8b3c3567d3e180
+    params:
+    - name: self
+  - qualified: test_h2.TestFactoryInInit._create_client
+    kind: method
+    file: test_h2.py
+    range:
+      start_line: 78
+      start_col: 0
+      end_line: 79
+      end_col: 0
+    fingerprint: 3a0dc9b9c2b06c85e18b8e0bb499eb402d57295865b0a5f4b745ce5cd5b18d26
+    params:
+    - name: self
+  - qualified: test_h2.TestFactoryInInit.run
+    kind: method
+    file: test_h2.py
+    range:
+      start_line: 81
+      start_col: 0
+      end_line: 82
+      end_col: 0
+    fingerprint: eed33c6d5f458e22e50fb5c7e77be5d6e159708803e999e4e4090f07e90e538e
+    params:
+    - name: self

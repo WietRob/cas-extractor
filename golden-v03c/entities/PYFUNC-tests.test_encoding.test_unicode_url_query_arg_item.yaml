@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_encoding.test_unicode_url_query_arg_item
+kind: entity
+type: py.function
+name: test_unicode_url_query_arg_item
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_encoding.py
+anchors:
+- type: symbol
+  value: tests.test_encoding.test_unicode_url_query_arg_item
+- type: fingerprint
+  value: 544f15c8dbf99b7dd73057eb131eb43a6d593fd1785f0906ab449fc26a4dd92f
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_encoding

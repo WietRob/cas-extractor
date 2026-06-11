@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_sessions.TestSessionFlow.test_session_created_and_reused
+kind: entity
+type: py.function
+name: test_session_created_and_reused
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_sessions.py
+anchors:
+- type: symbol
+  value: tests.test_sessions.TestSessionFlow.test_session_created_and_reused
+- type: fingerprint
+  value: da6ced7e8d9e60e8812a9e537aadeeb98bbaab24ad92b2d1d449a290509dfe5b
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_sessions.TestSessionFlow

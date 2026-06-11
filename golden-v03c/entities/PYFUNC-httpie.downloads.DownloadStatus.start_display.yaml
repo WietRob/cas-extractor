@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.downloads.DownloadStatus.start_display
+kind: entity
+type: py.function
+name: start_display
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/downloads.py
+anchors:
+- type: symbol
+  value: httpie.downloads.DownloadStatus.start_display
+- type: fingerprint
+  value: c09d88b9b09d675a016dc50255674b67478497e09458767b4e0a14e40a58f3d2
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.downloads.DownloadStatus

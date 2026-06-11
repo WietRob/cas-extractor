@@ -1,0 +1,48 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-9fcebe27
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:55.149231+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.test_cli.TestStdin.test_ignore_stdin
+    kind: method
+    file: tests/test_cli.py
+    range:
+      start_line: 336
+      start_col: 0
+      end_line: 344
+      end_col: 0
+    fingerprint: 434f3fb56f5b4838551517cd16649d26fffc30e0c5ba72b61be8658a467cefc7
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_cli.TestStdin.test_ignore_stdin_cannot_prompt_password
+    kind: method
+    file: tests/test_cli.py
+    range:
+      start_line: 346
+      start_col: 0
+      end_line: 350
+      end_col: 0
+    fingerprint: 32a2a2639e73f798fd05e8b5880070a809eac9edb261315101b56fa3911f9673
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_cli.TestStdin.test_stdin_closed
+    kind: method
+    file: tests/test_cli.py
+    range:
+      start_line: 352
+      start_col: 0
+      end_line: 354
+      end_col: 0
+    fingerprint: 12b095f49f4f98789f33d3ee79f4b53270105274d879f4e94fd293ba22d25df3
+    params:
+    - name: self
+    - name: httpbin

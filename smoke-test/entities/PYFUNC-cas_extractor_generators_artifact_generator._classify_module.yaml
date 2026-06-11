@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-cas_extractor_generators_artifact_generator._classify_module
+kind: entity
+type: py.function
+name: _classify_module
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor_generators_artifact_generator.py
+anchors:
+- type: symbol
+  value: cas_extractor_generators_artifact_generator._classify_module
+- type: fingerprint
+  value: 3b6422685b1358dfcbd39457821a8b7fd1a8c81bff4caee174dc47d3b1ac8b1b
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor_generators_artifact_generator

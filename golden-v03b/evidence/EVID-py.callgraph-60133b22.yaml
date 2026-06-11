@@ -1,0 +1,86 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-60133b22
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T15:03:56.458124+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: datetime.datetime
+  - symbol: httpie.sessions.Session
+  - symbol: httpie.sessions.Session.remove_cookies
+  - symbol: httpie.utils.get_expired_cookies
+  - symbol: json.loads
+  - symbol: tests.test_sessions.TestExpiredCookies.test_expired_cookies
+  - symbol: tests.test_sessions.TestExpiredCookies.test_get_expired_cookies_manages_multiple_cookie_headers
+  - symbol: tests.test_sessions.TestExpiredCookies.test_get_expired_cookies_using_max_age
+  - symbol: tests.test_sessions.TestExpiredCookies.test_removes_expired_cookies_from_session_obj
+  - symbol: utils.http
+  edges:
+  - from: tests.test_sessions.TestExpiredCookies.test_removes_expired_cookies_from_session_obj
+    to: httpie.sessions.Session
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 380
+      start_col: 0
+      end_line: 380
+      end_col: 0
+  - from: tests.test_sessions.TestExpiredCookies.test_removes_expired_cookies_from_session_obj
+    to: httpie.sessions.Session.remove_cookies
+    kind: method_call
+    edge_id: 1
+    range:
+      start_line: 382
+      start_col: 0
+      end_line: 382
+      end_col: 0
+  - from: tests.test_sessions.TestExpiredCookies.test_expired_cookies
+    to: utils.http
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 386
+      start_col: 0
+      end_line: 390
+      end_col: 0
+  - from: tests.test_sessions.TestExpiredCookies.test_expired_cookies
+    to: json.loads
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 393
+      start_col: 0
+      end_line: 393
+      end_col: 0
+  - from: tests.test_sessions.TestExpiredCookies.test_get_expired_cookies_using_max_age
+    to: httpie.utils.get_expired_cookies
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 402
+      start_col: 0
+      end_line: 402
+      end_col: 0
+  - from: tests.test_sessions.TestExpiredCookies.test_get_expired_cookies_manages_multiple_cookie_headers
+    to: httpie.utils.get_expired_cookies
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 443
+      start_col: 0
+      end_line: 443
+      end_col: 0
+  - from: tests.test_sessions.TestExpiredCookies.test_get_expired_cookies_manages_multiple_cookie_headers
+    to: datetime.datetime
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 437
+      start_col: 0
+      end_line: 437
+      end_col: 0

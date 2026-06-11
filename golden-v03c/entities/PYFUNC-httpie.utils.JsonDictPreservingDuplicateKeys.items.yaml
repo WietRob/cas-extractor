@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.utils.JsonDictPreservingDuplicateKeys.items
+kind: entity
+type: py.function
+name: items
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/utils.py
+anchors:
+- type: symbol
+  value: httpie.utils.JsonDictPreservingDuplicateKeys.items
+- type: fingerprint
+  value: 3856461e2c167252d48d36af69e482b6bed013faee2ef90133eedd11065d4205
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.utils.JsonDictPreservingDuplicateKeys

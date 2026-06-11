@@ -1,0 +1,21 @@
+schema: cas.entity.v0.1
+id: PYMOD-cas_extractor_generators_artifact_generator
+kind: entity
+type: py.module
+name: cas_extractor_generators_artifact_generator
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor_generators_artifact_generator.py
+anchors:
+- type: symbol
+  value: cas_extractor_generators_artifact_generator
+- type: fingerprint
+  value: 18ae4d5ddcfeafc3e6dfc6f9d1075f522037fa4227ea09e9cdc910165e9bb2c9
+  algo: sha256
+claims: []
+relations: []

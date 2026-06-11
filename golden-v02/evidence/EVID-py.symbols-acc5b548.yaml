@@ -1,0 +1,58 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-acc5b548
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:51:32.430518+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: tests.test_cli.TestSchemes.test_invalid_custom_scheme
+    kind: method
+    file: tests/test_cli.py
+    range:
+      start_line: 359
+      start_col: 0
+      end_line: 363
+      end_col: 0
+    fingerprint: ec5351a10ab60254c75364a134931dd271a08192bd607a6ea0494d881f123d14
+    params:
+    - name: self
+  - qualified: tests.test_cli.TestSchemes.test_invalid_scheme_via_via_default_scheme
+    kind: method
+    file: tests/test_cli.py
+    range:
+      start_line: 365
+      start_col: 0
+      end_line: 369
+      end_col: 0
+    fingerprint: 99298a7473137ab51b3cccc2da9c142e0cfabe0ee6646209ce9a8fba302a6461
+    params:
+    - name: self
+  - qualified: tests.test_cli.TestSchemes.test_default_scheme_option
+    kind: method
+    file: tests/test_cli.py
+    range:
+      start_line: 371
+      start_col: 0
+      end_line: 373
+      end_col: 0
+    fingerprint: 17e0835469d526d82b98875f83a942db28f52804b44aa66351e2079c948aab08
+    params:
+    - name: self
+    - name: httpbin_secure
+  - qualified: tests.test_cli.TestSchemes.test_scheme_when_invoked_as_https
+    kind: method
+    file: tests/test_cli.py
+    range:
+      start_line: 375
+      start_col: 0
+      end_line: 377
+      end_col: 0
+    fingerprint: 0917ee89cc35557cf700014a405e77eef4ea5fc13fd8ddde20a0efe84e181eb7
+    params:
+    - name: self
+    - name: httpbin_secure

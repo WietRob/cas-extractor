@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.nested_json.parse.parse.parse_root
+kind: entity
+type: py.function
+name: parse_root
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/nested_json/parse.py
+anchors:
+- type: symbol
+  value: httpie.cli.nested_json.parse.parse.parse_root
+- type: fingerprint
+  value: 41fc041c6a023cbce8ac322337bbb9af807f03b2d8f14a8d1b05855bcd6191a5
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.nested_json.parse.parse

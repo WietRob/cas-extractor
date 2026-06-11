@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.downloads.DownloadStatus.terminate
+kind: entity
+type: py.function
+name: terminate
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/downloads.py
+anchors:
+- type: symbol
+  value: httpie.downloads.DownloadStatus.terminate
+- type: fingerprint
+  value: 42158f5b84c9ecde0cd2df8d06de673df5a136d69e319f2014dec5db81c86222
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.downloads.DownloadStatus

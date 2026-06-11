@@ -1,0 +1,67 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-0472e22f
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:51:32.340073+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.plugins.base.FormatterPlugin.__init__
+    kind: method
+    file: httpie/plugins/base.py
+    range:
+      start_line: 131
+      start_col: 0
+      end_line: 140
+      end_col: 0
+    fingerprint: 93c4557761b4be8001d68f0c758e806c9be5d49a94a6ecec553423789dd571e7
+    params:
+    - name: self
+  - qualified: httpie.plugins.base.FormatterPlugin.format_headers
+    kind: method
+    file: httpie/plugins/base.py
+    range:
+      start_line: 142
+      start_col: 0
+      end_line: 148
+      end_col: 0
+    fingerprint: 05b872bba00cd48d33c21e2a6f7e966398f2f725b6ef3d4bccca611c13ef015d
+    params:
+    - name: self
+    - name: headers
+      annotation: str
+    returns: str
+  - qualified: httpie.plugins.base.FormatterPlugin.format_body
+    kind: method
+    file: httpie/plugins/base.py
+    range:
+      start_line: 150
+      start_col: 0
+      end_line: 157
+      end_col: 0
+    fingerprint: 795bf10b1166402fc62d79fce05ee4495acc3f218a058b07a548d3ca54c0aff7
+    params:
+    - name: self
+    - name: content
+      annotation: str
+    - name: mime
+      annotation: str
+    returns: str
+  - qualified: httpie.plugins.base.FormatterPlugin.format_metadata
+    kind: method
+    file: httpie/plugins/base.py
+    range:
+      start_line: 159
+      start_col: 0
+      end_line: 165
+      end_col: 0
+    fingerprint: e6897db062dfdbd0ca29139c2bc92a4c4debef0002e29ea2d9dd250648065630
+    params:
+    - name: self
+    - name: metadata
+      annotation: str
+    returns: str

@@ -1,0 +1,53 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-7dea3c8d
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T08:37:44.465448+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.manager.core
+    kind: module
+    file: httpie/manager/core.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 42
+      end_col: 0
+    fingerprint: df01ee647ead45418baa05a7ace9ee76f6ff917db68e744014030c84a9369bba
+  - qualified: httpie.manager.core.dispatch_cli_task
+    kind: function
+    file: httpie/manager/core.py
+    range:
+      start_line: 26
+      start_col: 0
+      end_line: 30
+      end_col: 0
+    fingerprint: 358bf2b4dca2cbe848a6c3e11ffde54876d160ab26fc604e2187ec524aaa0728
+    params:
+    - name: env
+      annotation: Environment
+    - name: action
+      annotation: Optional[str]
+    - name: args
+      annotation: argparse.Namespace
+    returns: ExitStatus
+  - qualified: httpie.manager.core.program
+    kind: function
+    file: httpie/manager/core.py
+    range:
+      start_line: 33
+      start_col: 0
+      end_line: 42
+      end_col: 0
+    fingerprint: f633b0e8983232c739531074996a8bcdcddd1898b73727137cfe89cd06db3edf
+    params:
+    - name: args
+      annotation: argparse.Namespace
+    - name: env
+      annotation: Environment
+    returns: ExitStatus

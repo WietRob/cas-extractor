@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.streams.PrettyStream.get_headers
+kind: entity
+type: py.function
+name: get_headers
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/output/streams.py
+anchors:
+- type: symbol
+  value: httpie.output.streams.PrettyStream.get_headers
+- type: fingerprint
+  value: 19b97fee7e01ca3c5714df4e58c648522332c31f5f2b6e26a17e5beb67cb5ca3
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.streams.PrettyStream

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-tests.utils.matching.tokens.ExpectSequence
+kind: entity
+type: py.class
+name: ExpectSequence
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/utils/matching/tokens.py
+anchors:
+- type: symbol
+  value: tests.utils.matching.tokens.ExpectSequence
+- type: fingerprint
+  value: 0427c52b29aea29fb152a3d9b7e14faf5559560a7dcd98da5977971027477014
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils.matching.tokens

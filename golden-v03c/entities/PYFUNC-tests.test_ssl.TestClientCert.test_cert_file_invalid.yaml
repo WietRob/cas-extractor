@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_ssl.TestClientCert.test_cert_file_invalid
+kind: entity
+type: py.function
+name: test_cert_file_invalid
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_ssl.py
+anchors:
+- type: symbol
+  value: tests.test_ssl.TestClientCert.test_cert_file_invalid
+- type: fingerprint
+  value: ef68b477f1bb5b98657000f27204504ab5ce3559d6f14b49421a6aa9bb473d7d
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_ssl.TestClientCert

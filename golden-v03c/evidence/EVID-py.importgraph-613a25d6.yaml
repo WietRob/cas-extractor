@@ -1,0 +1,20 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-613a25d6
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-21T17:44:04.632545+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  imports:
+  - from: tests.test_meta
+    imports:
+    - pytest
+    - httpie.models.ELAPSED_TIME_LABEL
+    - httpie.output.formatters.colors.PIE_STYLE_NAMES
+    - tests.utils.http
+    - tests.utils.MockEnvironment
+    - tests.utils.COLOR

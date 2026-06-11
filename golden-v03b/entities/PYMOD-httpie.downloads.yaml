@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.downloads
+kind: entity
+type: py.module
+name: downloads
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/downloads.py
+anchors:
+- type: symbol
+  value: httpie.downloads
+- type: fingerprint
+  value: 6cc45e21de70af5137767c5b0e4e6d4819c438addd5f49a1e623796626b36991
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie

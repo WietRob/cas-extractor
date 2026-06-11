@@ -1,0 +1,108 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-19f9cf26
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:55.013062+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.models.HTTPMessage.__init__
+    kind: method
+    file: httpie/models.py
+    range:
+      start_line: 26
+      start_col: 0
+      end_line: 27
+      end_col: 0
+    fingerprint: df3b48149f941f2705ec16ebf951c990db45319cf71be7ad5ca9471e82c95fed
+    params:
+    - name: self
+    - name: orig
+  - qualified: httpie.models.HTTPMessage.iter_body
+    kind: method
+    file: httpie/models.py
+    range:
+      start_line: 29
+      start_col: 0
+      end_line: 31
+      end_col: 0
+    fingerprint: 813918b893c7721473293a45611c0dd2d6174db5de3a9ece55e1e76e1b923850
+    params:
+    - name: self
+    - name: chunk_size
+      annotation: int
+    returns: Iterable[bytes]
+  - qualified: httpie.models.HTTPMessage.iter_lines
+    kind: method
+    file: httpie/models.py
+    range:
+      start_line: 33
+      start_col: 0
+      end_line: 35
+      end_col: 0
+    fingerprint: d5d8e9f5bc9e32e1b36d91717cec1ce77b2b83f6eb207a80b9ab002b6cf0ba93
+    params:
+    - name: self
+    - name: chunk_size
+      annotation: int
+    returns: Iterable[bytes]
+  - qualified: httpie.models.HTTPMessage.headers
+    kind: method
+    file: httpie/models.py
+    range:
+      start_line: 38
+      start_col: 0
+      end_line: 40
+      end_col: 0
+    fingerprint: c050d8c987d31d80e726d15beb7561e7bae919d7123ac0b1ad16df798ea63e8f
+    decorators:
+    - property
+    params:
+    - name: self
+    returns: str
+  - qualified: httpie.models.HTTPMessage.metadata
+    kind: method
+    file: httpie/models.py
+    range:
+      start_line: 43
+      start_col: 0
+      end_line: 45
+      end_col: 0
+    fingerprint: 9ba2aa457617e45c4aea16a7c202b4d3cebadeed92acdac2f545bf414775966f
+    decorators:
+    - property
+    params:
+    - name: self
+    returns: str
+  - qualified: httpie.models.HTTPMessage.encoding
+    kind: method
+    file: httpie/models.py
+    range:
+      start_line: 48
+      start_col: 0
+      end_line: 50
+      end_col: 0
+    fingerprint: 5d4c98be6061a2652f7840ef0bbf31569f65f98a0db32786fe5a403fdd7b51c5
+    decorators:
+    - cached_property
+    params:
+    - name: self
+    returns: str
+  - qualified: httpie.models.HTTPMessage.content_type
+    kind: method
+    file: httpie/models.py
+    range:
+      start_line: 53
+      start_col: 0
+      end_line: 58
+      end_col: 0
+    fingerprint: 3292dadf44c1db00cf7a24f982cb6ce9c45d016757c645227689a5b4a7d6e32b
+    decorators:
+    - property
+    params:
+    - name: self
+    returns: str

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_httpie.test_headers_multiple_values
+kind: entity
+type: py.function
+name: test_headers_multiple_values
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_httpie.py
+anchors:
+- type: symbol
+  value: tests.test_httpie.test_headers_multiple_values
+- type: fingerprint
+  value: 92bc131efe6fd6c8df4747c0822688bcb70302a5332be08d072817d441c55945
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_httpie

@@ -1,0 +1,44 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-b5080190
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-25T07:24:33.962006+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://fixtures
+  root: ./sprint-v050-engine/02-fixtures
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.b.build
+  - symbol: test_h28_factory_return
+  - symbol: test_h28_factory_return.Builder
+  - symbol: test_h28_factory_return.builder_factory
+  edges:
+  - from: test_h28_factory_return
+    to: test_h28_factory_return.builder_factory
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 15
+      start_col: 0
+      end_line: 15
+      end_col: 0
+  - from: test_h28_factory_return
+    to: ?.b.build
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 16
+      start_col: 0
+      end_line: 16
+      end_col: 0
+  - from: test_h28_factory_return.builder_factory
+    to: test_h28_factory_return.Builder
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 12
+      start_col: 0
+      end_line: 12
+      end_col: 0

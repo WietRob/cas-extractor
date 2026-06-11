@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.utils.matching.assert_output_does_not_match
+kind: entity
+type: py.function
+name: assert_output_does_not_match
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/utils/matching/__init__.py
+anchors:
+- type: symbol
+  value: tests.utils.matching.assert_output_does_not_match
+- type: fingerprint
+  value: 4f345db63b7606674400bcc843ff38c08f738c06a64bf181e4d890e2a21a4358
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils.matching

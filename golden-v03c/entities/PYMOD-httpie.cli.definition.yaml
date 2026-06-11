@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.cli.definition
+kind: entity
+type: py.module
+name: definition
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/definition.py
+anchors:
+- type: symbol
+  value: httpie.cli.definition
+- type: fingerprint
+  value: d22950e21281ab2396944081fa60a5498168c2e5264b28b267116542327719bc
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli

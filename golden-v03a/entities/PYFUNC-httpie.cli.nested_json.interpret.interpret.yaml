@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.nested_json.interpret.interpret
+kind: entity
+type: py.function
+name: interpret
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/cli/nested_json/interpret.py
+anchors:
+- type: symbol
+  value: httpie.cli.nested_json.interpret.interpret
+- type: fingerprint
+  value: 52cb1fc529206bff7a875119e1e7450c352d6231ae140d4b859273a8dd579439
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.nested_json.interpret

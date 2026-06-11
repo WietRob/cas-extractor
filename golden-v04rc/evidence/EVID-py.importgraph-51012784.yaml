@@ -1,0 +1,29 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-51012784
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-22T08:37:44.778959+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  imports:
+  - from: extras.scripts.generate_man_pages
+    imports:
+    - os
+    - re
+    - contextlib.contextmanager
+    - pathlib.Path
+    - typing.Optional
+    - typing.Iterator
+    - typing.Iterable
+    - httpie
+    - httpie.cli.definition.options
+    - httpie.cli.definition.IS_MAN_PAGE
+    - httpie.cli.options.ParserSpec
+    - httpie.manager.cli.options
+    - httpie.output.ui.rich_help.OptionsHighlighter
+    - httpie.output.ui.rich_help.to_usage
+    - httpie.output.ui.rich_utils.render_as_string

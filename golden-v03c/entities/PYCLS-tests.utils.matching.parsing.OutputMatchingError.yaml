@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-tests.utils.matching.parsing.OutputMatchingError
+kind: entity
+type: py.class
+name: OutputMatchingError
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/utils/matching/parsing.py
+anchors:
+- type: symbol
+  value: tests.utils.matching.parsing.OutputMatchingError
+- type: fingerprint
+  value: 0581afb55510bbc59824f42e5607ad31ed3aa5b991017d9541d00373b64d0d51
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils.matching.parsing

@@ -1,0 +1,19 @@
+=== T9: H1/H3 Regression Check ===
+method_call edges in TRUE:
+    to: test_h2.ClassB.foo
+    to: test_h2.DownloadStatus.finished
+    to: test_h2.DownloadStatus.started
+    to: test_h2.HTTPClient.send
+    to: test_h2.Session.load
+    to: test_h2.TestFactoryInInit._create_client
+
+method_call edges in FALSE:
+    to: test_h2.ClassB.foo
+    to: test_h2.DownloadStatus.finished
+    to: test_h2.DownloadStatus.started
+    to: test_h2.HTTPClient.send
+    to: test_h2.Session.load
+    to: test_h2.TestFactoryInInit._create_client
+
+Summary: TRUE has 7 method_call, FALSE has 7 method_call
+✅ PASS: No H1/H3 regression

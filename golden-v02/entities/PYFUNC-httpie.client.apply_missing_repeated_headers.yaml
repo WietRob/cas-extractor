@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.client.apply_missing_repeated_headers
+kind: entity
+type: py.function
+name: apply_missing_repeated_headers
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/client.py
+anchors:
+- type: symbol
+  value: httpie.client.apply_missing_repeated_headers
+- type: fingerprint
+  value: 43c909facd0772e0b75dc7c682f7d7204a7602c047f36188373054fc862d815e
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.client

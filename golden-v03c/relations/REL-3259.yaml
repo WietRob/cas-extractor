@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-3259
+kind: relation
+type: calls
+from: PYFUNC-httpie.manager.tasks.plugins.PluginInstaller.uninstall
+to: PYFUNC-httpie.status.ExitStatus
+confidence:
+  level: E1
+  direction: confirmed
+evidence:
+- EVID-py.callgraph-a2f2027c
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1

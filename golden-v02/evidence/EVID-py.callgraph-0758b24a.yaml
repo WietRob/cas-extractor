@@ -1,0 +1,54 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-0758b24a
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:34.046921+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.super().__getitem__
+  - symbol: ?.super().get
+  - symbol: httpie.output.ui.rich_palette._GenericColorCaster.__getitem__
+  - symbol: httpie.output.ui.rich_palette._GenericColorCaster._translate
+  - symbol: httpie.output.ui.rich_palette._GenericColorCaster.get
+  edges:
+  - from: httpie.output.ui.rich_palette._GenericColorCaster.__getitem__
+    to: ?.super().__getitem__
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 39
+      start_col: 0
+      end_line: 39
+      end_col: 0
+  - from: httpie.output.ui.rich_palette._GenericColorCaster.get
+    to: ?.super().get
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 42
+      start_col: 0
+      end_line: 42
+      end_col: 0
+  - from: httpie.output.ui.rich_palette._GenericColorCaster.__getitem__
+    to: httpie.output.ui.rich_palette._GenericColorCaster._translate
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 39
+      start_col: 0
+      end_line: 39
+      end_col: 0
+  - from: httpie.output.ui.rich_palette._GenericColorCaster.get
+    to: httpie.output.ui.rich_palette._GenericColorCaster._translate
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 42
+      start_col: 0
+      end_line: 42
+      end_col: 0

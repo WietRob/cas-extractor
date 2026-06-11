@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.manager.core.dispatch_cli_task
+kind: entity
+type: py.function
+name: dispatch_cli_task
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/manager/core.py
+anchors:
+- type: symbol
+  value: httpie.manager.core.dispatch_cli_task
+- type: fingerprint
+  value: 358bf2b4dca2cbe848a6c3e11ffde54876d160ab26fc604e2187ec524aaa0728
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.manager.core

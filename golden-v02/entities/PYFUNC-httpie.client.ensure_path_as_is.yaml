@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.client.ensure_path_as_is
+kind: entity
+type: py.function
+name: ensure_path_as_is
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/client.py
+anchors:
+- type: symbol
+  value: httpie.client.ensure_path_as_is
+- type: fingerprint
+  value: b6700bbf8c8a636a987740c52f3ce70ed67768695b9bcbbff30944186b5879da
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.client

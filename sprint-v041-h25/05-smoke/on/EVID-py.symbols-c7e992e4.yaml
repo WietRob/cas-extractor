@@ -1,0 +1,96 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-c7e992e4
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T13:25:47.500863+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://cas_extractor
+  root: cas_extractor
+  revision: git:test
+payload:
+  symbols:
+  - qualified: models.evidence
+    kind: module
+    file: models/evidence.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 75
+      end_col: 0
+    fingerprint: 94c0e5324218292907df31c81791a82e25d4332cde714d2b750bebe87adfcc0a
+  - qualified: models.evidence.EvidenceLevel
+    kind: class
+    file: models/evidence.py
+    range:
+      start_line: 13
+      start_col: 0
+      end_line: 17
+      end_col: 0
+    fingerprint: 69aceb1eb169d115f049a430b67d83f2aadd2619042158931c20da3901e0fdc6
+  - qualified: models.evidence.SourceInfo
+    kind: class
+    file: models/evidence.py
+    range:
+      start_line: 21
+      start_col: 0
+      end_line: 25
+      end_col: 0
+    fingerprint: e9843e86007a05c0cf5276119f33afb610473de26a7eeb4ba0b8619a983eb2aa
+    decorators:
+    - dataclass(frozen=True)
+  - qualified: models.evidence.Anchor
+    kind: class
+    file: models/evidence.py
+    range:
+      start_line: 29
+      start_col: 0
+      end_line: 35
+      end_col: 0
+    fingerprint: d812e85e4b9f1b8f68671e6908b5433ad7f08a0e1a7d967e97949dbf7b7d4d76
+    decorators:
+    - dataclass(frozen=True)
+  - qualified: models.evidence.SymbolEntry
+    kind: class
+    file: models/evidence.py
+    range:
+      start_line: 39
+      start_col: 0
+      end_line: 47
+      end_col: 0
+    fingerprint: 23ea87088784495914f4fd443b87f3653b2fb64a6b27affe193d4eeb41efe9b0
+    decorators:
+    - dataclass
+  - qualified: models.evidence.ImportEntry
+    kind: class
+    file: models/evidence.py
+    range:
+      start_line: 51
+      start_col: 0
+      end_line: 56
+      end_col: 0
+    fingerprint: 9cb20d63525821469f3d4e894de74d171a1775975d6ba2fa41121f84db7f8680
+    decorators:
+    - dataclass
+  - qualified: models.evidence.CallEntry
+    kind: class
+    file: models/evidence.py
+    range:
+      start_line: 60
+      start_col: 0
+      end_line: 64
+      end_col: 0
+    fingerprint: 9d48ae3017fa2f83bfbf15053af781feb594c7a8e31b9418d566e4ff134eca1a
+    decorators:
+    - dataclass
+  - qualified: models.evidence.EvidenceArtifact
+    kind: class
+    file: models/evidence.py
+    range:
+      start_line: 68
+      start_col: 0
+      end_line: 75
+      end_col: 0
+    fingerprint: f99dd4456f43331098fffad02e8828ad09eb8677103b4fd491dc9847dd8e6413
+    decorators:
+    - dataclass

@@ -1,0 +1,139 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-f63afe26
+kind: evidence
+type: py.symbols
+created_at: '2026-02-23T17:20:10.898715+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://cas_extractor
+  root: ./cas_extractor
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: writers.evidence_writer
+    kind: module
+    file: writers/evidence_writer.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 289
+      end_col: 0
+    fingerprint: e5b2919ba05007ed69daa0c3c79ba1a243d6a4c9c2c45fd47d19d2ac717686a1
+  - qualified: writers.evidence_writer.write_symbols_evidence
+    kind: function
+    file: writers/evidence_writer.py
+    range:
+      start_line: 31
+      start_col: 0
+      end_line: 62
+      end_col: 0
+    fingerprint: 80671db188b341a0957c21a01c7f38a894bdbe55ddd0525d8e93c40061c440a0
+    params:
+    - name: symbols
+      annotation: list[SymbolEntry]
+    - name: source
+      annotation: SourceInfo
+    - name: out_dir
+      annotation: str
+    returns: list[str]
+  - qualified: writers.evidence_writer.write_imports_evidence
+    kind: function
+    file: writers/evidence_writer.py
+    range:
+      start_line: 65
+      start_col: 0
+      end_line: 114
+      end_col: 0
+    fingerprint: eba309e225c3308ae6e276bc94f9f37008eb048be9ef45d76f7f19408f9952ef
+    params:
+    - name: imports
+      annotation: list[ImportEntry]
+    - name: source
+      annotation: SourceInfo
+    - name: out_dir
+      annotation: str
+    returns: list[str]
+  - qualified: writers.evidence_writer.write_calls_evidence
+    kind: function
+    file: writers/evidence_writer.py
+    range:
+      start_line: 117
+      start_col: 0
+      end_line: 184
+      end_col: 0
+    fingerprint: 6453d225b83e246507919b3abe0cc57f1394ec04540641bea25b91bcd6e65ffd
+    params:
+    - name: calls
+      annotation: list[CallEntry]
+    - name: source
+      annotation: SourceInfo
+    - name: out_dir
+      annotation: str
+    returns: list[str]
+  - qualified: writers.evidence_writer._resolution_to_kind
+    kind: function
+    file: writers/evidence_writer.py
+    range:
+      start_line: 187
+      start_col: 0
+      end_line: 202
+      end_col: 0
+    fingerprint: 89313a2e73c9ce746fc2639344c13b618a71d3a677d3c3a78d3f5b7102d918ee
+    params:
+    - name: resolution
+      annotation: str
+    returns: str
+  - qualified: writers.evidence_writer._write_artifact
+    kind: function
+    file: writers/evidence_writer.py
+    range:
+      start_line: 208
+      start_col: 0
+      end_line: 237
+      end_col: 0
+    fingerprint: cfe0084ad0b5b8ec9add11f0b7fe27421a1e6a003f0af9bf4ae7e3a2c6a19eab
+    params:
+    - name: artifact
+      annotation: EvidenceArtifact
+    - name: out_dir
+      annotation: str
+    returns: str
+  - qualified: writers.evidence_writer._symbol_to_dict
+    kind: function
+    file: writers/evidence_writer.py
+    range:
+      start_line: 240
+      start_col: 0
+      end_line: 271
+      end_col: 0
+    fingerprint: 9bc4545cf2a91b41db159a23cba79b581522e6359c27c74d3afdb4f8bd532252
+    params:
+    - name: sym
+      annotation: SymbolEntry
+    returns: dict[str, Any]
+  - qualified: writers.evidence_writer._import_to_dict
+    kind: function
+    file: writers/evidence_writer.py
+    range:
+      start_line: 274
+      start_col: 0
+      end_line: 280
+      end_col: 0
+    fingerprint: 12caf8993b8d947bcdc22395f012e6328b87ac8439cb1121496e168ad8458f0b
+    params:
+    - name: imp
+      annotation: ImportEntry
+    returns: dict[str, Any]
+  - qualified: writers.evidence_writer._call_to_dict
+    kind: function
+    file: writers/evidence_writer.py
+    range:
+      start_line: 283
+      start_col: 0
+      end_line: 289
+      end_col: 0
+    fingerprint: 53790bcef311e7998315591923760751d16c929f7da74797e64b72c845a15c0e
+    params:
+    - name: call
+      annotation: CallEntry
+    returns: dict[str, Any]

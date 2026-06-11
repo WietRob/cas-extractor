@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-extras.profiling.run.call
+kind: entity
+type: py.function
+name: call
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: extras/profiling/run.py
+anchors:
+- type: symbol
+  value: extras.profiling.run.call
+- type: fingerprint
+  value: 4ba64f2f850813dc2c65ff6893ef8500cd20c9b8193fc524e871b307275071f6
+  algo: sha256
+claims: []
+relations: []
+namespace: extras.profiling.run

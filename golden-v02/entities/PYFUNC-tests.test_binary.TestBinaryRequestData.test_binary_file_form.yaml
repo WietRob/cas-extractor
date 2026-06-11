@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_binary.TestBinaryRequestData.test_binary_file_form
+kind: entity
+type: py.function
+name: test_binary_file_form
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_binary.py
+anchors:
+- type: symbol
+  value: tests.test_binary.TestBinaryRequestData.test_binary_file_form
+- type: fingerprint
+  value: bbeec3ecb58c389e1e1e1bd55abfa64d6f2d96afe6f442611f242b5748d6fb72
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_binary.TestBinaryRequestData

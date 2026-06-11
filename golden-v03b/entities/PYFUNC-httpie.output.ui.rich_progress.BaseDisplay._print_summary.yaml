@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.ui.rich_progress.BaseDisplay._print_summary
+kind: entity
+type: py.function
+name: _print_summary
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/ui/rich_progress.py
+anchors:
+- type: symbol
+  value: httpie.output.ui.rich_progress.BaseDisplay._print_summary
+- type: fingerprint
+  value: 4a4cfff874c3732649fff9bde317a0d896fbd4e477052e9e25c218f1e9f488ca
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.ui.rich_progress.BaseDisplay

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.output.lexers.json.EnhancedJsonLexer
+kind: entity
+type: py.class
+name: EnhancedJsonLexer
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/lexers/json.py
+anchors:
+- type: symbol
+  value: httpie.output.lexers.json.EnhancedJsonLexer
+- type: fingerprint
+  value: ad76d7100469197501cb0dbd1753d78132e41b1db0227756582f1f62d76e41fa
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.lexers.json

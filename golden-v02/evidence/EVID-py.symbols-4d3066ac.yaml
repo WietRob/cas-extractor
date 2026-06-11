@@ -1,0 +1,72 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-4d3066ac
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:51:32.528680+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: tests.test_output.TestVerboseFlag.test_verbose
+    kind: method
+    file: tests/test_output.py
+    range:
+      start_line: 189
+      start_col: 0
+      end_line: 193
+      end_col: 0
+    fingerprint: 1bce9901f89cd65db939c78d655ebccf6c161d20887256b3490ff371c64c662e
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_output.TestVerboseFlag.test_verbose_raw
+    kind: method
+    file: tests/test_output.py
+    range:
+      start_line: 195
+      start_col: 0
+      end_line: 199
+      end_col: 0
+    fingerprint: f78114d8de3753079250573f249f8f6d08edd3c7269f68ea8bd53b31dbe78cb2
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_output.TestVerboseFlag.test_verbose_form
+    kind: method
+    file: tests/test_output.py
+    range:
+      start_line: 201
+      start_col: 0
+      end_line: 206
+      end_col: 0
+    fingerprint: 35fd2cf06ec34095dae6eb9e2f5e8bbf79796e0372d84319e0b4b202b1378b62
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_output.TestVerboseFlag.test_verbose_json
+    kind: method
+    file: tests/test_output.py
+    range:
+      start_line: 208
+      start_col: 0
+      end_line: 212
+      end_col: 0
+    fingerprint: 930b6b44095552017f4a6117c32079e63e59678a5dbce48e5cc4ad2ee1986bcb
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_output.TestVerboseFlag.test_verbose_implies_all
+    kind: method
+    file: tests/test_output.py
+    range:
+      start_line: 214
+      start_col: 0
+      end_line: 219
+      end_col: 0
+    fingerprint: f53c4dcdc056c9e93357a55d691039c9b0c8bfdf20b58ecd0594ec9fd7f682ea
+    params:
+    - name: self
+    - name: httpbin

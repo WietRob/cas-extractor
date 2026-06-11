@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-docs.contributors.fetch.FinishedForNow
+kind: entity
+type: py.class
+name: FinishedForNow
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: docs/contributors/fetch.py
+anchors:
+- type: symbol
+  value: docs.contributors.fetch.FinishedForNow
+- type: fingerprint
+  value: e1557997d712cc8332e3e812c127c01e7615c77826792e96cc1449d6f26bd253
+  algo: sha256
+claims: []
+relations: []
+namespace: docs.contributors.fetch

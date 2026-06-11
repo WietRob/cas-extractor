@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-tests.test_windows.TestWindowsOnly
+kind: entity
+type: py.class
+name: TestWindowsOnly
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_windows.py
+anchors:
+- type: symbol
+  value: tests.test_windows.TestWindowsOnly
+- type: fingerprint
+  value: 84fe5c6c1e47b8e9c1a1d885af73beb7778d817ef31b5583118859fecede97a2
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_windows

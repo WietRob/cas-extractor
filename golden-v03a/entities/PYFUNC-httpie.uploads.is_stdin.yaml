@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.uploads.is_stdin
+kind: entity
+type: py.function
+name: is_stdin
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/uploads.py
+anchors:
+- type: symbol
+  value: httpie.uploads.is_stdin
+- type: fingerprint
+  value: 7bb67fb7c58cc55cac4551f55ac2364ea1f9dacb0e3997c4cc0452ba1164996a
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.uploads

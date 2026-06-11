@@ -1,0 +1,45 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-70d3bbba
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-22T08:37:45.550253+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.h.split
+  - symbol: ?.headers.splitlines
+  - symbol: ?.super().__init__
+  - symbol: httpie.output.formatters.headers.HeadersFormatter.__init__
+  - symbol: httpie.output.formatters.headers.HeadersFormatter.format_headers
+  edges:
+  - from: httpie.output.formatters.headers.HeadersFormatter.__init__
+    to: ?.super().__init__
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 7
+      start_col: 0
+      end_line: 7
+      end_col: 0
+  - from: httpie.output.formatters.headers.HeadersFormatter.format_headers
+    to: ?.headers.splitlines
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 16
+      start_col: 0
+      end_line: 16
+      end_col: 0
+  - from: httpie.output.formatters.headers.HeadersFormatter.format_headers
+    to: ?.h.split
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 17
+      start_col: 0
+      end_line: 17
+      end_col: 0

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.output.formatters.colors.ColorFormatter
+kind: entity
+type: py.class
+name: ColorFormatter
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/formatters/colors.py
+anchors:
+- type: symbol
+  value: httpie.output.formatters.colors.ColorFormatter
+- type: fingerprint
+  value: 90622b8296dd96eca139e74979576cfbbbca63cb14576b14b95a2f3fa26eaaa9
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.formatters.colors

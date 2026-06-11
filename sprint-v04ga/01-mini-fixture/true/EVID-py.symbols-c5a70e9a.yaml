@@ -1,0 +1,23 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-c5a70e9a
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T09:31:54.594033+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: /tmp/h2-verify
+  revision: git:test
+payload:
+  symbols:
+  - qualified: test_h2.ClassB.foo
+    kind: method
+    file: test_h2.py
+    range:
+      start_line: 16
+      start_col: 0
+      end_line: 16
+      end_col: 0
+    fingerprint: 08aee6983632b4c1cece86149a94b8cacfef6bf0af44077d4ae44fcc48dd6d27
+    params:
+    - name: self

@@ -1,0 +1,44 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-891b5406
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T17:44:05.205786+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.buffer.clear
+  - symbol: ?.variation
+  - symbol: httpie.cli.nested_json.parse.tokenize.send_buffer
+  - symbol: tokens.Token
+  edges:
+  - from: httpie.cli.nested_json.parse.tokenize.send_buffer
+    to: ?.buffer.clear
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 156
+      start_col: 0
+      end_line: 156
+      end_col: 0
+  - from: httpie.cli.nested_json.parse.tokenize.send_buffer
+    to: tokens.Token
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 150
+      start_col: 0
+      end_line: 155
+      end_col: 0
+  - from: httpie.cli.nested_json.parse.tokenize.send_buffer
+    to: ?.variation
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 145
+      start_col: 0
+      end_line: 145
+      end_col: 0

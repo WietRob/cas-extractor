@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-cas_extractor.validators.schema_validate
+kind: entity
+type: py.module
+name: schema_validate
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor/validators/schema_validate.py
+anchors:
+- type: symbol
+  value: cas_extractor.validators.schema_validate
+- type: fingerprint
+  value: 7dd8a6340cc10dc112554e0d71f4abfbdb716cd9c865a1b28febe6a9264c3f9f
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor.validators

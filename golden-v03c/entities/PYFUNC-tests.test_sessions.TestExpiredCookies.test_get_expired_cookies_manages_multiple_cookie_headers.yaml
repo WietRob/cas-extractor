@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_sessions.TestExpiredCookies.test_get_expired_cookies_manages_multiple_cookie_headers
+kind: entity
+type: py.function
+name: test_get_expired_cookies_manages_multiple_cookie_headers
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_sessions.py
+anchors:
+- type: symbol
+  value: tests.test_sessions.TestExpiredCookies.test_get_expired_cookies_manages_multiple_cookie_headers
+- type: fingerprint
+  value: 716d97ee148777a5436001cd4ecc501000035e1ae4ba13491f9da68bf5f04364
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_sessions.TestExpiredCookies

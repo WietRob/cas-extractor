@@ -1,0 +1,100 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-56f35491
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T17:44:05.156045+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: extras.profiling.run.HTTPieEnvironment.on_repo
+  - symbol: extras.profiling.run.call
+  - symbol: pathlib.Path
+  - symbol: shlex.join
+  - symbol: tempfile.TemporaryDirectory
+  - symbol: venv.create
+  edges:
+  - from: extras.profiling.run.HTTPieEnvironment.on_repo
+    to: tempfile.TemporaryDirectory
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 90
+      start_col: 0
+      end_line: 90
+      end_col: 0
+  - from: extras.profiling.run.HTTPieEnvironment.on_repo
+    to: pathlib.Path
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 91
+      start_col: 0
+      end_line: 91
+      end_col: 0
+  - from: extras.profiling.run.HTTPieEnvironment.on_repo
+    to: extras.profiling.run.call
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 95
+      start_col: 0
+      end_line: 98
+      end_col: 0
+  - from: extras.profiling.run.HTTPieEnvironment.on_repo
+    to: venv.create
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 109
+      start_col: 0
+      end_line: 109
+      end_col: 0
+  - from: extras.profiling.run.HTTPieEnvironment.on_repo
+    to: extras.profiling.run.call
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 113
+      start_col: 0
+      end_line: 123
+      end_col: 0
+  - from: extras.profiling.run.HTTPieEnvironment.on_repo
+    to: extras.profiling.run.call
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 126
+      start_col: 0
+      end_line: 126
+      end_col: 0
+  - from: extras.profiling.run.HTTPieEnvironment.on_repo
+    to: extras.profiling.run.call
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 130
+      start_col: 0
+      end_line: 133
+      end_col: 0
+  - from: extras.profiling.run.HTTPieEnvironment.on_repo
+    to: extras.profiling.run.call
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 101
+      start_col: 0
+      end_line: 105
+      end_col: 0
+  - from: extras.profiling.run.HTTPieEnvironment.on_repo
+    to: shlex.join
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 136
+      start_col: 0
+      end_line: 136
+      end_col: 0

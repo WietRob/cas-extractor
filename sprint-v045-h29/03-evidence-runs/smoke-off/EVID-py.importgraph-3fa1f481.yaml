@@ -1,0 +1,26 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-3fa1f481
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-23T17:20:03.241776+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://cas_extractor
+  root: ./cas_extractor
+  revision: git:HEAD
+payload:
+  imports:
+  - from: generators.artifact_generator
+    imports:
+    - os
+    - re
+    - sys
+    - datetime.datetime
+    - datetime.timezone
+    - pathlib.Path
+    - typing.Any
+    - yaml
+    - cas_extractor.utils.ids.entity_id
+    - cas_extractor.utils.ids.relation_id
+    - cas_extractor.utils.ids.issue_id
+    - cas_extractor.utils.ids.reset_counters

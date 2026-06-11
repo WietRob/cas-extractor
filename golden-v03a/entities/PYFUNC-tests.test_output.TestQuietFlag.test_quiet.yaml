@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_output.TestQuietFlag.test_quiet
+kind: entity
+type: py.function
+name: test_quiet
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_output.py
+anchors:
+- type: symbol
+  value: tests.test_output.TestQuietFlag.test_quiet
+- type: fingerprint
+  value: 55b5e342c8d176016b7dc2ffefc7f7ca906ab6042cffd1d8b17a72a0c548b661
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_output.TestQuietFlag

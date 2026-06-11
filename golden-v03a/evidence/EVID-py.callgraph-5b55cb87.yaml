@@ -1,0 +1,92 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-5b55cb87
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T12:13:53.720972+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: extras.profiling.benchmarks
+  - symbol: extras.profiling.benchmarks.CommandRunner
+  - symbol: extras.profiling.benchmarks.DownloadRunner
+  - symbol: extras.profiling.benchmarks.main
+  - symbol: extras.profiling.run
+  - symbol: extras.profiling.run.main
+  - symbol: pathlib.Path
+  edges:
+  - from: extras.profiling.benchmarks
+    to: extras.profiling.benchmarks.CommandRunner
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 173
+      start_col: 0
+      end_line: 173
+      end_col: 0
+  - from: extras.profiling.benchmarks
+    to: extras.profiling.benchmarks.CommandRunner
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 174
+      start_col: 0
+      end_line: 174
+      end_col: 0
+  - from: extras.profiling.benchmarks
+    to: extras.profiling.benchmarks.DownloadRunner
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 185
+      start_col: 0
+      end_line: 185
+      end_col: 0
+  - from: extras.profiling.benchmarks
+    to: extras.profiling.benchmarks.CommandRunner
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 176
+      start_col: 0
+      end_line: 184
+      end_col: 0
+  - from: extras.profiling.benchmarks
+    to: extras.profiling.benchmarks.main
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 202
+      start_col: 0
+      end_line: 202
+      end_col: 0
+  - from: extras.profiling.run
+    to: extras.profiling.run.main
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 287
+      start_col: 0
+      end_line: 287
+      end_col: 0
+  - from: extras.profiling.run
+    to: pathlib.Path
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 50
+      start_col: 0
+      end_line: 50
+      end_col: 0
+  - from: extras.profiling.run
+    to: pathlib.Path
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 51
+      start_col: 0
+      end_line: 51
+      end_col: 0

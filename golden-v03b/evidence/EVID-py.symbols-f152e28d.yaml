@@ -1,0 +1,55 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-f152e28d
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:54.934556+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.cli.argtypes.KeyValueArg.__init__
+    kind: method
+    file: httpie/cli/argtypes.py
+    range:
+      start_line: 15
+      start_col: 0
+      end_line: 19
+      end_col: 0
+    fingerprint: ccbe990bb0c3a8ac9c856ca3651cdcde2b948eeccec527a1491bb71b57473466
+    params:
+    - name: self
+    - name: key
+      annotation: str
+    - name: value
+      annotation: Optional[str]
+    - name: sep
+      annotation: str
+    - name: orig
+      annotation: str
+  - qualified: httpie.cli.argtypes.KeyValueArg.__eq__
+    kind: method
+    file: httpie/cli/argtypes.py
+    range:
+      start_line: 21
+      start_col: 0
+      end_line: 22
+      end_col: 0
+    fingerprint: 9d5f1c4bcf6492e21937f9b3cd7d56f46709095d4dcc7e5787cbfb7527e34883
+    params:
+    - name: self
+    - name: other
+      annotation: '''KeyValueArg'''
+  - qualified: httpie.cli.argtypes.KeyValueArg.__repr__
+    kind: method
+    file: httpie/cli/argtypes.py
+    range:
+      start_line: 24
+      start_col: 0
+      end_line: 25
+      end_col: 0
+    fingerprint: 7f5167bb96b205f31dd347af9153f1dc932be8a7a3c4e2d0e0878287ac4e2b3f
+    params:
+    - name: self

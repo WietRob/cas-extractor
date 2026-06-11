@@ -1,0 +1,56 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-2073c244
+kind: evidence
+type: py.symbols
+created_at: '2026-02-23T07:07:57.429611+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: /tmp/h27-verify
+  revision: git:test
+payload:
+  symbols:
+  - qualified: test_h27.TestH27FanIn.init_client
+    kind: method
+    file: test_h27.py
+    range:
+      start_line: 100
+      start_col: 0
+      end_line: 101
+      end_col: 0
+    fingerprint: 370ad002b62d7a81b1397861e020c42ca746ca885332b78745c06bcbfdcfda18
+    params:
+    - name: self
+  - qualified: test_h27.TestH27FanIn.path_a
+    kind: method
+    file: test_h27.py
+    range:
+      start_line: 103
+      start_col: 0
+      end_line: 104
+      end_col: 0
+    fingerprint: f92db4741d1764eb3a53c31c8982fca978d82a545b3885caa0b9832873dd941f
+    params:
+    - name: self
+  - qualified: test_h27.TestH27FanIn.path_b
+    kind: method
+    file: test_h27.py
+    range:
+      start_line: 106
+      start_col: 0
+      end_line: 107
+      end_col: 0
+    fingerprint: cf3bd9cabc0908c207b87b1b69830d501eb15e09c840c09aab57c7d9ad059977
+    params:
+    - name: self
+  - qualified: test_h27.TestH27FanIn.run
+    kind: method
+    file: test_h27.py
+    range:
+      start_line: 109
+      start_col: 0
+      end_line: 111
+      end_col: 0
+    fingerprint: 55380555928e05afc8ac7acdca6859987ad9e582df967e47b009177b4b0abeb7
+    params:
+    - name: self

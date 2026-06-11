@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-1138
+kind: relation
+type: contains
+from: PYCLS-httpie.cli.argparser.HTTPieArgumentParser
+to: PYFUNC-httpie.cli.argparser.HTTPieArgumentParser._ensure_one_data_source
+confidence:
+  level: E0
+  direction: confirmed
+evidence:
+- EVID-py.symbols-ea62c93f
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1

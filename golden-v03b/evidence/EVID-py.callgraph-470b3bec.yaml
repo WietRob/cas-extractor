@@ -1,0 +1,66 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-470b3bec
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T15:03:56.153933+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.argument.serialize
+  - symbol: ?.kwargs.copy
+  - symbol: httpie.cli.options.Argument
+  - symbol: httpie.cli.options.Argument.post_init
+  - symbol: httpie.cli.options.Group.add_argument
+  - symbol: httpie.cli.options.Group.finalize
+  - symbol: httpie.cli.options.Group.serialize
+  - symbol: textwrap.dedent
+  edges:
+  - from: httpie.cli.options.Group.add_argument
+    to: httpie.cli.options.Argument
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 84
+      start_col: 0
+      end_line: 84
+      end_col: 0
+  - from: httpie.cli.options.Group.add_argument
+    to: httpie.cli.options.Argument.post_init
+    kind: method_call
+    edge_id: 1
+    range:
+      start_line: 85
+      start_col: 0
+      end_line: 85
+      end_col: 0
+  - from: httpie.cli.options.Group.finalize
+    to: textwrap.dedent
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 81
+      start_col: 0
+      end_line: 81
+      end_col: 0
+  - from: httpie.cli.options.Group.add_argument
+    to: ?.kwargs.copy
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 84
+      start_col: 0
+      end_line: 84
+      end_col: 0
+  - from: httpie.cli.options.Group.serialize
+    to: ?.argument.serialize
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 94
+      start_col: 0
+      end_line: 94
+      end_col: 0

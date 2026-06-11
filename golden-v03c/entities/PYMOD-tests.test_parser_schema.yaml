@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-tests.test_parser_schema
+kind: entity
+type: py.module
+name: test_parser_schema
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_parser_schema.py
+anchors:
+- type: symbol
+  value: tests.test_parser_schema
+- type: fingerprint
+  value: 7f0cb137ead18e012858f074aae8550614a7044cd2bace3a57d3b63e05439f88
+  algo: sha256
+claims: []
+relations: []
+namespace: tests

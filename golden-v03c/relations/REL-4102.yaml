@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-4102
+kind: relation
+type: calls
+from: PYFUNC-tests.fixtures.read_session_file
+to: PYFUNC-json.loads
+confidence:
+  level: E1
+  direction: confirmed
+evidence:
+- EVID-py.callgraph-f6e892fc
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1

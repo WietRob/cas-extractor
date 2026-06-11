@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-0930
+kind: relation
+type: contains
+from: PYCLS-httpie.cli.argtypes.SSLCredentials
+to: PYFUNC-httpie.cli.argtypes.SSLCredentials.prompt_password
+confidence:
+  level: E0
+  direction: confirmed
+evidence:
+- EVID-py.symbols-cd13c2bb
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1

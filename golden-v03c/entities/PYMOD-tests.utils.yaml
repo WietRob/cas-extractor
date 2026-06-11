@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-tests.utils
+kind: entity
+type: py.module
+name: utils
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/utils/__init__.py
+anchors:
+- type: symbol
+  value: tests.utils
+- type: fingerprint
+  value: 2759bc6481723755a77f96dc2fbb59e9e9c66944bd743a65660f6dfd30b301c3
+  algo: sha256
+claims: []
+relations: []
+namespace: tests

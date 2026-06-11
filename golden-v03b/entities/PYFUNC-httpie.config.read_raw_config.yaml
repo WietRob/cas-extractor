@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.config.read_raw_config
+kind: entity
+type: py.function
+name: read_raw_config
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/config.py
+anchors:
+- type: symbol
+  value: httpie.config.read_raw_config
+- type: fingerprint
+  value: b502537b1f7122b73c3f7ef586fae6375d50739c96bd8e6337ee8f558a7d88ef
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.config

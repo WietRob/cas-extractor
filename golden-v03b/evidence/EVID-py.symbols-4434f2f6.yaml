@@ -1,0 +1,25 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-4434f2f6
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:54.921856+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.adapters.HTTPieHTTPAdapter.build_response
+    kind: method
+    file: httpie/adapters.py
+    range:
+      start_line: 7
+      start_col: 0
+      end_line: 13
+      end_col: 0
+    fingerprint: 6022e85f99d0ebf56123b48d4693d58cd984c7f415b55b379f621cdce035e40a
+    params:
+    - name: self
+    - name: req
+    - name: resp

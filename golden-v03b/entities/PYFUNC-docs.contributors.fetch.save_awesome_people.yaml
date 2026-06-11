@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-docs.contributors.fetch.save_awesome_people
+kind: entity
+type: py.function
+name: save_awesome_people
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: docs/contributors/fetch.py
+anchors:
+- type: symbol
+  value: docs.contributors.fetch.save_awesome_people
+- type: fingerprint
+  value: d7f4533c8d0cd19fc4d4661dd336154a59e4399f202d80cebf61126e155b47fd
+  algo: sha256
+claims: []
+relations: []
+namespace: docs.contributors.fetch

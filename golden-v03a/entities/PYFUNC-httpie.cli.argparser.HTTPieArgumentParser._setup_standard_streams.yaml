@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.argparser.HTTPieArgumentParser._setup_standard_streams
+kind: entity
+type: py.function
+name: _setup_standard_streams
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/cli/argparser.py
+anchors:
+- type: symbol
+  value: httpie.cli.argparser.HTTPieArgumentParser._setup_standard_streams
+- type: fingerprint
+  value: 95c46006ec9e60fb03b89ffec9036ca9f3bf411c44729e9c55fdb5d6fa66c6b6
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.argparser.HTTPieArgumentParser

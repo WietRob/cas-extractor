@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_exit_status.test_keyboard_interrupt_in_program_exit_status
+kind: entity
+type: py.function
+name: test_keyboard_interrupt_in_program_exit_status
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_exit_status.py
+anchors:
+- type: symbol
+  value: tests.test_exit_status.test_keyboard_interrupt_in_program_exit_status
+- type: fingerprint
+  value: 2f5e0cf71b8a95ac0627395492e7a3d2d19f996d093b98504a8185230ae0fca0
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_exit_status

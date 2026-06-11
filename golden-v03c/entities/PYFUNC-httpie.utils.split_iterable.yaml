@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.utils.split_iterable
+kind: entity
+type: py.function
+name: split_iterable
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/utils.py
+anchors:
+- type: symbol
+  value: httpie.utils.split_iterable
+- type: fingerprint
+  value: 9a4c975cf737527dbce1ddf11a629b1af88c5dc37f26df99bc29424991b616cb
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.utils

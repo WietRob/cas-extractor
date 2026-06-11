@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_sessions.TestExpiredCookies.test_get_expired_cookies_using_max_age
+kind: entity
+type: py.function
+name: test_get_expired_cookies_using_max_age
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_sessions.py
+anchors:
+- type: symbol
+  value: tests.test_sessions.TestExpiredCookies.test_get_expired_cookies_using_max_age
+- type: fingerprint
+  value: eea81dcd122cf5871c523dd70cda49a1dbecbc6f3ac95865dabf447ab2fd2695
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_sessions.TestExpiredCookies

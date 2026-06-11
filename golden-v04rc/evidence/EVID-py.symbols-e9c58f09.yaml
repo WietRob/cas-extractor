@@ -1,0 +1,27 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-e9c58f09
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T08:37:44.489331+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.output.processing.Conversion.get_converter
+    kind: method
+    file: httpie/output/processing.py
+    range:
+      start_line: 19
+      start_col: 0
+      end_line: 23
+      end_col: 0
+    fingerprint: a9f0cd9f945f5340b2f54b9503158fd42b7a1f4e1fd73a0affe68ffd5418afdf
+    decorators:
+    - staticmethod
+    params:
+    - name: mime
+      annotation: str
+    returns: Optional[ConverterPlugin]

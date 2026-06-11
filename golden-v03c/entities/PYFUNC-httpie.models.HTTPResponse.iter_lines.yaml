@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.models.HTTPResponse.iter_lines
+kind: entity
+type: py.function
+name: iter_lines
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/models.py
+anchors:
+- type: symbol
+  value: httpie.models.HTTPResponse.iter_lines
+- type: fingerprint
+  value: e9b88475f49b37e232dd4c14be6e35a61ee0aa2328ae270928dbf5022659a089
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.models.HTTPResponse

@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-2531
+kind: relation
+type: calls
+from: PYFUNC-httpie.output.ui.rich_utils.render_as_string
+to: PYFUNC-_.fake_console.export_text
+confidence:
+  level: E1
+  direction: confirmed
+evidence:
+- EVID-py.callgraph-4ef5cde0
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1

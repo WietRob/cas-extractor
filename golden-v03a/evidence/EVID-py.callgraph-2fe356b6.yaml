@@ -1,0 +1,190 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-2fe356b6
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T12:13:54.032694+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.example.split
+  - symbol: ?.load_func
+  - symbol: ?.session_dir.glob
+  - symbol: ?.session_dir.mkdir
+  - symbol: shutil.copy
+  - symbol: shutil.copyfile
+  - symbol: tests.fixtures.read_session_file
+  - symbol: tests.test_httpie_cli.test_cli_export
+  - symbol: tests.test_httpie_cli.test_httpie_sessions_upgrade
+  - symbol: tests.test_httpie_cli.test_httpie_sessions_upgrade_all
+  - symbol: tests.test_httpie_cli.test_httpie_sessions_upgrade_on_non_existent_file
+  - symbol: tests.test_httpie_cli.test_plugins_cli_error_message_without_args
+  - symbol: tests.test_httpie_cli.test_plugins_cli_error_messages_invalid_example
+  - symbol: tests.test_httpie_cli.test_plugins_cli_error_messages_with_example
+  - symbol: tests.utils.httpie
+  edges:
+  - from: tests.test_httpie_cli.test_plugins_cli_error_message_without_args
+    to: tests.utils.httpie
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 17
+      start_col: 0
+      end_line: 17
+      end_col: 0
+  - from: tests.test_httpie_cli.test_plugins_cli_error_messages_with_example
+    to: tests.utils.httpie
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 34
+      start_col: 0
+      end_line: 34
+      end_col: 0
+  - from: tests.test_httpie_cli.test_plugins_cli_error_messages_invalid_example
+    to: tests.utils.httpie
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 54
+      start_col: 0
+      end_line: 54
+      end_col: 0
+  - from: tests.test_httpie_cli.test_httpie_sessions_upgrade
+    to: shutil.copyfile
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 84
+      start_col: 0
+      end_line: 84
+      end_col: 0
+  - from: tests.test_httpie_cli.test_httpie_sessions_upgrade
+    to: tests.utils.httpie
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 86
+      start_col: 0
+      end_line: 88
+      end_col: 0
+  - from: tests.test_httpie_cli.test_httpie_sessions_upgrade_on_non_existent_file
+    to: tests.utils.httpie
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 97
+      start_col: 0
+      end_line: 97
+      end_col: 0
+  - from: tests.test_httpie_cli.test_httpie_sessions_upgrade_all
+    to: ?.session_dir.mkdir
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 111
+      start_col: 0
+      end_line: 111
+      end_col: 0
+  - from: tests.test_httpie_cli.test_httpie_sessions_upgrade_all
+    to: tests.utils.httpie
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 115
+      start_col: 0
+      end_line: 117
+      end_col: 0
+  - from: tests.test_httpie_cli.test_cli_export
+    to: tests.utils.httpie
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 136
+      start_col: 0
+      end_line: 136
+      end_col: 0
+  - from: tests.test_httpie_cli.test_httpie_sessions_upgrade
+    to: tests.fixtures.read_session_file
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 90
+      start_col: 0
+      end_line: 90
+      end_col: 0
+  - from: tests.test_httpie_cli.test_httpie_sessions_upgrade
+    to: tests.fixtures.read_session_file
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 90
+      start_col: 0
+      end_line: 92
+      end_col: 0
+  - from: tests.test_httpie_cli.test_httpie_sessions_upgrade_all
+    to: shutil.copy
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 113
+      start_col: 0
+      end_line: 113
+      end_col: 0
+  - from: tests.test_httpie_cli.test_plugins_cli_error_messages_with_example
+    to: ?.example.split
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 34
+      start_col: 0
+      end_line: 34
+      end_col: 0
+  - from: tests.test_httpie_cli.test_plugins_cli_error_messages_invalid_example
+    to: ?.example.split
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 54
+      start_col: 0
+      end_line: 54
+      end_col: 0
+  - from: tests.test_httpie_cli.test_httpie_sessions_upgrade_all
+    to: ?.session_dir.glob
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 121
+      start_col: 0
+      end_line: 121
+      end_col: 0
+  - from: tests.test_httpie_cli.test_httpie_sessions_upgrade_all
+    to: tests.fixtures.read_session_file
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 124
+      start_col: 0
+      end_line: 124
+      end_col: 0
+  - from: tests.test_httpie_cli.test_httpie_sessions_upgrade_all
+    to: tests.fixtures.read_session_file
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 124
+      start_col: 0
+      end_line: 126
+      end_col: 0
+  - from: tests.test_httpie_cli.test_cli_export
+    to: ?.load_func
+    kind: call
+    edge_id: 17
+    range:
+      start_line: 138
+      start_col: 0
+      end_line: 138
+      end_col: 0

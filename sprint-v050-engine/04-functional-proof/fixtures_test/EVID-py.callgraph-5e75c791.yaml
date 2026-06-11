@@ -1,0 +1,77 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-5e75c791
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-25T07:23:45.917546+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://fixtures
+  root: ./sprint-v050-engine/02-fixtures
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ast.dump
+  - symbol: ast.parse
+  - symbol: ast.walk
+  - symbol: test_h13_qualified_attr
+  edges:
+  - from: test_h13_qualified_attr
+    to: ast.walk
+    kind: call
+    edge_id: 0
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'ast' -> 'ast.walk'
+    range:
+      start_line: 5
+      start_col: 0
+      end_line: 5
+      end_col: 0
+  - from: test_h13_qualified_attr
+    to: ast.dump
+    kind: call
+    edge_id: 1
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'ast' -> 'ast.dump'
+    range:
+      start_line: 6
+      start_col: 0
+      end_line: 6
+      end_col: 0
+  - from: test_h13_qualified_attr
+    to: ast.parse
+    kind: call
+    edge_id: 2
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'ast' -> 'ast.parse'
+    range:
+      start_line: 5
+      start_col: 0
+      end_line: 5
+      end_col: 0
+  - from: test_h13_qualified_attr
+    to: ast.parse
+    kind: call
+    edge_id: 3
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'ast' -> 'ast.parse'
+    range:
+      start_line: 6
+      start_col: 0
+      end_line: 6
+      end_col: 0

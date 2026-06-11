@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.options.Argument.post_init
+kind: entity
+type: py.function
+name: post_init
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/options.py
+anchors:
+- type: symbol
+  value: httpie.cli.options.Argument.post_init
+- type: fingerprint
+  value: 7c7ad27ab90918a38e94ffa136688663bcf276c9d215cbcc2f0c22732fe4ce16
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.options.Argument

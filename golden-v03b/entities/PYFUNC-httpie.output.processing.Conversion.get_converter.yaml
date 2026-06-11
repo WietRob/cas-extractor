@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.processing.Conversion.get_converter
+kind: entity
+type: py.function
+name: get_converter
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/processing.py
+anchors:
+- type: symbol
+  value: httpie.output.processing.Conversion.get_converter
+- type: fingerprint
+  value: a9f0cd9f945f5340b2f54b9503158fd42b7a1f4e1fd73a0affe68ffd5418afdf
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.processing.Conversion

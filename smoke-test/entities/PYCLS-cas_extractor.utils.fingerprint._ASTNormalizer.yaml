@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-cas_extractor.utils.fingerprint._ASTNormalizer
+kind: entity
+type: py.class
+name: _ASTNormalizer
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor/utils/fingerprint.py
+anchors:
+- type: symbol
+  value: cas_extractor.utils.fingerprint._ASTNormalizer
+- type: fingerprint
+  value: 44db792be20bdd029d768171bc1818d7d89347610e28bb80dc4e2010ef9ebc62
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor.utils.fingerprint

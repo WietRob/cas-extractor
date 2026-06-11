@@ -1,0 +1,142 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-55a404b4
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:33.802476+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.mime_type.count
+  - symbol: ?.option.lower
+  - symbol: ?.options.setdefault
+  - symbol: ?.path.split
+  - symbol: ?.s.split
+  - symbol: ?.value.isnumeric
+  - symbol: argparse.ArgumentTypeError
+  - symbol: copy.deepcopy
+  - symbol: httpie.cli.argtypes.parse_format_options
+  - symbol: httpie.cli.argtypes.readable_file_arg
+  - symbol: httpie.cli.argtypes.response_charset_type
+  - symbol: httpie.cli.argtypes.response_mime_type
+  edges:
+  - from: httpie.cli.argtypes.parse_format_options
+    to: copy.deepcopy
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 217
+      start_col: 0
+      end_line: 217
+      end_col: 0
+  - from: httpie.cli.argtypes.parse_format_options
+    to: ?.s.split
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 218
+      start_col: 0
+      end_line: 218
+      end_col: 0
+  - from: httpie.cli.argtypes.response_mime_type
+    to: ?.mime_type.count
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 272
+      start_col: 0
+      end_line: 272
+      end_col: 0
+  - from: httpie.cli.argtypes.response_mime_type
+    to: argparse.ArgumentTypeError
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 273
+      start_col: 0
+      end_line: 274
+      end_col: 0
+  - from: httpie.cli.argtypes.readable_file_arg
+    to: argparse.ArgumentTypeError
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 199
+      start_col: 0
+      end_line: 199
+      end_col: 0
+  - from: httpie.cli.argtypes.parse_format_options
+    to: ?.path.split
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 221
+      start_col: 0
+      end_line: 221
+      end_col: 0
+  - from: httpie.cli.argtypes.parse_format_options
+    to: ?.value.isnumeric
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 228
+      start_col: 0
+      end_line: 228
+      end_col: 0
+  - from: httpie.cli.argtypes.parse_format_options
+    to: ?.options.setdefault
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 234
+      start_col: 0
+      end_line: 234
+      end_col: 0
+  - from: httpie.cli.argtypes.response_charset_type
+    to: argparse.ArgumentTypeError
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 266
+      start_col: 0
+      end_line: 267
+      end_col: 0
+  - from: httpie.cli.argtypes.parse_format_options
+    to: argparse.ArgumentTypeError
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 223
+      start_col: 0
+      end_line: 223
+      end_col: 0
+  - from: httpie.cli.argtypes.parse_format_options
+    to: argparse.ArgumentTypeError
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 244
+      start_col: 0
+      end_line: 249
+      end_col: 0
+  - from: httpie.cli.argtypes.parse_format_options
+    to: ?.option.lower
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 220
+      start_col: 0
+      end_line: 220
+      end_col: 0
+  - from: httpie.cli.argtypes.parse_format_options
+    to: argparse.ArgumentTypeError
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 239
+      start_col: 0
+      end_line: 240
+      end_col: 0

@@ -1,0 +1,60 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-cde734c9
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:52.993194+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.manager.__main__
+    kind: module
+    file: httpie/manager/__main__.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 61
+      end_col: 0
+    fingerprint: 60d2e77639f8066ac086f84166ecbf472abd81d1b9a3ea6c05b6e5c7395f0fcd
+  - qualified: httpie.manager.__main__.is_http_command
+    kind: function
+    file: httpie/manager/__main__.py
+    range:
+      start_line: 12
+      start_col: 0
+      end_line: 29
+      end_col: 0
+    fingerprint: 38f7360333e5cfe3a178f79b8b3f4f664e75dc2c6382f34850b08e26122f8867
+    params:
+    - name: args
+      annotation: List[Union[str, bytes]]
+    - name: env
+      annotation: Environment
+    returns: bool
+  - qualified: httpie.manager.__main__.main
+    kind: function
+    file: httpie/manager/__main__.py
+    range:
+      start_line: 32
+      start_col: 0
+      end_line: 48
+      end_col: 0
+    fingerprint: 40921d72a6262dccf456f35d2bdbcb78beb28a2f90a5e49ae09ed79f8e4a6065
+    params:
+    - name: args
+      annotation: List[Union[str, bytes]]
+    - name: env
+      annotation: Environment
+    returns: ExitStatus
+  - qualified: httpie.manager.__main__.program
+    kind: function
+    file: httpie/manager/__main__.py
+    range:
+      start_line: 51
+      start_col: 0
+      end_line: 57
+      end_col: 0
+    fingerprint: 08669a36cd1749b259f57e81dd43e3f2d3c3f7d5306545375bbb65287fbdd85e

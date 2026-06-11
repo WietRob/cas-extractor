@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.legacy.v3_1_0_session_cookie_format
+kind: entity
+type: py.module
+name: v3_1_0_session_cookie_format
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/legacy/v3_1_0_session_cookie_format.py
+anchors:
+- type: symbol
+  value: httpie.legacy.v3_1_0_session_cookie_format
+- type: fingerprint
+  value: fa288c782e7d4b3ff4d1ae26df618abd8e9e40ae55e340a65dd23766fd2e098c
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.legacy

@@ -1,0 +1,37 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-66354447
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T08:37:44.444151+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.cookies.HTTPieCookiePolicy.return_ok_secure
+    kind: method
+    file: httpie/cookies.py
+    range:
+      start_line: 9
+      start_col: 0
+      end_line: 20
+      end_col: 0
+    fingerprint: df5f8bdbc4a5fb460e1af3af7f7768be9e1b7db219dacbc72c726fcfae548142
+    params:
+    - name: self
+    - name: cookie
+    - name: request
+  - qualified: httpie.cookies.HTTPieCookiePolicy._is_local_host
+    kind: method
+    file: httpie/cookies.py
+    range:
+      start_line: 22
+      start_col: 0
+      end_line: 25
+      end_col: 0
+    fingerprint: 3441f5258ff578c66232e5249796b4effbf66af88183680416b7b21134f02875
+    params:
+    - name: self
+    - name: hostname

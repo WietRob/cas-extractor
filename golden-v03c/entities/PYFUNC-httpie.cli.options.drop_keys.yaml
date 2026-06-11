@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.options.drop_keys
+kind: entity
+type: py.function
+name: drop_keys
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/options.py
+anchors:
+- type: symbol
+  value: httpie.cli.options.drop_keys
+- type: fingerprint
+  value: e72b61444df170189092c1d1b68d7fc45b231810f60581df00420733a900c89c
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.options

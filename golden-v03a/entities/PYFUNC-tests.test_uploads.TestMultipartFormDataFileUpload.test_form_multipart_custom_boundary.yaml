@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_uploads.TestMultipartFormDataFileUpload.test_form_multipart_custom_boundary
+kind: entity
+type: py.function
+name: test_form_multipart_custom_boundary
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_uploads.py
+anchors:
+- type: symbol
+  value: tests.test_uploads.TestMultipartFormDataFileUpload.test_form_multipart_custom_boundary
+- type: fingerprint
+  value: 8e277e770b4ba8b88c54713fe64f1b3bb4e87dfea0063adf36db579fa5ff8920
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_uploads.TestMultipartFormDataFileUpload

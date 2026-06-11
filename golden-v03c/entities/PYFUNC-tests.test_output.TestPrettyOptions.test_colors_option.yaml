@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_output.TestPrettyOptions.test_colors_option
+kind: entity
+type: py.function
+name: test_colors_option
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_output.py
+anchors:
+- type: symbol
+  value: tests.test_output.TestPrettyOptions.test_colors_option
+- type: fingerprint
+  value: a309dd7b4084d777485319312a1a39451dce227d02491e871a0ed6fc7eaf62f8
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_output.TestPrettyOptions

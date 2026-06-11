@@ -1,0 +1,361 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-4ce18795
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T12:13:54.134700+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.COLOR_RE.sub
+  - symbol: ?.add_to_args.append
+  - symbol: ?.cli_args.append
+  - symbol: ?.devnull.read
+  - symbol: ?.devnull.seek
+  - symbol: ?.devnull_output.decode
+  - symbol: ?.env.cleanup
+  - symbol: ?.kwargs.get
+  - symbol: ?.kwargs.pop
+  - symbol: ?.kwargs.setdefault
+  - symbol: ?.stderr.read
+  - symbol: ?.stderr.seek
+  - symbol: ?.stdout.read
+  - symbol: ?.stdout.seek
+  - symbol: ?.url.split
+  - symbol: httpie.core.main
+  - symbol: httpie.manager.__main__.main
+  - symbol: pathlib.Path
+  - symbol: re.compile
+  - symbol: tempfile.mkdtemp
+  - symbol: tests.utils.BaseCLIResponse.from_raw_data
+  - symbol: tests.utils.Encoder
+  - symbol: tests.utils.ExitStatusError
+  - symbol: tests.utils.MockEnvironment
+  - symbol: tests.utils.add_auth
+  - symbol: tests.utils.dump_stderr
+  - symbol: tests.utils.http
+  - symbol: tests.utils.httpie
+  - symbol: tests.utils.mk_config_dir
+  - symbol: tests.utils.mock_env
+  - symbol: tests.utils.normalize_args
+  - symbol: tests.utils.strip_colors
+  - symbol: time.sleep
+  edges:
+  - from: tests.utils.strip_colors
+    to: ?.COLOR_RE.sub
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 58
+      start_col: 0
+      end_line: 58
+      end_col: 0
+  - from: tests.utils.mk_config_dir
+    to: tempfile.mkdtemp
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 62
+      start_col: 0
+      end_line: 62
+      end_col: 0
+  - from: tests.utils.mk_config_dir
+    to: pathlib.Path
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 63
+      start_col: 0
+      end_line: 63
+      end_col: 0
+  - from: tests.utils.add_auth
+    to: ?.url.split
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 67
+      start_col: 0
+      end_line: 67
+      end_col: 0
+  - from: tests.utils.Encoder
+    to: re.compile
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 86
+      start_col: 0
+      end_line: 86
+      end_col: 0
+  - from: tests.utils.Encoder
+    to: re.compile
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 87
+      start_col: 0
+      end_line: 87
+      end_col: 0
+  - from: tests.utils.mock_env
+    to: tests.utils.MockEnvironment
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 281
+      start_col: 0
+      end_line: 281
+      end_col: 0
+  - from: tests.utils.mock_env
+    to: ?.env.cleanup
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 283
+      start_col: 0
+      end_line: 283
+      end_col: 0
+  - from: tests.utils.httpie
+    to: ?.kwargs.setdefault
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 300
+      start_col: 0
+      end_line: 300
+      end_col: 0
+  - from: tests.utils.httpie
+    to: tests.utils.normalize_args
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 304
+      start_col: 0
+      end_line: 304
+      end_col: 0
+  - from: tests.utils.httpie
+    to: httpie.manager.__main__.main
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 305
+      start_col: 0
+      end_line: 308
+      end_col: 0
+  - from: tests.utils.http
+    to: ?.kwargs.get
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 376
+      start_col: 0
+      end_line: 376
+      end_col: 0
+  - from: tests.utils.httpie
+    to: tests.utils.MockEnvironment
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 300
+      start_col: 0
+      end_line: 300
+      end_col: 0
+  - from: tests.utils.httpie
+    to: ?.kwargs.pop
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 302
+      start_col: 0
+      end_line: 302
+      end_col: 0
+  - from: tests.utils.httpie
+    to: ?.cli_args.append
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 303
+      start_col: 0
+      end_line: 303
+      end_col: 0
+  - from: tests.utils.httpie
+    to: tests.utils.BaseCLIResponse.from_raw_data
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 313
+      start_col: 0
+      end_line: 313
+      end_col: 0
+  - from: tests.utils.http
+    to: tests.utils.MockEnvironment
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 378
+      start_col: 0
+      end_line: 378
+      end_col: 0
+  - from: tests.utils.http
+    to: ?.stdout.seek
+    kind: call
+    edge_id: 17
+    range:
+      start_line: 426
+      start_col: 0
+      end_line: 426
+      end_col: 0
+  - from: tests.utils.http
+    to: ?.stderr.seek
+    kind: call
+    edge_id: 18
+    range:
+      start_line: 427
+      start_col: 0
+      end_line: 427
+      end_col: 0
+  - from: tests.utils.http
+    to: ?.devnull.seek
+    kind: call
+    edge_id: 19
+    range:
+      start_line: 428
+      start_col: 0
+      end_line: 428
+      end_col: 0
+  - from: tests.utils.http
+    to: ?.stdout.read
+    kind: call
+    edge_id: 20
+    range:
+      start_line: 429
+      start_col: 0
+      end_line: 429
+      end_col: 0
+  - from: tests.utils.http
+    to: ?.devnull.read
+    kind: call
+    edge_id: 21
+    range:
+      start_line: 430
+      start_col: 0
+      end_line: 430
+      end_col: 0
+  - from: tests.utils.http
+    to: tests.utils.BaseCLIResponse.from_raw_data
+    kind: call
+    edge_id: 22
+    range:
+      start_line: 435
+      start_col: 0
+      end_line: 435
+      end_col: 0
+  - from: tests.utils.http
+    to: ?.stderr.read
+    kind: call
+    edge_id: 23
+    range:
+      start_line: 443
+      start_col: 0
+      end_line: 443
+      end_col: 0
+  - from: tests.utils.http
+    to: ?.env.cleanup
+    kind: call
+    edge_id: 24
+    range:
+      start_line: 455
+      start_col: 0
+      end_line: 455
+      end_col: 0
+  - from: tests.utils.http
+    to: ?.add_to_args.append
+    kind: call
+    edge_id: 25
+    range:
+      start_line: 390
+      start_col: 0
+      end_line: 390
+      end_col: 0
+  - from: tests.utils.http
+    to: ?.add_to_args.append
+    kind: call
+    edge_id: 26
+    range:
+      start_line: 392
+      start_col: 0
+      end_line: 392
+      end_col: 0
+  - from: tests.utils.http
+    to: httpie.core.main
+    kind: call
+    edge_id: 27
+    range:
+      start_line: 403
+      start_col: 0
+      end_line: 403
+      end_col: 0
+  - from: tests.utils.http
+    to: ?.devnull_output.decode
+    kind: call
+    edge_id: 28
+    range:
+      start_line: 438
+      start_col: 0
+      end_line: 438
+      end_col: 0
+  - from: tests.utils.http
+    to: time.sleep
+    kind: call
+    edge_id: 29
+    range:
+      start_line: 406
+      start_col: 0
+      end_line: 406
+      end_col: 0
+  - from: tests.utils.http
+    to: ?.stderr.seek
+    kind: call
+    edge_id: 30
+    range:
+      start_line: 414
+      start_col: 0
+      end_line: 414
+      end_col: 0
+  - from: tests.utils.http
+    to: tests.utils.dump_stderr
+    kind: call
+    edge_id: 31
+    range:
+      start_line: 420
+      start_col: 0
+      end_line: 420
+      end_col: 0
+  - from: tests.utils.http
+    to: tests.utils.ExitStatusError
+    kind: call
+    edge_id: 32
+    range:
+      start_line: 421
+      start_col: 0
+      end_line: 424
+      end_col: 0
+  - from: tests.utils.http
+    to: tests.utils.dump_stderr
+    kind: call
+    edge_id: 33
+    range:
+      start_line: 411
+      start_col: 0
+      end_line: 411
+      end_col: 0
+  - from: tests.utils.http
+    to: ?.stderr.read
+    kind: call
+    edge_id: 34
+    range:
+      start_line: 415
+      start_col: 0
+      end_line: 415
+      end_col: 0

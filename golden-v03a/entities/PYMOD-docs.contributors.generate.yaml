@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-docs.contributors.generate
+kind: entity
+type: py.module
+name: generate
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: docs/contributors/generate.py
+anchors:
+- type: symbol
+  value: docs.contributors.generate
+- type: fingerprint
+  value: ce46090d9abb2dc08b2a3e19febc366798bffb72cf3032a6b2d98228eb0de075
+  algo: sha256
+claims: []
+relations: []
+namespace: docs.contributors

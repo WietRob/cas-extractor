@@ -1,0 +1,23 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-f6e892fc
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-21T15:03:55.421135+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  imports:
+  - from: tests.fixtures
+    imports:
+    - json
+    - pathlib.Path
+    - typing.Optional
+    - typing.Dict
+    - typing.Any
+    - httpie
+    - httpie.encoding.UTF8
+    - httpie.output.formatters.xml.pretty_xml
+    - httpie.output.formatters.xml.parse_xml

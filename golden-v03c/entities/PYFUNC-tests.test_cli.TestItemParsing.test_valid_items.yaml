@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_cli.TestItemParsing.test_valid_items
+kind: entity
+type: py.function
+name: test_valid_items
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_cli.py
+anchors:
+- type: symbol
+  value: tests.test_cli.TestItemParsing.test_valid_items
+- type: fingerprint
+  value: 7bb596a1f2484a1a60161208eec08f38acee220b3b33699d979b3827e4bf47c3
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_cli.TestItemParsing

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.output.processing.Formatting
+kind: entity
+type: py.class
+name: Formatting
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/processing.py
+anchors:
+- type: symbol
+  value: httpie.output.processing.Formatting
+- type: fingerprint
+  value: 7bd50248b9da5553bfae0b721d24961d818cde49b66b2a01a76c1e7532a5ca0e
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.processing

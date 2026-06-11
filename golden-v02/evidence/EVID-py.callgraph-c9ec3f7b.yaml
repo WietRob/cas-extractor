@@ -1,0 +1,24 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-c9ec3f7b
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:34.027471+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: httpie.output.streams.BaseStream.__init__
+  - symbol: httpie.output.streams.RawStream.__init__
+  edges:
+  - from: httpie.output.streams.RawStream.__init__
+    to: httpie.output.streams.BaseStream.__init__
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 95
+      start_col: 0
+      end_line: 95
+      end_col: 0

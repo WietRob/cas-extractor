@@ -1,0 +1,55 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-c1417a9d
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-22T08:37:45.553306+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.super().__init__
+  - symbol: httpie.output.formatters.xml.XMLFormatter.__init__
+  - symbol: httpie.output.formatters.xml.XMLFormatter.format_body
+  - symbol: httpie.output.formatters.xml.parse_declaration
+  - symbol: httpie.output.formatters.xml.parse_xml
+  - symbol: httpie.output.formatters.xml.pretty_xml
+  edges:
+  - from: httpie.output.formatters.xml.XMLFormatter.__init__
+    to: ?.super().__init__
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 56
+      start_col: 0
+      end_line: 56
+      end_col: 0
+  - from: httpie.output.formatters.xml.XMLFormatter.format_body
+    to: httpie.output.formatters.xml.parse_declaration
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 66
+      start_col: 0
+      end_line: 66
+      end_col: 0
+  - from: httpie.output.formatters.xml.XMLFormatter.format_body
+    to: httpie.output.formatters.xml.parse_xml
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 68
+      start_col: 0
+      end_line: 68
+      end_col: 0
+  - from: httpie.output.formatters.xml.XMLFormatter.format_body
+    to: httpie.output.formatters.xml.pretty_xml
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 74
+      start_col: 0
+      end_line: 77
+      end_col: 0

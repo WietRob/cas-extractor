@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-tests.test_update_warnings
+kind: entity
+type: py.module
+name: test_update_warnings
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_update_warnings.py
+anchors:
+- type: symbol
+  value: tests.test_update_warnings
+- type: fingerprint
+  value: a9bfee217964eccc07be528f15a2941e4a99357346131142bc3b60afaefc5e50
+  algo: sha256
+claims: []
+relations: []
+namespace: tests

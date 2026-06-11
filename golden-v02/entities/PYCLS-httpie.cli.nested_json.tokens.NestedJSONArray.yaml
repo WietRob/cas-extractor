@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.cli.nested_json.tokens.NestedJSONArray
+kind: entity
+type: py.class
+name: NestedJSONArray
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/cli/nested_json/tokens.py
+anchors:
+- type: symbol
+  value: httpie.cli.nested_json.tokens.NestedJSONArray
+- type: fingerprint
+  value: caa3a544ad9c3c3f8b5ea6dac40b33a3e97869e81b39cd726bb275b11327b718
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.nested_json.tokens

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_json.test_duplicate_keys_support_from_input_file
+kind: entity
+type: py.function
+name: test_duplicate_keys_support_from_input_file
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_json.py
+anchors:
+- type: symbol
+  value: tests.test_json.test_duplicate_keys_support_from_input_file
+- type: fingerprint
+  value: 2c87ee4e1162d428202a829cc728e838c23324b8899f4bd20bb46d066e23b42f
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_json

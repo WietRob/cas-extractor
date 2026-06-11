@@ -1,0 +1,292 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-96b1797c
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T15:03:56.362190+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.config_path.exists
+  - symbol: ?.config_path.touch
+  - symbol: ?.env.create_temp_config_dir
+  - symbol: ?.legacy_config_dir.mkdir
+  - symbol: ?.monkeypatch.delenv
+  - symbol: ?.monkeypatch.setenv
+  - symbol: httpie.config.get_default_config_dir
+  - symbol: tests.test_config.test_config_file_inaccessible
+  - symbol: tests.test_config.test_config_file_not_valid
+  - symbol: tests.test_config.test_custom_config_dir
+  - symbol: tests.test_config.test_default_options
+  - symbol: tests.test_config.test_default_options_overwrite
+  - symbol: tests.test_config.test_default_xdg_config_home
+  - symbol: tests.test_config.test_explicit_xdg_config_home
+  - symbol: tests.test_config.test_legacy_config_dir
+  - symbol: tests.test_config.test_windows_config_dir
+  - symbol: utils.MockEnvironment
+  - symbol: utils.http
+  edges:
+  - from: tests.test_config.test_default_options
+    to: utils.MockEnvironment
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 17
+      start_col: 0
+      end_line: 17
+      end_col: 0
+  - from: tests.test_config.test_default_options
+    to: utils.http
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 20
+      start_col: 0
+      end_line: 20
+      end_col: 0
+  - from: tests.test_config.test_config_file_not_valid
+    to: utils.MockEnvironment
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 27
+      start_col: 0
+      end_line: 27
+      end_col: 0
+  - from: tests.test_config.test_config_file_not_valid
+    to: ?.env.create_temp_config_dir
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 28
+      start_col: 0
+      end_line: 28
+      end_col: 0
+  - from: tests.test_config.test_config_file_not_valid
+    to: utils.http
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 30
+      start_col: 0
+      end_line: 30
+      end_col: 0
+  - from: tests.test_config.test_config_file_inaccessible
+    to: utils.MockEnvironment
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 38
+      start_col: 0
+      end_line: 38
+      end_col: 0
+  - from: tests.test_config.test_config_file_inaccessible
+    to: ?.env.create_temp_config_dir
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 39
+      start_col: 0
+      end_line: 39
+      end_col: 0
+  - from: tests.test_config.test_config_file_inaccessible
+    to: ?.config_path.touch
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 42
+      start_col: 0
+      end_line: 42
+      end_col: 0
+  - from: tests.test_config.test_config_file_inaccessible
+    to: ?.config_path.exists
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 43
+      start_col: 0
+      end_line: 43
+      end_col: 0
+  - from: tests.test_config.test_config_file_inaccessible
+    to: utils.http
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 44
+      start_col: 0
+      end_line: 44
+      end_col: 0
+  - from: tests.test_config.test_default_options_overwrite
+    to: utils.MockEnvironment
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 51
+      start_col: 0
+      end_line: 51
+      end_col: 0
+  - from: tests.test_config.test_default_options_overwrite
+    to: utils.http
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 54
+      start_col: 0
+      end_line: 54
+      end_col: 0
+  - from: tests.test_config.test_explicit_xdg_config_home
+    to: ?.monkeypatch.delenv
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 63
+      start_col: 0
+      end_line: 63
+      end_col: 0
+  - from: tests.test_config.test_explicit_xdg_config_home
+    to: ?.monkeypatch.setenv
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 64
+      start_col: 0
+      end_line: 64
+      end_col: 0
+  - from: tests.test_config.test_explicit_xdg_config_home
+    to: ?.monkeypatch.setenv
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 66
+      start_col: 0
+      end_line: 66
+      end_col: 0
+  - from: tests.test_config.test_default_xdg_config_home
+    to: ?.monkeypatch.delenv
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 74
+      start_col: 0
+      end_line: 74
+      end_col: 0
+  - from: tests.test_config.test_default_xdg_config_home
+    to: ?.monkeypatch.delenv
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 75
+      start_col: 0
+      end_line: 75
+      end_col: 0
+  - from: tests.test_config.test_default_xdg_config_home
+    to: ?.monkeypatch.setenv
+    kind: call
+    edge_id: 17
+    range:
+      start_line: 76
+      start_col: 0
+      end_line: 76
+      end_col: 0
+  - from: tests.test_config.test_legacy_config_dir
+    to: ?.monkeypatch.delenv
+    kind: call
+    edge_id: 18
+    range:
+      start_line: 88
+      start_col: 0
+      end_line: 88
+      end_col: 0
+  - from: tests.test_config.test_legacy_config_dir
+    to: ?.monkeypatch.setenv
+    kind: call
+    edge_id: 19
+    range:
+      start_line: 89
+      start_col: 0
+      end_line: 89
+      end_col: 0
+  - from: tests.test_config.test_legacy_config_dir
+    to: ?.legacy_config_dir.mkdir
+    kind: call
+    edge_id: 20
+    range:
+      start_line: 91
+      start_col: 0
+      end_line: 91
+      end_col: 0
+  - from: tests.test_config.test_custom_config_dir
+    to: ?.monkeypatch.setenv
+    kind: call
+    edge_id: 21
+    range:
+      start_line: 97
+      start_col: 0
+      end_line: 97
+      end_col: 0
+  - from: tests.test_config.test_windows_config_dir
+    to: ?.monkeypatch.delenv
+    kind: call
+    edge_id: 22
+    range:
+      start_line: 103
+      start_col: 0
+      end_line: 103
+      end_col: 0
+  - from: tests.test_config.test_config_file_inaccessible
+    to: ?.config_path.exists
+    kind: call
+    edge_id: 23
+    range:
+      start_line: 41
+      start_col: 0
+      end_line: 41
+      end_col: 0
+  - from: tests.test_config.test_explicit_xdg_config_home
+    to: httpie.config.get_default_config_dir
+    kind: call
+    edge_id: 24
+    range:
+      start_line: 68
+      start_col: 0
+      end_line: 68
+      end_col: 0
+  - from: tests.test_config.test_default_xdg_config_home
+    to: httpie.config.get_default_config_dir
+    kind: call
+    edge_id: 25
+    range:
+      start_line: 82
+      start_col: 0
+      end_line: 82
+      end_col: 0
+  - from: tests.test_config.test_legacy_config_dir
+    to: httpie.config.get_default_config_dir
+    kind: call
+    edge_id: 26
+    range:
+      start_line: 92
+      start_col: 0
+      end_line: 92
+      end_col: 0
+  - from: tests.test_config.test_custom_config_dir
+    to: httpie.config.get_default_config_dir
+    kind: call
+    edge_id: 27
+    range:
+      start_line: 98
+      start_col: 0
+      end_line: 98
+      end_col: 0
+  - from: tests.test_config.test_windows_config_dir
+    to: httpie.config.get_default_config_dir
+    kind: call
+    edge_id: 28
+    range:
+      start_line: 104
+      start_col: 0
+      end_line: 104
+      end_col: 0

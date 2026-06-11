@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.ssl_.HTTPieHTTPSAdapter._create_ssl_context
+kind: entity
+type: py.function
+name: _create_ssl_context
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/ssl_.py
+anchors:
+- type: symbol
+  value: httpie.ssl_.HTTPieHTTPSAdapter._create_ssl_context
+- type: fingerprint
+  value: e54763338f0580dcfe628abc3ef10004ffde38bcc6458df407e22085bd3d0c0b
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.ssl_.HTTPieHTTPSAdapter

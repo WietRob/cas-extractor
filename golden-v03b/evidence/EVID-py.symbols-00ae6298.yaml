@@ -1,0 +1,85 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-00ae6298
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:55.018892+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.output.formatters.colors
+    kind: module
+    file: httpie/output/formatters/colors.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 388
+      end_col: 0
+    fingerprint: c24ccec9b929753af06d5a21cf3b4d16c46c8f0762966bfe799cc5527cf3d63b
+  - qualified: httpie.output.formatters.colors.get_available_styles
+    kind: function
+    file: httpie/output/formatters/colors.py
+    range:
+      start_line: 36
+      start_col: 0
+      end_line: 37
+      end_col: 0
+    fingerprint: 077dfc10aa37dd5b83aaeae1a50b2abacbbeed856102a7b08cb15641c8aa33f0
+  - qualified: httpie.output.formatters.colors.ColorFormatter
+    kind: class
+    file: httpie/output/formatters/colors.py
+    range:
+      start_line: 40
+      start_col: 0
+      end_line: 139
+      end_col: 0
+    fingerprint: 90622b8296dd96eca139e74979576cfbbbca63cb14576b14b95a2f3fa26eaaa9
+  - qualified: httpie.output.formatters.colors.get_lexer
+    kind: function
+    file: httpie/output/formatters/colors.py
+    range:
+      start_line: 142
+      start_col: 0
+      end_line: 194
+      end_col: 0
+    fingerprint: 1c7441d5c51883d21c73b70c934dbfa7c88907ffd3f83c01e59cda112c190233
+    params:
+    - name: mime
+      annotation: str
+    - name: explicit_json
+    - name: body
+    returns: Optional[Type[Lexer]]
+  - qualified: httpie.output.formatters.colors.Solarized256Style
+    kind: class
+    file: httpie/output/formatters/colors.py
+    range:
+      start_line: 197
+      start_col: 0
+      end_line: 266
+      end_col: 0
+    fingerprint: fc2f68d976b727e047b575845b77c71f8d997958c3ff9e41600e2c63d2775cf7
+  - qualified: httpie.output.formatters.colors.make_style
+    kind: function
+    file: httpie/output/formatters/colors.py
+    range:
+      start_line: 354
+      start_col: 0
+      end_line: 368
+      end_col: 0
+    fingerprint: 9cf84b5051578a7066a42b89277ad4bfa0423ae234f7d232188336e29dba3a98
+    params:
+    - name: name
+    - name: raw_styles
+    - name: shade
+  - qualified: httpie.output.formatters.colors.make_styles
+    kind: function
+    file: httpie/output/formatters/colors.py
+    range:
+      start_line: 371
+      start_col: 0
+      end_line: 383
+      end_col: 0
+    fingerprint: 91043d7a885a1e216cb28084975ac0791a2760fc8aa05aab03d045bc325f565a

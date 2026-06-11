@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_downloads.TestDownloads.test_actual_download
+kind: entity
+type: py.function
+name: test_actual_download
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_downloads.py
+anchors:
+- type: symbol
+  value: tests.test_downloads.TestDownloads.test_actual_download
+- type: fingerprint
+  value: 3eec0b2e467a5034e35623d5842e09899b9b5442beb81b4dbe6e8d52b86ff4fd
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_downloads.TestDownloads

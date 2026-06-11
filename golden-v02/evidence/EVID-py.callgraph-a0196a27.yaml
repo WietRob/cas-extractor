@@ -1,0 +1,136 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-a0196a27
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:34.448994+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: httpie.context.Environment.__init__
+  - symbol: pathlib.Path
+  - symbol: shutil.rmtree
+  - symbol: tempfile.NamedTemporaryFile
+  - symbol: tempfile.TemporaryFile
+  - symbol: tempfile.gettempdir
+  - symbol: tests.utils.Encoder
+  - symbol: tests.utils.FakeBytesIOBuffer
+  - symbol: tests.utils.MockEnvironment.__del__
+  - symbol: tests.utils.MockEnvironment.__init__
+  - symbol: tests.utils.MockEnvironment.cleanup
+  - symbol: tests.utils.MockEnvironment.config
+  - symbol: tests.utils.MockEnvironment.create_temp_config_dir
+  - symbol: tests.utils.mk_config_dir
+  - symbol: warnings.resetwarnings
+  edges:
+  - from: tests.utils.MockEnvironment.__init__
+    to: tests.utils.Encoder
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 138
+      start_col: 0
+      end_line: 138
+      end_col: 0
+  - from: tests.utils.MockEnvironment.__init__
+    to: httpie.context.Environment.__init__
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 153
+      start_col: 0
+      end_line: 153
+      end_col: 0
+  - from: tests.utils.MockEnvironment.__init__
+    to: pathlib.Path
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 156
+      start_col: 0
+      end_line: 156
+      end_col: 0
+  - from: tests.utils.MockEnvironment.create_temp_config_dir
+    to: tests.utils.mk_config_dir
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 166
+      start_col: 0
+      end_line: 166
+      end_col: 0
+  - from: tests.utils.MockEnvironment.cleanup
+    to: warnings.resetwarnings
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 173
+      start_col: 0
+      end_line: 173
+      end_col: 0
+  - from: tests.utils.MockEnvironment.__init__
+    to: tempfile.NamedTemporaryFile
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 140
+      start_col: 0
+      end_line: 145
+      end_col: 0
+  - from: tests.utils.MockEnvironment.__init__
+    to: tests.utils.FakeBytesIOBuffer
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 146
+      start_col: 0
+      end_line: 146
+      end_col: 0
+  - from: tests.utils.MockEnvironment.__init__
+    to: tempfile.TemporaryFile
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 148
+      start_col: 0
+      end_line: 152
+      end_col: 0
+  - from: tests.utils.MockEnvironment.__init__
+    to: tempfile.gettempdir
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 156
+      start_col: 0
+      end_line: 156
+      end_col: 0
+  - from: tests.utils.MockEnvironment.config
+    to: tests.utils.MockEnvironment.create_temp_config_dir
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 162
+      start_col: 0
+      end_line: 162
+      end_col: 0
+  - from: tests.utils.MockEnvironment.cleanup
+    to: shutil.rmtree
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 177
+      start_col: 0
+      end_line: 177
+      end_col: 0
+  - from: tests.utils.MockEnvironment.__del__
+    to: tests.utils.MockEnvironment.cleanup
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 182
+      start_col: 0
+      end_line: 182
+      end_col: 0

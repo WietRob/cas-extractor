@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-extras.packaging.linux.scripts.http_cli
+kind: entity
+type: py.module
+name: http_cli
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: extras/packaging/linux/scripts/http_cli.py
+anchors:
+- type: symbol
+  value: extras.packaging.linux.scripts.http_cli
+- type: fingerprint
+  value: 40e65fbe2efb05cf5a1495026d4cf5de1af88523335db016b23097e7e8331b5e
+  algo: sha256
+claims: []
+relations: []
+namespace: extras.packaging.linux.scripts

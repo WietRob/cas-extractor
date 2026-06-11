@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-1093
+kind: relation
+type: contains
+from: PYCLS-extras.scripts.generate_man_pages.ManPageBuilder
+to: PYFUNC-extras.scripts.generate_man_pages.ManPageBuilder.format_desc
+confidence:
+  level: E0
+  direction: confirmed
+evidence:
+- EVID-py.symbols-e6f21f49
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1

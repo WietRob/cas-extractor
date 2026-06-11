@@ -1,0 +1,133 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-735eae38
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:34.235797+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: tests.test_exit_status.test_3xx_check_status_exits_3_and_stderr_when_stdout_redirected
+  - symbol: tests.test_exit_status.test_3xx_check_status_redirects_allowed_exits_0
+  - symbol: tests.test_exit_status.test_4xx_check_status_exits_4
+  - symbol: tests.test_exit_status.test_5xx_check_status_exits_5
+  - symbol: tests.test_exit_status.test_error_response_exits_0_without_check_status
+  - symbol: tests.test_exit_status.test_keyboard_interrupt_during_arg_parsing_exit_status
+  - symbol: tests.test_exit_status.test_keyboard_interrupt_in_program_exit_status
+  - symbol: tests.test_exit_status.test_ok_response_exits_0
+  - symbol: tests.test_exit_status.test_timeout_exit_status
+  - symbol: unittest.mock.patch
+  - symbol: utils.MockEnvironment
+  - symbol: utils.http
+  edges:
+  - from: tests.test_exit_status.test_ok_response_exits_0
+    to: utils.http
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 22
+      start_col: 0
+      end_line: 22
+      end_col: 0
+  - from: tests.test_exit_status.test_error_response_exits_0_without_check_status
+    to: utils.http
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 28
+      start_col: 0
+      end_line: 28
+      end_col: 0
+  - from: tests.test_exit_status.test_timeout_exit_status
+    to: utils.http
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 36
+      start_col: 0
+      end_line: 37
+      end_col: 0
+  - from: tests.test_exit_status.test_3xx_check_status_exits_3_and_stderr_when_stdout_redirected
+    to: utils.MockEnvironment
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 43
+      start_col: 0
+      end_line: 43
+      end_col: 0
+  - from: tests.test_exit_status.test_3xx_check_status_exits_3_and_stderr_when_stdout_redirected
+    to: utils.http
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 44
+      start_col: 0
+      end_line: 46
+      end_col: 0
+  - from: tests.test_exit_status.test_3xx_check_status_redirects_allowed_exits_0
+    to: utils.http
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 53
+      start_col: 0
+      end_line: 55
+      end_col: 0
+  - from: tests.test_exit_status.test_4xx_check_status_exits_4
+    to: utils.http
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 62
+      start_col: 0
+      end_line: 63
+      end_col: 0
+  - from: tests.test_exit_status.test_5xx_check_status_exits_5
+    to: utils.http
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 71
+      start_col: 0
+      end_line: 72
+      end_col: 0
+  - from: tests.test_exit_status.test_keyboard_interrupt_during_arg_parsing_exit_status
+    to: unittest.mock.patch
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 8
+      start_col: 0
+      end_line: 9
+      end_col: 0
+  - from: tests.test_exit_status.test_keyboard_interrupt_during_arg_parsing_exit_status
+    to: utils.http
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 10
+      start_col: 0
+      end_line: 10
+      end_col: 0
+  - from: tests.test_exit_status.test_keyboard_interrupt_in_program_exit_status
+    to: unittest.mock.patch
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 15
+      start_col: 0
+      end_line: 16
+      end_col: 0
+  - from: tests.test_exit_status.test_keyboard_interrupt_in_program_exit_status
+    to: utils.http
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 17
+      start_col: 0
+      end_line: 17
+      end_col: 0

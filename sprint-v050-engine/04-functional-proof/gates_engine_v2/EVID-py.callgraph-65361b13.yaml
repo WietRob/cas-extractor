@@ -1,0 +1,62 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-65361b13
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-26T06:28:58.161312+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://gates
+  root: ./sprint-v050-engine/02-fixtures
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: test_h28_real.Builder
+  - symbol: test_h28_real.Builder.build
+  - symbol: test_h28_real.builder_factory
+  - symbol: test_h28_real.main
+  edges:
+  - from: test_h28_real.builder_factory
+    to: test_h28_real.Builder
+    kind: call
+    edge_id: 0
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function 'Builder' in local module
+    range:
+      start_line: 10
+      start_col: 0
+      end_line: 10
+      end_col: 0
+  - from: test_h28_real.main
+    to: test_h28_real.builder_factory
+    kind: call
+    edge_id: 1
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function 'builder_factory' in local module
+    range:
+      start_line: 14
+      start_col: 0
+      end_line: 14
+      end_col: 0
+  - from: test_h28_real.main
+    to: test_h28_real.Builder.build
+    kind: method_call
+    edge_id: 2
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: local_var_dispatch
+        inferred_type: test_h28_real.Builder
+        reasoning: Found local var 'x' of type 'test_h28_real.Builder'
+    range:
+      start_line: 15
+      start_col: 0
+      end_line: 15
+      end_col: 0

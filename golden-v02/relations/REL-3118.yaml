@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-3118
+kind: relation
+type: calls
+from: PYFUNC-tests.test_redirects.test_follow_without_all_redirects_hidden
+to: PYFUNC-utils.http
+confidence:
+  level: E1
+  direction: confirmed
+evidence:
+- EVID-py.callgraph-9aa487e3
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1

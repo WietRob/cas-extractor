@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.utils.ExplicitNullAuth
+kind: entity
+type: py.class
+name: ExplicitNullAuth
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/utils.py
+anchors:
+- type: symbol
+  value: httpie.utils.ExplicitNullAuth
+- type: fingerprint
+  value: 0ffd39dc4329a6595c43707babe75970bbf99565164efe7354a3f1c608a86a4d
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.utils

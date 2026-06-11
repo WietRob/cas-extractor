@@ -1,0 +1,58 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-7de6ee8e
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-23T17:19:36.852766+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://h28-test
+  root: /tmp/h28-verify
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.self.cache.set
+  - symbol: test_h28.TestP6FactoryInChainH27.level1
+  - symbol: test_h28.TestP6FactoryInChainH27.level2
+  - symbol: test_h28.TestP6FactoryInChainH27.run
+  - symbol: test_h28.create_cache
+  edges:
+  - from: test_h28.TestP6FactoryInChainH27.level2
+    to: test_h28.create_cache
+    kind: call
+    edge_id: 0
+    resolution_source: module-level
+    range:
+      start_line: 162
+      start_col: 0
+      end_line: 162
+      end_col: 0
+  - from: test_h28.TestP6FactoryInChainH27.level1
+    to: test_h28.TestP6FactoryInChainH27.level2
+    kind: method_call
+    edge_id: 1
+    resolution_source: self.method
+    range:
+      start_line: 165
+      start_col: 0
+      end_line: 165
+      end_col: 0
+  - from: test_h28.TestP6FactoryInChainH27.run
+    to: test_h28.TestP6FactoryInChainH27.level1
+    kind: method_call
+    edge_id: 2
+    resolution_source: self.method
+    range:
+      start_line: 168
+      start_col: 0
+      end_line: 168
+      end_col: 0
+  - from: test_h28.TestP6FactoryInChainH27.run
+    to: ?.self.cache.set
+    kind: call
+    edge_id: 3
+    resolution_source: unresolved
+    range:
+      start_line: 169
+      start_col: 0
+      end_line: 169
+      end_col: 0

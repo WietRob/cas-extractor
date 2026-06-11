@@ -1,0 +1,153 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-d03b13a5
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T17:44:05.347918+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.monkeypatch.delenv
+  - symbol: ?.monkeypatch.setenv
+  - symbol: pytest.fail
+  - symbol: pytest.fixture
+  - symbol: pytest.skip
+  - symbol: pytest_httpbin.certs.where
+  - symbol: socket.gethostbyname
+  - symbol: tests.conftest._httpbin_with_chunked_support_available
+  - symbol: tests.conftest._remote_httpbin_available
+  - symbol: tests.conftest.httpbin_add_ca_bundle
+  - symbol: tests.conftest.httpbin_secure_untrusted
+  - symbol: tests.conftest.httpbin_with_chunked_support
+  - symbol: tests.conftest.pyopenssl_inject
+  - symbol: tests.conftest.remote_httpbin
+  edges:
+  - from: tests.conftest.httpbin_add_ca_bundle
+    to: pytest.fixture
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 29
+      start_col: 0
+      end_line: 29
+      end_col: 0
+  - from: tests.conftest.httpbin_secure_untrusted
+    to: pytest.fixture
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 40
+      start_col: 0
+      end_line: 40
+      end_col: 0
+  - from: tests.conftest._httpbin_with_chunked_support_available
+    to: pytest.fixture
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 51
+      start_col: 0
+      end_line: 51
+      end_col: 0
+  - from: tests.conftest.httpbin_with_chunked_support
+    to: pytest.fixture
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 60
+      start_col: 0
+      end_line: 60
+      end_col: 0
+  - from: tests.conftest._remote_httpbin_available
+    to: pytest.fixture
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 67
+      start_col: 0
+      end_line: 67
+      end_col: 0
+  - from: tests.conftest.pyopenssl_inject
+    to: pytest.fixture
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 83
+      start_col: 0
+      end_line: 83
+      end_col: 0
+  - from: tests.conftest.httpbin_add_ca_bundle
+    to: ?.monkeypatch.setenv
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 37
+      start_col: 0
+      end_line: 37
+      end_col: 0
+  - from: tests.conftest.httpbin_secure_untrusted
+    to: ?.monkeypatch.delenv
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 47
+      start_col: 0
+      end_line: 47
+      end_col: 0
+  - from: tests.conftest.httpbin_with_chunked_support
+    to: pytest.skip
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 64
+      start_col: 0
+      end_line: 64
+      end_col: 0
+  - from: tests.conftest.remote_httpbin
+    to: pytest.skip
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 80
+      start_col: 0
+      end_line: 80
+      end_col: 0
+  - from: tests.conftest.httpbin_add_ca_bundle
+    to: pytest_httpbin.certs.where
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 37
+      start_col: 0
+      end_line: 37
+      end_col: 0
+  - from: tests.conftest._httpbin_with_chunked_support_available
+    to: socket.gethostbyname
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 54
+      start_col: 0
+      end_line: 54
+      end_col: 0
+  - from: tests.conftest._remote_httpbin_available
+    to: socket.gethostbyname
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 70
+      start_col: 0
+      end_line: 70
+      end_col: 0
+  - from: tests.conftest.pyopenssl_inject
+    to: pytest.fail
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 94
+      start_col: 0
+      end_line: 94
+      end_col: 0

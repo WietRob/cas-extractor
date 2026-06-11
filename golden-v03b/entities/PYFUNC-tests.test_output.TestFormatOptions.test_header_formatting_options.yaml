@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_output.TestFormatOptions.test_header_formatting_options
+kind: entity
+type: py.function
+name: test_header_formatting_options
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_output.py
+anchors:
+- type: symbol
+  value: tests.test_output.TestFormatOptions.test_header_formatting_options
+- type: fingerprint
+  value: b0fbcc02afd330f46a50c8ee3af07b94fb567bb5c499ac99500372e136319032
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_output.TestFormatOptions

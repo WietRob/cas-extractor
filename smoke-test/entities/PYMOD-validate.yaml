@@ -1,0 +1,21 @@
+schema: cas.entity.v0.1
+id: PYMOD-validate
+kind: entity
+type: py.module
+name: validate
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: validate.py
+anchors:
+- type: symbol
+  value: validate
+- type: fingerprint
+  value: 54fdcc1d4bade5254673f532579242632b35159ebc435966ba61423424123fb0
+  algo: sha256
+claims: []
+relations: []

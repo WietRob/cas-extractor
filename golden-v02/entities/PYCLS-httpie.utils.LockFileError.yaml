@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.utils.LockFileError
+kind: entity
+type: py.class
+name: LockFileError
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/utils.py
+anchors:
+- type: symbol
+  value: httpie.utils.LockFileError
+- type: fingerprint
+  value: c159d53ea0e6a0e77cdc084bda6964e0af7b8ae0d9736f4eed6892e255c6058a
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.utils

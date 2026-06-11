@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.compat.cached_property.__init__
+kind: entity
+type: py.function
+name: __init__
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/compat.py
+anchors:
+- type: symbol
+  value: httpie.compat.cached_property.__init__
+- type: fingerprint
+  value: 57a1b2d26b3f33f9c7dec452498b6b31d93e0d49d04ead59321ee0d2c6feff2f
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.compat.cached_property

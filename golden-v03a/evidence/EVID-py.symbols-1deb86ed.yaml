@@ -1,0 +1,49 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-1deb86ed
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:53.212047+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: tests.utils.matching
+    kind: module
+    file: tests/utils/matching/__init__.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 38
+      end_col: 0
+    fingerprint: a9ee51fd741ef616032d56893bef97d15ca951a7514025a4c993429828dff566
+  - qualified: tests.utils.matching.assert_output_matches
+    kind: function
+    file: tests/utils/matching/__init__.py
+    range:
+      start_line: 21
+      start_col: 0
+      end_line: 30
+      end_col: 0
+    fingerprint: ddc359569a3237057b675dc1a8dffe0a70f3d87a47bdc3d9d299ab66b04c69f8
+    params:
+    - name: output
+      annotation: str
+    - name: tokens
+      annotation: Iterable[Expect]
+  - qualified: tests.utils.matching.assert_output_does_not_match
+    kind: function
+    file: tests/utils/matching/__init__.py
+    range:
+      start_line: 33
+      start_col: 0
+      end_line: 38
+      end_col: 0
+    fingerprint: 4f345db63b7606674400bcc843ff38c08f738c06a64bf181e4d890e2a21a4358
+    params:
+    - name: output
+      annotation: str
+    - name: tokens
+      annotation: Iterable[Expect]

@@ -1,0 +1,55 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-6547a42d
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:55.030312+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.output.models.ProcessingOptions.get_prettify
+    kind: method
+    file: httpie/output/models.py
+    range:
+      start_line: 28
+      start_col: 0
+      end_line: 32
+      end_col: 0
+    fingerprint: 7287dff30f7c7ec2250490710c0d1965a8096035a913005e0d4d860d830c5287
+    params:
+    - name: self
+    - name: env
+      annotation: Environment
+    returns: List[str]
+  - qualified: httpie.output.models.ProcessingOptions.from_raw_args
+    kind: method
+    file: httpie/output/models.py
+    range:
+      start_line: 35
+      start_col: 0
+      end_line: 40
+      end_col: 0
+    fingerprint: fb27460f973da5df7638e6cdeffe45ad502a443b520e70f4a1534480d0cf33a8
+    decorators:
+    - classmethod
+    params:
+    - name: cls
+    - name: options
+      annotation: argparse.Namespace
+    returns: '''ProcessingOptions'''
+  - qualified: httpie.output.models.ProcessingOptions.show_traceback
+    kind: method
+    file: httpie/output/models.py
+    range:
+      start_line: 43
+      start_col: 0
+      end_line: 44
+      end_col: 0
+    fingerprint: e87919404bd6298266a345bb7175cc05281025c9c00ef8d50cc80223a3779718
+    decorators:
+    - property
+    params:
+    - name: self

@@ -1,0 +1,138 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-460be728
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T11:17:16.880443+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: /tmp/h25-verify
+  revision: git:test
+payload:
+  symbols:
+  - qualified: test_h25
+    kind: module
+    file: test_h25.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 92
+      end_col: 0
+    fingerprint: 68d906c0e81778b0e68d0640c3b168d11af68504020deb5a79acaa3f53a33e1d
+  - qualified: test_h25.HTTPClient
+    kind: class
+    file: test_h25.py
+    range:
+      start_line: 3
+      start_col: 0
+      end_line: 5
+      end_col: 0
+    fingerprint: d6802f2d2fcda29ff8ca4b0226fc804aa76af0875b38037ae8c9ae0b25dc5d11
+  - qualified: test_h25.WebSocketClient
+    kind: class
+    file: test_h25.py
+    range:
+      start_line: 7
+      start_col: 0
+      end_line: 9
+      end_col: 0
+    fingerprint: 8ecc5d7c9a9f39bc89449b75e4beac6151b8e7e76ef02197c87f9d2720ddc349
+  - qualified: test_h25.DownloadStatus
+    kind: class
+    file: test_h25.py
+    range:
+      start_line: 11
+      start_col: 0
+      end_line: 13
+      end_col: 0
+    fingerprint: ec50d9a4942672af538b33c278a70ea8f1851acf59e5b6cbe82e47c647a2e971
+  - qualified: test_h25.TestH25Basic
+    kind: class
+    file: test_h25.py
+    range:
+      start_line: 16
+      start_col: 0
+      end_line: 22
+      end_col: 0
+    fingerprint: 444df06523cf265ed3b5a19460cd7c82751066d3cc5d49818f03e0d169955344
+  - qualified: test_h25.TestH25Multiple
+    kind: class
+    file: test_h25.py
+    range:
+      start_line: 25
+      start_col: 0
+      end_line: 30
+      end_col: 0
+    fingerprint: 1f752b332a8da3553b0d78983e72e300c548a57e29c3affe9d2de6fd54ef68fd
+  - qualified: test_h25.TestH25Reassign
+    kind: class
+    file: test_h25.py
+    range:
+      start_line: 33
+      start_col: 0
+      end_line: 37
+      end_col: 0
+    fingerprint: f63afbb580ba329bdd8b501df7da49c0a0128ab88d20ee35bdb98af02f464911
+  - qualified: test_h25.TestH25AnnAssign
+    kind: class
+    file: test_h25.py
+    range:
+      start_line: 40
+      start_col: 0
+      end_line: 43
+      end_col: 0
+    fingerprint: dc4a73e0b391d5cd901876c215cf0825ef47be9e941d117096a8d3b594352a49
+  - qualified: test_h25.TestH25OverrideH2
+    kind: class
+    file: test_h25.py
+    range:
+      start_line: 46
+      start_col: 0
+      end_line: 55
+      end_col: 0
+    fingerprint: 16be181e46201ac409936888744c9397e10c21472f292d03d405b75898ea5eab
+  - qualified: test_h25.TestH25CrossMethod
+    kind: class
+    file: test_h25.py
+    range:
+      start_line: 60
+      start_col: 0
+      end_line: 65
+      end_col: 0
+    fingerprint: 551289e9f95cc6c0f7fce9b44fd96916d6d57353972a93f715d45afe29a45409
+  - qualified: test_h25.TestH25Factory
+    kind: class
+    file: test_h25.py
+    range:
+      start_line: 68
+      start_col: 0
+      end_line: 74
+      end_col: 0
+    fingerprint: 08e21e77289127da6fb2b6ec13956f306d1c04de8dc826525dada0e1af9e6bd0
+  - qualified: test_h25.TestH25Unknown
+    kind: class
+    file: test_h25.py
+    range:
+      start_line: 77
+      start_col: 0
+      end_line: 80
+      end_col: 0
+    fingerprint: 50af62cf0d9b6b3423d1e31dce537bcae80ff102dd23dc26b051b239f71f50eb
+  - qualified: test_h25.TestH25NoAssign
+    kind: class
+    file: test_h25.py
+    range:
+      start_line: 83
+      start_col: 0
+      end_line: 85
+      end_col: 0
+    fingerprint: ddebb08bea8d708f69f21d790d4e712722477bfd03e4a31721665105ce4e6fff
+  - qualified: test_h25.TestH25Conditional
+    kind: class
+    file: test_h25.py
+    range:
+      start_line: 88
+      start_col: 0
+      end_line: 92
+      end_col: 0
+    fingerprint: 58a3c1fd95eeb855421cd3501a49f2fd8651175a05fd7cfd11189d8d2ebb6969

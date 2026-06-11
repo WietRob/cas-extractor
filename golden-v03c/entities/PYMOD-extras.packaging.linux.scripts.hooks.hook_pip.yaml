@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-extras.packaging.linux.scripts.hooks.hook_pip
+kind: entity
+type: py.module
+name: hook-pip
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: extras/packaging/linux/scripts/hooks/hook-pip.py
+anchors:
+- type: symbol
+  value: extras.packaging.linux.scripts.hooks.hook-pip
+- type: fingerprint
+  value: ef777ed4a4a2d7e243ec1b8839df374897f7ec4884e39942cfe126321a3dd267
+  algo: sha256
+claims: []
+relations: []
+namespace: extras.packaging.linux.scripts.hooks

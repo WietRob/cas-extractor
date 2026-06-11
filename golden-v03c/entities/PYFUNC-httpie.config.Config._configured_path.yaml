@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.config.Config._configured_path
+kind: entity
+type: py.function
+name: _configured_path
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/config.py
+anchors:
+- type: symbol
+  value: httpie.config.Config._configured_path
+- type: fingerprint
+  value: 26eef4093ada737403483cb0cb8b6fe491d49079f6f56fb063b002337f9ec4c8
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.config.Config

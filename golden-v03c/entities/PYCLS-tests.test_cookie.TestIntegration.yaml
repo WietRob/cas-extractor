@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-tests.test_cookie.TestIntegration
+kind: entity
+type: py.class
+name: TestIntegration
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_cookie.py
+anchors:
+- type: symbol
+  value: tests.test_cookie.TestIntegration
+- type: fingerprint
+  value: 6c3245649e6470b30021567aa941e355c749fa857e2248fff114a18f91d165e2
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_cookie

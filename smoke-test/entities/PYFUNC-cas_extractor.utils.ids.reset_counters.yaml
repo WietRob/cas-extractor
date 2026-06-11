@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-cas_extractor.utils.ids.reset_counters
+kind: entity
+type: py.function
+name: reset_counters
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor/utils/ids.py
+anchors:
+- type: symbol
+  value: cas_extractor.utils.ids.reset_counters
+- type: fingerprint
+  value: b6137a7bff344a31cdebc0bbde60a07e64ecf1d8fcb26c29320e17f501a9f92c
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor.utils.ids

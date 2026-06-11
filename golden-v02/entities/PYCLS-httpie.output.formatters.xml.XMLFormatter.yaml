@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.output.formatters.xml.XMLFormatter
+kind: entity
+type: py.class
+name: XMLFormatter
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/output/formatters/xml.py
+anchors:
+- type: symbol
+  value: httpie.output.formatters.xml.XMLFormatter
+- type: fingerprint
+  value: b40ae7ca212584039bf58eb53a26df00b64b0330c8ef7ed740cb5a0c57b5ff19
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.formatters.xml

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.plugins.base.FormatterPlugin.format_body
+kind: entity
+type: py.function
+name: format_body
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/plugins/base.py
+anchors:
+- type: symbol
+  value: httpie.plugins.base.FormatterPlugin.format_body
+- type: fingerprint
+  value: 795bf10b1166402fc62d79fce05ee4495acc3f218a058b07a548d3ca54c0aff7
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.plugins.base.FormatterPlugin

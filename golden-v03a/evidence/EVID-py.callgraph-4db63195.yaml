@@ -1,0 +1,119 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-4db63195
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T12:13:53.793529+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.choices.load
+  - symbol: ?.configuration.get
+  - symbol: ?.configuration.items
+  - symbol: ?.configuration.pop
+  - symbol: ?.result.update
+  - symbol: httpie.cli.options.Argument.serialize
+  - symbol: httpie.cli.utils.LazyChoices
+  edges:
+  - from: httpie.cli.options.Argument.serialize
+    to: ?.configuration.pop
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 118
+      start_col: 0
+      end_line: 118
+      end_col: 0
+  - from: httpie.cli.options.Argument.serialize
+    to: ?.configuration.pop
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 119
+      start_col: 0
+      end_line: 119
+      end_col: 0
+  - from: httpie.cli.options.Argument.serialize
+    to: ?.configuration.pop
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 120
+      start_col: 0
+      end_line: 120
+      end_col: 0
+  - from: httpie.cli.options.Argument.serialize
+    to: ?.result.update
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 139
+      start_col: 0
+      end_line: 139
+      end_col: 0
+  - from: httpie.cli.options.Argument.serialize
+    to: ?.configuration.get
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 141
+      start_col: 0
+      end_line: 141
+      end_col: 0
+  - from: httpie.cli.options.Argument.serialize
+    to: ?.configuration.get
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 149
+      start_col: 0
+      end_line: 149
+      end_col: 0
+  - from: httpie.cli.options.Argument.serialize
+    to: ?.result.update
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 158
+      start_col: 0
+      end_line: 163
+      end_col: 0
+  - from: httpie.cli.options.Argument.serialize
+    to: httpie.cli.utils.LazyChoices
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 123
+      start_col: 0
+      end_line: 127
+      end_col: 0
+  - from: httpie.cli.options.Argument.serialize
+    to: ?.configuration.get
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 138
+      start_col: 0
+      end_line: 138
+      end_col: 0
+  - from: httpie.cli.options.Argument.serialize
+    to: ?.choices.load
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 128
+      start_col: 0
+      end_line: 128
+      end_col: 0
+  - from: httpie.cli.options.Argument.serialize
+    to: ?.configuration.items
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 160
+      start_col: 0
+      end_line: 160
+      end_col: 0

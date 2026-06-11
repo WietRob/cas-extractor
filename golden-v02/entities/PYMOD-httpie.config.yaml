@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.config
+kind: entity
+type: py.module
+name: config
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/config.py
+anchors:
+- type: symbol
+  value: httpie.config
+- type: fingerprint
+  value: 8ce8665beac8e4e7f33fbfa324a6c8e68a0805ed997456d8f8eefa6fb5f1d5a6
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie

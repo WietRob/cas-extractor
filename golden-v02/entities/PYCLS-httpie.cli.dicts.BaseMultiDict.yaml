@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.cli.dicts.BaseMultiDict
+kind: entity
+type: py.class
+name: BaseMultiDict
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/cli/dicts.py
+anchors:
+- type: symbol
+  value: httpie.cli.dicts.BaseMultiDict
+- type: fingerprint
+  value: 37785b37aa478af3f17ba598dd3ca3d6e31647bf4212099c3f1494e4b96331bd
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.dicts

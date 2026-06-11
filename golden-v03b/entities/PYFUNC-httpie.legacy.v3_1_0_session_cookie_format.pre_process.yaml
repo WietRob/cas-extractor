@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.legacy.v3_1_0_session_cookie_format.pre_process
+kind: entity
+type: py.function
+name: pre_process
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/legacy/v3_1_0_session_cookie_format.py
+anchors:
+- type: symbol
+  value: httpie.legacy.v3_1_0_session_cookie_format.pre_process
+- type: fingerprint
+  value: 8358eb75a7a191055d90e990a809f42cbf0ed5f3f6dc0840da60665a64e7039b
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.legacy.v3_1_0_session_cookie_format

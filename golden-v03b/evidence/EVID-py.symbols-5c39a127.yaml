@@ -1,0 +1,110 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-5c39a127
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:54.986949+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.downloads.DownloadStatus.__init__
+    kind: method
+    file: httpie/downloads.py
+    range:
+      start_line: 310
+      start_col: 0
+      end_line: 316
+      end_col: 0
+    fingerprint: 047a35a149d6211cc0b01640b2fbcf223e281199f12b36611e31c338d0c3bce9
+    params:
+    - name: self
+    - name: env
+  - qualified: httpie.downloads.DownloadStatus.started
+    kind: method
+    file: httpie/downloads.py
+    range:
+      start_line: 318
+      start_col: 0
+      end_line: 323
+      end_col: 0
+    fingerprint: 8fc375613f54aa9b70855d593d4fed4e8af7bc3106fe7c8cd59abf6abfff9443
+    params:
+    - name: self
+    - name: output_file
+    - name: resumed_from
+    - name: total_size
+  - qualified: httpie.downloads.DownloadStatus.start_display
+    kind: method
+    file: httpie/downloads.py
+    range:
+      start_line: 325
+      start_col: 0
+      end_line: 347
+      end_col: 0
+    fingerprint: c09d88b9b09d675a016dc50255674b67478497e09458767b4e0a14e40a58f3d2
+    params:
+    - name: self
+    - name: output_file
+  - qualified: httpie.downloads.DownloadStatus.chunk_downloaded
+    kind: method
+    file: httpie/downloads.py
+    range:
+      start_line: 349
+      start_col: 0
+      end_line: 352
+      end_col: 0
+    fingerprint: 5659316c717ac08e163d15a1646a5281516cdc226985282b6747c8850093a857
+    params:
+    - name: self
+    - name: size
+  - qualified: httpie.downloads.DownloadStatus.has_finished
+    kind: method
+    file: httpie/downloads.py
+    range:
+      start_line: 355
+      start_col: 0
+      end_line: 356
+      end_col: 0
+    fingerprint: 8aac44eac8f4c153bcd231cf423b6fa32cbafa86726dfa048f1cb795fe40d700
+    decorators:
+    - property
+    params:
+    - name: self
+  - qualified: httpie.downloads.DownloadStatus.time_spent
+    kind: method
+    file: httpie/downloads.py
+    range:
+      start_line: 359
+      start_col: 0
+      end_line: 366
+      end_col: 0
+    fingerprint: 5be7364ec0fa0154b751b7422f81ef920ba36f8f8c159c37e30fe118ba050520
+    decorators:
+    - property
+    params:
+    - name: self
+  - qualified: httpie.downloads.DownloadStatus.finished
+    kind: method
+    file: httpie/downloads.py
+    range:
+      start_line: 368
+      start_col: 0
+      end_line: 373
+      end_col: 0
+    fingerprint: 6b5e693c73527f6b390806f971259992aa63d78733593f36c76073fce84396b8
+    params:
+    - name: self
+  - qualified: httpie.downloads.DownloadStatus.terminate
+    kind: method
+    file: httpie/downloads.py
+    range:
+      start_line: 375
+      start_col: 0
+      end_line: 377
+      end_col: 0
+    fingerprint: 42158f5b84c9ecde0cd2df8d06de673df5a136d69e319f2014dec5db81c86222
+    params:
+    - name: self

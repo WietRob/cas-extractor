@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_exit_status.test_3xx_check_status_redirects_allowed_exits_0
+kind: entity
+type: py.function
+name: test_3xx_check_status_redirects_allowed_exits_0
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_exit_status.py
+anchors:
+- type: symbol
+  value: tests.test_exit_status.test_3xx_check_status_redirects_allowed_exits_0
+- type: fingerprint
+  value: 8e2a6b67e025dc6a3d1a31a313eedf95430c555c3bd757266e4673bff90efc47
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_exit_status

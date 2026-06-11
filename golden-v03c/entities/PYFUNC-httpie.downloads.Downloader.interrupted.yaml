@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.downloads.Downloader.interrupted
+kind: entity
+type: py.function
+name: interrupted
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/downloads.py
+anchors:
+- type: symbol
+  value: httpie.downloads.Downloader.interrupted
+- type: fingerprint
+  value: 8e712705f414967f48238825f1a5c5ea8410bd9b34d88eb3a3a1139f8f771923
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.downloads.Downloader

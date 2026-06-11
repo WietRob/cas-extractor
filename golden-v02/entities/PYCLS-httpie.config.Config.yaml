@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.config.Config
+kind: entity
+type: py.class
+name: Config
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/config.py
+anchors:
+- type: symbol
+  value: httpie.config.Config
+- type: fingerprint
+  value: 63214f630903c6362c5fba97ae3b7b77b241cbd25a803913586b0a2a3f0d56aa
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.config

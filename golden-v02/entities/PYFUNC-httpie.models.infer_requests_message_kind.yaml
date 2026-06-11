@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.models.infer_requests_message_kind
+kind: entity
+type: py.function
+name: infer_requests_message_kind
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/models.py
+anchors:
+- type: symbol
+  value: httpie.models.infer_requests_message_kind
+- type: fingerprint
+  value: c713757e77b512a7253e9c3c923e65cc5d13806a70e2424a787bab9990c3c473
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.models

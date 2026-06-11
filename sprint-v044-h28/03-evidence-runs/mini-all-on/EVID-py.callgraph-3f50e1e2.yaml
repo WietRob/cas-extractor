@@ -1,0 +1,108 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-3f50e1e2
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-23T13:04:32.076767+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://h28-test
+  root: /tmp/h28-verify
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.SomeUnknownClass
+  - symbol: test_h28.CacheManager
+  - symbol: test_h28.DataService
+  - symbol: test_h28.HTTPClient
+  - symbol: test_h28.RequestHandler
+  - symbol: test_h28.WebSocketClient
+  - symbol: test_h28.create_cache
+  - symbol: test_h28.create_conditional
+  - symbol: test_h28.create_data_service
+  - symbol: test_h28.create_handler
+  - symbol: test_h28.create_http_client
+  - symbol: test_h28.create_indirect
+  - symbol: test_h28.create_nested
+  - symbol: test_h28.create_unknown
+  edges:
+  - from: test_h28.create_http_client
+    to: test_h28.HTTPClient
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 56
+      start_col: 0
+      end_line: 56
+      end_col: 0
+  - from: test_h28.create_data_service
+    to: test_h28.DataService
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 61
+      start_col: 0
+      end_line: 61
+      end_col: 0
+  - from: test_h28.create_handler
+    to: test_h28.RequestHandler
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 66
+      start_col: 0
+      end_line: 66
+      end_col: 0
+  - from: test_h28.create_cache
+    to: test_h28.CacheManager
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 71
+      start_col: 0
+      end_line: 71
+      end_col: 0
+  - from: test_h28.create_conditional
+    to: test_h28.WebSocketClient
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 83
+      start_col: 0
+      end_line: 83
+      end_col: 0
+  - from: test_h28.create_indirect
+    to: test_h28.HTTPClient
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 88
+      start_col: 0
+      end_line: 88
+      end_col: 0
+  - from: test_h28.create_nested
+    to: test_h28.create_http_client
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 94
+      start_col: 0
+      end_line: 94
+      end_col: 0
+  - from: test_h28.create_unknown
+    to: ?.SomeUnknownClass
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 99
+      start_col: 0
+      end_line: 99
+      end_col: 0
+  - from: test_h28.create_conditional
+    to: test_h28.HTTPClient
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 82
+      start_col: 0
+      end_line: 82
+      end_col: 0

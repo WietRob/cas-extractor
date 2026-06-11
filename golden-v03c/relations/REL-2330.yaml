@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-2330
+kind: relation
+type: calls
+from: PYFUNC-tests.test_cookie.TestIntegration.test_cookie_parser.MockServerRequestHandler.do_GET
+to: PYFUNC-_.self.end_headers
+confidence:
+  level: E1
+  direction: confirmed
+evidence:
+- EVID-py.callgraph-3a124157
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1

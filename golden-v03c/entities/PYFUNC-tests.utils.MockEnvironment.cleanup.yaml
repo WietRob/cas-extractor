@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.utils.MockEnvironment.cleanup
+kind: entity
+type: py.function
+name: cleanup
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/utils/__init__.py
+anchors:
+- type: symbol
+  value: tests.utils.MockEnvironment.cleanup
+- type: fingerprint
+  value: f39cb63d610558feefd3f1d1825e25eb64ff19d3add1ed29e98d44e5e5ef98c0
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils.MockEnvironment

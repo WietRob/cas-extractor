@@ -1,0 +1,159 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-3bb29afd
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T08:37:44.613284+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.test_output.TestQuietFlag.test_quiet
+    kind: method
+    file: tests/test_output.py
+    range:
+      start_line: 51
+      start_col: 0
+      end_line: 62
+      end_col: 0
+    fingerprint: 55b5e342c8d176016b7dc2ffefc7f7ca906ab6042cffd1d8b17a72a0c548b661
+    decorators:
+    - pytest.mark.parametrize('quiet_flags', QUIET_SCENARIOS)
+    params:
+    - name: self
+    - name: httpbin
+    - name: quiet_flags
+  - qualified: tests.test_output.TestQuietFlag.test_quiet_with_check_status_non_zero
+    kind: method
+    file: tests/test_output.py
+    range:
+      start_line: 64
+      start_col: 0
+      end_line: 69
+      end_col: 0
+    fingerprint: a49faf132e637cf9d03d2ccd65d94e77a2671abfa5276ec6fa261d3accac7516
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_output.TestQuietFlag.test_quiet_with_check_status_non_zero_pipe
+    kind: method
+    file: tests/test_output.py
+    range:
+      start_line: 71
+      start_col: 0
+      end_line: 77
+      end_col: 0
+    fingerprint: ae4df863963ab381f31194689a8795d59231c63f7ee19ad92a83979bff9e937a
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_output.TestQuietFlag.test_quiet_quiet_with_check_status_non_zero
+    kind: method
+    file: tests/test_output.py
+    range:
+      start_line: 79
+      start_col: 0
+      end_line: 84
+      end_col: 0
+    fingerprint: ac46d62d9b03030b6cdae115df6f503dfd42d9247cb80d2aa837092a8b20fc4c
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_output.TestQuietFlag.test_quiet_quiet_with_check_status_non_zero_pipe
+    kind: method
+    file: tests/test_output.py
+    range:
+      start_line: 86
+      start_col: 0
+      end_line: 92
+      end_col: 0
+    fingerprint: 2bdb2e796de37c7255f2d3bb7b8077720e30993f26cf8765fc800c1f23bb9805
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_output.TestQuietFlag.test_quiet_on_python_warnings
+    kind: method
+    file: tests/test_output.py
+    range:
+      start_line: 102
+      start_col: 0
+      end_line: 111
+      end_col: 0
+    fingerprint: 9569abbe91141d9961e2bb2da17310fe453147c798a522c56450093732110fcb
+    decorators:
+    - mock.patch('httpie.core.program')
+    - pytest.mark.parametrize('flags, expected_warnings', [([], 1), (['-q'], 1), (['-qq'],
+      0)])
+    - pytest.mark.xfail
+    params:
+    - name: self
+    - name: test_patch
+    - name: httpbin
+    - name: flags
+    - name: expected_warnings
+  - qualified: tests.test_output.TestQuietFlag.test_double_quiet_on_error
+    kind: method
+    file: tests/test_output.py
+    range:
+      start_line: 113
+      start_col: 0
+      end_line: 119
+      end_col: 0
+    fingerprint: e47544af558908975707d9b3eb09701f8130bae5e1515c37ecab4664a414b96c
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_output.TestQuietFlag.test_quiet_with_password_prompt
+    kind: method
+    file: tests/test_output.py
+    range:
+      start_line: 124
+      start_col: 0
+      end_line: 144
+      end_col: 0
+    fingerprint: c36f6880ed82561aeda9f76777ed51d0d54da8b0efc9d652011a7486015394ac
+    decorators:
+    - pytest.mark.parametrize('quiet_flags', QUIET_SCENARIOS)
+    - 'mock.patch(''httpie.cli.argtypes.AuthCredentials._getpass'', new=lambda self,
+      prompt: ''password'')'
+    params:
+    - name: self
+    - name: httpbin
+    - name: quiet_flags
+  - qualified: tests.test_output.TestQuietFlag.test_quiet_with_explicit_output_options
+    kind: method
+    file: tests/test_output.py
+    range:
+      start_line: 148
+      start_col: 0
+      end_line: 154
+      end_col: 0
+    fingerprint: bd04c5d186470cb2bd45851dad2f3656176d1d918604d62dff33cfd0f985049b
+    decorators:
+    - pytest.mark.parametrize('quiet_flags', QUIET_SCENARIOS)
+    - pytest.mark.parametrize('output_options', ['-h', '-b', '-v', '-p=hH'])
+    params:
+    - name: self
+    - name: httpbin
+    - name: quiet_flags
+    - name: output_options
+  - qualified: tests.test_output.TestQuietFlag.test_quiet_with_output_redirection
+    kind: method
+    file: tests/test_output.py
+    range:
+      start_line: 158
+      start_col: 0
+      end_line: 185
+      end_col: 0
+    fingerprint: 20af1bd104bd7f8daa0a8fcdc06c8cefa9e81e49164c48000472706f71fa7b88
+    decorators:
+    - pytest.mark.parametrize('quiet_flags', QUIET_SCENARIOS)
+    - pytest.mark.parametrize('with_download', [True, False])
+    params:
+    - name: self
+    - name: tmp_path
+    - name: httpbin
+    - name: quiet_flags
+    - name: with_download

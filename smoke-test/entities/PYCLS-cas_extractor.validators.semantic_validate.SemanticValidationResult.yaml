@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-cas_extractor.validators.semantic_validate.SemanticValidationResult
+kind: entity
+type: py.class
+name: SemanticValidationResult
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor/validators/semantic_validate.py
+anchors:
+- type: symbol
+  value: cas_extractor.validators.semantic_validate.SemanticValidationResult
+- type: fingerprint
+  value: 236d182a92d8551dacdce793b0102d4342dfb212ba45c2b66223713d86f2f428
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor.validators.semantic_validate

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.manager.__main__.main
+kind: entity
+type: py.function
+name: main
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/manager/__main__.py
+anchors:
+- type: symbol
+  value: httpie.manager.__main__.main
+- type: fingerprint
+  value: 40921d72a6262dccf456f35d2bdbcb78beb28a2f90a5e49ae09ed79f8e4a6065
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.manager.__main__

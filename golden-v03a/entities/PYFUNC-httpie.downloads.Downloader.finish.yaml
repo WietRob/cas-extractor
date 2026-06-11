@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.downloads.Downloader.finish
+kind: entity
+type: py.function
+name: finish
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/downloads.py
+anchors:
+- type: symbol
+  value: httpie.downloads.Downloader.finish
+- type: fingerprint
+  value: b70bd7ae048631b313a4bfee3c938158575366a2a23e4d3daed846e80d1b9382
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.downloads.Downloader

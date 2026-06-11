@@ -1,0 +1,15 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-b5080190
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-25T07:24:33.959308+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://fixtures
+  root: ./sprint-v050-engine/02-fixtures
+  revision: git:HEAD
+payload:
+  imports:
+  - from: test_h28_factory_return
+    imports:
+    - ast

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.cli.dicts.RequestFilesDict
+kind: entity
+type: py.class
+name: RequestFilesDict
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/dicts.py
+anchors:
+- type: symbol
+  value: httpie.cli.dicts.RequestFilesDict
+- type: fingerprint
+  value: 3ac2e0ae7f329d14b8c0cb82912030ec218b23504f5442c4d2f49d427f77f119
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.dicts

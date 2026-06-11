@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.argparser.HTTPieArgumentParser._apply_no_options
+kind: entity
+type: py.function
+name: _apply_no_options
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/argparser.py
+anchors:
+- type: symbol
+  value: httpie.cli.argparser.HTTPieArgumentParser._apply_no_options
+- type: fingerprint
+  value: e5c48811c25a6fbc1007a533ab49363a21a14b47f5ead59ba8eb61c30103c496
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.argparser.HTTPieArgumentParser

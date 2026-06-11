@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.ui.rich_palette._GenericColorCaster._translate
+kind: entity
+type: py.function
+name: _translate
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/ui/rich_palette.py
+anchors:
+- type: symbol
+  value: httpie.output.ui.rich_palette._GenericColorCaster._translate
+- type: fingerprint
+  value: 9840d4d3cef17503ec7bdd6b9b932477e92e73ad9541b99152d924235b06eb4d
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.ui.rich_palette._GenericColorCaster

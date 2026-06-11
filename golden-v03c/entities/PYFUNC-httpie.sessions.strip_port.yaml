@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.sessions.strip_port
+kind: entity
+type: py.function
+name: strip_port
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/sessions.py
+anchors:
+- type: symbol
+  value: httpie.sessions.strip_port
+- type: fingerprint
+  value: 4c4ac324abff437a98f358849fe28396c27ead46810b39f5308e7b893eec3e82
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.sessions

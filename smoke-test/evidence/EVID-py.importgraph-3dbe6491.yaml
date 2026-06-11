@@ -1,0 +1,27 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-3dbe6491
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-21T11:35:57.545533+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+payload:
+  imports:
+  - from: cas_extractor.writers.evidence_writer
+    imports:
+    - os
+    - datetime.datetime
+    - datetime.timezone
+    - pathlib.Path
+    - typing.Any
+    - yaml
+    - cas_extractor.models.evidence.CallEntry
+    - cas_extractor.models.evidence.EvidenceArtifact
+    - cas_extractor.models.evidence.EvidenceLevel
+    - cas_extractor.models.evidence.ImportEntry
+    - cas_extractor.models.evidence.SourceInfo
+    - cas_extractor.models.evidence.SymbolEntry
+    - cas_extractor.utils.ids.evidence_id

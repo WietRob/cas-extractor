@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_sessions.test_old_session_version_saved_as_is
+kind: entity
+type: py.function
+name: test_old_session_version_saved_as_is
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_sessions.py
+anchors:
+- type: symbol
+  value: tests.test_sessions.test_old_session_version_saved_as_is
+- type: fingerprint
+  value: 81f708298132c304db298a52f1ed4880e0015f342e14459ac6d730b10a60e4d8
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_sessions

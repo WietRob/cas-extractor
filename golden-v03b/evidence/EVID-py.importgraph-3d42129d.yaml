@@ -1,0 +1,20 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-3d42129d
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-21T15:03:55.424536+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  imports:
+  - from: tests.test_defaults
+    imports:
+    - io.BytesIO
+    - httpie.client.JSON_ACCEPT
+    - tests.utils.MockEnvironment
+    - tests.utils.http
+    - tests.utils.HTTP_OK
+    - tests.fixtures.FILE_PATH

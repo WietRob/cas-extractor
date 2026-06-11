@@ -1,0 +1,54 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-230d460e
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-23T12:58:49.604041+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://h28-test
+  root: /tmp/h28-verify
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.self.cache.get
+  - symbol: test_h28.TestP5FactoryInHelperH26.init_cache
+  - symbol: test_h28.TestP5FactoryInHelperH26.prepare
+  - symbol: test_h28.TestP5FactoryInHelperH26.run
+  - symbol: test_h28.create_cache
+  edges:
+  - from: test_h28.TestP5FactoryInHelperH26.init_cache
+    to: test_h28.create_cache
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 148
+      start_col: 0
+      end_line: 148
+      end_col: 0
+  - from: test_h28.TestP5FactoryInHelperH26.prepare
+    to: test_h28.TestP5FactoryInHelperH26.init_cache
+    kind: method_call
+    edge_id: 1
+    range:
+      start_line: 151
+      start_col: 0
+      end_line: 151
+      end_col: 0
+  - from: test_h28.TestP5FactoryInHelperH26.run
+    to: test_h28.TestP5FactoryInHelperH26.prepare
+    kind: method_call
+    edge_id: 2
+    range:
+      start_line: 154
+      start_col: 0
+      end_line: 154
+      end_col: 0
+  - from: test_h28.TestP5FactoryInHelperH26.run
+    to: ?.self.cache.get
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 155
+      start_col: 0
+      end_line: 155
+      end_col: 0

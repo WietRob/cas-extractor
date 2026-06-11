@@ -1,0 +1,73 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-410ac064
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:52.968156+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.config
+    kind: module
+    file: httpie/config.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 172
+      end_col: 0
+    fingerprint: 8ce8665beac8e4e7f33fbfa324a6c8e68a0805ed997456d8f8eefa6fb5f1d5a6
+  - qualified: httpie.config.get_default_config_dir
+    kind: function
+    file: httpie/config.py
+    range:
+      start_line: 20
+      start_col: 0
+      end_line: 55
+      end_col: 0
+    fingerprint: 6426e217a89617de45f8ca38c6aa1df18bca1d31cd614ccd1f7623f95d0fd7db
+    returns: Path
+  - qualified: httpie.config.ConfigFileError
+    kind: class
+    file: httpie/config.py
+    range:
+      start_line: 61
+      start_col: 0
+      end_line: 62
+      end_col: 0
+    fingerprint: b77f0bbc37865d99f09e5c2314d2feb2786a5aa21cb79bad4a2ae66cede69be2
+  - qualified: httpie.config.read_raw_config
+    kind: function
+    file: httpie/config.py
+    range:
+      start_line: 65
+      start_col: 0
+      end_line: 77
+      end_col: 0
+    fingerprint: b502537b1f7122b73c3f7ef586fae6375d50739c96bd8e6337ee8f558a7d88ef
+    params:
+    - name: config_type
+      annotation: str
+    - name: path
+      annotation: Path
+    returns: Dict[str, Any]
+  - qualified: httpie.config.BaseConfigDict
+    kind: class
+    file: httpie/config.py
+    range:
+      start_line: 80
+      start_col: 0
+      end_line: 134
+      end_col: 0
+    fingerprint: fb71753fbde88810f7a46ef5faed772be4e5de7aa416a2dc01abd9d3e7d6f137
+  - qualified: httpie.config.Config
+    kind: class
+    file: httpie/config.py
+    range:
+      start_line: 137
+      start_col: 0
+      end_line: 172
+      end_col: 0
+    fingerprint: 63214f630903c6362c5fba97ae3b7b77b241cbd25a803913586b0a2a3f0d56aa

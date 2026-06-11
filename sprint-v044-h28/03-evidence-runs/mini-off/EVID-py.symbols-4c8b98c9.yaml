@@ -1,0 +1,23 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-4c8b98c9
+kind: evidence
+type: py.symbols
+created_at: '2026-02-23T12:58:49.581258+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://h28-test
+  root: /tmp/h28-verify
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: test_h28.TestN4UnknownClass.run
+    kind: method
+    file: test_h28.py
+    range:
+      start_line: 218
+      start_col: 0
+      end_line: 220
+      end_col: 0
+    fingerprint: 77847b6d3ba0199ac329fe5f1741d7039759cd2be01cbab09bfede7d4a8f6ff1
+    params:
+    - name: self

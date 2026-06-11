@@ -1,0 +1,73 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-c7e992e4
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-22T10:13:16.945236+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://cas_extractor
+  root: cas_extractor
+  revision: git:test
+payload:
+  nodes:
+  - symbol: dataclasses.dataclass
+  - symbol: dataclasses.field
+  - symbol: models.evidence.Anchor
+  - symbol: models.evidence.EvidenceArtifact
+  - symbol: models.evidence.SourceInfo
+  - symbol: models.evidence.SymbolEntry
+  edges:
+  - from: models.evidence.SourceInfo
+    to: dataclasses.dataclass
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 20
+      start_col: 0
+      end_line: 20
+      end_col: 0
+  - from: models.evidence.Anchor
+    to: dataclasses.dataclass
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 28
+      start_col: 0
+      end_line: 28
+      end_col: 0
+  - from: models.evidence.SymbolEntry
+    to: dataclasses.field
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 43
+      start_col: 0
+      end_line: 43
+      end_col: 0
+  - from: models.evidence.SymbolEntry
+    to: dataclasses.field
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 44
+      start_col: 0
+      end_line: 44
+      end_col: 0
+  - from: models.evidence.SymbolEntry
+    to: dataclasses.field
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 47
+      start_col: 0
+      end_line: 47
+      end_col: 0
+  - from: models.evidence.EvidenceArtifact
+    to: dataclasses.field
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 74
+      start_col: 0
+      end_line: 74
+      end_col: 0

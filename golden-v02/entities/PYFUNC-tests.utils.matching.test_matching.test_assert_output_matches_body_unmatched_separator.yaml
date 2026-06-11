@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.utils.matching.test_matching.test_assert_output_matches_body_unmatched_separator
+kind: entity
+type: py.function
+name: test_assert_output_matches_body_unmatched_separator
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/utils/matching/test_matching.py
+anchors:
+- type: symbol
+  value: tests.utils.matching.test_matching.test_assert_output_matches_body_unmatched_separator
+- type: fingerprint
+  value: 3225c142855dcf3cfc60e1fb36c3e37c116f5c9eb7163831d3d9d41d9c025d09
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils.matching.test_matching

@@ -1,0 +1,30 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-3c935c59
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:51:32.147192+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.cli.exceptions
+    kind: module
+    file: httpie/cli/exceptions.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 2
+      end_col: 0
+    fingerprint: 689e71bf621cb18a30e305ccc49def11eb8687417fe5ab1bd9e30679c3bbf216
+  - qualified: httpie.cli.exceptions.ParseError
+    kind: class
+    file: httpie/cli/exceptions.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 2
+      end_col: 0
+    fingerprint: 689e71bf621cb18a30e305ccc49def11eb8687417fe5ab1bd9e30679c3bbf216

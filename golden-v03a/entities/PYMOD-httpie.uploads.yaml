@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.uploads
+kind: entity
+type: py.module
+name: uploads
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/uploads.py
+anchors:
+- type: symbol
+  value: httpie.uploads
+- type: fingerprint
+  value: 12371f6d59e71ea0c81b626969d8526044efc3b93f62dc7c3459379bcfee4927
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie

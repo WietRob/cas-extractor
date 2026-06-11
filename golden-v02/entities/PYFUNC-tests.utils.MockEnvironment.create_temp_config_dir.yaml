@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.utils.MockEnvironment.create_temp_config_dir
+kind: entity
+type: py.function
+name: create_temp_config_dir
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/utils/__init__.py
+anchors:
+- type: symbol
+  value: tests.utils.MockEnvironment.create_temp_config_dir
+- type: fingerprint
+  value: 4fbcfb9f06cb6b45a719b70d059cd83f1f206717d000b09e88d8dcd97752b3d9
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils.MockEnvironment

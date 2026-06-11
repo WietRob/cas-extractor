@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.processing.is_valid_mime
+kind: entity
+type: py.function
+name: is_valid_mime
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/output/processing.py
+anchors:
+- type: symbol
+  value: httpie.output.processing.is_valid_mime
+- type: fingerprint
+  value: 1b15b86ce923f3e5c0a614eb10689b12f667a666e3b307b7db651e41f0f692bf
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.processing

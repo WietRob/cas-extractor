@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_sessions.TestSession.test_session_default_header_value_overwritten
+kind: entity
+type: py.function
+name: test_session_default_header_value_overwritten
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_sessions.py
+anchors:
+- type: symbol
+  value: tests.test_sessions.TestSession.test_session_default_header_value_overwritten
+- type: fingerprint
+  value: ab70dd5bd6c6e201aa6fc4ceb8b97240fb84ad85ce9665ae887c09d9074c7018
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_sessions.TestSession

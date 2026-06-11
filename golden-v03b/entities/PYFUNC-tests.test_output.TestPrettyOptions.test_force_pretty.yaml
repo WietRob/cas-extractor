@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_output.TestPrettyOptions.test_force_pretty
+kind: entity
+type: py.function
+name: test_force_pretty
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_output.py
+anchors:
+- type: symbol
+  value: tests.test_output.TestPrettyOptions.test_force_pretty
+- type: fingerprint
+  value: 6bf7c2793a746d7778af54afb1c1b5a5f10818a3c95d9634e8beb836e018873d
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_output.TestPrettyOptions

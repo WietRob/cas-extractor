@@ -1,0 +1,27 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-e5a7e236
+kind: evidence
+type: py.symbols
+created_at: '2026-02-23T17:20:10.875709+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://cas_extractor
+  root: ./cas_extractor
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: extractors.python_calls._propagate_self_attr_summaries.propagate
+    kind: function
+    file: extractors/python_calls.py
+    range:
+      start_line: 586
+      start_col: 0
+      end_line: 612
+      end_col: 0
+    fingerprint: 0d251a53d37b8fccf70094e586cdfeadb7f6e9b85c561dd6c6dcc9d2caf40fbb
+    params:
+    - name: method_name
+      annotation: str
+    - name: depth
+      annotation: int
+    returns: dict[str, str | None]

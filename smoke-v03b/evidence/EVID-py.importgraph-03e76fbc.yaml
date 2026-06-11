@@ -1,0 +1,15 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-03e76fbc
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-21T14:01:21.233724+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://cas-extractor
+  root: .
+  revision: git:HEAD
+payload:
+  imports:
+  - from: cas_extractor.utils.ids
+    imports:
+    - hashlib

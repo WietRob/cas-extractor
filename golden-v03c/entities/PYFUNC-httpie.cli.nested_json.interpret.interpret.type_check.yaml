@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.nested_json.interpret.interpret.type_check
+kind: entity
+type: py.function
+name: type_check
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/nested_json/interpret.py
+anchors:
+- type: symbol
+  value: httpie.cli.nested_json.interpret.interpret.type_check
+- type: fingerprint
+  value: 3fc7a119cea223b1192fdc3723e0d6dabd96cb24a74864e68b241a8efa40b26c
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.nested_json.interpret.interpret

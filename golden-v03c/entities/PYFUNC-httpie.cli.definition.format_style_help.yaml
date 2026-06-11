@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.definition.format_style_help
+kind: entity
+type: py.function
+name: format_style_help
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/definition.py
+anchors:
+- type: symbol
+  value: httpie.cli.definition.format_style_help
+- type: fingerprint
+  value: 7327491e303d7b73ac679711a690420f10eb8af27f651ac6e8aa293a2f8f1eb0
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.definition

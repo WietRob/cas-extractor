@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.argtypes.parse_format_options
+kind: entity
+type: py.function
+name: parse_format_options
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/argtypes.py
+anchors:
+- type: symbol
+  value: httpie.cli.argtypes.parse_format_options
+- type: fingerprint
+  value: 244e4e28ab568f56ac859ac926f9abf85c9b95a37e4181cf77a07ec5a7d6f198
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.argtypes

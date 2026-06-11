@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_cli.TestQuerystring.test_query_string_params_in_url
+kind: entity
+type: py.function
+name: test_query_string_params_in_url
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_cli.py
+anchors:
+- type: symbol
+  value: tests.test_cli.TestQuerystring.test_query_string_params_in_url
+- type: fingerprint
+  value: 242a22c34b06298d5b4ff8493d1997fa2b77420679a344895641fd7b61e818eb
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_cli.TestQuerystring

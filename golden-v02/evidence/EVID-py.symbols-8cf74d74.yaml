@@ -1,0 +1,99 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-8cf74d74
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:51:32.209104+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.core
+    kind: module
+    file: httpie/core.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 298
+      end_col: 0
+    fingerprint: 0da5cfa5cb9a83e5427465df1e80766ccc28f67d7de549d9a13874e4ab36efd9
+  - qualified: httpie.core.raw_main
+    kind: function
+    file: httpie/core.py
+    range:
+      start_line: 32
+      start_col: 0
+      end_line: 143
+      end_col: 0
+    fingerprint: 51c3a33692002cbf9cf77ba99a4346c6ec749a3c786aac092dd5e02930aa9d4e
+    params:
+    - name: parser
+      annotation: argparse.ArgumentParser
+    - name: main_program
+      annotation: Callable[[argparse.Namespace, Environment], ExitStatus]
+    - name: args
+      annotation: List[Union[str, bytes]]
+    - name: env
+      annotation: Environment
+    - name: use_default_options
+      annotation: bool
+    returns: ExitStatus
+  - qualified: httpie.core.main
+    kind: function
+    file: httpie/core.py
+    range:
+      start_line: 146
+      start_col: 0
+      end_line: 167
+      end_col: 0
+    fingerprint: 2a523dd93ba5d6a16e843b84f23791d9ed37fe01157ab6d98256eba8dbdaadff
+    params:
+    - name: args
+      annotation: List[Union[str, bytes]]
+    - name: env
+      annotation: Environment
+    returns: ExitStatus
+  - qualified: httpie.core.program
+    kind: function
+    file: httpie/core.py
+    range:
+      start_line: 170
+      start_col: 0
+      end_line: 267
+      end_col: 0
+    fingerprint: 146e35360972fc1122b84f3baf1672c6143c1b7a9bb950ba9cda91ebbb7dad76
+    params:
+    - name: args
+      annotation: argparse.Namespace
+    - name: env
+      annotation: Environment
+    returns: ExitStatus
+  - qualified: httpie.core.print_debug_info
+    kind: function
+    file: httpie/core.py
+    range:
+      start_line: 270
+      start_col: 0
+      end_line: 282
+      end_col: 0
+    fingerprint: 810e50e8731236680462d2be8aff431942be33b93f8e7454eba284a7a49c8201
+    params:
+    - name: env
+      annotation: Environment
+  - qualified: httpie.core.decode_raw_args
+    kind: function
+    file: httpie/core.py
+    range:
+      start_line: 285
+      start_col: 0
+      end_line: 298
+      end_col: 0
+    fingerprint: c06e2237035fc9ea4591b7ab002b1d301f1a58cadc2a3039796034709cdfd7cf
+    params:
+    - name: args
+      annotation: List[Union[str, bytes]]
+    - name: stdin_encoding
+      annotation: str
+    returns: List[str]

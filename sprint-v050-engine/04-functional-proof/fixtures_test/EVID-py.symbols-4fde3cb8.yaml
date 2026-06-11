@@ -1,0 +1,39 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-4fde3cb8
+kind: evidence
+type: py.symbols
+created_at: '2026-02-25T07:23:45.913007+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://fixtures
+  root: ./sprint-v050-engine/02-fixtures
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: test_h27_propagated_self
+    kind: module
+    file: test_h27_propagated_self.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 17
+      end_col: 0
+    fingerprint: ee9694cd59bcb4078a4d420f9bcad43043b0a6ffc9a0356ecc7d859cb4d69f73
+  - qualified: test_h27_propagated_self.Inner
+    kind: class
+    file: test_h27_propagated_self.py
+    range:
+      start_line: 6
+      start_col: 0
+      end_line: 8
+      end_col: 0
+    fingerprint: ef10821b3c0c021a893bdd9d98581576df132145c85fd8db3d0e54cc36c188de
+  - qualified: test_h27_propagated_self.Outer
+    kind: class
+    file: test_h27_propagated_self.py
+    range:
+      start_line: 11
+      start_col: 0
+      end_line: 17
+      end_col: 0
+    fingerprint: a120f64fdad5f129565f03e6364f6f4b76866ee5d523bb8cf92680485f89f96c

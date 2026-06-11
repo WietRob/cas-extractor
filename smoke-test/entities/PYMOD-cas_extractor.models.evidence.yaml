@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-cas_extractor.models.evidence
+kind: entity
+type: py.module
+name: evidence
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor/models/evidence.py
+anchors:
+- type: symbol
+  value: cas_extractor.models.evidence
+- type: fingerprint
+  value: 94c0e5324218292907df31c81791a82e25d4332cde714d2b750bebe87adfcc0a
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor.models

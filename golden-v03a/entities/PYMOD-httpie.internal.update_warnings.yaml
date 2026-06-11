@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.internal.update_warnings
+kind: entity
+type: py.module
+name: update_warnings
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/internal/update_warnings.py
+anchors:
+- type: symbol
+  value: httpie.internal.update_warnings
+- type: fingerprint
+  value: 51c5278e73dc0d01d6e85a64fb027f5c1c5e3144877ebba913ab91db99a7325a
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.internal

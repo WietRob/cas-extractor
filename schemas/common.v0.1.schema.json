@@ -1,0 +1,171 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "common.v0.1.schema.json",
+  "title": "CAS Common Definitions v0.1",
+  "description": "Shared type definitions for Canonical Artifact Store",
+  "$defs": {
+    "entity_type": {
+      "type": "string",
+      "enum": [
+        "py.module",
+        "py.class", 
+        "py.function",
+        "web.component",
+        "web.hook",
+        "web.module",
+        "api.endpoint",
+        "data.model"
+      ],
+      "description": "Closed enumeration of entity types"
+    },
+    "relation_type": {
+      "type": "string",
+      "enum": [
+        "imports",
+        "exports",
+        "contains",
+        "calls",
+        "renders",
+        "uses",
+        "reads",
+        "writes",
+        "exposes",
+        "consumes",
+        "tests",
+        "implements"
+      ],
+      "description": "Closed enumeration of relation types"
+    },
+    "claim_kind": {
+      "type": "string",
+      "enum": [
+        "purpose",
+        "side_effect",
+        "invariant",
+        "constraint",
+        "dependency",
+        "assumption"
+      ],
+      "description": "Closed enumeration of claim kinds"
+    },
+    "evidence_level": {
+      "type": "string",
+      "enum": ["E0", "E1", "E2", "E3"],
+      "description": "E0=direct AST, E1=derived (callgraph), E2=heuristic, E3=hypothesis"
+    },
+    "confidence_direction": {
+      "type": "string",
+      "enum": ["provisional", "confirmed", "disputed"],
+      "description": "Direction of confidence: may change, confirmed by evidence, or disputed"
+    },
+    "confidence": {
+      "type": "object",
+      "required": ["level", "direction"],
+      "properties": {
+        "level": { "$ref": "#/$defs/evidence_level" },
+        "direction": { "$ref": "#/$defs/confidence_direction" }
+      },
+      "additionalProperties": false
+    },
+    "source": {
+      "type": "object",
+      "required": ["repo", "root", "revision"],
+      "properties": {
+        "repo": {
+          "type": "string",
+          "pattern": "^repo://.+$",
+          "description": "Logical repository name, e.g. repo://main"
+        },
+        "root": {
+          "type": "string",
+          "description": "Root path within repo, '/' for single-repo, '/packages/X' for monorepo"
+        },
+        "revision": {
+          "type": "string",
+          "description": "Git revision: sha, tag, or 'git:abcd1234' format"
+        },
+        "file": {
+          "type": "string",
+          "description": "Relative file path from root"
+        }
+      },
+      "additionalProperties": false
+    },
+    "anchor": {
+      "type": "object",
+      "required": ["type", "value"],
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["symbol", "fingerprint", "range"],
+          "description": "Anchor type: symbol name, content hash, or source range"
+        },
+        "value": {
+          "type": "string",
+          "description": "Symbol name, fingerprint hash, or range spec"
+        },
+        "algo": {
+          "type": "string",
+          "enum": ["sha256", "sha1", "md5"],
+          "description": "Hash algorithm for fingerprint anchors"
+        }
+      },
+      "additionalProperties": false
+    },
+    "evidence_ref": {
+      "type": "string",
+      "pattern": "^EVID-[a-zA-Z0-9_.-]+(-[a-f0-9]{8})?(#[a-zA-Z0-9_:]+)?$",
+      "description": "Evidence reference with optional fragment path: EVID-xxx#edge:77"
+    },
+    "entity_id": {
+      "type": "string",
+      "pattern": "^(PYFUNC|PYMOD|PYCLS|WEB-COMP|WEB-HOOK|WEB-MOD|API-ENDPOINT|DATA-MODEL)-.+$",
+      "description": "Entity ID with type prefix and qualified name"
+    },
+    "evidence_id": {
+      "type": "string",
+      "pattern": "^EVID-[a-zA-Z0-9_.-]+(-[a-f0-9]{8})?$",
+      "description": "Evidence ID without fragment"
+    },
+    "relation_id": {
+      "type": "string",
+      "pattern": "^REL-[0-9]+$",
+      "description": "Relation ID: REL-NNNNN"
+    },
+    "issue_id": {
+      "type": "string",
+      "pattern": "^ISSUE-[0-9]{4,}$",
+      "description": "Issue ID: ISSUE-NNNN"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO 8601 timestamp"
+    },
+    "issue_severity": {
+      "type": "string",
+      "enum": ["info", "warn", "error"],
+      "description": "Issue severity level"
+    },
+    "issue_type": {
+      "type": "string",
+      "enum": ["ambiguous", "unproven", "conflict", "orphan", "schema_error", "external_dependency", "unresolved_call", "missing_trace"],
+      "description": "Issue type classification"
+    },
+    "param_kind": {
+      "type": "string",
+      "enum": ["positional", "kw", "positional_or_kw", "varargs", "kwargs"],
+      "description": "Parameter kind"
+    },
+    "return_kind": {
+      "type": "string",
+      "enum": ["value", "none", "raises"],
+      "description": "Return kind"
+    },
+    "value_shape": {
+      "type": "string",
+      "enum": ["opaque", "bool", "int", "str", "dict", "list", "object", "none"],
+      "description": "Value shape/type hint"
+    }
+  }
+}

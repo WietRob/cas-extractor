@@ -1,0 +1,64 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-2073c244
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-23T07:07:57.449573+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: /tmp/h27-verify
+  revision: git:test
+payload:
+  nodes:
+  - symbol: test_h27.HTTPClient
+  - symbol: test_h27.HTTPClient.send
+  - symbol: test_h27.TestH27FanIn.init_client
+  - symbol: test_h27.TestH27FanIn.path_a
+  - symbol: test_h27.TestH27FanIn.path_b
+  - symbol: test_h27.TestH27FanIn.run
+  edges:
+  - from: test_h27.TestH27FanIn.init_client
+    to: test_h27.HTTPClient
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 101
+      start_col: 0
+      end_line: 101
+      end_col: 0
+  - from: test_h27.TestH27FanIn.path_a
+    to: test_h27.TestH27FanIn.init_client
+    kind: method_call
+    edge_id: 1
+    range:
+      start_line: 104
+      start_col: 0
+      end_line: 104
+      end_col: 0
+  - from: test_h27.TestH27FanIn.path_b
+    to: test_h27.TestH27FanIn.init_client
+    kind: method_call
+    edge_id: 2
+    range:
+      start_line: 107
+      start_col: 0
+      end_line: 107
+      end_col: 0
+  - from: test_h27.TestH27FanIn.run
+    to: test_h27.TestH27FanIn.path_a
+    kind: method_call
+    edge_id: 3
+    range:
+      start_line: 110
+      start_col: 0
+      end_line: 110
+      end_col: 0
+  - from: test_h27.TestH27FanIn.run
+    to: test_h27.HTTPClient.send
+    kind: method_call
+    edge_id: 4
+    range:
+      start_line: 111
+      start_col: 0
+      end_line: 111
+      end_col: 0

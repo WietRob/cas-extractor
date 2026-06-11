@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.cli.nested_json.tokens
+kind: entity
+type: py.module
+name: tokens
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/nested_json/tokens.py
+anchors:
+- type: symbol
+  value: httpie.cli.nested_json.tokens
+- type: fingerprint
+  value: f355887969a88809523e8654908798b449aa3fa8dfc460e68bbf3ba24ac4c615
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.nested_json

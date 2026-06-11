@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.client.build_requests_session
+kind: entity
+type: py.function
+name: build_requests_session
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/client.py
+anchors:
+- type: symbol
+  value: httpie.client.build_requests_session
+- type: fingerprint
+  value: ddf7b29bba2795024de29adec2b769549587f5476a4b52aa0993d48f7fb75d84
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.client

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.internal.daemons._spawn
+kind: entity
+type: py.function
+name: _spawn
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/internal/daemons.py
+anchors:
+- type: symbol
+  value: httpie.internal.daemons._spawn
+- type: fingerprint
+  value: 75f22df0a2978367a0ce8de6f868db17d7e6302fd5e3ca39b888893de22d9327
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.internal.daemons

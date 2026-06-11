@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.definition.format_auth_help
+kind: entity
+type: py.function
+name: format_auth_help
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/definition.py
+anchors:
+- type: symbol
+  value: httpie.cli.definition.format_auth_help
+- type: fingerprint
+  value: 819c0011a53ff0854fabb20910579cdda3851efbada4ade9cd9eefe2b3db5758
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.definition

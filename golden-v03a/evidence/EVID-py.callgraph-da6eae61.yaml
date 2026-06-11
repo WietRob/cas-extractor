@@ -1,0 +1,257 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-da6eae61
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T12:13:54.035992+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.cm.match
+  - symbol: ?.expected_error.splitlines
+  - symbol: ?.fmt.format_body
+  - symbol: httpie.cli.constants.PRETTY_MAP.keys
+  - symbol: httpie.output.formatters.colors.ColorFormatter
+  - symbol: json.dumps
+  - symbol: json.loads
+  - symbol: pytest.raises
+  - symbol: responses.add
+  - symbol: tests.test_json.test_complex_json_arguments_with_non_json
+  - symbol: tests.test_json.test_duplicate_keys_support_from_input_file
+  - symbol: tests.test_json.test_duplicate_keys_support_from_response
+  - symbol: tests.test_json.test_json_formatter_with_body_preceded_by_non_json_data
+  - symbol: tests.test_json.test_nested_json_errors
+  - symbol: tests.test_json.test_nested_json_sparse_array
+  - symbol: tests.test_json.test_nested_json_syntax
+  - symbol: tests.test_json.test_simple_json_arguments_with_non_json
+  - symbol: utils.MockEnvironment
+  - symbol: utils.http
+  edges:
+  - from: tests.test_json.test_json_formatter_with_body_preceded_by_non_json_data
+    to: responses.add
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 68
+      start_col: 0
+      end_line: 73
+      end_col: 0
+  - from: tests.test_json.test_json_formatter_with_body_preceded_by_non_json_data
+    to: utils.http
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 77
+      start_col: 0
+      end_line: 77
+      end_col: 0
+  - from: tests.test_json.test_json_formatter_with_body_preceded_by_non_json_data
+    to: httpie.cli.constants.PRETTY_MAP.keys
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 60
+      start_col: 0
+      end_line: 60
+      end_col: 0
+  - from: tests.test_json.test_duplicate_keys_support_from_response
+    to: responses.add
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 97
+      start_col: 0
+      end_line: 102
+      end_col: 0
+  - from: tests.test_json.test_duplicate_keys_support_from_response
+    to: utils.http
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 111
+      start_col: 0
+      end_line: 111
+      end_col: 0
+  - from: tests.test_json.test_duplicate_keys_support_from_input_file
+    to: utils.http
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 130
+      start_col: 0
+      end_line: 130
+      end_col: 0
+  - from: tests.test_json.test_simple_json_arguments_with_non_json
+    to: utils.http
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 136
+      start_col: 0
+      end_line: 140
+      end_col: 0
+  - from: tests.test_json.test_complex_json_arguments_with_non_json
+    to: ?.cm.match
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 160
+      start_col: 0
+      end_line: 160
+      end_col: 0
+  - from: tests.test_json.test_nested_json_syntax
+    to: utils.http
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 455
+      start_col: 0
+      end_line: 455
+      end_col: 0
+  - from: tests.test_json.test_nested_json_errors
+    to: ?.expected_error.splitlines
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 572
+      start_col: 0
+      end_line: 572
+      end_col: 0
+  - from: tests.test_json.test_nested_json_sparse_array
+    to: utils.http
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 582
+      start_col: 0
+      end_line: 582
+      end_col: 0
+  - from: tests.test_json.test_json_formatter_with_body_preceded_by_non_json_data
+    to: json.dumps
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 66
+      start_col: 0
+      end_line: 66
+      end_col: 0
+  - from: tests.test_json.test_json_formatter_with_body_preceded_by_non_json_data
+    to: utils.MockEnvironment
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 76
+      start_col: 0
+      end_line: 76
+      end_col: 0
+  - from: tests.test_json.test_json_formatter_with_body_preceded_by_non_json_data
+    to: json.dumps
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 80
+      start_col: 0
+      end_line: 80
+      end_col: 0
+  - from: tests.test_json.test_json_formatter_with_body_preceded_by_non_json_data
+    to: httpie.output.formatters.colors.ColorFormatter
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 82
+      start_col: 0
+      end_line: 84
+      end_col: 0
+  - from: tests.test_json.test_json_formatter_with_body_preceded_by_non_json_data
+    to: ?.fmt.format_body
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 85
+      start_col: 0
+      end_line: 85
+      end_col: 0
+  - from: tests.test_json.test_duplicate_keys_support_from_response
+    to: utils.http
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 107
+      start_col: 0
+      end_line: 107
+      end_col: 0
+  - from: tests.test_json.test_duplicate_keys_support_from_input_file
+    to: utils.http
+    kind: call
+    edge_id: 17
+    range:
+      start_line: 126
+      start_col: 0
+      end_line: 126
+      end_col: 0
+  - from: tests.test_json.test_complex_json_arguments_with_non_json
+    to: pytest.raises
+    kind: call
+    edge_id: 18
+    range:
+      start_line: 153
+      start_col: 0
+      end_line: 153
+      end_col: 0
+  - from: tests.test_json.test_complex_json_arguments_with_non_json
+    to: utils.http
+    kind: call
+    edge_id: 19
+    range:
+      start_line: 154
+      start_col: 0
+      end_line: 158
+      end_col: 0
+  - from: tests.test_json.test_nested_json_errors
+    to: pytest.raises
+    kind: call
+    edge_id: 20
+    range:
+      start_line: 568
+      start_col: 0
+      end_line: 568
+      end_col: 0
+  - from: tests.test_json.test_nested_json_errors
+    to: utils.http
+    kind: call
+    edge_id: 21
+    range:
+      start_line: 569
+      start_col: 0
+      end_line: 569
+      end_col: 0
+  - from: tests.test_json.test_simple_json_arguments_with_non_json
+    to: json.dumps
+    kind: call
+    edge_id: 22
+    range:
+      start_line: 139
+      start_col: 0
+      end_line: 139
+      end_col: 0
+  - from: tests.test_json.test_complex_json_arguments_with_non_json
+    to: json.dumps
+    kind: call
+    edge_id: 23
+    range:
+      start_line: 157
+      start_col: 0
+      end_line: 157
+      end_col: 0
+  - from: tests.test_json.test_nested_json_syntax
+    to: json.loads
+    kind: call
+    edge_id: 24
+    range:
+      start_line: 288
+      start_col: 0
+      end_line: 288
+      end_col: 0

@@ -1,0 +1,35 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-23374591
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-22T09:31:54.603890+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: /tmp/h2-verify
+  revision: git:test
+payload:
+  nodes:
+  - symbol: test_h2.Session
+  - symbol: test_h2.Session.load
+  - symbol: test_h2.TestAnnotated.__init__
+  - symbol: test_h2.TestAnnotated.run
+  edges:
+  - from: test_h2.TestAnnotated.__init__
+    to: test_h2.Session
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 58
+      start_col: 0
+      end_line: 58
+      end_col: 0
+  - from: test_h2.TestAnnotated.run
+    to: test_h2.Session.load
+    kind: method_call
+    edge_id: 1
+    range:
+      start_line: 61
+      start_col: 0
+      end_line: 61
+      end_col: 0

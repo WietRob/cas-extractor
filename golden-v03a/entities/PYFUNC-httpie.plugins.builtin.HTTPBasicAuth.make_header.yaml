@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.plugins.builtin.HTTPBasicAuth.make_header
+kind: entity
+type: py.function
+name: make_header
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/plugins/builtin.py
+anchors:
+- type: symbol
+  value: httpie.plugins.builtin.HTTPBasicAuth.make_header
+- type: fingerprint
+  value: e10cc04cf18b7570b2ba3b05c7f21be8b81c6abe81f51d4d6d5fd6412a6bcd21
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.plugins.builtin.HTTPBasicAuth

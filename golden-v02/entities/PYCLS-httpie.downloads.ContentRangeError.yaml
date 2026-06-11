@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.downloads.ContentRangeError
+kind: entity
+type: py.class
+name: ContentRangeError
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/downloads.py
+anchors:
+- type: symbol
+  value: httpie.downloads.ContentRangeError
+- type: fingerprint
+  value: 125ea3c777a316a81d74e9b35ef534357a1aaaf42852236e8ff01125f71e7c0d
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.downloads

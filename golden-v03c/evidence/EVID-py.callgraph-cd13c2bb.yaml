@@ -1,0 +1,24 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-cd13c2bb
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T17:44:05.192950+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: httpie.cli.argtypes.PromptMixin._prompt_password
+  - symbol: httpie.cli.argtypes.SSLCredentials.prompt_password
+  edges:
+  - from: httpie.cli.argtypes.SSLCredentials.prompt_password
+    to: httpie.cli.argtypes.PromptMixin._prompt_password
+    kind: method_call
+    edge_id: 0
+    range:
+      start_line: 155
+      start_col: 0
+      end_line: 155
+      end_col: 0

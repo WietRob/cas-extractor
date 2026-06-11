@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_update_warnings.test_check_updates_disable_warnings
+kind: entity
+type: py.function
+name: test_check_updates_disable_warnings
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_update_warnings.py
+anchors:
+- type: symbol
+  value: tests.test_update_warnings.test_check_updates_disable_warnings
+- type: fingerprint
+  value: 3dbe5e62c084ae76795cbd0b0d3e2712d238921b8e38ee02a4f38e2fea67517f
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_update_warnings

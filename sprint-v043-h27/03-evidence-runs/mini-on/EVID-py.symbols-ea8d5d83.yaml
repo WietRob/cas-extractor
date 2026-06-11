@@ -1,0 +1,67 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-ea8d5d83
+kind: evidence
+type: py.symbols
+created_at: '2026-02-23T07:07:57.427059+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: /tmp/h27-verify
+  revision: git:test
+payload:
+  symbols:
+  - qualified: test_h27.TestH27Conflict.init_http
+    kind: method
+    file: test_h27.py
+    range:
+      start_line: 170
+      start_col: 0
+      end_line: 171
+      end_col: 0
+    fingerprint: ea6ba997161f84e2bb35a9dc53ab777b8d35f164c7385384124fc3509279c3f3
+    params:
+    - name: self
+  - qualified: test_h27.TestH27Conflict.init_ws
+    kind: method
+    file: test_h27.py
+    range:
+      start_line: 173
+      start_col: 0
+      end_line: 174
+      end_col: 0
+    fingerprint: 75e9cfd68b172a5aad7f40cac8b47517bd891a758378246cf95d5c8877267123
+    params:
+    - name: self
+  - qualified: test_h27.TestH27Conflict.setup_http
+    kind: method
+    file: test_h27.py
+    range:
+      start_line: 176
+      start_col: 0
+      end_line: 177
+      end_col: 0
+    fingerprint: ec4ab8634fb5a806f45091e55caf81f799667cfe09a804f84acdc094ad506c89
+    params:
+    - name: self
+  - qualified: test_h27.TestH27Conflict.setup_ws
+    kind: method
+    file: test_h27.py
+    range:
+      start_line: 179
+      start_col: 0
+      end_line: 180
+      end_col: 0
+    fingerprint: 558690ad6cf7637ec37ec94bf272d2ceb1de9e0bd9a783354f94382bcd1de2ad
+    params:
+    - name: self
+  - qualified: test_h27.TestH27Conflict.run
+    kind: method
+    file: test_h27.py
+    range:
+      start_line: 182
+      start_col: 0
+      end_line: 185
+      end_col: 0
+    fingerprint: 37af93632a349d2dde408db8f13ff2709e5f8e72a0402e7cd69d5d14cf66d685
+    params:
+    - name: self

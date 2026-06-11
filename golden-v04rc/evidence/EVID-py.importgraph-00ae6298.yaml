@@ -1,0 +1,40 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-00ae6298
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-22T08:37:44.791862+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  imports:
+  - from: httpie.output.formatters.colors
+    imports:
+    - json
+    - typing.Optional
+    - typing.Type
+    - typing.Tuple
+    - pygments.formatters
+    - pygments.lexer
+    - pygments.lexers
+    - pygments.style
+    - pygments.styles
+    - pygments.token
+    - pygments.formatters.terminal.TerminalFormatter
+    - pygments.formatters.terminal256.Terminal256Formatter
+    - pygments.lexer.Lexer
+    - pygments.lexers.data.JsonLexer
+    - pygments.lexers.special.TextLexer
+    - pygments.lexers.text.HttpLexer
+    - pygments.util.ClassNotFound
+    - httpie.output.lexers.json.EnhancedJsonLexer
+    - httpie.output.lexers.metadata.MetadataLexer
+    - httpie.output.ui.palette.AUTO_STYLE
+    - httpie.output.ui.palette.SHADE_TO_PIE_STYLE
+    - httpie.output.ui.palette.PieColor
+    - httpie.output.ui.palette.ColorString
+    - httpie.output.ui.palette.get_color
+    - httpie.context.Environment
+    - httpie.plugins.FormatterPlugin

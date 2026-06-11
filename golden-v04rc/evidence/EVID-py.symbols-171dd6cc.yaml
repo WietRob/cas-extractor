@@ -1,0 +1,66 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-171dd6cc
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T08:37:44.416792+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.cli.nested_json.tokens
+    kind: module
+    file: httpie/cli/nested_json/tokens.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 80
+      end_col: 0
+    fingerprint: f355887969a88809523e8654908798b449aa3fa8dfc460e68bbf3ba24ac4c615
+  - qualified: httpie.cli.nested_json.tokens.TokenKind
+    kind: class
+    file: httpie/cli/nested_json/tokens.py
+    range:
+      start_line: 11
+      start_col: 0
+      end_line: 23
+      end_col: 0
+    fingerprint: cd0c78b3ae7adf32ae465584b9d22b66f5e3c72158d5f720633746e62c65234e
+  - qualified: httpie.cli.nested_json.tokens.Token
+    kind: class
+    file: httpie/cli/nested_json/tokens.py
+    range:
+      start_line: 37
+      start_col: 0
+      end_line: 41
+      end_col: 0
+    fingerprint: 69a022ee724fb75998d90d3fc3d7bb3d64abfeea4d494b1711633dc291934dc2
+  - qualified: httpie.cli.nested_json.tokens.PathAction
+    kind: class
+    file: httpie/cli/nested_json/tokens.py
+    range:
+      start_line: 44
+      start_col: 0
+      end_line: 52
+      end_col: 0
+    fingerprint: d5174d186224de0cf32ee19d71e0e61b5c2e5d505e949e76e34eacddeecfa3d3
+  - qualified: httpie.cli.nested_json.tokens.Path
+    kind: class
+    file: httpie/cli/nested_json/tokens.py
+    range:
+      start_line: 55
+      start_col: 0
+      end_line: 76
+      end_col: 0
+    fingerprint: edc0161dbf93be47f4850644b50ee1f33416c649fc2ecc43d4905773b4873449
+  - qualified: httpie.cli.nested_json.tokens.NestedJSONArray
+    kind: class
+    file: httpie/cli/nested_json/tokens.py
+    range:
+      start_line: 79
+      start_col: 0
+      end_line: 80
+      end_col: 0
+    fingerprint: caa3a544ad9c3c3f8b5ea6dac40b33a3e97869e81b39cd726bb275b11327b718

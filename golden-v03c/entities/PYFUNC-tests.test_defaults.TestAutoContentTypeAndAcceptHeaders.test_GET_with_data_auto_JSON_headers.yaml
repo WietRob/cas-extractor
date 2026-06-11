@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_defaults.TestAutoContentTypeAndAcceptHeaders.test_GET_with_data_auto_JSON_headers
+kind: entity
+type: py.function
+name: test_GET_with_data_auto_JSON_headers
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_defaults.py
+anchors:
+- type: symbol
+  value: tests.test_defaults.TestAutoContentTypeAndAcceptHeaders.test_GET_with_data_auto_JSON_headers
+- type: fingerprint
+  value: cbfc555246dea84bafbd650c22f9b67c5bb50f4b18ae313f5243f7866eb5e188
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_defaults.TestAutoContentTypeAndAcceptHeaders

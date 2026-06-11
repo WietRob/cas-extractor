@@ -1,0 +1,66 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-9a14a0ea
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T15:03:56.045659+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.benchmark.run
+  - symbol: extras.profiling.benchmarks.Context.cmd
+  - symbol: extras.profiling.benchmarks.Context.run
+  - symbol: extras.profiling.benchmarks.Context.server
+  - symbol: extras.profiling.benchmarks.start_server
+  - symbol: os.getenv
+  - symbol: pyperf.BenchmarkSuite
+  - symbol: shlex.split
+  edges:
+  - from: extras.profiling.benchmarks.Context.run
+    to: pyperf.BenchmarkSuite
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 97
+      start_col: 0
+      end_line: 97
+      end_col: 0
+  - from: extras.profiling.benchmarks.Context.run
+    to: ?.benchmark.run
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 96
+      start_col: 0
+      end_line: 96
+      end_col: 0
+  - from: extras.profiling.benchmarks.Context.cmd
+    to: os.getenv
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 101
+      start_col: 0
+      end_line: 101
+      end_col: 0
+  - from: extras.profiling.benchmarks.Context.cmd
+    to: shlex.split
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 102
+      start_col: 0
+      end_line: 102
+      end_col: 0
+  - from: extras.profiling.benchmarks.Context.server
+    to: extras.profiling.benchmarks.start_server
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 110
+      start_col: 0
+      end_line: 110
+      end_col: 0

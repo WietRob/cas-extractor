@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-cas_extractor_generators_artifact_generator._is_param_only_docstring
+kind: entity
+type: py.function
+name: _is_param_only_docstring
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor_generators_artifact_generator.py
+anchors:
+- type: symbol
+  value: cas_extractor_generators_artifact_generator._is_param_only_docstring
+- type: fingerprint
+  value: 7a24d7db994c12520f8003bed46ca5e3f01b69e77f7ac2f2c236dd34e9ab4b5d
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor_generators_artifact_generator

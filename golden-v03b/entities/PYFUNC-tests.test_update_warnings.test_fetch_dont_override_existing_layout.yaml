@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_update_warnings.test_fetch_dont_override_existing_layout
+kind: entity
+type: py.function
+name: test_fetch_dont_override_existing_layout
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_update_warnings.py
+anchors:
+- type: symbol
+  value: tests.test_update_warnings.test_fetch_dont_override_existing_layout
+- type: fingerprint
+  value: daf7d7587e6a289ba8e4486a3ac903fb5c2d72f7952f2711fc99e4a5761d9047
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_update_warnings

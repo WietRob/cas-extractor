@@ -1,0 +1,115 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-5c39a127
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T17:44:05.244785+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.self.display.start
+  - symbol: ?.self.display.stop
+  - symbol: ?.self.display.update
+  - symbol: httpie.downloads.DownloadStatus.chunk_downloaded
+  - symbol: httpie.downloads.DownloadStatus.finished
+  - symbol: httpie.downloads.DownloadStatus.start_display
+  - symbol: httpie.downloads.DownloadStatus.started
+  - symbol: httpie.downloads.DownloadStatus.terminate
+  - symbol: httpie.output.ui.rich_progress.DummyDisplay
+  - symbol: httpie.output.ui.rich_progress.ProgressDisplay
+  - symbol: httpie.output.ui.rich_progress.StatusDisplay
+  - symbol: time.monotonic
+  edges:
+  - from: httpie.downloads.DownloadStatus.started
+    to: time.monotonic
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 322
+      start_col: 0
+      end_line: 322
+      end_col: 0
+  - from: httpie.downloads.DownloadStatus.started
+    to: httpie.downloads.DownloadStatus.start_display
+    kind: method_call
+    edge_id: 1
+    range:
+      start_line: 323
+      start_col: 0
+      end_line: 323
+      end_col: 0
+  - from: httpie.downloads.DownloadStatus.start_display
+    to: ?.self.display.start
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 343
+      start_col: 0
+      end_line: 347
+      end_col: 0
+  - from: httpie.downloads.DownloadStatus.chunk_downloaded
+    to: ?.self.display.update
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 352
+      start_col: 0
+      end_line: 352
+      end_col: 0
+  - from: httpie.downloads.DownloadStatus.finished
+    to: time.monotonic
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 371
+      start_col: 0
+      end_line: 371
+      end_col: 0
+  - from: httpie.downloads.DownloadStatus.start_display
+    to: httpie.output.ui.rich_progress.DummyDisplay
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 341
+      start_col: 0
+      end_line: 341
+      end_col: 0
+  - from: httpie.downloads.DownloadStatus.finished
+    to: ?.self.display.stop
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 373
+      start_col: 0
+      end_line: 373
+      end_col: 0
+  - from: httpie.downloads.DownloadStatus.terminate
+    to: ?.self.display.stop
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 377
+      start_col: 0
+      end_line: 377
+      end_col: 0
+  - from: httpie.downloads.DownloadStatus.start_display
+    to: httpie.output.ui.rich_progress.StatusDisplay
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 337
+      start_col: 0
+      end_line: 337
+      end_col: 0
+  - from: httpie.downloads.DownloadStatus.start_display
+    to: httpie.output.ui.rich_progress.ProgressDisplay
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 339
+      start_col: 0
+      end_line: 339
+      end_col: 0

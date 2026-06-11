@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.utils.http_server.set_cookie_and_redirect
+kind: entity
+type: py.function
+name: set_cookie_and_redirect
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/utils/http_server.py
+anchors:
+- type: symbol
+  value: tests.utils.http_server.set_cookie_and_redirect
+- type: fingerprint
+  value: 79fc986934a8a898009ea8e3ae9f0cb3d70da77769ce9f3b5dd932257b1c2b92
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils.http_server

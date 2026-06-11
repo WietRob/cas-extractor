@@ -1,0 +1,64 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-1b9dbbc7
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T10:13:16.757299+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://cas_extractor
+  root: cas_extractor
+  revision: git:test
+payload:
+  symbols:
+  - qualified: validators.semantic_validate
+    kind: module
+    file: validators/semantic_validate.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 161
+      end_col: 0
+    fingerprint: 48c28736f79945fd30e928708f6c0141f4b193485d5ecfbbc59192d99fb81d0f
+  - qualified: validators.semantic_validate.SemanticValidationResult
+    kind: class
+    file: validators/semantic_validate.py
+    range:
+      start_line: 15
+      start_col: 0
+      end_line: 30
+      end_col: 0
+    fingerprint: 236d182a92d8551dacdce793b0102d4342dfb212ba45c2b66223713d86f2f428
+  - qualified: validators.semantic_validate.validate_semantic
+    kind: function
+    file: validators/semantic_validate.py
+    range:
+      start_line: 33
+      start_col: 0
+      end_line: 153
+      end_col: 0
+    fingerprint: 162eeb5526cf5954f436a7f1946397dcc01779a4080fb452f0d35ddea87262ab
+    params:
+    - name: rules_file
+      annotation: str
+    - name: artifacts_dir
+      annotation: str
+    returns: SemanticValidationResult
+  - qualified: validators.semantic_validate._get_rule_param
+    kind: function
+    file: validators/semantic_validate.py
+    range:
+      start_line: 156
+      start_col: 0
+      end_line: 161
+      end_col: 0
+    fingerprint: 8e64be2b170f871afa8c3745ef0deb8fd6f51b7cf7fc3685ab1bbf714d99f002
+    params:
+    - name: rules
+      annotation: dict
+    - name: rule_id
+      annotation: str
+    - name: param
+      annotation: str
+    - name: default
+      annotation: Any
+    returns: Any

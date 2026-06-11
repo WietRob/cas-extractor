@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.cli.argtypes.PromptMixin
+kind: entity
+type: py.class
+name: PromptMixin
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/argtypes.py
+anchors:
+- type: symbol
+  value: httpie.cli.argtypes.PromptMixin
+- type: fingerprint
+  value: ba696cb00c57d68d0b408b4af17163a017d77a5f7bf9952fed49d6a1a5a2f1e1
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.argtypes

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_httpie.test_headers_empty_value_with_value_gives_error
+kind: entity
+type: py.function
+name: test_headers_empty_value_with_value_gives_error
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_httpie.py
+anchors:
+- type: symbol
+  value: tests.test_httpie.test_headers_empty_value_with_value_gives_error
+- type: fingerprint
+  value: f54187ad598522ee917baa84cf1a97398c9456f1005df72c63b0db2bfd92d1d6
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_httpie

@@ -1,0 +1,33 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-2cc39880
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-21T17:44:04.606611+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  imports:
+  - from: extras.profiling.benchmarks
+    imports:
+    - __future__.annotations
+    - os
+    - shlex
+    - subprocess
+    - sys
+    - threading
+    - contextlib.ExitStack
+    - contextlib.contextmanager
+    - dataclasses.dataclass
+    - dataclasses.field
+    - functools.cached_property
+    - functools.partial
+    - http.server.HTTPServer
+    - http.server.SimpleHTTPRequestHandler
+    - tempfile.TemporaryDirectory
+    - typing.ClassVar
+    - typing.Final
+    - typing.List
+    - pyperf

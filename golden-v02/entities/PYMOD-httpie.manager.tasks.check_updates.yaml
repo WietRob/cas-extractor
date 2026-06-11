@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.manager.tasks.check_updates
+kind: entity
+type: py.module
+name: check_updates
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/manager/tasks/check_updates.py
+anchors:
+- type: symbol
+  value: httpie.manager.tasks.check_updates
+- type: fingerprint
+  value: e66a5716fad7eb6ee690f1d8e5696aba3aeee54f7ec797d33afa4ffd0293bf16
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.manager.tasks

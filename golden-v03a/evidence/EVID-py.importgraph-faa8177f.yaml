@@ -1,0 +1,17 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-faa8177f
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-21T12:13:53.313033+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  imports:
+  - from: httpie.cli.dicts
+    imports:
+    - collections.OrderedDict
+    - multidict.MultiDict
+    - multidict.CIMultiDict

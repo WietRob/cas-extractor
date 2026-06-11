@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.utils.plugins_cli.Interface.is_installed
+kind: entity
+type: py.function
+name: is_installed
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/utils/plugins_cli.py
+anchors:
+- type: symbol
+  value: tests.utils.plugins_cli.Interface.is_installed
+- type: fingerprint
+  value: 189af971ab099a63cb51217697c1817a393dbfe1dcfda06f6d4fc07c0820447b
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils.plugins_cli.Interface

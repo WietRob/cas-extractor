@@ -1,0 +1,21 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-f2b71333
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-21T15:03:55.422076+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  imports:
+  - from: tests.test_binary
+    imports:
+    - requests
+    - tests.fixtures.BIN_FILE_PATH
+    - tests.fixtures.BIN_FILE_CONTENT
+    - tests.fixtures.BIN_FILE_PATH_ARG
+    - httpie.output.streams.BINARY_SUPPRESSED_NOTICE
+    - tests.utils.MockEnvironment
+    - tests.utils.http

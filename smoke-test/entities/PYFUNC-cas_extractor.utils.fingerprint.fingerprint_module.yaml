@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-cas_extractor.utils.fingerprint.fingerprint_module
+kind: entity
+type: py.function
+name: fingerprint_module
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor/utils/fingerprint.py
+anchors:
+- type: symbol
+  value: cas_extractor.utils.fingerprint.fingerprint_module
+- type: fingerprint
+  value: a30f491e5c3bf4a18cbf8ab923e3ca63c4fec91784e2761e2fabdbe18ce52323
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor.utils.fingerprint

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-cas_extractor_writers_evidence_writer.write_symbols_evidence
+kind: entity
+type: py.function
+name: write_symbols_evidence
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor_writers_evidence_writer.py
+anchors:
+- type: symbol
+  value: cas_extractor_writers_evidence_writer.write_symbols_evidence
+- type: fingerprint
+  value: 80671db188b341a0957c21a01c7f38a894bdbe55ddd0525d8e93c40061c440a0
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor_writers_evidence_writer

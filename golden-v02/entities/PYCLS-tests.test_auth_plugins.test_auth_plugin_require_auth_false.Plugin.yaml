@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-tests.test_auth_plugins.test_auth_plugin_require_auth_false.Plugin
+kind: entity
+type: py.class
+name: Plugin
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_auth_plugins.py
+anchors:
+- type: symbol
+  value: tests.test_auth_plugins.test_auth_plugin_require_auth_false.Plugin
+- type: fingerprint
+  value: c04ca0b74d9e19a70e13d76e951e8a077837810f235f1ab891e5d5d929817308
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_auth_plugins.test_auth_plugin_require_auth_false

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_output.TestVerboseFlag.test_verbose_implies_all
+kind: entity
+type: py.function
+name: test_verbose_implies_all
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_output.py
+anchors:
+- type: symbol
+  value: tests.test_output.TestVerboseFlag.test_verbose_implies_all
+- type: fingerprint
+  value: f53c4dcdc056c9e93357a55d691039c9b0c8bfdf20b58ecd0594ec9fd7f682ea
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_output.TestVerboseFlag

@@ -1,0 +1,45 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-48f8373f
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T11:17:16.887440+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: /tmp/h25-verify
+  revision: git:test
+payload:
+  symbols:
+  - qualified: test_h25.TestH25OverrideH2.__init__
+    kind: method
+    file: test_h25.py
+    range:
+      start_line: 47
+      start_col: 0
+      end_line: 48
+      end_col: 0
+    fingerprint: c87e2067a99aa129fb918410f6e37ca47831304cc98b6007e6a6e7b625bb94ed
+    params:
+    - name: self
+  - qualified: test_h25.TestH25OverrideH2.reconnect
+    kind: method
+    file: test_h25.py
+    range:
+      start_line: 50
+      start_col: 0
+      end_line: 52
+      end_col: 0
+    fingerprint: 64e333299f31a01647f91da418a21ec940ad669f3949fcfc0e21db0c7d811c59
+    params:
+    - name: self
+  - qualified: test_h25.TestH25OverrideH2.run
+    kind: method
+    file: test_h25.py
+    range:
+      start_line: 54
+      start_col: 0
+      end_line: 55
+      end_col: 0
+    fingerprint: eed33c6d5f458e22e50fb5c7e77be5d6e159708803e999e4e4090f07e90e538e
+    params:
+    - name: self

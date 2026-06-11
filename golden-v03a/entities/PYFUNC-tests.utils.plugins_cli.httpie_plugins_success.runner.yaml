@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.utils.plugins_cli.httpie_plugins_success.runner
+kind: entity
+type: py.function
+name: runner
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/utils/plugins_cli.py
+anchors:
+- type: symbol
+  value: tests.utils.plugins_cli.httpie_plugins_success.runner
+- type: fingerprint
+  value: 271cf1b95c272a2605bf2dd35d0549bb42638f313f36c0432201db84a9c3e58a
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils.plugins_cli.httpie_plugins_success

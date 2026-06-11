@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.models.HTTPRequest.iter_body
+kind: entity
+type: py.function
+name: iter_body
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/models.py
+anchors:
+- type: symbol
+  value: httpie.models.HTTPRequest.iter_body
+- type: fingerprint
+  value: bfa5335dd0e06ec70e90a95ecf6c247190716acd1d74901e057ad91bbb2cef6b
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.models.HTTPRequest

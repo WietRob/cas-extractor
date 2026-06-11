@@ -1,0 +1,48 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-062cdfb1
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-26T06:24:53.105204+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://gates
+  root: ./sprint-v050-engine/02-fixtures
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: test_gate_A2_h27_transitive.Client.send
+  - symbol: test_gate_A2_h27_transitive.Service.init_client
+  - symbol: test_gate_A2_h27_transitive.Service.run
+  - symbol: test_gate_A2_h27_transitive.make_client
+  edges:
+  - from: test_gate_A2_h27_transitive.Service.init_client
+    to: test_gate_A2_h27_transitive.make_client
+    kind: call
+    edge_id: 0
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function 'make_client' in local module
+    range:
+      start_line: 12
+      start_col: 0
+      end_line: 12
+      end_col: 0
+  - from: test_gate_A2_h27_transitive.Service.run
+    to: test_gate_A2_h27_transitive.Client.send
+    kind: method_call
+    edge_id: 1
+    resolution_detail:
+      trace:
+      - heuristic: H2.6/2.7
+        pattern: self_attr_propagated
+        inferred_type: test_gate_A2_h27_transitive.Client
+        reasoning: Found self.client = test_gate_A2_h27_transitive.Client() via helper
+          chain propagation
+    range:
+      start_line: 19
+      start_col: 0
+      end_line: 19
+      end_col: 0

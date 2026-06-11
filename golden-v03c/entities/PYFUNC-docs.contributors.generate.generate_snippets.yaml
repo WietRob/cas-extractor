@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-docs.contributors.generate.generate_snippets
+kind: entity
+type: py.function
+name: generate_snippets
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: docs/contributors/generate.py
+anchors:
+- type: symbol
+  value: docs.contributors.generate.generate_snippets
+- type: fingerprint
+  value: c23bc915367bc4d3d6b55aefc022decb82e32b5a5c4ac536b688fdc9f9bf3532
+  algo: sha256
+claims: []
+relations: []
+namespace: docs.contributors.generate

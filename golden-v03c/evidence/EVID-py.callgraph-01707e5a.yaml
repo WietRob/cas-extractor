@@ -1,0 +1,86 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-01707e5a
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T17:44:05.314675+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.self.console.print
+  - symbol: ?.self.console.status
+  - symbol: ?.self.status.start
+  - symbol: ?.self.status.stop
+  - symbol: ?.self.status.update
+  - symbol: httpie.output.ui.rich_progress.BaseDisplay._print_summary
+  - symbol: httpie.output.ui.rich_progress.StatusDisplay.start
+  - symbol: httpie.output.ui.rich_progress.StatusDisplay.stop
+  - symbol: httpie.output.ui.rich_progress.StatusDisplay.update
+  - symbol: rich.filesize.decimal
+  edges:
+  - from: httpie.output.ui.rich_progress.StatusDisplay.start
+    to: ?.self.console.status
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 71
+      start_col: 0
+      end_line: 71
+      end_col: 0
+  - from: httpie.output.ui.rich_progress.StatusDisplay.start
+    to: ?.self.status.start
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 72
+      start_col: 0
+      end_line: 72
+      end_col: 0
+  - from: httpie.output.ui.rich_progress.StatusDisplay.update
+    to: ?.self.status.update
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 82
+      start_col: 0
+      end_line: 84
+      end_col: 0
+  - from: httpie.output.ui.rich_progress.StatusDisplay.stop
+    to: ?.self.status.stop
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 87
+      start_col: 0
+      end_line: 87
+      end_col: 0
+  - from: httpie.output.ui.rich_progress.StatusDisplay.stop
+    to: ?.self.console.print
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 88
+      start_col: 0
+      end_line: 88
+      end_col: 0
+  - from: httpie.output.ui.rich_progress.StatusDisplay.stop
+    to: httpie.output.ui.rich_progress.BaseDisplay._print_summary
+    kind: method_call
+    edge_id: 5
+    range:
+      start_line: 90
+      start_col: 0
+      end_line: 94
+      end_col: 0
+  - from: httpie.output.ui.rich_progress.StatusDisplay.update
+    to: rich.filesize.decimal
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 79
+      start_col: 0
+      end_line: 81
+      end_col: 0

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-docs.contributors.fetch.fetch_missing_users_details
+kind: entity
+type: py.function
+name: fetch_missing_users_details
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: docs/contributors/fetch.py
+anchors:
+- type: symbol
+  value: docs.contributors.fetch.fetch_missing_users_details
+- type: fingerprint
+  value: 4815a18730886278f6fd3efe329329cd878c150020fb99dd8bb90fe6d8f2e34d
+  algo: sha256
+claims: []
+relations: []
+namespace: docs.contributors.fetch

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.models.OutputOptions.from_message
+kind: entity
+type: py.function
+name: from_message
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/models.py
+anchors:
+- type: symbol
+  value: httpie.models.OutputOptions.from_message
+- type: fingerprint
+  value: d0ce4371cabbfcf5148bfb20b0071d3dd96030e8944a44a98a68396e33ee2178
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.models.OutputOptions

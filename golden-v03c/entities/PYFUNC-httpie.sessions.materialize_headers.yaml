@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.sessions.materialize_headers
+kind: entity
+type: py.function
+name: materialize_headers
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/sessions.py
+anchors:
+- type: symbol
+  value: httpie.sessions.materialize_headers
+- type: fingerprint
+  value: 280cbe2b0f4dcbb2620316f1e63e43de2588c2ec09f3fd05f5ed17c2f9fd3459
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.sessions

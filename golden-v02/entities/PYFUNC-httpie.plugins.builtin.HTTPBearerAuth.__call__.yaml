@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.plugins.builtin.HTTPBearerAuth.__call__
+kind: entity
+type: py.function
+name: __call__
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/plugins/builtin.py
+anchors:
+- type: symbol
+  value: httpie.plugins.builtin.HTTPBearerAuth.__call__
+- type: fingerprint
+  value: 9a7c829246673dd6fc0ecdd2545d572ed54414791aede66a254825c110d08ec1
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.plugins.builtin.HTTPBearerAuth

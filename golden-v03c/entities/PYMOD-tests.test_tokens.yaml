@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-tests.test_tokens
+kind: entity
+type: py.module
+name: test_tokens
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_tokens.py
+anchors:
+- type: symbol
+  value: tests.test_tokens
+- type: fingerprint
+  value: 08f2b1fd2134e11a7d90d0bf9bb73f7c8ee4380562ec4b08780f24f833ee646c
+  algo: sha256
+claims: []
+relations: []
+namespace: tests

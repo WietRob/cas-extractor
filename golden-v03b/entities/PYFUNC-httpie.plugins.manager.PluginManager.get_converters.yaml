@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.plugins.manager.PluginManager.get_converters
+kind: entity
+type: py.function
+name: get_converters
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/plugins/manager.py
+anchors:
+- type: symbol
+  value: httpie.plugins.manager.PluginManager.get_converters
+- type: fingerprint
+  value: 608aa3a944e5162da7f6e4f2f375e3bf8d0563ff9e94207cf37391ce22329744
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.plugins.manager.PluginManager

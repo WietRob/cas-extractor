@@ -1,0 +1,64 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-3a124157
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T15:03:56.367910+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.cookie.output
+  - symbol: ?.self.end_headers
+  - symbol: ?.self.send_header
+  - symbol: ?.self.send_response
+  - symbol: http.cookies.SimpleCookie
+  - symbol: tests.test_cookie.TestIntegration.test_cookie_parser.MockServerRequestHandler.do_GET
+  edges:
+  - from: tests.test_cookie.TestIntegration.test_cookie_parser.MockServerRequestHandler.do_GET
+    to: http.cookies.SimpleCookie
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 33
+      start_col: 0
+      end_line: 33
+      end_col: 0
+  - from: tests.test_cookie.TestIntegration.test_cookie_parser.MockServerRequestHandler.do_GET
+    to: ?.self.send_response
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 40
+      start_col: 0
+      end_line: 40
+      end_col: 0
+  - from: tests.test_cookie.TestIntegration.test_cookie_parser.MockServerRequestHandler.do_GET
+    to: ?.self.send_header
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 41
+      start_col: 0
+      end_line: 41
+      end_col: 0
+  - from: tests.test_cookie.TestIntegration.test_cookie_parser.MockServerRequestHandler.do_GET
+    to: ?.self.end_headers
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 42
+      start_col: 0
+      end_line: 42
+      end_col: 0
+  - from: tests.test_cookie.TestIntegration.test_cookie_parser.MockServerRequestHandler.do_GET
+    to: ?.cookie.output
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 41
+      start_col: 0
+      end_line: 41
+      end_col: 0

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.argparser.HTTPieArgumentParser._ensure_one_data_source
+kind: entity
+type: py.function
+name: _ensure_one_data_source
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/argparser.py
+anchors:
+- type: symbol
+  value: httpie.cli.argparser.HTTPieArgumentParser._ensure_one_data_source
+- type: fingerprint
+  value: 58ab0a0cc01a54deed88042777b90fa758abcc7825fb2c4c115ba4bacdec8ed2
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.argparser.HTTPieArgumentParser

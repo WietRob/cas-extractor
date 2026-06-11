@@ -1,0 +1,24 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-95d1306e
+kind: evidence
+type: py.symbols
+created_at: '2026-02-23T17:20:40.440795+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://h28-test
+  root: /tmp/h28-verify
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: test_h28.TestN5ConditionalFactoryCall.run
+    kind: method
+    file: test_h28.py
+    range:
+      start_line: 226
+      start_col: 0
+      end_line: 231
+      end_col: 0
+    fingerprint: 0bf020c3d57be1f3160203f509b0fc113ca48b61920b820a8baa40890f68bbde
+    params:
+    - name: self
+    - name: use_cache

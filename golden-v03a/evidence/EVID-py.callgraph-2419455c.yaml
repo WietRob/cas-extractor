@@ -1,0 +1,329 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-2419455c
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T12:13:53.937505+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.content_type.strip
+  - symbol: ?.data.encode
+  - symbol: ?.data.items
+  - symbol: ?.deflater.compress
+  - symbol: ?.deflater.flush
+  - symbol: ?.file.fileno
+  - symbol: ?.file.read
+  - symbol: ?.raw_body.read
+  - symbol: ?.read_event.set
+  - symbol: ?.thread.start
+  - symbol: httpie.uploads.ChunkedMultipartUploadStream
+  - symbol: httpie.uploads.ChunkedUploadStream
+  - symbol: httpie.uploads._prepare_file_for_upload
+  - symbol: httpie.uploads._read_file_with_selectors
+  - symbol: httpie.uploads._wrap_function_with_callback
+  - symbol: httpie.uploads.as_bytes
+  - symbol: httpie.uploads.compress_request
+  - symbol: httpie.uploads.get_multipart_data_and_content_type
+  - symbol: httpie.uploads.is_stdin
+  - symbol: httpie.uploads.observe_stdin_for_data_thread
+  - symbol: httpie.uploads.prepare_request_body
+  - symbol: requests.utils.super_len
+  - symbol: requests_toolbelt.MultipartEncoder
+  - symbol: select.select
+  - symbol: threading.Event
+  - symbol: threading.Thread
+  - symbol: urllib.parse.urlencode
+  - symbol: zlib.compressobj
+  edges:
+  - from: httpie.uploads.observe_stdin_for_data_thread
+    to: threading.Thread
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 122
+      start_col: 0
+      end_line: 126
+      end_col: 0
+  - from: httpie.uploads.observe_stdin_for_data_thread
+    to: ?.thread.start
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 127
+      start_col: 0
+      end_line: 127
+      end_col: 0
+  - from: httpie.uploads._read_file_with_selectors
+    to: select.select
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 139
+      start_col: 0
+      end_line: 139
+      end_col: 0
+  - from: httpie.uploads._read_file_with_selectors
+    to: httpie.uploads.as_bytes
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 143
+      start_col: 0
+      end_line: 143
+      end_col: 0
+  - from: httpie.uploads._prepare_file_for_upload
+    to: threading.Event
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 153
+      start_col: 0
+      end_line: 153
+      end_col: 0
+  - from: httpie.uploads.get_multipart_data_and_content_type
+    to: requests_toolbelt.MultipartEncoder
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 237
+      start_col: 0
+      end_line: 240
+      end_col: 0
+  - from: httpie.uploads.compress_request
+    to: zlib.compressobj
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 256
+      start_col: 0
+      end_line: 256
+      end_col: 0
+  - from: httpie.uploads.compress_request
+    to: ?.deflater.compress
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 263
+      start_col: 0
+      end_line: 263
+      end_col: 0
+  - from: httpie.uploads.compress_request
+    to: ?.deflater.flush
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 264
+      start_col: 0
+      end_line: 264
+      end_col: 0
+  - from: httpie.uploads.as_bytes
+    to: ?.data.encode
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 67
+      start_col: 0
+      end_line: 67
+      end_col: 0
+  - from: httpie.uploads.is_stdin
+    to: ?.file.fileno
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 89
+      start_col: 0
+      end_line: 89
+      end_col: 0
+  - from: httpie.uploads._read_file_with_selectors
+    to: httpie.uploads.as_bytes
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 132
+      start_col: 0
+      end_line: 132
+      end_col: 0
+  - from: httpie.uploads._read_file_with_selectors
+    to: ?.read_event.set
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 141
+      start_col: 0
+      end_line: 141
+      end_col: 0
+  - from: httpie.uploads._read_file_with_selectors
+    to: ?.file.read
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 143
+      start_col: 0
+      end_line: 143
+      end_col: 0
+  - from: httpie.uploads._prepare_file_for_upload
+    to: requests.utils.super_len
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 154
+      start_col: 0
+      end_line: 154
+      end_col: 0
+  - from: httpie.uploads._prepare_file_for_upload
+    to: httpie.uploads.is_stdin
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 155
+      start_col: 0
+      end_line: 155
+      end_col: 0
+  - from: httpie.uploads._prepare_file_for_upload
+    to: httpie.uploads._wrap_function_with_callback
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 169
+      start_col: 0
+      end_line: 172
+      end_col: 0
+  - from: httpie.uploads.prepare_request_body
+    to: httpie.uploads.as_bytes
+    kind: call
+    edge_id: 17
+    range:
+      start_line: 201
+      start_col: 0
+      end_line: 201
+      end_col: 0
+  - from: httpie.uploads.prepare_request_body
+    to: httpie.uploads._prepare_file_for_upload
+    kind: call
+    edge_id: 18
+    range:
+      start_line: 214
+      start_col: 0
+      end_line: 220
+      end_col: 0
+  - from: httpie.uploads.get_multipart_data_and_content_type
+    to: ?.content_type.strip
+    kind: call
+    edge_id: 19
+    range:
+      start_line: 242
+      start_col: 0
+      end_line: 242
+      end_col: 0
+  - from: httpie.uploads._read_file_with_selectors
+    to: httpie.uploads.is_stdin
+    kind: call
+    edge_id: 20
+    range:
+      start_line: 131
+      start_col: 0
+      end_line: 131
+      end_col: 0
+  - from: httpie.uploads._read_file_with_selectors
+    to: ?.file.read
+    kind: call
+    edge_id: 21
+    range:
+      start_line: 132
+      start_col: 0
+      end_line: 132
+      end_col: 0
+  - from: httpie.uploads._prepare_file_for_upload
+    to: httpie.uploads.observe_stdin_for_data_thread
+    kind: call
+    edge_id: 22
+    range:
+      start_line: 156
+      start_col: 0
+      end_line: 156
+      end_col: 0
+  - from: httpie.uploads._prepare_file_for_upload
+    to: httpie.uploads._read_file_with_selectors
+    kind: call
+    edge_id: 23
+    range:
+      start_line: 167
+      start_col: 0
+      end_line: 167
+      end_col: 0
+  - from: httpie.uploads._prepare_file_for_upload
+    to: httpie.uploads.ChunkedMultipartUploadStream
+    kind: call
+    edge_id: 24
+    range:
+      start_line: 177
+      start_col: 0
+      end_line: 180
+      end_col: 0
+  - from: httpie.uploads._prepare_file_for_upload
+    to: httpie.uploads.ChunkedUploadStream
+    kind: call
+    edge_id: 25
+    range:
+      start_line: 182
+      start_col: 0
+      end_line: 186
+      end_col: 0
+  - from: httpie.uploads.prepare_request_body
+    to: httpie.uploads.as_bytes
+    kind: call
+    edge_id: 26
+    range:
+      start_line: 203
+      start_col: 0
+      end_line: 203
+      end_col: 0
+  - from: httpie.uploads.prepare_request_body
+    to: httpie.uploads.as_bytes
+    kind: call
+    edge_id: 27
+    range:
+      start_line: 209
+      start_col: 0
+      end_line: 209
+      end_col: 0
+  - from: httpie.uploads.prepare_request_body
+    to: httpie.uploads.ChunkedUploadStream
+    kind: call
+    edge_id: 28
+    range:
+      start_line: 222
+      start_col: 0
+      end_line: 225
+      end_col: 0
+  - from: httpie.uploads.get_multipart_data_and_content_type
+    to: ?.data.items
+    kind: call
+    edge_id: 29
+    range:
+      start_line: 238
+      start_col: 0
+      end_line: 238
+      end_col: 0
+  - from: httpie.uploads.prepare_request_body
+    to: urllib.parse.urlencode
+    kind: call
+    edge_id: 30
+    range:
+      start_line: 203
+      start_col: 0
+      end_line: 203
+      end_col: 0
+  - from: httpie.uploads.prepare_request_body
+    to: ?.raw_body.read
+    kind: call
+    edge_id: 31
+    range:
+      start_line: 209
+      start_col: 0
+      end_line: 209
+      end_col: 0

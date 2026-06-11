@@ -1,0 +1,54 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-66354447
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T15:03:56.185009+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.hostname.endswith
+  - symbol: ?.super().return_ok_secure
+  - symbol: http.cookiejar.request_host
+  - symbol: httpie.cookies.HTTPieCookiePolicy._is_local_host
+  - symbol: httpie.cookies.HTTPieCookiePolicy.return_ok_secure
+  edges:
+  - from: httpie.cookies.HTTPieCookiePolicy.return_ok_secure
+    to: ?.super().return_ok_secure
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 12
+      start_col: 0
+      end_line: 12
+      end_col: 0
+  - from: httpie.cookies.HTTPieCookiePolicy.return_ok_secure
+    to: httpie.cookies.HTTPieCookiePolicy._is_local_host
+    kind: method_call
+    edge_id: 1
+    range:
+      start_line: 20
+      start_col: 0
+      end_line: 20
+      end_col: 0
+  - from: httpie.cookies.HTTPieCookiePolicy.return_ok_secure
+    to: http.cookiejar.request_host
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 20
+      start_col: 0
+      end_line: 20
+      end_col: 0
+  - from: httpie.cookies.HTTPieCookiePolicy._is_local_host
+    to: ?.hostname.endswith
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 25
+      start_col: 0
+      end_line: 25
+      end_col: 0

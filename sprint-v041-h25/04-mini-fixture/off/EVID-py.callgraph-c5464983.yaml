@@ -1,0 +1,24 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-c5464983
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-22T11:17:16.895638+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: /tmp/h25-verify
+  revision: git:test
+payload:
+  nodes:
+  - symbol: ?.self.client.send
+  - symbol: test_h25.TestH25NoAssign.run
+  edges:
+  - from: test_h25.TestH25NoAssign.run
+    to: ?.self.client.send
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 85
+      start_col: 0
+      end_line: 85
+      end_col: 0

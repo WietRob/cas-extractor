@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.options.map_qualifiers
+kind: entity
+type: py.function
+name: map_qualifiers
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/options.py
+anchors:
+- type: symbol
+  value: httpie.cli.options.map_qualifiers
+- type: fingerprint
+  value: 38cac9d51c72e9bb7010edf20c3e28a5a10af5d5752646b4e2444baac9095b78
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.options

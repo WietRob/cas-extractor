@@ -1,0 +1,35 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-01707e5a
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T12:13:53.915945+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: httpie.output.ui.rich_progress.BaseDisplay._print_summary
+  - symbol: httpie.output.ui.rich_progress.StatusDisplay.stop
+  - symbol: httpie.output.ui.rich_progress.StatusDisplay.update
+  - symbol: rich.filesize.decimal
+  edges:
+  - from: httpie.output.ui.rich_progress.StatusDisplay.stop
+    to: httpie.output.ui.rich_progress.BaseDisplay._print_summary
+    kind: method_call
+    edge_id: 0
+    range:
+      start_line: 90
+      start_col: 0
+      end_line: 94
+      end_col: 0
+  - from: httpie.output.ui.rich_progress.StatusDisplay.update
+    to: rich.filesize.decimal
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 79
+      start_col: 0
+      end_line: 81
+      end_col: 0

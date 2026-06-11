@@ -1,0 +1,72 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-4b606228
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:51:32.562650+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: tests.test_sessions.TestSessionFlow.start_session
+    kind: method
+    file: tests/test_sessions.py
+    range:
+      start_line: 73
+      start_col: 0
+      end_line: 89
+      end_col: 0
+    fingerprint: f03460805926d030cb97edd7df536d48bebc344cad00a43a874310052452f410
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_sessions.TestSessionFlow.test_session_created_and_reused
+    kind: method
+    file: tests/test_sessions.py
+    range:
+      start_line: 91
+      start_col: 0
+      end_line: 99
+      end_col: 0
+    fingerprint: da6ced7e8d9e60e8812a9e537aadeeb98bbaab24ad92b2d1d449a290509dfe5b
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_sessions.TestSessionFlow.test_session_update
+    kind: method
+    file: tests/test_sessions.py
+    range:
+      start_line: 101
+      start_col: 0
+      end_line: 122
+      end_col: 0
+    fingerprint: 0e0a3eb7b53a6ef1d7f32c0428ab4739504f282f6672b70ed5a3545fb82e38e1
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_sessions.TestSessionFlow.test_session_read_only
+    kind: method
+    file: tests/test_sessions.py
+    range:
+      start_line: 124
+      start_col: 0
+      end_line: 149
+      end_col: 0
+    fingerprint: 707e5fb2d38837d448122a15dd6a073e2f4579b1d23d3c4b99b3b5cfa4baee3c
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_sessions.TestSessionFlow.test_session_overwrite_header
+    kind: method
+    file: tests/test_sessions.py
+    range:
+      start_line: 151
+      start_col: 0
+      end_line: 167
+      end_col: 0
+    fingerprint: 6abaeecb804e78c8abd5d7cf40687ffccd5bb71780ef350d1f3d7800ea9b3fe1
+    params:
+    - name: self
+    - name: httpbin

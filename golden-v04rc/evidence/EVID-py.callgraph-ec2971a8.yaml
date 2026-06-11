@@ -1,0 +1,122 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-ec2971a8
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-22T08:37:45.554577+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.RESPONSE_TYPES.get
+  - symbol: ?.RE_STATUS_LINE.match
+  - symbol: ?.STATUS_TYPES.get
+  - symbol: ?.groups
+  - symbol: ?.match.group
+  - symbol: ?.match.start
+  - symbol: ?.status_match.groups
+  - symbol: httpie.output.lexers.common.precise
+  - symbol: httpie.output.lexers.http.http_response_type
+  - symbol: httpie.output.lexers.http.request_method
+  edges:
+  - from: httpie.output.lexers.http.http_response_type
+    to: ?.RE_STATUS_LINE.match
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 26
+      start_col: 0
+      end_line: 26
+      end_col: 0
+  - from: httpie.output.lexers.http.http_response_type
+    to: ?.status_match.groups
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 30
+      start_col: 0
+      end_line: 30
+      end_col: 0
+  - from: httpie.output.lexers.http.http_response_type
+    to: httpie.output.lexers.common.precise
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 31
+      start_col: 0
+      end_line: 35
+      end_col: 0
+  - from: httpie.output.lexers.http.request_method
+    to: httpie.output.lexers.common.precise
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 46
+      start_col: 0
+      end_line: 50
+      end_col: 0
+  - from: httpie.output.lexers.http.http_response_type
+    to: ?.match.group
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 26
+      start_col: 0
+      end_line: 26
+      end_col: 0
+  - from: httpie.output.lexers.http.http_response_type
+    to: ?.STATUS_TYPES.get
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 33
+      start_col: 0
+      end_line: 33
+      end_col: 0
+  - from: httpie.output.lexers.http.http_response_type
+    to: ?.groups
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 42
+      start_col: 0
+      end_line: 42
+      end_col: 0
+  - from: httpie.output.lexers.http.request_method
+    to: ?.RESPONSE_TYPES.get
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 48
+      start_col: 0
+      end_line: 48
+      end_col: 0
+  - from: httpie.output.lexers.http.request_method
+    to: ?.match.group
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 48
+      start_col: 0
+      end_line: 48
+      end_col: 0
+  - from: httpie.output.lexers.http.request_method
+    to: ?.match.start
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 51
+      start_col: 0
+      end_line: 51
+      end_col: 0
+  - from: httpie.output.lexers.http.request_method
+    to: ?.match.group
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 51
+      start_col: 0
+      end_line: 51
+      end_col: 0

@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ext/framework.v0.1.schema.json",
+  "title": "Extension: Framework Detection",
+  "description": "Framework-specific metadata for entities",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "enum": ["fastapi", "flask", "django", "nextjs", "react", "vite", "express", "unknown"],
+      "description": "Detected framework name"
+    },
+    "version": {
+      "type": "string",
+      "description": "Framework version if detected"
+    },
+    "confidence": {
+      "$ref": "common.v0.1.schema.json#/$defs/confidence"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "$ref": "common.v0.1.schema.json#/$defs/evidence_ref"
+      }
+    }
+  },
+  "additionalProperties": false
+}

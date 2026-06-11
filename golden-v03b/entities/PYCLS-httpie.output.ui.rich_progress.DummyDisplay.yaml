@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.output.ui.rich_progress.DummyDisplay
+kind: entity
+type: py.class
+name: DummyDisplay
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/ui/rich_progress.py
+anchors:
+- type: symbol
+  value: httpie.output.ui.rich_progress.DummyDisplay
+- type: fingerprint
+  value: 4a88d323fa183c00abff10646074e6e8428f1930b5ba0c9d322036d30fc865e8
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.ui.rich_progress

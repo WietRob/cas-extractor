@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-2265
+kind: relation
+type: calls
+from: PYFUNC-docs.contributors.fetch
+to: PYFUNC-re.compile
+confidence:
+  level: E1
+  direction: confirmed
+evidence:
+- EVID-py.callgraph-2f057479
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1

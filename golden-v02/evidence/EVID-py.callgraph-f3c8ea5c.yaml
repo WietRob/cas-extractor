@@ -1,0 +1,163 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-f3c8ea5c
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:33.976174+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.FIXERS_TO_VERSIONS.items
+  - symbol: ?.env.log_error
+  - symbol: ?.fixer
+  - symbol: ?.host_path.glob
+  - symbol: ?.session.is_new
+  - symbol: ?.session.save
+  - symbol: ?.session_dir_path.iterdir
+  - symbol: httpie.manager.cli.missing_subcommand
+  - symbol: httpie.manager.cli.parser.error
+  - symbol: httpie.manager.tasks.sessions.cli_sessions
+  - symbol: httpie.manager.tasks.sessions.cli_upgrade_all_sessions
+  - symbol: httpie.manager.tasks.sessions.cli_upgrade_session
+  - symbol: httpie.manager.tasks.sessions.upgrade_session
+  - symbol: httpie.sessions.get_httpie_session
+  - symbol: httpie.utils.is_version_greater
+  edges:
+  - from: httpie.manager.tasks.sessions.upgrade_session
+    to: httpie.sessions.get_httpie_session
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 31
+      start_col: 0
+      end_line: 38
+      end_col: 0
+  - from: httpie.manager.tasks.sessions.upgrade_session
+    to: ?.session.is_new
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 41
+      start_col: 0
+      end_line: 41
+      end_col: 0
+  - from: httpie.manager.tasks.sessions.upgrade_session
+    to: ?.session.save
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 58
+      start_col: 0
+      end_line: 58
+      end_col: 0
+  - from: httpie.manager.tasks.sessions.cli_upgrade_session
+    to: httpie.manager.tasks.sessions.upgrade_session
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 64
+      start_col: 0
+      end_line: 69
+      end_col: 0
+  - from: httpie.manager.tasks.sessions.cli_upgrade_all_sessions
+    to: ?.session_dir_path.iterdir
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 76
+      start_col: 0
+      end_line: 76
+      end_col: 0
+  - from: httpie.manager.tasks.sessions.cli_sessions
+    to: httpie.manager.cli.parser.error
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 20
+      start_col: 0
+      end_line: 20
+      end_col: 0
+  - from: httpie.manager.tasks.sessions.cli_sessions
+    to: httpie.manager.tasks.sessions.cli_upgrade_session
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 23
+      start_col: 0
+      end_line: 23
+      end_col: 0
+  - from: httpie.manager.tasks.sessions.upgrade_session
+    to: ?.env.log_error
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 42
+      start_col: 0
+      end_line: 42
+      end_col: 0
+  - from: httpie.manager.tasks.sessions.upgrade_session
+    to: ?.fixer
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 56
+      start_col: 0
+      end_line: 56
+      end_col: 0
+  - from: httpie.manager.tasks.sessions.cli_upgrade_all_sessions
+    to: ?.host_path.glob
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 78
+      start_col: 0
+      end_line: 78
+      end_col: 0
+  - from: httpie.manager.tasks.sessions.cli_sessions
+    to: httpie.manager.cli.missing_subcommand
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 20
+      start_col: 0
+      end_line: 20
+      end_col: 0
+  - from: httpie.manager.tasks.sessions.cli_sessions
+    to: httpie.manager.tasks.sessions.cli_upgrade_all_sessions
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 25
+      start_col: 0
+      end_line: 25
+      end_col: 0
+  - from: httpie.manager.tasks.sessions.upgrade_session
+    to: ?.FIXERS_TO_VERSIONS.items
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 47
+      start_col: 0
+      end_line: 47
+      end_col: 0
+  - from: httpie.manager.tasks.sessions.upgrade_session
+    to: httpie.utils.is_version_greater
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 48
+      start_col: 0
+      end_line: 48
+      end_col: 0
+  - from: httpie.manager.tasks.sessions.cli_upgrade_all_sessions
+    to: httpie.manager.tasks.sessions.upgrade_session
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 80
+      start_col: 0
+      end_line: 85
+      end_col: 0

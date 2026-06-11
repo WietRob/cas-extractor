@@ -1,0 +1,148 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-16a4baca
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T15:03:56.143736+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.kind.to_name
+  - symbol: ?.tokens.append
+  - symbol: errors.NestedJSONSyntaxError
+  - symbol: httpie.cli.nested_json.parse.assert_cant_happen
+  - symbol: httpie.cli.nested_json.parse.can_advance
+  - symbol: httpie.cli.nested_json.parse.expect
+  - symbol: httpie.cli.nested_json.parse.parse.expect
+  - symbol: httpie.cli.nested_json.parse.parse.parse_root
+  - symbol: tokens.Path
+  edges:
+  - from: httpie.cli.nested_json.parse.parse.expect
+    to: httpie.cli.nested_json.parse.can_advance
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 49
+      start_col: 0
+      end_line: 49
+      end_col: 0
+  - from: httpie.cli.nested_json.parse.parse.expect
+    to: errors.NestedJSONSyntaxError
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 67
+      start_col: 0
+      end_line: 67
+      end_col: 0
+  - from: httpie.cli.nested_json.parse.parse.parse_root
+    to: httpie.cli.nested_json.parse.expect
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 79
+      start_col: 0
+      end_line: 79
+      end_col: 0
+  - from: httpie.cli.nested_json.parse.parse.parse_root
+    to: ?.tokens.append
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 80
+      start_col: 0
+      end_line: 80
+      end_col: 0
+  - from: httpie.cli.nested_json.parse.parse.parse_root
+    to: tokens.Path
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 99
+      start_col: 0
+      end_line: 104
+      end_col: 0
+  - from: httpie.cli.nested_json.parse.parse.parse_root
+    to: httpie.cli.nested_json.parse.can_advance
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 72
+      start_col: 0
+      end_line: 72
+      end_col: 0
+  - from: httpie.cli.nested_json.parse.parse.parse_root
+    to: tokens.Path
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 73
+      start_col: 0
+      end_line: 77
+      end_col: 0
+  - from: httpie.cli.nested_json.parse.parse.parse_root
+    to: httpie.cli.nested_json.parse.expect
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 85
+      start_col: 0
+      end_line: 85
+      end_col: 0
+  - from: httpie.cli.nested_json.parse.parse.parse_root
+    to: ?.tokens.append
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 86
+      start_col: 0
+      end_line: 86
+      end_col: 0
+  - from: httpie.cli.nested_json.parse.parse.parse_root
+    to: httpie.cli.nested_json.parse.assert_cant_happen
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 97
+      start_col: 0
+      end_line: 97
+      end_col: 0
+  - from: httpie.cli.nested_json.parse.parse.expect
+    to: ?.kind.to_name
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 64
+      start_col: 0
+      end_line: 64
+      end_col: 0
+  - from: httpie.cli.nested_json.parse.parse.parse_root
+    to: ?.tokens.append
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 90
+      start_col: 0
+      end_line: 90
+      end_col: 0
+  - from: httpie.cli.nested_json.parse.parse.parse_root
+    to: httpie.cli.nested_json.parse.expect
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 90
+      start_col: 0
+      end_line: 90
+      end_col: 0
+  - from: httpie.cli.nested_json.parse.parse.parse_root
+    to: httpie.cli.nested_json.parse.assert_cant_happen
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 95
+      start_col: 0
+      end_line: 95
+      end_col: 0

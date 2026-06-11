@@ -1,0 +1,208 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-e9c8db84
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:52.962803+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.client
+    kind: module
+    file: httpie/client.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 400
+      end_col: 0
+    fingerprint: 252ef4581145e805bd822ac59ce4ed8f854c48630bf256a8ad93de2bcf1c3918
+  - qualified: httpie.client.collect_messages
+    kind: function
+    file: httpie/client.py
+    range:
+      start_line: 43
+      start_col: 0
+      end_line: 140
+      end_col: 0
+    fingerprint: eefe65521b47fc5c1ee3540ad3b1cb9f4eb105c0c64b27c15864e4614e7c9766
+    params:
+    - name: env
+      annotation: Environment
+    - name: args
+      annotation: argparse.Namespace
+    - name: request_body_read_callback
+      annotation: Callable[[bytes], None]
+    returns: Iterable[RequestsMessage]
+  - qualified: httpie.client.max_headers
+    kind: function
+    file: httpie/client.py
+    range:
+      start_line: 145
+      start_col: 0
+      end_line: 153
+      end_col: 0
+    fingerprint: fcd88952a1108143341568ddc7aed36edfd44e063b16c52e33148e921959fe6f
+    decorators:
+    - contextmanager
+    params:
+    - name: limit
+  - qualified: httpie.client.build_requests_session
+    kind: function
+    file: httpie/client.py
+    range:
+      start_line: 156
+      start_col: 0
+      end_line: 184
+      end_col: 0
+    fingerprint: ddf7b29bba2795024de29adec2b769549587f5476a4b52aa0993d48f7fb75d84
+    params:
+    - name: verify
+      annotation: bool
+    - name: ssl_version
+      annotation: str
+    - name: ciphers
+      annotation: str
+    returns: requests.Session
+  - qualified: httpie.client.dump_request
+    kind: function
+    file: httpie/client.py
+    range:
+      start_line: 187
+      start_col: 0
+      end_line: 189
+      end_col: 0
+    fingerprint: be28e73c19b130697dbc99b9a5d1d1d9aca4e159e02a94d83ffcadc50b97599b
+    params:
+    - name: kwargs
+      annotation: dict
+  - qualified: httpie.client.finalize_headers
+    kind: function
+    file: httpie/client.py
+    range:
+      start_line: 192
+      start_col: 0
+      end_line: 209
+      end_col: 0
+    fingerprint: 2c27295119fbbcb35082f1196a06e6b3930c2a5fbcdd1beab4c63cf9c674493b
+    params:
+    - name: headers
+      annotation: HTTPHeadersDict
+    returns: HTTPHeadersDict
+  - qualified: httpie.client.transform_headers
+    kind: function
+    file: httpie/client.py
+    range:
+      start_line: 212
+      start_col: 0
+      end_line: 230
+      end_col: 0
+    fingerprint: 836ae3804e751a06840cfaa90617a4e026318385ffa8b19de1ae40b87a61d225
+    params:
+    - name: request
+      annotation: requests.Request
+    - name: prepared_request
+      annotation: requests.PreparedRequest
+    returns: None
+  - qualified: httpie.client.apply_missing_repeated_headers
+    kind: function
+    file: httpie/client.py
+    range:
+      start_line: 233
+      start_col: 0
+      end_line: 260
+      end_col: 0
+    fingerprint: 43c909facd0772e0b75dc7c682f7d7204a7602c047f36188373054fc862d815e
+    params:
+    - name: original_headers
+      annotation: HTTPHeadersDict
+    - name: prepared_request
+      annotation: requests.PreparedRequest
+    returns: None
+  - qualified: httpie.client.make_default_headers
+    kind: function
+    file: httpie/client.py
+    range:
+      start_line: 263
+      start_col: 0
+      end_line: 278
+      end_col: 0
+    fingerprint: 38c44dc6b4e82ff754157390149095b3cb6ab6189cf29d6a2a509c9919c51619
+    params:
+    - name: args
+      annotation: argparse.Namespace
+    returns: HTTPHeadersDict
+  - qualified: httpie.client.make_send_kwargs
+    kind: function
+    file: httpie/client.py
+    range:
+      start_line: 281
+      start_col: 0
+      end_line: 285
+      end_col: 0
+    fingerprint: ed83adc027d194663af7cca95beea6a3395253c0c513a7ac54d2b7843cb44045
+    params:
+    - name: args
+      annotation: argparse.Namespace
+    returns: dict
+  - qualified: httpie.client.make_send_kwargs_mergeable_from_env
+    kind: function
+    file: httpie/client.py
+    range:
+      start_line: 288
+      start_col: 0
+      end_line: 311
+      end_col: 0
+    fingerprint: 3814a1e911a2e805dcee11cc44d58a723bee070ad98eac8f19b0c45c12e6ad0d
+    params:
+    - name: args
+      annotation: argparse.Namespace
+    returns: dict
+  - qualified: httpie.client.json_dict_to_request_body
+    kind: function
+    file: httpie/client.py
+    range:
+      start_line: 314
+      start_col: 0
+      end_line: 322
+      end_col: 0
+    fingerprint: 4d913d1b87401d45a396580caefa7aaee04f86332fdd5fe21368902c9fb49974
+    params:
+    - name: data
+      annotation: Dict[str, Any]
+    returns: str
+  - qualified: httpie.client.make_request_kwargs
+    kind: function
+    file: httpie/client.py
+    range:
+      start_line: 325
+      start_col: 0
+      end_line: 374
+      end_col: 0
+    fingerprint: 72158efddba6998687fa4e2d5f3ac1bd8d0551a177981c75e44ef0bb0dfd6023
+    params:
+    - name: env
+      annotation: Environment
+    - name: args
+      annotation: argparse.Namespace
+    - name: base_headers
+      annotation: HTTPHeadersDict
+    - name: request_body_read_callback
+    returns: dict
+  - qualified: httpie.client.ensure_path_as_is
+    kind: function
+    file: httpie/client.py
+    range:
+      start_line: 377
+      start_col: 0
+      end_line: 400
+      end_col: 0
+    fingerprint: b6700bbf8c8a636a987740c52f3ce70ed67768695b9bcbbff30944186b5879da
+    params:
+    - name: orig_url
+      annotation: str
+    - name: prepped_url
+      annotation: str
+    returns: str

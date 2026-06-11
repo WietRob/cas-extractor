@@ -1,0 +1,132 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-a4bb9206
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:51:32.437526+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: tests.test_compress
+    kind: module
+    file: tests/test_compress.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 140
+      end_col: 0
+    fingerprint: d33129f82da3c6a25708f6f9526fb01b5657f6428279e93b59aaedb1d329323e
+  - qualified: tests.test_compress.assert_decompressed_equal
+    kind: function
+    file: tests/test_compress.py
+    range:
+      start_line: 19
+      start_col: 0
+      end_line: 28
+      end_col: 0
+    fingerprint: 70178d5838f7110b7762b27ddc39351b2ce1e780ad1f90c817b20f7e769b7f22
+    params:
+    - name: base64_compressed_data
+    - name: expected_str
+  - qualified: tests.test_compress.test_cannot_combine_compress_with_chunked
+    kind: function
+    file: tests/test_compress.py
+    range:
+      start_line: 31
+      start_col: 0
+      end_line: 35
+      end_col: 0
+    fingerprint: e46cfc62495bd603f1a216d04848306e52a8c4fe5a2aac1a269634df43558c85
+    params:
+    - name: httpbin
+  - qualified: tests.test_compress.test_cannot_combine_compress_with_multipart
+    kind: function
+    file: tests/test_compress.py
+    range:
+      start_line: 38
+      start_col: 0
+      end_line: 42
+      end_col: 0
+    fingerprint: 2549faa5c47a974d95f89cd6a5a97a1418323bbe6bbec65ec67ac1580b1af0bf
+    params:
+    - name: httpbin
+  - qualified: tests.test_compress.test_compress_skip_negative_ratio
+    kind: function
+    file: tests/test_compress.py
+    range:
+      start_line: 45
+      start_col: 0
+      end_line: 53
+      end_col: 0
+    fingerprint: e8fb19dd7c9c7bdb29371db7e23a45654016b518071d46e7e4fe73b7d17bfbc2
+    params:
+    - name: httpbin_both
+  - qualified: tests.test_compress.test_compress_force_with_negative_ratio
+    kind: function
+    file: tests/test_compress.py
+    range:
+      start_line: 56
+      start_col: 0
+      end_line: 65
+      end_col: 0
+    fingerprint: 87d12f5370ef75de47abe1b837a09ab7d8609641f7f3ef7015340407afa49196
+    params:
+    - name: httpbin_both
+  - qualified: tests.test_compress.test_compress_json
+    kind: function
+    file: tests/test_compress.py
+    range:
+      start_line: 68
+      start_col: 0
+      end_line: 78
+      end_col: 0
+    fingerprint: 82b4907549a910863932a29fc82d830813c183119fa16ec75799006b08c0146e
+    params:
+    - name: httpbin_both
+  - qualified: tests.test_compress.test_compress_form
+    kind: function
+    file: tests/test_compress.py
+    range:
+      start_line: 81
+      start_col: 0
+      end_line: 92
+      end_col: 0
+    fingerprint: e2a2c44172bbc96a611468b6e3ac967f806463fa44af0fbc6b659ec5eef63266
+    params:
+    - name: httpbin_both
+  - qualified: tests.test_compress.test_compress_raw
+    kind: function
+    file: tests/test_compress.py
+    range:
+      start_line: 95
+      start_col: 0
+      end_line: 105
+      end_col: 0
+    fingerprint: c84c2b6a5ff9a37e234861392c479ab56d7c92c32019f25a679902009d780f5e
+    params:
+    - name: httpbin_both
+  - qualified: tests.test_compress.test_compress_stdin
+    kind: function
+    file: tests/test_compress.py
+    range:
+      start_line: 108
+      start_col: 0
+      end_line: 123
+      end_col: 0
+    fingerprint: f35f9a191e18a99346c09cf9c70d0b3780835517a27bc7b2b25e5cc09fc468ea
+    params:
+    - name: httpbin_both
+  - qualified: tests.test_compress.test_compress_file
+    kind: function
+    file: tests/test_compress.py
+    range:
+      start_line: 126
+      start_col: 0
+      end_line: 140
+      end_col: 0
+    fingerprint: 92b557196817f92929266308755c334b05b5a434abec034134548c54518f1b67
+    params:
+    - name: httpbin_both

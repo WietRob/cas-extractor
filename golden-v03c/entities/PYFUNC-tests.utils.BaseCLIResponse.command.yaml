@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.utils.BaseCLIResponse.command
+kind: entity
+type: py.function
+name: command
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/utils/__init__.py
+anchors:
+- type: symbol
+  value: tests.utils.BaseCLIResponse.command
+- type: fingerprint
+  value: 81f63d6291413bc1fc63e0d182eeeb8c0d8f3030fb171d914ce0ea0c2806090c
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils.BaseCLIResponse

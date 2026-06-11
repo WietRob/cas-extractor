@@ -1,0 +1,50 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-2fa4217b
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:54.957810+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.cli.options.ParserSpec.finalize
+    kind: method
+    file: httpie/cli/options.py
+    range:
+      start_line: 50
+      start_col: 0
+      end_line: 57
+      end_col: 0
+    fingerprint: 192812f44a17563e4421ff2897aa8d8bec3e7613c4b68a254c307ef8541750cf
+    params:
+    - name: self
+    returns: '''ParserSpec'''
+  - qualified: httpie.cli.options.ParserSpec.add_group
+    kind: method
+    file: httpie/cli/options.py
+    range:
+      start_line: 59
+      start_col: 0
+      end_line: 62
+      end_col: 0
+    fingerprint: d255a4fea8843f04eb4ce62d2ffdd8cbadfa143abfca8304b7573ec90adac62d
+    params:
+    - name: self
+    - name: name
+      annotation: str
+    returns: '''Group'''
+  - qualified: httpie.cli.options.ParserSpec.serialize
+    kind: method
+    file: httpie/cli/options.py
+    range:
+      start_line: 64
+      start_col: 0
+      end_line: 69
+      end_col: 0
+    fingerprint: 7931a78e3a851d0bc55be6c8243304dac8cdab11ccfa8164676400b84e6fe853
+    params:
+    - name: self
+    returns: Dict[str, Any]

@@ -1,0 +1,39 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-f2b71333
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:55.137754+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.test_binary
+    kind: module
+    file: tests/test_binary.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 50
+      end_col: 0
+    fingerprint: d4d952da6bf08f8e96395fee293740ec96a48415e4b41b5636dafa0f5602cbe2
+  - qualified: tests.test_binary.TestBinaryRequestData
+    kind: class
+    file: tests/test_binary.py
+    range:
+      start_line: 9
+      start_col: 0
+      end_line: 31
+      end_col: 0
+    fingerprint: 775a6e9dae856023374ab696d2f27f3bd531a5fcdea6f2218f827e5ba2e78703
+  - qualified: tests.test_binary.TestBinaryResponseData
+    kind: class
+    file: tests/test_binary.py
+    range:
+      start_line: 34
+      start_col: 0
+      end_line: 50
+      end_col: 0
+    fingerprint: f277ac3f7ba54b82b6461cd0ae66035d935ce126c25de9564c6fa32cda229c3f

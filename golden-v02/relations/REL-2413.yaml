@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-2413
+kind: relation
+type: calls
+from: PYFUNC-httpie.output.ui.rich_help.to_help_message
+to: PYFUNC-_.options_highlighter
+confidence:
+  level: E1
+  direction: confirmed
+evidence:
+- EVID-py.callgraph-45b70dd7
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1

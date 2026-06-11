@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.plugins.base.TransportPlugin.get_adapter
+kind: entity
+type: py.function
+name: get_adapter
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/plugins/base.py
+anchors:
+- type: symbol
+  value: httpie.plugins.base.TransportPlugin.get_adapter
+- type: fingerprint
+  value: 42de07d1a7e7a10954e60c5960933de7803d4c3116568b69c730e75bcf91c105
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.plugins.base.TransportPlugin

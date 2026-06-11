@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.utils.LazyChoices.__contains__
+kind: entity
+type: py.function
+name: __contains__
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/utils.py
+anchors:
+- type: symbol
+  value: httpie.cli.utils.LazyChoices.__contains__
+- type: fingerprint
+  value: b03066765d70dea5b5f60ca3fda9cfcf286c54a5f5415fa5ae0ce007a69a0785
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.utils.LazyChoices

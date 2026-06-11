@@ -1,0 +1,199 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-1321cb42
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:33.925194+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.process.communicate
+  - symbol: contextlib.suppress
+  - symbol: httpie.core.main
+  - symbol: httpie.internal.daemons._spawn
+  - symbol: httpie.internal.daemons._spawn_posix
+  - symbol: httpie.internal.daemons._spawn_windows
+  - symbol: httpie.internal.daemons._start_process
+  - symbol: httpie.internal.daemons.spawn_daemon
+  - symbol: inspect.stack
+  - symbol: os._exit
+  - symbol: os.fork
+  - symbol: os.setsid
+  - symbol: platform.system
+  - symbol: subprocess.Popen
+  - symbol: subprocess.STARTUPINFO
+  edges:
+  - from: httpie.internal.daemons._start_process
+    to: subprocess.Popen
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 29
+      start_col: 0
+      end_line: 29
+      end_col: 0
+  - from: httpie.internal.daemons._spawn_windows
+    to: subprocess.STARTUPINFO
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 44
+      start_col: 0
+      end_line: 44
+      end_col: 0
+  - from: httpie.internal.daemons._spawn_windows
+    to: httpie.internal.daemons._start_process
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 47
+      start_col: 0
+      end_line: 52
+      end_col: 0
+  - from: httpie.internal.daemons._spawn_posix
+    to: os.setsid
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 73
+      start_col: 0
+      end_line: 73
+      end_col: 0
+  - from: httpie.internal.daemons._spawn_posix
+    to: os._exit
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 99
+      start_col: 0
+      end_line: 99
+      end_col: 0
+  - from: httpie.internal.daemons.spawn_daemon
+    to: httpie.internal.daemons._spawn
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 121
+      start_col: 0
+      end_line: 121
+      end_col: 0
+  - from: httpie.internal.daemons._spawn_posix
+    to: os.fork
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 67
+      start_col: 0
+      end_line: 67
+      end_col: 0
+  - from: httpie.internal.daemons._spawn_posix
+    to: os.fork
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 76
+      start_col: 0
+      end_line: 76
+      end_col: 0
+  - from: httpie.internal.daemons._spawn_posix
+    to: platform.system
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 87
+      start_col: 0
+      end_line: 87
+      end_col: 0
+  - from: httpie.internal.daemons._spawn_posix
+    to: httpie.internal.daemons._start_process
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 90
+      start_col: 0
+      end_line: 90
+      end_col: 0
+  - from: httpie.internal.daemons._spawn_posix
+    to: ?.process.communicate
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 93
+      start_col: 0
+      end_line: 93
+      end_col: 0
+  - from: httpie.internal.daemons._spawn
+    to: httpie.internal.daemons._spawn_windows
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 107
+      start_col: 0
+      end_line: 107
+      end_col: 0
+  - from: httpie.internal.daemons._spawn
+    to: httpie.internal.daemons._spawn_posix
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 109
+      start_col: 0
+      end_line: 109
+      end_col: 0
+  - from: httpie.internal.daemons._spawn_posix
+    to: os._exit
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 71
+      start_col: 0
+      end_line: 71
+      end_col: 0
+  - from: httpie.internal.daemons._spawn_posix
+    to: os._exit
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 78
+      start_col: 0
+      end_line: 78
+      end_col: 0
+  - from: httpie.internal.daemons._spawn_posix
+    to: os._exit
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 80
+      start_col: 0
+      end_line: 80
+      end_col: 0
+  - from: httpie.internal.daemons._spawn_posix
+    to: contextlib.suppress
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 96
+      start_col: 0
+      end_line: 96
+      end_col: 0
+  - from: httpie.internal.daemons._spawn_posix
+    to: httpie.core.main
+    kind: call
+    edge_id: 17
+    range:
+      start_line: 97
+      start_col: 0
+      end_line: 97
+      end_col: 0
+  - from: httpie.internal.daemons.spawn_daemon
+    to: inspect.stack
+    kind: call
+    edge_id: 18
+    range:
+      start_line: 116
+      start_col: 0
+      end_line: 116
+      end_col: 0

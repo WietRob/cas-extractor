@@ -1,0 +1,19 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-a55c2c7f
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-21T11:51:32.875431+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  imports:
+  - from: httpie.manager.tasks.check_updates
+    imports:
+    - argparse
+    - httpie.context.Environment
+    - httpie.status.ExitStatus
+    - httpie.internal.update_warnings.fetch_updates
+    - httpie.internal.update_warnings.get_update_status

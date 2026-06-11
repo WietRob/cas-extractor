@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_redirects.test_follow_all_redirects_shown
+kind: entity
+type: py.function
+name: test_follow_all_redirects_shown
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_redirects.py
+anchors:
+- type: symbol
+  value: tests.test_redirects.test_follow_all_redirects_shown
+- type: fingerprint
+  value: 2a1cdc279c88ec7ab28c7fce915710a3e12cb6b360e1b70dcc0f7a70f25167c1
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_redirects

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-cas_extractor.models.evidence.CallEntry
+kind: entity
+type: py.class
+name: CallEntry
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor/models/evidence.py
+anchors:
+- type: symbol
+  value: cas_extractor.models.evidence.CallEntry
+- type: fingerprint
+  value: 9d48ae3017fa2f83bfbf15053af781feb594c7a8e31b9418d566e4ff134eca1a
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor.models.evidence

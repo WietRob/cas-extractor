@@ -1,0 +1,24 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-3d42129d
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:34.196091+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: tests.test_defaults.test_default_headers_case_insensitive
+  - symbol: utils.http
+  edges:
+  - from: tests.test_defaults.test_default_headers_case_insensitive
+    to: utils.http
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 16
+      start_col: 0
+      end_line: 22
+      end_col: 0

@@ -1,0 +1,65 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-492f8657
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:33.826912+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.JSON_TYPE_MAPPING.get
+  - symbol: ?.path.reconstruct
+  - symbol: errors.NestedJSONSyntaxError
+  - symbol: httpie.cli.nested_json.interpret.interpret.object_for
+  - symbol: httpie.cli.nested_json.interpret.interpret.type_check
+  - symbol: parse.assert_cant_happen
+  - symbol: tokens.Token
+  edges:
+  - from: httpie.cli.nested_json.interpret.interpret.type_check
+    to: ?.JSON_TYPE_MAPPING.get
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 47
+      start_col: 0
+      end_line: 47
+      end_col: 0
+  - from: httpie.cli.nested_json.interpret.interpret.type_check
+    to: errors.NestedJSONSyntaxError
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 53
+      start_col: 0
+      end_line: 58
+      end_col: 0
+  - from: httpie.cli.nested_json.interpret.interpret.type_check
+    to: tokens.Token
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 39
+      start_col: 0
+      end_line: 44
+      end_col: 0
+  - from: httpie.cli.nested_json.interpret.interpret.object_for
+    to: parse.assert_cant_happen
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 66
+      start_col: 0
+      end_line: 66
+      end_col: 0
+  - from: httpie.cli.nested_json.interpret.interpret.type_check
+    to: ?.path.reconstruct
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 50
+      start_col: 0
+      end_line: 50
+      end_col: 0

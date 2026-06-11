@@ -1,0 +1,52 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-01707e5a
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:55.051815+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.output.ui.rich_progress.StatusDisplay.start
+    kind: method
+    file: httpie/output/ui/rich_progress.py
+    range:
+      start_line: 63
+      start_col: 0
+      end_line: 72
+      end_col: 0
+    fingerprint: 42e063c9b09d53496e8dd26b385f4271e339b0c9b06cb685723a05b3bc2ed966
+    params:
+    - name: self
+    returns: None
+  - qualified: httpie.output.ui.rich_progress.StatusDisplay.update
+    kind: method
+    file: httpie/output/ui/rich_progress.py
+    range:
+      start_line: 74
+      start_col: 0
+      end_line: 84
+      end_col: 0
+    fingerprint: 97516b20fc6edc863b18686a7b760df3683142851c764b4a48affd9debc0fee1
+    params:
+    - name: self
+    - name: steps
+      annotation: float
+    returns: None
+  - qualified: httpie.output.ui.rich_progress.StatusDisplay.stop
+    kind: method
+    file: httpie/output/ui/rich_progress.py
+    range:
+      start_line: 86
+      start_col: 0
+      end_line: 94
+      end_col: 0
+    fingerprint: 0756e21a53eb7c3f4f625d42c5b49d72cb14944a1efb44fdddd6e0ee43e9815a
+    params:
+    - name: self
+    - name: time_spent
+      annotation: float
+    returns: None

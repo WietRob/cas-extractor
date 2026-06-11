@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_compress.test_cannot_combine_compress_with_chunked
+kind: entity
+type: py.function
+name: test_cannot_combine_compress_with_chunked
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_compress.py
+anchors:
+- type: symbol
+  value: tests.test_compress.test_cannot_combine_compress_with_chunked
+- type: fingerprint
+  value: e46cfc62495bd603f1a216d04848306e52a8c4fe5a2aac1a269634df43558c85
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_compress

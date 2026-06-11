@@ -1,0 +1,182 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-3ff999bb
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:53.055449+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.plugins.manager.PluginManager.register
+    kind: method
+    file: httpie/plugins/manager.py
+    range:
+      start_line: 49
+      start_col: 0
+      end_line: 51
+      end_col: 0
+    fingerprint: ddd95fa6981ba61e7bb93d9739c9fee279fa2d07c6146364a508fdf9af89f46a
+    params:
+    - name: self
+  - qualified: httpie.plugins.manager.PluginManager.unregister
+    kind: method
+    file: httpie/plugins/manager.py
+    range:
+      start_line: 53
+      start_col: 0
+      end_line: 54
+      end_col: 0
+    fingerprint: b536e8a5f16a4b1cde78f5e304b4346a92d12c2d306c59fa68a3f4c6b40516a0
+    params:
+    - name: self
+    - name: plugin
+      annotation: Type[BasePlugin]
+  - qualified: httpie.plugins.manager.PluginManager.filter
+    kind: method
+    file: httpie/plugins/manager.py
+    range:
+      start_line: 56
+      start_col: 0
+      end_line: 57
+      end_col: 0
+    fingerprint: a75a46065165066212b4445db75955f200ee5b0f474377a54bb81b931fc005e7
+    params:
+    - name: self
+    - name: by_type
+  - qualified: httpie.plugins.manager.PluginManager.iter_entry_points
+    kind: method
+    file: httpie/plugins/manager.py
+    range:
+      start_line: 59
+      start_col: 0
+      end_line: 64
+      end_col: 0
+    fingerprint: 9a1f8e1ea25b8e2004d183fef2bc2fd15a4661194e72cfef6759b524994ba1ef
+    params:
+    - name: self
+    - name: directory
+      annotation: Optional[Path]
+  - qualified: httpie.plugins.manager.PluginManager.load_installed_plugins
+    kind: method
+    file: httpie/plugins/manager.py
+    range:
+      start_line: 66
+      start_col: 0
+      end_line: 80
+      end_col: 0
+    fingerprint: 07f5c18e9a8e4239f9ddf69888f2b282bf74b44ca0b1f3e4143404ba97a92124
+    params:
+    - name: self
+    - name: directory
+      annotation: Optional[Path]
+  - qualified: httpie.plugins.manager.PluginManager.get_auth_plugins
+    kind: method
+    file: httpie/plugins/manager.py
+    range:
+      start_line: 83
+      start_col: 0
+      end_line: 84
+      end_col: 0
+    fingerprint: 823c4b43486afa44151502ce009a492f4beb81c334358d2e3cd1fee011dd902d
+    params:
+    - name: self
+    returns: List[Type[AuthPlugin]]
+  - qualified: httpie.plugins.manager.PluginManager.get_auth_plugin_mapping
+    kind: method
+    file: httpie/plugins/manager.py
+    range:
+      start_line: 86
+      start_col: 0
+      end_line: 89
+      end_col: 0
+    fingerprint: f328b67c92b94f5d341c201b59a53b28480beaeb5b57f031ef659612595a8edf
+    params:
+    - name: self
+    returns: Dict[str, Type[AuthPlugin]]
+  - qualified: httpie.plugins.manager.PluginManager.get_auth_plugin
+    kind: method
+    file: httpie/plugins/manager.py
+    range:
+      start_line: 91
+      start_col: 0
+      end_line: 92
+      end_col: 0
+    fingerprint: e4a34bfa18e677b5b8969fc6b10d08c193db10f44a83ad61eea09c90bd223879
+    params:
+    - name: self
+    - name: auth_type
+      annotation: str
+    returns: Type[AuthPlugin]
+  - qualified: httpie.plugins.manager.PluginManager.get_formatters
+    kind: method
+    file: httpie/plugins/manager.py
+    range:
+      start_line: 95
+      start_col: 0
+      end_line: 96
+      end_col: 0
+    fingerprint: 12f701b131f2021defad892e81a06f2ff43e4b17460e7c8d74f60f45da6652a2
+    params:
+    - name: self
+    returns: List[Type[FormatterPlugin]]
+  - qualified: httpie.plugins.manager.PluginManager.get_formatters_grouped
+    kind: method
+    file: httpie/plugins/manager.py
+    range:
+      start_line: 98
+      start_col: 0
+      end_line: 103
+      end_col: 0
+    fingerprint: 83da9f0ca5b550fd7099f071eeef726cec428e3308934f8b6ba09cc3f159b64d
+    params:
+    - name: self
+    returns: Dict[str, List[Type[FormatterPlugin]]]
+  - qualified: httpie.plugins.manager.PluginManager.get_converters
+    kind: method
+    file: httpie/plugins/manager.py
+    range:
+      start_line: 105
+      start_col: 0
+      end_line: 106
+      end_col: 0
+    fingerprint: 608aa3a944e5162da7f6e4f2f375e3bf8d0563ff9e94207cf37391ce22329744
+    params:
+    - name: self
+    returns: List[Type[ConverterPlugin]]
+  - qualified: httpie.plugins.manager.PluginManager.get_transport_plugins
+    kind: method
+    file: httpie/plugins/manager.py
+    range:
+      start_line: 109
+      start_col: 0
+      end_line: 110
+      end_col: 0
+    fingerprint: 19a08dd5296e0edf19ff394a278da44ba5696601580d2947a36e931ddeba544f
+    params:
+    - name: self
+    returns: List[Type[TransportPlugin]]
+  - qualified: httpie.plugins.manager.PluginManager.__str__
+    kind: method
+    file: httpie/plugins/manager.py
+    range:
+      start_line: 112
+      start_col: 0
+      end_line: 118
+      end_col: 0
+    fingerprint: 46cb5907e93c40eb2a2d84b46860cc47608c1041ba2b2833a566724cb254fd6c
+    params:
+    - name: self
+  - qualified: httpie.plugins.manager.PluginManager.__repr__
+    kind: method
+    file: httpie/plugins/manager.py
+    range:
+      start_line: 120
+      start_col: 0
+      end_line: 121
+      end_col: 0
+    fingerprint: e4a579212af7519e2807b4f3fc8eef1fb03b01815b695f6cacebd1607d894679
+    params:
+    - name: self

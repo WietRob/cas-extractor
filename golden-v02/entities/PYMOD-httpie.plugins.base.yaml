@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.plugins.base
+kind: entity
+type: py.module
+name: base
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/plugins/base.py
+anchors:
+- type: symbol
+  value: httpie.plugins.base
+- type: fingerprint
+  value: c12e855716a8138109288d2ec83fa7597a8cf4a7a8c09299267e4986d340db67
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.plugins

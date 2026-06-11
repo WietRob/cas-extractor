@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_downloads.test_unique_filename.attempts
+kind: entity
+type: py.function
+name: attempts
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_downloads.py
+anchors:
+- type: symbol
+  value: tests.test_downloads.test_unique_filename.attempts
+- type: fingerprint
+  value: ac098de87bb4bb9f7c5222d131ed82a5ef61a6fb0c4c39ffb47215b7b5a12314
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_downloads.test_unique_filename

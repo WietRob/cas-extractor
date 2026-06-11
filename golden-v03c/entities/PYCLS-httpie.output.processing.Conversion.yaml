@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.output.processing.Conversion
+kind: entity
+type: py.class
+name: Conversion
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/processing.py
+anchors:
+- type: symbol
+  value: httpie.output.processing.Conversion
+- type: fingerprint
+  value: 8d24140582e4bdbb609d8969885b0d3a25016043244e09508566928000080dda
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.processing

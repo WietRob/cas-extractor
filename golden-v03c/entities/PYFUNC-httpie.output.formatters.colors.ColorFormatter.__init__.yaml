@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.formatters.colors.ColorFormatter.__init__
+kind: entity
+type: py.function
+name: __init__
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/formatters/colors.py
+anchors:
+- type: symbol
+  value: httpie.output.formatters.colors.ColorFormatter.__init__
+- type: fingerprint
+  value: 0912272719a38a200a835ddd40793720d7e1eaa986e2ae807d015ced23e1776b
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.formatters.colors.ColorFormatter

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.uploads.get_multipart_data_and_content_type
+kind: entity
+type: py.function
+name: get_multipart_data_and_content_type
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/uploads.py
+anchors:
+- type: symbol
+  value: httpie.uploads.get_multipart_data_and_content_type
+- type: fingerprint
+  value: 944803e4d2ddab9e76764866bf63340d52251398a40cb407e0d8d9562627b1ce
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.uploads

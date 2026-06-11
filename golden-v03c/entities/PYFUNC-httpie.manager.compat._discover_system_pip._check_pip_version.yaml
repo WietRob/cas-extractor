@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.manager.compat._discover_system_pip._check_pip_version
+kind: entity
+type: py.function
+name: _check_pip_version
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/manager/compat.py
+anchors:
+- type: symbol
+  value: httpie.manager.compat._discover_system_pip._check_pip_version
+- type: fingerprint
+  value: 6a1d46b16e04b6be35973cafc2f42c9295e82df4834dc87eea42c30adf84e2c4
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.manager.compat._discover_system_pip

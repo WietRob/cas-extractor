@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.downloads.Downloader.failed
+kind: entity
+type: py.function
+name: failed
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/downloads.py
+anchors:
+- type: symbol
+  value: httpie.downloads.Downloader.failed
+- type: fingerprint
+  value: 048c268be9c43e6ed8c7e890e134bfef034f383a3efa0a1b978f323c61633bf9
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.downloads.Downloader

@@ -1,0 +1,171 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-a2f2027c
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:52.999532+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.manager.tasks.plugins.PluginInstaller.__init__
+    kind: method
+    file: httpie/manager/tasks/plugins.py
+    range:
+      start_line: 23
+      start_col: 0
+      end_line: 28
+      end_col: 0
+    fingerprint: 42554294ab814e53e535de18cd6be7e296a0990c915c64a6e31ec0bda1fd9c06
+    params:
+    - name: self
+    - name: env
+      annotation: Environment
+    - name: debug
+      annotation: bool
+    returns: None
+  - qualified: httpie.manager.tasks.plugins.PluginInstaller.setup_plugins_dir
+    kind: method
+    file: httpie/manager/tasks/plugins.py
+    range:
+      start_line: 30
+      start_col: 0
+      end_line: 43
+      end_col: 0
+    fingerprint: 2a4e64646e97644795c424aa721725c7cd5c3e2eca38ce0d8922286dad5b0dd0
+    params:
+    - name: self
+    returns: None
+  - qualified: httpie.manager.tasks.plugins.PluginInstaller.fail
+    kind: method
+    file: httpie/manager/tasks/plugins.py
+    range:
+      start_line: 45
+      start_col: 0
+      end_line: 58
+      end_col: 0
+    fingerprint: 4f393e904b09473d3ed8f413900e22490dcedc02cbec4855c06876e94af6e00c
+    params:
+    - name: self
+    - name: command
+      annotation: str
+    - name: target
+      annotation: Optional[str]
+    - name: reason
+      annotation: Optional[str]
+    returns: ExitStatus
+  - qualified: httpie.manager.tasks.plugins.PluginInstaller._install
+    kind: method
+    file: httpie/manager/tasks/plugins.py
+    range:
+      start_line: 60
+      start_col: 0
+      end_line: 103
+      end_col: 0
+    fingerprint: 95252b933b2186fa56eaa4d1dbcdde0e68514fff3aae0f099689e59fea72bcde
+    params:
+    - name: self
+    - name: targets
+      annotation: List[str]
+    - name: mode
+    returns: Tuple[bytes, ExitStatus]
+  - qualified: httpie.manager.tasks.plugins.PluginInstaller.install
+    kind: method
+    file: httpie/manager/tasks/plugins.py
+    range:
+      start_line: 105
+      start_col: 0
+      end_line: 109
+      end_col: 0
+    fingerprint: 731e0b0a08a3d414c4271b96713865fa5c23798b4f5b261d26587f1a44899673
+    params:
+    - name: self
+    - name: targets
+      annotation: List[str]
+    returns: ExitStatus
+  - qualified: httpie.manager.tasks.plugins.PluginInstaller._clear_metadata
+    kind: method
+    file: httpie/manager/tasks/plugins.py
+    range:
+      start_line: 111
+      start_col: 0
+      end_line: 130
+      end_col: 0
+    fingerprint: ad02cf5dc958ed11f7dbdf3f75bb872be68c69a2c2eec10eacda872e559398be
+    params:
+    - name: self
+    - name: targets
+      annotation: List[str]
+    returns: None
+  - qualified: httpie.manager.tasks.plugins.PluginInstaller.upgrade
+    kind: method
+    file: httpie/manager/tasks/plugins.py
+    range:
+      start_line: 132
+      start_col: 0
+      end_line: 146
+      end_col: 0
+    fingerprint: c815fdbfe88df1f47b77825c7cbe0e5257f1e963b739ff32a0bd507abdad3216
+    params:
+    - name: self
+    - name: targets
+      annotation: List[str]
+    returns: ExitStatus
+  - qualified: httpie.manager.tasks.plugins.PluginInstaller._uninstall
+    kind: method
+    file: httpie/manager/tasks/plugins.py
+    range:
+      start_line: 148
+      start_col: 0
+      end_line: 182
+      end_col: 0
+    fingerprint: 388d2396f18227eba4799e0f93b5aeb0eba1bcb4b1c45283cf8093970662f219
+    params:
+    - name: self
+    - name: target
+      annotation: str
+    returns: Optional[ExitStatus]
+  - qualified: httpie.manager.tasks.plugins.PluginInstaller.uninstall
+    kind: method
+    file: httpie/manager/tasks/plugins.py
+    range:
+      start_line: 184
+      start_col: 0
+      end_line: 194
+      end_col: 0
+    fingerprint: d8200ebd80e4f870cf723832165eeea3fb128c8ba2a77f277b6df3ee2bc65c2b
+    params:
+    - name: self
+    - name: targets
+      annotation: List[str]
+    returns: ExitStatus
+  - qualified: httpie.manager.tasks.plugins.PluginInstaller.list
+    kind: method
+    file: httpie/manager/tasks/plugins.py
+    range:
+      start_line: 196
+      start_col: 0
+      end_line: 215
+      end_col: 0
+    fingerprint: 436a7c534d7eff1ac1c7e85e32e0a4aff12e1cc55d6ce00d9c168e7b2c864330
+    params:
+    - name: self
+    returns: None
+  - qualified: httpie.manager.tasks.plugins.PluginInstaller.run
+    kind: method
+    file: httpie/manager/tasks/plugins.py
+    range:
+      start_line: 217
+      start_col: 0
+      end_line: 237
+      end_col: 0
+    fingerprint: d4735638203a8e0076894d125f157309fde82923f00b954b3c64887e971c2014
+    params:
+    - name: self
+    - name: action
+      annotation: Optional[str]
+    - name: args
+      annotation: argparse.Namespace
+    returns: ExitStatus

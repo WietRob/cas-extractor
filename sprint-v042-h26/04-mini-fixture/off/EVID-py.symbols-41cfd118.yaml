@@ -1,0 +1,35 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-41cfd118
+kind: evidence
+type: py.symbols
+created_at: '2026-02-23T05:34:05.962552+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: /tmp/h26-verify
+  revision: git:test
+payload:
+  symbols:
+  - qualified: test_h26.TestH26Conditional.setup
+    kind: method
+    file: test_h26.py
+    range:
+      start_line: 155
+      start_col: 0
+      end_line: 157
+      end_col: 0
+    fingerprint: 28938d67ad9d9c9138ee2739d7056d6ae817c99176dd5b698898a41a2ae7e29b
+    params:
+    - name: self
+    - name: use_websocket
+  - qualified: test_h26.TestH26Conditional.run
+    kind: method
+    file: test_h26.py
+    range:
+      start_line: 160
+      start_col: 0
+      end_line: 162
+      end_col: 0
+    fingerprint: 821c9f8076c0d3093eabe82707f3283f42ec1e9d56f910a25b88867114f5958c
+    params:
+    - name: self

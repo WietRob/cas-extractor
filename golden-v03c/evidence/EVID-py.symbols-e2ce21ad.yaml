@@ -1,0 +1,50 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-e2ce21ad
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T17:44:04.364351+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.output.processing
+    kind: module
+    file: httpie/output/processing.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 58
+      end_col: 0
+    fingerprint: 4413dfe559925b12bbbcbf7b59c51467680a69b68077d5de1dac39556b43dd48
+  - qualified: httpie.output.processing.is_valid_mime
+    kind: function
+    file: httpie/output/processing.py
+    range:
+      start_line: 12
+      start_col: 0
+      end_line: 13
+      end_col: 0
+    fingerprint: 1b15b86ce923f3e5c0a614eb10689b12f667a666e3b307b7db651e41f0f692bf
+    params:
+    - name: mime
+  - qualified: httpie.output.processing.Conversion
+    kind: class
+    file: httpie/output/processing.py
+    range:
+      start_line: 16
+      start_col: 0
+      end_line: 23
+      end_col: 0
+    fingerprint: 8d24140582e4bdbb609d8969885b0d3a25016043244e09508566928000080dda
+  - qualified: httpie.output.processing.Formatting
+    kind: class
+    file: httpie/output/processing.py
+    range:
+      start_line: 26
+      start_col: 0
+      end_line: 58
+      end_col: 0
+    fingerprint: 7bd50248b9da5553bfae0b721d24961d818cde49b66b2a01a76c1e7532a5ca0e

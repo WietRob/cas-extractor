@@ -1,0 +1,23 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-2ce406f9
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T11:17:16.883818+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: /tmp/h25-verify
+  revision: git:test
+payload:
+  symbols:
+  - qualified: test_h25.TestH25AnnAssign.initialize
+    kind: method
+    file: test_h25.py
+    range:
+      start_line: 41
+      start_col: 0
+      end_line: 43
+      end_col: 0
+    fingerprint: e6480c029ef0ee6117ecef499a79d4196ffd9860f40bf8700dd48429959a4431
+    params:
+    - name: self

@@ -1,0 +1,53 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-419e6d92
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-21T11:51:32.854642+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  imports:
+  - from: httpie.cli.definition
+    imports:
+    - __future__.annotations
+    - os
+    - textwrap
+    - argparse.FileType
+    - httpie.__doc__
+    - httpie.__version__
+    - httpie.cli.argtypes.KeyValueArgType
+    - httpie.cli.argtypes.SessionNameValidator
+    - httpie.cli.argtypes.SSLCredentials
+    - httpie.cli.argtypes.readable_file_arg
+    - httpie.cli.argtypes.response_charset_type
+    - httpie.cli.argtypes.response_mime_type
+    - httpie.cli.constants.BASE_OUTPUT_OPTIONS
+    - httpie.cli.constants.DEFAULT_FORMAT_OPTIONS
+    - httpie.cli.constants.OUT_REQ_BODY
+    - httpie.cli.constants.OUT_REQ_HEAD
+    - httpie.cli.constants.OUT_RESP_BODY
+    - httpie.cli.constants.OUT_RESP_HEAD
+    - httpie.cli.constants.OUT_RESP_META
+    - httpie.cli.constants.OUTPUT_OPTIONS
+    - httpie.cli.constants.OUTPUT_OPTIONS_DEFAULT
+    - httpie.cli.constants.PRETTY_MAP
+    - httpie.cli.constants.PRETTY_STDOUT_TTY_ONLY
+    - httpie.cli.constants.SEPARATOR_GROUP_ALL_ITEMS
+    - httpie.cli.constants.SEPARATOR_PROXY
+    - httpie.cli.constants.SORTED_FORMAT_OPTIONS_STRING
+    - httpie.cli.constants.UNSORTED_FORMAT_OPTIONS_STRING
+    - httpie.cli.constants.RequestType
+    - httpie.cli.options.ParserSpec
+    - httpie.cli.options.Qualifiers
+    - httpie.cli.options.to_argparse
+    - httpie.output.formatters.colors.AUTO_STYLE
+    - httpie.output.formatters.colors.DEFAULT_STYLE
+    - httpie.output.formatters.colors.BUNDLED_STYLES
+    - httpie.output.formatters.colors.get_available_styles
+    - httpie.plugins.builtin.BuiltinAuthPlugin
+    - httpie.plugins.registry.plugin_manager
+    - httpie.ssl_.AVAILABLE_SSL_VERSION_ARG_MAPPING
+    - httpie.ssl_.DEFAULT_SSL_CIPHERS_STRING

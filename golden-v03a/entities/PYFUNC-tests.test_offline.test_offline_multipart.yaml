@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_offline.test_offline_multipart
+kind: entity
+type: py.function
+name: test_offline_multipart
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_offline.py
+anchors:
+- type: symbol
+  value: tests.test_offline.test_offline_multipart
+- type: fingerprint
+  value: 51c0bf1478463cce76de6faecc73c0c525c06a6669d0c34b5e9a63a7a5647b69
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_offline

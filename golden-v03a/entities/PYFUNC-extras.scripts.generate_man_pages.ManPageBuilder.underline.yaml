@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-extras.scripts.generate_man_pages.ManPageBuilder.underline
+kind: entity
+type: py.function
+name: underline
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: extras/scripts/generate_man_pages.py
+anchors:
+- type: symbol
+  value: extras.scripts.generate_man_pages.ManPageBuilder.underline
+- type: fingerprint
+  value: 04c69aba9e41ade484cfd5df891196200ba98da4f88953fbe44c8ea6d03fb86b
+  algo: sha256
+claims: []
+relations: []
+namespace: extras.scripts.generate_man_pages.ManPageBuilder

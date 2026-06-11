@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_errors.test_error_traceback
+kind: entity
+type: py.function
+name: test_error_traceback
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_errors.py
+anchors:
+- type: symbol
+  value: tests.test_errors.test_error_traceback
+- type: fingerprint
+  value: 3fd457f0c8c99a401e0eb03478aa642efeb5c2d68b34e0a008fd1fd4abe0e233
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_errors

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-tests.utils.BytesCLIResponse
+kind: entity
+type: py.class
+name: BytesCLIResponse
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/utils/__init__.py
+anchors:
+- type: symbol
+  value: tests.utils.BytesCLIResponse
+- type: fingerprint
+  value: a246e8f51d5434b619a1042bd6fbdf9ae9ddda6257bf2530d2c5735b88629fce
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils

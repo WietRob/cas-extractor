@@ -1,0 +1,34 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-4010d62c
+kind: evidence
+type: py.symbols
+created_at: '2026-02-23T05:34:05.968540+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: /tmp/h26-verify
+  revision: git:test
+payload:
+  symbols:
+  - qualified: test_h26.TestH26Unknown.setup
+    kind: method
+    file: test_h26.py
+    range:
+      start_line: 95
+      start_col: 0
+      end_line: 96
+      end_col: 0
+    fingerprint: b5260787ce15700c263638eb24b27dc3df081ec8bf8c248621b6f5f4432ed37b
+    params:
+    - name: self
+  - qualified: test_h26.TestH26Unknown.run
+    kind: method
+    file: test_h26.py
+    range:
+      start_line: 98
+      start_col: 0
+      end_line: 100
+      end_col: 0
+    fingerprint: e094e56f8b11cf025f9023b4a95e1bee83ea11c2efbef0f10f183a5c590a8802
+    params:
+    - name: self

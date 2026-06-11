@@ -1,0 +1,480 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-fe8b30e6
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T12:13:53.705149+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.CO_AUTHORS
+  - symbol: ?.DB_FILE.open
+  - symbol: ?.co_author.group
+  - symbol: ?.committers.add
+  - symbol: ?.committers.remove
+  - symbol: ?.contributors.items
+  - symbol: ?.data.update
+  - symbol: ?.fh.write
+  - symbol: ?.people.items
+  - symbol: ?.reporters.add
+  - symbol: ?.reporters.remove
+  - symbol: ?.req.json
+  - symbol: ?.req.raise_for_status
+  - symbol: copy.deepcopy
+  - symbol: datetime.datetime.strptime
+  - symbol: datetime.datetime.utcnow
+  - symbol: docs.contributors.fetch.FinishedForNow
+  - symbol: docs.contributors.fetch.debug
+  - symbol: docs.contributors.fetch.fetch
+  - symbol: docs.contributors.fetch.fetch_missing_users_details
+  - symbol: docs.contributors.fetch.find_committers
+  - symbol: docs.contributors.fetch.find_reporters
+  - symbol: docs.contributors.fetch.load_awesome_people
+  - symbol: docs.contributors.fetch.main
+  - symbol: docs.contributors.fetch.merge_all_the_people
+  - symbol: docs.contributors.fetch.new_person
+  - symbol: docs.contributors.fetch.release_date
+  - symbol: docs.contributors.fetch.save_awesome_people
+  - symbol: docs.contributors.fetch.user
+  - symbol: json.dump
+  - symbol: json.load
+  - symbol: os.getenv
+  - symbol: requests.get
+  - symbol: subprocess.check_output
+  - symbol: time.sleep
+  edges:
+  - from: docs.contributors.fetch.main
+    to: docs.contributors.fetch.release_date
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 45
+      start_col: 0
+      end_line: 45
+      end_col: 0
+  - from: docs.contributors.fetch.main
+    to: docs.contributors.fetch.release_date
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 46
+      start_col: 0
+      end_line: 46
+      end_col: 0
+  - from: docs.contributors.fetch.main
+    to: docs.contributors.fetch.load_awesome_people
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 48
+      start_col: 0
+      end_line: 48
+      end_col: 0
+  - from: docs.contributors.fetch.main
+    to: docs.contributors.fetch.save_awesome_people
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 67
+      start_col: 0
+      end_line: 67
+      end_col: 0
+  - from: docs.contributors.fetch.merge_all_the_people
+    to: ?.contributors.items
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 148
+      start_col: 0
+      end_line: 148
+      end_col: 0
+  - from: docs.contributors.fetch.new_person
+    to: copy.deepcopy
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 219
+      start_col: 0
+      end_line: 219
+      end_col: 0
+  - from: docs.contributors.fetch.new_person
+    to: ?.data.update
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 220
+      start_col: 0
+      end_line: 220
+      end_col: 0
+  - from: docs.contributors.fetch.fetch_missing_users_details
+    to: ?.people.items
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 242
+      start_col: 0
+      end_line: 242
+      end_col: 0
+  - from: docs.contributors.fetch.main
+    to: docs.contributors.fetch.find_committers
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 50
+      start_col: 0
+      end_line: 50
+      end_col: 0
+  - from: docs.contributors.fetch.main
+    to: docs.contributors.fetch.find_reporters
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 51
+      start_col: 0
+      end_line: 51
+      end_col: 0
+  - from: docs.contributors.fetch.main
+    to: docs.contributors.fetch.merge_all_the_people
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 57
+      start_col: 0
+      end_line: 57
+      end_col: 0
+  - from: docs.contributors.fetch.main
+    to: docs.contributors.fetch.fetch_missing_users_details
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 58
+      start_col: 0
+      end_line: 58
+      end_col: 0
+  - from: docs.contributors.fetch.find_committers
+    to: docs.contributors.fetch.fetch
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 84
+      start_col: 0
+      end_line: 84
+      end_col: 0
+  - from: docs.contributors.fetch.find_reporters
+    to: docs.contributors.fetch.fetch
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 113
+      start_col: 0
+      end_line: 113
+      end_col: 0
+  - from: docs.contributors.fetch.merge_all_the_people
+    to: docs.contributors.fetch.user
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 160
+      start_col: 0
+      end_line: 160
+      end_col: 0
+  - from: docs.contributors.fetch.merge_all_the_people
+    to: docs.contributors.fetch.new_person
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 161
+      start_col: 0
+      end_line: 165
+      end_col: 0
+  - from: docs.contributors.fetch.merge_all_the_people
+    to: docs.contributors.fetch.user
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 172
+      start_col: 0
+      end_line: 172
+      end_col: 0
+  - from: docs.contributors.fetch.merge_all_the_people
+    to: docs.contributors.fetch.new_person
+    kind: call
+    edge_id: 17
+    range:
+      start_line: 173
+      start_col: 0
+      end_line: 177
+      end_col: 0
+  - from: docs.contributors.fetch.fetch
+    to: docs.contributors.fetch.debug
+    kind: call
+    edge_id: 18
+    range:
+      start_line: 199
+      start_col: 0
+      end_line: 199
+      end_col: 0
+  - from: docs.contributors.fetch.user
+    to: docs.contributors.fetch.fetch
+    kind: call
+    edge_id: 19
+    range:
+      start_line: 227
+      start_col: 0
+      end_line: 227
+      end_col: 0
+  - from: docs.contributors.fetch.user
+    to: docs.contributors.fetch.fetch
+    kind: call
+    edge_id: 20
+    range:
+      start_line: 235
+      start_col: 0
+      end_line: 235
+      end_col: 0
+  - from: docs.contributors.fetch.fetch_missing_users_details
+    to: docs.contributors.fetch.user
+    kind: call
+    edge_id: 21
+    range:
+      start_line: 245
+      start_col: 0
+      end_line: 245
+      end_col: 0
+  - from: docs.contributors.fetch.save_awesome_people
+    to: ?.DB_FILE.open
+    kind: call
+    edge_id: 22
+    range:
+      start_line: 253
+      start_col: 0
+      end_line: 253
+      end_col: 0
+  - from: docs.contributors.fetch.save_awesome_people
+    to: json.dump
+    kind: call
+    edge_id: 23
+    range:
+      start_line: 254
+      start_col: 0
+      end_line: 254
+      end_col: 0
+  - from: docs.contributors.fetch.save_awesome_people
+    to: ?.fh.write
+    kind: call
+    edge_id: 24
+    range:
+      start_line: 255
+      start_col: 0
+      end_line: 255
+      end_col: 0
+  - from: docs.contributors.fetch.debug
+    to: os.getenv
+    kind: call
+    edge_id: 25
+    range:
+      start_line: 259
+      start_col: 0
+      end_line: 259
+      end_col: 0
+  - from: docs.contributors.fetch.find_committers
+    to: ?.committers.add
+    kind: call
+    edge_id: 26
+    range:
+      start_line: 88
+      start_col: 0
+      end_line: 88
+      end_col: 0
+  - from: docs.contributors.fetch.find_committers
+    to: docs.contributors.fetch.debug
+    kind: call
+    edge_id: 27
+    range:
+      start_line: 89
+      start_col: 0
+      end_line: 89
+      end_col: 0
+  - from: docs.contributors.fetch.find_committers
+    to: ?.CO_AUTHORS
+    kind: call
+    edge_id: 28
+    range:
+      start_line: 90
+      start_col: 0
+      end_line: 90
+      end_col: 0
+  - from: docs.contributors.fetch.find_reporters
+    to: docs.contributors.fetch.debug
+    kind: call
+    edge_id: 29
+    range:
+      start_line: 119
+      start_col: 0
+      end_line: 119
+      end_col: 0
+  - from: docs.contributors.fetch.find_reporters
+    to: ?.reporters.add
+    kind: call
+    edge_id: 30
+    range:
+      start_line: 120
+      start_col: 0
+      end_line: 120
+      end_col: 0
+  - from: docs.contributors.fetch.merge_all_the_people
+    to: ?.committers.remove
+    kind: call
+    edge_id: 31
+    range:
+      start_line: 152
+      start_col: 0
+      end_line: 152
+      end_col: 0
+  - from: docs.contributors.fetch.merge_all_the_people
+    to: ?.reporters.remove
+    kind: call
+    edge_id: 32
+    range:
+      start_line: 156
+      start_col: 0
+      end_line: 156
+      end_col: 0
+  - from: docs.contributors.fetch.merge_all_the_people
+    to: ?.reporters.remove
+    kind: call
+    edge_id: 33
+    range:
+      start_line: 168
+      start_col: 0
+      end_line: 168
+      end_col: 0
+  - from: docs.contributors.fetch.release_date
+    to: subprocess.check_output
+    kind: call
+    edge_id: 34
+    range:
+      start_line: 181
+      start_col: 0
+      end_line: 181
+      end_col: 0
+  - from: docs.contributors.fetch.release_date
+    to: datetime.datetime.strptime
+    kind: call
+    edge_id: 35
+    range:
+      start_line: 182
+      start_col: 0
+      end_line: 182
+      end_col: 0
+  - from: docs.contributors.fetch.load_awesome_people
+    to: ?.DB_FILE.open
+    kind: call
+    edge_id: 36
+    range:
+      start_line: 187
+      start_col: 0
+      end_line: 187
+      end_col: 0
+  - from: docs.contributors.fetch.load_awesome_people
+    to: json.load
+    kind: call
+    edge_id: 37
+    range:
+      start_line: 188
+      start_col: 0
+      end_line: 188
+      end_col: 0
+  - from: docs.contributors.fetch.fetch
+    to: requests.get
+    kind: call
+    edge_id: 38
+    range:
+      start_line: 200
+      start_col: 0
+      end_line: 200
+      end_col: 0
+  - from: docs.contributors.fetch.fetch
+    to: ?.req.json
+    kind: call
+    edge_id: 39
+    range:
+      start_line: 214
+      start_col: 0
+      end_line: 214
+      end_col: 0
+  - from: docs.contributors.fetch.user
+    to: docs.contributors.fetch.fetch
+    kind: call
+    edge_id: 40
+    range:
+      start_line: 238
+      start_col: 0
+      end_line: 238
+      end_col: 0
+  - from: docs.contributors.fetch.find_committers
+    to: ?.co_author.group
+    kind: call
+    edge_id: 41
+    range:
+      start_line: 91
+      start_col: 0
+      end_line: 91
+      end_col: 0
+  - from: docs.contributors.fetch.find_committers
+    to: ?.committers.add
+    kind: call
+    edge_id: 42
+    range:
+      start_line: 92
+      start_col: 0
+      end_line: 92
+      end_col: 0
+  - from: docs.contributors.fetch.fetch
+    to: ?.req.raise_for_status
+    kind: call
+    edge_id: 43
+    range:
+      start_line: 202
+      start_col: 0
+      end_line: 202
+      end_col: 0
+  - from: docs.contributors.fetch.fetch
+    to: docs.contributors.fetch.debug
+    kind: call
+    edge_id: 44
+    range:
+      start_line: 211
+      start_col: 0
+      end_line: 211
+      end_col: 0
+  - from: docs.contributors.fetch.fetch
+    to: time.sleep
+    kind: call
+    edge_id: 45
+    range:
+      start_line: 212
+      start_col: 0
+      end_line: 212
+      end_col: 0
+  - from: docs.contributors.fetch.fetch
+    to: docs.contributors.fetch.FinishedForNow
+    kind: call
+    edge_id: 46
+    range:
+      start_line: 210
+      start_col: 0
+      end_line: 210
+      end_col: 0
+  - from: docs.contributors.fetch.fetch
+    to: datetime.datetime.utcnow
+    kind: call
+    edge_id: 47
+    range:
+      start_line: 206
+      start_col: 0
+      end_line: 206
+      end_col: 0

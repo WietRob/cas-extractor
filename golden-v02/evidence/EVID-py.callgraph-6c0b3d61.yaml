@@ -1,0 +1,359 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-6c0b3d61
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:34.409585+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.process_1.communicate
+  - symbol: ?.process_1.terminate
+  - symbol: ?.process_2.communicate
+  - symbol: ?.process_2.terminate
+  - symbol: ?.r.count
+  - symbol: fixtures.FILE_PATH.read_bytes
+  - symbol: json.dumps
+  - symbol: subprocess.Popen
+  - symbol: tests.test_uploads.stdin_processes
+  - symbol: tests.test_uploads.test_chunked_form
+  - symbol: tests.test_uploads.test_chunked_json
+  - symbol: tests.test_uploads.test_chunked_raw
+  - symbol: tests.test_uploads.test_chunked_stdin
+  - symbol: tests.test_uploads.test_chunked_stdin_multiple_chunks
+  - symbol: tests.test_uploads.test_reading_from_stdin
+  - symbol: tests.test_uploads.test_stdin_read_warning
+  - symbol: tests.test_uploads.test_stdin_read_warning_blocking_exit
+  - symbol: tests.test_uploads.test_stdin_read_warning_with_quiet
+  - symbol: time.sleep
+  - symbol: utils.MockEnvironment
+  - symbol: utils.StdinBytesIO
+  - symbol: utils.http
+  edges:
+  - from: tests.test_uploads.test_chunked_json
+    to: utils.http
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 25
+      start_col: 0
+      end_line: 30
+      end_col: 0
+  - from: tests.test_uploads.test_chunked_form
+    to: utils.http
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 37
+      start_col: 0
+      end_line: 43
+      end_col: 0
+  - from: tests.test_uploads.test_chunked_stdin
+    to: utils.http
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 50
+      start_col: 0
+      end_line: 58
+      end_col: 0
+  - from: tests.test_uploads.test_chunked_stdin_multiple_chunks
+    to: fixtures.FILE_PATH.read_bytes
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 65
+      start_col: 0
+      end_line: 65
+      end_col: 0
+  - from: tests.test_uploads.test_chunked_stdin_multiple_chunks
+    to: utils.http
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 67
+      start_col: 0
+      end_line: 76
+      end_col: 0
+  - from: tests.test_uploads.test_chunked_raw
+    to: utils.http
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 83
+      start_col: 0
+      end_line: 89
+      end_col: 0
+  - from: tests.test_uploads.stdin_processes
+    to: subprocess.Popen
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 96
+      start_col: 0
+      end_line: 102
+      end_col: 0
+  - from: tests.test_uploads.stdin_processes
+    to: subprocess.Popen
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 103
+      start_col: 0
+      end_line: 117
+      end_col: 0
+  - from: tests.test_uploads.test_chunked_json
+    to: ?.r.count
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 33
+      start_col: 0
+      end_line: 33
+      end_col: 0
+  - from: tests.test_uploads.test_chunked_form
+    to: ?.r.count
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 46
+      start_col: 0
+      end_line: 46
+      end_col: 0
+  - from: tests.test_uploads.test_chunked_stdin
+    to: ?.r.count
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 61
+      start_col: 0
+      end_line: 61
+      end_col: 0
+  - from: tests.test_uploads.test_chunked_stdin_multiple_chunks
+    to: ?.r.count
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 79
+      start_col: 0
+      end_line: 79
+      end_col: 0
+  - from: tests.test_uploads.test_chunked_raw
+    to: json.dumps
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 88
+      start_col: 0
+      end_line: 88
+      end_col: 0
+  - from: tests.test_uploads.stdin_processes
+    to: ?.process_1.terminate
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 121
+      start_col: 0
+      end_line: 121
+      end_col: 0
+  - from: tests.test_uploads.stdin_processes
+    to: ?.process_2.terminate
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 122
+      start_col: 0
+      end_line: 122
+      end_col: 0
+  - from: tests.test_uploads.test_reading_from_stdin
+    to: tests.test_uploads.stdin_processes
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 129
+      start_col: 0
+      end_line: 129
+      end_col: 0
+  - from: tests.test_uploads.test_reading_from_stdin
+    to: ?.process_1.communicate
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 130
+      start_col: 0
+      end_line: 130
+      end_col: 0
+  - from: tests.test_uploads.test_stdin_read_warning
+    to: tests.test_uploads.stdin_processes
+    kind: call
+    edge_id: 17
+    range:
+      start_line: 147
+      start_col: 0
+      end_line: 147
+      end_col: 0
+  - from: tests.test_uploads.test_stdin_read_warning
+    to: time.sleep
+    kind: call
+    edge_id: 18
+    range:
+      start_line: 149
+      start_col: 0
+      end_line: 149
+      end_col: 0
+  - from: tests.test_uploads.test_stdin_read_warning
+    to: ?.process_1.communicate
+    kind: call
+    edge_id: 19
+    range:
+      start_line: 150
+      start_col: 0
+      end_line: 150
+      end_col: 0
+  - from: tests.test_uploads.test_stdin_read_warning_with_quiet
+    to: tests.test_uploads.stdin_processes
+    kind: call
+    edge_id: 20
+    range:
+      start_line: 163
+      start_col: 0
+      end_line: 163
+      end_col: 0
+  - from: tests.test_uploads.test_stdin_read_warning_with_quiet
+    to: time.sleep
+    kind: call
+    edge_id: 21
+    range:
+      start_line: 165
+      start_col: 0
+      end_line: 165
+      end_col: 0
+  - from: tests.test_uploads.test_stdin_read_warning_with_quiet
+    to: ?.process_1.communicate
+    kind: call
+    edge_id: 22
+    range:
+      start_line: 166
+      start_col: 0
+      end_line: 166
+      end_col: 0
+  - from: tests.test_uploads.test_stdin_read_warning_blocking_exit
+    to: tests.test_uploads.stdin_processes
+    kind: call
+    edge_id: 23
+    range:
+      start_line: 180
+      start_col: 0
+      end_line: 180
+      end_col: 0
+  - from: tests.test_uploads.test_stdin_read_warning_blocking_exit
+    to: time.sleep
+    kind: call
+    edge_id: 24
+    range:
+      start_line: 182
+      start_col: 0
+      end_line: 182
+      end_col: 0
+  - from: tests.test_uploads.test_stdin_read_warning_blocking_exit
+    to: ?.process_1.communicate
+    kind: call
+    edge_id: 25
+    range:
+      start_line: 183
+      start_col: 0
+      end_line: 183
+      end_col: 0
+  - from: tests.test_uploads.test_stdin_read_warning_blocking_exit
+    to: ?.process_2.communicate
+    kind: call
+    edge_id: 26
+    range:
+      start_line: 187
+      start_col: 0
+      end_line: 187
+      end_col: 0
+  - from: tests.test_uploads.test_chunked_stdin
+    to: utils.MockEnvironment
+    kind: call
+    edge_id: 27
+    range:
+      start_line: 54
+      start_col: 0
+      end_line: 57
+      end_col: 0
+  - from: tests.test_uploads.test_chunked_stdin_multiple_chunks
+    to: utils.MockEnvironment
+    kind: call
+    edge_id: 28
+    range:
+      start_line: 71
+      start_col: 0
+      end_line: 75
+      end_col: 0
+  - from: tests.test_uploads.test_reading_from_stdin
+    to: time.sleep
+    kind: call
+    edge_id: 29
+    range:
+      start_line: 134
+      start_col: 0
+      end_line: 134
+      end_col: 0
+  - from: tests.test_uploads.test_reading_from_stdin
+    to: ?.process_2.communicate
+    kind: call
+    edge_id: 30
+    range:
+      start_line: 137
+      start_col: 0
+      end_line: 137
+      end_col: 0
+  - from: tests.test_uploads.test_stdin_read_warning
+    to: ?.process_2.communicate
+    kind: call
+    edge_id: 31
+    range:
+      start_line: 153
+      start_col: 0
+      end_line: 153
+      end_col: 0
+  - from: tests.test_uploads.test_stdin_read_warning_with_quiet
+    to: ?.process_2.communicate
+    kind: call
+    edge_id: 32
+    range:
+      start_line: 169
+      start_col: 0
+      end_line: 169
+      end_col: 0
+  - from: tests.test_uploads.test_chunked_stdin
+    to: utils.StdinBytesIO
+    kind: call
+    edge_id: 33
+    range:
+      start_line: 55
+      start_col: 0
+      end_line: 55
+      end_col: 0
+  - from: tests.test_uploads.test_chunked_stdin_multiple_chunks
+    to: utils.StdinBytesIO
+    kind: call
+    edge_id: 34
+    range:
+      start_line: 72
+      start_col: 0
+      end_line: 72
+      end_col: 0
+  - from: tests.test_uploads.test_chunked_stdin
+    to: fixtures.FILE_PATH.read_bytes
+    kind: call
+    edge_id: 35
+    range:
+      start_line: 55
+      start_col: 0
+      end_line: 55
+      end_col: 0

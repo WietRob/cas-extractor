@@ -1,0 +1,49 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-b9f7950d
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:53.077996+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.utils.JsonDictPreservingDuplicateKeys.__init__
+    kind: method
+    file: httpie/utils.py
+    range:
+      start_line: 36
+      start_col: 0
+      end_line: 38
+      end_col: 0
+    fingerprint: ffd0f9e380855a76c6594989d645af536df3f7b04814d197ddae2f55381981cf
+    params:
+    - name: self
+    - name: items
+      annotation: Items
+  - qualified: httpie.utils.JsonDictPreservingDuplicateKeys._ensure_items_used
+    kind: method
+    file: httpie/utils.py
+    range:
+      start_line: 40
+      start_col: 0
+      end_line: 63
+      end_col: 0
+    fingerprint: 7c91250328ee5141146e5ed7c27425d57e78ece4d9a629df923d70f6a910ffef
+    params:
+    - name: self
+    returns: None
+  - qualified: httpie.utils.JsonDictPreservingDuplicateKeys.items
+    kind: method
+    file: httpie/utils.py
+    range:
+      start_line: 65
+      start_col: 0
+      end_line: 69
+      end_col: 0
+    fingerprint: 3856461e2c167252d48d36af69e482b6bed013faee2ef90133eedd11065d4205
+    params:
+    - name: self
+    returns: Items

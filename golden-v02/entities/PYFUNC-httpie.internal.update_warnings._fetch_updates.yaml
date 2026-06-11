@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.internal.update_warnings._fetch_updates
+kind: entity
+type: py.function
+name: _fetch_updates
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/internal/update_warnings.py
+anchors:
+- type: symbol
+  value: httpie.internal.update_warnings._fetch_updates
+- type: fingerprint
+  value: af64eb7e4a0839b6e348af5f8c028e5bea126d058040fe4d7e71d2125fea0756
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.internal.update_warnings

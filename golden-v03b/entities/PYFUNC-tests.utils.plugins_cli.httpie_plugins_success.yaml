@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.utils.plugins_cli.httpie_plugins_success
+kind: entity
+type: py.function
+name: httpie_plugins_success
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/utils/plugins_cli.py
+anchors:
+- type: symbol
+  value: tests.utils.plugins_cli.httpie_plugins_success
+- type: fingerprint
+  value: 396e5c73b162f0fec7b6cb31b26fe46cd2bbd2dc9609a2e166bbc4660df75b0b
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils.plugins_cli

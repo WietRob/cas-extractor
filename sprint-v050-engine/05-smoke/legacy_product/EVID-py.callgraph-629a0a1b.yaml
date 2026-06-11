@@ -1,0 +1,70 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-629a0a1b
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-26T06:35:11.674357+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://product
+  root: ./cas_extractor
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: cas_extractor.resolvers.base.ResolutionResult
+  - symbol: cas_extractor.resolvers.base.ResolutionStep
+  - symbol: resolvers.static.StaticResolver.try_resolve
+  edges:
+  - from: resolvers.static.StaticResolver.try_resolve
+    to: cas_extractor.resolvers.base.ResolutionResult
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 28
+      start_col: 0
+      end_line: 40
+      end_col: 0
+  - from: resolvers.static.StaticResolver.try_resolve
+    to: cas_extractor.resolvers.base.ResolutionResult
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 44
+      start_col: 0
+      end_line: 56
+      end_col: 0
+  - from: resolvers.static.StaticResolver.try_resolve
+    to: cas_extractor.resolvers.base.ResolutionResult
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 59
+      start_col: 0
+      end_line: 71
+      end_col: 0
+  - from: resolvers.static.StaticResolver.try_resolve
+    to: cas_extractor.resolvers.base.ResolutionStep
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 33
+      start_col: 0
+      end_line: 38
+      end_col: 0
+  - from: resolvers.static.StaticResolver.try_resolve
+    to: cas_extractor.resolvers.base.ResolutionStep
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 49
+      start_col: 0
+      end_line: 54
+      end_col: 0
+  - from: resolvers.static.StaticResolver.try_resolve
+    to: cas_extractor.resolvers.base.ResolutionStep
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 64
+      start_col: 0
+      end_line: 69
+      end_col: 0

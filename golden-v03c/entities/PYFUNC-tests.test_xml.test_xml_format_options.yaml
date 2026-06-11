@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_xml.test_xml_format_options
+kind: entity
+type: py.function
+name: test_xml_format_options
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_xml.py
+anchors:
+- type: symbol
+  value: tests.test_xml.test_xml_format_options
+- type: fingerprint
+  value: f9e2f88c46b5d043a7eac6cf45bcf6e5af31052ae4698ab0e098a5e4d0ef29c7
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_xml

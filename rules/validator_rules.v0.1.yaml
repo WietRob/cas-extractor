@@ -1,0 +1,178 @@
+# CAS Semantic Validation Rules v0.1
+# These rules run AFTER structural JSON Schema validation
+
+metadata:
+  version: "0.1"
+  description: "Semantic validation rules for CAS artifacts"
+
+# Evidence Level Definitions (reference)
+evidence_levels:
+  E0:
+    name: "direct"
+    description: "Directly extracted from AST/parse tree/symbol table"
+  E1:
+    name: "derived"
+    description: "Deterministically derived from callgraph/import graph/CFG"
+  E2:
+    name: "heuristic"
+    description: "Heuristically inferred from naming, strings, conventions"
+  E3:
+    name: "hypothesis"
+    description: "Hypothesis - not provable from available evidence"
+
+# Relation Type -> Min Expected Evidence Level
+relation_evidence_expectations:
+  imports:
+    min_level: E0
+    recommended_evidence: ["py.importgraph", "web.importgraph"]
+    description: "Import relations should be E0 (direct from AST)"
+  
+  exports:
+    min_level: E0
+    recommended_evidence: ["py.symbols", "web.exports"]
+    description: "Export relations should be E0 (direct from AST)"
+  
+  contains:
+    min_level: E0
+    recommended_evidence: ["py.symbols"]
+    description: "Containment relations should be E0"
+  
+  calls:
+    min_level: E1
+    recommended_evidence: ["py.callgraph"]
+    description: "Call relations should be at least E1 (from callgraph)"
+    allow_E2: warn
+    # E2 calls get a warning
+  
+  renders:
+    min_level: E1
+    recommended_evidence: ["web.jsx_tree"]
+    description: "JSX render relations - E1 or E2 acceptable"
+    allow_E2: true
+  
+  uses:
+    min_level: E1
+    recommended_evidence: ["py.callgraph", "web.importgraph"]
+    description: "Hook/usage relations"
+  
+  reads:
+    min_level: E1
+    recommended_evidence: []
+    description: "Data read relations - typically E1/E2"
+    allow_E2: true
+  
+  writes:
+    min_level: E1
+    recommended_evidence: []
+    description: "Data write relations - typically E1/E2"
+    allow_E2: true
+  
+  exposes:
+    min_level: E1
+    recommended_evidence: ["py.symbols", "web.exports"]
+    description: "API endpoint exposure"
+  
+  consumes:
+    min_level: E1
+    recommended_evidence: ["web.importgraph"]
+    description: "API client consumption"
+  
+  tests:
+    min_level: E1
+    recommended_evidence: []
+    description: "Test coverage relations"
+  
+  implements:
+    min_level: E1
+    recommended_evidence: []
+    description: "Requirement implementation relations"
+
+# Semantic Validation Rules (R1-R6)
+rules:
+  R1:
+    name: "no_naked_claims"
+    description: "Every claim must have evidence OR be E3+provisional"
+    severity: error
+    applies_to: ["entity"]
+    check: |
+      For each claim in claims[]:
+        IF confidence.level != "E3" OR confidence.direction != "provisional":
+          IF evidence is empty or missing:
+            FAIL
+    on_failure:
+      issue_type: "unproven"
+      message_template: "Claim {claim_id} lacks evidence and is not E3/provisional"
+
+  R2:
+    name: "claim_kind_enumeration"
+    description: "claim.kind must be in closed enumeration"
+    severity: error
+    applies_to: ["entity"]
+    check: |
+      For each claim in claims[]:
+        IF claim.kind not in [purpose, side_effect, invariant, constraint, dependency, assumption]:
+          FAIL
+    on_failure:
+      issue_type: "schema_error"
+      message_template: "Invalid claim kind: {claim_kind}"
+
+  R3:
+    name: "ext_registry_enforcement"
+    description: "Every ext namespace must have registered schema"
+    severity: error
+    applies_to: ["entity"]
+    check: |
+      For each key in ext:
+        IF no schema exists at schemas/ext/{key}.v0.1.schema.json:
+          FAIL
+    on_failure:
+      issue_type: "schema_error"
+      message_template: "Unregistered ext namespace: {namespace}"
+
+  R4:
+    name: "interface_integrity"
+    description: "Interface params must match symbol evidence"
+    severity: error
+    applies_to: ["entity"]
+    check: |
+      IF interface exists:
+        params[].name and params[].count must match py.symbols or web.exports evidence
+    on_failure:
+      issue_type: "unproven"
+      message_template: "Interface params mismatch with symbol evidence"
+
+  R5:
+    name: "relation_target_existence"
+    description: "Relation target must exist or create issue"
+    severity: warn
+    applies_to: ["entity", "relation"]
+    check: |
+      For each relation:
+        IF to/target entity does not exist:
+          CREATE ISSUE type=orphan or external_dependency
+    on_failure:
+      issue_type: "orphan"
+      message_template: "Relation target not found: {target_id}"
+
+  R6:
+    name: "anchor_minimum"
+    description: "Every entity must have at least one stable anchor"
+    severity: error
+    applies_to: ["entity"]
+    check: |
+      anchors[] must have at least one entry with type in [symbol, fingerprint]
+    on_failure:
+      issue_type: "schema_error"
+      message_template: "Entity lacks stable anchor (symbol or fingerprint)"
+
+  R7:
+    name: "confidence_direction_valid"
+    description: "Confidence direction must be appropriate for level"
+    severity: warn
+    applies_to: ["entity", "relation"]
+    check: |
+      IF confidence.level == "E3" AND confidence.direction == "confirmed":
+        WARN (E3 should not be confirmed)
+    on_failure:
+      issue_type: "ambiguous"
+      message_template: "E3 claims should not be marked as confirmed"

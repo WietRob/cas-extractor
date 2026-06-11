@@ -1,0 +1,36 @@
+=== T17: Structural Validation ===
+
+Sample file: golden-v04rc/evidence/EVID-py.callgraph-008f25bc.yaml
+
+--- File contents (first 15 lines) ---
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-008f25bc
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-22T08:37:45.700276+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: tests.test_offline.test_offline
+  - symbol: tests.test_offline.test_offline_chunked
+  - symbol: tests.test_offline.test_offline_download
+
+--- Required Field Check ---
+✅ schema: present
+✅ id: present
+✅ kind: present
+✅ type: present
+✅ created_at: present
+✅ created_by: present
+✅ source: present
+
+Structural validation: PASS ✅
+
+--- Evidence File Counts ---
+  py.symbols: 299
+  py.importgraph: 119
+  py.callgraph: 248

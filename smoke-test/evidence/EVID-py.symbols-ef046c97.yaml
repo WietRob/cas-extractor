@@ -1,0 +1,21 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-ef046c97
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:35:57.203230+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+payload:
+  symbols:
+  - qualified: cas_extractor
+    kind: module
+    file: cas_extractor/__init__.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 0
+      end_col: 0
+    fingerprint: 3543b4693a36a1098850b8bc928887694ed59a6deb7d3dfd0339de01f55a77b6

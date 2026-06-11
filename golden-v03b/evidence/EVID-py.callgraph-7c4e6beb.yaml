@@ -1,0 +1,484 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-7c4e6beb
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T15:03:56.524183+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.body.encode
+  - symbol: ?.handler.end_headers
+  - symbol: ?.handler.send_header
+  - symbol: ?.handler.send_response
+  - symbol: ?.options.items
+  - symbol: ?.payload.encode
+  - symbol: ?.raw_cookies.split
+  - symbol: ?.server.shutdown
+  - symbol: ?.thread.join
+  - symbol: ?.thread.start
+  - symbol: collections.defaultdict
+  - symbol: http.cookies.SimpleCookie
+  - symbol: http.server.HTTPServer
+  - symbol: json.dumps
+  - symbol: pytest.fixture
+  - symbol: tests.utils.http_server.TestHandler
+  - symbol: tests.utils.http_server.TestHandler.handler
+  - symbol: tests.utils.http_server._http_server
+  - symbol: tests.utils.http_server.chunked_drip
+  - symbol: tests.utils.http_server.get_cookies
+  - symbol: tests.utils.http_server.get_headers
+  - symbol: tests.utils.http_server.http_server
+  - symbol: tests.utils.http_server.localhost_http_server
+  - symbol: tests.utils.http_server.random_encoding
+  - symbol: tests.utils.http_server.set_cookie_and_redirect
+  - symbol: tests.utils.http_server.set_cookies
+  - symbol: tests.utils.http_server.status_custom_msg
+  - symbol: threading.Thread
+  - symbol: urllib.parse.parse_qs
+  - symbol: urllib.parse.urlparse
+  edges:
+  - from: tests.utils.http_server.get_headers
+    to: tests.utils.http_server.TestHandler.handler
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 36
+      start_col: 0
+      end_line: 36
+      end_col: 0
+  - from: tests.utils.http_server.chunked_drip
+    to: tests.utils.http_server.TestHandler.handler
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 45
+      start_col: 0
+      end_line: 45
+      end_col: 0
+  - from: tests.utils.http_server.random_encoding
+    to: tests.utils.http_server.TestHandler.handler
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 61
+      start_col: 0
+      end_line: 61
+      end_col: 0
+  - from: tests.utils.http_server.status_custom_msg
+    to: tests.utils.http_server.TestHandler.handler
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 82
+      start_col: 0
+      end_line: 82
+      end_col: 0
+  - from: tests.utils.http_server.get_cookies
+    to: tests.utils.http_server.TestHandler.handler
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 91
+      start_col: 0
+      end_line: 91
+      end_col: 0
+  - from: tests.utils.http_server.set_cookies
+    to: tests.utils.http_server.TestHandler.handler
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 108
+      start_col: 0
+      end_line: 108
+      end_col: 0
+  - from: tests.utils.http_server.set_cookie_and_redirect
+    to: tests.utils.http_server.TestHandler.handler
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 119
+      start_col: 0
+      end_line: 119
+      end_col: 0
+  - from: tests.utils.http_server.http_server
+    to: pytest.fixture
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 142
+      start_col: 0
+      end_line: 142
+      end_col: 0
+  - from: tests.utils.http_server.localhost_http_server
+    to: pytest.fixture
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 152
+      start_col: 0
+      end_line: 152
+      end_col: 0
+  - from: tests.utils.http_server.TestHandler
+    to: collections.defaultdict
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 15
+      start_col: 0
+      end_line: 15
+      end_col: 0
+  - from: tests.utils.http_server.get_headers
+    to: ?.handler.send_response
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 38
+      start_col: 0
+      end_line: 38
+      end_col: 0
+  - from: tests.utils.http_server.get_headers
+    to: ?.handler.send_header
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 41
+      start_col: 0
+      end_line: 41
+      end_col: 0
+  - from: tests.utils.http_server.get_headers
+    to: ?.handler.end_headers
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 42
+      start_col: 0
+      end_line: 42
+      end_col: 0
+  - from: tests.utils.http_server.chunked_drip
+    to: ?.handler.send_response
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 47
+      start_col: 0
+      end_line: 47
+      end_col: 0
+  - from: tests.utils.http_server.chunked_drip
+    to: ?.handler.send_header
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 51
+      start_col: 0
+      end_line: 51
+      end_col: 0
+  - from: tests.utils.http_server.chunked_drip
+    to: ?.handler.end_headers
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 52
+      start_col: 0
+      end_line: 52
+      end_col: 0
+  - from: tests.utils.http_server.random_encoding
+    to: ?.handler.send_response
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 65
+      start_col: 0
+      end_line: 65
+      end_col: 0
+  - from: tests.utils.http_server.random_encoding
+    to: ?.handler.send_header
+    kind: call
+    edge_id: 17
+    range:
+      start_line: 66
+      start_col: 0
+      end_line: 66
+      end_col: 0
+  - from: tests.utils.http_server.random_encoding
+    to: ?.handler.end_headers
+    kind: call
+    edge_id: 18
+    range:
+      start_line: 67
+      start_col: 0
+      end_line: 67
+      end_col: 0
+  - from: tests.utils.http_server.status_custom_msg
+    to: ?.handler.send_response
+    kind: call
+    edge_id: 19
+    range:
+      start_line: 87
+      start_col: 0
+      end_line: 87
+      end_col: 0
+  - from: tests.utils.http_server.status_custom_msg
+    to: ?.handler.end_headers
+    kind: call
+    edge_id: 20
+    range:
+      start_line: 88
+      start_col: 0
+      end_line: 88
+      end_col: 0
+  - from: tests.utils.http_server.get_cookies
+    to: json.dumps
+    kind: call
+    edge_id: 21
+    range:
+      start_line: 99
+      start_col: 0
+      end_line: 99
+      end_col: 0
+  - from: tests.utils.http_server.get_cookies
+    to: ?.handler.send_response
+    kind: call
+    edge_id: 22
+    range:
+      start_line: 101
+      start_col: 0
+      end_line: 101
+      end_col: 0
+  - from: tests.utils.http_server.get_cookies
+    to: ?.handler.send_header
+    kind: call
+    edge_id: 23
+    range:
+      start_line: 102
+      start_col: 0
+      end_line: 102
+      end_col: 0
+  - from: tests.utils.http_server.get_cookies
+    to: ?.handler.send_header
+    kind: call
+    edge_id: 24
+    range:
+      start_line: 103
+      start_col: 0
+      end_line: 103
+      end_col: 0
+  - from: tests.utils.http_server.get_cookies
+    to: ?.handler.end_headers
+    kind: call
+    edge_id: 25
+    range:
+      start_line: 104
+      start_col: 0
+      end_line: 104
+      end_col: 0
+  - from: tests.utils.http_server.set_cookies
+    to: urllib.parse.parse_qs
+    kind: call
+    edge_id: 26
+    range:
+      start_line: 110
+      start_col: 0
+      end_line: 110
+      end_col: 0
+  - from: tests.utils.http_server.set_cookies
+    to: ?.handler.send_response
+    kind: call
+    edge_id: 27
+    range:
+      start_line: 112
+      start_col: 0
+      end_line: 112
+      end_col: 0
+  - from: tests.utils.http_server.set_cookies
+    to: ?.options.items
+    kind: call
+    edge_id: 28
+    range:
+      start_line: 113
+      start_col: 0
+      end_line: 113
+      end_col: 0
+  - from: tests.utils.http_server.set_cookies
+    to: ?.handler.end_headers
+    kind: call
+    edge_id: 29
+    range:
+      start_line: 116
+      start_col: 0
+      end_line: 116
+      end_col: 0
+  - from: tests.utils.http_server.set_cookie_and_redirect
+    to: ?.handler.send_response
+    kind: call
+    edge_id: 30
+    range:
+      start_line: 121
+      start_col: 0
+      end_line: 121
+      end_col: 0
+  - from: tests.utils.http_server.set_cookie_and_redirect
+    to: ?.handler.send_header
+    kind: call
+    edge_id: 31
+    range:
+      start_line: 124
+      start_col: 0
+      end_line: 124
+      end_col: 0
+  - from: tests.utils.http_server.set_cookie_and_redirect
+    to: ?.raw_cookies.split
+    kind: call
+    edge_id: 32
+    range:
+      start_line: 127
+      start_col: 0
+      end_line: 127
+      end_col: 0
+  - from: tests.utils.http_server.set_cookie_and_redirect
+    to: ?.handler.end_headers
+    kind: call
+    edge_id: 33
+    range:
+      start_line: 129
+      start_col: 0
+      end_line: 129
+      end_col: 0
+  - from: tests.utils.http_server._http_server
+    to: http.server.HTTPServer
+    kind: call
+    edge_id: 34
+    range:
+      start_line: 134
+      start_col: 0
+      end_line: 134
+      end_col: 0
+  - from: tests.utils.http_server._http_server
+    to: threading.Thread
+    kind: call
+    edge_id: 35
+    range:
+      start_line: 135
+      start_col: 0
+      end_line: 135
+      end_col: 0
+  - from: tests.utils.http_server._http_server
+    to: ?.thread.start
+    kind: call
+    edge_id: 36
+    range:
+      start_line: 136
+      start_col: 0
+      end_line: 136
+      end_col: 0
+  - from: tests.utils.http_server._http_server
+    to: ?.server.shutdown
+    kind: call
+    edge_id: 37
+    range:
+      start_line: 138
+      start_col: 0
+      end_line: 138
+      end_col: 0
+  - from: tests.utils.http_server._http_server
+    to: ?.thread.join
+    kind: call
+    edge_id: 38
+    range:
+      start_line: 139
+      start_col: 0
+      end_line: 139
+      end_col: 0
+  - from: tests.utils.http_server.get_headers
+    to: ?.handler.send_header
+    kind: call
+    edge_id: 39
+    range:
+      start_line: 40
+      start_col: 0
+      end_line: 40
+      end_col: 0
+  - from: tests.utils.http_server.chunked_drip
+    to: ?.handler.send_header
+    kind: call
+    edge_id: 40
+    range:
+      start_line: 50
+      start_col: 0
+      end_line: 50
+      end_col: 0
+  - from: tests.utils.http_server.get_cookies
+    to: ?.payload.encode
+    kind: call
+    edge_id: 41
+    range:
+      start_line: 105
+      start_col: 0
+      end_line: 105
+      end_col: 0
+  - from: tests.utils.http_server.set_cookies
+    to: ?.handler.send_header
+    kind: call
+    edge_id: 42
+    range:
+      start_line: 114
+      start_col: 0
+      end_line: 114
+      end_col: 0
+  - from: tests.utils.http_server.set_cookie_and_redirect
+    to: ?.handler.send_header
+    kind: call
+    edge_id: 43
+    range:
+      start_line: 128
+      start_col: 0
+      end_line: 128
+      end_col: 0
+  - from: tests.utils.http_server.http_server
+    to: tests.utils.http_server._http_server
+    kind: call
+    edge_id: 44
+    range:
+      start_line: 148
+      start_col: 0
+      end_line: 148
+      end_col: 0
+  - from: tests.utils.http_server.localhost_http_server
+    to: tests.utils.http_server._http_server
+    kind: call
+    edge_id: 45
+    range:
+      start_line: 157
+      start_col: 0
+      end_line: 157
+      end_col: 0
+  - from: tests.utils.http_server.set_cookies
+    to: urllib.parse.urlparse
+    kind: call
+    edge_id: 46
+    range:
+      start_line: 110
+      start_col: 0
+      end_line: 110
+      end_col: 0
+  - from: tests.utils.http_server.get_cookies
+    to: http.cookies.SimpleCookie
+    kind: call
+    edge_id: 47
+    range:
+      start_line: 96
+      start_col: 0
+      end_line: 96
+      end_col: 0
+  - from: tests.utils.http_server.random_encoding
+    to: ?.body.encode
+    kind: call
+    edge_id: 48
+    range:
+      start_line: 77
+      start_col: 0
+      end_line: 77
+      end_col: 0

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.models.RequestsMessageKind
+kind: entity
+type: py.class
+name: RequestsMessageKind
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/models.py
+anchors:
+- type: symbol
+  value: httpie.models.RequestsMessageKind
+- type: fingerprint
+  value: 2c44c2fb349817421a2b20c030f842dc9e9782e6f564d24c4bcfc66ca7bf6e47
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.models

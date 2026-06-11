@@ -1,0 +1,54 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-db0fe5d4
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T15:03:56.291562+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: contextlib.nullcontext
+  - symbol: httpie.plugins.manager._load_directories
+  - symbol: httpie.plugins.manager.enable_plugins
+  - symbol: os.fspath
+  - symbol: utils.get_site_paths
+  edges:
+  - from: httpie.plugins.manager._load_directories
+    to: os.fspath
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 30
+      start_col: 0
+      end_line: 30
+      end_col: 0
+  - from: httpie.plugins.manager.enable_plugins
+    to: contextlib.nullcontext
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 43
+      start_col: 0
+      end_line: 43
+      end_col: 0
+  - from: httpie.plugins.manager.enable_plugins
+    to: httpie.plugins.manager._load_directories
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 45
+      start_col: 0
+      end_line: 45
+      end_col: 0
+  - from: httpie.plugins.manager.enable_plugins
+    to: utils.get_site_paths
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 45
+      start_col: 0
+      end_line: 45
+      end_col: 0

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.cli.nested_json.tokens.Path
+kind: entity
+type: py.class
+name: Path
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/cli/nested_json/tokens.py
+anchors:
+- type: symbol
+  value: httpie.cli.nested_json.tokens.Path
+- type: fingerprint
+  value: edc0161dbf93be47f4850644b50ee1f33416c649fc2ecc43d4905773b4873449
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.nested_json.tokens

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_downloads.TestDownloads.test_download_output_from_content_disposition
+kind: entity
+type: py.function
+name: test_download_output_from_content_disposition
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_downloads.py
+anchors:
+- type: symbol
+  value: tests.test_downloads.TestDownloads.test_download_output_from_content_disposition
+- type: fingerprint
+  value: c7e6eb1c71307dce724a28877d9d4e040fec67730a585864a5a2e54f295cb471
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_downloads.TestDownloads

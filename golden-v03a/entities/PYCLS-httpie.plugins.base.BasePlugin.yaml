@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.plugins.base.BasePlugin
+kind: entity
+type: py.class
+name: BasePlugin
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/plugins/base.py
+anchors:
+- type: symbol
+  value: httpie.plugins.base.BasePlugin
+- type: fingerprint
+  value: 23ccb7a998b1d2900d54b23eb1288e73761db02b230a736aef6acb5a48f93a89
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.plugins.base

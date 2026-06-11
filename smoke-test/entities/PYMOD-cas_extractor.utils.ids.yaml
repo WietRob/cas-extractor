@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-cas_extractor.utils.ids
+kind: entity
+type: py.module
+name: ids
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor/utils/ids.py
+anchors:
+- type: symbol
+  value: cas_extractor.utils.ids
+- type: fingerprint
+  value: 6a2fe27a73949c4a13833d9b2ff880474a53faaea0ebffa41d1d6c3af4c3e850
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor.utils

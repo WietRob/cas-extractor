@@ -1,0 +1,93 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-faa8177f
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T17:44:04.294521+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.cli.dicts
+    kind: module
+    file: httpie/cli/dicts.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 94
+      end_col: 0
+    fingerprint: 31a326510165d77603e218edb5afb20255f7b13e5fa35bd885e63a22c1f2a6d2
+  - qualified: httpie.cli.dicts.BaseMultiDict
+    kind: class
+    file: httpie/cli/dicts.py
+    range:
+      start_line: 6
+      start_col: 0
+      end_line: 9
+      end_col: 0
+    fingerprint: 37785b37aa478af3f17ba598dd3ca3d6e31647bf4212099c3f1494e4b96331bd
+  - qualified: httpie.cli.dicts.HTTPHeadersDict
+    kind: class
+    file: httpie/cli/dicts.py
+    range:
+      start_line: 12
+      start_col: 0
+      end_line: 46
+      end_col: 0
+    fingerprint: abfa300b49dbeecb9d4e5b475126251e0b8ea1b2dcb7b69736fdcc6d11d8da5d
+  - qualified: httpie.cli.dicts.RequestJSONDataDict
+    kind: class
+    file: httpie/cli/dicts.py
+    range:
+      start_line: 49
+      start_col: 0
+      end_line: 50
+      end_col: 0
+    fingerprint: b2eb7792f02f37d16a470333dfdd2479b8e5a5ba2e7335b31f9852c4d3ed4a1d
+  - qualified: httpie.cli.dicts.MultiValueOrderedDict
+    kind: class
+    file: httpie/cli/dicts.py
+    range:
+      start_line: 53
+      start_col: 0
+      end_line: 78
+      end_col: 0
+    fingerprint: 4de8c5dbf6c1cc6320ea9f5b935f69240c81bedad4c4d6bd957d22b3f93bf612
+  - qualified: httpie.cli.dicts.RequestQueryParamsDict
+    kind: class
+    file: httpie/cli/dicts.py
+    range:
+      start_line: 81
+      start_col: 0
+      end_line: 82
+      end_col: 0
+    fingerprint: be1e0d8a95a7e7c8f9f7bb5ac2e682e209b8ae0a0422e06c455f761df18389dd
+  - qualified: httpie.cli.dicts.RequestDataDict
+    kind: class
+    file: httpie/cli/dicts.py
+    range:
+      start_line: 85
+      start_col: 0
+      end_line: 86
+      end_col: 0
+    fingerprint: 037dd1487285ae2c342c69876a65d9dd1a1875cbcb1644ad8ee0896d44af043a
+  - qualified: httpie.cli.dicts.MultipartRequestDataDict
+    kind: class
+    file: httpie/cli/dicts.py
+    range:
+      start_line: 89
+      start_col: 0
+      end_line: 90
+      end_col: 0
+    fingerprint: 89874fffe339b01e8cd6a5701da28c88133c4d8a4896faf06163f8605ec6d0c9
+  - qualified: httpie.cli.dicts.RequestFilesDict
+    kind: class
+    file: httpie/cli/dicts.py
+    range:
+      start_line: 93
+      start_col: 0
+      end_line: 94
+      end_col: 0
+    fingerprint: 3ac2e0ae7f329d14b8c0cb82912030ec218b23504f5442c4d2f49d427f77f119

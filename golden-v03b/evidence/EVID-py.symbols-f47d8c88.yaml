@@ -1,0 +1,99 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-f47d8c88
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:55.281491+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.utils.matching.parsing
+    kind: module
+    file: tests/utils/matching/parsing.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 98
+      end_col: 0
+    fingerprint: a79518b9732f0831edbd70f9e99596b64eae9aa09f9ed519da075fba645ca3d1
+  - qualified: tests.utils.matching.parsing.make_headers_re
+    kind: function
+    file: tests/utils/matching/parsing.py
+    range:
+      start_line: 13
+      start_col: 0
+      end_line: 37
+      end_col: 0
+    fingerprint: cd9e5e1c388f7ec438d34d3c573823ec9bcbc835e35475020f4f56022bcb8bb9
+    params:
+    - name: message_type
+      annotation: Expect
+  - qualified: tests.utils.matching.parsing.OutputMatchingError
+    kind: class
+    file: tests/utils/matching/parsing.py
+    range:
+      start_line: 52
+      start_col: 0
+      end_line: 53
+      end_col: 0
+    fingerprint: 0581afb55510bbc59824f42e5607ad31ed3aa5b991017d9541d00373b64d0d51
+  - qualified: tests.utils.matching.parsing.expect_tokens
+    kind: function
+    file: tests/utils/matching/parsing.py
+    range:
+      start_line: 56
+      start_col: 0
+      end_line: 60
+      end_col: 0
+    fingerprint: cbc0e7c9b5e067eae16a323fce6b9a89d7067fb501f681fab959e713a4a5a32b
+    params:
+    - name: tokens
+      annotation: Iterable[Expect]
+    - name: s
+      annotation: str
+  - qualified: tests.utils.matching.parsing.expect_token
+    kind: function
+    file: tests/utils/matching/parsing.py
+    range:
+      start_line: 63
+      start_col: 0
+      end_line: 68
+      end_col: 0
+    fingerprint: 469d443e17c9daa066ce29706b07f046add27a2927434be455621723e0b9abf3
+    params:
+    - name: token
+      annotation: Expect
+    - name: s
+      annotation: str
+    returns: str
+  - qualified: tests.utils.matching.parsing.expect_regex
+    kind: function
+    file: tests/utils/matching/parsing.py
+    range:
+      start_line: 71
+      start_col: 0
+      end_line: 75
+      end_col: 0
+    fingerprint: 13d7f1bc1102cf044e5ca7ed57e13b1f76eab9bec4d963409b314a51e059da4f
+    params:
+    - name: token
+      annotation: Expect
+    - name: s
+      annotation: str
+    returns: str
+  - qualified: tests.utils.matching.parsing.expect_body
+    kind: function
+    file: tests/utils/matching/parsing.py
+    range:
+      start_line: 78
+      start_col: 0
+      end_line: 98
+      end_col: 0
+    fingerprint: 6d506ea1b389807ea0f4c6a00fe001ae7b31bba3507cf59e0747184bf67e51f4
+    params:
+    - name: s
+      annotation: str
+    returns: str

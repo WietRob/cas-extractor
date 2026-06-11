@@ -1,0 +1,97 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-af1805c1
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:52.907922+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: docs.installation.generate
+    kind: module
+    file: docs/installation/generate.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 85
+      end_col: 0
+    fingerprint: 6180a9b5547304e276ba45b33199ce19f5cefc6c2fdc5bf6256ee470bf330004
+  - qualified: docs.installation.generate.generate_documentation
+    kind: function
+    file: docs/installation/generate.py
+    range:
+      start_line: 26
+      start_col: 0
+      end_line: 32
+      end_col: 0
+    fingerprint: dd14f84fddc3633bc3d827e6fa9fe224be2f905489ff6fa96a9c4c571a498378
+    returns: str
+  - qualified: docs.installation.generate.save_doc_file
+    kind: function
+    file: docs/installation/generate.py
+    range:
+      start_line: 35
+      start_col: 0
+      end_line: 49
+      end_col: 0
+    fingerprint: a956fa3e6213977e73baa336cc1b0743f09c65794a68cfd02f2cf8095ec21308
+    params:
+    - name: content
+      annotation: str
+    returns: None
+  - qualified: docs.installation.generate.build_docs_structure
+    kind: function
+    file: docs/installation/generate.py
+    range:
+      start_line: 52
+      start_col: 0
+      end_line: 61
+      end_col: 0
+    fingerprint: f143fd4e6e15e53304a018fee837443550ad50c732908b6341e2e29e908e87e2
+    params:
+    - name: database
+      annotation: Database
+  - qualified: docs.installation.generate.clean_template_output
+    kind: function
+    file: docs/installation/generate.py
+    range:
+      start_line: 64
+      start_col: 0
+      end_line: 67
+      end_col: 0
+    fingerprint: 00f6d4ab0aca1afecd097dac755cd1194f341c9b37ad2ba1635ed76fa4cb5354
+    params:
+    - name: output
+  - qualified: docs.installation.generate.load_database
+    kind: function
+    file: docs/installation/generate.py
+    range:
+      start_line: 70
+      start_col: 0
+      end_line: 71
+      end_col: 0
+    fingerprint: 5177a8ade94141137be4bcb57269474e5b094d81efa44eb497d2b208d1bb2f80
+    returns: Database
+  - qualified: docs.installation.generate.load_doc_file
+    kind: function
+    file: docs/installation/generate.py
+    range:
+      start_line: 74
+      start_col: 0
+      end_line: 75
+      end_col: 0
+    fingerprint: 1370b69e4b666b7a821fa09cd1f6670a5dcb8b3de4e04f6d3eae11ccddef1c24
+    returns: str
+  - qualified: docs.installation.generate.main
+    kind: function
+    file: docs/installation/generate.py
+    range:
+      start_line: 78
+      start_col: 0
+      end_line: 81
+      end_col: 0
+    fingerprint: c8d2e16fa734e4255a0e4c6d079bc08ffeb81393f1dcc854f0b7f8f2ba6e18a5
+    returns: int

@@ -1,0 +1,24 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-fde78d14
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T12:13:53.942839+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.event.wait
+  - symbol: httpie.uploads.observe_stdin_for_data_thread.worker
+  edges:
+  - from: httpie.uploads.observe_stdin_for_data_thread.worker
+    to: ?.event.wait
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 112
+      start_col: 0
+      end_line: 112
+      end_col: 0

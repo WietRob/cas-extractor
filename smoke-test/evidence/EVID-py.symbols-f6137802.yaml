@@ -1,0 +1,49 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-f6137802
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:35:57.362665+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+payload:
+  symbols:
+  - qualified: cas_extractor_validators_semantic_validate.SemanticValidationResult.__init__
+    kind: method
+    file: cas_extractor_validators_semantic_validate.py
+    range:
+      start_line: 16
+      start_col: 0
+      end_line: 18
+      end_col: 0
+    fingerprint: 42a289f295eca5d8200ac5add144246c03b5206e00a1859fe3c8d167c3479d97
+    params:
+    - name: self
+  - qualified: cas_extractor_validators_semantic_validate.SemanticValidationResult.is_valid
+    kind: method
+    file: cas_extractor_validators_semantic_validate.py
+    range:
+      start_line: 21
+      start_col: 0
+      end_line: 22
+      end_col: 0
+    fingerprint: fac309266b04809b0b299dbcd0407bae5cacfe6ba42a10b01b4df1d592183b67
+    decorators:
+    - property
+    params:
+    - name: self
+    returns: bool
+  - qualified: cas_extractor_validators_semantic_validate.SemanticValidationResult.summary
+    kind: method
+    file: cas_extractor_validators_semantic_validate.py
+    range:
+      start_line: 24
+      start_col: 0
+      end_line: 30
+      end_col: 0
+    fingerprint: 75340fd618a24b2ee48e1e265eff45791beff44959517aea39e8087bdcf8abd1
+    params:
+    - name: self
+    returns: str

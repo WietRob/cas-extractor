@@ -1,0 +1,23 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-1283cddf
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T11:17:16.886630+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: /tmp/h25-verify
+  revision: git:test
+payload:
+  symbols:
+  - qualified: test_h25.TestH25Multiple.configure
+    kind: method
+    file: test_h25.py
+    range:
+      start_line: 26
+      start_col: 0
+      end_line: 30
+      end_col: 0
+    fingerprint: 3e775d4127fe12c948dfc161727e6f4b425b54e2d646335796897dfa6535592f
+    params:
+    - name: self

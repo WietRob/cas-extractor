@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-cas_extractor.models
+kind: entity
+type: py.module
+name: models
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor/models/__init__.py
+anchors:
+- type: symbol
+  value: cas_extractor.models
+- type: fingerprint
+  value: 3543b4693a36a1098850b8bc928887694ed59a6deb7d3dfd0339de01f55a77b6
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor

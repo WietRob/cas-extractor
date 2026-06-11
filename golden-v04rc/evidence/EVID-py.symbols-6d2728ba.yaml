@@ -1,0 +1,39 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-6d2728ba
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T08:37:44.562466+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.test_cli_utils
+    kind: module
+    file: tests/test_cli_utils.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 86
+      end_col: 0
+    fingerprint: 8d11d5bb9b4e77984ba7fd35632fe23e1f9943eb5154a69c457508916d00b82d
+  - qualified: tests.test_cli_utils.test_lazy_choices
+    kind: function
+    file: tests/test_cli_utils.py
+    range:
+      start_line: 7
+      start_col: 0
+      end_line: 49
+      end_col: 0
+    fingerprint: e6ba0c795bc2065e39b4d2678c6591c8cd2ca8d62ed92db7a315e082fe8c776a
+  - qualified: tests.test_cli_utils.test_lazy_choices_help
+    kind: function
+    file: tests/test_cli_utils.py
+    range:
+      start_line: 52
+      start_col: 0
+      end_line: 86
+      end_col: 0
+    fingerprint: 73a32b13ca66a23fd3f13469843f1cbed0934dbf172816e894f06b538c98be29

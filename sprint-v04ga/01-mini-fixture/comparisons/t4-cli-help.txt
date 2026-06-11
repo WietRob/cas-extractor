@@ -1,0 +1,19 @@
+usage: extract_python.py [-h] --repo-root REPO_ROOT --repo-name REPO_NAME
+                         --revision REVISION --out OUT [--skip-calls]
+                         [--emit-unresolved-self-attr EMIT_UNRESOLVED_SELF_ATTR]
+
+CAS Python Evidence Extractor
+
+options:
+  -h, --help            show this help message and exit
+  --repo-root REPO_ROOT
+                        Path to repository root
+  --repo-name REPO_NAME
+                        Repo identifier (e.g. repo://main)
+  --revision REVISION   Revision identifier (e.g. git:abcd1234)
+  --out OUT             Output directory for evidence artifacts
+  --skip-calls          Skip callgraph extraction
+  --emit-unresolved-self-attr EMIT_UNRESOLVED_SELF_ATTR
+                        Emit unresolved self.attr.method() calls (default:
+                        true). Set CAS_EMIT_UNRESOLVED_SELF_ATTR env var or
+                        use --emit-unresolved-self-attr false

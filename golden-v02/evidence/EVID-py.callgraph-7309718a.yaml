@@ -1,0 +1,211 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-7309718a
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:34.481627+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.interface.make_dummy_plugin
+  - symbol: ?.line.strip
+  - symbol: ?.stream.write
+  - symbol: dataclasses.field
+  - symbol: pytest.fixture
+  - symbol: secrets.token_hex
+  - symbol: tests.utils.MockEnvironment
+  - symbol: tests.utils.plugins_cli.EntryPoint
+  - symbol: tests.utils.plugins_cli.Interface
+  - symbol: tests.utils.plugins_cli.Plugin
+  - symbol: tests.utils.plugins_cli.broken_plugin
+  - symbol: tests.utils.plugins_cli.dummy_plugin
+  - symbol: tests.utils.plugins_cli.dummy_plugins
+  - symbol: tests.utils.plugins_cli.interface
+  - symbol: tests.utils.plugins_cli.make_name
+  - symbol: tests.utils.plugins_cli.parse_entry_point
+  - symbol: tests.utils.plugins_cli.parse_listing
+  - symbol: tests.utils.plugins_cli.parse_plugin
+  edges:
+  - from: tests.utils.plugins_cli.interface
+    to: pytest.fixture
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 166
+      start_col: 0
+      end_line: 166
+      end_col: 0
+  - from: tests.utils.plugins_cli.dummy_plugin
+    to: pytest.fixture
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 176
+      start_col: 0
+      end_line: 176
+      end_col: 0
+  - from: tests.utils.plugins_cli.broken_plugin
+    to: pytest.fixture
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 181
+      start_col: 0
+      end_line: 181
+      end_col: 0
+  - from: tests.utils.plugins_cli.dummy_plugins
+    to: pytest.fixture
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 189
+      start_col: 0
+      end_line: 189
+      end_col: 0
+  - from: tests.utils.plugins_cli.Plugin
+    to: dataclasses.field
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 40
+      start_col: 0
+      end_line: 40
+      end_col: 0
+  - from: tests.utils.plugins_cli.Plugin
+    to: dataclasses.field
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 42
+      start_col: 0
+      end_line: 42
+      end_col: 0
+  - from: tests.utils.plugins_cli.interface
+    to: tests.utils.plugins_cli.Interface
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 170
+      start_col: 0
+      end_line: 173
+      end_col: 0
+  - from: tests.utils.plugins_cli.dummy_plugin
+    to: ?.interface.make_dummy_plugin
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 178
+      start_col: 0
+      end_line: 178
+      end_col: 0
+  - from: tests.utils.plugins_cli.broken_plugin
+    to: ?.interface.make_dummy_plugin
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 183
+      start_col: 0
+      end_line: 183
+      end_col: 0
+  - from: tests.utils.plugins_cli.make_name
+    to: secrets.token_hex
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 24
+      start_col: 0
+      end_line: 24
+      end_col: 0
+  - from: tests.utils.plugins_cli.broken_plugin
+    to: ?.stream.write
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 185
+      start_col: 0
+      end_line: 185
+      end_col: 0
+  - from: tests.utils.plugins_cli.dummy_plugins
+    to: ?.interface.make_dummy_plugin
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 193
+      start_col: 0
+      end_line: 193
+      end_col: 0
+  - from: tests.utils.plugins_cli.dummy_plugins
+    to: ?.interface.make_dummy_plugin
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 194
+      start_col: 0
+      end_line: 196
+      end_col: 0
+  - from: tests.utils.plugins_cli.dummy_plugins
+    to: ?.interface.make_dummy_plugin
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 197
+      start_col: 0
+      end_line: 202
+      end_col: 0
+  - from: tests.utils.plugins_cli.parse_listing
+    to: ?.line.strip
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 144
+      start_col: 0
+      end_line: 144
+      end_col: 0
+  - from: tests.utils.plugins_cli.parse_listing
+    to: tests.utils.plugins_cli.parse_entry_point
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 150
+      start_col: 0
+      end_line: 150
+      end_col: 0
+  - from: tests.utils.plugins_cli.parse_listing
+    to: tests.utils.plugins_cli.parse_plugin
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 157
+      start_col: 0
+      end_line: 157
+      end_col: 0
+  - from: tests.utils.plugins_cli.interface
+    to: tests.utils.MockEnvironment
+    kind: call
+    edge_id: 17
+    range:
+      start_line: 172
+      start_col: 0
+      end_line: 172
+      end_col: 0
+  - from: tests.utils.plugins_cli.dummy_plugins
+    to: tests.utils.plugins_cli.EntryPoint
+    kind: call
+    edge_id: 18
+    range:
+      start_line: 199
+      start_col: 0
+      end_line: 199
+      end_col: 0
+  - from: tests.utils.plugins_cli.dummy_plugins
+    to: tests.utils.plugins_cli.EntryPoint
+    kind: call
+    edge_id: 19
+    range:
+      start_line: 200
+      start_col: 0
+      end_line: 200
+      end_col: 0

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-extras.profiling.run
+kind: entity
+type: py.module
+name: run
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: extras/profiling/run.py
+anchors:
+- type: symbol
+  value: extras.profiling.run
+- type: fingerprint
+  value: fd0b148d502e58a39aeee00b56fe6e9c2f2591cd2f922849b52ee9ef69ee48d2
+  algo: sha256
+claims: []
+relations: []
+namespace: extras.profiling

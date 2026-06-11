@@ -1,0 +1,25 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-c707037e
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:51:32.391371+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.utils.get_expired_cookies.is_expired
+    kind: function
+    file: httpie/utils.py
+    range:
+      start_line: 163
+      start_col: 0
+      end_line: 164
+      end_col: 0
+    fingerprint: e574d4ff41a9e6d760376e93a93b9983d120f93cae37097de0eda2e223926719
+    params:
+    - name: expires
+      annotation: Optional[float]
+    returns: bool

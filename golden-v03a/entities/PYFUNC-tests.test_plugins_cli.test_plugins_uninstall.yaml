@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_plugins_cli.test_plugins_uninstall
+kind: entity
+type: py.function
+name: test_plugins_uninstall
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_plugins_cli.py
+anchors:
+- type: symbol
+  value: tests.test_plugins_cli.test_plugins_uninstall
+- type: fingerprint
+  value: 990da3e86cc9a52d4807e20a30c979746da6d041712bc9cd29276f5049c7582a
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_plugins_cli

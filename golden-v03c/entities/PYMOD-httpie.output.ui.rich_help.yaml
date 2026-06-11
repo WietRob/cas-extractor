@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.output.ui.rich_help
+kind: entity
+type: py.module
+name: rich_help
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/ui/rich_help.py
+anchors:
+- type: symbol
+  value: httpie.output.ui.rich_help
+- type: fingerprint
+  value: 880105e8f7bced88e9d5c89780006836f92e1c1ba85f551e093395770a519003
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.ui

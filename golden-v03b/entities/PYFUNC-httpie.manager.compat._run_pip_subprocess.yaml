@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.manager.compat._run_pip_subprocess
+kind: entity
+type: py.function
+name: _run_pip_subprocess
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/manager/compat.py
+anchors:
+- type: symbol
+  value: httpie.manager.compat._run_pip_subprocess
+- type: fingerprint
+  value: b212d3c59a34332964551a58e5de29ce65e005f0c2fcace14d15b7325b775e0f
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.manager.compat

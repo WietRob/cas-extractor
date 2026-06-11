@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.argtypes.SessionNameValidator.__call__
+kind: entity
+type: py.function
+name: __call__
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/argtypes.py
+anchors:
+- type: symbol
+  value: httpie.cli.argtypes.SessionNameValidator.__call__
+- type: fingerprint
+  value: b63b13745f3e147dfc9c2acec5c8306462e9a0f0bd1c1a77180470bf86375b1f
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.argtypes.SessionNameValidator

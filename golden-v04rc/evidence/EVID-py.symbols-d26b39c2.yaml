@@ -1,0 +1,109 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-d26b39c2
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T08:37:44.552137+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.test_cli
+    kind: module
+    file: tests/test_cli.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 377
+      end_col: 0
+    fingerprint: 47514e95c17b926fa104a57c8f200132dee17e7346f612d214a6ddf3bb3404ce
+  - qualified: tests.test_cli.TestItemParsing
+    kind: class
+    file: tests/test_cli.py
+    range:
+      start_line: 22
+      start_col: 0
+      end_line: 149
+      end_col: 0
+    fingerprint: 006b2fe85820d5e0d70aeafe0613037be38273cd91be158a5166ab91604663f7
+  - qualified: tests.test_cli.TestQuerystring
+    kind: class
+    file: tests/test_cli.py
+    range:
+      start_line: 152
+      start_col: 0
+      end_line: 177
+      end_col: 0
+    fingerprint: 3d26102a9eebeb8597d646ef1a0f32aec6fb2774ba1fdf53b02d728b2f0e73f9
+  - qualified: tests.test_cli.test_url_leading_colon_slash_slash
+    kind: function
+    file: tests/test_cli.py
+    range:
+      start_line: 184
+      start_col: 0
+      end_line: 187
+      end_col: 0
+    fingerprint: ad673611726bc9fa38b4fe34ebd98a71f7ffe957fdca4c99328e77c0834f6e3a
+    decorators:
+    - pytest.mark.parametrize(['program_name', 'url_arg', 'parsed_url'], [('http',
+      '://pie.dev/get', 'http://pie.dev/get'), ('https', '://pie.dev/get', 'https://pie.dev/get')])
+    params:
+    - name: program_name
+    - name: url_arg
+    - name: parsed_url
+  - qualified: tests.test_cli.test_url_colon_slash_slash_only
+    kind: function
+    file: tests/test_cli.py
+    range:
+      start_line: 190
+      start_col: 0
+      end_line: 192
+      end_col: 0
+    fingerprint: c819a2ca9839270dfbc08e0b69780b1c45748b257004cae677a3abec24f65ffd
+  - qualified: tests.test_cli.TestLocalhostShorthand
+    kind: class
+    file: tests/test_cli.py
+    range:
+      start_line: 195
+      start_col: 0
+      end_line: 236
+      end_col: 0
+    fingerprint: 66656e5c6c03a8f8b8dc4b07a70772ff69f79552f113e32a9d32216ae849750b
+  - qualified: tests.test_cli.TestArgumentParser
+    kind: class
+    file: tests/test_cli.py
+    range:
+      start_line: 239
+      start_col: 0
+      end_line: 317
+      end_col: 0
+    fingerprint: 58aad8eeef767467c61f825d22aea620b1c87d2a96ea9d7c89175c99d444d164
+  - qualified: tests.test_cli.TestNoOptions
+    kind: class
+    file: tests/test_cli.py
+    range:
+      start_line: 320
+      start_col: 0
+      end_line: 331
+      end_col: 0
+    fingerprint: e20efbb8875ffb19899c9e46dd8f6443dcdec21ad7353447de936615c86a0ceb
+  - qualified: tests.test_cli.TestStdin
+    kind: class
+    file: tests/test_cli.py
+    range:
+      start_line: 334
+      start_col: 0
+      end_line: 354
+      end_col: 0
+    fingerprint: 943463068c3d2b130dd8d54b0b7850dce8249d5c0aa6e70f6517875ebfd226f0
+  - qualified: tests.test_cli.TestSchemes
+    kind: class
+    file: tests/test_cli.py
+    range:
+      start_line: 357
+      start_col: 0
+      end_line: 377
+      end_col: 0
+    fingerprint: 4d9909ed85824d9b0b79cda3fc987059d0ef849740ac833ed149a25e1d72e058

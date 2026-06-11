@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-cas_extractor.extractors.python_symbols._extract_source
+kind: entity
+type: py.function
+name: _extract_source
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor/extractors/python_symbols.py
+anchors:
+- type: symbol
+  value: cas_extractor.extractors.python_symbols._extract_source
+- type: fingerprint
+  value: 9e8d1c87159a2062fe1ae4ab01d57681aaa037677e77ca794780132cfadea412
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor.extractors.python_symbols

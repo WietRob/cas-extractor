@@ -1,0 +1,120 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-1bb8a72f
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:55.244008+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.test_stream
+    kind: module
+    file: tests/test_stream.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 150
+      end_col: 0
+    fingerprint: ef77e325b876675b908eb7186298aa05b871fecffc55c50b92865d8b157768b7
+  - qualified: tests.test_stream.SortJSONConverterPlugin
+    kind: class
+    file: tests/test_stream.py
+    range:
+      start_line: 24
+      start_col: 0
+      end_line: 32
+      end_col: 0
+    fingerprint: 0af8aaa26fe349d116ecee19bb31adb620a32d3c50ede6d1f2886b15404f555f
+  - qualified: tests.test_stream.test_pretty_redirected_stream
+    kind: function
+    file: tests/test_stream.py
+    range:
+      start_line: 40
+      start_col: 0
+      end_line: 50
+      end_col: 0
+    fingerprint: 6de5768090cff1bf72fa7be8ee79d9cc3ccf36b00e3eceddcb47d01df860ad58
+    decorators:
+    - pytest.mark.skipif(is_windows, reason='Pretty redirect not supported under Windows')
+    params:
+    - name: httpbin
+  - qualified: tests.test_stream.test_pretty_stream_ensure_full_stream_is_retrieved
+    kind: function
+    file: tests/test_stream.py
+    range:
+      start_line: 53
+      start_col: 0
+      end_line: 61
+      end_col: 0
+    fingerprint: 00959bc5f743e10965da7fe336ef65b1899b558514f6a23ab1d6831d2af574f1
+    params:
+    - name: httpbin
+  - qualified: tests.test_stream.test_pretty_options_with_and_without_stream_with_converter
+    kind: function
+    file: tests/test_stream.py
+    range:
+      start_line: 67
+      start_col: 0
+      end_line: 90
+      end_col: 0
+    fingerprint: d50ccb879a6d1a19d7bcd8626738b919c9cd3cd32007fc89dea98c4d7121b845
+    decorators:
+    - pytest.mark.parametrize('pretty', PRETTY_OPTIONS)
+    - pytest.mark.parametrize('stream', [True, False])
+    - responses.activate
+    params:
+    - name: pretty
+    - name: stream
+  - qualified: tests.test_stream.test_encoded_stream
+    kind: function
+    file: tests/test_stream.py
+    range:
+      start_line: 93
+      start_col: 0
+      end_line: 102
+      end_col: 0
+    fingerprint: 11baf405fa7c68a7577472cd8f01375fffcca1d2bff0581ec00089d82078df57
+    params:
+    - name: httpbin
+  - qualified: tests.test_stream.test_redirected_stream
+    kind: function
+    file: tests/test_stream.py
+    range:
+      start_line: 105
+      start_col: 0
+      end_line: 115
+      end_col: 0
+    fingerprint: aec405e191d84f1a99518049d40991482bf2dbd1f75d12ea15b0c0343452a372
+    params:
+    - name: httpbin
+  - qualified: tests.test_stream.test_auto_streaming
+    kind: function
+    file: tests/test_stream.py
+    range:
+      start_line: 136
+      start_col: 0
+      end_line: 144
+      end_col: 0
+    fingerprint: c36e0a0ed3574ef421f1b853c08be13c55d69572cfc2d0e4c231150ae6ab0cfb
+    decorators:
+    - pytest.mark.parametrize('extras, expected', [(['Accept:text/event-stream'],
+      3), (['Accept:text/event-stream; charset=utf-8'], 3), (['Accept:text/plain'],
+      1)])
+    params:
+    - name: http_server
+    - name: extras
+    - name: expected
+  - qualified: tests.test_stream.test_streaming_encoding_detection
+    kind: function
+    file: tests/test_stream.py
+    range:
+      start_line: 147
+      start_col: 0
+      end_line: 150
+      end_col: 0
+    fingerprint: 49f0f40d9ca825261efa07da78109508e7d2267d762ca92fb94474110f9c38c3
+    params:
+    - name: http_server

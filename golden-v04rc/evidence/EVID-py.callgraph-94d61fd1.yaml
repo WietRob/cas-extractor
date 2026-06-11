@@ -1,0 +1,123 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-94d61fd1
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-22T08:37:45.392022+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.DIST_DIR.iterdir
+  - symbol: ?.MAN_PAGES_DIR.glob
+  - symbol: ?.TARGET_SCRIPTS.items
+  - symbol: ?.executable_path.chmod
+  - symbol: ?.executable_path.stat
+  - symbol: ?.files.extend
+  - symbol: ?.src.resolve
+  - symbol: extras.packaging.linux.build.build_binaries
+  - symbol: extras.packaging.linux.build.build_packages
+  - symbol: extras.packaging.linux.build.main
+  - symbol: subprocess.check_call
+  edges:
+  - from: extras.packaging.linux.build.build_binaries
+    to: ?.TARGET_SCRIPTS.items
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 24
+      start_col: 0
+      end_line: 24
+      end_col: 0
+  - from: extras.packaging.linux.build.build_binaries
+    to: ?.DIST_DIR.iterdir
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 39
+      start_col: 0
+      end_line: 39
+      end_col: 0
+  - from: extras.packaging.linux.build.build_packages
+    to: ?.files.extend
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 56
+      start_col: 0
+      end_line: 59
+      end_col: 0
+  - from: extras.packaging.linux.build.main
+    to: extras.packaging.linux.build.build_packages
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 100
+      start_col: 0
+      end_line: 100
+      end_col: 0
+  - from: extras.packaging.linux.build.build_binaries
+    to: subprocess.check_call
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 25
+      start_col: 0
+      end_line: 37
+      end_col: 0
+  - from: extras.packaging.linux.build.build_binaries
+    to: ?.executable_path.stat
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 42
+      start_col: 0
+      end_line: 42
+      end_col: 0
+  - from: extras.packaging.linux.build.build_binaries
+    to: ?.executable_path.chmod
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 43
+      start_col: 0
+      end_line: 43
+      end_col: 0
+  - from: extras.packaging.linux.build.build_packages
+    to: subprocess.check_call
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 75
+      start_col: 0
+      end_line: 95
+      end_col: 0
+  - from: extras.packaging.linux.build.main
+    to: extras.packaging.linux.build.build_binaries
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 99
+      start_col: 0
+      end_line: 99
+      end_col: 0
+  - from: extras.packaging.linux.build.build_packages
+    to: ?.MAN_PAGES_DIR.glob
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 58
+      start_col: 0
+      end_line: 58
+      end_col: 0
+  - from: extras.packaging.linux.build.build_packages
+    to: ?.src.resolve
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 72
+      start_col: 0
+      end_line: 72
+      end_col: 0

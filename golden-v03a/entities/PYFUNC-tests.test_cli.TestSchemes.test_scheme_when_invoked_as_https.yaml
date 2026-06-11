@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_cli.TestSchemes.test_scheme_when_invoked_as_https
+kind: entity
+type: py.function
+name: test_scheme_when_invoked_as_https
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_cli.py
+anchors:
+- type: symbol
+  value: tests.test_cli.TestSchemes.test_scheme_when_invoked_as_https
+- type: fingerprint
+  value: 0917ee89cc35557cf700014a405e77eef4ea5fc13fd8ddde20a0efe84e181eb7
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_cli.TestSchemes

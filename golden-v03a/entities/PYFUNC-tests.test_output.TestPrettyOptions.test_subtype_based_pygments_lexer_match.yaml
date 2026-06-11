@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_output.TestPrettyOptions.test_subtype_based_pygments_lexer_match
+kind: entity
+type: py.function
+name: test_subtype_based_pygments_lexer_match
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_output.py
+anchors:
+- type: symbol
+  value: tests.test_output.TestPrettyOptions.test_subtype_based_pygments_lexer_match
+- type: fingerprint
+  value: a912d766977f4dcefdfe1a0335a69e4a807a9eeae3fde14d99a93f29cd9ead66
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_output.TestPrettyOptions

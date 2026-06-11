@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_cli.TestLocalhostShorthand.test_expand_localhost_shorthand_with_port_and_slash
+kind: entity
+type: py.function
+name: test_expand_localhost_shorthand_with_port_and_slash
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_cli.py
+anchors:
+- type: symbol
+  value: tests.test_cli.TestLocalhostShorthand.test_expand_localhost_shorthand_with_port_and_slash
+- type: fingerprint
+  value: fbd7452c8587d4b4207a872aeeb4dfd984d5a595e28135c0d814208aa6145fbc
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_cli.TestLocalhostShorthand

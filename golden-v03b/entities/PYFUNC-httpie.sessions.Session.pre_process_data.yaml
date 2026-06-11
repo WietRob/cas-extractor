@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.sessions.Session.pre_process_data
+kind: entity
+type: py.function
+name: pre_process_data
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/sessions.py
+anchors:
+- type: symbol
+  value: httpie.sessions.Session.pre_process_data
+- type: fingerprint
+  value: 5ff14d3e7cc3dbc156b6265d5c4591738672da9e45bf67312268c999456ff19d
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.sessions.Session

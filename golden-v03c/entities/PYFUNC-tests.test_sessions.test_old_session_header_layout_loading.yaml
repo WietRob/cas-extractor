@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_sessions.test_old_session_header_layout_loading
+kind: entity
+type: py.function
+name: test_old_session_header_layout_loading
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_sessions.py
+anchors:
+- type: symbol
+  value: tests.test_sessions.test_old_session_header_layout_loading
+- type: fingerprint
+  value: 98df22cb3fe34874dfd2bb463e03954956801f0cf631a7b40b55426cfaab70bc
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_sessions

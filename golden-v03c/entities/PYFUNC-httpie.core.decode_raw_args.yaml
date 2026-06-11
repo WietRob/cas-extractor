@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.core.decode_raw_args
+kind: entity
+type: py.function
+name: decode_raw_args
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/core.py
+anchors:
+- type: symbol
+  value: httpie.core.decode_raw_args
+- type: fingerprint
+  value: c06e2237035fc9ea4591b7ab002b1d301f1a58cadc2a3039796034709cdfd7cf
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.core

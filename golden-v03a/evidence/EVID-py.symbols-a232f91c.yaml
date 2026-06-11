@@ -1,0 +1,148 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-a232f91c
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:52.977745+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.downloads
+    kind: module
+    file: httpie/downloads.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 377
+      end_col: 0
+    fingerprint: 6cc45e21de70af5137767c5b0e4e6d4819c438addd5f49a1e623796626b36991
+  - qualified: httpie.downloads.ContentRangeError
+    kind: class
+    file: httpie/downloads.py
+    range:
+      start_line: 23
+      start_col: 0
+      end_line: 24
+      end_col: 0
+    fingerprint: 125ea3c777a316a81d74e9b35ef534357a1aaaf42852236e8ff01125f71e7c0d
+  - qualified: httpie.downloads.parse_content_range
+    kind: function
+    file: httpie/downloads.py
+    range:
+      start_line: 27
+      start_col: 0
+      end_line: 82
+      end_col: 0
+    fingerprint: 8315453037f0825c38698cff266bbf8f9049053ad4bce653385ff1cfab02ffc1
+    params:
+    - name: content_range
+      annotation: str
+    - name: resumed_from
+      annotation: int
+    returns: int
+  - qualified: httpie.downloads.filename_from_content_disposition
+    kind: function
+    file: httpie/downloads.py
+    range:
+      start_line: 85
+      start_col: 0
+      end_line: 103
+      end_col: 0
+    fingerprint: 07112803577a2efc68fe137d1d649a16b221dcce4ce60367208da90ece609551
+    params:
+    - name: content_disposition
+      annotation: str
+    returns: Optional[str]
+  - qualified: httpie.downloads.filename_from_url
+    kind: function
+    file: httpie/downloads.py
+    range:
+      start_line: 106
+      start_col: 0
+      end_line: 123
+      end_col: 0
+    fingerprint: 35831ce3398ba27265b37c3190b89914b6608bbb5f39fac7af5683d0951f96ea
+    params:
+    - name: url
+      annotation: str
+    - name: content_type
+      annotation: Optional[str]
+    returns: str
+  - qualified: httpie.downloads.trim_filename
+    kind: function
+    file: httpie/downloads.py
+    range:
+      start_line: 126
+      start_col: 0
+      end_line: 134
+      end_col: 0
+    fingerprint: de1c58cb82199d72ce9929cfd0332940ddbc7468fa1aa5d3f7b7f1e8ad4a84a1
+    params:
+    - name: filename
+      annotation: str
+    - name: max_len
+      annotation: int
+    returns: str
+  - qualified: httpie.downloads.get_filename_max_length
+    kind: function
+    file: httpie/downloads.py
+    range:
+      start_line: 137
+      start_col: 0
+      end_line: 141
+      end_col: 0
+    fingerprint: 306df2668953a95566ae68fe29252da7f821b58515ccd62d1db6f629e4e5c142
+    params:
+    - name: directory
+      annotation: str
+    returns: int
+  - qualified: httpie.downloads.trim_filename_if_needed
+    kind: function
+    file: httpie/downloads.py
+    range:
+      start_line: 144
+      start_col: 0
+      end_line: 148
+      end_col: 0
+    fingerprint: ff143081c1bb4e1ad58e6bd2a4c2436c5bea19acb9a60b66165ee1d88f91f784
+    params:
+    - name: filename
+      annotation: str
+    - name: directory
+    - name: extra
+    returns: str
+  - qualified: httpie.downloads.get_unique_filename
+    kind: function
+    file: httpie/downloads.py
+    range:
+      start_line: 151
+      start_col: 0
+      end_line: 159
+      end_col: 0
+    fingerprint: 8c575e10d9842ebec26a746aef9d7d925721e43e8219588282bcf1e20d5692f0
+    params:
+    - name: filename
+      annotation: str
+    - name: exists
+    returns: str
+  - qualified: httpie.downloads.Downloader
+    kind: class
+    file: httpie/downloads.py
+    range:
+      start_line: 162
+      start_col: 0
+      end_line: 304
+      end_col: 0
+    fingerprint: 36e759b9f4933f704480bb1d26c0da6003bf25fc200e81e64ff73fcaa1750c9f
+  - qualified: httpie.downloads.DownloadStatus
+    kind: class
+    file: httpie/downloads.py
+    range:
+      start_line: 307
+      start_col: 0
+      end_line: 377
+      end_col: 0
+    fingerprint: 2c16a160e36a46e99951795edbd89a1336a477d5c104e2e3cda9dae5feca9fa9

@@ -1,0 +1,92 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-1321cb42
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T08:37:44.455129+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.internal.daemons
+    kind: module
+    file: httpie/internal/daemons.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 121
+      end_col: 0
+    fingerprint: 643b898b0dfac970ca8fe18c4b5fc4578e26282cec5d4a29b6c8d93dd4850656
+  - qualified: httpie.internal.daemons._start_process
+    kind: function
+    file: httpie/internal/daemons.py
+    range:
+      start_line: 22
+      start_col: 0
+      end_line: 29
+      end_col: 0
+    fingerprint: 80b81939f236fbbb284d463a2cf88ec77bac2ec220e22eec40a7b489d38894c2
+    params:
+    - name: cmd
+      annotation: List[str]
+    returns: Popen
+  - qualified: httpie.internal.daemons._spawn_windows
+    kind: function
+    file: httpie/internal/daemons.py
+    range:
+      start_line: 32
+      start_col: 0
+      end_line: 52
+      end_col: 0
+    fingerprint: f6cade668c6b1876c6783900c6c44508e9f7cb3c7a4ae5279079937ffcec9f80
+    params:
+    - name: cmd
+      annotation: List[str]
+    - name: process_context
+      annotation: ProcessContext
+    returns: None
+  - qualified: httpie.internal.daemons._spawn_posix
+    kind: function
+    file: httpie/internal/daemons.py
+    range:
+      start_line: 55
+      start_col: 0
+      end_line: 99
+      end_col: 0
+    fingerprint: 8047a75971767c82516ed6a0cf0adadedc8cd1a7299951638763267bfc2a72b3
+    params:
+    - name: args
+      annotation: List[str]
+    - name: process_context
+      annotation: ProcessContext
+    returns: None
+  - qualified: httpie.internal.daemons._spawn
+    kind: function
+    file: httpie/internal/daemons.py
+    range:
+      start_line: 102
+      start_col: 0
+      end_line: 109
+      end_col: 0
+    fingerprint: 75f22df0a2978367a0ce8de6f868db17d7e6302fd5e3ca39b888893de22d9327
+    params:
+    - name: args
+      annotation: List[str]
+    - name: process_context
+      annotation: ProcessContext
+    returns: None
+  - qualified: httpie.internal.daemons.spawn_daemon
+    kind: function
+    file: httpie/internal/daemons.py
+    range:
+      start_line: 112
+      start_col: 0
+      end_line: 121
+      end_col: 0
+    fingerprint: 632455429000f345b1aca44bd04debbd0983849d21f53912b3bfdce564f3a1b1
+    params:
+    - name: task
+      annotation: str
+    returns: None

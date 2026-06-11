@@ -1,0 +1,69 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-424ab105
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:51:32.154447+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.cli.nested_json.parse
+    kind: module
+    file: httpie/cli/nested_json/parse.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 193
+      end_col: 0
+    fingerprint: d188245883f90923b86a6a192c0bc8d5e31699bc47938793964c33ddf0a097e5
+  - qualified: httpie.cli.nested_json.parse.parse
+    kind: function
+    file: httpie/cli/nested_json/parse.py
+    range:
+      start_line: 23
+      start_col: 0
+      end_line: 124
+      end_col: 0
+    fingerprint: f048904ea613b90662d70a7d891d0f935d2b7dc93a1f69e2964e000dada2551d
+    params:
+    - name: source
+      annotation: str
+    returns: Iterator[Path]
+  - qualified: httpie.cli.nested_json.parse.tokenize
+    kind: function
+    file: httpie/cli/nested_json/parse.py
+    range:
+      start_line: 127
+      start_col: 0
+      end_line: 178
+      end_col: 0
+    fingerprint: 065fa4e733569696466257ad14e961d8629ef5165858e55cb64269a346d0312f
+    params:
+    - name: source
+      annotation: str
+    returns: Iterator[Token]
+  - qualified: httpie.cli.nested_json.parse.check_escaped_int
+    kind: function
+    file: httpie/cli/nested_json/parse.py
+    range:
+      start_line: 181
+      start_col: 0
+      end_line: 189
+      end_col: 0
+    fingerprint: 8751215067d61f6a332ff52db86484452d214d20ba30e40f031680ec244e1047
+    params:
+    - name: value
+      annotation: str
+    returns: str
+  - qualified: httpie.cli.nested_json.parse.assert_cant_happen
+    kind: function
+    file: httpie/cli/nested_json/parse.py
+    range:
+      start_line: 192
+      start_col: 0
+      end_line: 193
+      end_col: 0
+    fingerprint: a37a7cc364082e6299098555ab28a0af36c7c1d64d78fa850291a9270e5a2fd9

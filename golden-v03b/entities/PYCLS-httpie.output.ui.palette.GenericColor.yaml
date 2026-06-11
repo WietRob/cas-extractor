@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.output.ui.palette.GenericColor
+kind: entity
+type: py.class
+name: GenericColor
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/ui/palette.py
+anchors:
+- type: symbol
+  value: httpie.output.ui.palette.GenericColor
+- type: fingerprint
+  value: 83c15ba1633735438c3d1cd54ccb4126b365a6ae31defe6f90d68b70c4f9e80e
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.ui.palette

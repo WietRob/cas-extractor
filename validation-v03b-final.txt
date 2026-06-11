@@ -1,0 +1,1006 @@
+============================================================
+CAS Validator v0.1
+============================================================
+
+--- Stage 1: Structural (JSON Schema) ---
+[PASS] Structural: 6245/6245 valid, 0 errors, 0 warnings
+
+--- Stage 2: Semantic (Rules R1–R6) ---
+[FAIL] Semantic: 6245 artifacts checked, 2514 violations
+
+Violations:
+  ⚠ [R5] REL-0133
+    Relation source 'PYMOD-httpie.cli.nested_json.parse.parse' not found in entities
+  ⚠ [R5] REL-0134
+    Relation source 'PYMOD-httpie.cli.nested_json.parse.parse' not found in entities
+  ⚠ [R5] REL-0135
+    Relation source 'PYMOD-httpie.cli.nested_json.parse.parse' not found in entities
+  ⚠ [R5] REL-0147
+    Relation source 'PYMOD-tests.test_sessions.Plugin' not found in entities
+  ⚠ [R5] REL-0148
+    Relation source 'PYMOD-tests.test_sessions.Plugin' not found in entities
+  ⚠ [R5] REL-0149
+    Relation source 'PYMOD-tests.test_sessions.Plugin' not found in entities
+  ⚠ [R5] REL-0226
+    Relation source 'PYMOD-tests.utils.http' not found in entities
+  ⚠ [R5] REL-0235
+    Relation source 'PYMOD-tests.test_auth_plugins.basic_auth' not found in entities
+  ⚠ [R5] REL-0270
+    Relation source 'PYMOD-tests.test_sessions.test_auth_plugin_prompt_password_in_session' not found in entities
+  ⚠ [R5] REL-0274
+    Relation source 'PYMOD-tests.utils.plugins_cli.httpie_plugins' not found in entities
+  ⚠ [R5] REL-0279
+    Relation source 'PYMOD-httpie.utils.is_version_greater' not found in entities
+  ⚠ [R5] REL-0292
+    Relation source 'PYMOD-tests.test_auth_plugins.Plugin' not found in entities
+  ⚠ [R5] REL-0293
+    Relation source 'PYMOD-tests.test_auth_plugins.Plugin' not found in entities
+  ⚠ [R5] REL-0294
+    Relation source 'PYMOD-tests.test_auth_plugins.Plugin' not found in entities
+  ⚠ [R5] REL-0295
+    Relation source 'PYMOD-tests.test_auth_plugins.Plugin' not found in entities
+  ⚠ [R5] REL-0316
+    Relation source 'PYMOD-tests.test_auth_plugins.test_auth_plugin_require_auth_false' not found in entities
+  ⚠ [R5] REL-0321
+    Relation source 'PYMOD-tests.test_auth_plugins.test_auth_plugin_prompt_password_false' not found in entities
+  ⚠ [R5] REL-0362
+    Relation source 'PYMOD-tests.test_output.test_header_formatting_options' not found in entities
+  ⚠ [R5] REL-0388
+    Relation source 'PYMOD-tests.test_auth_plugins.test_auth_plugin_require_auth_false_and_auth_provided' not found in entities
+  ⚠ [R5] REL-0405
+    Relation source 'PYMOD-httpie.cli.nested_json.interpret.interpret' not found in entities
+  ⚠ [R5] REL-0406
+    Relation source 'PYMOD-httpie.cli.nested_json.interpret.interpret' not found in entities
+  ⚠ [R5] REL-0407
+    Relation source 'PYMOD-tests.test_downloads.test_unique_filename' not found in entities
+  ⚠ [R5] REL-0528
+    Relation source 'PYMOD-tests.test_output.test_quiet_on_python_warnings' not found in entities
+  ⚠ [R5] REL-0570
+    Relation source 'PYMOD-tests.test_downloads.attempts' not found in entities
+  ⚠ [R5] REL-0633
+    Relation source 'PYMOD-httpie.core.raw_main' not found in entities
+  ⚠ [R5] REL-0657
+    Relation source 'PYMOD-httpie.cli.nested_json.parse.tokenize' not found in entities
+  ⚠ [R5] REL-0658
+    Relation source 'PYMOD-httpie.cli.nested_json.parse.tokenize' not found in entities
+  ⚠ [R5] REL-0660
+    Relation source 'PYMOD-tests.test_auth_plugins.test_auth_plugin_parse_auth_false' not found in entities
+  ⚠ [R5] REL-0674
+    Relation source 'PYMOD-tests.test_sessions.test_auth_type_stored_in_session_file' not found in entities
+  ⚠ [R5] REL-0702
+    Relation source 'PYMOD-httpie.uploads._wrap_function_with_callback' not found in entities
+  ⚠ [R5] REL-0703
+    Relation source 'PYMOD-httpie.cli.requestitems.convert_json_value_to_form_if_needed' not found in entities
+  ⚠ [R5] REL-0717
+    Relation source 'PYMOD-httpie.core.program' not found in entities
+  ⚠ [R5] REL-0718
+    Relation source 'PYMOD-httpie.core.program' not found in entities
+  ⚠ [R5] REL-0744
+    Relation source 'PYMOD-tests.utils.http_server.handler' not found in entities
+  ⚠ [R5] REL-0785
+    Relation source 'PYMOD-tests.utils.plugins_cli.parse_listing' not found in entities
+  ⚠ [R5] REL-0786
+    Relation source 'PYMOD-tests.utils.plugins_cli.parse_listing' not found in entities
+  ⚠ [R5] REL-0801
+    Relation source 'PYMOD-tests.test_cli_ui.ignore_terminal_size' not found in entities
+  ⚠ [R5] REL-0811
+    Relation source 'PYMOD-httpie.cli.argparser._process_output_options' not found in entities
+  ⚠ [R5] REL-0826
+    Relation source 'PYMOD-tests.test_cookie.MockServerRequestHandler' not found in entities
+  ⚠ [R5] REL-0874
+    Relation source 'PYMOD-tests.utils.plugins_cli.httpie_plugins_success' not found in entities
+  ⚠ [R5] REL-0886
+    Relation source 'PYMOD-httpie.utils.get_expired_cookies' not found in entities
+  ⚠ [R5] REL-0975
+    Relation source 'PYMOD-tests.test_sessions.test_auth_type_reused_in_session' not found in entities
+  ⚠ [R5] REL-0988
+    Relation source 'PYMOD-httpie.internal.update_warnings._update_checker' not found in entities
+  ⚠ [R5] REL-1100
+    Relation source 'PYMOD-tests.test_cookie.test_cookie_parser' not found in entities
+  ⚠ [R5] REL-1127
+    Relation source 'PYMOD-httpie.output.formatters.colors.make_style' not found in entities
+  ⚠ [R5] REL-1148
+    Relation source 'PYMOD-extras.profiling.run.run' not found in entities
+  ⚠ [R5] REL-1190
+    Relation source 'PYMOD-httpie.manager.compat._discover_system_pip' not found in entities
+  ⚠ [R5] REL-1227
+    Relation source 'PYMOD-httpie.uploads.observe_stdin_for_data_thread' not found in entities
+  ⚠ [R5] REL-1244
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1246
+    Relation target 'PYMOD-json' not found in entities
+  ⚠ [R5] REL-1247
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1248
+    Relation target 'PYMOD-pygments' not found in entities
+  ⚠ [R5] REL-1251
+    Relation target 'PYMOD-abc' not found in entities
+  ⚠ [R5] REL-1252
+    Relation target 'PYMOD-itertools' not found in entities
+  ⚠ [R5] REL-1253
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1256
+    Relation target 'PYMOD-time' not found in entities
+  ⚠ [R5] REL-1257
+    Relation target 'PYMOD-requests' not found in entities
+  ⚠ [R5] REL-1258
+    Relation target 'PYMOD-urllib3' not found in entities
+  ⚠ [R5] REL-1259
+    Relation target 'PYMOD-enum' not found in entities
+  ⚠ [R5] REL-1260
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1261
+    Relation target 'PYMOD-urllib' not found in entities
+  ⚠ [R5] REL-1263
+    Relation target 'PYMOD-enum' not found in entities
+  ⚠ [R5] REL-1264
+    Relation target 'PYMOD-re' not found in entities
+  ⚠ [R5] REL-1265
+    Relation target 'PYMOD-inspect' not found in entities
+  ⚠ [R5] REL-1266
+    Relation target 'PYMOD-os' not found in entities
+  ⚠ [R5] REL-1267
+    Relation target 'PYMOD-platform' not found in entities
+  ⚠ [R5] REL-1268
+    Relation target 'PYMOD-sys' not found in entities
+  ⚠ [R5] REL-1270
+    Relation target 'PYMOD-contextlib' not found in entities
+  ⚠ [R5] REL-1271
+    Relation target 'PYMOD-subprocess' not found in entities
+  ⚠ [R5] REL-1272
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1273
+    Relation target 'PYMOD-io' not found in entities
+  ⚠ [R5] REL-1274
+    Relation target 'PYMOD-unittest' not found in entities
+  ⚠ [R5] REL-1275
+    Relation target 'PYMOD-pytest' not found in entities
+  ⚠ [R5] REL-1278
+    Relation target 'PYMOD-enum' not found in entities
+  ⚠ [R5] REL-1279
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1280
+    Relation target 'PYMOD-errno' not found in entities
+  ⚠ [R5] REL-1281
+    Relation target 'PYMOD-requests' not found in entities
+  ⚠ [R5] REL-1282
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1285
+    Relation target 'PYMOD-json' not found in entities
+  ⚠ [R5] REL-1286
+    Relation target 'PYMOD-pytest' not found in entities
+  ⚠ [R5] REL-1287
+    Relation target 'PYMOD-responses' not found in entities
+  ⚠ [R5] REL-1288
+    Relation target 'PYMOD-unittest' not found in entities
+  ⚠ [R5] REL-1291
+    Relation target 'PYMOD-argparse' not found in entities
+  ⚠ [R5] REL-1292
+    Relation target 'PYMOD-pathlib' not found in entities
+  ⚠ [R5] REL-1293
+    Relation target 'PYMOD-unittest' not found in entities
+  ⚠ [R5] REL-1294
+    Relation target 'PYMOD-json' not found in entities
+  ⚠ [R5] REL-1295
+    Relation target 'PYMOD-os' not found in entities
+  ⚠ [R5] REL-1296
+    Relation target 'PYMOD-io' not found in entities
+  ⚠ [R5] REL-1297
+    Relation target 'PYMOD-warnings' not found in entities
+  ⚠ [R5] REL-1298
+    Relation target 'PYMOD-urllib' not found in entities
+  ⚠ [R5] REL-1299
+    Relation target 'PYMOD-pytest' not found in entities
+  ⚠ [R5] REL-1300
+    Relation target 'PYMOD-requests' not found in entities
+  ⚠ [R5] REL-1301
+    Relation target 'PYMOD-responses' not found in entities
+  ⚠ [R5] REL-1304
+    Relation target 'PYMOD-ssl' not found in entities
+  ⚠ [R5] REL-1305
+    Relation target 'PYMOD-pytest' not found in entities
+  ⚠ [R5] REL-1306
+    Relation target 'PYMOD-pytest_httpbin' not found in entities
+  ⚠ [R5] REL-1307
+    Relation target 'PYMOD-requests' not found in entities
+  ⚠ [R5] REL-1308
+    Relation target 'PYMOD-urllib3' not found in entities
+  ⚠ [R5] REL-1309
+    Relation target 'PYMOD-unittest' not found in entities
+  ⚠ [R5] REL-1312
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1313
+    Relation target 'PYMOD-pytest' not found in entities
+  ⚠ [R5] REL-1315
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1316
+    Relation target 'PYMOD-re' not found in entities
+  ⚠ [R5] REL-1317
+    Relation target 'PYMOD-pygments' not found in entities
+  ⚠ [R5] REL-1318
+    Relation target 'PYMOD-base64' not found in entities
+  ⚠ [R5] REL-1319
+    Relation target 'PYMOD-requests' not found in entities
+  ⚠ [R5] REL-1321
+    Relation target 'PYMOD-sys' not found in entities
+  ⚠ [R5] REL-1322
+    Relation target 'PYMOD-os' not found in entities
+  ⚠ [R5] REL-1323
+    Relation target 'PYMOD-zlib' not found in entities
+  ⚠ [R5] REL-1324
+    Relation target 'PYMOD-functools' not found in entities
+  ⚠ [R5] REL-1325
+    Relation target 'PYMOD-threading' not found in entities
+  ⚠ [R5] REL-1326
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1327
+    Relation target 'PYMOD-urllib' not found in entities
+  ⚠ [R5] REL-1328
+    Relation target 'PYMOD-requests' not found in entities
+  ⚠ [R5] REL-1330
+    Relation target 'PYMOD-os' not found in entities
+  ⚠ [R5] REL-1331
+    Relation target 'PYMOD-base64' not found in entities
+  ⚠ [R5] REL-1332
+    Relation target 'PYMOD-json' not found in entities
+  ⚠ [R5] REL-1333
+    Relation target 'PYMOD-mimetypes' not found in entities
+  ⚠ [R5] REL-1334
+    Relation target 'PYMOD-re' not found in entities
+  ⚠ [R5] REL-1335
+    Relation target 'PYMOD-sys' not found in entities
+  ⚠ [R5] REL-1336
+    Relation target 'PYMOD-time' not found in entities
+  ⚠ [R5] REL-1337
+    Relation target 'PYMOD-tempfile' not found in entities
+  ⚠ [R5] REL-1338
+    Relation target 'PYMOD-sysconfig' not found in entities
+  ⚠ [R5] REL-1339
+    Relation target 'PYMOD-collections' not found in entities
+  ⚠ [R5] REL-1340
+    Relation target 'PYMOD-contextlib' not found in entities
+  ⚠ [R5] REL-1341
+    Relation target 'PYMOD-http' not found in entities
+  ⚠ [R5] REL-1342
+    Relation target 'PYMOD-pathlib' not found in entities
+  ⚠ [R5] REL-1343
+    Relation target 'PYMOD-pprint' not found in entities
+  ⚠ [R5] REL-1344
+    Relation target 'PYMOD-urllib' not found in entities
+  ⚠ [R5] REL-1345
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1346
+    Relation target 'PYMOD-requests' not found in entities
+  ⚠ [R5] REL-1347
+    Relation target 'PYMOD-sys' not found in entities
+  ⚠ [R5] REL-1348
+    Relation target 'PYMOD-ssl' not found in entities
+  ⚠ [R5] REL-1349
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1351
+    Relation target 'PYMOD-http' not found in entities
+  ⚠ [R5] REL-1353
+    Relation target 'PYMOD-__future__' not found in entities
+  ⚠ [R5] REL-1354
+    Relation target 'PYMOD-os' not found in entities
+  ⚠ [R5] REL-1355
+    Relation target 'PYMOD-shlex' not found in entities
+  ⚠ [R5] REL-1356
+    Relation target 'PYMOD-subprocess' not found in entities
+  ⚠ [R5] REL-1357
+    Relation target 'PYMOD-sys' not found in entities
+  ⚠ [R5] REL-1358
+    Relation target 'PYMOD-threading' not found in entities
+  ⚠ [R5] REL-1359
+    Relation target 'PYMOD-contextlib' not found in entities
+  ⚠ [R5] REL-1360
+    Relation target 'PYMOD-dataclasses' not found in entities
+  ⚠ [R5] REL-1361
+    Relation target 'PYMOD-functools' not found in entities
+  ⚠ [R5] REL-1362
+    Relation target 'PYMOD-http' not found in entities
+  ⚠ [R5] REL-1363
+    Relation target 'PYMOD-tempfile' not found in entities
+  ⚠ [R5] REL-1364
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1365
+    Relation target 'PYMOD-pyperf' not found in entities
+  ⚠ [R5] REL-1366
+    Relation target 'PYMOD-argparse' not found in entities
+  ⚠ [R5] REL-1367
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1369
+    Relation target 'PYMOD-pytest' not found in entities
+  ⚠ [R5] REL-1370
+    Relation target 'PYMOD-shutil' not found in entities
+  ⚠ [R5] REL-1371
+    Relation target 'PYMOD-json' not found in entities
+  ⚠ [R5] REL-1374
+    Relation target 'PYMOD-argparse' not found in entities
+  ⚠ [R5] REL-1375
+    Relation target 'PYMOD-errno' not found in entities
+  ⚠ [R5] REL-1376
+    Relation target 'PYMOD-os' not found in entities
+  ⚠ [R5] REL-1377
+    Relation target 'PYMOD-re' not found in entities
+  ⚠ [R5] REL-1378
+    Relation target 'PYMOD-sys' not found in entities
+  ⚠ [R5] REL-1379
+    Relation target 'PYMOD-textwrap' not found in entities
+  ⚠ [R5] REL-1380
+    Relation target 'PYMOD-urllib' not found in entities
+  ⚠ [R5] REL-1381
+    Relation target 'PYMOD-requests' not found in entities
+  ⚠ [R5] REL-1384
+    Relation target 'PYMOD-pytest' not found in entities
+  ⚠ [R5] REL-1387
+    Relation target 'PYMOD-io' not found in entities
+  ⚠ [R5] REL-1390
+    Relation target 'PYMOD-json' not found in entities
+  ⚠ [R5] REL-1391
+    Relation target 'PYMOD-os' not found in entities
+  ⚠ [R5] REL-1392
+    Relation target 'PYMOD-pathlib' not found in entities
+  ⚠ [R5] REL-1393
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1395
+    Relation target 'PYMOD-__future__' not found in entities
+  ⚠ [R5] REL-1396
+    Relation target 'PYMOD-os' not found in entities
+  ⚠ [R5] REL-1397
+    Relation target 'PYMOD-textwrap' not found in entities
+  ⚠ [R5] REL-1398
+    Relation target 'PYMOD-argparse' not found in entities
+  ⚠ [R5] REL-1400
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1402
+    Relation target 'PYMOD-re' not found in entities
+  ⚠ [R5] REL-1403
+    Relation target 'PYMOD-textwrap' not found in entities
+  ⚠ [R5] REL-1404
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1405
+    Relation target 'PYMOD-rich' not found in entities
+  ⚠ [R5] REL-1407
+    Relation target 'PYMOD-argparse' not found in entities
+  ⚠ [R5] REL-1408
+    Relation target 'PYMOD-contextlib' not found in entities
+  ⚠ [R5] REL-1409
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1411
+    Relation target 'PYMOD-re' not found in entities
+  ⚠ [R5] REL-1412
+    Relation target 'PYMOD-shlex' not found in entities
+  ⚠ [R5] REL-1413
+    Relation target 'PYMOD-os' not found in entities
+  ⚠ [R5] REL-1414
+    Relation target 'PYMOD-sys' not found in entities
+  ⚠ [R5] REL-1415
+    Relation target 'PYMOD-time' not found in entities
+  ⚠ [R5] REL-1416
+    Relation target 'PYMOD-json' not found in entities
+  ⚠ [R5] REL-1417
+    Relation target 'PYMOD-tempfile' not found in entities
+  ⚠ [R5] REL-1418
+    Relation target 'PYMOD-warnings' not found in entities
+  ⚠ [R5] REL-1419
+    Relation target 'PYMOD-pytest' not found in entities
+  ⚠ [R5] REL-1420
+    Relation target 'PYMOD-contextlib' not found in entities
+  ⚠ [R5] REL-1421
+    Relation target 'PYMOD-io' not found in entities
+  ⚠ [R5] REL-1422
+    Relation target 'PYMOD-pathlib' not found in entities
+  ⚠ [R5] REL-1423
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1425
+    Relation target 'PYMOD-os' not found in entities
+  ⚠ [R5] REL-1426
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1427
+    Relation target 'PYMOD-contextlib' not found in entities
+  ⚠ [R5] REL-1428
+    Relation target 'PYMOD-rich' not found in entities
+  ⚠ [R5] REL-1430
+    Relation target 'PYMOD-os' not found in entities
+  ⚠ [R5] REL-1431
+    Relation target 'PYMOD-re' not found in entities
+  ⚠ [R5] REL-1432
+    Relation target 'PYMOD-contextlib' not found in entities
+  ⚠ [R5] REL-1433
+    Relation target 'PYMOD-pathlib' not found in entities
+  ⚠ [R5] REL-1434
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1436
+    Relation target 'PYMOD-argparse' not found in entities
+  ⚠ [R5] REL-1437
+    Relation target 'PYMOD-textwrap' not found in entities
+  ⚠ [R5] REL-1438
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1439
+    Relation target 'PYMOD-dataclasses' not found in entities
+  ⚠ [R5] REL-1440
+    Relation target 'PYMOD-enum' not found in entities
+  ⚠ [R5] REL-1442
+    Relation target 'PYMOD-argparse' not found in entities
+  ⚠ [R5] REL-1443
+    Relation target 'PYMOD-getpass' not found in entities
+  ⚠ [R5] REL-1444
+    Relation target 'PYMOD-os' not found in entities
+  ⚠ [R5] REL-1445
+    Relation target 'PYMOD-sys' not found in entities
+  ⚠ [R5] REL-1446
+    Relation target 'PYMOD-copy' not found in entities
+  ⚠ [R5] REL-1447
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1450
+    Relation target 'PYMOD-pytest' not found in entities
+  ⚠ [R5] REL-1451
+    Relation target 'PYMOD-responses' not found in entities
+  ⚠ [R5] REL-1452
+    Relation target 'PYMOD-charset_normalizer' not found in entities
+  ⚠ [R5] REL-1455
+    Relation target 'PYMOD-pytest' not found in entities
+  ⚠ [R5] REL-1458
+    Relation target 'PYMOD-enum' not found in entities
+  ⚠ [R5] REL-1459
+    Relation target 'PYMOD-http' not found in entities
+  ⚠ [R5] REL-1460
+    Relation target 'PYMOD-unittest' not found in entities
+  ⚠ [R5] REL-1461
+    Relation target 'PYMOD-pytest' not found in entities
+  ⚠ [R5] REL-1464
+    Relation target 'PYMOD-os' not found in entities
+  ⚠ [R5] REL-1465
+    Relation target 'PYMOD-json' not found in entities
+  ⚠ [R5] REL-1466
+    Relation target 'PYMOD-sys' not found in entities
+  ⚠ [R5] REL-1467
+    Relation target 'PYMOD-subprocess' not found in entities
+  ⚠ [R5] REL-1468
+    Relation target 'PYMOD-time' not found in entities
+  ⚠ [R5] REL-1469
+    Relation target 'PYMOD-contextlib' not found in entities
+  ⚠ [R5] REL-1471
+    Relation target 'PYMOD-pytest' not found in entities
+  ⚠ [R5] REL-1473
+    Relation target 'PYMOD-pytest' not found in entities
+  ⚠ [R5] REL-1474
+    Relation target 'PYMOD-argparse' not found in entities
+  ⚠ [R5] REL-1475
+    Relation target 'PYMOD-unittest' not found in entities
+  ⚠ [R5] REL-1477
+    Relation target 'PYMOD-pytest' not found in entities
+  ⚠ [R5] REL-1481
+    Relation target 'PYMOD-ssl' not found in entities
+  ⚠ [R5] REL-1482
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1483
+    Relation target 'PYMOD-urllib3' not found in entities
+  ⚠ [R5] REL-1485
+    Relation target 'PYMOD-pytest' not found in entities
+  ⚠ [R5] REL-1486
+    Relation target 'PYMOD-socket' not found in entities
+  ⚠ [R5] REL-1487
+    Relation target 'PYMOD-unittest' not found in entities
+  ⚠ [R5] REL-1488
+    Relation target 'PYMOD-requests' not found in entities
+  ⚠ [R5] REL-1491
+    Relation target 'PYMOD-subprocess' not found in entities
+  ⚠ [R5] REL-1492
+    Relation target 'PYMOD-os' not found in entities
+  ⚠ [R5] REL-1494
+    Relation target 'PYMOD-secrets' not found in entities
+  ⚠ [R5] REL-1495
+    Relation target 'PYMOD-site' not found in entities
+  ⚠ [R5] REL-1496
+    Relation target 'PYMOD-sys' not found in entities
+  ⚠ [R5] REL-1497
+    Relation target 'PYMOD-textwrap' not found in entities
+  ⚠ [R5] REL-1498
+    Relation target 'PYMOD-pytest' not found in entities
+  ⚠ [R5] REL-1499
+    Relation target 'PYMOD-collections' not found in entities
+  ⚠ [R5] REL-1500
+    Relation target 'PYMOD-dataclasses' not found in entities
+  ⚠ [R5] REL-1501
+    Relation target 'PYMOD-pathlib' not found in entities
+  ⚠ [R5] REL-1502
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1503
+    Relation target 'PYMOD-unittest' not found in entities
+  ⚠ [R5] REL-1505
+    Relation target 'PYMOD-unittest' not found in entities
+  ⚠ [R5] REL-1508
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1509
+    Relation target 'PYMOD-pygments' not found in entities
+  ⚠ [R5] REL-1511
+    Relation target 'PYMOD-sys' not found in entities
+  ⚠ [R5] REL-1512
+    Relation target 'PYMOD-shutil' not found in entities
+  ⚠ [R5] REL-1513
+    Relation target 'PYMOD-subprocess' not found in entities
+  ⚠ [R5] REL-1514
+    Relation target 'PYMOD-contextlib' not found in entities
+  ⚠ [R5] REL-1515
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1517
+    Relation target 'PYMOD-threading' not found in entities
+  ⚠ [R5] REL-1518
+    Relation target 'PYMOD-json' not found in entities
+  ⚠ [R5] REL-1519
+    Relation target 'PYMOD-collections' not found in entities
+  ⚠ [R5] REL-1520
+    Relation target 'PYMOD-contextlib' not found in entities
+  ⚠ [R5] REL-1521
+    Relation target 'PYMOD-http' not found in entities
+  ⚠ [R5] REL-1522
+    Relation target 'PYMOD-urllib' not found in entities
+  ⚠ [R5] REL-1523
+    Relation target 'PYMOD-pytest' not found in entities
+  ⚠ [R5] REL-1524
+    Relation target 'PYMOD-argparse' not found in entities
+  ⚠ [R5] REL-1525
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1527
+    Relation target 'PYMOD-argparse' not found in entities
+  ⚠ [R5] REL-1528
+    Relation target 'PYMOD-json' not found in entities
+  ⚠ [R5] REL-1530
+    Relation target 'PYMOD-dataclasses' not found in entities
+  ⚠ [R5] REL-1531
+    Relation target 'PYMOD-enum' not found in entities
+  ⚠ [R5] REL-1532
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1533
+    Relation target 'PYMOD-dataclasses' not found in entities
+  ⚠ [R5] REL-1534
+    Relation target 'PYMOD-shlex' not found in entities
+  ⚠ [R5] REL-1535
+    Relation target 'PYMOD-subprocess' not found in entities
+  ⚠ [R5] REL-1536
+    Relation target 'PYMOD-sys' not found in entities
+  ⚠ [R5] REL-1537
+    Relation target 'PYMOD-tempfile' not found in entities
+  ⚠ [R5] REL-1538
+    Relation target 'PYMOD-venv' not found in entities
+  ⚠ [R5] REL-1539
+    Relation target 'PYMOD-argparse' not found in entities
+  ⚠ [R5] REL-1540
+    Relation target 'PYMOD-contextlib' not found in entities
+  ⚠ [R5] REL-1541
+    Relation target 'PYMOD-pathlib' not found in entities
+  ⚠ [R5] REL-1542
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1543
+    Relation target 'PYMOD-argparse' not found in entities
+  ⚠ [R5] REL-1544
+    Relation target 'PYMOD-os' not found in entities
+  ⚠ [R5] REL-1545
+    Relation target 'PYMOD-platform' not found in entities
+  ⚠ [R5] REL-1546
+    Relation target 'PYMOD-sys' not found in entities
+  ⚠ [R5] REL-1547
+    Relation target 'PYMOD-socket' not found in entities
+  ⚠ [R5] REL-1548
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1549
+    Relation target 'PYMOD-requests' not found in entities
+  ⚠ [R5] REL-1550
+    Relation target 'PYMOD-pygments' not found in entities
+  ⚠ [R5] REL-1552
+    Relation target 'PYMOD-argparse' not found in entities
+  ⚠ [R5] REL-1553
+    Relation target 'PYMOD-sys' not found in entities
+  ⚠ [R5] REL-1554
+    Relation target 'PYMOD-os' not found in entities
+  ⚠ [R5] REL-1555
+    Relation target 'PYMOD-warnings' not found in entities
+  ⚠ [R5] REL-1556
+    Relation target 'PYMOD-contextlib' not found in entities
+  ⚠ [R5] REL-1557
+    Relation target 'PYMOD-pathlib' not found in entities
+  ⚠ [R5] REL-1558
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1559
+    Relation target 'PYMOD-enum' not found in entities
+  ⚠ [R5] REL-1561
+    Relation target 'PYMOD-setuptools' not found in entities
+  ⚠ [R5] REL-1562
+    Relation target 'PYMOD-collections' not found in entities
+  ⚠ [R5] REL-1563
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1565
+    Relation target 'PYMOD-stat' not found in entities
+  ⚠ [R5] REL-1566
+    Relation target 'PYMOD-subprocess' not found in entities
+  ⚠ [R5] REL-1567
+    Relation target 'PYMOD-pathlib' not found in entities
+  ⚠ [R5] REL-1568
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1569
+    Relation target 'PYMOD-pathlib' not found in entities
+  ⚠ [R5] REL-1570
+    Relation target 'PYMOD-pytest' not found in entities
+  ⚠ [R5] REL-1571
+    Relation target 'PYMOD-_pytest' not found in entities
+  ⚠ [R5] REL-1575
+    Relation target 'PYMOD-pytest' not found in entities
+  ⚠ [R5] REL-1578
+    Relation target 'PYMOD-pytest' not found in entities
+  ⚠ [R5] REL-1581
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1582
+    Relation target 'PYMOD-charset_normalizer' not found in entities
+  ⚠ [R5] REL-1583
+    Relation target 'PYMOD-pytest' not found in entities
+  ⚠ [R5] REL-1585
+    Relation target 'PYMOD-os' not found in entities
+  ⚠ [R5] REL-1586
+    Relation target 'PYMOD-re' not found in entities
+  ⚠ [R5] REL-1587
+    Relation target 'PYMOD-http' not found in entities
+  ⚠ [R5] REL-1588
+    Relation target 'PYMOD-pathlib' not found in entities
+  ⚠ [R5] REL-1589
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1590
+    Relation target 'PYMOD-requests' not found in entities
+  ⚠ [R5] REL-1592
+    Relation target 'PYMOD-os' not found in entities
+  ⚠ [R5] REL-1593
+    Relation target 'PYMOD-tempfile' not found in entities
+  ⚠ [R5] REL-1594
+    Relation target 'PYMOD-time' not found in entities
+  ⚠ [R5] REL-1595
+    Relation target 'PYMOD-requests' not found in entities
+  ⚠ [R5] REL-1596
+    Relation target 'PYMOD-unittest' not found in entities
+  ⚠ [R5] REL-1597
+    Relation target 'PYMOD-urllib' not found in entities
+  ⚠ [R5] REL-1598
+    Relation target 'PYMOD-pytest' not found in entities
+  ⚠ [R5] REL-1601
+    Relation target 'PYMOD-mimetypes' not found in entities
+  ⚠ [R5] REL-1602
+    Relation target 'PYMOD-os' not found in entities
+  ⚠ [R5] REL-1603
+    Relation target 'PYMOD-re' not found in entities
+  ⚠ [R5] REL-1604
+    Relation target 'PYMOD-mailbox' not found in entities
+  ⚠ [R5] REL-1605
+    Relation target 'PYMOD-time' not found in entities
+  ⚠ [R5] REL-1606
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1607
+    Relation target 'PYMOD-urllib' not found in entities
+  ⚠ [R5] REL-1608
+    Relation target 'PYMOD-requests' not found in entities
+  ⚠ [R5] REL-1610
+    Relation target 'PYMOD-base64' not found in entities
+  ⚠ [R5] REL-1611
+    Relation target 'PYMOD-zlib' not found in entities
+  ⚠ [R5] REL-1614
+    Relation target 'PYMOD-argparse' not found in entities
+  ⚠ [R5] REL-1616
+    Relation target 'PYMOD-argparse' not found in entities
+  ⚠ [R5] REL-1617
+    Relation target 'PYMOD-os' not found in entities
+  ⚠ [R5] REL-1618
+    Relation target 'PYMOD-textwrap' not found in entities
+  ⚠ [R5] REL-1619
+    Relation target 'PYMOD-re' not found in entities
+  ⚠ [R5] REL-1620
+    Relation target 'PYMOD-shutil' not found in entities
+  ⚠ [R5] REL-1621
+    Relation target 'PYMOD-collections' not found in entities
+  ⚠ [R5] REL-1622
+    Relation target 'PYMOD-contextlib' not found in entities
+  ⚠ [R5] REL-1623
+    Relation target 'PYMOD-pathlib' not found in entities
+  ⚠ [R5] REL-1624
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1626
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1628
+    Relation target 'PYMOD-re' not found in entities
+  ⚠ [R5] REL-1629
+    Relation target 'PYMOD-sys' not found in entities
+  ⚠ [R5] REL-1630
+    Relation target 'PYMOD-pathlib' not found in entities
+  ⚠ [R5] REL-1631
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1632
+    Relation target 'PYMOD-yaml' not found in entities
+  ⚠ [R5] REL-1633
+    Relation target 'PYMOD-jinja2' not found in entities
+  ⚠ [R5] REL-1634
+    Relation target 'PYMOD-dataclasses' not found in entities
+  ⚠ [R5] REL-1635
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1637
+    Relation target 'PYMOD-os' not found in entities
+  ⚠ [R5] REL-1638
+    Relation target 'PYMOD-functools' not found in entities
+  ⚠ [R5] REL-1639
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1641
+    Relation target 'PYMOD-sys' not found in entities
+  ⚠ [R5] REL-1642
+    Relation target 'PYMOD-jinja2' not found in entities
+  ⚠ [R5] REL-1643
+    Relation target 'PYMOD-fetch' not found in entities
+  ⚠ [R5] REL-1644
+    Relation target 'PYMOD-argparse' not found in entities
+  ⚠ [R5] REL-1645
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1646
+    Relation target 'PYMOD-pytest' not found in entities
+  ⚠ [R5] REL-1647
+    Relation target 'PYMOD-shutil' not found in entities
+  ⚠ [R5] REL-1648
+    Relation target 'PYMOD-os' not found in entities
+  ⚠ [R5] REL-1650
+    Relation target 'PYMOD-http' not found in entities
+  ⚠ [R5] REL-1651
+    Relation target 'PYMOD-threading' not found in entities
+  ⚠ [R5] REL-1655
+    Relation target 'PYMOD-json' not found in entities
+  ⚠ [R5] REL-1657
+    Relation target 'PYMOD-pathlib' not found in entities
+  ⚠ [R5] REL-1658
+    Relation target 'PYMOD-PyInstaller' not found in entities
+  ⚠ [R5] REL-1659
+    Relation target 'PYMOD-argparse' not found in entities
+  ⚠ [R5] REL-1660
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1661
+    Relation target 'PYMOD-unittest' not found in entities
+  ⚠ [R5] REL-1664
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1666
+    Relation target 'PYMOD-argparse' not found in entities
+  ⚠ [R5] REL-1667
+    Relation target 'PYMOD-sys' not found in entities
+  ⚠ [R5] REL-1668
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1670
+    Relation target 'PYMOD-json' not found in entities
+  ⚠ [R5] REL-1671
+    Relation target 'PYMOD-tempfile' not found in entities
+  ⚠ [R5] REL-1672
+    Relation target 'PYMOD-time' not found in entities
+  ⚠ [R5] REL-1673
+    Relation target 'PYMOD-contextlib' not found in entities
+  ⚠ [R5] REL-1674
+    Relation target 'PYMOD-datetime' not found in entities
+  ⚠ [R5] REL-1675
+    Relation target 'PYMOD-pathlib' not found in entities
+  ⚠ [R5] REL-1676
+    Relation target 'PYMOD-pytest' not found in entities
+  ⚠ [R5] REL-1679
+    Relation target 'PYMOD-sys' not found in entities
+  ⚠ [R5] REL-1680
+    Relation target 'PYMOD-pytest' not found in entities
+  ⚠ [R5] REL-1681
+    Relation target 'PYMOD-responses' not found in entities
+  ⚠ [R5] REL-1684
+    Relation target 'PYMOD-socket' not found in entities
+  ⚠ [R5] REL-1685
+    Relation target 'PYMOD-pytest' not found in entities
+  ⚠ [R5] REL-1686
+    Relation target 'PYMOD-pytest_httpbin' not found in entities
+  ⚠ [R5] REL-1688
+    Relation target 'PYMOD-argparse' not found in entities
+  ⚠ [R5] REL-1689
+    Relation target 'PYMOD-pytest' not found in entities
+  ⚠ [R5] REL-1690
+    Relation target 'PYMOD-requests' not found in entities
+  ⚠ [R5] REL-1693
+    Relation target 'PYMOD-json' not found in entities
+  ⚠ [R5] REL-1694
+    Relation target 'PYMOD-pytest' not found in entities
+  ⚠ [R5] REL-1695
+    Relation target 'PYMOD-responses' not found in entities
+  ⚠ [R5] REL-1698
+    Relation target 'PYMOD-sys' not found in entities
+  ⚠ [R5] REL-1699
+    Relation target 'PYMOD-os' not found in entities
+  ⚠ [R5] REL-1700
+    Relation target 'PYMOD-warnings' not found in entities
+  ⚠ [R5] REL-1701
+    Relation target 'PYMOD-itertools' not found in entities
+  ⚠ [R5] REL-1702
+    Relation target 'PYMOD-operator' not found in entities
+  ⚠ [R5] REL-1703
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1704
+    Relation target 'PYMOD-pathlib' not found in entities
+  ⚠ [R5] REL-1705
+    Relation target 'PYMOD-contextlib' not found in entities
+  ⚠ [R5] REL-1707
+    Relation target 'PYMOD-json' not found in entities
+  ⚠ [R5] REL-1708
+    Relation target 'PYMOD-contextlib' not found in entities
+  ⚠ [R5] REL-1709
+    Relation target 'PYMOD-datetime' not found in entities
+  ⚠ [R5] REL-1710
+    Relation target 'PYMOD-pathlib' not found in entities
+  ⚠ [R5] REL-1711
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1712
+    Relation target 'PYMOD-requests' not found in entities
+  ⚠ [R5] REL-1714
+    Relation target 'PYMOD-json' not found in entities
+  ⚠ [R5] REL-1715
+    Relation target 'PYMOD-os' not found in entities
+  ⚠ [R5] REL-1716
+    Relation target 'PYMOD-shutil' not found in entities
+  ⚠ [R5] REL-1717
+    Relation target 'PYMOD-contextlib' not found in entities
+  ⚠ [R5] REL-1718
+    Relation target 'PYMOD-datetime' not found in entities
+  ⚠ [R5] REL-1719
+    Relation target 'PYMOD-unittest' not found in entities
+  ⚠ [R5] REL-1720
+    Relation target 'PYMOD-pathlib' not found in entities
+  ⚠ [R5] REL-1721
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1722
+    Relation target 'PYMOD-pytest' not found in entities
+  ⚠ [R5] REL-1725
+    Relation target 'PYMOD-base64' not found in entities
+  ⚠ [R5] REL-1726
+    Relation target 'PYMOD-json' not found in entities
+  ⚠ [R5] REL-1727
+    Relation target 'PYMOD-re' not found in entities
+  ⚠ [R5] REL-1728
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1730
+    Relation target 'PYMOD-re' not found in entities
+  ⚠ [R5] REL-1731
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1734
+    Relation target 'PYMOD-enum' not found in entities
+  ⚠ [R5] REL-1735
+    Relation target 'PYMOD-argparse' not found in entities
+  ⚠ [R5] REL-1736
+    Relation target 'PYMOD-http' not found in entities
+  ⚠ [R5] REL-1737
+    Relation target 'PYMOD-json' not found in entities
+  ⚠ [R5] REL-1738
+    Relation target 'PYMOD-sys' not found in entities
+  ⚠ [R5] REL-1739
+    Relation target 'PYMOD-contextlib' not found in entities
+  ⚠ [R5] REL-1740
+    Relation target 'PYMOD-time' not found in entities
+  ⚠ [R5] REL-1741
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1742
+    Relation target 'PYMOD-urllib' not found in entities
+  ⚠ [R5] REL-1743
+    Relation target 'PYMOD-requests' not found in entities
+  ⚠ [R5] REL-1744
+    Relation target 'PYMOD-urllib3' not found in entities
+  ⚠ [R5] REL-1747
+    Relation target 'PYMOD-requests' not found in entities
+  ⚠ [R5] REL-1748
+    Relation target 'PYMOD-re' not found in entities
+  ⚠ [R5] REL-1749
+    Relation target 'PYMOD-pygments' not found in entities
+  ⚠ [R5] REL-1751
+    Relation target 'PYMOD-requests' not found in entities
+  ⚠ [R5] REL-1754
+    Relation target 'PYMOD-textwrap' not found in entities
+  ⚠ [R5] REL-1756
+    Relation target 'PYMOD-argparse' not found in entities
+  ⚠ [R5] REL-1758
+    Relation target 'PYMOD-re' not found in entities
+  ⚠ [R5] REL-1759
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1762
+    Relation target 'PYMOD-json' not found in entities
+  ⚠ [R5] REL-1763
+    Relation target 'PYMOD-pathlib' not found in entities
+  ⚠ [R5] REL-1764
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1766
+    Relation target 'PYMOD-collections' not found in entities
+  ⚠ [R5] REL-1767
+    Relation target 'PYMOD-multidict' not found in entities
+  ⚠ [R5] REL-1768
+    Relation target 'PYMOD-io' not found in entities
+  ⚠ [R5] REL-1769
+    Relation target 'PYMOD-requests' not found in entities
+  ⚠ [R5] REL-1772
+    Relation target 'PYMOD-json' not found in entities
+  ⚠ [R5] REL-1773
+    Relation target 'PYMOD-os' not found in entities
+  ⚠ [R5] REL-1774
+    Relation target 'PYMOD-re' not found in entities
+  ⚠ [R5] REL-1775
+    Relation target 'PYMOD-sys' not found in entities
+  ⚠ [R5] REL-1776
+    Relation target 'PYMOD-copy' not found in entities
+  ⚠ [R5] REL-1777
+    Relation target 'PYMOD-datetime' not found in entities
+  ⚠ [R5] REL-1778
+    Relation target 'PYMOD-pathlib' not found in entities
+  ⚠ [R5] REL-1779
+    Relation target 'PYMOD-subprocess' not found in entities
+  ⚠ [R5] REL-1780
+    Relation target 'PYMOD-time' not found in entities
+  ⚠ [R5] REL-1781
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1782
+    Relation target 'PYMOD-requests' not found in entities
+  ⚠ [R5] REL-1783
+    Relation target 'PYFUNC-utils.http' not found in entities
+  ⚠ [R5] REL-1784
+    Relation target 'PYFUNC-utils.http' not found in entities
+  ⚠ [R5] REL-1785
+    Relation target 'PYFUNC-utils.http' not found in entities
+  ⚠ [R5] REL-1786
+    Relation target 'PYFUNC-utils.http' not found in entities
+  ⚠ [R5] REL-1787
+    Relation target 'PYFUNC-utils.http' not found in entities
+  ⚠ [R5] REL-1788
+    Relation target 'PYFUNC-utils.http' not found in entities
+  ⚠ [R5] REL-1789
+    Relation target 'PYFUNC-utils.http' not found in entities
+  ⚠ [R5] REL-1790
+    Relation target 'PYFUNC-utils.http' not found in entities
+  ⚠ [R5] REL-1791
+    Relation target 'PYFUNC-utils.http' not found in entities
+  ⚠ [R5] REL-1793
+    Relation target 'PYFUNC-_.paths.append' not found in entities
+  ⚠ [R5] REL-1795
+    Relation target 'PYFUNC-parse.parse' not found in entities
+  ⚠ [R5] REL-1796
+    Relation target 'PYFUNC-tokens.Path' not found in entities
+  ⚠ [R5] REL-1797
+    Relation target 'PYFUNC-httpie.cli.nested_json.interpret.object_for' not found in entities
+  ⚠ [R5] REL-1798
+    Relation target 'PYFUNC-httpie.cli.nested_json.interpret.type_check' not found in entities
+  ⚠ [R5] REL-1799
+    Relation target 'PYFUNC-_.cursor.setdefault' not found in entities
+  ⚠ [R5] REL-1800
+    Relation target 'PYFUNC-_.cursor.extend' not found in entities
+  ⚠ [R5] REL-1801
+    Relation target 'PYFUNC-tokens.NestedJSONArray' not found in entities
+  ⚠ [R5] REL-1802
+    Relation target 'PYFUNC-_.data.items' not found in entities
+  ⚠ [R5] REL-1803
+    Relation target 'PYFUNC-errors.NestedJSONSyntaxError' not found in entities
+  ⚠ [R5] REL-1804
+    Relation target 'PYFUNC-_.cursor.append' not found in entities
+  ⚠ [R5] REL-1805
+    Relation target 'PYFUNC-parse.assert_cant_happen' not found in entities
+  ⚠ [R5] REL-1806
+    Relation target 'PYFUNC-lexers.metadata.MetadataLexer' not found in entities
+  ⚠ [R5] REL-1806
+    Relation source 'PYFUNC-httpie.output.formatters.colors.ColorFormatter' not found in entities
+  ⚠ [R5] REL-1807
+    Relation target 'PYFUNC-_.mime.split' not found in entities
+  ⚠ [R5] REL-1808
+    Relation target 'PYFUNC-ui.palette.SHADE_TO_PIE_STYLE.items' not found in entities
+  ⚠ [R5] REL-1809
+    Relation target 'PYFUNC-_.lexer_names.append' not found in entities
+  ⚠ [R5] REL-1810
+    Relation target 'PYFUNC-_.subtype.split' not found in entities
+  ⚠ [R5] REL-1811
+    Relation target 'PYFUNC-_.lexer_names.extend' not found in entities
+  ⚠ [R5] REL-1812
+    Relation target 'PYFUNC-_.mime_types.extend' not found in entities
+  ⚠ [R5] REL-1813
+    Relation target 'PYFUNC-lexers.json.EnhancedJsonLexer' not found in entities
+  ⚠ [R5] REL-1814
+    Relation target 'PYFUNC-json.loads' not found in entities
+  ⚠ [R5] REL-1815
+    Relation target 'PYFUNC-httpie.output.formatters.colors.format_value' not found in entities
+  ⚠ [R5] REL-1817
+    Relation target 'PYFUNC-_.raw_styles.items' not found in entities
+  ⚠ [R5] REL-1818
+    Relation target 'PYFUNC-tests.test_output.get_headers' not found in entities
+  ⚠ [R5] REL-1819

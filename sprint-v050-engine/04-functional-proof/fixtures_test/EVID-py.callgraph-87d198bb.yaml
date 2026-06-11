@@ -1,0 +1,30 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-87d198bb
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-25T07:23:45.918591+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://fixtures
+  root: ./sprint-v050-engine/02-fixtures
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: test_h27_propagated_self.Inner
+  - symbol: test_h27_propagated_self.Outer.get_inner
+  edges:
+  - from: test_h27_propagated_self.Outer.get_inner
+    to: test_h27_propagated_self.Inner
+    kind: call
+    edge_id: 0
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function 'Inner' in local module
+    range:
+      start_line: 13
+      start_col: 0
+      end_line: 13
+      end_col: 0

@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "cas.event.v0.1.schema.json",
+  "title": "CAS Event v0.1",
+  "description": "Event log entries for audit trail",
+  "type": "object",
+  "required": ["schema", "ts", "actor", "action", "artifact_id"],
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "cas.event.v0.1"
+    },
+    "ts": {
+      "$ref": "common.v0.1.schema.json#/$defs/timestamp"
+    },
+    "actor": {
+      "type": "string",
+      "description": "Who performed the action: extractor:py.v0.1, human:name, agent:X"
+    },
+    "action": {
+      "type": "string",
+      "enum": ["create", "upsert", "update", "delete", "approve", "baseline"],
+      "description": "Type of action performed"
+    },
+    "artifact_id": {
+      "type": "string",
+      "description": "ID of the affected artifact"
+    },
+    "artifact_kind": {
+      "type": "string",
+      "enum": ["entity", "relation", "evidence", "issue"],
+      "description": "Kind of artifact affected"
+    },
+    "prev_hash": {
+      "type": "string",
+      "description": "Previous content hash (for updates)"
+    },
+    "new_hash": {
+      "type": "string",
+      "description": "New content hash"
+    },
+    "signature": {
+      "type": "string",
+      "description": "Optional cryptographic signature"
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Additional action-specific metadata",
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

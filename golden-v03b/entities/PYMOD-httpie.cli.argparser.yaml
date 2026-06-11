@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.cli.argparser
+kind: entity
+type: py.module
+name: argparser
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/argparser.py
+anchors:
+- type: symbol
+  value: httpie.cli.argparser
+- type: fingerprint
+  value: 88871084f0d66faf713cd3cbff837abe980182a5238abe690cd9ff890c6051ea
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli

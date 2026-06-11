@@ -1,0 +1,49 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-702df344
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:53.031091+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.output.ui.man_pages
+    kind: module
+    file: httpie/output/ui/man_pages.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 48
+      end_col: 0
+    fingerprint: a8e291d323f0348b6ccaa94dedd99ca3548683319004eb9515d5875636f84575
+  - qualified: httpie.output.ui.man_pages.is_available
+    kind: function
+    file: httpie/output/ui/man_pages.py
+    range:
+      start_line: 16
+      start_col: 0
+      end_line: 36
+      end_col: 0
+    fingerprint: 5ecbe90ed6ab21052b0c1f27d9f37690d85d88762b3705dc495705f4eebae0f7
+    params:
+    - name: program
+      annotation: str
+    returns: bool
+  - qualified: httpie.output.ui.man_pages.display_for
+    kind: function
+    file: httpie/output/ui/man_pages.py
+    range:
+      start_line: 39
+      start_col: 0
+      end_line: 48
+      end_col: 0
+    fingerprint: 8759992a28e588412bcbcac227bd295b7d86fb33336c724e1ec9332a58bf10fc
+    params:
+    - name: env
+      annotation: Environment
+    - name: program
+      annotation: str
+    returns: None

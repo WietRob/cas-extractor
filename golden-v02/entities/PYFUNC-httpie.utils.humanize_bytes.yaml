@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.utils.humanize_bytes
+kind: entity
+type: py.function
+name: humanize_bytes
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/utils.py
+anchors:
+- type: symbol
+  value: httpie.utils.humanize_bytes
+- type: fingerprint
+  value: 2e4e94961d1f9b1ed97987ad2106944b0921157e5f98ffff8f9a981f2d6b826c
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.utils

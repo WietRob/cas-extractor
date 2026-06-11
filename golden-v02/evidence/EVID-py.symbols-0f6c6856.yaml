@@ -1,0 +1,79 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-0f6c6856
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:51:32.261689+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.models
+    kind: module
+    file: httpie/models.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 233
+      end_col: 0
+    fingerprint: 228f514ab08b8e435db9499670fd45bfc70ae8fea344ef2abbb4df0f08bba475
+  - qualified: httpie.models.HTTPMessage
+    kind: class
+    file: httpie/models.py
+    range:
+      start_line: 23
+      start_col: 0
+      end_line: 58
+      end_col: 0
+    fingerprint: 1bbd08c5207161b6d149c57181df4e8f69c9e18c821cd5b6ed3d46ee45607b97
+  - qualified: httpie.models.HTTPResponse
+    kind: class
+    file: httpie/models.py
+    range:
+      start_line: 61
+      start_col: 0
+      end_line: 127
+      end_col: 0
+    fingerprint: 0ed751c80ec1bc582c4efbd82e94a9d12371e170487211c5cf900dd2adb60dfe
+  - qualified: httpie.models.HTTPRequest
+    kind: class
+    file: httpie/models.py
+    range:
+      start_line: 130
+      start_col: 0
+      end_line: 169
+      end_col: 0
+    fingerprint: ca8c87beae896ae7d6df4477d729e24ad342a7be59aa5e16d3e2d94846e5681c
+  - qualified: httpie.models.RequestsMessageKind
+    kind: class
+    file: httpie/models.py
+    range:
+      start_line: 175
+      start_col: 0
+      end_line: 177
+      end_col: 0
+    fingerprint: 2c44c2fb349817421a2b20c030f842dc9e9782e6f564d24c4bcfc66ca7bf6e47
+  - qualified: httpie.models.infer_requests_message_kind
+    kind: function
+    file: httpie/models.py
+    range:
+      start_line: 180
+      start_col: 0
+      end_line: 186
+      end_col: 0
+    fingerprint: c713757e77b512a7253e9c3c923e65cc5d13806a70e2424a787bab9990c3c473
+    params:
+    - name: message
+      annotation: RequestsMessage
+    returns: RequestsMessageKind
+  - qualified: httpie.models.OutputOptions
+    kind: class
+    file: httpie/models.py
+    range:
+      start_line: 202
+      start_col: 0
+      end_line: 233
+      end_col: 0
+    fingerprint: 8688cf812fa9bdcbc889e4b50f9317447fc300b32ad7d6148254dfdb98ed3969

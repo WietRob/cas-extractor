@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.internal.daemons
+kind: entity
+type: py.module
+name: daemons
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/internal/daemons.py
+anchors:
+- type: symbol
+  value: httpie.internal.daemons
+- type: fingerprint
+  value: 643b898b0dfac970ca8fe18c4b5fc4578e26282cec5d4a29b6c8d93dd4850656
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.internal

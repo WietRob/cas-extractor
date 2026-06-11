@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-3921
+kind: relation
+type: calls
+from: PYFUNC-httpie.client.transform_headers
+to: PYFUNC-httpie.client.apply_missing_repeated_headers
+confidence:
+  level: E1
+  direction: confirmed
+evidence:
+- EVID-py.callgraph-e9c8db84
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1

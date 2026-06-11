@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.output.ui.palette
+kind: entity
+type: py.module
+name: palette
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/ui/palette.py
+anchors:
+- type: symbol
+  value: httpie.output.ui.palette
+- type: fingerprint
+  value: 3fd203112cb23b3d4717c58501cc061778eb91de8037574f9ea23fece75f3859
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.ui

@@ -1,0 +1,112 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-29e35395
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:34.490734+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.entry_point.dump
+  - symbol: ?.groups.items
+  - symbol: ?.name.title
+  - symbol: ?.stream.write
+  - symbol: ?.stream.writelines
+  - symbol: collections.defaultdict
+  - symbol: tests.utils.plugins_cli.Plugin.build
+  - symbol: tests.utils.plugins_cli.Plugin.dump
+  - symbol: textwrap.dedent
+  edges:
+  - from: tests.utils.plugins_cli.Plugin.build
+    to: collections.defaultdict
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 53
+      start_col: 0
+      end_line: 53
+      end_col: 0
+  - from: tests.utils.plugins_cli.Plugin.build
+    to: ?.stream.write
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 67
+      start_col: 0
+      end_line: 77
+      end_col: 0
+  - from: tests.utils.plugins_cli.Plugin.build
+    to: ?.stream.write
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 80
+      start_col: 0
+      end_line: 80
+      end_col: 0
+  - from: tests.utils.plugins_cli.Plugin.build
+    to: ?.stream.writelines
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 81
+      start_col: 0
+      end_line: 85
+      end_col: 0
+  - from: tests.utils.plugins_cli.Plugin.build
+    to: ?.groups.items
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 62
+      start_col: 0
+      end_line: 62
+      end_col: 0
+  - from: tests.utils.plugins_cli.Plugin.build
+    to: textwrap.dedent
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 67
+      start_col: 0
+      end_line: 77
+      end_col: 0
+  - from: tests.utils.plugins_cli.Plugin.dump
+    to: ?.entry_point.dump
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 91
+      start_col: 0
+      end_line: 91
+      end_col: 0
+  - from: tests.utils.plugins_cli.Plugin.build
+    to: ?.name.title
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 59
+      start_col: 0
+      end_line: 59
+      end_col: 0
+  - from: tests.utils.plugins_cli.Plugin.build
+    to: ?.groups.items
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 83
+      start_col: 0
+      end_line: 83
+      end_col: 0
+  - from: tests.utils.plugins_cli.Plugin.build
+    to: ?.name.title
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 82
+      start_col: 0
+      end_line: 82
+      end_col: 0

@@ -1,0 +1,209 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-00943671
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T12:13:53.777186+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.cursor.append
+  - symbol: ?.cursor.extend
+  - symbol: ?.cursor.setdefault
+  - symbol: ?.data.items
+  - symbol: ?.paths.append
+  - symbol: errors.NestedJSONSyntaxError
+  - symbol: httpie.cli.nested_json.interpret.interpret
+  - symbol: httpie.cli.nested_json.interpret.interpret_nested_json
+  - symbol: httpie.cli.nested_json.interpret.object_for
+  - symbol: httpie.cli.nested_json.interpret.type_check
+  - symbol: httpie.cli.nested_json.interpret.unwrap_top_level_list_if_needed
+  - symbol: httpie.cli.nested_json.interpret.wrap_with_dict
+  - symbol: parse.assert_cant_happen
+  - symbol: parse.parse
+  - symbol: tokens.NestedJSONArray
+  - symbol: tokens.Path
+  edges:
+  - from: httpie.cli.nested_json.interpret.interpret_nested_json
+    to: httpie.cli.nested_json.interpret.wrap_with_dict
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 27
+      start_col: 0
+      end_line: 27
+      end_col: 0
+  - from: httpie.cli.nested_json.interpret.interpret
+    to: ?.paths.append
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 33
+      start_col: 0
+      end_line: 33
+      end_col: 0
+  - from: httpie.cli.nested_json.interpret.interpret_nested_json
+    to: httpie.cli.nested_json.interpret.interpret
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 26
+      start_col: 0
+      end_line: 26
+      end_col: 0
+  - from: httpie.cli.nested_json.interpret.interpret
+    to: parse.parse
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 32
+      start_col: 0
+      end_line: 32
+      end_col: 0
+  - from: httpie.cli.nested_json.interpret.interpret
+    to: tokens.Path
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 33
+      start_col: 0
+      end_line: 33
+      end_col: 0
+  - from: httpie.cli.nested_json.interpret.interpret
+    to: httpie.cli.nested_json.interpret.object_for
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 71
+      start_col: 0
+      end_line: 71
+      end_col: 0
+  - from: httpie.cli.nested_json.interpret.interpret
+    to: httpie.cli.nested_json.interpret.type_check
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 73
+      start_col: 0
+      end_line: 73
+      end_col: 0
+  - from: httpie.cli.nested_json.interpret.interpret
+    to: ?.cursor.setdefault
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 77
+      start_col: 0
+      end_line: 77
+      end_col: 0
+  - from: httpie.cli.nested_json.interpret.interpret
+    to: httpie.cli.nested_json.interpret.object_for
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 77
+      start_col: 0
+      end_line: 77
+      end_col: 0
+  - from: httpie.cli.nested_json.interpret.interpret
+    to: httpie.cli.nested_json.interpret.type_check
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 79
+      start_col: 0
+      end_line: 79
+      end_col: 0
+  - from: httpie.cli.nested_json.interpret.interpret
+    to: ?.cursor.extend
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 87
+      start_col: 0
+      end_line: 87
+      end_col: 0
+  - from: httpie.cli.nested_json.interpret.wrap_with_dict
+    to: tokens.NestedJSONArray
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 112
+      start_col: 0
+      end_line: 112
+      end_col: 0
+  - from: httpie.cli.nested_json.interpret.unwrap_top_level_list_if_needed
+    to: ?.data.items
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 125
+      start_col: 0
+      end_line: 125
+      end_col: 0
+  - from: httpie.cli.nested_json.interpret.interpret
+    to: errors.NestedJSONSyntaxError
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 81
+      start_col: 0
+      end_line: 86
+      end_col: 0
+  - from: httpie.cli.nested_json.interpret.interpret
+    to: httpie.cli.nested_json.interpret.object_for
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 92
+      start_col: 0
+      end_line: 92
+      end_col: 0
+  - from: httpie.cli.nested_json.interpret.interpret
+    to: httpie.cli.nested_json.interpret.type_check
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 95
+      start_col: 0
+      end_line: 95
+      end_col: 0
+  - from: httpie.cli.nested_json.interpret.interpret
+    to: ?.cursor.append
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 99
+      start_col: 0
+      end_line: 99
+      end_col: 0
+  - from: httpie.cli.nested_json.interpret.interpret
+    to: parse.assert_cant_happen
+    kind: call
+    edge_id: 17
+    range:
+      start_line: 102
+      start_col: 0
+      end_line: 102
+      end_col: 0
+  - from: httpie.cli.nested_json.interpret.interpret
+    to: ?.cursor.append
+    kind: call
+    edge_id: 18
+    range:
+      start_line: 97
+      start_col: 0
+      end_line: 97
+      end_col: 0
+  - from: httpie.cli.nested_json.interpret.interpret
+    to: httpie.cli.nested_json.interpret.object_for
+    kind: call
+    edge_id: 19
+    range:
+      start_line: 99
+      start_col: 0
+      end_line: 99
+      end_col: 0

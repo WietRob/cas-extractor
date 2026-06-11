@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.manager.tasks.export_args
+kind: entity
+type: py.module
+name: export_args
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/manager/tasks/export_args.py
+anchors:
+- type: symbol
+  value: httpie.manager.tasks.export_args
+- type: fingerprint
+  value: af3dc53f75f25b9e5ea1b8ed8d12596a3d5b209b251c84a08e34373a648d3eb2
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.manager.tasks

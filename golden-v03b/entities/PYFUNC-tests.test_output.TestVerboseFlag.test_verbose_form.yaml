@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_output.TestVerboseFlag.test_verbose_form
+kind: entity
+type: py.function
+name: test_verbose_form
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_output.py
+anchors:
+- type: symbol
+  value: tests.test_output.TestVerboseFlag.test_verbose_form
+- type: fingerprint
+  value: 35fd2cf06ec34095dae6eb9e2f5e8bbf79796e0372d84319e0b4b202b1378b62
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_output.TestVerboseFlag

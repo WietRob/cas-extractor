@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.plugins.manager.PluginManager.get_auth_plugin_mapping
+kind: entity
+type: py.function
+name: get_auth_plugin_mapping
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/plugins/manager.py
+anchors:
+- type: symbol
+  value: httpie.plugins.manager.PluginManager.get_auth_plugin_mapping
+- type: fingerprint
+  value: f328b67c92b94f5d341c201b59a53b28480beaeb5b57f031ef659612595a8edf
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.plugins.manager.PluginManager

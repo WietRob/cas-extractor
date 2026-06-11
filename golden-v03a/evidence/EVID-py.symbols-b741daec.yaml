@@ -1,0 +1,25 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-b741daec
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:52.930537+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.cli.argparser.HTTPieManagerArgumentParser.parse_known_args
+    kind: method
+    file: httpie/cli/argparser.py
+    range:
+      start_line: 129
+      start_col: 0
+      end_line: 135
+      end_col: 0
+    fingerprint: 4e8b8404b113b553c0a18094141ef6e6f09acd4abe755872cad7d8bac8eb5fbb
+    params:
+    - name: self
+    - name: args
+    - name: namespace

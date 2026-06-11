@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.plugins.builtin.HTTPBearerAuth
+kind: entity
+type: py.class
+name: HTTPBearerAuth
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/plugins/builtin.py
+anchors:
+- type: symbol
+  value: httpie.plugins.builtin.HTTPBearerAuth
+- type: fingerprint
+  value: b1d8763fe390e24d6db9378a3f511bc4db65bc9033178c9e161396b3b7dbb595
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.plugins.builtin

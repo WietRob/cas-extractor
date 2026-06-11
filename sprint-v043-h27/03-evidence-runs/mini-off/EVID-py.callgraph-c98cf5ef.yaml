@@ -1,0 +1,64 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-c98cf5ef
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-23T07:07:57.453377+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: /tmp/h27-verify
+  revision: git:test
+payload:
+  nodes:
+  - symbol: ?.self.client.send
+  - symbol: test_h27.HTTPClient
+  - symbol: test_h27.TestH27ThreeHop.level1
+  - symbol: test_h27.TestH27ThreeHop.level2
+  - symbol: test_h27.TestH27ThreeHop.level3
+  - symbol: test_h27.TestH27ThreeHop.run
+  edges:
+  - from: test_h27.TestH27ThreeHop.level3
+    to: test_h27.HTTPClient
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 34
+      start_col: 0
+      end_line: 34
+      end_col: 0
+  - from: test_h27.TestH27ThreeHop.level2
+    to: test_h27.TestH27ThreeHop.level3
+    kind: method_call
+    edge_id: 1
+    range:
+      start_line: 37
+      start_col: 0
+      end_line: 37
+      end_col: 0
+  - from: test_h27.TestH27ThreeHop.level1
+    to: test_h27.TestH27ThreeHop.level2
+    kind: method_call
+    edge_id: 2
+    range:
+      start_line: 40
+      start_col: 0
+      end_line: 40
+      end_col: 0
+  - from: test_h27.TestH27ThreeHop.run
+    to: test_h27.TestH27ThreeHop.level1
+    kind: method_call
+    edge_id: 3
+    range:
+      start_line: 43
+      start_col: 0
+      end_line: 43
+      end_col: 0
+  - from: test_h27.TestH27ThreeHop.run
+    to: ?.self.client.send
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 44
+      start_col: 0
+      end_line: 44
+      end_col: 0

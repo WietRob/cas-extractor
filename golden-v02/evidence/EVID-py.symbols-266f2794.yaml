@@ -1,0 +1,21 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-266f2794
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:51:32.564608+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: tests.test_sessions.test_auth_plugin_prompt_password_in_session.Plugin
+    kind: class
+    file: tests/test_sessions.py
+    range:
+      start_line: 310
+      start_col: 0
+      end_line: 315
+      end_col: 0
+    fingerprint: 9deaf2f5c907f440fb3a4efc165534f0f9aebd64d08374a3b2440a0875ee09b7

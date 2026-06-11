@@ -1,0 +1,216 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-e3fe5588
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:55.246159+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.test_tokens
+    kind: module
+    file: tests/test_tokens.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 118
+      end_col: 0
+    fingerprint: 08f2b1fd2134e11a7d90d0bf9bb73f7c8ee4380562ec4b08780f24f833ee646c
+  - qualified: tests.test_tokens.test_headers
+    kind: function
+    file: tests/test_tokens.py
+    range:
+      start_line: 16
+      start_col: 0
+      end_line: 18
+      end_col: 0
+    fingerprint: 6e59d8480a9e42134ad8c039ceb8ceec4e2c8240089b6bb76ce74949526c58b9
+  - qualified: tests.test_tokens.test_redirected_headers
+    kind: function
+    file: tests/test_tokens.py
+    range:
+      start_line: 21
+      start_col: 0
+      end_line: 23
+      end_col: 0
+    fingerprint: a9b055840969ba8094760df7551d3262a440843af65ee7f572610b6d7df09135
+  - qualified: tests.test_tokens.test_terminal_headers_and_body
+    kind: function
+    file: tests/test_tokens.py
+    range:
+      start_line: 26
+      start_col: 0
+      end_line: 28
+      end_col: 0
+    fingerprint: 19fec2dad0f219d6bcbfccfd1f178d0f8b01fe0d03786653e9868c35b9da5a98
+  - qualified: tests.test_tokens.test_terminal_request_headers_response_body
+    kind: function
+    file: tests/test_tokens.py
+    range:
+      start_line: 31
+      start_col: 0
+      end_line: 33
+      end_col: 0
+    fingerprint: 15919a8c0093d8697e3dddb55825dd24b9520c6c7de7c380fc599027f4176f83
+    params:
+    - name: httpbin
+  - qualified: tests.test_tokens.test_raw_request_headers_response_body
+    kind: function
+    file: tests/test_tokens.py
+    range:
+      start_line: 36
+      start_col: 0
+      end_line: 38
+      end_col: 0
+    fingerprint: 2096767a4936e20ff682c0350ddf7bd78ef42b6c6d04f11d11c463d4b5230ac3
+    params:
+    - name: httpbin
+  - qualified: tests.test_tokens.test_terminal_request_headers_response_headers
+    kind: function
+    file: tests/test_tokens.py
+    range:
+      start_line: 41
+      start_col: 0
+      end_line: 43
+      end_col: 0
+    fingerprint: cd0af5c3277bff99cbd2b9753567b1451b5762a4e572431711b7acfb0e7b34a4
+    params:
+    - name: httpbin
+  - qualified: tests.test_tokens.test_raw_request_headers_response_headers
+    kind: function
+    file: tests/test_tokens.py
+    range:
+      start_line: 46
+      start_col: 0
+      end_line: 48
+      end_col: 0
+    fingerprint: 9f3c2e5d92b9efeb6caaa0bc4bafae8f472fa1bc13606a88416471bb22676d80
+    params:
+    - name: httpbin
+  - qualified: tests.test_tokens.test_terminal_request_body_response_body
+    kind: function
+    file: tests/test_tokens.py
+    range:
+      start_line: 51
+      start_col: 0
+      end_line: 53
+      end_col: 0
+    fingerprint: 17e2b5372fe895c555ff6bd935d8d24fec152628220436c919192c4427f942c8
+    params:
+    - name: httpbin
+  - qualified: tests.test_tokens.test_raw_headers_and_body
+    kind: function
+    file: tests/test_tokens.py
+    range:
+      start_line: 56
+      start_col: 0
+      end_line: 61
+      end_col: 0
+    fingerprint: 32611c527243ea8ebcf8c069281be9f4614e51b0b82472a0a31dde5d4a8b677c
+  - qualified: tests.test_tokens.test_raw_body
+    kind: function
+    file: tests/test_tokens.py
+    range:
+      start_line: 64
+      start_col: 0
+      end_line: 66
+      end_col: 0
+    fingerprint: 9993bfd540208a6ccf9afcb54aa979fef903c60900e87d8aaaced74914fc0ecc
+  - qualified: tests.test_tokens.test_raw_exchange
+    kind: function
+    file: tests/test_tokens.py
+    range:
+      start_line: 69
+      start_col: 0
+      end_line: 72
+      end_col: 0
+    fingerprint: d1e1e1996719a38ec350fa5b86952dfaa440d5a2eb6954519a2f743b5a611ca8
+    params:
+    - name: httpbin
+  - qualified: tests.test_tokens.test_terminal_exchange
+    kind: function
+    file: tests/test_tokens.py
+    range:
+      start_line: 75
+      start_col: 0
+      end_line: 78
+      end_col: 0
+    fingerprint: ad178db8f29dd37e7e53dc4325951891d62622530541167410556158320ce310
+    params:
+    - name: httpbin
+  - qualified: tests.test_tokens.test_headers_multipart_body_separator
+    kind: function
+    file: tests/test_tokens.py
+    range:
+      start_line: 81
+      start_col: 0
+      end_line: 83
+      end_col: 0
+    fingerprint: 8713087b3e04121a5f47e93d707e616dba9ff05a384fdb93da0a3455877ed0ff
+  - qualified: tests.test_tokens.test_redirected_headers_multipart_no_separator
+    kind: function
+    file: tests/test_tokens.py
+    range:
+      start_line: 86
+      start_col: 0
+      end_line: 91
+      end_col: 0
+    fingerprint: c6bc62392aec61d4730cdc83c659ae33abd288ca30a2f57cd8c33c4bd86b0ce8
+  - qualified: tests.test_tokens.test_verbose_chunked
+    kind: function
+    file: tests/test_tokens.py
+    range:
+      start_line: 94
+      start_col: 0
+      end_line: 98
+      end_col: 0
+    fingerprint: 151bc398867fb402fb6a6fe4b361fcd312cd6840b93313635cf862a08d126b67
+    params:
+    - name: httpbin_with_chunked_support
+  - qualified: tests.test_tokens.test_request_headers_response_body
+    kind: function
+    file: tests/test_tokens.py
+    range:
+      start_line: 101
+      start_col: 0
+      end_line: 103
+      end_col: 0
+    fingerprint: 4b4c42705f4c2ec23cad53a423ff42b9c8b0d5946e9c13751227ce59bc43405e
+    params:
+    - name: httpbin
+  - qualified: tests.test_tokens.test_request_single_verbose
+    kind: function
+    file: tests/test_tokens.py
+    range:
+      start_line: 106
+      start_col: 0
+      end_line: 108
+      end_col: 0
+    fingerprint: b10b81b4f2a144890a679dfba0ccec7d36478765eca3eb082670b355e81b9e0e
+    params:
+    - name: httpbin
+  - qualified: tests.test_tokens.test_request_double_verbose
+    kind: function
+    file: tests/test_tokens.py
+    range:
+      start_line: 111
+      start_col: 0
+      end_line: 113
+      end_col: 0
+    fingerprint: b87f6e61a3ef0af2ce39e43e9d5fd6b941d63c1c507d0931f8c277f0e0ad41aa
+    params:
+    - name: httpbin
+  - qualified: tests.test_tokens.test_request_meta
+    kind: function
+    file: tests/test_tokens.py
+    range:
+      start_line: 116
+      start_col: 0
+      end_line: 118
+      end_col: 0
+    fingerprint: c8ceb2b330520b3035c03d3412a8f93fb082708839b1f19a565e5b74ecb027eb
+    params:
+    - name: httpbin

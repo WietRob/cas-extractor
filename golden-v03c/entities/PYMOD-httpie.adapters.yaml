@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.adapters
+kind: entity
+type: py.module
+name: adapters
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/adapters.py
+anchors:
+- type: symbol
+  value: httpie.adapters
+- type: fingerprint
+  value: 7a85565c332fa56c5bbf66dfa5d100189dd3cf2bd38e54070b9cf24a2022f2ca
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie

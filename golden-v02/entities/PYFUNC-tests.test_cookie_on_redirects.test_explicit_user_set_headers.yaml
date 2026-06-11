@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_cookie_on_redirects.test_explicit_user_set_headers
+kind: entity
+type: py.function
+name: test_explicit_user_set_headers
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_cookie_on_redirects.py
+anchors:
+- type: symbol
+  value: tests.test_cookie_on_redirects.test_explicit_user_set_headers
+- type: fingerprint
+  value: 2e823238b5f0f8efabf7a2dac1e81baa143fde94e80da08ae65871b5c6592456
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_cookie_on_redirects

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cookies.HTTPieCookiePolicy.return_ok_secure
+kind: entity
+type: py.function
+name: return_ok_secure
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cookies.py
+anchors:
+- type: symbol
+  value: httpie.cookies.HTTPieCookiePolicy.return_ok_secure
+- type: fingerprint
+  value: df5f8bdbc4a5fb460e1af3af7f7768be9e1b7db219dacbc72c726fcfae548142
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cookies.HTTPieCookiePolicy

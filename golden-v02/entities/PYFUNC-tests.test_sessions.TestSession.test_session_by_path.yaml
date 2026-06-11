@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_sessions.TestSession.test_session_by_path
+kind: entity
+type: py.function
+name: test_session_by_path
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_sessions.py
+anchors:
+- type: symbol
+  value: tests.test_sessions.TestSession.test_session_by_path
+- type: fingerprint
+  value: 40125d6043808da70946dc90587353188ba7f396cc558b7337967f0a29e427aa
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_sessions.TestSession

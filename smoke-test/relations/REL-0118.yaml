@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-0118
+kind: relation
+type: contains
+from: PYMOD-pipeline_timer
+to: PYCLS-pipeline_timer.StageTimer
+confidence:
+  level: E0
+  direction: confirmed
+evidence:
+- EVID-py.symbols-faffcf03
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1

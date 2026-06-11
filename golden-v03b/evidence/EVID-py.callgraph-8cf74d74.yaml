@@ -1,0 +1,369 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-8cf74d74
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T15:03:56.186029+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.arg.decode
+  - symbol: ?.downloader.failed
+  - symbol: ?.downloader.finish
+  - symbol: ?.downloader.pre_request
+  - symbol: ?.downloader.start
+  - symbol: ?.env.log_error
+  - symbol: ?.main_program
+  - symbol: ?.output_options._replace
+  - symbol: ?.output_options.any
+  - symbol: cli.definition.parser.parse_args
+  - symbol: client.collect_messages
+  - symbol: context.Environment
+  - symbol: downloads.Downloader
+  - symbol: httpie.core.decode_raw_args
+  - symbol: httpie.core.handle_generic_error
+  - symbol: httpie.core.main
+  - symbol: httpie.core.print_debug_info
+  - symbol: httpie.core.program
+  - symbol: httpie.core.raw_main
+  - symbol: httpie.core.separate
+  - symbol: internal.daemon_runner.is_daemon_mode
+  - symbol: internal.daemon_runner.run_daemon_task
+  - symbol: internal.update_warnings.check_updates
+  - symbol: models.OutputOptions.from_message
+  - symbol: output.models.ProcessingOptions.from_raw_args
+  - symbol: output.writer.write_message
+  - symbol: output.writer.write_stream
+  - symbol: platform.release
+  - symbol: platform.system
+  - symbol: plugins.registry.plugin_manager.load_installed_plugins
+  - symbol: status.http_status_to_exit_status
+  - symbol: utils.unwrap_context
+  edges:
+  - from: httpie.core.raw_main
+    to: context.Environment
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 36
+      start_col: 0
+      end_line: 36
+      end_col: 0
+  - from: httpie.core.raw_main
+    to: httpie.core.decode_raw_args
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 41
+      start_col: 0
+      end_line: 41
+      end_col: 0
+  - from: httpie.core.raw_main
+    to: internal.daemon_runner.is_daemon_mode
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 43
+      start_col: 0
+      end_line: 43
+      end_col: 0
+  - from: httpie.core.raw_main
+    to: plugins.registry.plugin_manager.load_installed_plugins
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 46
+      start_col: 0
+      end_line: 46
+      end_col: 0
+  - from: httpie.core.main
+    to: context.Environment
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 148
+      start_col: 0
+      end_line: 148
+      end_col: 0
+  - from: httpie.core.main
+    to: httpie.core.raw_main
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 162
+      start_col: 0
+      end_line: 167
+      end_col: 0
+  - from: httpie.core.program
+    to: output.models.ProcessingOptions.from_raw_args
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 180
+      start_col: 0
+      end_line: 180
+      end_col: 0
+  - from: httpie.core.raw_main
+    to: internal.daemon_runner.run_daemon_task
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 44
+      start_col: 0
+      end_line: 44
+      end_col: 0
+  - from: httpie.core.raw_main
+    to: httpie.core.print_debug_info
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 70
+      start_col: 0
+      end_line: 70
+      end_col: 0
+  - from: httpie.core.raw_main
+    to: cli.definition.parser.parse_args
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 77
+      start_col: 0
+      end_line: 80
+      end_col: 0
+  - from: httpie.core.raw_main
+    to: internal.update_warnings.check_updates
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 98
+      start_col: 0
+      end_line: 98
+      end_col: 0
+  - from: httpie.core.program
+    to: client.collect_messages
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 207
+      start_col: 0
+      end_line: 208
+      end_col: 0
+  - from: httpie.core.raw_main
+    to: ?.main_program
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 100
+      start_col: 0
+      end_line: 103
+      end_col: 0
+  - from: httpie.core.program
+    to: downloads.Downloader
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 205
+      start_col: 0
+      end_line: 205
+      end_col: 0
+  - from: httpie.core.program
+    to: ?.downloader.pre_request
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 206
+      start_col: 0
+      end_line: 206
+      end_col: 0
+  - from: httpie.core.program
+    to: models.OutputOptions.from_message
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 214
+      start_col: 0
+      end_line: 214
+      end_col: 0
+  - from: httpie.core.program
+    to: output.writer.write_message
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 234
+      start_col: 0
+      end_line: 241
+      end_col: 0
+  - from: httpie.core.program
+    to: httpie.core.separate
+    kind: call
+    edge_id: 17
+    range:
+      start_line: 246
+      start_col: 0
+      end_line: 246
+      end_col: 0
+  - from: httpie.core.program
+    to: ?.downloader.start
+    kind: call
+    edge_id: 18
+    range:
+      start_line: 249
+      start_col: 0
+      end_line: 252
+      end_col: 0
+  - from: httpie.core.program
+    to: output.writer.write_stream
+    kind: call
+    edge_id: 19
+    range:
+      start_line: 253
+      start_col: 0
+      end_line: 253
+      end_col: 0
+  - from: httpie.core.program
+    to: ?.downloader.finish
+    kind: call
+    edge_id: 20
+    range:
+      start_line: 254
+      start_col: 0
+      end_line: 254
+      end_col: 0
+  - from: httpie.core.program
+    to: ?.downloader.failed
+    kind: call
+    edge_id: 21
+    range:
+      start_line: 265
+      start_col: 0
+      end_line: 265
+      end_col: 0
+  - from: httpie.core.decode_raw_args
+    to: ?.arg.decode
+    kind: call
+    edge_id: 22
+    range:
+      start_line: 295
+      start_col: 0
+      end_line: 295
+      end_col: 0
+  - from: httpie.core.raw_main
+    to: ?.env.log_error
+    kind: call
+    edge_id: 23
+    range:
+      start_line: 117
+      start_col: 0
+      end_line: 117
+      end_col: 0
+  - from: httpie.core.raw_main
+    to: ?.env.log_error
+    kind: call
+    edge_id: 24
+    range:
+      start_line: 120
+      start_col: 0
+      end_line: 123
+      end_col: 0
+  - from: httpie.core.raw_main
+    to: utils.unwrap_context
+    kind: call
+    edge_id: 25
+    range:
+      start_line: 126
+      start_col: 0
+      end_line: 126
+      end_col: 0
+  - from: httpie.core.raw_main
+    to: httpie.core.handle_generic_error
+    kind: call
+    edge_id: 26
+    range:
+      start_line: 136
+      start_col: 0
+      end_line: 136
+      end_col: 0
+  - from: httpie.core.raw_main
+    to: httpie.core.handle_generic_error
+    kind: call
+    edge_id: 27
+    range:
+      start_line: 140
+      start_col: 0
+      end_line: 140
+      end_col: 0
+  - from: httpie.core.program
+    to: ?.output_options.any
+    kind: call
+    edge_id: 28
+    range:
+      start_line: 217
+      start_col: 0
+      end_line: 217
+      end_col: 0
+  - from: httpie.core.program
+    to: httpie.core.separate
+    kind: call
+    edge_id: 29
+    range:
+      start_line: 219
+      start_col: 0
+      end_line: 219
+      end_col: 0
+  - from: httpie.core.program
+    to: ?.env.log_error
+    kind: call
+    edge_id: 30
+    range:
+      start_line: 257
+      start_col: 0
+      end_line: 260
+      end_col: 0
+  - from: httpie.core.program
+    to: status.http_status_to_exit_status
+    kind: call
+    edge_id: 31
+    range:
+      start_line: 231
+      start_col: 0
+      end_line: 231
+      end_col: 0
+  - from: httpie.core.program
+    to: ?.output_options._replace
+    kind: call
+    edge_id: 32
+    range:
+      start_line: 237
+      start_col: 0
+      end_line: 239
+      end_col: 0
+  - from: httpie.core.print_debug_info
+    to: platform.system
+    kind: call
+    edge_id: 33
+    range:
+      start_line: 276
+      start_col: 0
+      end_line: 276
+      end_col: 0
+  - from: httpie.core.print_debug_info
+    to: platform.release
+    kind: call
+    edge_id: 34
+    range:
+      start_line: 276
+      start_col: 0
+      end_line: 276
+      end_col: 0
+  - from: httpie.core.program
+    to: ?.env.log_error
+    kind: call
+    edge_id: 35
+    range:
+      start_line: 233
+      start_col: 0
+      end_line: 233
+      end_col: 0

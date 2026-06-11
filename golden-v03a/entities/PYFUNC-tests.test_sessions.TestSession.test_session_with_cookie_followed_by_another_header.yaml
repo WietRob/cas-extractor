@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_sessions.TestSession.test_session_with_cookie_followed_by_another_header
+kind: entity
+type: py.function
+name: test_session_with_cookie_followed_by_another_header
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_sessions.py
+anchors:
+- type: symbol
+  value: tests.test_sessions.TestSession.test_session_with_cookie_followed_by_another_header
+- type: fingerprint
+  value: 3d9a2e419cc47c7cdca20f29e74065835f3b5d12a6eeb0bfd3cd69347835a60d
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_sessions.TestSession

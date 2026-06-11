@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_output.test_quiet_on_python_warnings.warn_and_run
+kind: entity
+type: py.function
+name: warn_and_run
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_output.py
+anchors:
+- type: symbol
+  value: tests.test_output.test_quiet_on_python_warnings.warn_and_run
+- type: fingerprint
+  value: d7aa5311fecbbdf83ba7086af7dfa97e6258b0d1d6d723abbca89b4815a917ed
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_output.test_quiet_on_python_warnings

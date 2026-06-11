@@ -1,0 +1,39 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-7689b63e
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T08:37:44.404895+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.cli.argtypes.PromptMixin._prompt_password
+    kind: method
+    file: httpie/cli/argtypes.py
+    range:
+      start_line: 134
+      start_col: 0
+      end_line: 140
+      end_col: 0
+    fingerprint: d1f307f4533056a11fc8c492e0a70f34eb318f322e6d7c6744deb4b0f32442d7
+    params:
+    - name: self
+    - name: prompt
+      annotation: str
+    returns: str
+  - qualified: httpie.cli.argtypes.PromptMixin._getpass
+    kind: method
+    file: httpie/cli/argtypes.py
+    range:
+      start_line: 143
+      start_col: 0
+      end_line: 145
+      end_col: 0
+    fingerprint: 1c006c7518f69445652036ad6f4f9d7934816111d3932a9e2f18f66205737257
+    decorators:
+    - staticmethod
+    params:
+    - name: prompt

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_config.test_default_options
+kind: entity
+type: py.function
+name: test_default_options
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_config.py
+anchors:
+- type: symbol
+  value: tests.test_config.test_default_options
+- type: fingerprint
+  value: 3d97488b2a1dfd7ff37969441beb20155a78e82c2615a7b54276e61a00a1b896
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_config

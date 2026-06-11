@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.utils.mock_env
+kind: entity
+type: py.function
+name: mock_env
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/utils/__init__.py
+anchors:
+- type: symbol
+  value: tests.utils.mock_env
+- type: fingerprint
+  value: 7ae877f17d73d53ac6b7a437b6ee70577706c046e41ee0c55f36b1475f461995
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils

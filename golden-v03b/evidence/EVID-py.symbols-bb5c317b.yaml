@@ -1,0 +1,40 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-bb5c317b
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:55.017262+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.models.OutputOptions.any
+    kind: method
+    file: httpie/models.py
+    range:
+      start_line: 208
+      start_col: 0
+      end_line: 213
+      end_col: 0
+    fingerprint: 6dc5ee7141d4aab1b2771193486ffc0b568c4de720391f40576933090883cf17
+    params:
+    - name: self
+  - qualified: httpie.models.OutputOptions.from_message
+    kind: method
+    file: httpie/models.py
+    range:
+      start_line: 216
+      start_col: 0
+      end_line: 233
+      end_col: 0
+    fingerprint: d0ce4371cabbfcf5148bfb20b0071d3dd96030e8944a44a98a68396e33ee2178
+    decorators:
+    - classmethod
+    params:
+    - name: cls
+    - name: message
+      annotation: RequestsMessage
+    - name: raw_args
+      annotation: str

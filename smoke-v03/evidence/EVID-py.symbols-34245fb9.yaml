@@ -1,0 +1,83 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-34245fb9
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:10:20.568908+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+payload:
+  symbols:
+  - qualified: cas_extractor.utils.fingerprint._ASTNormalizer.__init__
+    kind: method
+    file: cas_extractor/utils/fingerprint.py
+    range:
+      start_line: 12
+      start_col: 0
+      end_line: 15
+      end_col: 0
+    fingerprint: d104033f5b6aea78ae321028651295976dbdd743f69038778a166d384bd180ce
+    params:
+    - name: self
+    - name: strip_docstrings
+      annotation: bool
+    - name: normalize_literals
+      annotation: bool
+  - qualified: cas_extractor.utils.fingerprint._ASTNormalizer.visit_FunctionDef
+    kind: method
+    file: cas_extractor/utils/fingerprint.py
+    range:
+      start_line: 17
+      start_col: 0
+      end_line: 20
+      end_col: 0
+    fingerprint: a601125d99d69cd4a2eead4c6871ebcee49a74473511594abece53a008b73a1b
+    params:
+    - name: self
+    - name: node
+      annotation: ast.FunctionDef
+    returns: ast.FunctionDef
+  - qualified: cas_extractor.utils.fingerprint._ASTNormalizer.visit_ClassDef
+    kind: method
+    file: cas_extractor/utils/fingerprint.py
+    range:
+      start_line: 24
+      start_col: 0
+      end_line: 27
+      end_col: 0
+    fingerprint: a4a4a4b5ea57d21b5da4aab787e1368391c596c8880137af15f0a46b5af1c3a6
+    params:
+    - name: self
+    - name: node
+      annotation: ast.ClassDef
+    returns: ast.ClassDef
+  - qualified: cas_extractor.utils.fingerprint._ASTNormalizer.visit_Expr
+    kind: method
+    file: cas_extractor/utils/fingerprint.py
+    range:
+      start_line: 29
+      start_col: 0
+      end_line: 40
+      end_col: 0
+    fingerprint: 122702fc313bff18cef3d38f47fbffce21ea04031f7954b5623d5febfb320b34
+    params:
+    - name: self
+    - name: node
+      annotation: ast.Expr
+    returns: Optional[ast.Expr]
+  - qualified: cas_extractor.utils.fingerprint._ASTNormalizer.visit_Constant
+    kind: method
+    file: cas_extractor/utils/fingerprint.py
+    range:
+      start_line: 42
+      start_col: 0
+      end_line: 48
+      end_col: 0
+    fingerprint: b8108a5e8676e0736773417e7815e3a55abfa803cdcd7e007a2c2596bc2f1db5
+    params:
+    - name: self
+    - name: node
+      annotation: ast.Constant
+    returns: ast.Constant

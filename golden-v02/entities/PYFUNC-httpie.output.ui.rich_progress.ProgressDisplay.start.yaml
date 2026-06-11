@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.ui.rich_progress.ProgressDisplay.start
+kind: entity
+type: py.function
+name: start
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/output/ui/rich_progress.py
+anchors:
+- type: symbol
+  value: httpie.output.ui.rich_progress.ProgressDisplay.start
+- type: fingerprint
+  value: b5a26f4531a78f45c32ec7bbacaf64c196a16dcb501b0dbde6051fe39ef26da7
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.ui.rich_progress.ProgressDisplay

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-cas_extractor.utils.fingerprint._ASTNormalizer.visit_Expr
+kind: entity
+type: py.function
+name: visit_Expr
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor/utils/fingerprint.py
+anchors:
+- type: symbol
+  value: cas_extractor.utils.fingerprint._ASTNormalizer.visit_Expr
+- type: fingerprint
+  value: 122702fc313bff18cef3d38f47fbffce21ea04031f7954b5623d5febfb320b34
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor.utils.fingerprint._ASTNormalizer

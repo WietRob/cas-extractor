@@ -1,0 +1,44 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-d85b8ede
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:33.818115+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.super().__setitem__
+  - symbol: ?.super().items
+  - symbol: httpie.cli.dicts.MultiValueOrderedDict.__setitem__
+  - symbol: httpie.cli.dicts.MultiValueOrderedDict.items
+  edges:
+  - from: httpie.cli.dicts.MultiValueOrderedDict.items
+    to: ?.super().items
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 74
+      start_col: 0
+      end_line: 74
+      end_col: 0
+  - from: httpie.cli.dicts.MultiValueOrderedDict.__setitem__
+    to: ?.super().__setitem__
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 67
+      start_col: 0
+      end_line: 67
+      end_col: 0
+  - from: httpie.cli.dicts.MultiValueOrderedDict.__setitem__
+    to: ?.super().__setitem__
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 70
+      start_col: 0
+      end_line: 70
+      end_col: 0

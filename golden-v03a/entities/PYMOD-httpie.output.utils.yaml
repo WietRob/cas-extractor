@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.output.utils
+kind: entity
+type: py.module
+name: utils
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/output/utils.py
+anchors:
+- type: symbol
+  value: httpie.output.utils
+- type: fingerprint
+  value: fc30ddbe4e387dbd80cfdfb1c3e02013e83774010297a0e19a84374f44ec2e93
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output

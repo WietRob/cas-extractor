@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.nested_json.parse.parse.expect
+kind: entity
+type: py.function
+name: expect
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/nested_json/parse.py
+anchors:
+- type: symbol
+  value: httpie.cli.nested_json.parse.parse.expect
+- type: fingerprint
+  value: a320db9cf3ba46a64d42f4d4be9c510315556554a77d819a39969429b39e8a5a
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.nested_json.parse.parse

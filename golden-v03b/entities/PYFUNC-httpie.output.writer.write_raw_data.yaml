@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.writer.write_raw_data
+kind: entity
+type: py.function
+name: write_raw_data
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/writer.py
+anchors:
+- type: symbol
+  value: httpie.output.writer.write_raw_data
+- type: fingerprint
+  value: 7f514903130fe961a40c94cdfea931d421fc1f8b88fd6217e3cadb42284acde7
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.writer

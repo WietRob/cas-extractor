@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-pipeline_timer.StageTimer.to_json
+kind: entity
+type: py.function
+name: to_json
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: pipeline_timer.py
+anchors:
+- type: symbol
+  value: pipeline_timer.StageTimer.to_json
+- type: fingerprint
+  value: 8ac0d5f0b13ecc98ff3e7e5393df3a88408377554eef3cb64e98daad47698275
+  algo: sha256
+claims: []
+relations: []
+namespace: pipeline_timer.StageTimer

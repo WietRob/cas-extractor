@@ -1,0 +1,40 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-cd13c2bb
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:52.937411+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.cli.argtypes.SSLCredentials.__init__
+    kind: method
+    file: httpie/cli/argtypes.py
+    range:
+      start_line: 151
+      start_col: 0
+      end_line: 152
+      end_col: 0
+    fingerprint: 587eef9dcdf5fa3fed8b849a62e19f5f03491f6e3a1074a31e551d6845363f3d
+    params:
+    - name: self
+    - name: value
+      annotation: Optional[str]
+    returns: None
+  - qualified: httpie.cli.argtypes.SSLCredentials.prompt_password
+    kind: method
+    file: httpie/cli/argtypes.py
+    range:
+      start_line: 154
+      start_col: 0
+      end_line: 155
+      end_col: 0
+    fingerprint: eaa29529f02d7e3ff17523590a15d80ff1b9bb48ada67a06d306da26f79c566f
+    params:
+    - name: self
+    - name: key_file
+      annotation: str
+    returns: None

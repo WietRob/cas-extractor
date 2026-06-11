@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_update_warnings.test_check_updates_first_time_after_data_fetch
+kind: entity
+type: py.function
+name: test_check_updates_first_time_after_data_fetch
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_update_warnings.py
+anchors:
+- type: symbol
+  value: tests.test_update_warnings.test_check_updates_first_time_after_data_fetch
+- type: fingerprint
+  value: 25c57181143c9ec834e2f90a1682dd5ee54c364f07bc465f2599241a609ab796
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_update_warnings

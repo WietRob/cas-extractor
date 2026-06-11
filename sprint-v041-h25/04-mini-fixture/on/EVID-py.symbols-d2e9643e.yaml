@@ -1,0 +1,24 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-d2e9643e
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T11:17:16.885061+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: /tmp/h25-verify
+  revision: git:test
+payload:
+  symbols:
+  - qualified: test_h25.TestH25Conditional.setup
+    kind: method
+    file: test_h25.py
+    range:
+      start_line: 89
+      start_col: 0
+      end_line: 92
+      end_col: 0
+    fingerprint: 5f289462f64b31370264eed9c157212901cc1efe4aca6c846ed228c5b698dfa6
+    params:
+    - name: self
+    - name: use_websocket

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.context.Environment.log_error
+kind: entity
+type: py.function
+name: log_error
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/context.py
+anchors:
+- type: symbol
+  value: httpie.context.Environment.log_error
+- type: fingerprint
+  value: 2f4d87e15f4a52fa54486be8fe52a4ffb2f44ec31ff1a8d7c7476e4dcf61bb3b
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.context.Environment

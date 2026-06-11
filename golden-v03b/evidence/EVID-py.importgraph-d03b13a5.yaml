@@ -1,0 +1,31 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-d03b13a5
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-21T15:03:55.420770+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  imports:
+  - from: tests.conftest
+    imports:
+    - socket
+    - pytest
+    - pytest_httpbin.certs
+    - pytest_httpbin.serve.Server
+    - tests.utils.HTTPBIN_WITH_CHUNKED_SUPPORT_DOMAIN
+    - tests.utils.HTTPBIN_WITH_CHUNKED_SUPPORT
+    - tests.utils.REMOTE_HTTPBIN_DOMAIN
+    - tests.utils.IS_PYOPENSSL
+    - tests.utils.mock_env
+    - tests.utils.plugins_cli.broken_plugin
+    - tests.utils.plugins_cli.dummy_plugin
+    - tests.utils.plugins_cli.dummy_plugins
+    - tests.utils.plugins_cli.httpie_plugins
+    - tests.utils.plugins_cli.httpie_plugins_success
+    - tests.utils.plugins_cli.interface
+    - tests.utils.http_server.http_server
+    - tests.utils.http_server.localhost_http_server

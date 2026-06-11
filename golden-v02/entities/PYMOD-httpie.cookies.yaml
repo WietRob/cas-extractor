@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.cookies
+kind: entity
+type: py.module
+name: cookies
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/cookies.py
+anchors:
+- type: symbol
+  value: httpie.cookies
+- type: fingerprint
+  value: df57680fc0fba877bfb8e21526b36f9685e571db927f7cdd7efc8e05ea460cc7
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie

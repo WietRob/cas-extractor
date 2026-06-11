@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.sessions.materialize_cookies
+kind: entity
+type: py.function
+name: materialize_cookies
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/sessions.py
+anchors:
+- type: symbol
+  value: httpie.sessions.materialize_cookies
+- type: fingerprint
+  value: 929420193615eaa03c7128cd98b81921f5213abd73803efadb0e9646928bcf41
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.sessions

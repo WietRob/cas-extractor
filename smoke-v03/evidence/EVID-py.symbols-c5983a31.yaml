@@ -1,0 +1,96 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-c5983a31
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:10:20.587188+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+payload:
+  symbols:
+  - qualified: pipeline_timer.StageTimer.__init__
+    kind: method
+    file: pipeline_timer.py
+    range:
+      start_line: 26
+      start_col: 0
+      end_line: 29
+      end_col: 0
+    fingerprint: a1004201bc6f76333b189acd5774e3989a1250475265ea80b5078f2253d84d0f
+    params:
+    - name: self
+  - qualified: pipeline_timer.StageTimer.stage
+    kind: method
+    file: pipeline_timer.py
+    range:
+      start_line: 32
+      start_col: 0
+      end_line: 51
+      end_col: 0
+    fingerprint: 0dcfd30b01dbc8b4452957fe70eaf2c93f63cded6f73440aff754fb503b5beff
+    decorators:
+    - contextmanager
+    params:
+    - name: self
+    - name: name
+      annotation: str
+  - qualified: pipeline_timer.StageTimer.count
+    kind: method
+    file: pipeline_timer.py
+    range:
+      start_line: 53
+      start_col: 0
+      end_line: 58
+      end_col: 0
+    fingerprint: 574077e15ea8e97118f2c56828db642b8fe47d920e76da995054e738dd74f9ab
+    params:
+    - name: self
+    - name: key
+      annotation: str
+    - name: value
+      annotation: int
+    - name: stage
+      annotation: Optional[str]
+  - qualified: pipeline_timer.StageTimer.note
+    kind: method
+    file: pipeline_timer.py
+    range:
+      start_line: 60
+      start_col: 0
+      end_line: 64
+      end_col: 0
+    fingerprint: ac599dd9dd138df511ba8c04e699b5c67ee0df98a4f4cf9ea497de73946d180c
+    params:
+    - name: self
+    - name: msg
+      annotation: str
+    - name: stage
+      annotation: Optional[str]
+  - qualified: pipeline_timer.StageTimer.report
+    kind: method
+    file: pipeline_timer.py
+    range:
+      start_line: 66
+      start_col: 0
+      end_line: 98
+      end_col: 0
+    fingerprint: 50565d7b2985dd4e6aaf6db46550d3fd9b6637397c9b661490a1202675c3bea6
+    params:
+    - name: self
+    - name: file
+      annotation: Optional[Path]
+    returns: str
+  - qualified: pipeline_timer.StageTimer.to_json
+    kind: method
+    file: pipeline_timer.py
+    range:
+      start_line: 100
+      start_col: 0
+      end_line: 109
+      end_col: 0
+    fingerprint: 8ac0d5f0b13ecc98ff3e7e5393df3a88408377554eef3cb64e98daad47698275
+    params:
+    - name: self
+    returns: str

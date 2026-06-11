@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_cli.TestSchemes.test_invalid_custom_scheme
+kind: entity
+type: py.function
+name: test_invalid_custom_scheme
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_cli.py
+anchors:
+- type: symbol
+  value: tests.test_cli.TestSchemes.test_invalid_custom_scheme
+- type: fingerprint
+  value: ec5351a10ab60254c75364a134931dd271a08192bd607a6ea0494d881f123d14
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_cli.TestSchemes

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-cas_extractor.extractors.python_calls._resolve_super_method
+kind: entity
+type: py.function
+name: _resolve_super_method
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor/extractors/python_calls.py
+anchors:
+- type: symbol
+  value: cas_extractor.extractors.python_calls._resolve_super_method
+- type: fingerprint
+  value: 825799889bc3db64067eb5f43fdbe66f5419e91212c289db18205c6ce50abdb1
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor.extractors.python_calls

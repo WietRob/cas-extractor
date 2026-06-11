@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.output.lexers.http
+kind: entity
+type: py.module
+name: http
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/lexers/http.py
+anchors:
+- type: symbol
+  value: httpie.output.lexers.http
+- type: fingerprint
+  value: 40a109c5b237459ae11258ceca3c2e2d81b05cd019573c439224b126cd14246c
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.lexers

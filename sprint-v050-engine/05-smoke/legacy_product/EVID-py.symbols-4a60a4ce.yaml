@@ -1,0 +1,53 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-4a60a4ce
+kind: evidence
+type: py.symbols
+created_at: '2026-02-26T06:35:11.425364+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://product
+  root: ./cas_extractor
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: resolvers.heuristics.PropagatedSelfAttrResolver.__init__
+    kind: method
+    file: resolvers/heuristics.py
+    range:
+      start_line: 242
+      start_col: 0
+      end_line: 243
+      end_col: 0
+    fingerprint: 5dacef167dc95b4652a8bf3b2591cb7bf49fb088e7e73a437213a8ab7b50800c
+    params:
+    - name: self
+    - name: enabled
+      annotation: bool
+  - qualified: resolvers.heuristics.PropagatedSelfAttrResolver.try_resolve
+    kind: method
+    file: resolvers/heuristics.py
+    range:
+      start_line: 245
+      start_col: 0
+      end_line: 284
+      end_col: 0
+    fingerprint: a3ab37f9483d13089b7dc08cd3dd134887f63c4d85a35aad6b61ac6d8c7ccdfc
+    params:
+    - name: self
+    - name: context
+      annotation: CallContext
+    returns: ResolutionResult | None
+  - qualified: resolvers.heuristics.PropagatedSelfAttrResolver._is_self_attr_call
+    kind: method
+    file: resolvers/heuristics.py
+    range:
+      start_line: 286
+      start_col: 0
+      end_line: 293
+      end_col: 0
+    fingerprint: c9e019a17a39cd537baaafa38e90cf7d6e06711c00fdab6d519c3aac28cefe0f
+    params:
+    - name: self
+    - name: context
+      annotation: CallContext
+    returns: bool

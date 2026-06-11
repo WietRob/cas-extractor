@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-docs.installation.generate
+kind: entity
+type: py.module
+name: generate
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: docs/installation/generate.py
+anchors:
+- type: symbol
+  value: docs.installation.generate
+- type: fingerprint
+  value: 6180a9b5547304e276ba45b33199ce19f5cefc6c2fdc5bf6256ee470bf330004
+  algo: sha256
+claims: []
+relations: []
+namespace: docs.installation

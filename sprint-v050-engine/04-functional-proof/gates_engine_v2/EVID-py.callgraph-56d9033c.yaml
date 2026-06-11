@@ -1,0 +1,46 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-56d9033c
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-26T06:28:58.159808+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://gates
+  root: ./sprint-v050-engine/02-fixtures
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ast.parse
+  - symbol: ast.walk
+  - symbol: test_gate_C_qualified_attr
+  edges:
+  - from: test_gate_C_qualified_attr
+    to: ast.walk
+    kind: call
+    edge_id: 0
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'ast' -> 'ast.walk'
+    range:
+      start_line: 3
+      start_col: 0
+      end_line: 3
+      end_col: 0
+  - from: test_gate_C_qualified_attr
+    to: ast.parse
+    kind: call
+    edge_id: 1
+    resolution_detail:
+      trace:
+      - heuristic: qualified_attr
+        pattern: qualified_attribute_call
+        inferred_type: null
+        reasoning: Found import 'ast' -> 'ast.parse'
+    range:
+      start_line: 3
+      start_col: 0
+      end_line: 3
+      end_col: 0

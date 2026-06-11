@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.models.OutputOptions.any
+kind: entity
+type: py.function
+name: any
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/models.py
+anchors:
+- type: symbol
+  value: httpie.models.OutputOptions.any
+- type: fingerprint
+  value: 6dc5ee7141d4aab1b2771193486ffc0b568c4de720391f40576933090883cf17
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.models.OutputOptions

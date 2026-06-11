@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.ssl_.HTTPieHTTPSAdapter.get_default_ciphers_names
+kind: entity
+type: py.function
+name: get_default_ciphers_names
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/ssl_.py
+anchors:
+- type: symbol
+  value: httpie.ssl_.HTTPieHTTPSAdapter.get_default_ciphers_names
+- type: fingerprint
+  value: 7520a140f68afbfccfbf815b2c9a740bfdbac83393fb20747b75cde3f062de7b
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.ssl_.HTTPieHTTPSAdapter

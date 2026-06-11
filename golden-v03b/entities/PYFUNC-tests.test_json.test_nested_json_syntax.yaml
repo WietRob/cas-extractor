@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_json.test_nested_json_syntax
+kind: entity
+type: py.function
+name: test_nested_json_syntax
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_json.py
+anchors:
+- type: symbol
+  value: tests.test_json.test_nested_json_syntax
+- type: fingerprint
+  value: 038e5755862d46d0dad6266b3dc7c83ffe5173120fa776fae40053daff06697b
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_json

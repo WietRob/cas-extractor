@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.ui.palette.get_color
+kind: entity
+type: py.function
+name: get_color
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/output/ui/palette.py
+anchors:
+- type: symbol
+  value: httpie.output.ui.palette.get_color
+- type: fingerprint
+  value: a86c1f4c46555c70b079b575a82be58b4663ff4e0e3146af6ca7634999f39925
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.ui.palette

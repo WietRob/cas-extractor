@@ -1,0 +1,60 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-e8dd17ea
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-22T08:37:45.813524+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: enum.auto
+  - symbol: tests.utils.matching.tokens.Expect
+  edges:
+  - from: tests.utils.matching.tokens.Expect
+    to: enum.auto
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 9
+      start_col: 0
+      end_line: 9
+      end_col: 0
+  - from: tests.utils.matching.tokens.Expect
+    to: enum.auto
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 10
+      start_col: 0
+      end_line: 10
+      end_col: 0
+  - from: tests.utils.matching.tokens.Expect
+    to: enum.auto
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 11
+      start_col: 0
+      end_line: 11
+      end_col: 0
+  - from: tests.utils.matching.tokens.Expect
+    to: enum.auto
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 12
+      start_col: 0
+      end_line: 12
+      end_col: 0
+  - from: tests.utils.matching.tokens.Expect
+    to: enum.auto
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 13
+      start_col: 0
+      end_line: 13
+      end_col: 0

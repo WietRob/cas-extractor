@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_httpie.test_headers_unset
+kind: entity
+type: py.function
+name: test_headers_unset
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_httpie.py
+anchors:
+- type: symbol
+  value: tests.test_httpie.test_headers_unset
+- type: fingerprint
+  value: 94c8fd55b4dbefc590e9248c4212d6f168a38bcba7492a603921fd0ff158bc11
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_httpie

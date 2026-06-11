@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_output.TestPrettyOptions.test_pretty_enabled_by_default
+kind: entity
+type: py.function
+name: test_pretty_enabled_by_default
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_output.py
+anchors:
+- type: symbol
+  value: tests.test_output.TestPrettyOptions.test_pretty_enabled_by_default
+- type: fingerprint
+  value: 2281c7aab6099c918214fe165dff570e0b81a83f235714b0d2b0acd47f92f9d1
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_output.TestPrettyOptions

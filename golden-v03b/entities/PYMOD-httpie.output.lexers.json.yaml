@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.output.lexers.json
+kind: entity
+type: py.module
+name: json
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/lexers/json.py
+anchors:
+- type: symbol
+  value: httpie.output.lexers.json
+- type: fingerprint
+  value: 4b17eebe8b887ae5c2f0d5584b2ab497b4b34ddf61d0441d049c1ee327393414
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.lexers

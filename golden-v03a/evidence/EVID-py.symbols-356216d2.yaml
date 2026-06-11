@@ -1,0 +1,57 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-356216d2
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:52.924656+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.cli.argparser
+    kind: module
+    file: httpie/cli/argparser.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 613
+      end_col: 0
+    fingerprint: 88871084f0d66faf713cd3cbff837abe980182a5238abe690cd9ff890c6051ea
+  - qualified: httpie.cli.argparser.HTTPieHelpFormatter
+    kind: class
+    file: httpie/cli/argparser.py
+    range:
+      start_line: 32
+      start_col: 0
+      end_line: 76
+      end_col: 0
+    fingerprint: 810bd6baae33ba7f32fe74ae41a74d705f561d0648ed94025f34539ad7b45538
+  - qualified: httpie.cli.argparser.BaseHTTPieArgumentParser
+    kind: class
+    file: httpie/cli/argparser.py
+    range:
+      start_line: 81
+      start_col: 0
+      end_line: 125
+      end_col: 0
+    fingerprint: ea1ab9cb634f51d869aa3b0b11da3caeeed1353378ccbfe965cfa217f0f30c20
+  - qualified: httpie.cli.argparser.HTTPieManagerArgumentParser
+    kind: class
+    file: httpie/cli/argparser.py
+    range:
+      start_line: 128
+      start_col: 0
+      end_line: 135
+      end_col: 0
+    fingerprint: ae20a8515863ce9f86e15670161600c8ba13def9e4eba68dad3da3b91b0383e9
+  - qualified: httpie.cli.argparser.HTTPieArgumentParser
+    kind: class
+    file: httpie/cli/argparser.py
+    range:
+      start_line: 138
+      start_col: 0
+      end_line: 613
+      end_col: 0
+    fingerprint: 6c0ee6a6a35fde58d3555e0edf965acd46a30866cc73f5bbbc20c340940b7691

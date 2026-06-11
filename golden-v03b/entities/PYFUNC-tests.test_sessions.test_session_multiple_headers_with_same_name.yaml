@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_sessions.test_session_multiple_headers_with_same_name
+kind: entity
+type: py.function
+name: test_session_multiple_headers_with_same_name
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_sessions.py
+anchors:
+- type: symbol
+  value: tests.test_sessions.test_session_multiple_headers_with_same_name
+- type: fingerprint
+  value: fe4e2f0dcb289c8c1db42975e6da143be7f1489bf7feaf3b533b2ce7ac54c4ed
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_sessions

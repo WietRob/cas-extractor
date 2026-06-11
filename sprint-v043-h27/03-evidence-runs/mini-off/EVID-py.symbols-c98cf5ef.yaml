@@ -1,0 +1,56 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-c98cf5ef
+kind: evidence
+type: py.symbols
+created_at: '2026-02-23T07:07:57.433570+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: /tmp/h27-verify
+  revision: git:test
+payload:
+  symbols:
+  - qualified: test_h27.TestH27ThreeHop.level3
+    kind: method
+    file: test_h27.py
+    range:
+      start_line: 33
+      start_col: 0
+      end_line: 34
+      end_col: 0
+    fingerprint: a62e4ca618f6c3bb404f7a4cf7580c5cdedd66fb7e4755d5163043726252cc2f
+    params:
+    - name: self
+  - qualified: test_h27.TestH27ThreeHop.level2
+    kind: method
+    file: test_h27.py
+    range:
+      start_line: 36
+      start_col: 0
+      end_line: 37
+      end_col: 0
+    fingerprint: 12cfcf3ba5efc6bb4e7c48aef194c388611d91a5a59e37f70a85309f1221b1ca
+    params:
+    - name: self
+  - qualified: test_h27.TestH27ThreeHop.level1
+    kind: method
+    file: test_h27.py
+    range:
+      start_line: 39
+      start_col: 0
+      end_line: 40
+      end_col: 0
+    fingerprint: 544aa253bf82e7587fce8801eae9ad7a1fc1704f741a7ed0f27c71e3a7191ce5
+    params:
+    - name: self
+  - qualified: test_h27.TestH27ThreeHop.run
+    kind: method
+    file: test_h27.py
+    range:
+      start_line: 42
+      start_col: 0
+      end_line: 44
+      end_col: 0
+    fingerprint: 8f0313ac726cf1730902ff13332667c6dea792d28ad35cb0fdaecde628cb151a
+    params:
+    - name: self

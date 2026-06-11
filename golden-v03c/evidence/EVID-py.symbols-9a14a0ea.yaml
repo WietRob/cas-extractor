@@ -1,0 +1,74 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-9a14a0ea
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T17:44:04.271678+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: extras.profiling.benchmarks.Context.run
+    kind: method
+    file: extras/profiling/benchmarks.py
+    range:
+      start_line: 95
+      start_col: 0
+      end_line: 97
+      end_col: 0
+    fingerprint: 040bf3169965e1c466631745b315c2f46c98d0162977c7ce6090633ba5a223f7
+    params:
+    - name: self
+    returns: pyperf.BenchmarkSuite
+  - qualified: extras.profiling.benchmarks.Context.cmd
+    kind: method
+    file: extras/profiling/benchmarks.py
+    range:
+      start_line: 100
+      start_col: 0
+      end_line: 106
+      end_col: 0
+    fingerprint: 9c010794f863f1295220b4e4869094506f086ee004e94aaa477e234d45705028
+    decorators:
+    - property
+    params:
+    - name: self
+    returns: List[str]
+  - qualified: extras.profiling.benchmarks.Context.server
+    kind: method
+    file: extras/profiling/benchmarks.py
+    range:
+      start_line: 109
+      start_col: 0
+      end_line: 110
+      end_col: 0
+    fingerprint: 8e491fcf0c976bae60f0a6036c914deee86cc8ffe20446bf16b134f96d1be9c2
+    decorators:
+    - cached_property
+    params:
+    - name: self
+    returns: str
+  - qualified: extras.profiling.benchmarks.Context.__enter__
+    kind: method
+    file: extras/profiling/benchmarks.py
+    range:
+      start_line: 112
+      start_col: 0
+      end_line: 113
+      end_col: 0
+    fingerprint: 2ea729f7449051d8a97264d37bebc5f05a54821f1ef389b07ddbda095c2b295b
+    params:
+    - name: self
+  - qualified: extras.profiling.benchmarks.Context.__exit__
+    kind: method
+    file: extras/profiling/benchmarks.py
+    range:
+      start_line: 115
+      start_col: 0
+      end_line: 116
+      end_col: 0
+    fingerprint: 1bf0d9696c7c4f544b80b72d322363c48a0f9adf5ae00b03b1baefa96ae09838
+    params:
+    - name: self

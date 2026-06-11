@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.output.ui.palette.PieStyle
+kind: entity
+type: py.class
+name: PieStyle
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/output/ui/palette.py
+anchors:
+- type: symbol
+  value: httpie.output.ui.palette.PieStyle
+- type: fingerprint
+  value: a934ff4d75966456eb06c7da7e12cc25aa1d189960228d0e9bcd6a1c09261095
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.ui.palette

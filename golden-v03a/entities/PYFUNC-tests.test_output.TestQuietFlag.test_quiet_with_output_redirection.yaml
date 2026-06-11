@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_output.TestQuietFlag.test_quiet_with_output_redirection
+kind: entity
+type: py.function
+name: test_quiet_with_output_redirection
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_output.py
+anchors:
+- type: symbol
+  value: tests.test_output.TestQuietFlag.test_quiet_with_output_redirection
+- type: fingerprint
+  value: 20af1bd104bd7f8daa0a8fcdc06c8cefa9e81e49164c48000472706f71fa7b88
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_output.TestQuietFlag

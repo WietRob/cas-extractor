@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-extras.profiling.benchmarks.CommandRunner
+kind: entity
+type: py.class
+name: CommandRunner
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: extras/profiling/benchmarks.py
+anchors:
+- type: symbol
+  value: extras.profiling.benchmarks.CommandRunner
+- type: fingerprint
+  value: 487df0fb30833cef4b157942610a85c00de9d035bca5c7df3c95d453b73e5e2f
+  algo: sha256
+claims: []
+relations: []
+namespace: extras.profiling.benchmarks

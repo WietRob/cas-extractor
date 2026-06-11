@@ -1,0 +1,40 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-b5080190
+kind: evidence
+type: py.symbols
+created_at: '2026-02-25T07:24:33.957478+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://fixtures
+  root: ./sprint-v050-engine/02-fixtures
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: test_h28_factory_return
+    kind: module
+    file: test_h28_factory_return.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 16
+      end_col: 0
+    fingerprint: 6a209caf2e3dbcb3e4439c4e2fbbff1c20269af022f86cc0d1d75febb890bbc0
+  - qualified: test_h28_factory_return.Builder
+    kind: class
+    file: test_h28_factory_return.py
+    range:
+      start_line: 6
+      start_col: 0
+      end_line: 8
+      end_col: 0
+    fingerprint: c0b8ef0fbf3ff39e45c8f0db523c1a2ac09d1f4b062668d3e2ecbf214e73b15f
+  - qualified: test_h28_factory_return.builder_factory
+    kind: function
+    file: test_h28_factory_return.py
+    range:
+      start_line: 11
+      start_col: 0
+      end_line: 12
+      end_col: 0
+    fingerprint: f18f7379a141db266fc0aaaccab4465b495f746d78f0e5d81c8628c7eaac1ba9
+    returns: Builder

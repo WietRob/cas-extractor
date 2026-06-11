@@ -1,0 +1,34 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-aa5ceba2
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T12:13:53.862479+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.plugins.run
+  - symbol: httpie.manager.tasks.plugins.PluginInstaller
+  - symbol: httpie.manager.tasks.plugins.cli_plugins
+  edges:
+  - from: httpie.manager.tasks.plugins.cli_plugins
+    to: httpie.manager.tasks.plugins.PluginInstaller
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 241
+      start_col: 0
+      end_line: 241
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.cli_plugins
+    to: ?.plugins.run
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 248
+      start_col: 0
+      end_line: 248
+      end_col: 0

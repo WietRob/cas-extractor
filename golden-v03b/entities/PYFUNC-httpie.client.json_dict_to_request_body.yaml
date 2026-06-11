@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.client.json_dict_to_request_body
+kind: entity
+type: py.function
+name: json_dict_to_request_body
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/client.py
+anchors:
+- type: symbol
+  value: httpie.client.json_dict_to_request_body
+- type: fingerprint
+  value: 4d913d1b87401d45a396580caefa7aaee04f86332fdd5fe21368902c9fb49974
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.client

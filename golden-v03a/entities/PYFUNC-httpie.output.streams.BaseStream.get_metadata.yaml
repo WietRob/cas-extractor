@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.streams.BaseStream.get_metadata
+kind: entity
+type: py.function
+name: get_metadata
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/output/streams.py
+anchors:
+- type: symbol
+  value: httpie.output.streams.BaseStream.get_metadata
+- type: fingerprint
+  value: fd6e581bae16f01b90968d42321f0d37379a266146325253a030102a14730ce3
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.streams.BaseStream

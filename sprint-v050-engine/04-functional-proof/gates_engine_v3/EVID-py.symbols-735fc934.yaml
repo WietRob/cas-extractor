@@ -1,0 +1,23 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-735fc934
+kind: evidence
+type: py.symbols
+created_at: '2026-02-26T06:33:52.152949+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://gates
+  root: ./sprint-v050-engine/02-fixtures
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: test_gate_A2_h27_transitive.Client.send
+    kind: method
+    file: test_gate_A2_h27_transitive.py
+    range:
+      start_line: 2
+      start_col: 0
+      end_line: 3
+      end_col: 0
+    fingerprint: 3c2b68b77324dcabb2b5df614229461953eaef0a03c7f2ceb147d52811ca1fff
+    params:
+    - name: self

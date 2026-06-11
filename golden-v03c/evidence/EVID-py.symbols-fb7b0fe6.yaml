@@ -1,0 +1,111 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-fb7b0fe6
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T17:44:04.423383+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.test_cli.TestLocalhostShorthand.test_expand_localhost_shorthand
+    kind: method
+    file: tests/test_cli.py
+    range:
+      start_line: 196
+      start_col: 0
+      end_line: 198
+      end_col: 0
+    fingerprint: 278d70a6a6b45fa9f4f209d67a5433c6cdf6dce18d4ffcbb286c38711571bd49
+    params:
+    - name: self
+  - qualified: tests.test_cli.TestLocalhostShorthand.test_expand_localhost_shorthand_with_slash
+    kind: method
+    file: tests/test_cli.py
+    range:
+      start_line: 200
+      start_col: 0
+      end_line: 202
+      end_col: 0
+    fingerprint: 5296969f92744becd23f4b2006b76800529330d57f823cf4fd9117bac9b0f313
+    params:
+    - name: self
+  - qualified: tests.test_cli.TestLocalhostShorthand.test_expand_localhost_shorthand_with_port
+    kind: method
+    file: tests/test_cli.py
+    range:
+      start_line: 204
+      start_col: 0
+      end_line: 206
+      end_col: 0
+    fingerprint: 3fb87cc2faa04e1796cc679f67030460909b7843e85d3cf73b8fd84aac305885
+    params:
+    - name: self
+  - qualified: tests.test_cli.TestLocalhostShorthand.test_expand_localhost_shorthand_with_path
+    kind: method
+    file: tests/test_cli.py
+    range:
+      start_line: 208
+      start_col: 0
+      end_line: 210
+      end_col: 0
+    fingerprint: 93538d8dc2568bd2c3bdfd3d773711ef22c1c03f3994502f16461031f7c7f6c4
+    params:
+    - name: self
+  - qualified: tests.test_cli.TestLocalhostShorthand.test_expand_localhost_shorthand_with_port_and_slash
+    kind: method
+    file: tests/test_cli.py
+    range:
+      start_line: 212
+      start_col: 0
+      end_line: 214
+      end_col: 0
+    fingerprint: fbd7452c8587d4b4207a872aeeb4dfd984d5a595e28135c0d814208aa6145fbc
+    params:
+    - name: self
+  - qualified: tests.test_cli.TestLocalhostShorthand.test_expand_localhost_shorthand_with_port_and_path
+    kind: method
+    file: tests/test_cli.py
+    range:
+      start_line: 216
+      start_col: 0
+      end_line: 218
+      end_col: 0
+    fingerprint: fdd9cc05b725d93949807781b29386ef2012a090fef9c919bc53e63d23685183
+    params:
+    - name: self
+  - qualified: tests.test_cli.TestLocalhostShorthand.test_dont_expand_shorthand_ipv6_as_shorthand
+    kind: method
+    file: tests/test_cli.py
+    range:
+      start_line: 220
+      start_col: 0
+      end_line: 222
+      end_col: 0
+    fingerprint: a8353cd55a28f8270ac123a885d831318119d08b11cf46a82cfe3dab96a9d9da
+    params:
+    - name: self
+  - qualified: tests.test_cli.TestLocalhostShorthand.test_dont_expand_longer_ipv6_as_shorthand
+    kind: method
+    file: tests/test_cli.py
+    range:
+      start_line: 224
+      start_col: 0
+      end_line: 229
+      end_col: 0
+    fingerprint: c2258ae44b6769e16c9bcd67f1c5dcdf172a8c43340149bda1ade3a1b89ba2ae
+    params:
+    - name: self
+  - qualified: tests.test_cli.TestLocalhostShorthand.test_dont_expand_full_ipv6_as_shorthand
+    kind: method
+    file: tests/test_cli.py
+    range:
+      start_line: 231
+      start_col: 0
+      end_line: 236
+      end_col: 0
+    fingerprint: d5eaee4ceefa8674a9eaf28a3923837c301e41392faac64856b4510dd319e5e3
+    params:
+    - name: self

@@ -1,0 +1,108 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-7027fcc7
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T17:44:04.448210+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.test_errors
+    kind: module
+    file: tests/test_errors.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 76
+      end_col: 0
+    fingerprint: 1078ed5acbccb11b6ca8119fb6411a685eab662a2a72b3d9bbd245d690cac5c1
+  - qualified: tests.test_errors.test_error
+    kind: function
+    file: tests/test_errors.py
+    range:
+      start_line: 13
+      start_col: 0
+      end_line: 24
+      end_col: 0
+    fingerprint: b75ed60ac6c45b0d070f79d414f5ffbb3086b786dba6573ecda01c3b913fcd38
+    decorators:
+    - mock.patch('httpie.core.program')
+    params:
+    - name: program
+  - qualified: tests.test_errors.test_error_traceback
+    kind: function
+    file: tests/test_errors.py
+    range:
+      start_line: 28
+      start_col: 0
+      end_line: 33
+      end_col: 0
+    fingerprint: 3fd457f0c8c99a401e0eb03478aa642efeb5c2d68b34e0a008fd1fd4abe0e233
+    decorators:
+    - mock.patch('httpie.core.program')
+    params:
+    - name: program
+  - qualified: tests.test_errors.test_error_custom_dns
+    kind: function
+    file: tests/test_errors.py
+    range:
+      start_line: 41
+      start_col: 0
+      end_line: 48
+      end_col: 0
+    fingerprint: e9a3bb09fa0b8c26f964e9233a519607be4d6815a92bb01942e60c3884fcf60b
+    decorators:
+    - mock.patch('httpie.core.program')
+    - pytest.mark.parametrize('error_code, expected_message', [(socket.EAI_AGAIN,
+      'check your connection'), (socket.EAI_NONAME, 'check the URL')])
+    params:
+    - name: program
+    - name: error_code
+    - name: expected_message
+  - qualified: tests.test_errors.test_max_headers_limit
+    kind: function
+    file: tests/test_errors.py
+    range:
+      start_line: 51
+      start_col: 0
+      end_line: 54
+      end_col: 0
+    fingerprint: 717fbfd81c9cec475a2e16b2443fa640bed044f38831aa49d4abb9fc10545a8a
+    params:
+    - name: httpbin_both
+  - qualified: tests.test_errors.test_max_headers_no_limit
+    kind: function
+    file: tests/test_errors.py
+    range:
+      start_line: 57
+      start_col: 0
+      end_line: 58
+      end_col: 0
+    fingerprint: 570a345a2d9bb473f6fe7b476e2f3d59f187afa519ac66239f3b2b4553e88f34
+    params:
+    - name: httpbin_both
+  - qualified: tests.test_errors.test_response_charset_option_unknown_encoding
+    kind: function
+    file: tests/test_errors.py
+    range:
+      start_line: 61
+      start_col: 0
+      end_line: 67
+      end_col: 0
+    fingerprint: 705d7588f01a9cb7c5df4bb0a53f136d4bb1fa42e6cef104e250038b59d0f8b9
+    params:
+    - name: httpbin_both
+  - qualified: tests.test_errors.test_response_mime_option_invalid_mime_type
+    kind: function
+    file: tests/test_errors.py
+    range:
+      start_line: 70
+      start_col: 0
+      end_line: 76
+      end_col: 0
+    fingerprint: 2dd8768cb1a30e54e242fc3360f2cafc74c2a7930086846b5b088b1bece9776b
+    params:
+    - name: httpbin_both

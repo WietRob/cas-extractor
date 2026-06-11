@@ -1,0 +1,67 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-22a7fdb7
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:34.028003+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.COLOR_PALETTE.update
+  - symbol: ?.PIE_STYLE_TO_SHADE.items
+  - symbol: httpie.output.ui.man_pages
+  - symbol: httpie.output.ui.palette
+  - symbol: httpie.output.ui.palette.ColorString
+  - symbol: httpie.output.ui.rich_help
+  - symbol: httpie.output.ui.rich_help.OptionsHighlighter
+  - symbol: httpie.output.ui.rich_palette
+  - symbol: os.getenv
+  edges:
+  - from: httpie.output.ui.man_pages
+    to: os.getenv
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 9
+      start_col: 0
+      end_line: 9
+      end_col: 0
+  - from: httpie.output.ui.palette
+    to: ?.COLOR_PALETTE.update
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 233
+      start_col: 0
+      end_line: 252
+      end_col: 0
+  - from: httpie.output.ui.palette
+    to: ?.PIE_STYLE_TO_SHADE.items
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 28
+      start_col: 0
+      end_line: 28
+      end_col: 0
+  - from: httpie.output.ui.rich_help
+    to: httpie.output.ui.rich_help.OptionsHighlighter
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 51
+      start_col: 0
+      end_line: 51
+      end_col: 0
+  - from: httpie.output.ui.rich_palette
+    to: httpie.output.ui.palette.ColorString
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 9
+      start_col: 0
+      end_line: 9
+      end_col: 0

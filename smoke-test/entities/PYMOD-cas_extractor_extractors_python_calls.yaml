@@ -1,0 +1,21 @@
+schema: cas.entity.v0.1
+id: PYMOD-cas_extractor_extractors_python_calls
+kind: entity
+type: py.module
+name: cas_extractor_extractors_python_calls
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor_extractors_python_calls.py
+anchors:
+- type: symbol
+  value: cas_extractor_extractors_python_calls
+- type: fingerprint
+  value: 01087195f096a760239458ebb1f7ba96210aa77f59e269a888fcbed4fe6d1aa1
+  algo: sha256
+claims: []
+relations: []

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.config.BaseConfigDict.post_process_data
+kind: entity
+type: py.function
+name: post_process_data
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/config.py
+anchors:
+- type: symbol
+  value: httpie.config.BaseConfigDict.post_process_data
+- type: fingerprint
+  value: 9d7371210c960975c178b52715cdd0ed41419cfe172d3db696e8efd8faa34622
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.config.BaseConfigDict

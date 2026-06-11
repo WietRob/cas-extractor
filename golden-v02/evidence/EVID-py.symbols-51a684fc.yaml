@@ -1,0 +1,131 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-51a684fc
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:51:32.163213+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.cli.options
+    kind: module
+    file: httpie/cli/options.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 249
+      end_col: 0
+    fingerprint: 0474f3f5daed55c8d887fda899e79ef5066fcf53b79c867ce22d00c307a07bb2
+  - qualified: httpie.cli.options.Qualifiers
+    kind: class
+    file: httpie/cli/options.py
+    range:
+      start_line: 12
+      start_col: 0
+      end_line: 16
+      end_col: 0
+    fingerprint: 892e9f72bbe41c4e6c96f06983de894a0abca31881d2bbc36f9ff35a759861cb
+  - qualified: httpie.cli.options.map_qualifiers
+    kind: function
+    file: httpie/cli/options.py
+    range:
+      start_line: 19
+      start_col: 0
+      end_line: 25
+      end_col: 0
+    fingerprint: 38cac9d51c72e9bb7010edf20c3e28a5a10af5d5752646b4e2444baac9095b78
+    params:
+    - name: configuration
+      annotation: Dict[str, Any]
+    - name: qualifier_map
+      annotation: Dict[Qualifiers, Any]
+    returns: Dict[str, Any]
+  - qualified: httpie.cli.options.drop_keys
+    kind: function
+    file: httpie/cli/options.py
+    range:
+      start_line: 28
+      start_col: 0
+      end_line: 35
+      end_col: 0
+    fingerprint: e72b61444df170189092c1d1b68d7fc45b231810f60581df00420733a900c89c
+    params:
+    - name: configuration
+      annotation: Dict[str, Any]
+    - name: key_blacklist
+      annotation: Tuple[str, ...]
+  - qualified: httpie.cli.options.ParserSpec
+    kind: class
+    file: httpie/cli/options.py
+    range:
+      start_line: 42
+      start_col: 0
+      end_line: 69
+      end_col: 0
+    fingerprint: 000389730180af8a4d9248866c638bb2742cdb0e31a5061bf77403c84b58f6cb
+    decorators:
+    - dataclass
+  - qualified: httpie.cli.options.Group
+    kind: class
+    file: httpie/cli/options.py
+    range:
+      start_line: 73
+      start_col: 0
+      end_line: 95
+      end_col: 0
+    fingerprint: e063cb92bb5f16d44951f4741160cc58dd4684eebb02a0b05fd41cda7cf4851b
+    decorators:
+    - dataclass
+  - qualified: httpie.cli.options.Argument
+    kind: class
+    file: httpie/cli/options.py
+    range:
+      start_line: 98
+      start_col: 0
+      end_line: 179
+      end_col: 0
+    fingerprint: eba8f16150238b204ae4fc6af4b705307e95fae8ee87e51913883df2eb88c49f
+  - qualified: httpie.cli.options.to_argparse
+    kind: function
+    file: httpie/cli/options.py
+    range:
+      start_line: 193
+      start_col: 0
+      end_line: 221
+      end_col: 0
+    fingerprint: f35bd3760436b1ad8e047b72ff5cc769b95a71deaa7aad34d2cfb0b4a7d384d7
+    params:
+    - name: abstract_options
+      annotation: ParserSpec
+    - name: parser_type
+      annotation: ParserType
+    returns: ParserType
+  - qualified: httpie.cli.options.to_data
+    kind: function
+    file: httpie/cli/options.py
+    range:
+      start_line: 238
+      start_col: 0
+      end_line: 239
+      end_col: 0
+    fingerprint: e051156c71675756ce525abb7b01af58dead421d5cbf3239b8123abbd0f3c0b4
+    params:
+    - name: abstract_options
+      annotation: ParserSpec
+    returns: Dict[str, Any]
+  - qualified: httpie.cli.options.parser_to_parser_spec
+    kind: function
+    file: httpie/cli/options.py
+    range:
+      start_line: 242
+      start_col: 0
+      end_line: 249
+      end_col: 0
+    fingerprint: 564db5d5850d1c6890b4d54875291daf42b932ae0dc2eb65099085ef7c03ec6f
+    params:
+    - name: parser
+      annotation: argparse.ArgumentParser
+    returns: ParserSpec

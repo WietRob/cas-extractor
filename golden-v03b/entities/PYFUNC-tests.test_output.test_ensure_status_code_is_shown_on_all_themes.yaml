@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_output.test_ensure_status_code_is_shown_on_all_themes
+kind: entity
+type: py.function
+name: test_ensure_status_code_is_shown_on_all_themes
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_output.py
+anchors:
+- type: symbol
+  value: tests.test_output.test_ensure_status_code_is_shown_on_all_themes
+- type: fingerprint
+  value: e3e51be36bd129a40fc88df672a209acbc39bc075537100a90c8a0a3a7f6f016
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_output

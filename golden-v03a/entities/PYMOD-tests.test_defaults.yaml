@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-tests.test_defaults
+kind: entity
+type: py.module
+name: test_defaults
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_defaults.py
+anchors:
+- type: symbol
+  value: tests.test_defaults
+- type: fingerprint
+  value: 742701b79c1682d99174732f4cdc7937a05ee2a85ba33c972ffa3cfaa824ab08
+  algo: sha256
+claims: []
+relations: []
+namespace: tests

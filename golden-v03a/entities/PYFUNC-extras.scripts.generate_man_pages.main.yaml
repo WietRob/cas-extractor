@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-extras.scripts.generate_man_pages.main
+kind: entity
+type: py.function
+name: main
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: extras/scripts/generate_man_pages.py
+anchors:
+- type: symbol
+  value: extras.scripts.generate_man_pages.main
+- type: fingerprint
+  value: 3624122a5e8b9a7d483f56685b173b6a38f50ce115361691fd4ab8c571510d76
+  algo: sha256
+claims: []
+relations: []
+namespace: extras.scripts.generate_man_pages

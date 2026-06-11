@@ -1,0 +1,24 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-59fa6948
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-21T15:03:55.425105+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  imports:
+  - from: tests.test_encoding
+    imports:
+    - pytest
+    - responses
+    - charset_normalizer.constant.TOO_SMALL_SEQUENCE
+    - httpie.cli.constants.PRETTY_MAP
+    - httpie.encoding.UTF8
+    - tests.utils.http
+    - tests.utils.HTTP_OK
+    - tests.utils.DUMMY_URL
+    - tests.utils.MockEnvironment
+    - tests.fixtures.UNICODE

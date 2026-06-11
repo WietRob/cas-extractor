@@ -1,0 +1,79 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-624332d9
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T17:44:04.367394+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.output.streams.BaseStream.__init__
+    kind: method
+    file: httpie/output/streams.py
+    range:
+      start_line: 33
+      start_col: 0
+      end_line: 49
+      end_col: 0
+    fingerprint: 0002a14dfe95f28434cbd86f6ecec6fb3ca05fde7bfb2645aaa1f37b03b97a8e
+    params:
+    - name: self
+    - name: msg
+      annotation: HTTPMessage
+    - name: output_options
+      annotation: OutputOptions
+    - name: on_body_chunk_downloaded
+      annotation: Callable[[bytes], None]
+  - qualified: httpie.output.streams.BaseStream.get_headers
+    kind: method
+    file: httpie/output/streams.py
+    range:
+      start_line: 51
+      start_col: 0
+      end_line: 53
+      end_col: 0
+    fingerprint: b2da9d7c7f2837458274714a352f55a6418df0c5bae122616a651107eaf0d5c2
+    params:
+    - name: self
+    returns: bytes
+  - qualified: httpie.output.streams.BaseStream.get_metadata
+    kind: method
+    file: httpie/output/streams.py
+    range:
+      start_line: 55
+      start_col: 0
+      end_line: 57
+      end_col: 0
+    fingerprint: fd6e581bae16f01b90968d42321f0d37379a266146325253a030102a14730ce3
+    params:
+    - name: self
+    returns: bytes
+  - qualified: httpie.output.streams.BaseStream.iter_body
+    kind: method
+    file: httpie/output/streams.py
+    range:
+      start_line: 60
+      start_col: 0
+      end_line: 61
+      end_col: 0
+    fingerprint: 76fed6087de316085b88fa9abeb9964ab5e02dfe00dbee92a7c073ce00ec2d92
+    decorators:
+    - abstractmethod
+    params:
+    - name: self
+    returns: Iterable[bytes]
+  - qualified: httpie.output.streams.BaseStream.__iter__
+    kind: method
+    file: httpie/output/streams.py
+    range:
+      start_line: 63
+      start_col: 0
+      end_line: 85
+      end_col: 0
+    fingerprint: 5beb9dd9d2ea20907141dbe8951bf82725bed623bec7b63145bba76276cdcf10
+    params:
+    - name: self
+    returns: Iterable[bytes]

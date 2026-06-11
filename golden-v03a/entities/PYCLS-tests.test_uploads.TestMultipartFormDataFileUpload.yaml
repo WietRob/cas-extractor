@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-tests.test_uploads.TestMultipartFormDataFileUpload
+kind: entity
+type: py.class
+name: TestMultipartFormDataFileUpload
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_uploads.py
+anchors:
+- type: symbol
+  value: tests.test_uploads.TestMultipartFormDataFileUpload
+- type: fingerprint
+  value: d5482a757c2e6016e51a0faf2a875afe23371881316cbd883781b658820d8375
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_uploads

@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-3797
+kind: relation
+type: calls
+from: PYFUNC-httpie.output.processing.is_valid_mime
+to: PYFUNC-_.MIME_RE.match
+confidence:
+  level: E1
+  direction: confirmed
+evidence:
+- EVID-py.callgraph-e2ce21ad
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1

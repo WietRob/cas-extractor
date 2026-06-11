@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.utils.mk_config_dir
+kind: entity
+type: py.function
+name: mk_config_dir
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/utils/__init__.py
+anchors:
+- type: symbol
+  value: tests.utils.mk_config_dir
+- type: fingerprint
+  value: 9d427ef716555a1be5dcb8e084f62fb81ea85217d0191144fc6821c46c72c681
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils

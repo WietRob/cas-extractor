@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-docs.installation.generate.save_doc_file
+kind: entity
+type: py.function
+name: save_doc_file
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: docs/installation/generate.py
+anchors:
+- type: symbol
+  value: docs.installation.generate.save_doc_file
+- type: fingerprint
+  value: a956fa3e6213977e73baa336cc1b0743f09c65794a68cfd02f2cf8095ec21308
+  algo: sha256
+claims: []
+relations: []
+namespace: docs.installation.generate

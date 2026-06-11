@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.core.raw_main.handle_generic_error
+kind: entity
+type: py.function
+name: handle_generic_error
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/core.py
+anchors:
+- type: symbol
+  value: httpie.core.raw_main.handle_generic_error
+- type: fingerprint
+  value: aa9b0ea822fbae5415e4efbea00d58fb59548fcb9d0835145ed1277fabf7b70f
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.core.raw_main

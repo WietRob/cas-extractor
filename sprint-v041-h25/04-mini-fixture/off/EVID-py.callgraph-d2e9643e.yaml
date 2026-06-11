@@ -1,0 +1,34 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-d2e9643e
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-22T11:17:16.892909+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: /tmp/h25-verify
+  revision: git:test
+payload:
+  nodes:
+  - symbol: ?.self.client.send
+  - symbol: test_h25.TestH25Conditional.setup
+  - symbol: test_h25.WebSocketClient
+  edges:
+  - from: test_h25.TestH25Conditional.setup
+    to: ?.self.client.send
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 92
+      start_col: 0
+      end_line: 92
+      end_col: 0
+  - from: test_h25.TestH25Conditional.setup
+    to: test_h25.WebSocketClient
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 91
+      start_col: 0
+      end_line: 91
+      end_col: 0

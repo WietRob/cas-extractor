@@ -1,0 +1,104 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-008f25bc
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T12:13:54.040338+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: tests.test_offline.test_offline
+  - symbol: tests.test_offline.test_offline_chunked
+  - symbol: tests.test_offline.test_offline_download
+  - symbol: tests.test_offline.test_offline_form
+  - symbol: tests.test_offline.test_offline_from_file
+  - symbol: tests.test_offline.test_offline_json
+  - symbol: tests.test_offline.test_offline_multipart
+  - symbol: tests.test_offline.test_offline_raw
+  - symbol: tests.test_offline.test_offline_raw_empty_should_use_POST
+  - symbol: utils.http
+  edges:
+  - from: tests.test_offline.test_offline
+    to: utils.http
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 6
+      start_col: 0
+      end_line: 9
+      end_col: 0
+  - from: tests.test_offline.test_offline_raw
+    to: utils.http
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 14
+      start_col: 0
+      end_line: 19
+      end_col: 0
+  - from: tests.test_offline.test_offline_raw_empty_should_use_POST
+    to: utils.http
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 25
+      start_col: 0
+      end_line: 30
+      end_col: 0
+  - from: tests.test_offline.test_offline_form
+    to: utils.http
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 35
+      start_col: 0
+      end_line: 40
+      end_col: 0
+  - from: tests.test_offline.test_offline_json
+    to: utils.http
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 46
+      start_col: 0
+      end_line: 50
+      end_col: 0
+  - from: tests.test_offline.test_offline_multipart
+    to: utils.http
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 56
+      start_col: 0
+      end_line: 61
+      end_col: 0
+  - from: tests.test_offline.test_offline_from_file
+    to: utils.http
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 67
+      start_col: 0
+      end_line: 71
+      end_col: 0
+  - from: tests.test_offline.test_offline_chunked
+    to: utils.http
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 77
+      start_col: 0
+      end_line: 83
+      end_col: 0
+  - from: tests.test_offline.test_offline_download
+    to: utils.http
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 91
+      start_col: 0
+      end_line: 95
+      end_col: 0

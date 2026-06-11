@@ -1,0 +1,20 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-ca89ad35
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-21T15:03:55.421778+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  imports:
+  - from: tests.test_auth_plugins
+    imports:
+    - unittest.mock
+    - httpie.cli.constants.SEPARATOR_CREDENTIALS
+    - httpie.plugins.AuthPlugin
+    - httpie.plugins.registry.plugin_manager
+    - tests.utils.http
+    - tests.utils.HTTP_OK

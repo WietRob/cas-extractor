@@ -1,0 +1,51 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-a706269d
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:52.912265+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: extras.profiling.benchmarks.BaseRunner.__post_init__
+    kind: method
+    file: extras/profiling/benchmarks.py
+    range:
+      start_line: 129
+      start_col: 0
+      end_line: 130
+      end_col: 0
+    fingerprint: 2e430aed0e15eea2c11f83aa74f368cdc70ecd6cc9cb97db3bce91676d25bfde
+    params:
+    - name: self
+  - qualified: extras.profiling.benchmarks.BaseRunner.run
+    kind: method
+    file: extras/profiling/benchmarks.py
+    range:
+      start_line: 132
+      start_col: 0
+      end_line: 133
+      end_col: 0
+    fingerprint: 602faf8080660ebaf1e0dc4405e9745c3c72547fb1b4946fccb63380dca5b015
+    params:
+    - name: self
+    - name: context
+      annotation: Context
+    returns: pyperf.Benchmark
+  - qualified: extras.profiling.benchmarks.BaseRunner.name
+    kind: method
+    file: extras/profiling/benchmarks.py
+    range:
+      start_line: 136
+      start_col: 0
+      end_line: 137
+      end_col: 0
+    fingerprint: 78bdb610045fbbeed1ad4ae3f2facc7788a6a8811c0b0b0fdcda9b8d88f25d51
+    decorators:
+    - property
+    params:
+    - name: self
+    returns: str

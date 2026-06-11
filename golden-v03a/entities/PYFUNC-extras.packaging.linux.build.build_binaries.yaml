@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-extras.packaging.linux.build.build_binaries
+kind: entity
+type: py.function
+name: build_binaries
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: extras/packaging/linux/build.py
+anchors:
+- type: symbol
+  value: extras.packaging.linux.build.build_binaries
+- type: fingerprint
+  value: 03a0378180d3bde51dc634dd96c55205c770846930b3bc2c74ee1fc031c6e666
+  algo: sha256
+claims: []
+relations: []
+namespace: extras.packaging.linux.build

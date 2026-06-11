@@ -1,0 +1,143 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-96b1797c
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:53.104599+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: tests.test_config
+    kind: module
+    file: tests/test_config.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 104
+      end_col: 0
+    fingerprint: f11d97f47a788b72b7c4212a6577484a812f2c498891cef9604c230b6f26330c
+  - qualified: tests.test_config.test_default_options
+    kind: function
+    file: tests/test_config.py
+    range:
+      start_line: 16
+      start_col: 0
+      end_line: 23
+      end_col: 0
+    fingerprint: 3d97488b2a1dfd7ff37969441beb20155a78e82c2615a7b54276e61a00a1b896
+    params:
+    - name: httpbin
+  - qualified: tests.test_config.test_config_file_not_valid
+    kind: function
+    file: tests/test_config.py
+    range:
+      start_line: 26
+      start_col: 0
+      end_line: 33
+      end_col: 0
+    fingerprint: 24886a4d8c6a6196560a3e297f0e24dba387d36c3bd62712c8f983f513aa01bb
+    params:
+    - name: httpbin
+  - qualified: tests.test_config.test_config_file_inaccessible
+    kind: function
+    file: tests/test_config.py
+    range:
+      start_line: 37
+      start_col: 0
+      end_line: 47
+      end_col: 0
+    fingerprint: a74dcf2ccafb984c27e9fe523c7139c520a565caf6f83e93424d602be36f2376
+    decorators:
+    - pytest.mark.skipif(is_windows, reason='cannot chmod 000 on Windows')
+    params:
+    - name: httpbin
+  - qualified: tests.test_config.test_default_options_overwrite
+    kind: function
+    file: tests/test_config.py
+    range:
+      start_line: 50
+      start_col: 0
+      end_line: 57
+      end_col: 0
+    fingerprint: 1c9693c8473092573efb90aa30e4fab5978035ee4254089f7434a12283d2c25e
+    params:
+    - name: httpbin
+  - qualified: tests.test_config.test_explicit_xdg_config_home
+    kind: function
+    file: tests/test_config.py
+    range:
+      start_line: 61
+      start_col: 0
+      end_line: 68
+      end_col: 0
+    fingerprint: 139ef1fd93791e102c015291966249dadff569ee17f832251a9b700ccd525b79
+    decorators:
+    - pytest.mark.skipif(is_windows, reason='XDG_CONFIG_HOME needs *nix')
+    params:
+    - name: monkeypatch
+      annotation: MonkeyPatch
+    - name: tmp_path
+      annotation: Path
+  - qualified: tests.test_config.test_default_xdg_config_home
+    kind: function
+    file: tests/test_config.py
+    range:
+      start_line: 72
+      start_col: 0
+      end_line: 82
+      end_col: 0
+    fingerprint: 09d9cb1b2d1783461cfc1cc5567659c2becd79bbe828e54e53b5bb40212ebd09
+    decorators:
+    - pytest.mark.skipif(is_windows, reason='XDG_CONFIG_HOME needs *nix')
+    params:
+    - name: monkeypatch
+      annotation: MonkeyPatch
+    - name: tmp_path
+      annotation: Path
+  - qualified: tests.test_config.test_legacy_config_dir
+    kind: function
+    file: tests/test_config.py
+    range:
+      start_line: 86
+      start_col: 0
+      end_line: 92
+      end_col: 0
+    fingerprint: 219b09aba0fadc2ac603a3bc297e5e785f0ffe15c0cfd4a202344a00108fde44
+    decorators:
+    - pytest.mark.skipif(is_windows, reason='legacy config dir needs *nix')
+    params:
+    - name: monkeypatch
+      annotation: MonkeyPatch
+    - name: tmp_path
+      annotation: Path
+  - qualified: tests.test_config.test_custom_config_dir
+    kind: function
+    file: tests/test_config.py
+    range:
+      start_line: 95
+      start_col: 0
+      end_line: 98
+      end_col: 0
+    fingerprint: 85049a99c5f8016e885f304cd1bdd5950631473d365621128693765b110cbd3b
+    params:
+    - name: monkeypatch
+      annotation: MonkeyPatch
+    - name: tmp_path
+      annotation: Path
+  - qualified: tests.test_config.test_windows_config_dir
+    kind: function
+    file: tests/test_config.py
+    range:
+      start_line: 102
+      start_col: 0
+      end_line: 104
+      end_col: 0
+    fingerprint: 162aaf0e2895e984279cbd5408094f11d99b25adb09152778adea26dd0ceed54
+    decorators:
+    - pytest.mark.skipif(not is_windows, reason='windows-only')
+    params:
+    - name: monkeypatch
+      annotation: MonkeyPatch

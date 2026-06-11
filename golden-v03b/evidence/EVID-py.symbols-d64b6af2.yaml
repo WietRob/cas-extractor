@@ -1,0 +1,28 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-d64b6af2
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:55.097140+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.plugins.builtin.BasicAuthPlugin.get_auth
+    kind: method
+    file: httpie/plugins/builtin.py
+    range:
+      start_line: 53
+      start_col: 0
+      end_line: 54
+      end_col: 0
+    fingerprint: a99c0e250c82e289de81210a049daf1d438458014d09a1be67a44c1549057585
+    params:
+    - name: self
+    - name: username
+      annotation: str
+    - name: password
+      annotation: str
+    returns: HTTPBasicAuth

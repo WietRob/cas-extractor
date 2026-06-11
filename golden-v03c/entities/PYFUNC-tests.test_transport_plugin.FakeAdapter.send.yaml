@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_transport_plugin.FakeAdapter.send
+kind: entity
+type: py.function
+name: send
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_transport_plugin.py
+anchors:
+- type: symbol
+  value: tests.test_transport_plugin.FakeAdapter.send
+- type: fingerprint
+  value: 1c468c5aa7691ca184d9dec45487ff65a0d95dc2283b444ee2cfa6e3019afe5f
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_transport_plugin.FakeAdapter

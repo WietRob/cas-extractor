@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-cas_extractor_extractors_python_calls._find_class_by_name
+kind: entity
+type: py.function
+name: _find_class_by_name
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor_extractors_python_calls.py
+anchors:
+- type: symbol
+  value: cas_extractor_extractors_python_calls._find_class_by_name
+- type: fingerprint
+  value: 5f195ebd47401f2e61ee2e39fd51180001240c9c986ddcb9a3c397b4dbb91c1f
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor_extractors_python_calls

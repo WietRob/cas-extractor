@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-cas_extractor.extractors.python_calls._find_enclosing_context
+kind: entity
+type: py.function
+name: _find_enclosing_context
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor/extractors/python_calls.py
+anchors:
+- type: symbol
+  value: cas_extractor.extractors.python_calls._find_enclosing_context
+- type: fingerprint
+  value: bda9a4de5d2e201086cb5b6492bf7f659e4a78c7ff94343f71e79c789140c806
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor.extractors.python_calls

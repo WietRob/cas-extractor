@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-tests.test_output.TestPrettyOptions
+kind: entity
+type: py.class
+name: TestPrettyOptions
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_output.py
+anchors:
+- type: symbol
+  value: tests.test_output.TestPrettyOptions
+- type: fingerprint
+  value: 16de28ac9a3c6aa555650516ffa310160b5a4cfa4af503c625f500eccb6094d6
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_output

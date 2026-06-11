@@ -1,0 +1,64 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-7329e5ff
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-23T05:34:05.982357+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: /tmp/h26-verify
+  revision: git:test
+payload:
+  nodes:
+  - symbol: ?.self.client.send
+  - symbol: ?.self.parser.parse
+  - symbol: test_h26.DataParser
+  - symbol: test_h26.HTTPClient
+  - symbol: test_h26.TestH26Multiple.configure
+  - symbol: test_h26.TestH26Multiple.process
+  edges:
+  - from: test_h26.TestH26Multiple.configure
+    to: test_h26.HTTPClient
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 27
+      start_col: 0
+      end_line: 27
+      end_col: 0
+  - from: test_h26.TestH26Multiple.configure
+    to: test_h26.DataParser
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 28
+      start_col: 0
+      end_line: 28
+      end_col: 0
+  - from: test_h26.TestH26Multiple.process
+    to: test_h26.TestH26Multiple.configure
+    kind: method_call
+    edge_id: 2
+    range:
+      start_line: 31
+      start_col: 0
+      end_line: 31
+      end_col: 0
+  - from: test_h26.TestH26Multiple.process
+    to: ?.self.client.send
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 32
+      start_col: 0
+      end_line: 32
+      end_col: 0
+  - from: test_h26.TestH26Multiple.process
+    to: ?.self.parser.parse
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 33
+      start_col: 0
+      end_line: 33
+      end_col: 0

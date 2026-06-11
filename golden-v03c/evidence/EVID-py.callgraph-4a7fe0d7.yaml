@@ -1,0 +1,147 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-4a7fe0d7
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T17:44:05.163832+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.SSL_VERSION_ARG_MAPPING.items
+  - symbol: httpie.__main__
+  - symbol: httpie.__main__.main
+  - symbol: httpie.client
+  - symbol: httpie.config
+  - symbol: httpie.config.get_default_config_dir
+  - symbol: httpie.sessions
+  - symbol: httpie.ssl_
+  - symbol: httpie.ssl_.HTTPieHTTPSAdapter.get_default_ciphers_names
+  - symbol: httpie.uploads
+  - symbol: httpie.utils
+  - symbol: os.getenv
+  - symbol: pathlib.Path
+  - symbol: re.compile
+  - symbol: sys.exit
+  - symbol: typing.TypeVar
+  - symbol: urllib3.disable_warnings
+  edges:
+  - from: httpie.__main__
+    to: sys.exit
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 19
+      start_col: 0
+      end_line: 19
+      end_col: 0
+  - from: httpie.__main__
+    to: httpie.__main__.main
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 19
+      start_col: 0
+      end_line: 19
+      end_col: 0
+  - from: httpie.client
+    to: urllib3.disable_warnings
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 33
+      start_col: 0
+      end_line: 33
+      end_col: 0
+  - from: httpie.config
+    to: pathlib.Path
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 14
+      start_col: 0
+      end_line: 14
+      end_col: 0
+  - from: httpie.config
+    to: pathlib.Path
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 15
+      start_col: 0
+      end_line: 15
+      end_col: 0
+  - from: httpie.config
+    to: httpie.config.get_default_config_dir
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 58
+      start_col: 0
+      end_line: 58
+      end_col: 0
+  - from: httpie.config
+    to: pathlib.Path
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 16
+      start_col: 0
+      end_line: 17
+      end_col: 0
+  - from: httpie.sessions
+    to: re.compile
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 31
+      start_col: 0
+      end_line: 31
+      end_col: 0
+  - from: httpie.ssl_
+    to: httpie.ssl_.HTTPieHTTPSAdapter.get_default_ciphers_names
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 109
+      start_col: 0
+      end_line: 109
+      end_col: 0
+  - from: httpie.ssl_
+    to: ?.SSL_VERSION_ARG_MAPPING.items
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 24
+      start_col: 0
+      end_line: 24
+      end_col: 0
+  - from: httpie.uploads
+    to: os.getenv
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 96
+      start_col: 0
+      end_line: 96
+      end_col: 0
+  - from: httpie.utils
+    to: re.compile
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 21
+      start_col: 0
+      end_line: 21
+      end_col: 0
+  - from: httpie.utils
+    to: typing.TypeVar
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 24
+      start_col: 0
+      end_line: 24
+      end_col: 0

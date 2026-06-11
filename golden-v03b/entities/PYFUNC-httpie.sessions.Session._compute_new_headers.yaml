@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.sessions.Session._compute_new_headers
+kind: entity
+type: py.function
+name: _compute_new_headers
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/sessions.py
+anchors:
+- type: symbol
+  value: httpie.sessions.Session._compute_new_headers
+- type: fingerprint
+  value: f1fbb884228946cff4c2c3e20c326374565d65b71c9cfd210b044565bfaea885
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.sessions.Session

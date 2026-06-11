@@ -1,0 +1,65 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-624332d9
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-22T08:37:45.560883+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.output_options.any
+  - symbol: ?.self.on_body_chunk_downloaded
+  - symbol: httpie.output.streams.BaseStream.__init__
+  - symbol: httpie.output.streams.BaseStream.__iter__
+  - symbol: httpie.output.streams.BaseStream.get_headers
+  - symbol: httpie.output.streams.BaseStream.get_metadata
+  - symbol: httpie.output.streams.BaseStream.iter_body
+  edges:
+  - from: httpie.output.streams.BaseStream.__init__
+    to: ?.output_options.any
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 45
+      start_col: 0
+      end_line: 45
+      end_col: 0
+  - from: httpie.output.streams.BaseStream.__iter__
+    to: httpie.output.streams.BaseStream.get_headers
+    kind: method_call
+    edge_id: 1
+    range:
+      start_line: 66
+      start_col: 0
+      end_line: 66
+      end_col: 0
+  - from: httpie.output.streams.BaseStream.__iter__
+    to: httpie.output.streams.BaseStream.iter_body
+    kind: method_call
+    edge_id: 2
+    range:
+      start_line: 71
+      start_col: 0
+      end_line: 71
+      end_col: 0
+  - from: httpie.output.streams.BaseStream.__iter__
+    to: httpie.output.streams.BaseStream.get_metadata
+    kind: method_call
+    edge_id: 3
+    range:
+      start_line: 84
+      start_col: 0
+      end_line: 84
+      end_col: 0
+  - from: httpie.output.streams.BaseStream.__iter__
+    to: ?.self.on_body_chunk_downloaded
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 74
+      start_col: 0
+      end_line: 74
+      end_col: 0

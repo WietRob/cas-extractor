@@ -1,0 +1,40 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-3d92728d
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T17:44:04.402401+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.uploads.ChunkedMultipartUploadStream.__init__
+    kind: method
+    file: httpie/uploads.py
+    range:
+      start_line: 47
+      start_col: 0
+      end_line: 53
+      end_col: 0
+    fingerprint: 08c5577c2161decb9febbd948b46da024982b45052e661beeee31d415daf6273
+    params:
+    - name: self
+    - name: encoder
+      annotation: '''MultipartEncoder'''
+    - name: event
+      annotation: Optional[threading.Event]
+    returns: None
+  - qualified: httpie.uploads.ChunkedMultipartUploadStream.__iter__
+    kind: method
+    file: httpie/uploads.py
+    range:
+      start_line: 55
+      start_col: 0
+      end_line: 62
+      end_col: 0
+    fingerprint: eaac2d3a6c6881d97ed37fcae74d3d99e24b5c73ead494533e9f3ba3f775f97f
+    params:
+    - name: self
+    returns: Iterable[Union[str, bytes]]

@@ -1,0 +1,107 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-1fd2f67c
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:54.964012+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.cli.utils.LazyChoices.__init__
+    kind: method
+    file: httpie/cli/utils.py
+    range:
+      start_line: 29
+      start_col: 0
+      end_line: 47
+      end_col: 0
+    fingerprint: fcb47fc762f1f1b163b564f274078300d565a32ce60da89345f5ee682a680099
+    params:
+    - name: self
+    returns: None
+  - qualified: httpie.cli.utils.LazyChoices.load
+    kind: method
+    file: httpie/cli/utils.py
+    range:
+      start_line: 49
+      start_col: 0
+      end_line: 54
+      end_col: 0
+    fingerprint: 70401e59ae22414c209dab8a7d84cec81221d0740bbc4faf3ab3a6a16647c1f7
+    params:
+    - name: self
+    returns: T
+  - qualified: httpie.cli.utils.LazyChoices.help
+    kind: method
+    file: httpie/cli/utils.py
+    range:
+      start_line: 57
+      start_col: 0
+      end_line: 63
+      end_col: 0
+    fingerprint: 2ce699983159f330be47fe1ffaa9e1047caee752f6048a2469c99fe85dff8e18
+    decorators:
+    - property
+    params:
+    - name: self
+    returns: str
+  - qualified: httpie.cli.utils.LazyChoices.help
+    kind: method
+    file: httpie/cli/utils.py
+    range:
+      start_line: 66
+      start_col: 0
+      end_line: 67
+      end_col: 0
+    fingerprint: 06b85372468d9c139ce325dc0796021de5548bcefaaf43d28598474e3800da0e
+    decorators:
+    - help.setter
+    params:
+    - name: self
+    - name: value
+      annotation: Any
+    returns: None
+  - qualified: httpie.cli.utils.LazyChoices.__contains__
+    kind: method
+    file: httpie/cli/utils.py
+    range:
+      start_line: 69
+      start_col: 0
+      end_line: 70
+      end_col: 0
+    fingerprint: b03066765d70dea5b5f60ca3fda9cfcf286c54a5f5415fa5ae0ce007a69a0785
+    params:
+    - name: self
+    - name: item
+      annotation: Any
+    returns: bool
+  - qualified: httpie.cli.utils.LazyChoices.__iter__
+    kind: method
+    file: httpie/cli/utils.py
+    range:
+      start_line: 72
+      start_col: 0
+      end_line: 76
+      end_col: 0
+    fingerprint: 3f5ba3aba8ba4ec403ed4bedfbd0e42989fe1d74e61c7974dc31c84007c9928a
+    params:
+    - name: self
+    returns: Iterator[T]
+  - qualified: httpie.cli.utils.LazyChoices.__call__
+    kind: method
+    file: httpie/cli/utils.py
+    range:
+      start_line: 78
+      start_col: 0
+      end_line: 79
+      end_col: 0
+    fingerprint: db562890f1d59934298621f58d0d83efdd04331c17d7e808bc6ff4d75152d51f
+    params:
+    - name: self
+    - name: parser
+    - name: namespace
+    - name: values
+    - name: option_string

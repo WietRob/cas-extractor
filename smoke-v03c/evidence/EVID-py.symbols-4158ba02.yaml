@@ -1,0 +1,83 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-4158ba02
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T17:43:58.667838+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://cas-extractor
+  root: .
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: cas_extractor_generators_artifact_generator
+    kind: module
+    file: cas_extractor_generators_artifact_generator.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 416
+      end_col: 0
+    fingerprint: 18ae4d5ddcfeafc3e6dfc6f9d1075f522037fa4227ea09e9cdc910165e9bb2c9
+  - qualified: cas_extractor_generators_artifact_generator._is_param_only_docstring
+    kind: function
+    file: cas_extractor_generators_artifact_generator.py
+    range:
+      start_line: 52
+      start_col: 0
+      end_line: 57
+      end_col: 0
+    fingerprint: 7a24d7db994c12520f8003bed46ca5e3f01b69e77f7ac2f2c236dd34e9ab4b5d
+    params:
+    - name: docstring
+      annotation: str
+    returns: bool
+  - qualified: cas_extractor_generators_artifact_generator._classify_module
+    kind: function
+    file: cas_extractor_generators_artifact_generator.py
+    range:
+      start_line: 60
+      start_col: 0
+      end_line: 66
+      end_col: 0
+    fingerprint: 3b6422685b1358dfcbd39457821a8b7fd1a8c81bff4caee174dc47d3b1ac8b1b
+    params:
+    - name: module_name
+      annotation: str
+    - name: known_internal_prefixes
+      annotation: set[str]
+    returns: str
+  - qualified: cas_extractor_generators_artifact_generator.generate_from_evidence
+    kind: function
+    file: cas_extractor_generators_artifact_generator.py
+    range:
+      start_line: 69
+      start_col: 0
+      end_line: 411
+      end_col: 0
+    fingerprint: e5349f326cd74f70d545cb5037e8cdf6081c192bf4dde125aef7bad5a5e70f5c
+    params:
+    - name: evidence_dir
+      annotation: str
+    - name: out_entities
+      annotation: str
+    - name: out_relations
+      annotation: str
+    - name: out_issues
+      annotation: str
+    returns: dict[str, Any]
+  - qualified: cas_extractor_generators_artifact_generator._write_yaml
+    kind: function
+    file: cas_extractor_generators_artifact_generator.py
+    range:
+      start_line: 414
+      start_col: 0
+      end_line: 416
+      end_col: 0
+    fingerprint: bda15609f431cc90b338dfa8377a4e309c981ca93871d70f8f525c8e7776943a
+    params:
+    - name: data
+      annotation: dict
+    - name: filepath
+      annotation: str
+    returns: None

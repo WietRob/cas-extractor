@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.utils.open_with_lockfile
+kind: entity
+type: py.function
+name: open_with_lockfile
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/utils.py
+anchors:
+- type: symbol
+  value: httpie.utils.open_with_lockfile
+- type: fingerprint
+  value: 72ccc34fae3482d11978d034e82a6b2f8e6d8559f95f22f6dd8d04b073ef3fa0
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.utils

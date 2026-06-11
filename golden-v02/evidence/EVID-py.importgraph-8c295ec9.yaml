@@ -1,0 +1,32 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-8c295ec9
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-21T11:51:32.849153+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  imports:
+  - from: extras.profiling.run
+    imports:
+    - dataclasses
+    - shlex
+    - subprocess
+    - sys
+    - tempfile
+    - venv
+    - argparse.ArgumentParser
+    - argparse.FileType
+    - contextlib.contextmanager
+    - dataclasses.dataclass
+    - pathlib.Path
+    - typing.IO
+    - typing.Dict
+    - typing.Generator
+    - typing.Iterable
+    - typing.List
+    - typing.Optional
+    - typing.Tuple

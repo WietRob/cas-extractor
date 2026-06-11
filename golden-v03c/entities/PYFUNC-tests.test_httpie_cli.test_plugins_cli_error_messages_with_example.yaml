@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_httpie_cli.test_plugins_cli_error_messages_with_example
+kind: entity
+type: py.function
+name: test_plugins_cli_error_messages_with_example
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_httpie_cli.py
+anchors:
+- type: symbol
+  value: tests.test_httpie_cli.test_plugins_cli_error_messages_with_example
+- type: fingerprint
+  value: 29707c4f64b6f8cb3edbf6f4081be8529177e75a066fa2f488604fc681397471
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_httpie_cli

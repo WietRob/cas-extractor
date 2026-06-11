@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_update_warnings.higher_build_channel
+kind: entity
+type: py.function
+name: higher_build_channel
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_update_warnings.py
+anchors:
+- type: symbol
+  value: tests.test_update_warnings.higher_build_channel
+- type: fingerprint
+  value: 04e9f701fbb90727a788396a8e66a0844bf3c59d9241ac58de814880fe28b48e
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_update_warnings

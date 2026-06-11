@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.downloads.DownloadStatus.time_spent
+kind: entity
+type: py.function
+name: time_spent
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/downloads.py
+anchors:
+- type: symbol
+  value: httpie.downloads.DownloadStatus.time_spent
+- type: fingerprint
+  value: 5be7364ec0fa0154b751b7422f81ef920ba36f8f8c159c37e30fe118ba050520
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.downloads.DownloadStatus

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_plugins_cli.test_plugin_installation_with_custom_config
+kind: entity
+type: py.function
+name: test_plugin_installation_with_custom_config
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_plugins_cli.py
+anchors:
+- type: symbol
+  value: tests.test_plugins_cli.test_plugin_installation_with_custom_config
+- type: fingerprint
+  value: e3b333188e93f879e5506dc33cdcf1eba1b40e0c3ab21fae414ba00cf8d0e367
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_plugins_cli

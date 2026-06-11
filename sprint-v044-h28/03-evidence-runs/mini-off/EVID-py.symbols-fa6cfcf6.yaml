@@ -1,0 +1,45 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-fa6cfcf6
+kind: evidence
+type: py.symbols
+created_at: '2026-02-23T12:58:49.581975+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://h28-test
+  root: /tmp/h28-verify
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: test_h28.TestN6FactoryConflict.setup_http
+    kind: method
+    file: test_h28.py
+    range:
+      start_line: 237
+      start_col: 0
+      end_line: 238
+      end_col: 0
+    fingerprint: d4fe3d2a15227b9c7b7d8354fd1365d4a91471c688c3b51509c3f2143b4ec56d
+    params:
+    - name: self
+  - qualified: test_h28.TestN6FactoryConflict.setup_ws
+    kind: method
+    file: test_h28.py
+    range:
+      start_line: 240
+      start_col: 0
+      end_line: 242
+      end_col: 0
+    fingerprint: f3afd0555484460563124bd810f358e79e8d41eb05a81f63bd0a0c2290e2f3e6
+    params:
+    - name: self
+  - qualified: test_h28.TestN6FactoryConflict.run
+    kind: method
+    file: test_h28.py
+    range:
+      start_line: 244
+      start_col: 0
+      end_line: 247
+      end_col: 0
+    fingerprint: 2ac8397ac5428ee333134f3ccbce7b3ad4c48f333df42b8d774cc2d97efd5708
+    params:
+    - name: self

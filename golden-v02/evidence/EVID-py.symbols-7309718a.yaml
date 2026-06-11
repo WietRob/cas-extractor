@@ -1,0 +1,155 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-7309718a
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:51:32.650954+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: tests.utils.plugins_cli
+    kind: module
+    file: tests/utils/plugins_cli.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 235
+      end_col: 0
+    fingerprint: 0948d48ec24de534fd0188e36e865f9f375a46b09cb87106ffe0eab1436da850
+  - qualified: tests.utils.plugins_cli.make_name
+    kind: function
+    file: tests/utils/plugins_cli.py
+    range:
+      start_line: 23
+      start_col: 0
+      end_line: 24
+      end_col: 0
+    fingerprint: 3d98d556c2f71badfc7454dd2152c747cd5ceb212f3c9b93da7388cbd714d798
+    returns: str
+  - qualified: tests.utils.plugins_cli.EntryPoint
+    kind: class
+    file: tests/utils/plugins_cli.py
+    range:
+      start_line: 28
+      start_col: 0
+      end_line: 33
+      end_col: 0
+    fingerprint: 53c1496ae9054a7db450083c1b30a0c41f50433238555fe86d23b2d6879afc3b
+    decorators:
+    - dataclass
+  - qualified: tests.utils.plugins_cli.Plugin
+    kind: class
+    file: tests/utils/plugins_cli.py
+    range:
+      start_line: 37
+      start_col: 0
+      end_line: 102
+      end_col: 0
+    fingerprint: f0e7ddd68295c9f4d766ca26f15b1cc76fdd52c2ba5b2c8ee74da4a80c5b4d97
+    decorators:
+    - dataclass
+  - qualified: tests.utils.plugins_cli.Interface
+    kind: class
+    file: tests/utils/plugins_cli.py
+    range:
+      start_line: 106
+      start_col: 0
+      end_line: 128
+      end_col: 0
+    fingerprint: f26d22abdc775452e9f9fc719f7f3531b7a194b6f5dad0df11edd0a8d3aa1244
+    decorators:
+    - dataclass
+  - qualified: tests.utils.plugins_cli.parse_listing
+    kind: function
+    file: tests/utils/plugins_cli.py
+    range:
+      start_line: 131
+      start_col: 0
+      end_line: 163
+      end_col: 0
+    fingerprint: e9d530c137941b467d7d58b580a014ba27e3a1820569df88545751eb26050f59
+    params:
+    - name: lines
+      annotation: List[str]
+    returns: Dict[str, Any]
+  - qualified: tests.utils.plugins_cli.interface
+    kind: function
+    file: tests/utils/plugins_cli.py
+    range:
+      start_line: 167
+      start_col: 0
+      end_line: 173
+      end_col: 0
+    fingerprint: 9c98ce65e21a2f2723cd974a9598d442d842b327ac784d00a24fad4f9a42b22f
+    decorators:
+    - pytest.fixture(scope='function')
+    params:
+    - name: tmp_path
+  - qualified: tests.utils.plugins_cli.dummy_plugin
+    kind: function
+    file: tests/utils/plugins_cli.py
+    range:
+      start_line: 177
+      start_col: 0
+      end_line: 178
+      end_col: 0
+    fingerprint: 4a6d49b997ea72d47606f936f446fdb6b13ff772acb12717da86feed42e0a4aa
+    decorators:
+    - pytest.fixture(scope='function')
+    params:
+    - name: interface
+  - qualified: tests.utils.plugins_cli.broken_plugin
+    kind: function
+    file: tests/utils/plugins_cli.py
+    range:
+      start_line: 182
+      start_col: 0
+      end_line: 186
+      end_col: 0
+    fingerprint: fdd3a00ea4db6336ceeeb8b31c25bb708ab754f85de68b3947af45bde3e5e601
+    decorators:
+    - pytest.fixture(scope='function')
+    params:
+    - name: interface
+  - qualified: tests.utils.plugins_cli.dummy_plugins
+    kind: function
+    file: tests/utils/plugins_cli.py
+    range:
+      start_line: 190
+      start_col: 0
+      end_line: 203
+      end_col: 0
+    fingerprint: 6d3e8ba1f38178621e4ba6e5e9b9852765f164a3057648c1abb454e51ada63ce
+    decorators:
+    - pytest.fixture(scope='function')
+    params:
+    - name: interface
+  - qualified: tests.utils.plugins_cli.httpie_plugins
+    kind: function
+    file: tests/utils/plugins_cli.py
+    range:
+      start_line: 207
+      start_col: 0
+      end_line: 226
+      end_col: 0
+    fingerprint: 6aa7698eacac918f4590f038dd9fcef5c36efdc5f7821d1230277a024b54b9c8
+    decorators:
+    - pytest.fixture
+    params:
+    - name: interface
+  - qualified: tests.utils.plugins_cli.httpie_plugins_success
+    kind: function
+    file: tests/utils/plugins_cli.py
+    range:
+      start_line: 230
+      start_col: 0
+      end_line: 235
+      end_col: 0
+    fingerprint: 396e5c73b162f0fec7b6cb31b26fe46cd2bbd2dc9609a2e166bbc4660df75b0b
+    decorators:
+    - pytest.fixture
+    params:
+    - name: httpie_plugins

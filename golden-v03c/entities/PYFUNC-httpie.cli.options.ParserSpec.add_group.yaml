@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.options.ParserSpec.add_group
+kind: entity
+type: py.function
+name: add_group
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/options.py
+anchors:
+- type: symbol
+  value: httpie.cli.options.ParserSpec.add_group
+- type: fingerprint
+  value: d255a4fea8843f04eb4ce62d2ffdd8cbadfa143abfca8304b7573ec90adac62d
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.options.ParserSpec

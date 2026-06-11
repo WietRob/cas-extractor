@@ -1,0 +1,50 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-356216d2
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-21T15:03:55.396232+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  imports:
+  - from: httpie.cli.argparser
+    imports:
+    - argparse
+    - errno
+    - os
+    - re
+    - sys
+    - argparse.RawDescriptionHelpFormatter
+    - textwrap.dedent
+    - urllib.parse.urlsplit
+    - requests.utils.get_netrc_auth
+    - httpie.cli.argtypes.AuthCredentials
+    - httpie.cli.argtypes.SSLCredentials
+    - httpie.cli.argtypes.KeyValueArgType
+    - httpie.cli.argtypes.PARSED_DEFAULT_FORMAT_OPTIONS
+    - httpie.cli.argtypes.parse_auth
+    - httpie.cli.argtypes.parse_format_options
+    - httpie.cli.constants.HTTP_GET
+    - httpie.cli.constants.HTTP_POST
+    - httpie.cli.constants.BASE_OUTPUT_OPTIONS
+    - httpie.cli.constants.OUTPUT_OPTIONS
+    - httpie.cli.constants.OUTPUT_OPTIONS_DEFAULT
+    - httpie.cli.constants.OUTPUT_OPTIONS_DEFAULT_OFFLINE
+    - httpie.cli.constants.OUTPUT_OPTIONS_DEFAULT_STDOUT_REDIRECTED
+    - httpie.cli.constants.OUT_RESP_BODY
+    - httpie.cli.constants.PRETTY_MAP
+    - httpie.cli.constants.PRETTY_STDOUT_TTY_ONLY
+    - httpie.cli.constants.RequestType
+    - httpie.cli.constants.SEPARATOR_CREDENTIALS
+    - httpie.cli.constants.SEPARATOR_GROUP_ALL_ITEMS
+    - httpie.cli.constants.SEPARATOR_GROUP_DATA_ITEMS
+    - httpie.cli.constants.URL_SCHEME_RE
+    - httpie.cli.exceptions.ParseError
+    - httpie.cli.requestitems.RequestItems
+    - httpie.context.Environment
+    - httpie.plugins.registry.plugin_manager
+    - httpie.utils.ExplicitNullAuth
+    - httpie.utils.get_content_type

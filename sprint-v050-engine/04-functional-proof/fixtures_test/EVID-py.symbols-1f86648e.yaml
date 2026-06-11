@@ -1,0 +1,23 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-1f86648e
+kind: evidence
+type: py.symbols
+created_at: '2026-02-25T07:23:45.913583+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://fixtures
+  root: ./sprint-v050-engine/02-fixtures
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: test_h27_propagated_self.Inner.method
+    kind: method
+    file: test_h27_propagated_self.py
+    range:
+      start_line: 7
+      start_col: 0
+      end_line: 8
+      end_col: 0
+    fingerprint: 5ee0b6367faa04e9613f1471fe693f6c1a7fad5cc54da0b758645db2c3caca8f
+    params:
+    - name: self

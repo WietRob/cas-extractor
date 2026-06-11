@@ -1,0 +1,29 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-1698dfb6
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-21T17:44:04.631604+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  imports:
+  - from: tests.test_httpie
+    imports:
+    - io
+    - unittest.mock
+    - pytest
+    - httpie
+    - httpie.__main__
+    - tests.fixtures.FILE_CONTENT
+    - tests.fixtures.FILE_PATH
+    - httpie.cli.exceptions.ParseError
+    - httpie.context.Environment
+    - httpie.encoding.UTF8
+    - httpie.status.ExitStatus
+    - tests.utils.HTTP_OK
+    - tests.utils.MockEnvironment
+    - tests.utils.StdinBytesIO
+    - tests.utils.http

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.ui.rich_help.to_help_message
+kind: entity
+type: py.function
+name: to_help_message
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/output/ui/rich_help.py
+anchors:
+- type: symbol
+  value: httpie.output.ui.rich_help.to_help_message
+- type: fingerprint
+  value: 6175331c77654567e58854efbd13d4b5685e5b06489d822d93212ba7c26e4408
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.ui.rich_help

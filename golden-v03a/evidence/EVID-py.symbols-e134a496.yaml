@@ -1,0 +1,332 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-e134a496
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:53.163091+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: tests.test_sessions
+    kind: module
+    file: tests/test_sessions.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 852
+      end_col: 0
+    fingerprint: 8b1ec4e24de62b2fbdca07fd0d9feac6b001b76bdbbc0eaecac268d7519ba2a4
+  - qualified: tests.test_sessions.SessionTestBase
+    kind: class
+    file: tests/test_sessions.py
+    range:
+      start_line: 25
+      start_col: 0
+      end_line: 43
+      end_col: 0
+    fingerprint: ea5e2b1a63d42ff2846a8f334ab2fb145d37885929001c916b5e85f3db9d2802
+  - qualified: tests.test_sessions.CookieTestBase
+    kind: class
+    file: tests/test_sessions.py
+    range:
+      start_line: 46
+      start_col: 0
+      end_line: 64
+      end_col: 0
+    fingerprint: e6c7285452a32eea732f12bb88cb7d2e59d8a30e47e14cb2602d0d18e7771eda
+  - qualified: tests.test_sessions.TestSessionFlow
+    kind: class
+    file: tests/test_sessions.py
+    range:
+      start_line: 67
+      start_col: 0
+      end_line: 167
+      end_col: 0
+    fingerprint: 3bf2faa4042d83078f2678035209112abeda905d7aa6a2e8efbc44fbc849d1d4
+  - qualified: tests.test_sessions.TestSession
+    kind: class
+    file: tests/test_sessions.py
+    range:
+      start_line: 170
+      start_col: 0
+      end_line: 367
+      end_col: 0
+    fingerprint: 44885d34f90780db414d76d5e0aec43d8135356bdb1e08ef320d9210cfd2dbd5
+  - qualified: tests.test_sessions.TestExpiredCookies
+    kind: class
+    file: tests/test_sessions.py
+    range:
+      start_line: 370
+      start_col: 0
+      end_line: 443
+      end_col: 0
+    fingerprint: bf983dd5928d2fd1d5a85a8b708a795f02bff0c1bcfc692ab04b225893303ace
+  - qualified: tests.test_sessions.TestCookieStorage
+    kind: class
+    file: tests/test_sessions.py
+    range:
+      start_line: 446
+      start_col: 0
+      end_line: 545
+      end_col: 0
+    fingerprint: 8165aef101f13f5c755683fbd7d2658ae8579d12bd2a22d9713c7767889a3303
+  - qualified: tests.test_sessions.basic_session
+    kind: function
+    file: tests/test_sessions.py
+    range:
+      start_line: 549
+      start_col: 0
+      end_line: 555
+      end_col: 0
+    fingerprint: a87b19f4f8cf671def22760c66ed95d54c73f06252706e9c93718370c383bc2c
+    decorators:
+    - pytest.fixture
+    params:
+    - name: httpbin
+    - name: tmp_path
+  - qualified: tests.test_sessions.open_session
+    kind: function
+    file: tests/test_sessions.py
+    range:
+      start_line: 559
+      start_col: 0
+      end_line: 564
+      end_col: 0
+    fingerprint: e22748eaa71c804e8bb49de188ae9523eeddd5aadfc561081d3b61fb54cf8a31
+    decorators:
+    - contextmanager
+    params:
+    - name: path
+      annotation: Path
+    - name: env
+      annotation: Environment
+    - name: read_only
+      annotation: bool
+    returns: Iterator[Session]
+  - qualified: tests.test_sessions.open_raw_session
+    kind: function
+    file: tests/test_sessions.py
+    range:
+      start_line: 568
+      start_col: 0
+      end_line: 576
+      end_col: 0
+    fingerprint: 80e09321da20ed6f8dacc9a27a9336f356c601b5161b9d571ffbe70f2a7f00f9
+    decorators:
+    - contextmanager
+    params:
+    - name: path
+      annotation: Path
+    - name: read_only
+      annotation: bool
+    returns: None
+  - qualified: tests.test_sessions.read_stderr
+    kind: function
+    file: tests/test_sessions.py
+    range:
+      start_line: 579
+      start_col: 0
+      end_line: 585
+      end_col: 0
+    fingerprint: 256e0e110370c8030239d8bab7be308d9306521325fd100db58094a7fe68b57c
+    params:
+    - name: env
+      annotation: Environment
+    returns: bytes
+  - qualified: tests.test_sessions.test_old_session_version_saved_as_is
+    kind: function
+    file: tests/test_sessions.py
+    range:
+      start_line: 588
+      start_col: 0
+      end_line: 593
+      end_col: 0
+    fingerprint: 81f708298132c304db298a52f1ed4880e0015f342e14459ac6d730b10a60e4d8
+    params:
+    - name: basic_session
+    - name: mock_env
+  - qualified: tests.test_sessions.test_old_session_cookie_layout_warning
+    kind: function
+    file: tests/test_sessions.py
+    range:
+      start_line: 596
+      start_col: 0
+      end_line: 605
+      end_col: 0
+    fingerprint: d55218dbdd681a4cb118247b3d47c7bd2d0b1aa9fb2022876117bbcf26edadbb
+    params:
+    - name: basic_session
+    - name: mock_env
+  - qualified: tests.test_sessions.test_cookie_security_warnings_on_raw_cookies
+    kind: function
+    file: tests/test_sessions.py
+    range:
+      start_line: 652
+      start_col: 0
+      end_line: 663
+      end_col: 0
+    fingerprint: d5745c1af6332a6cca0c0a3fe40daed71069588c89dec806794251d4c2141a4c
+    decorators:
+    - 'pytest.mark.parametrize(''cookies, expect_warning'', [({''foo'': {''value'':
+      ''bar''}}, True), ({''foo'': {''value'': ''bar'', ''domain'': ''''}}, True),
+      ({''foo'': {''value'': ''bar'', ''domain'': None}}, False), ({''foo'': {''value'':
+      ''bar'', ''domain'': DUMMY_HOST}}, False), ([{''name'': ''foo'', ''value'':
+      ''bar''}], False), ([{''name'': ''foo'', ''value'': ''bar'', ''domain'': ''''}],
+      False), ([{''name'': ''foo'', ''value'': ''bar'', ''domain'': None}], False),
+      ([{''name'': ''foo'', ''value'': ''bar'', ''domain'': DUMMY_HOST}], False)])'
+    params:
+    - name: basic_session
+    - name: mock_env
+    - name: cookies
+    - name: expect_warning
+  - qualified: tests.test_sessions.test_old_session_cookie_layout_loading
+    kind: function
+    file: tests/test_sessions.py
+    range:
+      start_line: 666
+      start_col: 0
+      end_line: 676
+      end_col: 0
+    fingerprint: ab9b9710337bfb951cf70ce26117f3b5858c7bd43d57ef40f8ab0b931286935c
+    params:
+    - name: basic_session
+    - name: httpbin
+    - name: mock_env
+  - qualified: tests.test_sessions.test_session_cookie_layout_preservation
+    kind: function
+    file: tests/test_sessions.py
+    range:
+      start_line: 682
+      start_col: 0
+      end_line: 689
+      end_col: 0
+    fingerprint: 18ea6a4a0e1b2e791f391ce47054b962292ee022d0c06b4b07e2bc335f0689e5
+    decorators:
+    - pytest.mark.parametrize('layout_type', [dict, list])
+    params:
+    - name: basic_session
+    - name: mock_env
+    - name: layout_type
+  - qualified: tests.test_sessions.test_session_cookie_layout_preservation_on_new_cookies
+    kind: function
+    file: tests/test_sessions.py
+    range:
+      start_line: 695
+      start_col: 0
+      end_line: 707
+      end_col: 0
+    fingerprint: ac74b1bd32e8716fa8527124544e0a108749354f235df755ddeb91725a546221
+    decorators:
+    - pytest.mark.parametrize('layout_type', [dict, list])
+    params:
+    - name: basic_session
+    - name: httpbin
+    - name: mock_env
+    - name: layout_type
+  - qualified: tests.test_sessions.test_headers_old_layout_warning
+    kind: function
+    file: tests/test_sessions.py
+    range:
+      start_line: 730
+      start_col: 0
+      end_line: 741
+      end_col: 0
+    fingerprint: 28fded706d5b8ce63ab480df7d3ae7f9f9a107c88081e9ee12114b8141a5b6f1
+    decorators:
+    - 'pytest.mark.parametrize(''headers, expect_warning'', [({}, False), ({''Foo'':
+      ''bar''}, True), ([], False), ([{''name'': ''Foo'', ''value'': ''Bar''}], False)])'
+    params:
+    - name: basic_session
+    - name: mock_env
+    - name: headers
+    - name: expect_warning
+  - qualified: tests.test_sessions.test_outdated_layout_mixed
+    kind: function
+    file: tests/test_sessions.py
+    range:
+      start_line: 744
+      start_col: 0
+      end_line: 756
+      end_col: 0
+    fingerprint: 6733e1b61d63bc3ad58b216df11505546be62a580018f7d1d246796c262f918d
+    params:
+    - name: basic_session
+    - name: mock_env
+  - qualified: tests.test_sessions.test_old_session_header_layout_loading
+    kind: function
+    file: tests/test_sessions.py
+    range:
+      start_line: 759
+      start_col: 0
+      end_line: 769
+      end_col: 0
+    fingerprint: 98df22cb3fe34874dfd2bb463e03954956801f0cf631a7b40b55426cfaab70bc
+    params:
+    - name: basic_session
+    - name: httpbin
+    - name: mock_env
+  - qualified: tests.test_sessions.test_session_header_layout_preservation
+    kind: function
+    file: tests/test_sessions.py
+    range:
+      start_line: 775
+      start_col: 0
+      end_line: 781
+      end_col: 0
+    fingerprint: e9bb1d3fb7547894e06e7f41cb0f92a106a27d589c1ec573677d85461074904c
+    decorators:
+    - pytest.mark.parametrize('layout_type', [dict, list])
+    params:
+    - name: basic_session
+    - name: mock_env
+    - name: layout_type
+  - qualified: tests.test_sessions.test_session_header_layout_preservation_on_new_headers
+    kind: function
+    file: tests/test_sessions.py
+    range:
+      start_line: 787
+      start_col: 0
+      end_line: 799
+      end_col: 0
+    fingerprint: d6649f5227afafc9a18c5b1b95d619b1a4bc9d3b5bd459c04ce20aab4e0e5473
+    decorators:
+    - pytest.mark.parametrize('layout_type', [dict, list])
+    params:
+    - name: basic_session
+    - name: httpbin
+    - name: mock_env
+    - name: layout_type
+  - qualified: tests.test_sessions.test_session_multiple_headers_with_same_name
+    kind: function
+    file: tests/test_sessions.py
+    range:
+      start_line: 802
+      start_col: 0
+      end_line: 817
+      end_col: 0
+    fingerprint: fe4e2f0dcb289c8c1db42975e6da143be7f1489bf7feaf3b533b2ce7ac54c4ed
+    params:
+    - name: basic_session
+    - name: httpbin
+  - qualified: tests.test_sessions.test_secure_cookies_on_localhost
+    kind: function
+    file: tests/test_sessions.py
+    range:
+      start_line: 833
+      start_col: 0
+      end_line: 852
+      end_col: 0
+    fingerprint: 3c9de2e91ce5719c908ac3faf6825419760af8485034c046f77a6d5750dda106
+    decorators:
+    - 'pytest.mark.parametrize(''server, expected_cookies'', [(''localhost_http_server'',
+      {''secure_cookie'': ''foo'', ''insecure_cookie'': ''bar''}), (''remote_httpbin'',
+      {''insecure_cookie'': ''bar''})])'
+    params:
+    - name: mock_env
+    - name: tmp_path
+    - name: server
+    - name: expected_cookies
+    - name: request

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_httpie.test_headers_same_after_omit
+kind: entity
+type: py.function
+name: test_headers_same_after_omit
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_httpie.py
+anchors:
+- type: symbol
+  value: tests.test_httpie.test_headers_same_after_omit
+- type: fingerprint
+  value: 27312e958193ba78b136fc40e624a4c55cf15e72eeedfe6eb959c8d330156406
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_httpie

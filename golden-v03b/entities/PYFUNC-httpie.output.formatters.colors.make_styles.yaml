@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.formatters.colors.make_styles
+kind: entity
+type: py.function
+name: make_styles
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/formatters/colors.py
+anchors:
+- type: symbol
+  value: httpie.output.formatters.colors.make_styles
+- type: fingerprint
+  value: 91043d7a885a1e216cb28084975ac0791a2760fc8aa05aab03d045bc325f565a
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.formatters.colors

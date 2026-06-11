@@ -1,0 +1,174 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-a232f91c
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:33.910212+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.content_type.split
+  - symbol: ?.exists
+  - symbol: ?.match.groupdict
+  - symbol: ?.msg.get_filename
+  - symbol: httpie.downloads.ContentRangeError
+  - symbol: httpie.downloads.filename_from_content_disposition
+  - symbol: httpie.downloads.filename_from_url
+  - symbol: httpie.downloads.get_filename_max_length
+  - symbol: httpie.downloads.get_unique_filename
+  - symbol: httpie.downloads.parse_content_range
+  - symbol: httpie.downloads.trim_filename
+  - symbol: httpie.downloads.trim_filename_if_needed
+  - symbol: mailbox.Message
+  - symbol: mimetypes.guess_extension
+  - symbol: os.pathconf
+  - symbol: re.match
+  - symbol: urllib.parse.urlsplit
+  edges:
+  - from: httpie.downloads.parse_content_range
+    to: re.match
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 46
+      start_col: 0
+      end_line: 46
+      end_col: 0
+  - from: httpie.downloads.parse_content_range
+    to: ?.match.groupdict
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 52
+      start_col: 0
+      end_line: 52
+      end_col: 0
+  - from: httpie.downloads.filename_from_content_disposition
+    to: mailbox.Message
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 97
+      start_col: 0
+      end_line: 97
+      end_col: 0
+  - from: httpie.downloads.filename_from_content_disposition
+    to: ?.msg.get_filename
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 98
+      start_col: 0
+      end_line: 98
+      end_col: 0
+  - from: httpie.downloads.parse_content_range
+    to: httpie.downloads.ContentRangeError
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 40
+      start_col: 0
+      end_line: 40
+      end_col: 0
+  - from: httpie.downloads.parse_content_range
+    to: httpie.downloads.ContentRangeError
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 49
+      start_col: 0
+      end_line: 50
+      end_col: 0
+  - from: httpie.downloads.parse_content_range
+    to: httpie.downloads.ContentRangeError
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 70
+      start_col: 0
+      end_line: 71
+      end_col: 0
+  - from: httpie.downloads.parse_content_range
+    to: httpie.downloads.ContentRangeError
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 77
+      start_col: 0
+      end_line: 80
+      end_col: 0
+  - from: httpie.downloads.get_filename_max_length
+    to: os.pathconf
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 140
+      start_col: 0
+      end_line: 140
+      end_col: 0
+  - from: httpie.downloads.trim_filename_if_needed
+    to: httpie.downloads.get_filename_max_length
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 145
+      start_col: 0
+      end_line: 145
+      end_col: 0
+  - from: httpie.downloads.trim_filename_if_needed
+    to: httpie.downloads.trim_filename
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 147
+      start_col: 0
+      end_line: 147
+      end_col: 0
+  - from: httpie.downloads.get_unique_filename
+    to: httpie.downloads.trim_filename_if_needed
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 155
+      start_col: 0
+      end_line: 155
+      end_col: 0
+  - from: httpie.downloads.filename_from_url
+    to: ?.content_type.split
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 110
+      start_col: 0
+      end_line: 110
+      end_col: 0
+  - from: httpie.downloads.filename_from_url
+    to: mimetypes.guess_extension
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 115
+      start_col: 0
+      end_line: 115
+      end_col: 0
+  - from: httpie.downloads.get_unique_filename
+    to: ?.exists
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 157
+      start_col: 0
+      end_line: 157
+      end_col: 0
+  - from: httpie.downloads.filename_from_url
+    to: urllib.parse.urlsplit
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 107
+      start_col: 0
+      end_line: 107
+      end_col: 0

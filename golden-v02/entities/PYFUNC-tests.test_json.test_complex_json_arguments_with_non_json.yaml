@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_json.test_complex_json_arguments_with_non_json
+kind: entity
+type: py.function
+name: test_complex_json_arguments_with_non_json
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_json.py
+anchors:
+- type: symbol
+  value: tests.test_json.test_complex_json_arguments_with_non_json
+- type: fingerprint
+  value: 6323139fe99dbb865a654a101851ea52aab74975c369852c472066b075c9e1cd
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_json

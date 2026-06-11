@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_update_warnings.without_warnings
+kind: entity
+type: py.function
+name: without_warnings
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_update_warnings.py
+anchors:
+- type: symbol
+  value: tests.test_update_warnings.without_warnings
+- type: fingerprint
+  value: a6876f76d14243c859c389fca9b5bd5096acc0bb0cbd781daf0c79939f07ff21
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_update_warnings

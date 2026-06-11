@@ -1,0 +1,84 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-07541b28
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:51:32.299401+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.output.streams
+    kind: module
+    file: httpie/output/streams.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 254
+      end_col: 0
+    fingerprint: 1e2ddce33e3d3d29a2537058c6445b0d87425d5c8e4629fd1be365f81f1ce797
+  - qualified: httpie.output.streams.DataSuppressedError
+    kind: class
+    file: httpie/output/streams.py
+    range:
+      start_line: 20
+      start_col: 0
+      end_line: 21
+      end_col: 0
+    fingerprint: af310bb81a3138314a748e1ccb64e09ed6136a4b57b9cda2aa3abcb03a2edd32
+  - qualified: httpie.output.streams.BinarySuppressedError
+    kind: class
+    file: httpie/output/streams.py
+    range:
+      start_line: 24
+      start_col: 0
+      end_line: 27
+      end_col: 0
+    fingerprint: 95126a65f8cd533df041e51030240c217745d7745d1fdcd3d1744f0821b6664d
+  - qualified: httpie.output.streams.BaseStream
+    kind: class
+    file: httpie/output/streams.py
+    range:
+      start_line: 30
+      start_col: 0
+      end_line: 85
+      end_col: 0
+    fingerprint: 8ac91fcf8fdacac7df54ee9302bd3a58cd6faa5c570f9b99c0041a7d3d190e3c
+  - qualified: httpie.output.streams.RawStream
+    kind: class
+    file: httpie/output/streams.py
+    range:
+      start_line: 88
+      start_col: 0
+      end_line: 99
+      end_col: 0
+    fingerprint: 10b6178031312b2fc7da4f2f2fa75ded5f30a14f2407907e3aeddbea3f8f61fe
+  - qualified: httpie.output.streams.EncodedStream
+    kind: class
+    file: httpie/output/streams.py
+    range:
+      start_line: 105
+      start_col: 0
+      end_line: 167
+      end_col: 0
+    fingerprint: 248fd8d56fdb9dcf17541963739ea4f0f4e9a970122a558dcd58900452045112
+  - qualified: httpie.output.streams.PrettyStream
+    kind: class
+    file: httpie/output/streams.py
+    range:
+      start_line: 170
+      start_col: 0
+      end_line: 225
+      end_col: 0
+    fingerprint: f5f12ec78ce698162774766471877295d7a69077eaba41575a2f78c0298cd242
+  - qualified: httpie.output.streams.BufferedPrettyStream
+    kind: class
+    file: httpie/output/streams.py
+    range:
+      start_line: 228
+      start_col: 0
+      end_line: 254
+      end_col: 0
+    fingerprint: 3ccc802377d75c049758512e86836a3d47579af15aa2d3a3561e030cb7c9e610

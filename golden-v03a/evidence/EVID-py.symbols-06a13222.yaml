@@ -1,0 +1,30 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-06a13222
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:53.013062+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.output.formatters.headers
+    kind: module
+    file: httpie/output/formatters/headers.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 18
+      end_col: 0
+    fingerprint: db1a8daa8128e27299f4e3a596cb77ef6411cfe03827fac0f4b158a3c9788ab7
+  - qualified: httpie.output.formatters.headers.HeadersFormatter
+    kind: class
+    file: httpie/output/formatters/headers.py
+    range:
+      start_line: 4
+      start_col: 0
+      end_line: 18
+      end_col: 0
+    fingerprint: f62fe6fdfdb6e2ec80772e2041c7485f8ef1c13c2bdb3280a9053c4c827ee58f

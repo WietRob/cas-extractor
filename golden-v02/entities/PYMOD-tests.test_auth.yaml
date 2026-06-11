@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-tests.test_auth
+kind: entity
+type: py.module
+name: test_auth
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_auth.py
+anchors:
+- type: symbol
+  value: tests.test_auth
+- type: fingerprint
+  value: 4feea0abf0785f7a854af02a520ccb77c97be7e93fa33e6a72a4e974a10006c5
+  algo: sha256
+claims: []
+relations: []
+namespace: tests

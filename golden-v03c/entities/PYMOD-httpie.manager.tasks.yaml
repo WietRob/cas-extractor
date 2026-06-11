@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.manager.tasks
+kind: entity
+type: py.module
+name: tasks
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/manager/tasks/__init__.py
+anchors:
+- type: symbol
+  value: httpie.manager.tasks
+- type: fingerprint
+  value: ef10b6941a15c78cd93105c73d8b4dbc4f4354bf5eea437e0b8b4eedd849ab5e
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.manager

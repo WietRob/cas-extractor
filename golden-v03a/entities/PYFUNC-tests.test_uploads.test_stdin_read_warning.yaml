@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_uploads.test_stdin_read_warning
+kind: entity
+type: py.function
+name: test_stdin_read_warning
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_uploads.py
+anchors:
+- type: symbol
+  value: tests.test_uploads.test_stdin_read_warning
+- type: fingerprint
+  value: 58acd7a92b79943506c4791ca148ad0e8db7c13d5782a86dc197d900bb0252e2
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_uploads

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.compat.find_entry_points
+kind: entity
+type: py.function
+name: find_entry_points
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/compat.py
+anchors:
+- type: symbol
+  value: httpie.compat.find_entry_points
+- type: fingerprint
+  value: 2aba22007003f7e38925439a5b2955cb53be9d0a0ec36873f87c3eb4d2701daa
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.compat

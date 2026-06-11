@@ -1,0 +1,87 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-846fa853
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:10:20.588513+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+payload:
+  symbols:
+  - qualified: run_pipeline_timed
+    kind: module
+    file: run_pipeline_timed.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 281
+      end_col: 0
+    fingerprint: 72ea6dad4d3fd8f45340428405dfda44ce4cc28185d062cdae76c848a0241233
+  - qualified: run_pipeline_timed.count_artifacts
+    kind: function
+    file: run_pipeline_timed.py
+    range:
+      start_line: 25
+      start_col: 0
+      end_line: 43
+      end_col: 0
+    fingerprint: 481c163b9c4521f1f390d4cff4a5a0458d3b016694cccb3e2614c5940b02c6b9
+    params:
+    - name: output_dir
+      annotation: Path
+    returns: dict
+  - qualified: run_pipeline_timed.count_files
+    kind: function
+    file: run_pipeline_timed.py
+    range:
+      start_line: 46
+      start_col: 0
+      end_line: 50
+      end_col: 0
+    fingerprint: 1985ed7fc856226b97d5aadb4b23dd5a54d856b260a62983a1a2cc0a45653d9a
+    params:
+    - name: directory
+      annotation: Path
+    returns: int
+  - qualified: run_pipeline_timed.run_stage
+    kind: function
+    file: run_pipeline_timed.py
+    range:
+      start_line: 53
+      start_col: 0
+      end_line: 77
+      end_col: 0
+    fingerprint: b53e04e00974553eb8e104d4ce21f1f2ada5cabc763e3b66836846042a4f9f85
+    params:
+    - name: label
+      annotation: str
+    - name: cmd
+      annotation: list[str]
+    - name: cwd
+      annotation: str
+    returns: tuple[float, int, str]
+  - qualified: run_pipeline_timed.main
+    kind: function
+    file: run_pipeline_timed.py
+    range:
+      start_line: 80
+      start_col: 0
+      end_line: 190
+      end_col: 0
+    fingerprint: fead935100a7bc85d00a4b4c590e89605467e23a3307f1d1f62cb90d5455b28c
+  - qualified: run_pipeline_timed.export_and_report
+    kind: function
+    file: run_pipeline_timed.py
+    range:
+      start_line: 193
+      start_col: 0
+      end_line: 277
+      end_col: 0
+    fingerprint: 7aaa10e707a7d5e783b28fe425dde2cfef5ace19282efa073f4ced4d0049c9a8
+    params:
+    - name: stages
+    - name: wall_start
+    - name: timing_output
+    - name: repo

@@ -1,0 +1,30 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-18cc0b5c
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T08:37:44.617549+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.test_parser_schema
+    kind: module
+    file: tests/test_parser_schema.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 63
+      end_col: 0
+    fingerprint: 7f0cb137ead18e012858f074aae8550614a7044cd2bace3a57d3b63e05439f88
+  - qualified: tests.test_parser_schema.test_parser_serialization
+    kind: function
+    file: tests/test_parser_schema.py
+    range:
+      start_line: 4
+      start_col: 0
+      end_line: 63
+      end_col: 0
+    fingerprint: 5c3ba829317f92278bda7303774fb44ea08f6df8882e2ff7dec014b36fcce592

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-cas_extractor.utils.ids.entity_id
+kind: entity
+type: py.function
+name: entity_id
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor/utils/ids.py
+anchors:
+- type: symbol
+  value: cas_extractor.utils.ids.entity_id
+- type: fingerprint
+  value: 87170ea8f7587fa2911995c8d2dfd2b93f9d11dae3cd1d9232c2be8c115565db
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor.utils.ids

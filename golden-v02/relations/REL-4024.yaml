@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-4024
+kind: relation
+type: calls
+from: PYFUNC-tests.test_defaults.TestImplicitHTTPMethod.test_implicit_POST_raw
+to: PYFUNC-utils.http
+confidence:
+  level: E1
+  direction: confirmed
+evidence:
+- EVID-py.callgraph-f80db722
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1

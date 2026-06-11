@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-2181
+kind: relation
+type: calls
+from: PYFUNC-httpie.uploads.prepare_request_body
+to: PYFUNC-_.raw_body.read
+confidence:
+  level: E1
+  direction: confirmed
+evidence:
+- EVID-py.callgraph-2419455c
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1

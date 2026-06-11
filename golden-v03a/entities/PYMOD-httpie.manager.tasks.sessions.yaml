@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.manager.tasks.sessions
+kind: entity
+type: py.module
+name: sessions
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/manager/tasks/sessions.py
+anchors:
+- type: symbol
+  value: httpie.manager.tasks.sessions
+- type: fingerprint
+  value: 741762d862c13986ed5c32869dad68f93dd7f1a8c30257e6f993368e0d9fc54a
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.manager.tasks

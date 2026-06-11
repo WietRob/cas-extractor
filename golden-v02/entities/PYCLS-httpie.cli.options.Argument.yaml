@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.cli.options.Argument
+kind: entity
+type: py.class
+name: Argument
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/cli/options.py
+anchors:
+- type: symbol
+  value: httpie.cli.options.Argument
+- type: fingerprint
+  value: eba8f16150238b204ae4fc6af4b705307e95fae8ee87e51913883df2eb88c49f
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.options

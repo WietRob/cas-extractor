@@ -1,0 +1,23 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-9c8327d6
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T11:17:16.887676+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: /tmp/h25-verify
+  revision: git:test
+payload:
+  symbols:
+  - qualified: test_h25.TestH25Unknown.setup
+    kind: method
+    file: test_h25.py
+    range:
+      start_line: 78
+      start_col: 0
+      end_line: 80
+      end_col: 0
+    fingerprint: 6f5dd9eecef17cc866ea80d92a355d282d54929e34989c8d6c5d26e1f0015e3c
+    params:
+    - name: self

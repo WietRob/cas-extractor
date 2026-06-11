@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.plugins.builtin
+kind: entity
+type: py.module
+name: builtin
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/plugins/builtin.py
+anchors:
+- type: symbol
+  value: httpie.plugins.builtin
+- type: fingerprint
+  value: 9ae39178ad3ce3edd9ec4a079a848b9d9db279328dbc536afb7fbca6eff2abd7
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.plugins

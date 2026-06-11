@@ -1,0 +1,144 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-2cc39880
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-22T08:37:45.396902+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.PREDEFINED_FILES.items
+  - symbol: ?.context.run
+  - symbol: ?.server.shutdown
+  - symbol: ?.thread.join
+  - symbol: ?.thread.start
+  - symbol: dataclasses.field
+  - symbol: extras.profiling.benchmarks.Context
+  - symbol: extras.profiling.benchmarks.main
+  - symbol: extras.profiling.benchmarks.start_server
+  - symbol: functools.partial
+  - symbol: http.server.HTTPServer
+  - symbol: subprocess.check_call
+  - symbol: tempfile.TemporaryDirectory
+  - symbol: threading.Thread
+  edges:
+  - from: extras.profiling.benchmarks.Context
+    to: dataclasses.field
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 92
+      start_col: 0
+      end_line: 92
+      end_col: 0
+  - from: extras.profiling.benchmarks.Context
+    to: dataclasses.field
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 93
+      start_col: 0
+      end_line: 93
+      end_col: 0
+  - from: extras.profiling.benchmarks.start_server
+    to: tempfile.TemporaryDirectory
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 64
+      start_col: 0
+      end_line: 64
+      end_col: 0
+  - from: extras.profiling.benchmarks.start_server
+    to: ?.PREDEFINED_FILES.items
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 65
+      start_col: 0
+      end_line: 65
+      end_col: 0
+  - from: extras.profiling.benchmarks.start_server
+    to: functools.partial
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 79
+      start_col: 0
+      end_line: 79
+      end_col: 0
+  - from: extras.profiling.benchmarks.start_server
+    to: http.server.HTTPServer
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 80
+      start_col: 0
+      end_line: 80
+      end_col: 0
+  - from: extras.profiling.benchmarks.start_server
+    to: threading.Thread
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 82
+      start_col: 0
+      end_line: 82
+      end_col: 0
+  - from: extras.profiling.benchmarks.start_server
+    to: ?.thread.start
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 83
+      start_col: 0
+      end_line: 83
+      end_col: 0
+  - from: extras.profiling.benchmarks.start_server
+    to: ?.server.shutdown
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 85
+      start_col: 0
+      end_line: 85
+      end_col: 0
+  - from: extras.profiling.benchmarks.start_server
+    to: ?.thread.join
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 86
+      start_col: 0
+      end_line: 86
+      end_col: 0
+  - from: extras.profiling.benchmarks.main
+    to: extras.profiling.benchmarks.Context
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 197
+      start_col: 0
+      end_line: 197
+      end_col: 0
+  - from: extras.profiling.benchmarks.main
+    to: ?.context.run
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 198
+      start_col: 0
+      end_line: 198
+      end_col: 0
+  - from: extras.profiling.benchmarks.start_server
+    to: subprocess.check_call
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 66
+      start_col: 0
+      end_line: 77
+      end_col: 0

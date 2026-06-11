@@ -1,0 +1,52 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-b9d2abaa
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:51:32.123656+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.cli.argparser.HTTPieHelpFormatter.__init__
+    kind: method
+    file: httpie/cli/argparser.py
+    range:
+      start_line: 42
+      start_col: 0
+      end_line: 45
+      end_col: 0
+    fingerprint: 154692feff6fc774137d3f6a9d5dbefebb1d8400458e1b142f3572e090d361ad
+    params:
+    - name: self
+    - name: max_help_position
+  - qualified: httpie.cli.argparser.HTTPieHelpFormatter._split_lines
+    kind: method
+    file: httpie/cli/argparser.py
+    range:
+      start_line: 47
+      start_col: 0
+      end_line: 49
+      end_col: 0
+    fingerprint: e4b2e1be5d3dce5498c5e527abdfe0871c84ec8e5dba6725afdbb0ab11161709
+    params:
+    - name: self
+    - name: text
+    - name: width
+  - qualified: httpie.cli.argparser.HTTPieHelpFormatter.add_usage
+    kind: method
+    file: httpie/cli/argparser.py
+    range:
+      start_line: 51
+      start_col: 0
+      end_line: 76
+      end_col: 0
+    fingerprint: bc364ebd2b48511aa760776b29ccf6a5073b5e744be0833b7159d7b9061c2bef
+    params:
+    - name: self
+    - name: usage
+    - name: actions
+    - name: groups
+    - name: prefix

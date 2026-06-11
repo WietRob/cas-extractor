@@ -1,0 +1,83 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-3fa5de74
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T08:37:44.493455+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.output.streams.EncodedStream.__init__
+    kind: method
+    file: httpie/output/streams.py
+    range:
+      start_line: 115
+      start_col: 0
+      end_line: 136
+      end_col: 0
+    fingerprint: 49f250e3cf7e117f9499823ba8d81a96f827b7184498383b043441ff210f90d3
+    params:
+    - name: self
+    - name: env
+    - name: mime_overwrite
+      annotation: str
+    - name: encoding_overwrite
+      annotation: str
+  - qualified: httpie.output.streams.EncodedStream.iter_body
+    kind: method
+    file: httpie/output/streams.py
+    range:
+      start_line: 138
+      start_col: 0
+      end_line: 143
+      end_col: 0
+    fingerprint: 7431f3afd4e45bd0d3ed1fdb60007115f7cb336cf0f2b04421026ede25bd7540
+    params:
+    - name: self
+    returns: Iterable[bytes]
+  - qualified: httpie.output.streams.EncodedStream.decode_chunk
+    kind: method
+    file: httpie/output/streams.py
+    range:
+      start_line: 145
+      start_col: 0
+      end_line: 148
+      end_col: 0
+    fingerprint: a2c3180842e8ef99573fef9690c489d88b057cc4821fc02b74011052ea33a744
+    params:
+    - name: self
+    - name: raw_chunk
+      annotation: str
+    returns: str
+  - qualified: httpie.output.streams.EncodedStream.encoding
+    kind: method
+    file: httpie/output/streams.py
+    range:
+      start_line: 151
+      start_col: 0
+      end_line: 163
+      end_col: 0
+    fingerprint: 33ccd4404e8eb88955f749f8503207b2e1b3a32b1abed6e106e2a38b2d01f496
+    decorators:
+    - property
+    params:
+    - name: self
+    returns: Optional[str]
+  - qualified: httpie.output.streams.EncodedStream.encoding
+    kind: method
+    file: httpie/output/streams.py
+    range:
+      start_line: 166
+      start_col: 0
+      end_line: 167
+      end_col: 0
+    fingerprint: 002437376fd48c893e6cc4fc3f46f5ba6435da93f507567a591f97a205e4317d
+    decorators:
+    - encoding.setter
+    params:
+    - name: self
+    - name: value
+    returns: None

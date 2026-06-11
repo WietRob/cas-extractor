@@ -1,0 +1,55 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-4a60a4ce
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-26T06:35:11.670898+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://product
+  root: ./cas_extractor
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.super().__init__
+  - symbol: cas_extractor.resolvers.base.ResolutionResult
+  - symbol: cas_extractor.resolvers.base.ResolutionStep
+  - symbol: resolvers.heuristics.PropagatedSelfAttrResolver.__init__
+  - symbol: resolvers.heuristics.PropagatedSelfAttrResolver._is_self_attr_call
+  - symbol: resolvers.heuristics.PropagatedSelfAttrResolver.try_resolve
+  edges:
+  - from: resolvers.heuristics.PropagatedSelfAttrResolver.__init__
+    to: ?.super().__init__
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 243
+      start_col: 0
+      end_line: 243
+      end_col: 0
+  - from: resolvers.heuristics.PropagatedSelfAttrResolver.try_resolve
+    to: cas_extractor.resolvers.base.ResolutionResult
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 272
+      start_col: 0
+      end_line: 284
+      end_col: 0
+  - from: resolvers.heuristics.PropagatedSelfAttrResolver.try_resolve
+    to: resolvers.heuristics.PropagatedSelfAttrResolver._is_self_attr_call
+    kind: method_call
+    edge_id: 2
+    range:
+      start_line: 249
+      start_col: 0
+      end_line: 249
+      end_col: 0
+  - from: resolvers.heuristics.PropagatedSelfAttrResolver.try_resolve
+    to: cas_extractor.resolvers.base.ResolutionStep
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 277
+      start_col: 0
+      end_line: 282
+      end_col: 0

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.utils.add_auth
+kind: entity
+type: py.function
+name: add_auth
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/utils/__init__.py
+anchors:
+- type: symbol
+  value: tests.utils.add_auth
+- type: fingerprint
+  value: 7431b7d9eefe533a191bd5956334d8fb25a2c087b7ab0270e8facff212408b6f
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.models.HTTPRequest.body
+kind: entity
+type: py.function
+name: body
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/models.py
+anchors:
+- type: symbol
+  value: httpie.models.HTTPRequest.body
+- type: fingerprint
+  value: f718ef57b74d71975cd25f7d9210bde59fc2a10d70ab877fa98ec49383b6109e
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.models.HTTPRequest

@@ -1,0 +1,107 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-d03b13a5
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:53.080140+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: tests.conftest
+    kind: module
+    file: tests/conftest.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 96
+      end_col: 0
+    fingerprint: 49c55d7baa1caf87ccada4d060c3fee9fb176f8becca0fc38a5924d518b0d1b1
+  - qualified: tests.conftest.httpbin_add_ca_bundle
+    kind: function
+    file: tests/conftest.py
+    range:
+      start_line: 30
+      start_col: 0
+      end_line: 37
+      end_col: 0
+    fingerprint: 5bc0582e24ca40cf566f2666e48401b33fd87de50a7639f48f65d7e950d2ab59
+    decorators:
+    - pytest.fixture(scope='function', autouse=True)
+    params:
+    - name: monkeypatch
+  - qualified: tests.conftest.httpbin_secure_untrusted
+    kind: function
+    file: tests/conftest.py
+    range:
+      start_line: 41
+      start_col: 0
+      end_line: 48
+      end_col: 0
+    fingerprint: d093c048134dfc7517e62090303ad6264e2b7d64200ecd1545f0ace520fe4171
+    decorators:
+    - pytest.fixture(scope='function')
+    params:
+    - name: monkeypatch
+    - name: httpbin_secure
+  - qualified: tests.conftest._httpbin_with_chunked_support_available
+    kind: function
+    file: tests/conftest.py
+    range:
+      start_line: 52
+      start_col: 0
+      end_line: 57
+      end_col: 0
+    fingerprint: e3d809a5d0452368305ad62fef91be4dce20aea209ed2b56ede192476cc4d241
+    decorators:
+    - pytest.fixture(scope='session')
+  - qualified: tests.conftest.httpbin_with_chunked_support
+    kind: function
+    file: tests/conftest.py
+    range:
+      start_line: 61
+      start_col: 0
+      end_line: 64
+      end_col: 0
+    fingerprint: 8aabc28aa136acd50534a44436de2e25cdc7aec4c642e5b44641da5487afa821
+    decorators:
+    - pytest.fixture(scope='function')
+    params:
+    - name: _httpbin_with_chunked_support_available
+  - qualified: tests.conftest._remote_httpbin_available
+    kind: function
+    file: tests/conftest.py
+    range:
+      start_line: 68
+      start_col: 0
+      end_line: 73
+      end_col: 0
+    fingerprint: f25a31569c724d2a5095c545106592aa609b02089fbc5933e98054f21e0d44d1
+    decorators:
+    - pytest.fixture(scope='session')
+  - qualified: tests.conftest.remote_httpbin
+    kind: function
+    file: tests/conftest.py
+    range:
+      start_line: 77
+      start_col: 0
+      end_line: 80
+      end_col: 0
+    fingerprint: 1949bce1c0aaa2e29fb745b2404fd142cdb13994438a26a391df8573bf97f95a
+    decorators:
+    - pytest.fixture
+    params:
+    - name: _remote_httpbin_available
+  - qualified: tests.conftest.pyopenssl_inject
+    kind: function
+    file: tests/conftest.py
+    range:
+      start_line: 84
+      start_col: 0
+      end_line: 96
+      end_col: 0
+    fingerprint: da56a26c39b75b79eac75f89667c30d0df75693d0a322af3f702597c89283a76
+    decorators:
+    - pytest.fixture(autouse=True, scope='session')

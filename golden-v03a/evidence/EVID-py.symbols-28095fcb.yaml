@@ -1,0 +1,21 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-28095fcb
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:53.223349+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: tests.utils.plugins_cli.httpie_plugins.runner
+    kind: function
+    file: tests/utils/plugins_cli.py
+    range:
+      start_line: 211
+      start_col: 0
+      end_line: 224
+      end_col: 0
+    fingerprint: dcadd328c82cb11271b376df211eca741e7644d20a3380fcb3599b4c8346af24

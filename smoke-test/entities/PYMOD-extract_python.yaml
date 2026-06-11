@@ -1,0 +1,21 @@
+schema: cas.entity.v0.1
+id: PYMOD-extract_python
+kind: entity
+type: py.module
+name: extract_python
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: extract_python.py
+anchors:
+- type: symbol
+  value: extract_python
+- type: fingerprint
+  value: a57981c8cad1120e390839c0c82776311a81079c48bd09131463f566c5ec265e
+  algo: sha256
+claims: []
+relations: []

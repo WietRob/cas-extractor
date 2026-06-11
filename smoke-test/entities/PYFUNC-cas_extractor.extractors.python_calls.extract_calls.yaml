@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-cas_extractor.extractors.python_calls.extract_calls
+kind: entity
+type: py.function
+name: extract_calls
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor/extractors/python_calls.py
+anchors:
+- type: symbol
+  value: cas_extractor.extractors.python_calls.extract_calls
+- type: fingerprint
+  value: 8414078a74f9251f2fa229a4aa1b72f39553e5a19248f3e7a9aefc0f6704273e
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor.extractors.python_calls

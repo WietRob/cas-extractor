@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.config.BaseConfigDict.save
+kind: entity
+type: py.function
+name: save
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/config.py
+anchors:
+- type: symbol
+  value: httpie.config.BaseConfigDict.save
+- type: fingerprint
+  value: be01a924700dfcb546fe69ce1b74936cd717728645d191bedb110a0c2e12fa2d
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.config.BaseConfigDict

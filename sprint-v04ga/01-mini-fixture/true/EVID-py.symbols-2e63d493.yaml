@@ -1,0 +1,56 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-2e63d493
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T09:31:54.598214+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: /tmp/h2-verify
+  revision: git:test
+payload:
+  symbols:
+  - qualified: test_h2.TestMultipleAttrs.__init__
+    kind: method
+    file: test_h2.py
+    range:
+      start_line: 33
+      start_col: 0
+      end_line: 35
+      end_col: 0
+    fingerprint: 65a8e13e31ab9a8238d97d73399a237b0ba81705c11cc3cf78da4bd619f9950e
+    params:
+    - name: self
+  - qualified: test_h2.TestMultipleAttrs.start
+    kind: method
+    file: test_h2.py
+    range:
+      start_line: 37
+      start_col: 0
+      end_line: 38
+      end_col: 0
+    fingerprint: 9d6f92c5ca4c2f4176a651bbdefbec1f480bbe5d470906efefe415d4205468d4
+    params:
+    - name: self
+  - qualified: test_h2.TestMultipleAttrs.finish
+    kind: method
+    file: test_h2.py
+    range:
+      start_line: 40
+      start_col: 0
+      end_line: 41
+      end_col: 0
+    fingerprint: d63e275bcdfe6099b94c99310fa6bd4878a409f83dbb7d1552d12df74fd7d0a2
+    params:
+    - name: self
+  - qualified: test_h2.TestMultipleAttrs.send
+    kind: method
+    file: test_h2.py
+    range:
+      start_line: 43
+      start_col: 0
+      end_line: 44
+      end_col: 0
+    fingerprint: 4bf81a52ec46dc9579862e40c5158328a2c1e7b5dc0f5fa24b42aef3e5325b39
+    params:
+    - name: self

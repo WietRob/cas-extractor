@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_sessions.CookieTestBase.setup_method
+kind: entity
+type: py.function
+name: setup_method
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_sessions.py
+anchors:
+- type: symbol
+  value: tests.test_sessions.CookieTestBase.setup_method
+- type: fingerprint
+  value: 556d1ee931f90553824b8b3a1adcd55dc7f440d7875263b632f2ed77f67bbc5a
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_sessions.CookieTestBase

@@ -1,0 +1,26 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-96c28b14
+kind: evidence
+type: py.symbols
+created_at: '2026-02-23T17:20:10.887085+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://cas_extractor
+  root: ./cas_extractor
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: resolvers.heuristics.LocalVarResolver.try_resolve
+    kind: method
+    file: resolvers/heuristics.py
+    range:
+      start_line: 20
+      start_col: 0
+      end_line: 52
+      end_col: 0
+    fingerprint: 608bb52e4859eba51b3f6033b795bae6c2b96c402b692ce86259718b61751ea0
+    params:
+    - name: self
+    - name: context
+      annotation: CallContext
+    returns: ResolutionResult | None

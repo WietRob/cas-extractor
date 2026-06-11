@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.core.program.separate
+kind: entity
+type: py.function
+name: separate
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/core.py
+anchors:
+- type: symbol
+  value: httpie.core.program.separate
+- type: fingerprint
+  value: 5e58cd5e0659fb0da4445bf325b596b8694dca1a8e252c18b60de1387eabf8bc
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.core.program

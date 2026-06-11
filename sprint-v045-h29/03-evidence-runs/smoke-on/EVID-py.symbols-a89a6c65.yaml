@@ -1,0 +1,57 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-a89a6c65
+kind: evidence
+type: py.symbols
+created_at: '2026-02-23T17:20:10.891248+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://cas_extractor
+  root: ./cas_extractor
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: resolvers.static.SuperDispatchResolver.try_resolve
+    kind: method
+    file: resolvers/static.py
+    range:
+      start_line: 189
+      start_col: 0
+      end_line: 229
+      end_col: 0
+    fingerprint: 0acf38fb4f7de5dbf05d0a454e497db1f9a1f7dfb150c7ee0d7736d3e0f3984b
+    params:
+    - name: self
+    - name: context
+      annotation: CallContext
+    returns: ResolutionResult | None
+  - qualified: resolvers.static.SuperDispatchResolver._resolve_in_bases
+    kind: method
+    file: resolvers/static.py
+    range:
+      start_line: 231
+      start_col: 0
+      end_line: 240
+      end_col: 0
+    fingerprint: 5040bee0224535398f60718151a55eecc7e8c45edcacf2ad8c24bca96d226cb9
+    params:
+    - name: self
+    - name: method_name
+    - name: class_info
+    - name: local_classes
+    - name: all_classes
+    - name: local_imports
+  - qualified: resolvers.static.SuperDispatchResolver._find_class
+    kind: method
+    file: resolvers/static.py
+    range:
+      start_line: 242
+      start_col: 0
+      end_line: 251
+      end_col: 0
+    fingerprint: b181ad10651ceb80b59e0156f4a8bc809dee8e495ebd0e68b9602b573e55ac4e
+    params:
+    - name: self
+    - name: name
+    - name: local_classes
+    - name: all_classes
+    - name: local_imports

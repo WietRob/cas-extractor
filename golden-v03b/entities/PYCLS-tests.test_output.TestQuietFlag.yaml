@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-tests.test_output.TestQuietFlag
+kind: entity
+type: py.class
+name: TestQuietFlag
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_output.py
+anchors:
+- type: symbol
+  value: tests.test_output.TestQuietFlag
+- type: fingerprint
+  value: 7452bdc64cae980e8b4e2e8917687f358f191b9f6647cec250d81d748874a0b7
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_output

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.manager.compat._discover_system_pip
+kind: entity
+type: py.function
+name: _discover_system_pip
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/manager/compat.py
+anchors:
+- type: symbol
+  value: httpie.manager.compat._discover_system_pip
+- type: fingerprint
+  value: d7d233ec0359bcab15b63cf541b4d635f5ae609919bc93422ea59086c5a25ed8
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.manager.compat

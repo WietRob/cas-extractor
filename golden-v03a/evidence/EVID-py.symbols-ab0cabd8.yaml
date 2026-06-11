@@ -1,0 +1,24 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-ab0cabd8
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:52.930976+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.cli.argparser._process_output_options.check_options
+    kind: function
+    file: httpie/cli/argparser.py
+    range:
+      start_line: 499
+      start_col: 0
+      end_line: 502
+      end_col: 0
+    fingerprint: 4503a886bdf321d978dfd518c1e65ab4ea5efaf38d142bb55ed3907c86f39df2
+    params:
+    - name: value
+    - name: option

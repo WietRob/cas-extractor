@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.legacy.v3_1_0_session_cookie_format.fix_layout
+kind: entity
+type: py.function
+name: fix_layout
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/legacy/v3_1_0_session_cookie_format.py
+anchors:
+- type: symbol
+  value: httpie.legacy.v3_1_0_session_cookie_format.fix_layout
+- type: fingerprint
+  value: d682cc2e18a47dbcc691bb64e2c0e38b2992a0aceff48f24cce32197bb5188f8
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.legacy.v3_1_0_session_cookie_format

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.models.HTTPResponse
+kind: entity
+type: py.class
+name: HTTPResponse
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/models.py
+anchors:
+- type: symbol
+  value: httpie.models.HTTPResponse
+- type: fingerprint
+  value: 0ed751c80ec1bc582c4efbd82e94a9d12371e170487211c5cf900dd2adb60dfe
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.models

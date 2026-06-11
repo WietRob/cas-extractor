@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.formatters.colors.get_lexer
+kind: entity
+type: py.function
+name: get_lexer
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/output/formatters/colors.py
+anchors:
+- type: symbol
+  value: httpie.output.formatters.colors.get_lexer
+- type: fingerprint
+  value: 1c7441d5c51883d21c73b70c934dbfa7c88907ffd3f83c01e59cda112c190233
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.formatters.colors

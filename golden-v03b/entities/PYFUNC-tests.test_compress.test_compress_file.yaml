@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_compress.test_compress_file
+kind: entity
+type: py.function
+name: test_compress_file
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_compress.py
+anchors:
+- type: symbol
+  value: tests.test_compress.test_compress_file
+- type: fingerprint
+  value: 92b557196817f92929266308755c334b05b5a434abec034134548c54518f1b67
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_compress

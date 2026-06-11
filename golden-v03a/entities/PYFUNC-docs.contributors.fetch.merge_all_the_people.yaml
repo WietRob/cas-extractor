@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-docs.contributors.fetch.merge_all_the_people
+kind: entity
+type: py.function
+name: merge_all_the_people
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: docs/contributors/fetch.py
+anchors:
+- type: symbol
+  value: docs.contributors.fetch.merge_all_the_people
+- type: fingerprint
+  value: 92a9934cf389106bb54b0260612460abe9c5a35c278f43bb7086cd439d351880
+  algo: sha256
+claims: []
+relations: []
+namespace: docs.contributors.fetch

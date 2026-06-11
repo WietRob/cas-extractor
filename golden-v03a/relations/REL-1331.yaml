@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-1331
+kind: relation
+type: imports
+from: PYMOD-httpie.utils
+to: PYMOD-base64
+confidence:
+  level: E0
+  direction: confirmed
+evidence:
+- EVID-py.importgraph-249cb849
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1

@@ -1,0 +1,26 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-629a0a1b
+kind: evidence
+type: py.symbols
+created_at: '2026-02-23T17:20:10.890883+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://cas_extractor
+  root: ./cas_extractor
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: resolvers.static.StaticResolver.try_resolve
+    kind: method
+    file: resolvers/static.py
+    range:
+      start_line: 21
+      start_col: 0
+      end_line: 100
+      end_col: 0
+    fingerprint: 8065492fc735b7c1a19e93d6d7fa3427b4b6f408e6bd43dee4bd3b3dd29ddf1e
+    params:
+    - name: self
+    - name: context
+      annotation: CallContext
+    returns: ResolutionResult | None

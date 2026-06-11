@@ -1,0 +1,35 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-6c811c62
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-23T05:34:05.975025+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: /tmp/h26-verify
+  revision: git:test
+payload:
+  nodes:
+  - symbol: test_h26.CallerClass.__init__
+  - symbol: test_h26.CallerClass.run
+  - symbol: test_h26.HelperClass
+  - symbol: test_h26.HelperClass.setup
+  edges:
+  - from: test_h26.CallerClass.__init__
+    to: test_h26.HelperClass
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 109
+      start_col: 0
+      end_line: 109
+      end_col: 0
+  - from: test_h26.CallerClass.run
+    to: test_h26.HelperClass.setup
+    kind: method_call
+    edge_id: 1
+    range:
+      start_line: 112
+      start_col: 0
+      end_line: 112
+      end_col: 0

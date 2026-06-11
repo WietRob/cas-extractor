@@ -1,0 +1,33 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-dd2a8274
+kind: evidence
+type: py.symbols
+created_at: '2026-02-23T17:20:10.875216+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://cas_extractor
+  root: ./cas_extractor
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: extractors.python_calls.ClassInfo.__init__
+    kind: method
+    file: extractors/python_calls.py
+    range:
+      start_line: 240
+      start_col: 0
+      end_line: 254
+      end_col: 0
+    fingerprint: 0a5fc65506ba0abf1d82fdc46a6280c38deacf248d5bba18e7333b2c86830a6f
+    params:
+    - name: self
+    - name: qname
+      annotation: str
+    - name: methods
+      annotation: set[str]
+    - name: base_names
+      annotation: list[str]
+    - name: self_attr_types
+      annotation: dict[str, str] | None
+    - name: method_self_attr_summaries
+      annotation: dict[str, dict[str, str]] | None

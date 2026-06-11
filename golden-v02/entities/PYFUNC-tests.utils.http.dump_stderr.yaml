@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.utils.http.dump_stderr
+kind: entity
+type: py.function
+name: dump_stderr
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/utils/__init__.py
+anchors:
+- type: symbol
+  value: tests.utils.http.dump_stderr
+- type: fingerprint
+  value: 3aaa26ab60c5fcb1a0843ddd71e63358545689040c954e78dd8b7b7eae4a049a
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils.http

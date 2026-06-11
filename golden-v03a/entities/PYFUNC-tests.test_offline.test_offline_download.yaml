@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_offline.test_offline_download
+kind: entity
+type: py.function
+name: test_offline_download
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_offline.py
+anchors:
+- type: symbol
+  value: tests.test_offline.test_offline_download
+- type: fingerprint
+  value: d54b8f28b88773e6ea16bf8753a91d89413226be60f23ec5a3de663a5cce7ac2
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_offline

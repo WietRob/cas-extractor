@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_exit_status.test_5xx_check_status_exits_5
+kind: entity
+type: py.function
+name: test_5xx_check_status_exits_5
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_exit_status.py
+anchors:
+- type: symbol
+  value: tests.test_exit_status.test_5xx_check_status_exits_5
+- type: fingerprint
+  value: 583154a4443bcfece6eb7595e4cb5664fb2b8997204f1811087d1b499ed53d33
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_exit_status

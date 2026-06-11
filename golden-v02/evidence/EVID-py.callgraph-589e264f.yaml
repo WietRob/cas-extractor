@@ -1,0 +1,35 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-589e264f
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:34.447918+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.data.decode
+  - symbol: ?.super().__init__
+  - symbol: tests.utils.FakeBytesIOBuffer.__init__
+  - symbol: tests.utils.FakeBytesIOBuffer.write
+  edges:
+  - from: tests.utils.FakeBytesIOBuffer.__init__
+    to: ?.super().__init__
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 113
+      start_col: 0
+      end_line: 113
+      end_col: 0
+  - from: tests.utils.FakeBytesIOBuffer.write
+    to: ?.data.decode
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 117
+      start_col: 0
+      end_line: 117
+      end_col: 0

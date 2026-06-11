@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-tests.test_cli.TestItemParsing
+kind: entity
+type: py.class
+name: TestItemParsing
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_cli.py
+anchors:
+- type: symbol
+  value: tests.test_cli.TestItemParsing
+- type: fingerprint
+  value: 006b2fe85820d5e0d70aeafe0613037be38273cd91be158a5166ab91604663f7
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_cli

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.encoding.detect_encoding
+kind: entity
+type: py.function
+name: detect_encoding
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/encoding.py
+anchors:
+- type: symbol
+  value: httpie.encoding.detect_encoding
+- type: fingerprint
+  value: aa589b33552db8ba15b654c03e8aa7ad0ed1b3bfbfdd4ac5bd589fe450f742ea
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.encoding

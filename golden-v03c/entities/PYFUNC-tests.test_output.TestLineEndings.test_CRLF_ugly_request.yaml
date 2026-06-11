@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_output.TestLineEndings.test_CRLF_ugly_request
+kind: entity
+type: py.function
+name: test_CRLF_ugly_request
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_output.py
+anchors:
+- type: symbol
+  value: tests.test_output.TestLineEndings.test_CRLF_ugly_request
+- type: fingerprint
+  value: dd0978bc612f9c284fb25c1ae665ccb7940fc05a4098730020908818828ee2fb
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_output.TestLineEndings

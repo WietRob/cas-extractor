@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.utils.matching.test_matching.test_assert_output_matches_body_n
+kind: entity
+type: py.function
+name: test_assert_output_matches_body_n
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/utils/matching/test_matching.py
+anchors:
+- type: symbol
+  value: tests.utils.matching.test_matching.test_assert_output_matches_body_n
+- type: fingerprint
+  value: 949cfb61cfacd24104e8b7efd0acfe7acb8da2bd7f6fec71330277c75df5f62f
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils.matching.test_matching

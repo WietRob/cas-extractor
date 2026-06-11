@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.requestitems.load_json
+kind: entity
+type: py.function
+name: load_json
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/requestitems.py
+anchors:
+- type: symbol
+  value: httpie.cli.requestitems.load_json
+- type: fingerprint
+  value: 6ad27f9fe8b3a929aa743f24f259d15f0c89c5efefeda7facf92c624ad0c43a1
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.requestitems

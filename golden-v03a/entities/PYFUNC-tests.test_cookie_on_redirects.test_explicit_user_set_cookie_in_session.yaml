@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_cookie_on_redirects.test_explicit_user_set_cookie_in_session
+kind: entity
+type: py.function
+name: test_explicit_user_set_cookie_in_session
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_cookie_on_redirects.py
+anchors:
+- type: symbol
+  value: tests.test_cookie_on_redirects.test_explicit_user_set_cookie_in_session
+- type: fingerprint
+  value: 578d48baf0086a2fc336631c23a0f7cb55de379a4db8616a0275e80c866bec3e
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_cookie_on_redirects

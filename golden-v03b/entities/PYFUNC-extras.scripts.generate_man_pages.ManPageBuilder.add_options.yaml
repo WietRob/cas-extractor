@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-extras.scripts.generate_man_pages.ManPageBuilder.add_options
+kind: entity
+type: py.function
+name: add_options
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: extras/scripts/generate_man_pages.py
+anchors:
+- type: symbol
+  value: extras.scripts.generate_man_pages.ManPageBuilder.add_options
+- type: fingerprint
+  value: 94136d7dee260a34945773218e73893c3adfc7e56f149c09b114252bd18e6785
+  algo: sha256
+claims: []
+relations: []
+namespace: extras.scripts.generate_man_pages.ManPageBuilder

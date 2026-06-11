@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.sessions
+kind: entity
+type: py.module
+name: sessions
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/sessions.py
+anchors:
+- type: symbol
+  value: httpie.sessions
+- type: fingerprint
+  value: f50f3450066f1089b48cac71f4a80ca53efc1a2580e2135a2d3df238a0158be8
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie

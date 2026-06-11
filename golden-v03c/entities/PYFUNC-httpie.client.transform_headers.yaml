@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.client.transform_headers
+kind: entity
+type: py.function
+name: transform_headers
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/client.py
+anchors:
+- type: symbol
+  value: httpie.client.transform_headers
+- type: fingerprint
+  value: 836ae3804e751a06840cfaa90617a4e026318385ffa8b19de1ae40b87a61d225
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.client

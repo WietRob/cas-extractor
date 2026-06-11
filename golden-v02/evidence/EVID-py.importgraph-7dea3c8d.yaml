@@ -1,0 +1,21 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-7dea3c8d
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-21T11:51:32.874253+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  imports:
+  - from: httpie.manager.core
+    imports:
+    - argparse
+    - typing.Optional
+    - httpie.context.Environment
+    - httpie.status.ExitStatus
+    - httpie.manager.cli.missing_subcommand
+    - httpie.manager.cli.parser
+    - httpie.manager.tasks.CLI_TASKS

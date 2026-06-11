@@ -1,0 +1,51 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-4ef5cde0
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:53.041263+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.output.ui.rich_utils
+    kind: module
+    file: httpie/output/ui/rich_utils.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 34
+      end_col: 0
+    fingerprint: 90cac0c04968fff01b0a23784074c942f0e86948efba004bbac5888ab8651fe0
+  - qualified: httpie.output.ui.rich_utils.render_as_string
+    kind: function
+    file: httpie/output/ui/rich_utils.py
+    range:
+      start_line: 12
+      start_col: 0
+      end_line: 19
+      end_col: 0
+    fingerprint: 2fcc994a0745a435df7b3e04f8eeebfd05ea1783a2f5e814cc47fb8f2b4d8302
+    params:
+    - name: renderable
+      annotation: RenderableType
+    returns: str
+  - qualified: httpie.output.ui.rich_utils.enable_highlighter
+    kind: function
+    file: httpie/output/ui/rich_utils.py
+    range:
+      start_line: 23
+      start_col: 0
+      end_line: 34
+      end_col: 0
+    fingerprint: c2d76b7cca3bfce6a6c9acda961cd93971d692e2c46f2a89fc6ae0141b59b6f2
+    decorators:
+    - contextmanager
+    params:
+    - name: console
+      annotation: Console
+    - name: highlighter
+      annotation: Highlighter
+    returns: Iterator[Console]

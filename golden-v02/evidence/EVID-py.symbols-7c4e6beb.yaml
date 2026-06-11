@@ -1,0 +1,154 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-7c4e6beb
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:51:32.631592+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: tests.utils.http_server
+    kind: module
+    file: tests/utils/http_server.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 158
+      end_col: 0
+    fingerprint: 3a2a225bd86ea92105c9aa454276524e85e8408a83566fdfc465c9ca2d708837
+  - qualified: tests.utils.http_server.TestHandler
+    kind: class
+    file: tests/utils/http_server.py
+    range:
+      start_line: 14
+      start_col: 0
+      end_line: 33
+      end_col: 0
+    fingerprint: c669a133d08a4dbc484761879d5d5845a53ded6514549441f34701f5487e082b
+  - qualified: tests.utils.http_server.get_headers
+    kind: function
+    file: tests/utils/http_server.py
+    range:
+      start_line: 37
+      start_col: 0
+      end_line: 42
+      end_col: 0
+    fingerprint: e53e92d3bdcad8fd45d6133690f828cd0e1ea5bd06804b48a668a4fbae2b0427
+    decorators:
+    - TestHandler.handler('GET', '/headers')
+    params:
+    - name: handler
+  - qualified: tests.utils.http_server.chunked_drip
+    kind: function
+    file: tests/utils/http_server.py
+    range:
+      start_line: 46
+      start_col: 0
+      end_line: 58
+      end_col: 0
+    fingerprint: 05b98e7be807e54f1ac9bc1a73c58715f0e2608e610fc8a6d619d411bfc7562d
+    decorators:
+    - TestHandler.handler('GET', '/drip')
+    params:
+    - name: handler
+  - qualified: tests.utils.http_server.random_encoding
+    kind: function
+    file: tests/utils/http_server.py
+    range:
+      start_line: 62
+      start_col: 0
+      end_line: 79
+      end_col: 0
+    fingerprint: e88c1db482e93e02828227f4c7f912cc0d8c3ec7f7722faae80363c76943bbee
+    decorators:
+    - TestHandler.handler('GET', '/stream/encoding/random')
+    params:
+    - name: handler
+  - qualified: tests.utils.http_server.status_custom_msg
+    kind: function
+    file: tests/utils/http_server.py
+    range:
+      start_line: 83
+      start_col: 0
+      end_line: 88
+      end_col: 0
+    fingerprint: cfb05ba525212ce5a61d24cf1a47b734077a08e691cdecc8861326583fe62961
+    decorators:
+    - TestHandler.handler('POST', '/status/msg')
+    params:
+    - name: handler
+  - qualified: tests.utils.http_server.get_cookies
+    kind: function
+    file: tests/utils/http_server.py
+    range:
+      start_line: 92
+      start_col: 0
+      end_line: 105
+      end_col: 0
+    fingerprint: 481a7e802b15adf6f477e6f45a92e6adc5a291ae11fc87e1aa7706effadf32c3
+    decorators:
+    - TestHandler.handler('GET', '/cookies')
+    params:
+    - name: handler
+  - qualified: tests.utils.http_server.set_cookies
+    kind: function
+    file: tests/utils/http_server.py
+    range:
+      start_line: 109
+      start_col: 0
+      end_line: 116
+      end_col: 0
+    fingerprint: 666b27bc2e44acbd0c2820f8ee3c7af8a5e14b7785d92a363173d1f44ceaa7d4
+    decorators:
+    - TestHandler.handler('GET', '/cookies/set')
+    params:
+    - name: handler
+  - qualified: tests.utils.http_server.set_cookie_and_redirect
+    kind: function
+    file: tests/utils/http_server.py
+    range:
+      start_line: 120
+      start_col: 0
+      end_line: 129
+      end_col: 0
+    fingerprint: 79fc986934a8a898009ea8e3ae9f0cb3d70da77769ce9f3b5dd932257b1c2b92
+    decorators:
+    - TestHandler.handler('GET', '/cookies/set-and-redirect')
+    params:
+    - name: handler
+  - qualified: tests.utils.http_server._http_server
+    kind: function
+    file: tests/utils/http_server.py
+    range:
+      start_line: 133
+      start_col: 0
+      end_line: 139
+      end_col: 0
+    fingerprint: c43d0e211464a3877250b1e6e4f5e906520fe0eb6f13d1b24a45547e5eb68cb4
+    decorators:
+    - contextmanager
+  - qualified: tests.utils.http_server.http_server
+    kind: function
+    file: tests/utils/http_server.py
+    range:
+      start_line: 143
+      start_col: 0
+      end_line: 149
+      end_col: 0
+    fingerprint: ecb9bd11e636d76f2466cd0c61b62b3e8a5e81e5e211859904d9ccee4d19992d
+    decorators:
+    - pytest.fixture(scope='function')
+  - qualified: tests.utils.http_server.localhost_http_server
+    kind: function
+    file: tests/utils/http_server.py
+    range:
+      start_line: 153
+      start_col: 0
+      end_line: 158
+      end_col: 0
+    fingerprint: 7ffe66da48245753eeb80b2c2ad64a5e87e97ba138dd15535a163f97b26d003f
+    decorators:
+    - pytest.fixture(scope='function')

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_auth.test_ignore_netrc_together_with_auth
+kind: entity
+type: py.function
+name: test_ignore_netrc_together_with_auth
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_auth.py
+anchors:
+- type: symbol
+  value: tests.test_auth.test_ignore_netrc_together_with_auth
+- type: fingerprint
+  value: b5650253d77ee2a642da9a8f69689df42479be2afcab8d0f4899f384608edf87
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_auth

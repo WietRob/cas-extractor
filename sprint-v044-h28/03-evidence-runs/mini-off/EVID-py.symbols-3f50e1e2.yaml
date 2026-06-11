@@ -1,0 +1,320 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-3f50e1e2
+kind: evidence
+type: py.symbols
+created_at: '2026-02-23T12:58:49.571977+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://h28-test
+  root: /tmp/h28-verify
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: test_h28
+    kind: module
+    file: test_h28.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 325
+      end_col: 0
+    fingerprint: 581d66ca0ad92f353ee8c9df483b7302109b7e6ca69a7609b3978682079f44ca
+  - qualified: test_h28.HTTPClient
+    kind: class
+    file: test_h28.py
+    range:
+      start_line: 15
+      start_col: 0
+      end_line: 20
+      end_col: 0
+    fingerprint: d6802f2d2fcda29ff8ca4b0226fc804aa76af0875b38037ae8c9ae0b25dc5d11
+  - qualified: test_h28.WebSocketClient
+    kind: class
+    file: test_h28.py
+    range:
+      start_line: 23
+      start_col: 0
+      end_line: 25
+      end_col: 0
+    fingerprint: 3dc0c2093597d722f8a4bf3014e5b0bf36c0ca35e0f8850c88e54eac877c34ea
+  - qualified: test_h28.DataService
+    kind: class
+    file: test_h28.py
+    range:
+      start_line: 28
+      start_col: 0
+      end_line: 33
+      end_col: 0
+    fingerprint: 5ed362c03afdc3b0c65386749daf1cab2fc4c97d3502cdab2e04030385338c42
+  - qualified: test_h28.RequestHandler
+    kind: class
+    file: test_h28.py
+    range:
+      start_line: 36
+      start_col: 0
+      end_line: 38
+      end_col: 0
+    fingerprint: b5aa32abbecece80979035f73361a90ecf21717864fd294db97241d937898980
+  - qualified: test_h28.CacheManager
+    kind: class
+    file: test_h28.py
+    range:
+      start_line: 41
+      start_col: 0
+      end_line: 46
+      end_col: 0
+    fingerprint: 30fec6acdd04f1502c885548d2b7841dcfa9f6f5309e3370550b31e4891e6987
+  - qualified: test_h28.create_http_client
+    kind: function
+    file: test_h28.py
+    range:
+      start_line: 54
+      start_col: 0
+      end_line: 56
+      end_col: 0
+    fingerprint: 1d2645c2f016494d016cf4cb6cd619d377a3efd9b0145e4c4d03028801b3858d
+  - qualified: test_h28.create_data_service
+    kind: function
+    file: test_h28.py
+    range:
+      start_line: 59
+      start_col: 0
+      end_line: 61
+      end_col: 0
+    fingerprint: 77649bd8472263e8c94633aeb093eb7930c513752bbf97dd8a17ceee39cf0b4c
+  - qualified: test_h28.create_handler
+    kind: function
+    file: test_h28.py
+    range:
+      start_line: 64
+      start_col: 0
+      end_line: 66
+      end_col: 0
+    fingerprint: 53f5195f84eeda922b420d6ce27c160e68624d691dcc0ee43e668039a47d832a
+  - qualified: test_h28.create_cache
+    kind: function
+    file: test_h28.py
+    range:
+      start_line: 69
+      start_col: 0
+      end_line: 71
+      end_col: 0
+    fingerprint: 47b0480482a1b48f5fa2af8fd7380119c75503ff0048be5daa370c087af5ecdc
+  - qualified: test_h28.create_conditional
+    kind: function
+    file: test_h28.py
+    range:
+      start_line: 79
+      start_col: 0
+      end_line: 83
+      end_col: 0
+    fingerprint: 8354f3e4b53346279588ffb851f93aa49b8556a8c93a974c103b065fa6b0300b
+    params:
+    - name: use_http
+  - qualified: test_h28.create_indirect
+    kind: function
+    file: test_h28.py
+    range:
+      start_line: 86
+      start_col: 0
+      end_line: 89
+      end_col: 0
+    fingerprint: 5ea9f5297661afb926a15eeb2926a456ae723e8c68673b59b33bcb6c40c73ddc
+  - qualified: test_h28.create_nested
+    kind: function
+    file: test_h28.py
+    range:
+      start_line: 92
+      start_col: 0
+      end_line: 94
+      end_col: 0
+    fingerprint: 62497d512e233b9b474e3c7dd2175fa96679404ff66768c082825fe6983d1ecf
+  - qualified: test_h28.create_unknown
+    kind: function
+    file: test_h28.py
+    range:
+      start_line: 97
+      start_col: 0
+      end_line: 99
+      end_col: 0
+    fingerprint: e2e30003d519e99971f7a7ca8ba65bc5159ce4191f21bdf29cab5787c2eb9dd9
+  - qualified: test_h28.TestP1SimpleFactory
+    kind: class
+    file: test_h28.py
+    range:
+      start_line: 107
+      start_col: 0
+      end_line: 112
+      end_col: 0
+    fingerprint: 0a0763659246167463a1f29d721d4c42aeb08d811a9601639677f0c9ea4ff512
+  - qualified: test_h28.TestP2FactoryToLocalVar
+    kind: class
+    file: test_h28.py
+    range:
+      start_line: 115
+      start_col: 0
+      end_line: 120
+      end_col: 0
+    fingerprint: fbab6b805ac82d0577837de1fcc43d74bfb0b55f1847703ad1ccc43638dab172
+  - qualified: test_h28.TestP3FactoryInInit
+    kind: class
+    file: test_h28.py
+    range:
+      start_line: 123
+      start_col: 0
+      end_line: 130
+      end_col: 0
+    fingerprint: 012d07ec549e822398410cc6aec56c04d22cf9688b2da1119dac1513f575d674
+  - qualified: test_h28.TestP4FactoryInMethod
+    kind: class
+    file: test_h28.py
+    range:
+      start_line: 133
+      start_col: 0
+      end_line: 141
+      end_col: 0
+    fingerprint: f1f49e09054458471a19955aade12e01e3d6cd3a80605cffc50693130edbe23c
+  - qualified: test_h28.TestP5FactoryInHelperH26
+    kind: class
+    file: test_h28.py
+    range:
+      start_line: 144
+      start_col: 0
+      end_line: 155
+      end_col: 0
+    fingerprint: 41ea674f5c5dcb5122b8384e4414581da65e692b54defaeeddf4f9f8cc09a4fa
+  - qualified: test_h28.TestP6FactoryInChainH27
+    kind: class
+    file: test_h28.py
+    range:
+      start_line: 158
+      start_col: 0
+      end_line: 169
+      end_col: 0
+    fingerprint: 4235d84e4eae9a21b1995389ee724c8d54b7e892b0d7988665151642b0d7df54
+  - qualified: test_h28.TestP7H28OverridesH2
+    kind: class
+    file: test_h28.py
+    range:
+      start_line: 172
+      start_col: 0
+      end_line: 183
+      end_col: 0
+    fingerprint: cd308ea7ed537c2c1c0fd7f2041b09b8d23d5c8fabcb82f4138fcdc7ed8c8a54
+  - qualified: test_h28.TestN1MultipleReturns
+    kind: class
+    file: test_h28.py
+    range:
+      start_line: 191
+      start_col: 0
+      end_line: 196
+      end_col: 0
+    fingerprint: b0b2eae5b995305a105f644c53f866dc7c28ae919d99d2d58a6e751c5ed1b3c4
+  - qualified: test_h28.TestN2IndirectReturn
+    kind: class
+    file: test_h28.py
+    range:
+      start_line: 199
+      start_col: 0
+      end_line: 204
+      end_col: 0
+    fingerprint: 030d69d4420dcc5a4a8ac384d3e43f83008793abc28f63742c0b50150c59b4c9
+  - qualified: test_h28.TestN3FactoryReturnsFactory
+    kind: class
+    file: test_h28.py
+    range:
+      start_line: 207
+      start_col: 0
+      end_line: 212
+      end_col: 0
+    fingerprint: 331d0c6531658fc3b43da5a8528edbc4f062e55ee812104e6b33d73849b02f34
+  - qualified: test_h28.TestN4UnknownClass
+    kind: class
+    file: test_h28.py
+    range:
+      start_line: 215
+      start_col: 0
+      end_line: 220
+      end_col: 0
+    fingerprint: 42b250fb91bd88e2c36a62f5f87d7df6c28c50aa1568399a0c85ef72ce466453
+  - qualified: test_h28.TestN5ConditionalFactoryCall
+    kind: class
+    file: test_h28.py
+    range:
+      start_line: 223
+      start_col: 0
+      end_line: 231
+      end_col: 0
+    fingerprint: e1b75b660d8f0d658ba43e7e3c19bc59210fa748726e8c20dd1eb3da5754d147
+  - qualified: test_h28.TestN6FactoryConflict
+    kind: class
+    file: test_h28.py
+    range:
+      start_line: 234
+      start_col: 0
+      end_line: 247
+      end_col: 0
+    fingerprint: 2de702230917d83e9fbf7c1ac338c73e9a7fc5b76c8e5a4e87c58c50b4136fc2
+  - qualified: test_h28.TestN7ClassmethodFactory
+    kind: class
+    file: test_h28.py
+    range:
+      start_line: 250
+      start_col: 0
+      end_line: 259
+      end_col: 0
+    fingerprint: e3f2b449243c85dc11cca6c7c96e27088fc5d8f09ef48304f71a62e6839ce3bb
+  - qualified: test_h28.TestN8CrossModuleFactory
+    kind: class
+    file: test_h28.py
+    range:
+      start_line: 262
+      start_col: 0
+      end_line: 269
+      end_col: 0
+    fingerprint: d6efb20ae1d18a7e13ca9525298274eb9c9b82084935dabb6fe57992a0ae0330
+  - qualified: test_h28.TestEdgeMultipleAttrs
+    kind: class
+    file: test_h28.py
+    range:
+      start_line: 277
+      start_col: 0
+      end_line: 284
+      end_col: 0
+    fingerprint: 9ed86f8a4cc25bc998736bf4bcca80bfef3b7910ba11a2f61d13e0f7c74222ab
+  - qualified: test_h28.TestEdgeAnnAssign
+    kind: class
+    file: test_h28.py
+    range:
+      start_line: 287
+      start_col: 0
+      end_line: 292
+      end_col: 0
+    fingerprint: f6cb80ffadb4f6ab6d80c160c8921efe5b2b9cf525c184459440d8c3ad041f64
+  - qualified: test_h28.TestEdgeFactoryChain
+    kind: class
+    file: test_h28.py
+    range:
+      start_line: 295
+      start_col: 0
+      end_line: 302
+      end_col: 0
+    fingerprint: edd29ead3e7fe977204993e6e8361a46447fd6e9d0ef5f5f9471bfce574fcc44
+  - qualified: test_h28.TestEdgeH25Wins
+    kind: class
+    file: test_h28.py
+    range:
+      start_line: 305
+      start_col: 0
+      end_line: 311
+      end_col: 0
+    fingerprint: f8663fa7bac31ecaee9d888cc2ecd745c0035ec99826b047f9a4b4f067ad5693
+  - qualified: test_h28.TestEdgeH26Wins
+    kind: class
+    file: test_h28.py
+    range:
+      start_line: 314
+      start_col: 0
+      end_line: 325
+      end_col: 0
+    fingerprint: 69c2381122e43453f5e4c85e35889f0ef808cfbc32db265e4ead945228671db5

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_redirects.test_follow_without_all_redirects_hidden
+kind: entity
+type: py.function
+name: test_follow_without_all_redirects_hidden
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_redirects.py
+anchors:
+- type: symbol
+  value: tests.test_redirects.test_follow_without_all_redirects_hidden
+- type: fingerprint
+  value: 60f59e78961431a58ba12090c841d9e61ac9989336bc080973eb07ff127a1a49
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_redirects

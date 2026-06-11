@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.config.get_default_config_dir
+kind: entity
+type: py.function
+name: get_default_config_dir
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/config.py
+anchors:
+- type: symbol
+  value: httpie.config.get_default_config_dir
+- type: fingerprint
+  value: 6426e217a89617de45f8ca38c6aa1df18bca1d31cd614ccd1f7623f95d0fd7db
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.config

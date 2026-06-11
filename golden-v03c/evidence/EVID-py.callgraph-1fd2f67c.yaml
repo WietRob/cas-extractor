@@ -1,0 +1,84 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-1fd2f67c
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T17:44:05.219224+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.self.getter
+  - symbol: ?.self.help_formatter
+  - symbol: ?.super().__init__
+  - symbol: httpie.cli.utils.LazyChoices.__contains__
+  - symbol: httpie.cli.utils.LazyChoices.__init__
+  - symbol: httpie.cli.utils.LazyChoices.__iter__
+  - symbol: httpie.cli.utils.LazyChoices.help
+  - symbol: httpie.cli.utils.LazyChoices.load
+  edges:
+  - from: httpie.cli.utils.LazyChoices.__init__
+    to: ?.super().__init__
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 46
+      start_col: 0
+      end_line: 46
+      end_col: 0
+  - from: httpie.cli.utils.LazyChoices.load
+    to: ?.self.getter
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 51
+      start_col: 0
+      end_line: 51
+      end_col: 0
+  - from: httpie.cli.utils.LazyChoices.help
+    to: ?.self.help_formatter
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 59
+      start_col: 0
+      end_line: 62
+      end_col: 0
+  - from: httpie.cli.utils.LazyChoices.__contains__
+    to: httpie.cli.utils.LazyChoices.load
+    kind: method_call
+    edge_id: 3
+    range:
+      start_line: 70
+      start_col: 0
+      end_line: 70
+      end_col: 0
+  - from: httpie.cli.utils.LazyChoices.help
+    to: httpie.cli.utils.LazyChoices.load
+    kind: method_call
+    edge_id: 4
+    range:
+      start_line: 60
+      start_col: 0
+      end_line: 60
+      end_col: 0
+  - from: httpie.cli.utils.LazyChoices.__iter__
+    to: httpie.cli.utils.LazyChoices.load
+    kind: method_call
+    edge_id: 5
+    range:
+      start_line: 76
+      start_col: 0
+      end_line: 76
+      end_col: 0
+  - from: httpie.cli.utils.LazyChoices.__iter__
+    to: httpie.cli.utils.LazyChoices.load
+    kind: method_call
+    edge_id: 6
+    range:
+      start_line: 74
+      start_col: 0
+      end_line: 74
+      end_col: 0

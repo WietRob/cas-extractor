@@ -1,0 +1,76 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-489a3902
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:51:32.462204+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: tests.test_downloads.TestDownloadUtils.test_Content_Range_parsing
+    kind: method
+    file: tests/test_downloads.py
+    range:
+      start_line: 28
+      start_col: 0
+      end_line: 50
+      end_col: 0
+    fingerprint: 2e3b968f0641ddcb0de7ab4ea0a460414d4641b93299b4f4d43732f3f10cd1eb
+    params:
+    - name: self
+  - qualified: tests.test_downloads.TestDownloadUtils.test_Content_Disposition_parsing
+    kind: method
+    file: tests/test_downloads.py
+    range:
+      start_line: 60
+      start_col: 0
+      end_line: 61
+      end_col: 0
+    fingerprint: e11579af9edcb12882a0d6add4b8da40660a025ca62596c71a7e9d2423cf2897
+    decorators:
+    - pytest.mark.parametrize('header, expected_filename', [('attachment; filename=hello-WORLD_123.txt',
+      'hello-WORLD_123.txt'), ('attachment; filename=".hello-WORLD_123.txt"', 'hello-WORLD_123.txt'),
+      ('attachment; filename="white space.txt"', 'white space.txt'), ('attachment;
+      filename="\\"quotes\\".txt"', '"quotes".txt'), ('attachment; filename=/etc/hosts',
+      'hosts'), ('attachment; filename=', None)])
+    params:
+    - name: self
+    - name: header
+    - name: expected_filename
+  - qualified: tests.test_downloads.TestDownloadUtils.test_filename_from_url
+    kind: method
+    file: tests/test_downloads.py
+    range:
+      start_line: 63
+      start_col: 0
+      end_line: 79
+      end_col: 0
+    fingerprint: 1c0391367804a562743756107efea9f96a9746a92848783972f7c25c4e25b9b0
+    params:
+    - name: self
+  - qualified: tests.test_downloads.TestDownloadUtils.test_unique_filename
+    kind: method
+    file: tests/test_downloads.py
+    range:
+      start_line: 102
+      start_col: 0
+      end_line: 120
+      end_col: 0
+    fingerprint: f9ff032ae203661be0d96a192ced301402f8917eb851e8edae154381da70e715
+    decorators:
+    - pytest.mark.parametrize('orig_name, unique_on_attempt, expected', [('foo.bar',
+      0, 'foo.bar'), ('foo.bar', 1, 'foo.bar-1'), ('foo.bar', 10, 'foo.bar-10'), ('A'
+      * 20, 0, 'A' * 10), ('A' * 20, 1, 'A' * 8 + '-1'), ('A' * 20, 10, 'A' * 7 +
+      '-10'), ('A' * 20 + '.txt', 0, 'A' * 6 + '.txt'), ('A' * 20 + '.txt', 1, 'A'
+      * 4 + '.txt-1'), ('foo.' + 'A' * 20, 0, 'foo.' + 'A' * 6), ('foo.' + 'A' * 20,
+      1, 'foo.' + 'A' * 4 + '-1'), ('foo.' + 'A' * 20, 10, 'foo.' + 'A' * 3 + '-10')])
+    - mock.patch('httpie.downloads.get_filename_max_length')
+    params:
+    - name: self
+    - name: get_filename_max_length
+    - name: orig_name
+    - name: unique_on_attempt
+    - name: expected

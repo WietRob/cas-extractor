@@ -1,0 +1,124 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-cb45b7ee
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:54.988853+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.downloads.Downloader.__init__
+    kind: method
+    file: httpie/downloads.py
+    range:
+      start_line: 164
+      start_col: 0
+      end_line: 184
+      end_col: 0
+    fingerprint: e93064951835a2bd9723608ddd14bc1de9cdd03b15c1dfc7a9e3e04f653c8fda
+    params:
+    - name: self
+    - name: env
+      annotation: Environment
+    - name: output_file
+      annotation: IO
+    - name: resume
+      annotation: bool
+  - qualified: httpie.downloads.Downloader.pre_request
+    kind: method
+    file: httpie/downloads.py
+    range:
+      start_line: 186
+      start_col: 0
+      end_line: 200
+      end_col: 0
+    fingerprint: 17f68509e07130afae3cec53ec97825815004ebd10c36a13b040a516b82b45a7
+    params:
+    - name: self
+    - name: request_headers
+      annotation: dict
+  - qualified: httpie.downloads.Downloader.start
+    kind: method
+    file: httpie/downloads.py
+    range:
+      start_line: 202
+      start_col: 0
+      end_line: 260
+      end_col: 0
+    fingerprint: 507b32058862cff7943db671a142c52b41ee52b835f1dd0e438132445d8fa9cd
+    params:
+    - name: self
+    - name: initial_url
+      annotation: str
+    - name: final_response
+      annotation: requests.Response
+    returns: Tuple[RawStream, IO]
+  - qualified: httpie.downloads.Downloader.finish
+    kind: method
+    file: httpie/downloads.py
+    range:
+      start_line: 262
+      start_col: 0
+      end_line: 265
+      end_col: 0
+    fingerprint: b70bd7ae048631b313a4bfee3c938158575366a2a23e4d3daed846e80d1b9382
+    params:
+    - name: self
+  - qualified: httpie.downloads.Downloader.failed
+    kind: method
+    file: httpie/downloads.py
+    range:
+      start_line: 267
+      start_col: 0
+      end_line: 268
+      end_col: 0
+    fingerprint: 048c268be9c43e6ed8c7e890e134bfef034f383a3efa0a1b978f323c61633bf9
+    params:
+    - name: self
+  - qualified: httpie.downloads.Downloader.interrupted
+    kind: method
+    file: httpie/downloads.py
+    range:
+      start_line: 271
+      start_col: 0
+      end_line: 276
+      end_col: 0
+    fingerprint: 8e712705f414967f48238825f1a5c5ea8410bd9b34d88eb3a3a1139f8f771923
+    decorators:
+    - property
+    params:
+    - name: self
+    returns: bool
+  - qualified: httpie.downloads.Downloader.chunk_downloaded
+    kind: method
+    file: httpie/downloads.py
+    range:
+      start_line: 278
+      start_col: 0
+      end_line: 286
+      end_col: 0
+    fingerprint: 7311301dcf648559cabcf9194f2466b945ffc47907da21a256e4290efc629f94
+    params:
+    - name: self
+    - name: chunk
+      annotation: bytes
+  - qualified: httpie.downloads.Downloader._get_output_file_from_response
+    kind: method
+    file: httpie/downloads.py
+    range:
+      start_line: 289
+      start_col: 0
+      end_line: 304
+      end_col: 0
+    fingerprint: 35fcc756510af347e5a5be4da150608617abed137a9e91583941e06846edda0c
+    decorators:
+    - staticmethod
+    params:
+    - name: initial_url
+      annotation: str
+    - name: final_response
+      annotation: requests.Response
+    returns: IO

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.utils.as_site
+kind: entity
+type: py.function
+name: as_site
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/utils.py
+anchors:
+- type: symbol
+  value: httpie.utils.as_site
+- type: fingerprint
+  value: 377fe69900ed6bc7257d515fdc456ab1b921af8976f0b7839a4694f8e32bfe8a
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.utils

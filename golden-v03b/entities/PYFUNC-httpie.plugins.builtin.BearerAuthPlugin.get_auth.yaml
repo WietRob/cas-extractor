@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.plugins.builtin.BearerAuthPlugin.get_auth
+kind: entity
+type: py.function
+name: get_auth
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/plugins/builtin.py
+anchors:
+- type: symbol
+  value: httpie.plugins.builtin.BearerAuthPlugin.get_auth
+- type: fingerprint
+  value: 06e883510680434d996166e268f8fd44d9ade4628643f39aca49367f229c8099
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.plugins.builtin.BearerAuthPlugin

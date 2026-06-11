@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.models.HTTPResponse.metadata
+kind: entity
+type: py.function
+name: metadata
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/models.py
+anchors:
+- type: symbol
+  value: httpie.models.HTTPResponse.metadata
+- type: fingerprint
+  value: fda8108937f762c57eceeba2599c9af32e6c02aac174811d033965fbdfb0e497
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.models.HTTPResponse

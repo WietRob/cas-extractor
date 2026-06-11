@@ -1,0 +1,26 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-833c8968
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T17:44:04.518592+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.utils.StrCLIResponse.json
+    kind: method
+    file: tests/utils/__init__.py
+    range:
+      start_line: 244
+      start_col: 0
+      end_line: 272
+      end_col: 0
+    fingerprint: 61cae0543c8e248599a720bff3cdac1fed9c55b49a560aa8352667e79151fe44
+    decorators:
+    - property
+    params:
+    - name: self
+    returns: Optional[dict]

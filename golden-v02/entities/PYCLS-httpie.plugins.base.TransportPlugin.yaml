@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.plugins.base.TransportPlugin
+kind: entity
+type: py.class
+name: TransportPlugin
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/plugins/base.py
+anchors:
+- type: symbol
+  value: httpie.plugins.base.TransportPlugin
+- type: fingerprint
+  value: 72ec7ad8c743fe582e1c87905147c17634080576236c9ff8a06c73a50fa1362d
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.plugins.base

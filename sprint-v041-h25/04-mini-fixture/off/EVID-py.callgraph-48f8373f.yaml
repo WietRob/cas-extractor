@@ -1,0 +1,55 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-48f8373f
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-22T11:17:16.895991+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: /tmp/h25-verify
+  revision: git:test
+payload:
+  nodes:
+  - symbol: test_h25.HTTPClient
+  - symbol: test_h25.HTTPClient.send
+  - symbol: test_h25.TestH25OverrideH2.__init__
+  - symbol: test_h25.TestH25OverrideH2.reconnect
+  - symbol: test_h25.TestH25OverrideH2.run
+  - symbol: test_h25.WebSocketClient
+  edges:
+  - from: test_h25.TestH25OverrideH2.__init__
+    to: test_h25.HTTPClient
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 48
+      start_col: 0
+      end_line: 48
+      end_col: 0
+  - from: test_h25.TestH25OverrideH2.reconnect
+    to: test_h25.WebSocketClient
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 51
+      start_col: 0
+      end_line: 51
+      end_col: 0
+  - from: test_h25.TestH25OverrideH2.reconnect
+    to: test_h25.HTTPClient.send
+    kind: method_call
+    edge_id: 2
+    range:
+      start_line: 52
+      start_col: 0
+      end_line: 52
+      end_col: 0
+  - from: test_h25.TestH25OverrideH2.run
+    to: test_h25.HTTPClient.send
+    kind: method_call
+    edge_id: 3
+    range:
+      start_line: 55
+      start_col: 0
+      end_line: 55
+      end_col: 0

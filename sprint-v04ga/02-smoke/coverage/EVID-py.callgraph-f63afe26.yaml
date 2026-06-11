@@ -1,0 +1,293 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-f63afe26
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-22T10:13:16.954502+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://cas_extractor
+  root: cas_extractor
+  revision: git:test
+payload:
+  nodes:
+  - symbol: ?.by_module.items
+  - symbol: ?.by_module.setdefault
+  - symbol: ?.by_target.setdefault
+  - symbol: ?.edges.append
+  - symbol: ?.import_entries.append
+  - symbol: ?.mapping.get
+  - symbol: ?.node_set.add
+  - symbol: ?.written.append
+  - symbol: cas_extractor.models.evidence.EvidenceArtifact
+  - symbol: cas_extractor.utils.ids.evidence_id
+  - symbol: datetime.datetime.now
+  - symbol: os.makedirs
+  - symbol: writers.evidence_writer._resolution_to_kind
+  - symbol: writers.evidence_writer._symbol_to_dict
+  - symbol: writers.evidence_writer._write_artifact
+  - symbol: writers.evidence_writer.write_calls_evidence
+  - symbol: writers.evidence_writer.write_imports_evidence
+  - symbol: writers.evidence_writer.write_symbols_evidence
+  - symbol: yaml.dump
+  edges:
+  - from: writers.evidence_writer._resolution_to_kind
+    to: ?.mapping.get
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 199
+      start_col: 0
+      end_line: 199
+      end_col: 0
+  - from: writers.evidence_writer._write_artifact
+    to: os.makedirs
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 207
+      start_col: 0
+      end_line: 207
+      end_col: 0
+  - from: writers.evidence_writer.write_symbols_evidence
+    to: ?.by_module.items
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 47
+      start_col: 0
+      end_line: 47
+      end_col: 0
+  - from: writers.evidence_writer.write_symbols_evidence
+    to: cas_extractor.utils.ids.evidence_id
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 48
+      start_col: 0
+      end_line: 48
+      end_col: 0
+  - from: writers.evidence_writer.write_symbols_evidence
+    to: cas_extractor.models.evidence.EvidenceArtifact
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 53
+      start_col: 0
+      end_line: 59
+      end_col: 0
+  - from: writers.evidence_writer.write_symbols_evidence
+    to: writers.evidence_writer._write_artifact
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 60
+      start_col: 0
+      end_line: 60
+      end_col: 0
+  - from: writers.evidence_writer.write_symbols_evidence
+    to: ?.written.append
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 61
+      start_col: 0
+      end_line: 61
+      end_col: 0
+  - from: writers.evidence_writer.write_imports_evidence
+    to: ?.by_module.items
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 81
+      start_col: 0
+      end_line: 81
+      end_col: 0
+  - from: writers.evidence_writer.write_imports_evidence
+    to: cas_extractor.utils.ids.evidence_id
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 82
+      start_col: 0
+      end_line: 82
+      end_col: 0
+  - from: writers.evidence_writer.write_imports_evidence
+    to: ?.import_entries.append
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 95
+      start_col: 0
+      end_line: 100
+      end_col: 0
+  - from: writers.evidence_writer.write_imports_evidence
+    to: cas_extractor.models.evidence.EvidenceArtifact
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 105
+      start_col: 0
+      end_line: 111
+      end_col: 0
+  - from: writers.evidence_writer.write_imports_evidence
+    to: writers.evidence_writer._write_artifact
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 112
+      start_col: 0
+      end_line: 112
+      end_col: 0
+  - from: writers.evidence_writer.write_imports_evidence
+    to: ?.written.append
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 113
+      start_col: 0
+      end_line: 113
+      end_col: 0
+  - from: writers.evidence_writer.write_calls_evidence
+    to: ?.by_module.items
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 136
+      start_col: 0
+      end_line: 136
+      end_col: 0
+  - from: writers.evidence_writer.write_calls_evidence
+    to: cas_extractor.utils.ids.evidence_id
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 137
+      start_col: 0
+      end_line: 137
+      end_col: 0
+  - from: writers.evidence_writer.write_calls_evidence
+    to: cas_extractor.models.evidence.EvidenceArtifact
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 172
+      start_col: 0
+      end_line: 178
+      end_col: 0
+  - from: writers.evidence_writer.write_calls_evidence
+    to: writers.evidence_writer._write_artifact
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 179
+      start_col: 0
+      end_line: 179
+      end_col: 0
+  - from: writers.evidence_writer.write_calls_evidence
+    to: ?.written.append
+    kind: call
+    edge_id: 17
+    range:
+      start_line: 180
+      start_col: 0
+      end_line: 180
+      end_col: 0
+  - from: writers.evidence_writer._write_artifact
+    to: yaml.dump
+    kind: call
+    edge_id: 18
+    range:
+      start_line: 230
+      start_col: 0
+      end_line: 232
+      end_col: 0
+  - from: writers.evidence_writer.write_calls_evidence
+    to: ?.node_set.add
+    kind: call
+    edge_id: 19
+    range:
+      start_line: 142
+      start_col: 0
+      end_line: 142
+      end_col: 0
+  - from: writers.evidence_writer.write_calls_evidence
+    to: ?.node_set.add
+    kind: call
+    edge_id: 20
+    range:
+      start_line: 143
+      start_col: 0
+      end_line: 143
+      end_col: 0
+  - from: writers.evidence_writer.write_calls_evidence
+    to: writers.evidence_writer._resolution_to_kind
+    kind: call
+    edge_id: 21
+    range:
+      start_line: 150
+      start_col: 0
+      end_line: 150
+      end_col: 0
+  - from: writers.evidence_writer.write_calls_evidence
+    to: ?.edges.append
+    kind: call
+    edge_id: 22
+    range:
+      start_line: 165
+      start_col: 0
+      end_line: 165
+      end_col: 0
+  - from: writers.evidence_writer._write_artifact
+    to: datetime.datetime.now
+    kind: call
+    edge_id: 23
+    range:
+      start_line: 209
+      start_col: 0
+      end_line: 209
+      end_col: 0
+  - from: writers.evidence_writer.write_symbols_evidence
+    to: ?.by_module.setdefault
+    kind: call
+    edge_id: 24
+    range:
+      start_line: 44
+      start_col: 0
+      end_line: 44
+      end_col: 0
+  - from: writers.evidence_writer.write_symbols_evidence
+    to: writers.evidence_writer._symbol_to_dict
+    kind: call
+    edge_id: 25
+    range:
+      start_line: 51
+      start_col: 0
+      end_line: 51
+      end_col: 0
+  - from: writers.evidence_writer.write_imports_evidence
+    to: ?.by_module.setdefault
+    kind: call
+    edge_id: 26
+    range:
+      start_line: 78
+      start_col: 0
+      end_line: 78
+      end_col: 0
+  - from: writers.evidence_writer.write_calls_evidence
+    to: ?.by_module.setdefault
+    kind: call
+    edge_id: 27
+    range:
+      start_line: 133
+      start_col: 0
+      end_line: 133
+      end_col: 0
+  - from: writers.evidence_writer.write_imports_evidence
+    to: ?.by_target.setdefault
+    kind: call
+    edge_id: 28
+    range:
+      start_line: 90
+      start_col: 0
+      end_line: 90
+      end_col: 0

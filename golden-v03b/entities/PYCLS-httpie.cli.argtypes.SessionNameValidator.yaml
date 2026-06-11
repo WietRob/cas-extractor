@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.cli.argtypes.SessionNameValidator
+kind: entity
+type: py.class
+name: SessionNameValidator
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/argtypes.py
+anchors:
+- type: symbol
+  value: httpie.cli.argtypes.SessionNameValidator
+- type: fingerprint
+  value: 8a83f468fc6620f9f08b2ffd2a68c3e00bcb8270a72262b54c2787b434bb82e3
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.argtypes

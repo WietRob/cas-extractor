@@ -1,0 +1,66 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-1f6050b4
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T08:37:44.509281+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.plugins.base
+    kind: module
+    file: httpie/plugins/base.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 165
+      end_col: 0
+    fingerprint: c12e855716a8138109288d2ec83fa7597a8cf4a7a8c09299267e4986d340db67
+  - qualified: httpie.plugins.base.BasePlugin
+    kind: class
+    file: httpie/plugins/base.py
+    range:
+      start_line: 4
+      start_col: 0
+      end_line: 13
+      end_col: 0
+    fingerprint: 23ccb7a998b1d2900d54b23eb1288e73761db02b230a736aef6acb5a48f93a89
+  - qualified: httpie.plugins.base.AuthPlugin
+    kind: class
+    file: httpie/plugins/base.py
+    range:
+      start_line: 16
+      start_col: 0
+      end_line: 69
+      end_col: 0
+    fingerprint: 9ece9a9e64205afbc68e111167488199f9db2a5ef2b9035c9a129623fd0aca27
+  - qualified: httpie.plugins.base.TransportPlugin
+    kind: class
+    file: httpie/plugins/base.py
+    range:
+      start_line: 72
+      start_col: 0
+      end_line: 93
+      end_col: 0
+    fingerprint: 72ec7ad8c743fe582e1c87905147c17634080576236c9ff8a06c73a50fa1362d
+  - qualified: httpie.plugins.base.ConverterPlugin
+    kind: class
+    file: httpie/plugins/base.py
+    range:
+      start_line: 96
+      start_col: 0
+      end_line: 121
+      end_col: 0
+    fingerprint: b2263b98a4e012ea4e113b1bcfd10727bbd4c1c6728978459fe967b2accdbf54
+  - qualified: httpie.plugins.base.FormatterPlugin
+    kind: class
+    file: httpie/plugins/base.py
+    range:
+      start_line: 124
+      start_col: 0
+      end_line: 165
+      end_col: 0
+    fingerprint: d30c293e4b6751d7b91a3c8d1792137e5a27db13e065d0e182ef0e59c4a85a1b

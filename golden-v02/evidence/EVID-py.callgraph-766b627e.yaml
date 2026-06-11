@@ -1,0 +1,63 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-766b627e
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:34.012712+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.SPEED_TOKENS.items
+  - symbol: ?.match.group
+  - symbol: ?.match.start
+  - symbol: httpie.output.lexers.common.precise
+  - symbol: httpie.output.lexers.metadata.speed_based_token
+  edges:
+  - from: httpie.output.lexers.metadata.speed_based_token
+    to: ?.SPEED_TOKENS.items
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 19
+      start_col: 0
+      end_line: 19
+      end_col: 0
+  - from: httpie.output.lexers.metadata.speed_based_token
+    to: httpie.output.lexers.common.precise
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 25
+      start_col: 0
+      end_line: 29
+      end_col: 0
+  - from: httpie.output.lexers.metadata.speed_based_token
+    to: ?.match.group
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 15
+      start_col: 0
+      end_line: 15
+      end_col: 0
+  - from: httpie.output.lexers.metadata.speed_based_token
+    to: ?.match.start
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 30
+      start_col: 0
+      end_line: 30
+      end_col: 0
+  - from: httpie.output.lexers.metadata.speed_based_token
+    to: ?.match.group
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 30
+      start_col: 0
+      end_line: 30
+      end_col: 0

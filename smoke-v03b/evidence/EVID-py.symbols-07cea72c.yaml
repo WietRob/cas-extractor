@@ -1,0 +1,58 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-07cea72c
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T14:01:21.187844+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://cas-extractor
+  root: .
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: cas_extractor.validators.schema_validate
+    kind: module
+    file: cas_extractor/validators/schema_validate.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 140
+      end_col: 0
+    fingerprint: 7dd8a6340cc10dc112554e0d71f4abfbdb716cd9c865a1b28febe6a9264c3f9f
+  - qualified: cas_extractor.validators.schema_validate.StructuralValidationResult
+    kind: class
+    file: cas_extractor/validators/schema_validate.py
+    range:
+      start_line: 21
+      start_col: 0
+      end_line: 38
+      end_col: 0
+    fingerprint: a6ca7d4eb68c63da6ce49223fd294e4f6117c22b5227d37f668849ee01cff911
+  - qualified: cas_extractor.validators.schema_validate.validate_structural
+    kind: function
+    file: cas_extractor/validators/schema_validate.py
+    range:
+      start_line: 41
+      start_col: 0
+      end_line: 124
+      end_col: 0
+    fingerprint: f8667552cfecd0f7be813450b26756ef928c409738e005375bed9404d1374fcd
+    params:
+    - name: schemas_dir
+      annotation: str
+    - name: artifacts_dir
+      annotation: str
+    returns: StructuralValidationResult
+  - qualified: cas_extractor.validators.schema_validate._load_schemas
+    kind: function
+    file: cas_extractor/validators/schema_validate.py
+    range:
+      start_line: 127
+      start_col: 0
+      end_line: 140
+      end_col: 0
+    fingerprint: afc26df6a58af336db67112c37cb2f05ba5d8768482a94e490013c15f8f6807b
+    params:
+    - name: schemas_dir
+      annotation: str
+    returns: dict[str, Any]

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.utils.LazyChoices.__call__
+kind: entity
+type: py.function
+name: __call__
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/utils.py
+anchors:
+- type: symbol
+  value: httpie.cli.utils.LazyChoices.__call__
+- type: fingerprint
+  value: db562890f1d59934298621f58d0d83efdd04331c17d7e808bc6ff4d75152d51f
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.utils.LazyChoices

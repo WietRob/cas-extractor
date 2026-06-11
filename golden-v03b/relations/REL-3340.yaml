@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-3340
+kind: relation
+type: calls
+from: PYFUNC-tests.test_binary.TestBinaryResponseData.test_binary_included_and_correct_when_suitable
+to: PYFUNC-utils.MockEnvironment
+confidence:
+  level: E1
+  direction: confirmed
+evidence:
+- EVID-py.callgraph-b463cc0c
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1

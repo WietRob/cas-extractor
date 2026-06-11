@@ -1,0 +1,364 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-1cf98a3d
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T15:03:56.298400+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.auth.keys
+  - symbol: ?.cookie.get
+  - symbol: ?.data.get
+  - symbol: ?.deserializer
+  - symbol: ?.exporter
+  - symbol: ?.importer
+  - symbol: ?.name.lower
+  - symbol: ?.new_headers.add
+  - symbol: ?.new_headers.copy
+  - symbol: ?.plugin.get_auth
+  - symbol: ?.prefix.lower
+  - symbol: ?.request_headers.copy
+  - symbol: ?.request_headers.remove_item
+  - symbol: ?.self.get
+  - symbol: ?.serializer
+  - symbol: ?.super().__init__
+  - symbol: ?.value.decode
+  - symbol: ?.value.startswith
+  - symbol: cli.argtypes.parse_auth
+  - symbol: cli.dicts.HTTPHeadersDict
+  - symbol: cookies.HTTPieCookiePolicy
+  - symbol: http.cookies.SimpleCookie
+  - symbol: httpie.sessions.Session.__init__
+  - symbol: httpie.sessions.Session._add_cookies
+  - symbol: httpie.sessions.Session._compute_new_headers
+  - symbol: httpie.sessions.Session.auth
+  - symbol: httpie.sessions.Session.is_anonymous
+  - symbol: httpie.sessions.Session.post_process_data
+  - symbol: httpie.sessions.Session.pre_process_data
+  - symbol: httpie.sessions.Session.remove_cookies
+  - symbol: httpie.sessions.Session.update_headers
+  - symbol: httpie.sessions.is_anonymous_session
+  - symbol: pathlib.Path
+  - symbol: plugins.registry.plugin_manager.get_auth_plugin
+  - symbol: requests.cookies.RequestsCookieJar
+  - symbol: requests.cookies.remove_cookie_by_name
+  edges:
+  - from: httpie.sessions.Session.__init__
+    to: ?.super().__init__
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 136
+      start_col: 0
+      end_line: 136
+      end_col: 0
+  - from: httpie.sessions.Session.__init__
+    to: cli.dicts.HTTPHeadersDict
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 149
+      start_col: 0
+      end_line: 149
+      end_col: 0
+  - from: httpie.sessions.Session.__init__
+    to: requests.cookies.RequestsCookieJar
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 150
+      start_col: 0
+      end_line: 153
+      end_col: 0
+  - from: httpie.sessions.Session._compute_new_headers
+    to: cli.dicts.HTTPHeadersDict
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 201
+      start_col: 0
+      end_line: 201
+      end_col: 0
+  - from: httpie.sessions.Session.update_headers
+    to: httpie.sessions.Session._compute_new_headers
+    kind: method_call
+    edge_id: 4
+    range:
+      start_line: 237
+      start_col: 0
+      end_line: 237
+      end_col: 0
+  - from: httpie.sessions.Session.auth
+    to: ?.self.get
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 274
+      start_col: 0
+      end_line: 274
+      end_col: 0
+  - from: httpie.sessions.Session.auth
+    to: ?.plugin.get_auth
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 299
+      start_col: 0
+      end_line: 299
+      end_col: 0
+  - from: httpie.sessions.Session.is_anonymous
+    to: httpie.sessions.is_anonymous_session
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 308
+      start_col: 0
+      end_line: 308
+      end_col: 0
+  - from: httpie.sessions.Session._add_cookies
+    to: ?.cookie.get
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 160
+      start_col: 0
+      end_line: 160
+      end_col: 0
+  - from: httpie.sessions.Session.pre_process_data
+    to: ?.data.get
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 175
+      start_col: 0
+      end_line: 175
+      end_col: 0
+  - from: httpie.sessions.Session.pre_process_data
+    to: ?.importer
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 181
+      start_col: 0
+      end_line: 181
+      end_col: 0
+  - from: httpie.sessions.Session.post_process_data
+    to: ?.serializer
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 191
+      start_col: 0
+      end_line: 191
+      end_col: 0
+  - from: httpie.sessions.Session.post_process_data
+    to: ?.exporter
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 193
+      start_col: 0
+      end_line: 196
+      end_col: 0
+  - from: httpie.sessions.Session.update_headers
+    to: ?.new_headers.add
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 246
+      start_col: 0
+      end_line: 246
+      end_col: 0
+  - from: httpie.sessions.Session.remove_cookies
+    to: requests.cookies.remove_cookie_by_name
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 265
+      start_col: 0
+      end_line: 270
+      end_col: 0
+  - from: httpie.sessions.Session.auth
+    to: plugins.registry.plugin_manager.get_auth_plugin
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 278
+      start_col: 0
+      end_line: 278
+      end_col: 0
+  - from: httpie.sessions.Session.auth
+    to: ?.auth.keys
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 303
+      start_col: 0
+      end_line: 303
+      end_col: 0
+  - from: httpie.sessions.Session.__init__
+    to: pathlib.Path
+    kind: call
+    edge_id: 17
+    range:
+      start_line: 136
+      start_col: 0
+      end_line: 136
+      end_col: 0
+  - from: httpie.sessions.Session.__init__
+    to: cookies.HTTPieCookiePolicy
+    kind: call
+    edge_id: 18
+    range:
+      start_line: 152
+      start_col: 0
+      end_line: 152
+      end_col: 0
+  - from: httpie.sessions.Session.pre_process_data
+    to: ?.deserializer
+    kind: call
+    edge_id: 19
+    range:
+      start_line: 177
+      start_col: 0
+      end_line: 177
+      end_col: 0
+  - from: httpie.sessions.Session.post_process_data
+    to: ?.data.get
+    kind: call
+    edge_id: 20
+    range:
+      start_line: 190
+      start_col: 0
+      end_line: 190
+      end_col: 0
+  - from: httpie.sessions.Session._compute_new_headers
+    to: ?.request_headers.copy
+    kind: call
+    edge_id: 21
+    range:
+      start_line: 202
+      start_col: 0
+      end_line: 202
+      end_col: 0
+  - from: httpie.sessions.Session._compute_new_headers
+    to: ?.value.decode
+    kind: call
+    edge_id: 22
+    range:
+      start_line: 208
+      start_col: 0
+      end_line: 208
+      end_col: 0
+  - from: httpie.sessions.Session._compute_new_headers
+    to: ?.value.startswith
+    kind: call
+    edge_id: 23
+    range:
+      start_line: 210
+      start_col: 0
+      end_line: 210
+      end_col: 0
+  - from: httpie.sessions.Session._compute_new_headers
+    to: ?.name.lower
+    kind: call
+    edge_id: 24
+    range:
+      start_line: 213
+      start_col: 0
+      end_line: 213
+      end_col: 0
+  - from: httpie.sessions.Session._compute_new_headers
+    to: ?.request_headers.remove_item
+    kind: call
+    edge_id: 25
+    range:
+      start_line: 219
+      start_col: 0
+      end_line: 219
+      end_col: 0
+  - from: httpie.sessions.Session._compute_new_headers
+    to: ?.new_headers.add
+    kind: call
+    edge_id: 26
+    range:
+      start_line: 226
+      start_col: 0
+      end_line: 226
+      end_col: 0
+  - from: httpie.sessions.Session.update_headers
+    to: ?.new_headers.copy
+    kind: call
+    edge_id: 27
+    range:
+      start_line: 238
+      start_col: 0
+      end_line: 238
+      end_col: 0
+  - from: httpie.sessions.Session.auth
+    to: cli.argtypes.parse_auth
+    kind: call
+    edge_id: 28
+    range:
+      start_line: 293
+      start_col: 0
+      end_line: 293
+      end_col: 0
+  - from: httpie.sessions.Session._compute_new_headers
+    to: ?.name.lower
+    kind: call
+    edge_id: 29
+    range:
+      start_line: 210
+      start_col: 0
+      end_line: 210
+      end_col: 0
+  - from: httpie.sessions.Session._compute_new_headers
+    to: ?.prefix.lower
+    kind: call
+    edge_id: 30
+    range:
+      start_line: 223
+      start_col: 0
+      end_line: 223
+      end_col: 0
+  - from: httpie.sessions.Session.remove_cookies
+    to: ?.cookie.get
+    kind: call
+    edge_id: 31
+    range:
+      start_line: 268
+      start_col: 0
+      end_line: 268
+      end_col: 0
+  - from: httpie.sessions.Session.remove_cookies
+    to: ?.cookie.get
+    kind: call
+    edge_id: 32
+    range:
+      start_line: 269
+      start_col: 0
+      end_line: 269
+      end_col: 0
+  - from: httpie.sessions.Session._compute_new_headers
+    to: http.cookies.SimpleCookie
+    kind: call
+    edge_id: 33
+    range:
+      start_line: 214
+      start_col: 0
+      end_line: 214
+      end_col: 0
+  - from: httpie.sessions.Session._compute_new_headers
+    to: ?.name.lower
+    kind: call
+    edge_id: 34
+    range:
+      start_line: 223
+      start_col: 0
+      end_line: 223
+      end_col: 0

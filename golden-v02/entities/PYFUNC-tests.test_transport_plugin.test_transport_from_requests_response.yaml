@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_transport_plugin.test_transport_from_requests_response
+kind: entity
+type: py.function
+name: test_transport_from_requests_response
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_transport_plugin.py
+anchors:
+- type: symbol
+  value: tests.test_transport_plugin.test_transport_from_requests_response
+- type: fingerprint
+  value: fc073cf5ce65270a535c49953581b07229b86f61c4e78a8434607ecf15fe8ff9
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_transport_plugin

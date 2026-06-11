@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_encoding.test_unicode_json_item_verbose
+kind: entity
+type: py.function
+name: test_unicode_json_item_verbose
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_encoding.py
+anchors:
+- type: symbol
+  value: tests.test_encoding.test_unicode_json_item_verbose
+- type: fingerprint
+  value: 4c4a002f02c87caf127e8cbe09148d99ad26157d61cab8417fb742905275a4cc
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_encoding

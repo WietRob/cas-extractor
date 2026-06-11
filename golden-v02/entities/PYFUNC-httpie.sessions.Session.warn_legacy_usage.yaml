@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.sessions.Session.warn_legacy_usage
+kind: entity
+type: py.function
+name: warn_legacy_usage
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/sessions.py
+anchors:
+- type: symbol
+  value: httpie.sessions.Session.warn_legacy_usage
+- type: fingerprint
+  value: 2c1ee99614c924af274eebe0e7fae026ffa4be0352f54b369b8026dd9c1cf47e
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.sessions.Session

@@ -1,0 +1,258 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-ce4eb52f
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:53.190391+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: tests.test_update_warnings
+    kind: module
+    file: tests/test_update_warnings.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 240
+      end_col: 0
+    fingerprint: a9bfee217964eccc07be528f15a2941e4a99357346131142bc3b60afaefc5e50
+  - qualified: tests.test_update_warnings.check_update_warnings
+    kind: function
+    file: tests/test_update_warnings.py
+    range:
+      start_line: 29
+      start_col: 0
+      end_line: 30
+      end_col: 0
+    fingerprint: 36c6cd129f914d9590b5e880181631c6c38bc1eef0c9df4b0ed241379e064bb9
+    params:
+    - name: text
+  - qualified: tests.test_update_warnings.test_daemon_runner
+    kind: function
+    file: tests/test_update_warnings.py
+    range:
+      start_line: 34
+      start_col: 0
+      end_line: 56
+      end_col: 0
+    fingerprint: 0a446c18528441dff6924dc0b84788a7852c4fda04a84594240f02a66a71afd7
+    decorators:
+    - pytest.mark.requires_external_processes
+  - qualified: tests.test_update_warnings.test_fetch
+    kind: function
+    file: tests/test_update_warnings.py
+    range:
+      start_line: 59
+      start_col: 0
+      end_line: 74
+      end_col: 0
+    fingerprint: 0111c24c77d2d7a37cf3cf877e1fd9c3d4b6e35c2487641556a132f3f48ed4ad
+    params:
+    - name: static_fetch_data
+    - name: without_warnings
+  - qualified: tests.test_update_warnings.test_fetch_dont_override_existing_layout
+    kind: function
+    file: tests/test_update_warnings.py
+    range:
+      start_line: 77
+      start_col: 0
+      end_line: 100
+      end_col: 0
+    fingerprint: daf7d7587e6a289ba8e4486a3ac903fb5c2d72f7952f2711fc99e4a5761d9047
+    params:
+    - name: static_fetch_data
+    - name: without_warnings
+  - qualified: tests.test_update_warnings.test_fetch_broken_json
+    kind: function
+    file: tests/test_update_warnings.py
+    range:
+      start_line: 103
+      start_col: 0
+      end_line: 115
+      end_col: 0
+    fingerprint: 65b593647cf498e9f86c13c30321260d2bdd7e06286522462f45d27951405ee1
+    params:
+    - name: static_fetch_data
+    - name: without_warnings
+  - qualified: tests.test_update_warnings.test_check_updates_disable_warnings
+    kind: function
+    file: tests/test_update_warnings.py
+    range:
+      start_line: 118
+      start_col: 0
+      end_line: 123
+      end_col: 0
+    fingerprint: 3dbe5e62c084ae76795cbd0b0d3e2712d238921b8e38ee02a4f38e2fea67517f
+    params:
+    - name: without_warnings
+    - name: httpbin
+    - name: fetch_update_mock
+  - qualified: tests.test_update_warnings.test_check_updates_first_invocation
+    kind: function
+    file: tests/test_update_warnings.py
+    range:
+      start_line: 126
+      start_col: 0
+      end_line: 131
+      end_col: 0
+    fingerprint: c4c54c3f1dc40db0b3ec9e65a4d60cf7203b27fba5bb4251abdf2f7caf13f08b
+    params:
+    - name: with_warnings
+    - name: httpbin
+    - name: fetch_update_mock
+  - qualified: tests.test_update_warnings.test_check_updates_first_time_after_data_fetch
+    kind: function
+    file: tests/test_update_warnings.py
+    range:
+      start_line: 141
+      start_col: 0
+      end_line: 155
+      end_col: 0
+    fingerprint: 25c57181143c9ec834e2f90a1682dd5ee54c364f07bc465f2599241a609ab796
+    decorators:
+    - pytest.mark.parametrize(['should_issue_warning', 'build_channel'], [(False,
+      'lower_build_channel'), (True, 'higher_build_channel')])
+    params:
+    - name: with_warnings
+    - name: httpbin
+    - name: fetch_update_mock
+    - name: static_fetch_data
+    - name: should_issue_warning
+    - name: build_channel
+    - name: request
+  - qualified: tests.test_update_warnings.test_check_updates_first_time_after_data_fetch_unknown_build_channel
+    kind: function
+    file: tests/test_update_warnings.py
+    range:
+      start_line: 158
+      start_col: 0
+      end_line: 169
+      end_col: 0
+    fingerprint: 3488f3fbbb9b66b808af91a82ae50312e7dcf5ac3620f92bcce89b973338be4c
+    params:
+    - name: with_warnings
+    - name: httpbin
+    - name: fetch_update_mock
+    - name: static_fetch_data
+    - name: unknown_build_channel
+  - qualified: tests.test_update_warnings.test_cli_check_updates
+    kind: function
+    file: tests/test_update_warnings.py
+    range:
+      start_line: 172
+      start_col: 0
+      end_line: 177
+      end_col: 0
+    fingerprint: c59e07909de2dab5696839bf796e242e6b5402b68c9ec00dd111803bb88f84a6
+    params:
+    - name: static_fetch_data
+    - name: higher_build_channel
+  - qualified: tests.test_update_warnings.test_cli_check_updates_not_shown
+    kind: function
+    file: tests/test_update_warnings.py
+    range:
+      start_line: 186
+      start_col: 0
+      end_line: 192
+      end_col: 0
+    fingerprint: 7c64bc7474e85109cf305e619fc37d87d01444e41dd5fa6b506cdb33275a710a
+    decorators:
+    - pytest.mark.parametrize('build_channel', ['lower_build_channel', 'unknown_build_channel'])
+    params:
+    - name: static_fetch_data
+    - name: build_channel
+    - name: request
+  - qualified: tests.test_update_warnings.with_warnings
+    kind: function
+    file: tests/test_update_warnings.py
+    range:
+      start_line: 196
+      start_col: 0
+      end_line: 200
+      end_col: 0
+    fingerprint: 48c92be11356f3f5dcda17d18199f3acf46ecc381f800cfff2792a1b80dcb0ee
+    decorators:
+    - pytest.fixture
+    params:
+    - name: tmp_path
+  - qualified: tests.test_update_warnings.without_warnings
+    kind: function
+    file: tests/test_update_warnings.py
+    range:
+      start_line: 204
+      start_col: 0
+      end_line: 208
+      end_col: 0
+    fingerprint: a6876f76d14243c859c389fca9b5bd5096acc0bb0cbd781daf0c79939f07ff21
+    decorators:
+    - pytest.fixture
+    params:
+    - name: tmp_path
+  - qualified: tests.test_update_warnings.fetch_update_mock
+    kind: function
+    file: tests/test_update_warnings.py
+    range:
+      start_line: 212
+      start_col: 0
+      end_line: 214
+      end_col: 0
+    fingerprint: 58986b9eabbeaed98616d415ecbeae2ab25774cd8f3f687cf884463ffe1f1ad6
+    decorators:
+    - pytest.fixture
+    params:
+    - name: mocker
+  - qualified: tests.test_update_warnings.static_fetch_data
+    kind: function
+    file: tests/test_update_warnings.py
+    range:
+      start_line: 218
+      start_col: 0
+      end_line: 225
+      end_col: 0
+    fingerprint: 3d6e55f5bdfb68e59b18507bf5c096b051f2ca5f847a3e8244cd512c166b08f6
+    decorators:
+    - pytest.fixture
+    params:
+    - name: mocker
+  - qualified: tests.test_update_warnings.unknown_build_channel
+    kind: function
+    file: tests/test_update_warnings.py
+    range:
+      start_line: 229
+      start_col: 0
+      end_line: 230
+      end_col: 0
+    fingerprint: 8956a0c5884d3b3b5c2bf9a2c2aa2a73a72268676e0bd145dcb8d0f86902f4c8
+    decorators:
+    - pytest.fixture
+    params:
+    - name: mocker
+  - qualified: tests.test_update_warnings.higher_build_channel
+    kind: function
+    file: tests/test_update_warnings.py
+    range:
+      start_line: 234
+      start_col: 0
+      end_line: 235
+      end_col: 0
+    fingerprint: 04e9f701fbb90727a788396a8e66a0844bf3c59d9241ac58de814880fe28b48e
+    decorators:
+    - pytest.fixture
+    params:
+    - name: mocker
+  - qualified: tests.test_update_warnings.lower_build_channel
+    kind: function
+    file: tests/test_update_warnings.py
+    range:
+      start_line: 239
+      start_col: 0
+      end_line: 240
+      end_col: 0
+    fingerprint: 41e0e6b067ba36ee60c34655e88bb8e5ce0f94980ef3152bf4cdc2a5296e175c
+    decorators:
+    - pytest.fixture
+    params:
+    - name: mocker

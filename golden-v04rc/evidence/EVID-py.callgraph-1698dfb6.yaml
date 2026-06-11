@@ -1,0 +1,567 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-1698dfb6
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-22T08:37:45.685734+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.r.count
+  - symbol: ?.r.strip
+  - symbol: fixtures.FILE_PATH.read_bytes
+  - symbol: io.StringIO
+  - symbol: pytest.raises
+  - symbol: tests.test_httpie.test_DELETE
+  - symbol: tests.test_httpie.test_GET
+  - symbol: tests.test_httpie.test_POST_JSON_data
+  - symbol: tests.test_httpie.test_POST_file
+  - symbol: tests.test_httpie.test_POST_form
+  - symbol: tests.test_httpie.test_POST_form_multiple_values
+  - symbol: tests.test_httpie.test_POST_raw
+  - symbol: tests.test_httpie.test_POST_stdin
+  - symbol: tests.test_httpie.test_PUT
+  - symbol: tests.test_httpie.test_debug
+  - symbol: tests.test_httpie.test_form_POST_file_redirected_stdin
+  - symbol: tests.test_httpie.test_headers
+  - symbol: tests.test_httpie.test_headers_empty_value
+  - symbol: tests.test_httpie.test_headers_empty_value_with_value_gives_error
+  - symbol: tests.test_httpie.test_headers_fully_omit
+  - symbol: tests.test_httpie.test_headers_multiple_headers_representation
+  - symbol: tests.test_httpie.test_headers_multiple_omit
+  - symbol: tests.test_httpie.test_headers_multiple_values
+  - symbol: tests.test_httpie.test_headers_multiple_values_mixed
+  - symbol: tests.test_httpie.test_headers_multiple_values_repeated
+  - symbol: tests.test_httpie.test_headers_multiple_values_with_empty
+  - symbol: tests.test_httpie.test_headers_omit
+  - symbol: tests.test_httpie.test_headers_preserve_prepared_headers
+  - symbol: tests.test_httpie.test_headers_same_after_omit
+  - symbol: tests.test_httpie.test_headers_unset
+  - symbol: tests.test_httpie.test_help
+  - symbol: tests.test_httpie.test_json_input_preserve_order
+  - symbol: tests.test_httpie.test_main_entry_point
+  - symbol: tests.test_httpie.test_main_entry_point_keyboard_interrupt
+  - symbol: tests.test_httpie.test_options_content_length_preservation
+  - symbol: tests.test_httpie.test_options_dropping_redundant_content_length
+  - symbol: tests.test_httpie.test_path_as_is
+  - symbol: tests.test_httpie.test_path_dot_normalization
+  - symbol: tests.test_httpie.test_raw_POST_key_values_supplied
+  - symbol: tests.test_httpie.test_raw_POST_redirected_stdin
+  - symbol: tests.test_httpie.test_response_headers_multiple
+  - symbol: tests.test_httpie.test_response_headers_multiple_repeated
+  - symbol: tests.test_httpie.test_response_headers_multiple_representation
+  - symbol: tests.test_httpie.test_unset_host_header
+  - symbol: tests.test_httpie.test_unset_useragent_header
+  - symbol: tests.test_httpie.test_version
+  - symbol: unittest.mock.patch
+  - symbol: utils.MockEnvironment
+  - symbol: utils.StdinBytesIO
+  - symbol: utils.http
+  edges:
+  - from: tests.test_httpie.test_main_entry_point_keyboard_interrupt
+    to: unittest.mock.patch
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 23
+      start_col: 0
+      end_line: 23
+      end_col: 0
+  - from: tests.test_httpie.test_debug
+    to: utils.http
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 31
+      start_col: 0
+      end_line: 31
+      end_col: 0
+  - from: tests.test_httpie.test_help
+    to: utils.http
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 37
+      start_col: 0
+      end_line: 37
+      end_col: 0
+  - from: tests.test_httpie.test_version
+    to: utils.http
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 43
+      start_col: 0
+      end_line: 43
+      end_col: 0
+  - from: tests.test_httpie.test_GET
+    to: utils.http
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 49
+      start_col: 0
+      end_line: 49
+      end_col: 0
+  - from: tests.test_httpie.test_path_dot_normalization
+    to: utils.http
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 54
+      start_col: 0
+      end_line: 58
+      end_col: 0
+  - from: tests.test_httpie.test_path_as_is
+    to: utils.http
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 63
+      start_col: 0
+      end_line: 68
+      end_col: 0
+  - from: tests.test_httpie.test_DELETE
+    to: utils.http
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 73
+      start_col: 0
+      end_line: 73
+      end_col: 0
+  - from: tests.test_httpie.test_PUT
+    to: utils.http
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 78
+      start_col: 0
+      end_line: 78
+      end_col: 0
+  - from: tests.test_httpie.test_POST_JSON_data
+    to: utils.http
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 84
+      start_col: 0
+      end_line: 84
+      end_col: 0
+  - from: tests.test_httpie.test_POST_form
+    to: utils.http
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 90
+      start_col: 0
+      end_line: 90
+      end_col: 0
+  - from: tests.test_httpie.test_POST_form_multiple_values
+    to: utils.http
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 96
+      start_col: 0
+      end_line: 96
+      end_col: 0
+  - from: tests.test_httpie.test_POST_raw
+    to: utils.http
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 104
+      start_col: 0
+      end_line: 104
+      end_col: 0
+  - from: tests.test_httpie.test_POST_stdin
+    to: utils.MockEnvironment
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 110
+      start_col: 0
+      end_line: 113
+      end_col: 0
+  - from: tests.test_httpie.test_POST_stdin
+    to: utils.http
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 114
+      start_col: 0
+      end_line: 114
+      end_col: 0
+  - from: tests.test_httpie.test_POST_file
+    to: utils.http
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 120
+      start_col: 0
+      end_line: 120
+      end_col: 0
+  - from: tests.test_httpie.test_raw_POST_key_values_supplied
+    to: utils.http
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 147
+      start_col: 0
+      end_line: 154
+      end_col: 0
+  - from: tests.test_httpie.test_raw_POST_redirected_stdin
+    to: utils.http
+    kind: call
+    edge_id: 17
+    range:
+      start_line: 160
+      start_col: 0
+      end_line: 170
+      end_col: 0
+  - from: tests.test_httpie.test_headers
+    to: utils.http
+    kind: call
+    edge_id: 18
+    range:
+      start_line: 176
+      start_col: 0
+      end_line: 176
+      end_col: 0
+  - from: tests.test_httpie.test_headers_unset
+    to: utils.http
+    kind: call
+    edge_id: 19
+    range:
+      start_line: 183
+      start_col: 0
+      end_line: 183
+      end_col: 0
+  - from: tests.test_httpie.test_headers_unset
+    to: utils.http
+    kind: call
+    edge_id: 20
+    range:
+      start_line: 186
+      start_col: 0
+      end_line: 186
+      end_col: 0
+  - from: tests.test_httpie.test_unset_host_header
+    to: utils.http
+    kind: call
+    edge_id: 21
+    range:
+      start_line: 192
+      start_col: 0
+      end_line: 192
+      end_col: 0
+  - from: tests.test_httpie.test_unset_host_header
+    to: utils.http
+    kind: call
+    edge_id: 22
+    range:
+      start_line: 195
+      start_col: 0
+      end_line: 195
+      end_col: 0
+  - from: tests.test_httpie.test_unset_useragent_header
+    to: utils.http
+    kind: call
+    edge_id: 23
+    range:
+      start_line: 200
+      start_col: 0
+      end_line: 200
+      end_col: 0
+  - from: tests.test_httpie.test_unset_useragent_header
+    to: utils.http
+    kind: call
+    edge_id: 24
+    range:
+      start_line: 203
+      start_col: 0
+      end_line: 203
+      end_col: 0
+  - from: tests.test_httpie.test_headers_empty_value
+    to: utils.http
+    kind: call
+    edge_id: 25
+    range:
+      start_line: 208
+      start_col: 0
+      end_line: 208
+      end_col: 0
+  - from: tests.test_httpie.test_headers_empty_value
+    to: utils.http
+    kind: call
+    edge_id: 26
+    range:
+      start_line: 211
+      start_col: 0
+      end_line: 211
+      end_col: 0
+  - from: tests.test_httpie.test_headers_omit
+    to: utils.http
+    kind: call
+    edge_id: 27
+    range:
+      start_line: 221
+      start_col: 0
+      end_line: 221
+      end_col: 0
+  - from: tests.test_httpie.test_headers_multiple_omit
+    to: utils.http
+    kind: call
+    edge_id: 28
+    range:
+      start_line: 226
+      start_col: 0
+      end_line: 227
+      end_col: 0
+  - from: tests.test_httpie.test_headers_same_after_omit
+    to: utils.http
+    kind: call
+    edge_id: 29
+    range:
+      start_line: 234
+      start_col: 0
+      end_line: 235
+      end_col: 0
+  - from: tests.test_httpie.test_headers_fully_omit
+    to: utils.http
+    kind: call
+    edge_id: 30
+    range:
+      start_line: 240
+      start_col: 0
+      end_line: 241
+      end_col: 0
+  - from: tests.test_httpie.test_headers_multiple_values
+    to: utils.http
+    kind: call
+    edge_id: 31
+    range:
+      start_line: 246
+      start_col: 0
+      end_line: 246
+      end_col: 0
+  - from: tests.test_httpie.test_headers_multiple_values_repeated
+    to: utils.http
+    kind: call
+    edge_id: 32
+    range:
+      start_line: 251
+      start_col: 0
+      end_line: 252
+      end_col: 0
+  - from: tests.test_httpie.test_headers_multiple_values_with_empty
+    to: utils.http
+    kind: call
+    edge_id: 33
+    range:
+      start_line: 271
+      start_col: 0
+      end_line: 271
+      end_col: 0
+  - from: tests.test_httpie.test_headers_multiple_values_mixed
+    to: utils.http
+    kind: call
+    edge_id: 34
+    range:
+      start_line: 276
+      start_col: 0
+      end_line: 277
+      end_col: 0
+  - from: tests.test_httpie.test_headers_preserve_prepared_headers
+    to: utils.http
+    kind: call
+    edge_id: 35
+    range:
+      start_line: 283
+      start_col: 0
+      end_line: 284
+      end_col: 0
+  - from: tests.test_httpie.test_headers_multiple_headers_representation
+    to: utils.http
+    kind: call
+    edge_id: 36
+    range:
+      start_line: 290
+      start_col: 0
+      end_line: 291
+      end_col: 0
+  - from: tests.test_httpie.test_response_headers_multiple
+    to: utils.http
+    kind: call
+    edge_id: 37
+    range:
+      start_line: 303
+      start_col: 0
+      end_line: 303
+      end_col: 0
+  - from: tests.test_httpie.test_response_headers_multiple_repeated
+    to: utils.http
+    kind: call
+    edge_id: 38
+    range:
+      start_line: 309
+      start_col: 0
+      end_line: 310
+      end_col: 0
+  - from: tests.test_httpie.test_response_headers_multiple_representation
+    to: utils.http
+    kind: call
+    edge_id: 39
+    range:
+      start_line: 317
+      start_col: 0
+      end_line: 318
+      end_col: 0
+  - from: tests.test_httpie.test_json_input_preserve_order
+    to: utils.http
+    kind: call
+    edge_id: 40
+    range:
+      start_line: 330
+      start_col: 0
+      end_line: 331
+      end_col: 0
+  - from: tests.test_httpie.test_options_content_length_preservation
+    to: utils.http
+    kind: call
+    edge_id: 41
+    range:
+      start_line: 356
+      start_col: 0
+      end_line: 361
+      end_col: 0
+  - from: tests.test_httpie.test_options_dropping_redundant_content_length
+    to: utils.http
+    kind: call
+    edge_id: 42
+    range:
+      start_line: 367
+      start_col: 0
+      end_line: 371
+      end_col: 0
+  - from: tests.test_httpie.test_version
+    to: ?.r.strip
+    kind: call
+    edge_id: 43
+    range:
+      start_line: 45
+      start_col: 0
+      end_line: 45
+      end_col: 0
+  - from: tests.test_httpie.test_form_POST_file_redirected_stdin
+    to: utils.http
+    kind: call
+    edge_id: 44
+    range:
+      start_line: 131
+      start_col: 0
+      end_line: 141
+      end_col: 0
+  - from: tests.test_httpie.test_headers_empty_value_with_value_gives_error
+    to: pytest.raises
+    kind: call
+    edge_id: 45
+    range:
+      start_line: 216
+      start_col: 0
+      end_line: 216
+      end_col: 0
+  - from: tests.test_httpie.test_headers_empty_value_with_value_gives_error
+    to: utils.http
+    kind: call
+    edge_id: 46
+    range:
+      start_line: 217
+      start_col: 0
+      end_line: 217
+      end_col: 0
+  - from: tests.test_httpie.test_response_headers_multiple_repeated
+    to: ?.r.count
+    kind: call
+    edge_id: 47
+    range:
+      start_line: 311
+      start_col: 0
+      end_line: 311
+      end_col: 0
+  - from: tests.test_httpie.test_main_entry_point
+    to: io.StringIO
+    kind: call
+    edge_id: 48
+    range:
+      start_line: 19
+      start_col: 0
+      end_line: 19
+      end_col: 0
+  - from: tests.test_httpie.test_main_entry_point_keyboard_interrupt
+    to: io.StringIO
+    kind: call
+    edge_id: 49
+    range:
+      start_line: 26
+      start_col: 0
+      end_line: 26
+      end_col: 0
+  - from: tests.test_httpie.test_POST_stdin
+    to: utils.StdinBytesIO
+    kind: call
+    edge_id: 50
+    range:
+      start_line: 111
+      start_col: 0
+      end_line: 111
+      end_col: 0
+  - from: tests.test_httpie.test_raw_POST_redirected_stdin
+    to: utils.MockEnvironment
+    kind: call
+    edge_id: 51
+    range:
+      start_line: 166
+      start_col: 0
+      end_line: 169
+      end_col: 0
+  - from: tests.test_httpie.test_POST_stdin
+    to: fixtures.FILE_PATH.read_bytes
+    kind: call
+    edge_id: 52
+    range:
+      start_line: 111
+      start_col: 0
+      end_line: 111
+      end_col: 0
+  - from: tests.test_httpie.test_form_POST_file_redirected_stdin
+    to: utils.MockEnvironment
+    kind: call
+    edge_id: 53
+    range:
+      start_line: 137
+      start_col: 0
+      end_line: 140
+      end_col: 0
+  - from: tests.test_httpie.test_form_POST_file_redirected_stdin
+    to: utils.StdinBytesIO
+    kind: call
+    edge_id: 54
+    range:
+      start_line: 138
+      start_col: 0
+      end_line: 138
+      end_col: 0
+  - from: tests.test_httpie.test_form_POST_file_redirected_stdin
+    to: fixtures.FILE_PATH.read_bytes
+    kind: call
+    edge_id: 55
+    range:
+      start_line: 138
+      start_col: 0
+      end_line: 138
+      end_col: 0

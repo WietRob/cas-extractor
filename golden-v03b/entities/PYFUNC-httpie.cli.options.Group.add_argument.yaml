@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.options.Group.add_argument
+kind: entity
+type: py.function
+name: add_argument
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/options.py
+anchors:
+- type: symbol
+  value: httpie.cli.options.Group.add_argument
+- type: fingerprint
+  value: 46b833cb8d7049ea5b84a17500dd201a9571d2c02ad3f8b04359bdf78f4cadfe
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.options.Group

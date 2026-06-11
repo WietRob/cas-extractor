@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-0761
+kind: relation
+type: contains
+from: PYMOD-tests.test_downloads
+to: PYCLS-tests.test_downloads.Response
+confidence:
+  level: E0
+  direction: confirmed
+evidence:
+- EVID-py.symbols-a0b052b8
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1

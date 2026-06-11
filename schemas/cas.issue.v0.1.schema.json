@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "cas.issue.v0.1.schema.json",
+  "title": "CAS Issue v0.1",
+  "description": "Issue artifacts - ambiguities, unproven claims, conflicts, quality signals",
+  "type": "object",
+  "required": ["schema", "id", "kind", "type", "applies_to", "summary", "severity", "created_at", "created_by"],
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "cas.issue.v0.1"
+    },
+    "id": {
+      "$ref": "common.v0.1.schema.json#/$defs/issue_id"
+    },
+    "kind": {
+      "type": "string",
+      "const": "issue"
+    },
+    "type": {
+      "$ref": "common.v0.1.schema.json#/$defs/issue_type"
+    },
+    "applies_to": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "description": "Entity or artifact ID this issue applies to"
+      }
+    },
+    "summary": {
+      "type": "string",
+      "description": "Brief summary of the issue"
+    },
+    "details": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "claim_id": { "type": "string" },
+          "problem": { "type": "string" },
+          "suggested_action": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "severity": {
+      "$ref": "common.v0.1.schema.json#/$defs/issue_severity"
+    },
+    "created_at": {
+      "$ref": "common.v0.1.schema.json#/$defs/timestamp"
+    },
+    "created_by": {
+      "type": "string",
+      "description": "Checker identifier: checker:v0.1, validator:X"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "$ref": "common.v0.1.schema.json#/$defs/evidence_ref"
+      }
+    }
+  },
+  "additionalProperties": false
+}

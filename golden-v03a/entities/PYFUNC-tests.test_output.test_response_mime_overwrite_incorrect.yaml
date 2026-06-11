@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_output.test_response_mime_overwrite_incorrect
+kind: entity
+type: py.function
+name: test_response_mime_overwrite_incorrect
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_output.py
+anchors:
+- type: symbol
+  value: tests.test_output.test_response_mime_overwrite_incorrect
+- type: fingerprint
+  value: 01ad7e83d10f7a296f7fd321db4f72c069921cd955177e3e0c9cef5c1db9b34c
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_output

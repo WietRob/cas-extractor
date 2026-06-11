@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_sessions.TestSessionFlow.test_session_update
+kind: entity
+type: py.function
+name: test_session_update
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_sessions.py
+anchors:
+- type: symbol
+  value: tests.test_sessions.TestSessionFlow.test_session_update
+- type: fingerprint
+  value: 0e0a3eb7b53a6ef1d7f32c0428ab4739504f282f6672b70ed5a3545fb82e38e1
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_sessions.TestSessionFlow

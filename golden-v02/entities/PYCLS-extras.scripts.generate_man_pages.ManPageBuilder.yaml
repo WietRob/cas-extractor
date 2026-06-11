@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-extras.scripts.generate_man_pages.ManPageBuilder
+kind: entity
+type: py.class
+name: ManPageBuilder
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: extras/scripts/generate_man_pages.py
+anchors:
+- type: symbol
+  value: extras.scripts.generate_man_pages.ManPageBuilder
+- type: fingerprint
+  value: f7b9b4ec2c14679dcf9bae12fbee11022a997623139f1fb9c418f5763e2a93a5
+  algo: sha256
+claims: []
+relations: []
+namespace: extras.scripts.generate_man_pages

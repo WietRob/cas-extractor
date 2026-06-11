@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_downloads.TestDownloads.test_download_with_redirect_original_url_used_for_filename
+kind: entity
+type: py.function
+name: test_download_with_redirect_original_url_used_for_filename
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_downloads.py
+anchors:
+- type: symbol
+  value: tests.test_downloads.TestDownloads.test_download_with_redirect_original_url_used_for_filename
+- type: fingerprint
+  value: 75121ad25420c350dd84953b5e404a7d4fb4c655c5b4ab80cbf6b649c0c04af1
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_downloads.TestDownloads

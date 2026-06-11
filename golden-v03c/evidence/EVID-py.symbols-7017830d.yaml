@@ -1,0 +1,50 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-7017830d
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T17:44:04.397053+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.ssl_
+    kind: module
+    file: httpie/ssl_.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 109
+      end_col: 0
+    fingerprint: 1420dbf731225829ed70295685fb670933d8cbfa96b041f78aa4147452cfb5bd
+  - qualified: httpie.ssl_.HTTPieCertificate
+    kind: class
+    file: httpie/ssl_.py
+    range:
+      start_line: 29
+      start_col: 0
+      end_line: 37
+      end_col: 0
+    fingerprint: b9eef82d23a4599a639200d2db131902fbf26e505ee4bba7b7fc46b77438367f
+  - qualified: httpie.ssl_.HTTPieHTTPSAdapter
+    kind: class
+    file: httpie/ssl_.py
+    range:
+      start_line: 40
+      start_col: 0
+      end_line: 89
+      end_col: 0
+    fingerprint: d32366da23fdf1e7bbf6e840951b72929de2226299af4757499faeee9c63ee19
+  - qualified: httpie.ssl_._is_key_file_encrypted
+    kind: function
+    file: httpie/ssl_.py
+    range:
+      start_line: 92
+      start_col: 0
+      end_line: 103
+      end_col: 0
+    fingerprint: acbe59c8ca46f194b7f0266931af43421dedcf44c3d0409d0e28c7608c93cebe
+    params:
+    - name: key_file

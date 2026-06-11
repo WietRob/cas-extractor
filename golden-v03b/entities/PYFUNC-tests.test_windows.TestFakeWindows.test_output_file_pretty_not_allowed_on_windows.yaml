@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_windows.TestFakeWindows.test_output_file_pretty_not_allowed_on_windows
+kind: entity
+type: py.function
+name: test_output_file_pretty_not_allowed_on_windows
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_windows.py
+anchors:
+- type: symbol
+  value: tests.test_windows.TestFakeWindows.test_output_file_pretty_not_allowed_on_windows
+- type: fingerprint
+  value: f416408e6f58aa9dd711226609caf1eb32e02bf5357b439821ac26e5fa8279f5
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_windows.TestFakeWindows

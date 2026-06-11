@@ -1,0 +1,201 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-1420f377
+kind: evidence
+type: py.symbols
+created_at: '2026-02-23T05:34:25.603244+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: /tmp/h26-verify
+  revision: git:test
+payload:
+  symbols:
+  - qualified: test_h26
+    kind: module
+    file: test_h26.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 194
+      end_col: 0
+    fingerprint: 8522008f13139b67727d1d2edb3f4e09ec0fe23e09991ca97a5c4b86db7f3667
+  - qualified: test_h26.HTTPClient
+    kind: class
+    file: test_h26.py
+    range:
+      start_line: 3
+      start_col: 0
+      end_line: 5
+      end_col: 0
+    fingerprint: d6802f2d2fcda29ff8ca4b0226fc804aa76af0875b38037ae8c9ae0b25dc5d11
+  - qualified: test_h26.WebSocketClient
+    kind: class
+    file: test_h26.py
+    range:
+      start_line: 7
+      start_col: 0
+      end_line: 9
+      end_col: 0
+    fingerprint: 8ecc5d7c9a9f39bc89449b75e4beac6151b8e7e76ef02197c87f9d2720ddc349
+  - qualified: test_h26.DataParser
+    kind: class
+    file: test_h26.py
+    range:
+      start_line: 11
+      start_col: 0
+      end_line: 13
+      end_col: 0
+    fingerprint: ae398f3be26b581ecfb74b9c91cb653194da561fba7a67ee3277af708966f430
+  - qualified: test_h26.TestH26Basic
+    kind: class
+    file: test_h26.py
+    range:
+      start_line: 16
+      start_col: 0
+      end_line: 22
+      end_col: 0
+    fingerprint: 216558f2e1019a30af7614d79a050e9668f9ecd49c0a579507d7cbb7bf6d5a2a
+  - qualified: test_h26.TestH26Multiple
+    kind: class
+    file: test_h26.py
+    range:
+      start_line: 25
+      start_col: 0
+      end_line: 33
+      end_col: 0
+    fingerprint: 6f054b68c81a01ec3341be9fe8bbf596464c9d76ccb9616e96a3fad18943d5a8
+  - qualified: test_h26.TestH26Chain
+    kind: class
+    file: test_h26.py
+    range:
+      start_line: 36
+      start_col: 0
+      end_line: 45
+      end_col: 0
+    fingerprint: 3c977d4634355c69d5b97940386b26efed1d699b6fbe00388421cdf56e34ef36
+  - qualified: test_h26.TestH26AnnAssign
+    kind: class
+    file: test_h26.py
+    range:
+      start_line: 48
+      start_col: 0
+      end_line: 54
+      end_col: 0
+    fingerprint: 536d0df18d18bfbbfae3cf9d62a3ef5064b9621358f3aa612decb9cf49837717
+  - qualified: test_h26.TestH26OverrideH2
+    kind: class
+    file: test_h26.py
+    range:
+      start_line: 57
+      start_col: 0
+      end_line: 66
+      end_col: 0
+    fingerprint: 9c62322f136b272749f55cee7b8acfb33f4c6d5c327b7b8d65ad4df29d7bab03
+  - qualified: test_h26.TestH26Merge
+    kind: class
+    file: test_h26.py
+    range:
+      start_line: 69
+      start_col: 0
+      end_line: 77
+      end_col: 0
+    fingerprint: da3ffebadd02202dd7fcde93da23e0ccdc65ec1b087ca56fba4e7be79fd985ca
+  - qualified: test_h26.TestH26Factory
+    kind: class
+    file: test_h26.py
+    range:
+      start_line: 82
+      start_col: 0
+      end_line: 91
+      end_col: 0
+    fingerprint: c672876fea8d0a78deac4601a7e539771405d18be2710dc6a3015e6316d96a19
+  - qualified: test_h26.TestH26Unknown
+    kind: class
+    file: test_h26.py
+    range:
+      start_line: 94
+      start_col: 0
+      end_line: 100
+      end_col: 0
+    fingerprint: b413a0d4dc3df11430cfd2c9b464404714d9a218f41ad0c6653354c8ca79da75
+  - qualified: test_h26.HelperClass
+    kind: class
+    file: test_h26.py
+    range:
+      start_line: 103
+      start_col: 0
+      end_line: 105
+      end_col: 0
+    fingerprint: 2156e4754eeffeeadb035bfae8bb558b3b4cc6789f515d798583f072108585ef
+  - qualified: test_h26.CallerClass
+    kind: class
+    file: test_h26.py
+    range:
+      start_line: 107
+      start_col: 0
+      end_line: 112
+      end_col: 0
+    fingerprint: e0f9d1615968441282884eeb2eb801d233d9797aec4d18ce649e644da23ce04e
+  - qualified: test_h26.TestH26Cycle
+    kind: class
+    file: test_h26.py
+    range:
+      start_line: 116
+      start_col: 0
+      end_line: 123
+      end_col: 0
+    fingerprint: 1724606b7c154584b00e9442ab54663ced9daa70756df057d0020e65c17ccca9
+  - qualified: test_h26.TestH26Conflict
+    kind: class
+    file: test_h26.py
+    range:
+      start_line: 126
+      start_col: 0
+      end_line: 136
+      end_col: 0
+    fingerprint: 058092f883f6152c4f8c495fb2b2326a6a3dc0dcd8b90d686a0263398a91dd00
+  - qualified: test_h26.TestH26DepthExceeded
+    kind: class
+    file: test_h26.py
+    range:
+      start_line: 139
+      start_col: 0
+      end_line: 151
+      end_col: 0
+    fingerprint: 4baa297713a8584f6f6ce54609970e37274849bad0620524b9b63fed8891c113
+  - qualified: test_h26.TestH26Conditional
+    kind: class
+    file: test_h26.py
+    range:
+      start_line: 154
+      start_col: 0
+      end_line: 162
+      end_col: 0
+    fingerprint: 416cff5f6cc205cf63ab73d7c4de59a126a1a462cc47b8c3ffec9789414b5a0a
+  - qualified: test_h26.TestH26NoHelper
+    kind: class
+    file: test_h26.py
+    range:
+      start_line: 165
+      start_col: 0
+      end_line: 171
+      end_col: 0
+    fingerprint: c494e96514bbcea06cac63970ee412bb40234bff53bef6b2ec68ae648b40df53
+  - qualified: test_h26.TestH26ReassignWins
+    kind: class
+    file: test_h26.py
+    range:
+      start_line: 174
+      start_col: 0
+      end_line: 181
+      end_col: 0
+    fingerprint: 79b7856d566dacb23da0a6bb8e7feb3fb1f3ef8563fe0c57a3f543bfc8df9de3
+  - qualified: test_h26.TestH26NoConflict
+    kind: class
+    file: test_h26.py
+    range:
+      start_line: 184
+      start_col: 0
+      end_line: 194
+      end_col: 0
+    fingerprint: bdf2c30b008661fec9740b89123df8aee4d83efd14471bcb2d3768f357252657

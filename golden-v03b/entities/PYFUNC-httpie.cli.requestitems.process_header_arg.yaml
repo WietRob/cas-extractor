@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.requestitems.process_header_arg
+kind: entity
+type: py.function
+name: process_header_arg
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/requestitems.py
+anchors:
+- type: symbol
+  value: httpie.cli.requestitems.process_header_arg
+- type: fingerprint
+  value: f98705ed7ccd79608bc16fd27d9918b2fe7ca80062fda05a2c4a2b76326401f1
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.requestitems

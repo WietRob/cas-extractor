@@ -1,0 +1,34 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-e6510a03
+kind: evidence
+type: py.symbols
+created_at: '2026-02-23T07:07:57.423200+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: /tmp/h27-verify
+  revision: git:test
+payload:
+  symbols:
+  - qualified: test_h27.CacheManager.get
+    kind: method
+    file: test_h27.py
+    range:
+      start_line: 16
+      start_col: 0
+      end_line: 16
+      end_col: 0
+    fingerprint: 465289f92fea2b9b3fffe24274b482c72643c4b5de6172497ddfbbe0a338eda9
+    params:
+    - name: self
+  - qualified: test_h27.CacheManager.set
+    kind: method
+    file: test_h27.py
+    range:
+      start_line: 17
+      start_col: 0
+      end_line: 17
+      end_col: 0
+    fingerprint: f643c3de49b5dc72e6ab45c0139cedee7f4b1fb1973d4863863df75e5b4461b4
+    params:
+    - name: self

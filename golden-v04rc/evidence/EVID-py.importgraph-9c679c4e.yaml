@@ -1,0 +1,18 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-9c679c4e
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-22T08:37:44.786913+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  imports:
+  - from: httpie.encoding
+    imports:
+    - typing.Union
+    - typing.Tuple
+    - charset_normalizer.from_bytes
+    - charset_normalizer.constant.TOO_SMALL_SEQUENCE

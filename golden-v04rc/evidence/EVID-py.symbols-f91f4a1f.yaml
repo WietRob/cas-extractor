@@ -1,0 +1,111 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-f91f4a1f
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T08:37:44.437815+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.config.BaseConfigDict.__init__
+    kind: method
+    file: httpie/config.py
+    range:
+      start_line: 85
+      start_col: 0
+      end_line: 87
+      end_col: 0
+    fingerprint: 9a4890a2fa43b0d8670066bb885b99eac3eee3db341267a0c034d9475a0d2fdc
+    params:
+    - name: self
+    - name: path
+      annotation: Path
+  - qualified: httpie.config.BaseConfigDict.ensure_directory
+    kind: method
+    file: httpie/config.py
+    range:
+      start_line: 89
+      start_col: 0
+      end_line: 90
+      end_col: 0
+    fingerprint: 872be0c2195763ac473837fb86c392ed5180762fce9ff483dc556107d794df9a
+    params:
+    - name: self
+  - qualified: httpie.config.BaseConfigDict.is_new
+    kind: method
+    file: httpie/config.py
+    range:
+      start_line: 92
+      start_col: 0
+      end_line: 93
+      end_col: 0
+    fingerprint: 58e5fb63d616ee54820243d571148703c7a64623015b2f18228eff3921965f9b
+    params:
+    - name: self
+    returns: bool
+  - qualified: httpie.config.BaseConfigDict.pre_process_data
+    kind: method
+    file: httpie/config.py
+    range:
+      start_line: 95
+      start_col: 0
+      end_line: 97
+      end_col: 0
+    fingerprint: 06c71d4d9ba65d02d21ec833727df9e23a156705befff44dcf41cdf4e6f34d59
+    params:
+    - name: self
+    - name: data
+      annotation: Dict[str, Any]
+    returns: Dict[str, Any]
+  - qualified: httpie.config.BaseConfigDict.post_process_data
+    kind: method
+    file: httpie/config.py
+    range:
+      start_line: 99
+      start_col: 0
+      end_line: 101
+      end_col: 0
+    fingerprint: 9d7371210c960975c178b52715cdd0ed41419cfe172d3db696e8efd8faa34622
+    params:
+    - name: self
+    - name: data
+      annotation: Dict[str, Any]
+    returns: Dict[str, Any]
+  - qualified: httpie.config.BaseConfigDict.load
+    kind: method
+    file: httpie/config.py
+    range:
+      start_line: 103
+      start_col: 0
+      end_line: 108
+      end_col: 0
+    fingerprint: d4bfdff4914567b3cfa74382df6b5c42cfb9340ee95c2f71632453131c934600
+    params:
+    - name: self
+  - qualified: httpie.config.BaseConfigDict.save
+    kind: method
+    file: httpie/config.py
+    range:
+      start_line: 110
+      start_col: 0
+      end_line: 128
+      end_col: 0
+    fingerprint: be01a924700dfcb546fe69ce1b74936cd717728645d191bedb110a0c2e12fa2d
+    params:
+    - name: self
+  - qualified: httpie.config.BaseConfigDict.version
+    kind: method
+    file: httpie/config.py
+    range:
+      start_line: 131
+      start_col: 0
+      end_line: 134
+      end_col: 0
+    fingerprint: 0e65eedb7dfcce56790b5be505ae6409d7e148919362ab46ee7603e3f8a4a78e
+    decorators:
+    - property
+    params:
+    - name: self

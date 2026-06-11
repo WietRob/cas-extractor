@@ -1,0 +1,129 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-76049c1c
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T09:31:54.591997+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: /tmp/h2-verify
+  revision: git:test
+payload:
+  symbols:
+  - qualified: test_h2
+    kind: module
+    file: test_h2.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 95
+      end_col: 0
+    fingerprint: f81f37f0d737aeddff1cedb3e36c1446690b9d9180df9f7636837803ec7689fc
+  - qualified: test_h2.HTTPClient
+    kind: class
+    file: test_h2.py
+    range:
+      start_line: 3
+      start_col: 0
+      end_line: 6
+      end_col: 0
+    fingerprint: d6802f2d2fcda29ff8ca4b0226fc804aa76af0875b38037ae8c9ae0b25dc5d11
+  - qualified: test_h2.DownloadStatus
+    kind: class
+    file: test_h2.py
+    range:
+      start_line: 8
+      start_col: 0
+      end_line: 12
+      end_col: 0
+    fingerprint: 4dbd64af9ba079765ea159fc167d841d698fea3a8df5742af0bb7894d8ed0bd2
+  - qualified: test_h2.ClassB
+    kind: class
+    file: test_h2.py
+    range:
+      start_line: 14
+      start_col: 0
+      end_line: 16
+      end_col: 0
+    fingerprint: c60fe0d6b38058333cbadb1016a8d894526e565db9ef56262a3ba2694e19bc72
+  - qualified: test_h2.Session
+    kind: class
+    file: test_h2.py
+    range:
+      start_line: 18
+      start_col: 0
+      end_line: 21
+      end_col: 0
+    fingerprint: 11f1bcbc8e5f53b05f3f129d5fa5a82549bb3b76030ba62a72f4d0fa2edac142
+  - qualified: test_h2.TestBasic
+    kind: class
+    file: test_h2.py
+    range:
+      start_line: 24
+      start_col: 0
+      end_line: 29
+      end_col: 0
+    fingerprint: 554d83c8a795377c4cbe4a76fc02e4f19365999420abf7a52523366122aa8566
+  - qualified: test_h2.TestMultipleAttrs
+    kind: class
+    file: test_h2.py
+    range:
+      start_line: 32
+      start_col: 0
+      end_line: 44
+      end_col: 0
+    fingerprint: 9fa530c5d9741f813f3ed7d8cac7d5744fdfe7d8eefe34b989e7ea107b6ce3a5
+  - qualified: test_h2.TestReassignment
+    kind: class
+    file: test_h2.py
+    range:
+      start_line: 47
+      start_col: 0
+      end_line: 53
+      end_col: 0
+    fingerprint: 372ea6dbb1963eae16a6bafc28996ae2a2c5cfd0436e65bdfbfc2a4c10d5f4a1
+  - qualified: test_h2.TestAnnotated
+    kind: class
+    file: test_h2.py
+    range:
+      start_line: 56
+      start_col: 0
+      end_line: 61
+      end_col: 0
+    fingerprint: 2c12fc463aa155bac039b9bbe976cbba4b67451023767eff3428a4f5d8c01b7c
+  - qualified: test_h2.TestNotInInit
+    kind: class
+    file: test_h2.py
+    range:
+      start_line: 66
+      start_col: 0
+      end_line: 71
+      end_col: 0
+    fingerprint: 10b5d5ce6c5981fd1cb989abf5cce51e1d2d5648b1ad6b49a272cc0541ce91d8
+  - qualified: test_h2.TestFactoryInInit
+    kind: class
+    file: test_h2.py
+    range:
+      start_line: 74
+      start_col: 0
+      end_line: 82
+      end_col: 0
+    fingerprint: 53391cf9d4b311ad5ba39c42157560cb80a8cf2561f8f226bd04bb40c48717ef
+  - qualified: test_h2.TestUnknownClass
+    kind: class
+    file: test_h2.py
+    range:
+      start_line: 85
+      start_col: 0
+      end_line: 90
+      end_col: 0
+    fingerprint: daa1815ba0ce466eed1b3a3b45836d27b308b56aacf501197ead20ac7410d50b
+  - qualified: test_h2.TestNoInit
+    kind: class
+    file: test_h2.py
+    range:
+      start_line: 93
+      start_col: 0
+      end_line: 95
+      end_col: 0
+    fingerprint: 815f0ebbd56b9e840ae4897b052efa3ef45263a7197b7f678f5e8899ed82d2e2

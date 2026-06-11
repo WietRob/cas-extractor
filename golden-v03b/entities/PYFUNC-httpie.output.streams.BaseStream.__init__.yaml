@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.streams.BaseStream.__init__
+kind: entity
+type: py.function
+name: __init__
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/streams.py
+anchors:
+- type: symbol
+  value: httpie.output.streams.BaseStream.__init__
+- type: fingerprint
+  value: 0002a14dfe95f28434cbd86f6ecec6fb3ca05fde7bfb2645aaa1f37b03b97a8e
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.streams.BaseStream

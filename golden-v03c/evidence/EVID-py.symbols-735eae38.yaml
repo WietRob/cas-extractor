@@ -1,0 +1,120 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-735eae38
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T17:44:04.449625+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.test_exit_status
+    kind: module
+    file: tests/test_exit_status.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 74
+      end_col: 0
+    fingerprint: 3bfd288ab62056db4d25cbf5df4e5bef23d66db06e88822d1ee99d3e3a9a8418
+  - qualified: tests.test_exit_status.test_keyboard_interrupt_during_arg_parsing_exit_status
+    kind: function
+    file: tests/test_exit_status.py
+    range:
+      start_line: 7
+      start_col: 0
+      end_line: 11
+      end_col: 0
+    fingerprint: 314e6fd2762bbec4c238e9d36f97372bf25805de8946fd75bf3a7b4b15ad1e74
+    params:
+    - name: httpbin
+  - qualified: tests.test_exit_status.test_keyboard_interrupt_in_program_exit_status
+    kind: function
+    file: tests/test_exit_status.py
+    range:
+      start_line: 14
+      start_col: 0
+      end_line: 18
+      end_col: 0
+    fingerprint: 2f5e0cf71b8a95ac0627395492e7a3d2d19f996d093b98504a8185230ae0fca0
+    params:
+    - name: httpbin
+  - qualified: tests.test_exit_status.test_ok_response_exits_0
+    kind: function
+    file: tests/test_exit_status.py
+    range:
+      start_line: 21
+      start_col: 0
+      end_line: 24
+      end_col: 0
+    fingerprint: e0c2b6850b080f2436658de8d83839593e2f0aa7611477d3659a65c5f1f2c180
+    params:
+    - name: httpbin
+  - qualified: tests.test_exit_status.test_error_response_exits_0_without_check_status
+    kind: function
+    file: tests/test_exit_status.py
+    range:
+      start_line: 27
+      start_col: 0
+      end_line: 31
+      end_col: 0
+    fingerprint: a34a1d5288ea9bf2648287c607d37434cdf9c4f0a85e7945a51f6e9404271d55
+    params:
+    - name: httpbin
+  - qualified: tests.test_exit_status.test_timeout_exit_status
+    kind: function
+    file: tests/test_exit_status.py
+    range:
+      start_line: 34
+      start_col: 0
+      end_line: 38
+      end_col: 0
+    fingerprint: 650aa6e3bcf7bb3f04acb860c026046c613d91a4b589a12ffb61e69db521ada7
+    params:
+    - name: httpbin
+  - qualified: tests.test_exit_status.test_3xx_check_status_exits_3_and_stderr_when_stdout_redirected
+    kind: function
+    file: tests/test_exit_status.py
+    range:
+      start_line: 41
+      start_col: 0
+      end_line: 49
+      end_col: 0
+    fingerprint: df3026fddf84d4a5ad9e30e3b64b971c657f3e53330b2b5a83198158121842e5
+    params:
+    - name: httpbin
+  - qualified: tests.test_exit_status.test_3xx_check_status_redirects_allowed_exits_0
+    kind: function
+    file: tests/test_exit_status.py
+    range:
+      start_line: 52
+      start_col: 0
+      end_line: 58
+      end_col: 0
+    fingerprint: 8e2a6b67e025dc6a3d1a31a313eedf95430c555c3bd757266e4673bff90efc47
+    params:
+    - name: httpbin
+  - qualified: tests.test_exit_status.test_4xx_check_status_exits_4
+    kind: function
+    file: tests/test_exit_status.py
+    range:
+      start_line: 61
+      start_col: 0
+      end_line: 67
+      end_col: 0
+    fingerprint: 4ba659ec7208a8a8bd41cbe595e521e1bba11e14cf7e530f0400d45de66cfe11
+    params:
+    - name: httpbin
+  - qualified: tests.test_exit_status.test_5xx_check_status_exits_5
+    kind: function
+    file: tests/test_exit_status.py
+    range:
+      start_line: 70
+      start_col: 0
+      end_line: 74
+      end_col: 0
+    fingerprint: 583154a4443bcfece6eb7595e4cb5664fb2b8997204f1811087d1b499ed53d33
+    params:
+    - name: httpbin

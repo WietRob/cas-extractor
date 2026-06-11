@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.ui.man_pages.is_available
+kind: entity
+type: py.function
+name: is_available
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/output/ui/man_pages.py
+anchors:
+- type: symbol
+  value: httpie.output.ui.man_pages.is_available
+- type: fingerprint
+  value: 5ecbe90ed6ab21052b0c1f27d9f37690d85d88762b3705dc495705f4eebae0f7
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.ui.man_pages

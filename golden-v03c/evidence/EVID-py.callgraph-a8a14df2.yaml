@@ -1,0 +1,24 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-a8a14df2
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T17:44:05.372566+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: os.terminal_size
+  - symbol: tests.test_cli_ui.ignore_terminal_size.fake_terminal_size
+  edges:
+  - from: tests.test_cli_ui.ignore_terminal_size.fake_terminal_size
+    to: os.terminal_size
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 47
+      start_col: 0
+      end_line: 47
+      end_col: 0

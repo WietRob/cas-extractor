@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_stream.SortJSONConverterPlugin.supports
+kind: entity
+type: py.function
+name: supports
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_stream.py
+anchors:
+- type: symbol
+  value: tests.test_stream.SortJSONConverterPlugin.supports
+- type: fingerprint
+  value: 4b4a102a196d7013f0a7450a7c24dbf450752aea62f94998bc1e3d89a7dbcecd
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_stream.SortJSONConverterPlugin

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-docs.installation.generate.clean_template_output
+kind: entity
+type: py.function
+name: clean_template_output
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: docs/installation/generate.py
+anchors:
+- type: symbol
+  value: docs.installation.generate.clean_template_output
+- type: fingerprint
+  value: 00f6d4ab0aca1afecd097dac755cd1194f341c9b37ad2ba1635ed76fa4cb5354
+  algo: sha256
+claims: []
+relations: []
+namespace: docs.installation.generate

@@ -1,0 +1,43 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-936a0acb
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:51:32.160459+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.cli.nested_json.tokens.Path.__init__
+    kind: method
+    file: httpie/cli/nested_json/tokens.py
+    range:
+      start_line: 56
+      start_col: 0
+      end_line: 66
+      end_col: 0
+    fingerprint: 8f2dbba3a433d909e3f9e49115f246b616826fafb8b6b5aef49041616c327548
+    params:
+    - name: self
+    - name: kind
+      annotation: PathAction
+    - name: accessor
+      annotation: Optional[Union[str, int]]
+    - name: tokens
+      annotation: Optional[List[Token]]
+    - name: is_root
+      annotation: bool
+  - qualified: httpie.cli.nested_json.tokens.Path.reconstruct
+    kind: method
+    file: httpie/cli/nested_json/tokens.py
+    range:
+      start_line: 68
+      start_col: 0
+      end_line: 76
+      end_col: 0
+    fingerprint: 070a7946baeed440ecff79de32ecf32353824e9753687426ffcf41f8afd338e0
+    params:
+    - name: self
+    returns: str

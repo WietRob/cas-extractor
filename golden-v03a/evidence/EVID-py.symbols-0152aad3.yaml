@@ -1,0 +1,79 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-0152aad3
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:53.093942+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: tests.test_cli.TestArgumentParser.setup_method
+    kind: method
+    file: tests/test_cli.py
+    range:
+      start_line: 241
+      start_col: 0
+      end_line: 242
+      end_col: 0
+    fingerprint: 0f5a191a3018cad4fac5a11c4a988f42aee6714e10f80ab4c5c80ea0498972e7
+    params:
+    - name: self
+    - name: method
+  - qualified: tests.test_cli.TestArgumentParser.test_guess_when_method_set_and_valid
+    kind: method
+    file: tests/test_cli.py
+    range:
+      start_line: 244
+      start_col: 0
+      end_line: 254
+      end_col: 0
+    fingerprint: 4e92af893308551394523229ee0658f935bc32dd8e8557156559a46a0585f018
+    params:
+    - name: self
+  - qualified: tests.test_cli.TestArgumentParser.test_guess_when_method_not_set
+    kind: method
+    file: tests/test_cli.py
+    range:
+      start_line: 256
+      start_col: 0
+      end_line: 266
+      end_col: 0
+    fingerprint: 7b88f6cc68f43564b411a1bbc090b7a850d6811e7ef2b71cd275323df79fedb2
+    params:
+    - name: self
+  - qualified: tests.test_cli.TestArgumentParser.test_guess_when_method_set_but_invalid_and_data_field
+    kind: method
+    file: tests/test_cli.py
+    range:
+      start_line: 268
+      start_col: 0
+      end_line: 283
+      end_col: 0
+    fingerprint: b1b1ac69a5e0987876def03f85c5e6041a99facb548b5b368b04b73a8252fc12
+    params:
+    - name: self
+  - qualified: tests.test_cli.TestArgumentParser.test_guess_when_method_set_but_invalid_and_header_field
+    kind: method
+    file: tests/test_cli.py
+    range:
+      start_line: 285
+      start_col: 0
+      end_line: 300
+      end_col: 0
+    fingerprint: 6dc23b1e3e679d9fccaa81cf2e4f3ca6375e24f16b44456e041865311b3f1ef0
+    params:
+    - name: self
+  - qualified: tests.test_cli.TestArgumentParser.test_guess_when_method_set_but_invalid_and_item_exists
+    kind: method
+    file: tests/test_cli.py
+    range:
+      start_line: 302
+      start_col: 0
+      end_line: 317
+      end_col: 0
+    fingerprint: 469a54949e47e176b5fb38a0c392a09738ab65bd207a69dd3723cd774c53e353
+    params:
+    - name: self

@@ -1,0 +1,30 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-133c8eb8
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:35:57.402154+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+payload:
+  symbols:
+  - qualified: validate
+    kind: module
+    file: validate.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 85
+      end_col: 0
+    fingerprint: 54fdcc1d4bade5254673f532579242632b35159ebc435966ba61423424123fb0
+  - qualified: validate.main
+    kind: function
+    file: validate.py
+    range:
+      start_line: 22
+      start_col: 0
+      end_line: 81
+      end_col: 0
+    fingerprint: d0f0a58c4cf5e075377b6e08264d47eb1e8a63312d74b31a61351668b396b2b3

@@ -1,0 +1,9 @@
+=== T12: v0.3c Coverage Mode Metrics ===
+Source: golden-v03c/evidence
+
+Total edges: 2899
+method_call: 208
+super_call: 8
+call: 2683
+Unresolved: 1004
+H2 unresolved: 142

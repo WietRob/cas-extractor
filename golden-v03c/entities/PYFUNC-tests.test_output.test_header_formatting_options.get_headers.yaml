@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_output.test_header_formatting_options.get_headers
+kind: entity
+type: py.function
+name: get_headers
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_output.py
+anchors:
+- type: symbol
+  value: tests.test_output.test_header_formatting_options.get_headers
+- type: fingerprint
+  value: 537bc23ab5c4e164785bcfa3fa7986f5a7447c4cd1cc0ba3570dbfdd14c89264
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_output.test_header_formatting_options

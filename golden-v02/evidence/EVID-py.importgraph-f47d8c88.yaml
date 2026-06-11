@@ -1,0 +1,19 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-f47d8c88
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-21T11:51:32.930595+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  imports:
+  - from: tests.utils.matching.parsing
+    imports:
+    - re
+    - typing.Iterable
+    - httpie.output.writer.MESSAGE_SEPARATOR
+    - tests.utils.matching.tokens.Expect
+    - tests.utils.CRLF

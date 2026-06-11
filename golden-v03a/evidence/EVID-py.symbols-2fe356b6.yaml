@@ -1,0 +1,123 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-2fe356b6
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:53.136226+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: tests.test_httpie_cli
+    kind: module
+    file: tests/test_httpie_cli.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 138
+      end_col: 0
+    fingerprint: b221413d6cd694638d0b306c5639a6422b7f89bb1892085c52e8441bfcea44fc
+  - qualified: tests.test_httpie_cli.test_plugins_cli_error_message_without_args
+    kind: function
+    file: tests/test_httpie_cli.py
+    range:
+      start_line: 15
+      start_col: 0
+      end_line: 21
+      end_col: 0
+    fingerprint: c591361337a4c6e852fceefa4f5cb6ed8c9b77ddbc8298749660507d0b09af8c
+    decorators:
+    - pytest.mark.requires_installation
+  - qualified: tests.test_httpie_cli.test_plugins_cli_error_messages_with_example
+    kind: function
+    file: tests/test_httpie_cli.py
+    range:
+      start_line: 33
+      start_col: 0
+      end_line: 38
+      end_col: 0
+    fingerprint: 29707c4f64b6f8cb3edbf6f4081be8529177e75a066fa2f488604fc681397471
+    decorators:
+    - pytest.mark.parametrize('example', ['pie.dev/get', 'DELETE localhost:8000/delete',
+      'POST pie.dev/post header:value a=b header_2:value x:=1'])
+    - pytest.mark.requires_installation
+    params:
+    - name: example
+  - qualified: tests.test_httpie_cli.test_plugins_cli_error_messages_invalid_example
+    kind: function
+    file: tests/test_httpie_cli.py
+    range:
+      start_line: 53
+      start_col: 0
+      end_line: 58
+      end_col: 0
+    fingerprint: cc42237461fbdcea19497dcf218b8cf8645a0a9798f6655c16e0154c29e2684f
+    decorators:
+    - pytest.mark.parametrize('example', ['cli', 'plugins', 'cli foo', 'plugins unknown',
+      'plugins unknown.com A:B c=d', 'unknown.com UNPARSABLE????SYNTAX'])
+    - pytest.mark.requires_installation
+    params:
+    - name: example
+  - qualified: tests.test_httpie_cli.test_httpie_sessions_upgrade
+    kind: function
+    file: tests/test_httpie_cli.py
+    range:
+      start_line: 82
+      start_col: 0
+      end_line: 92
+      end_col: 0
+    fingerprint: 4ba9c8869d0fc70da6066e352a15568490dc3774e1623833bf11cd56a2b9450a
+    decorators:
+    - pytest.mark.parametrize('old_session_file, new_session_file', zip(SESSION_FILES_OLD,
+      SESSION_FILES_NEW))
+    - pytest.mark.parametrize('extra_args, extra_variables', HTTPIE_CLI_SESSIONS_UPGRADE_OPTIONS)
+    params:
+    - name: tmp_path
+    - name: old_session_file
+    - name: new_session_file
+    - name: extra_args
+    - name: extra_variables
+  - qualified: tests.test_httpie_cli.test_httpie_sessions_upgrade_on_non_existent_file
+    kind: function
+    file: tests/test_httpie_cli.py
+    range:
+      start_line: 95
+      start_col: 0
+      end_line: 99
+      end_col: 0
+    fingerprint: 0c10920f4f8b3918981a4d8592d68c10eb56eb4ff153ee5f9682096e24ad1400
+    params:
+    - name: tmp_path
+  - qualified: tests.test_httpie_cli.test_httpie_sessions_upgrade_all
+    kind: function
+    file: tests/test_httpie_cli.py
+    range:
+      start_line: 106
+      start_col: 0
+      end_line: 126
+      end_col: 0
+    fingerprint: 414e5fa3cbd174278aad9d15b5f456ff8785a2ce8068f79aa6130484500fa5ca
+    decorators:
+    - pytest.mark.parametrize('extra_args, extra_variables', HTTPIE_CLI_SESSIONS_UPGRADE_OPTIONS)
+    params:
+    - name: tmp_path
+    - name: mock_env
+    - name: extra_args
+    - name: extra_variables
+  - qualified: tests.test_httpie_cli.test_cli_export
+    kind: function
+    file: tests/test_httpie_cli.py
+    range:
+      start_line: 135
+      start_col: 0
+      end_line: 138
+      end_col: 0
+    fingerprint: e4b3a030940c31d229b67bcf028eacaa4b8e9d31cfb6f3d2dc935119d5770be7
+    decorators:
+    - pytest.mark.parametrize('load_func, extra_options', [(json.loads, []), (json.loads,
+      ['--format=json'])])
+    params:
+    - name: load_func
+    - name: extra_options

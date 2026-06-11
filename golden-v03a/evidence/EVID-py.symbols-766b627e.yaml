@@ -1,0 +1,43 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-766b627e
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:53.020692+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.output.lexers.metadata
+    kind: module
+    file: httpie/output/lexers/metadata.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 59
+      end_col: 0
+    fingerprint: b4d53bc5cd5254d67ee05e17fb6eaacf66c484e7685dd35b16ea23449cb77d18
+  - qualified: httpie.output.lexers.metadata.speed_based_token
+    kind: function
+    file: httpie/output/lexers/metadata.py
+    range:
+      start_line: 13
+      start_col: 0
+      end_line: 30
+      end_col: 0
+    fingerprint: 384ccff1837f7562c4fd995eb34b45f1f0775a80a6cc508a8c318141d0cb8e1f
+    params:
+    - name: lexer
+    - name: match
+    - name: ctx
+  - qualified: httpie.output.lexers.metadata.MetadataLexer
+    kind: class
+    file: httpie/output/lexers/metadata.py
+    range:
+      start_line: 33
+      start_col: 0
+      end_line: 59
+      end_col: 0
+    fingerprint: 3b6c3285557f03469c50fe0b7a178b6f2556a3e1baa77fbea6d216a4ff8ec31a

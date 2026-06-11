@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-pipeline_timer.StageTimer.stage
+kind: entity
+type: py.function
+name: stage
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: pipeline_timer.py
+anchors:
+- type: symbol
+  value: pipeline_timer.StageTimer.stage
+- type: fingerprint
+  value: 0dcfd30b01dbc8b4452957fe70eaf2c93f63cded6f73440aff754fb503b5beff
+  algo: sha256
+claims: []
+relations: []
+namespace: pipeline_timer.StageTimer

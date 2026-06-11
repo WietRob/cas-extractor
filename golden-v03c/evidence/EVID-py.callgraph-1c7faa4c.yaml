@@ -1,0 +1,179 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-1c7faa4c
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T17:44:05.423276+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.msg.rstrip
+  - symbol: ?.output_filename.read_text
+  - symbol: responses.add
+  - symbol: tests.test_output.test_ensure_contents_colored
+  - symbol: tests.test_output.test_ensure_meta_is_colored
+  - symbol: tests.test_output.test_ensure_status_code_is_shown_on_all_themes
+  - symbol: tests.test_output.test_output_option
+  - symbol: tests.test_output.test_response_mime_overwrite
+  - symbol: tests.test_output.test_response_mime_overwrite_incorrect
+  - symbol: urllib.request.urlopen
+  - symbol: utils.MockEnvironment
+  - symbol: utils.http
+  - symbol: utils.strip_colors
+  edges:
+  - from: tests.test_output.test_output_option
+    to: utils.http
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 37
+      start_col: 0
+      end_line: 38
+      end_col: 0
+  - from: tests.test_output.test_output_option
+    to: ?.output_filename.read_text
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 42
+      start_col: 0
+      end_line: 42
+      end_col: 0
+  - from: tests.test_output.test_ensure_contents_colored
+    to: utils.MockEnvironment
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 258
+      start_col: 0
+      end_line: 258
+      end_col: 0
+  - from: tests.test_output.test_ensure_contents_colored
+    to: utils.http
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 259
+      start_col: 0
+      end_line: 259
+      end_col: 0
+  - from: tests.test_output.test_ensure_meta_is_colored
+    to: utils.MockEnvironment
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 265
+      start_col: 0
+      end_line: 265
+      end_col: 0
+  - from: tests.test_output.test_ensure_meta_is_colored
+    to: utils.http
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 266
+      start_col: 0
+      end_line: 266
+      end_col: 0
+  - from: tests.test_output.test_ensure_status_code_is_shown_on_all_themes
+    to: utils.MockEnvironment
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 279
+      start_col: 0
+      end_line: 279
+      end_col: 0
+  - from: tests.test_output.test_ensure_status_code_is_shown_on_all_themes
+    to: utils.http
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 280
+      start_col: 0
+      end_line: 282
+      end_col: 0
+  - from: tests.test_output.test_response_mime_overwrite
+    to: responses.add
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 604
+      start_col: 0
+      end_line: 609
+      end_col: 0
+  - from: tests.test_output.test_response_mime_overwrite
+    to: utils.http
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 610
+      start_col: 0
+      end_line: 614
+      end_col: 0
+  - from: tests.test_output.test_response_mime_overwrite
+    to: utils.http
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 617
+      start_col: 0
+      end_line: 617
+      end_col: 0
+  - from: tests.test_output.test_response_mime_overwrite_incorrect
+    to: responses.add
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 623
+      start_col: 0
+      end_line: 628
+      end_col: 0
+  - from: tests.test_output.test_response_mime_overwrite_incorrect
+    to: utils.http
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 630
+      start_col: 0
+      end_line: 630
+      end_col: 0
+  - from: tests.test_output.test_ensure_status_code_is_shown_on_all_themes
+    to: utils.strip_colors
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 285
+      start_col: 0
+      end_line: 285
+      end_col: 0
+  - from: tests.test_output.test_output_option
+    to: utils.MockEnvironment
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 38
+      start_col: 0
+      end_line: 38
+      end_col: 0
+  - from: tests.test_output.test_ensure_status_code_is_shown_on_all_themes
+    to: ?.msg.rstrip
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 285
+      start_col: 0
+      end_line: 285
+      end_col: 0
+  - from: tests.test_output.test_output_option
+    to: urllib.request.urlopen
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 41
+      start_col: 0
+      end_line: 41
+      end_col: 0

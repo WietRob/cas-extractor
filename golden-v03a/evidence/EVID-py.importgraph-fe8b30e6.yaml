@@ -1,0 +1,28 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-fe8b30e6
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-21T12:13:53.307492+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  imports:
+  - from: docs.contributors.fetch
+    imports:
+    - json
+    - os
+    - re
+    - sys
+    - copy.deepcopy
+    - datetime.datetime
+    - pathlib.Path
+    - subprocess.check_output
+    - time.sleep
+    - typing.Any
+    - typing.Dict
+    - typing.Optional
+    - typing.Set
+    - requests

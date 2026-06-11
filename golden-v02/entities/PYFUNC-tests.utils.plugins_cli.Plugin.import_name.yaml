@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.utils.plugins_cli.Plugin.import_name
+kind: entity
+type: py.function
+name: import_name
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/utils/plugins_cli.py
+anchors:
+- type: symbol
+  value: tests.utils.plugins_cli.Plugin.import_name
+- type: fingerprint
+  value: 4998c812844037f1c5f69786b8825768581f818f7f2b3ebec4a41b735e25b580
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils.plugins_cli.Plugin

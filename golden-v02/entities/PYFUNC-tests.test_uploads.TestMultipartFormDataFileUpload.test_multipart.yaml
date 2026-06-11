@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_uploads.TestMultipartFormDataFileUpload.test_multipart
+kind: entity
+type: py.function
+name: test_multipart
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_uploads.py
+anchors:
+- type: symbol
+  value: tests.test_uploads.TestMultipartFormDataFileUpload.test_multipart
+- type: fingerprint
+  value: 7df9a43a20f8d567c4c10ad765408a11195c6ac921af99e459a8d69ab23a5c15
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_uploads.TestMultipartFormDataFileUpload

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.argparser.HTTPieArgumentParser._process_ssl_cert
+kind: entity
+type: py.function
+name: _process_ssl_cert
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/argparser.py
+anchors:
+- type: symbol
+  value: httpie.cli.argparser.HTTPieArgumentParser._process_ssl_cert
+- type: fingerprint
+  value: 477777d2e4910bcd5f5e093016b2e00fe369182d90c7728e7a14d91fb38bb30b
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.argparser.HTTPieArgumentParser

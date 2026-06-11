@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.utils.plugins_cli.Interface.make_dummy_plugin
+kind: entity
+type: py.function
+name: make_dummy_plugin
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/utils/plugins_cli.py
+anchors:
+- type: symbol
+  value: tests.utils.plugins_cli.Interface.make_dummy_plugin
+- type: fingerprint
+  value: 1d0334ffadf3a04bf80efbdcd5888090ab8ac5a46ba44fa635fb173300ac39b1
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils.plugins_cli.Interface

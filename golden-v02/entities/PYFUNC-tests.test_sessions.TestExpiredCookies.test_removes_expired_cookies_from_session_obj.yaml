@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_sessions.TestExpiredCookies.test_removes_expired_cookies_from_session_obj
+kind: entity
+type: py.function
+name: test_removes_expired_cookies_from_session_obj
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_sessions.py
+anchors:
+- type: symbol
+  value: tests.test_sessions.TestExpiredCookies.test_removes_expired_cookies_from_session_obj
+- type: fingerprint
+  value: 37b69b0734f0f4300c18c8ddabc70c174464ce541dacd091ceefa88fa5129d29
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_sessions.TestExpiredCookies

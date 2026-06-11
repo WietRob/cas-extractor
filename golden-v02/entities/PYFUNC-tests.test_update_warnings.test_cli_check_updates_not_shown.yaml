@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_update_warnings.test_cli_check_updates_not_shown
+kind: entity
+type: py.function
+name: test_cli_check_updates_not_shown
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_update_warnings.py
+anchors:
+- type: symbol
+  value: tests.test_update_warnings.test_cli_check_updates_not_shown
+- type: fingerprint
+  value: 7c64bc7474e85109cf305e619fc37d87d01444e41dd5fa6b506cdb33275a710a
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_update_warnings

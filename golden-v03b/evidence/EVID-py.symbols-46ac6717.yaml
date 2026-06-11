@@ -1,0 +1,73 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-46ac6717
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:54.992457+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.internal.daemon_runner
+    kind: module
+    file: httpie/internal/daemon_runner.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 50
+      end_col: 0
+    fingerprint: 0da1c0dc75eb547c7bf9b4994dc40cb6a35e1ccaabebeedbf9c780a1bfa98349
+  - qualified: httpie.internal.daemon_runner._check_status
+    kind: function
+    file: httpie/internal/daemon_runner.py
+    range:
+      start_line: 12
+      start_col: 0
+      end_line: 21
+      end_col: 0
+    fingerprint: 3dc1afa5b03b5c329b9f88497c7bcb6c3c6cc917503862df9c9f7b293f708f62
+    params:
+    - name: env
+  - qualified: httpie.internal.daemon_runner._parse_options
+    kind: function
+    file: httpie/internal/daemon_runner.py
+    range:
+      start_line: 30
+      start_col: 0
+      end_line: 34
+      end_col: 0
+    fingerprint: 3c9feacdde424e0149a0ca3154480fb2dca15e6e286d42802c84f9a6d92a3379
+    params:
+    - name: args
+      annotation: List[str]
+    returns: argparse.Namespace
+  - qualified: httpie.internal.daemon_runner.is_daemon_mode
+    kind: function
+    file: httpie/internal/daemon_runner.py
+    range:
+      start_line: 37
+      start_col: 0
+      end_line: 38
+      end_col: 0
+    fingerprint: a6b763e99c49570209d05851ee4d5d08e8e5d3aa66491acf5affc3ef97eb0e7f
+    params:
+    - name: args
+      annotation: List[str]
+    returns: bool
+  - qualified: httpie.internal.daemon_runner.run_daemon_task
+    kind: function
+    file: httpie/internal/daemon_runner.py
+    range:
+      start_line: 41
+      start_col: 0
+      end_line: 50
+      end_col: 0
+    fingerprint: a2570d632694501d2d1d88ef33707b9c0501c3d93cf6e1abc2d5691641146d29
+    params:
+    - name: env
+      annotation: Environment
+    - name: args
+      annotation: List[str]
+    returns: ExitStatus

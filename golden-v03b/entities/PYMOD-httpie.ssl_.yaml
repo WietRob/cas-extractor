@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.ssl_
+kind: entity
+type: py.module
+name: ssl_
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/ssl_.py
+anchors:
+- type: symbol
+  value: httpie.ssl_
+- type: fingerprint
+  value: 1420dbf731225829ed70295685fb670933d8cbfa96b041f78aa4147452cfb5bd
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie

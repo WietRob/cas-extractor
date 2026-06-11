@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.sessions.session_hostname_to_dirname
+kind: entity
+type: py.function
+name: session_hostname_to_dirname
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/sessions.py
+anchors:
+- type: symbol
+  value: httpie.sessions.session_hostname_to_dirname
+- type: fingerprint
+  value: 35dc0143293a1c64c2888501ef34f4153f9f87449168e6442ac08c398d91cdf1
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.sessions

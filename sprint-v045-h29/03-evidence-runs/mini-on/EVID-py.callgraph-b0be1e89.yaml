@@ -1,0 +1,47 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-b0be1e89
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-23T17:19:36.847922+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://h28-test
+  root: /tmp/h28-verify
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.self.client.send
+  - symbol: test_h28.HTTPClient
+  - symbol: test_h28.TestN7ClassmethodFactory.create
+  - symbol: test_h28.TestN7ClassmethodFactory.run
+  edges:
+  - from: test_h28.TestN7ClassmethodFactory.create
+    to: test_h28.HTTPClient
+    kind: call
+    edge_id: 0
+    resolution_source: module-level
+    range:
+      start_line: 255
+      start_col: 0
+      end_line: 255
+      end_col: 0
+  - from: test_h28.TestN7ClassmethodFactory.run
+    to: test_h28.TestN7ClassmethodFactory.create
+    kind: method_call
+    edge_id: 1
+    resolution_source: self.method
+    range:
+      start_line: 258
+      start_col: 0
+      end_line: 258
+      end_col: 0
+  - from: test_h28.TestN7ClassmethodFactory.run
+    to: ?.self.client.send
+    kind: call
+    edge_id: 2
+    resolution_source: unresolved
+    range:
+      start_line: 259
+      start_col: 0
+      end_line: 259
+      end_col: 0

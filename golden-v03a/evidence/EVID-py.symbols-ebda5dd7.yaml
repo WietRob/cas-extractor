@@ -1,0 +1,30 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-ebda5dd7
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:52.923585+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.adapters
+    kind: module
+    file: httpie/adapters.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 13
+      end_col: 0
+    fingerprint: 7a85565c332fa56c5bbf66dfa5d100189dd3cf2bd38e54070b9cf24a2022f2ca
+  - qualified: httpie.adapters.HTTPieHTTPAdapter
+    kind: class
+    file: httpie/adapters.py
+    range:
+      start_line: 5
+      start_col: 0
+      end_line: 13
+      end_col: 0
+    fingerprint: 717c7a99cf14dacdced1ef8e6ee03438c20e0b79d81ee091807272055c08b5cd

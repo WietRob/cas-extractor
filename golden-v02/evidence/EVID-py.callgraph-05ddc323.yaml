@@ -1,0 +1,149 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-05ddc323
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:34.282384+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.r.strip
+  - symbol: tests.test_output.TestPrettyOptions.test_colors_option
+  - symbol: tests.test_output.TestPrettyOptions.test_force_pretty
+  - symbol: tests.test_output.TestPrettyOptions.test_force_ugly
+  - symbol: tests.test_output.TestPrettyOptions.test_format_option
+  - symbol: tests.test_output.TestPrettyOptions.test_pretty_enabled_by_default
+  - symbol: tests.test_output.TestPrettyOptions.test_pretty_enabled_by_default_unless_stdout_redirected
+  - symbol: tests.test_output.TestPrettyOptions.test_subtype_based_pygments_lexer_match
+  - symbol: utils.MockEnvironment
+  - symbol: utils.http
+  edges:
+  - from: tests.test_output.TestPrettyOptions.test_pretty_enabled_by_default
+    to: utils.MockEnvironment
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 292
+      start_col: 0
+      end_line: 292
+      end_col: 0
+  - from: tests.test_output.TestPrettyOptions.test_pretty_enabled_by_default
+    to: utils.http
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 293
+      start_col: 0
+      end_line: 293
+      end_col: 0
+  - from: tests.test_output.TestPrettyOptions.test_pretty_enabled_by_default_unless_stdout_redirected
+    to: utils.http
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 297
+      start_col: 0
+      end_line: 297
+      end_col: 0
+  - from: tests.test_output.TestPrettyOptions.test_force_pretty
+    to: utils.MockEnvironment
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 301
+      start_col: 0
+      end_line: 301
+      end_col: 0
+  - from: tests.test_output.TestPrettyOptions.test_force_pretty
+    to: utils.http
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 302
+      start_col: 0
+      end_line: 302
+      end_col: 0
+  - from: tests.test_output.TestPrettyOptions.test_force_ugly
+    to: utils.http
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 306
+      start_col: 0
+      end_line: 306
+      end_col: 0
+  - from: tests.test_output.TestPrettyOptions.test_subtype_based_pygments_lexer_match
+    to: utils.MockEnvironment
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 314
+      start_col: 0
+      end_line: 314
+      end_col: 0
+  - from: tests.test_output.TestPrettyOptions.test_subtype_based_pygments_lexer_match
+    to: utils.http
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 315
+      start_col: 0
+      end_line: 316
+      end_col: 0
+  - from: tests.test_output.TestPrettyOptions.test_colors_option
+    to: utils.MockEnvironment
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 320
+      start_col: 0
+      end_line: 320
+      end_col: 0
+  - from: tests.test_output.TestPrettyOptions.test_colors_option
+    to: utils.http
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 321
+      start_col: 0
+      end_line: 323
+      end_col: 0
+  - from: tests.test_output.TestPrettyOptions.test_format_option
+    to: utils.MockEnvironment
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 329
+      start_col: 0
+      end_line: 329
+      end_col: 0
+  - from: tests.test_output.TestPrettyOptions.test_format_option
+    to: utils.http
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 330
+      start_col: 0
+      end_line: 332
+      end_col: 0
+  - from: tests.test_output.TestPrettyOptions.test_colors_option
+    to: ?.r.strip
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 325
+      start_col: 0
+      end_line: 325
+      end_col: 0
+  - from: tests.test_output.TestPrettyOptions.test_format_option
+    to: ?.r.strip
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 334
+      start_col: 0
+      end_line: 334
+      end_col: 0

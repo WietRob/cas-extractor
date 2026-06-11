@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_output.TestColors.test_get_lexer
+kind: entity
+type: py.function
+name: test_get_lexer
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_output.py
+anchors:
+- type: symbol
+  value: tests.test_output.TestColors.test_get_lexer
+- type: fingerprint
+  value: 93a1d2e708794afa7d61ead0e73637d825d7434c4c2061e09aded4ed0c68b9c3
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_output.TestColors

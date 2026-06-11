@@ -1,0 +1,41 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-17a5a3d2
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-21T12:13:53.330232+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  imports:
+  - from: httpie.output.writer
+    imports:
+    - errno
+    - requests
+    - typing.Any
+    - typing.Dict
+    - typing.IO
+    - typing.Optional
+    - typing.TextIO
+    - typing.Tuple
+    - typing.Type
+    - typing.Union
+    - httpie.cli.dicts.HTTPHeadersDict
+    - httpie.context.Environment
+    - httpie.models.HTTPRequest
+    - httpie.models.HTTPResponse
+    - httpie.models.HTTPMessage
+    - httpie.models.RequestsMessage
+    - httpie.models.RequestsMessageKind
+    - httpie.models.OutputOptions
+    - httpie.output.models.ProcessingOptions
+    - httpie.output.processing.Conversion
+    - httpie.output.processing.Formatting
+    - httpie.output.streams.BaseStream
+    - httpie.output.streams.BufferedPrettyStream
+    - httpie.output.streams.EncodedStream
+    - httpie.output.streams.PrettyStream
+    - httpie.output.streams.RawStream
+    - httpie.utils.parse_content_type_header

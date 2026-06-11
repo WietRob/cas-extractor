@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.cookies.HTTPieCookiePolicy
+kind: entity
+type: py.class
+name: HTTPieCookiePolicy
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/cookies.py
+anchors:
+- type: symbol
+  value: httpie.cookies.HTTPieCookiePolicy
+- type: fingerprint
+  value: 858151d7d2f383b3a9a772cd83f0ba0274e62a3db8c2affec0576ff44490fb7a
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cookies

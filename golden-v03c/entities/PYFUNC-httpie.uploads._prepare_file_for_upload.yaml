@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.uploads._prepare_file_for_upload
+kind: entity
+type: py.function
+name: _prepare_file_for_upload
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/uploads.py
+anchors:
+- type: symbol
+  value: httpie.uploads._prepare_file_for_upload
+- type: fingerprint
+  value: db6f09149a2b7b4686bf452de5e3221b0356183c8e770d5e2c0237be507425c6
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.uploads

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-tests.utils.matching.parsing
+kind: entity
+type: py.module
+name: parsing
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/utils/matching/parsing.py
+anchors:
+- type: symbol
+  value: tests.utils.matching.parsing
+- type: fingerprint
+  value: a79518b9732f0831edbd70f9e99596b64eae9aa09f9ed519da075fba645ca3d1
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils.matching

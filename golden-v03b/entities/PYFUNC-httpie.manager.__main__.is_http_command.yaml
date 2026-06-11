@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.manager.__main__.is_http_command
+kind: entity
+type: py.function
+name: is_http_command
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/manager/__main__.py
+anchors:
+- type: symbol
+  value: httpie.manager.__main__.is_http_command
+- type: fingerprint
+  value: 38f7360333e5cfe3a178f79b8b3f4f664e75dc2c6382f34850b08e26122f8867
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.manager.__main__

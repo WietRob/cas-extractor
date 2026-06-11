@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.ui.rich_palette._GenericColorCaster.__getitem__
+kind: entity
+type: py.function
+name: __getitem__
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/output/ui/rich_palette.py
+anchors:
+- type: symbol
+  value: httpie.output.ui.rich_palette._GenericColorCaster.__getitem__
+- type: fingerprint
+  value: fed7d9e9c9ff08e99ee4ab996d71068667bbf0a662c1e5bef79b3885af7cbe7a
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.ui.rich_palette._GenericColorCaster

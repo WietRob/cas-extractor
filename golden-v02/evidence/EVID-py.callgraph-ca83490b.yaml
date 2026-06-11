@@ -1,0 +1,65 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-ca83490b
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:33.940931+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.INSECURE_COOKIE_JAR_WARNING.format
+  - symbol: ?.cookie.get
+  - symbol: ?.cookie.pop
+  - symbol: ?.cookies.items
+  - symbol: ?.session.warn_legacy_usage
+  - symbol: httpie.legacy.v3_1_0_session_cookie_format.post_process
+  - symbol: httpie.legacy.v3_1_0_session_cookie_format.pre_process
+  edges:
+  - from: httpie.legacy.v3_1_0_session_cookie_format.pre_process
+    to: ?.INSECURE_COOKIE_JAR_WARNING.format
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 58
+      start_col: 0
+      end_line: 58
+      end_col: 0
+  - from: httpie.legacy.v3_1_0_session_cookie_format.pre_process
+    to: ?.session.warn_legacy_usage
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 62
+      start_col: 0
+      end_line: 62
+      end_col: 0
+  - from: httpie.legacy.v3_1_0_session_cookie_format.post_process
+    to: ?.cookie.pop
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 77
+      start_col: 0
+      end_line: 77
+      end_col: 0
+  - from: httpie.legacy.v3_1_0_session_cookie_format.pre_process
+    to: ?.cookies.items
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 47
+      start_col: 0
+      end_line: 47
+      end_col: 0
+  - from: httpie.legacy.v3_1_0_session_cookie_format.pre_process
+    to: ?.cookie.get
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 53
+      start_col: 0
+      end_line: 53
+      end_col: 0

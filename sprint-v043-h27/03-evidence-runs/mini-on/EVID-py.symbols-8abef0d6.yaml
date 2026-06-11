@@ -1,0 +1,46 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-8abef0d6
+kind: evidence
+type: py.symbols
+created_at: '2026-02-23T07:07:57.426416+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: /tmp/h27-verify
+  revision: git:test
+payload:
+  symbols:
+  - qualified: test_h27.TestH27Conditional.init_client
+    kind: method
+    file: test_h27.py
+    range:
+      start_line: 201
+      start_col: 0
+      end_line: 203
+      end_col: 0
+    fingerprint: 9817da75e7b9edf4f1bd08c5f3711f37ea94480f4c030d3fb459b4836a28c6d0
+    params:
+    - name: self
+    - name: use_ws
+  - qualified: test_h27.TestH27Conditional.prepare
+    kind: method
+    file: test_h27.py
+    range:
+      start_line: 206
+      start_col: 0
+      end_line: 207
+      end_col: 0
+    fingerprint: d4f798ca1802ca0ff7e58322695e6bf58d9bfe9033dabdddec1ef435a6c4869b
+    params:
+    - name: self
+  - qualified: test_h27.TestH27Conditional.run
+    kind: method
+    file: test_h27.py
+    range:
+      start_line: 209
+      start_col: 0
+      end_line: 211
+      end_col: 0
+    fingerprint: 444e0feb64b2a1399aabcc84ad99c6b17f4f03bff5143648d201746c3b95544e
+    params:
+    - name: self

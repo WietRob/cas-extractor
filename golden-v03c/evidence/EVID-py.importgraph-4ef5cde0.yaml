@@ -1,0 +1,21 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-4ef5cde0
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-21T17:44:04.622869+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  imports:
+  - from: httpie.output.ui.rich_utils
+    imports:
+    - os
+    - typing.Iterator
+    - contextlib.contextmanager
+    - rich.console.Console
+    - rich.console.RenderableType
+    - rich.highlighter.Highlighter
+    - httpie.output.ui.rich_palette._make_rich_color_theme

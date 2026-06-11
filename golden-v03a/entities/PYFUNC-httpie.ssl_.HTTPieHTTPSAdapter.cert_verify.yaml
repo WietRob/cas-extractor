@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.ssl_.HTTPieHTTPSAdapter.cert_verify
+kind: entity
+type: py.function
+name: cert_verify
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/ssl_.py
+anchors:
+- type: symbol
+  value: httpie.ssl_.HTTPieHTTPSAdapter.cert_verify
+- type: fingerprint
+  value: 7a2960a9d503b3798d02b00adb163e1719d97e4eac697bf2962c0ac86fbb479e
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.ssl_.HTTPieHTTPSAdapter

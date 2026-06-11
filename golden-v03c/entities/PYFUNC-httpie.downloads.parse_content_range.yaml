@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.downloads.parse_content_range
+kind: entity
+type: py.function
+name: parse_content_range
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/downloads.py
+anchors:
+- type: symbol
+  value: httpie.downloads.parse_content_range
+- type: fingerprint
+  value: 8315453037f0825c38698cff266bbf8f9049053ad4bce653385ff1cfab02ffc1
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.downloads

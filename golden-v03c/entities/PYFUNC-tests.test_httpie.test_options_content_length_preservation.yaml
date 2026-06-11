@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_httpie.test_options_content_length_preservation
+kind: entity
+type: py.function
+name: test_options_content_length_preservation
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_httpie.py
+anchors:
+- type: symbol
+  value: tests.test_httpie.test_options_content_length_preservation
+- type: fingerprint
+  value: fed69fb84af62fa22cee51e4e4b9130aeb3fbf28103c3e1fc8f0f25cb883ec8e
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_httpie

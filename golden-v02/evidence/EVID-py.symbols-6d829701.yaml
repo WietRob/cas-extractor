@@ -1,0 +1,56 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-6d829701
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:51:32.541653+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: tests.test_regressions
+    kind: module
+    file: tests/test_regressions.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 49
+      end_col: 0
+    fingerprint: f4700934554f07605b23701d4338330986b051c2a0c079cfde24cd40c7024921
+  - qualified: tests.test_regressions.test_Host_header_overwrite
+    kind: function
+    file: tests/test_regressions.py
+    range:
+      start_line: 9
+      start_col: 0
+      end_line: 19
+      end_col: 0
+    fingerprint: 7d77bbf29a43b3da2e22ad956ffd3d4d3c391f51cebdbd6f74fdd228f059f086
+    params:
+    - name: httpbin
+  - qualified: tests.test_regressions.test_output_devnull
+    kind: function
+    file: tests/test_regressions.py
+    range:
+      start_line: 23
+      start_col: 0
+      end_line: 28
+      end_col: 0
+    fingerprint: 126d5239ed8ff93a0faa32f3c1f8716d2a4356712374bb843f869db167caa816
+    decorators:
+    - pytest.mark.skipif(is_windows, reason='Unix-only')
+    params:
+    - name: httpbin
+  - qualified: tests.test_regressions.test_verbose_redirected_stdout_separator
+    kind: function
+    file: tests/test_regressions.py
+    range:
+      start_line: 31
+      start_col: 0
+      end_line: 49
+      end_col: 0
+    fingerprint: a5e7e82a8df751a750fa8ff62a264c4c923165bf74c420f56d0f553a96a3edb8
+    params:
+    - name: httpbin

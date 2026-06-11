@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.ui.rich_progress.BaseDisplay.stop
+kind: entity
+type: py.function
+name: stop
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/ui/rich_progress.py
+anchors:
+- type: symbol
+  value: httpie.output.ui.rich_progress.BaseDisplay.stop
+- type: fingerprint
+  value: 3e8737a72a2ca4dfdc3275722c54fe82c550d91c4d4a5499394e544bd0464f39
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.ui.rich_progress.BaseDisplay

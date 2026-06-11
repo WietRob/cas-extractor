@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.utils.normalize_args
+kind: entity
+type: py.function
+name: normalize_args
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/utils/__init__.py
+anchors:
+- type: symbol
+  value: tests.utils.normalize_args
+- type: fingerprint
+  value: 071b26f83e8560ea574d33801814c202c5b90191f3f2209c6eb940bfa493ed0c
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils

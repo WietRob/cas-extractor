@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.plugins.manager.PluginManager.filter
+kind: entity
+type: py.function
+name: filter
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/plugins/manager.py
+anchors:
+- type: symbol
+  value: httpie.plugins.manager.PluginManager.filter
+- type: fingerprint
+  value: a75a46065165066212b4445db75955f200ee5b0f474377a54bb81b931fc005e7
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.plugins.manager.PluginManager

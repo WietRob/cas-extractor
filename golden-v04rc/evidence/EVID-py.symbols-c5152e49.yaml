@@ -1,0 +1,62 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-c5152e49
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T08:37:44.474847+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.models.HTTPRequest.iter_body
+    kind: method
+    file: httpie/models.py
+    range:
+      start_line: 133
+      start_col: 0
+      end_line: 134
+      end_col: 0
+    fingerprint: bfa5335dd0e06ec70e90a95ecf6c247190716acd1d74901e057ad91bbb2cef6b
+    params:
+    - name: self
+    - name: chunk_size
+  - qualified: httpie.models.HTTPRequest.iter_lines
+    kind: method
+    file: httpie/models.py
+    range:
+      start_line: 136
+      start_col: 0
+      end_line: 137
+      end_col: 0
+    fingerprint: 02f9287c4514d8419746ce527faff1132276bface7c0864d29443a25dd8ae34b
+    params:
+    - name: self
+    - name: chunk_size
+  - qualified: httpie.models.HTTPRequest.headers
+    kind: method
+    file: httpie/models.py
+    range:
+      start_line: 140
+      start_col: 0
+      end_line: 161
+      end_col: 0
+    fingerprint: 88c020c2ce0fd3f0a64527b6c82be97b79bf29d4e9843be92b60335d781ed722
+    decorators:
+    - property
+    params:
+    - name: self
+  - qualified: httpie.models.HTTPRequest.body
+    kind: method
+    file: httpie/models.py
+    range:
+      start_line: 164
+      start_col: 0
+      end_line: 169
+      end_col: 0
+    fingerprint: f718ef57b74d71975cd25f7d9210bde59fc2a10d70ab877fa98ec49383b6109e
+    decorators:
+    - property
+    params:
+    - name: self

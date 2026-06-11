@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_output.TestPrettyOptions.test_force_ugly
+kind: entity
+type: py.function
+name: test_force_ugly
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_output.py
+anchors:
+- type: symbol
+  value: tests.test_output.TestPrettyOptions.test_force_ugly
+- type: fingerprint
+  value: 200d25a32c6bb5c883a39dfebef1b2156e7c2cfaa18a90f7c1fda4a582200857
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_output.TestPrettyOptions

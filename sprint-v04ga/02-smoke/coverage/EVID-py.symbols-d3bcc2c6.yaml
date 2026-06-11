@@ -1,0 +1,144 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-d3bcc2c6
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T10:13:16.746615+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://cas_extractor
+  root: cas_extractor
+  revision: git:test
+payload:
+  symbols:
+  - qualified: extractors.python_symbols
+    kind: module
+    file: extractors/python_symbols.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 209
+      end_col: 0
+    fingerprint: 9ab86aa3e7a9818fd5e0d74c61535bf87d353cd3646b483db9276535e6b44235
+  - qualified: extractors.python_symbols.extract_symbols
+    kind: function
+    file: extractors/python_symbols.py
+    range:
+      start_line: 21
+      start_col: 0
+      end_line: 48
+      end_col: 0
+    fingerprint: aba9d519d9ca9899316512348e8588635ecf21da11ec5121290a2f8c73ab42a4
+    params:
+    - name: repo_root
+      annotation: str
+    - name: include_variables
+      annotation: bool
+    returns: Iterator[SymbolEntry]
+  - qualified: extractors.python_symbols._path_to_module
+    kind: function
+    file: extractors/python_symbols.py
+    range:
+      start_line: 51
+      start_col: 0
+      end_line: 58
+      end_col: 0
+    fingerprint: 392cfe62bde75c17336d1d3260c406710004db53390333b19e2b8b8b8a748a97
+    params:
+    - name: rel_path
+      annotation: Path
+    returns: str
+  - qualified: extractors.python_symbols._extract_from_module
+    kind: function
+    file: extractors/python_symbols.py
+    range:
+      start_line: 61
+      start_col: 0
+      end_line: 89
+      end_col: 0
+    fingerprint: b48e28c4c3c4a2ed79f2e2fab49d0ab93e9a9931a4775d2e052d9233a263811a
+    params:
+    - name: tree
+      annotation: ast.Module
+    - name: source
+      annotation: str
+    - name: rel_file
+      annotation: str
+    - name: module_qname
+      annotation: str
+    - name: include_variables
+      annotation: bool
+    returns: Iterator[SymbolEntry]
+  - qualified: extractors.python_symbols._get_parent_qname
+    kind: function
+    file: extractors/python_symbols.py
+    range:
+      start_line: 92
+      start_col: 0
+      end_line: 104
+      end_col: 0
+    fingerprint: 25d996478c522334379f426971aaa173e66b6ce312d5fc144798dfb96f2f959b
+    params:
+    - name: node
+      annotation: ast.AST
+    - name: tree
+      annotation: ast.Module
+    - name: module_qname
+      annotation: str
+    returns: str
+  - qualified: extractors.python_symbols._extract_source
+    kind: function
+    file: extractors/python_symbols.py
+    range:
+      start_line: 107
+      start_col: 0
+      end_line: 111
+      end_col: 0
+    fingerprint: 9e8d1c87159a2062fe1ae4ab01d57681aaa037677e77ca794780132cfadea412
+    params:
+    - name: source_lines
+      annotation: list[str]
+    - name: node
+      annotation: ast.AST
+    returns: str
+  - qualified: extractors.python_symbols._function_entry
+    kind: function
+    file: extractors/python_symbols.py
+    range:
+      start_line: 114
+      start_col: 0
+      end_line: 175
+      end_col: 0
+    fingerprint: 36ad0ad75e7bfc368a5a241839bbb4061236aef63f6ffa59ae877661a9ba21f2
+    params:
+    - name: node
+      annotation: ast.FunctionDef | ast.AsyncFunctionDef
+    - name: source_lines
+      annotation: list[str]
+    - name: rel_file
+      annotation: str
+    - name: module_qname
+      annotation: str
+    - name: tree
+      annotation: ast.Module
+    returns: SymbolEntry
+  - qualified: extractors.python_symbols._class_entry
+    kind: function
+    file: extractors/python_symbols.py
+    range:
+      start_line: 178
+      start_col: 0
+      end_line: 209
+      end_col: 0
+    fingerprint: e0cb5a3cd66e0a5a5bf05e0d16d5c967a3500852f0625de1d722d51a72225cda
+    params:
+    - name: node
+      annotation: ast.ClassDef
+    - name: source_lines
+      annotation: list[str]
+    - name: rel_file
+      annotation: str
+    - name: module_qname
+      annotation: str
+    - name: tree
+      annotation: ast.Module
+    returns: SymbolEntry

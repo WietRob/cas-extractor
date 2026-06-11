@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_errors.test_response_mime_option_invalid_mime_type
+kind: entity
+type: py.function
+name: test_response_mime_option_invalid_mime_type
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_errors.py
+anchors:
+- type: symbol
+  value: tests.test_errors.test_response_mime_option_invalid_mime_type
+- type: fingerprint
+  value: 2dd8768cb1a30e54e242fc3360f2cafc74c2a7930086846b5b088b1bece9776b
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_errors

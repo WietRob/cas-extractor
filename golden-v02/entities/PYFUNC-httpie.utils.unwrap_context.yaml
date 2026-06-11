@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.utils.unwrap_context
+kind: entity
+type: py.function
+name: unwrap_context
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/utils.py
+anchors:
+- type: symbol
+  value: httpie.utils.unwrap_context
+- type: fingerprint
+  value: 9d293535ac82ab74686972dfcf4025d926424cfe5076e41a2212c0640b14aae1
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.utils

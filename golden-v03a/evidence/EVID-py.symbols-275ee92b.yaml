@@ -1,0 +1,53 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-275ee92b
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:53.221828+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: tests.utils.plugins_cli.Interface.get_plugin
+    kind: method
+    file: tests/utils/plugins_cli.py
+    range:
+      start_line: 110
+      start_col: 0
+      end_line: 112
+      end_col: 0
+    fingerprint: 7ded990771f6e6895717b611750cc0b1a819e415ab1c7142fe2505368ba8935f
+    params:
+    - name: self
+    - name: target
+      annotation: str
+    returns: importlib_metadata.Distribution
+  - qualified: tests.utils.plugins_cli.Interface.is_installed
+    kind: method
+    file: tests/utils/plugins_cli.py
+    range:
+      start_line: 114
+      start_col: 0
+      end_line: 120
+      end_col: 0
+    fingerprint: 189af971ab099a63cb51217697c1817a393dbfe1dcfda06f6d4fc07c0820447b
+    params:
+    - name: self
+    - name: target
+      annotation: str
+    returns: bool
+  - qualified: tests.utils.plugins_cli.Interface.make_dummy_plugin
+    kind: method
+    file: tests/utils/plugins_cli.py
+    range:
+      start_line: 122
+      start_col: 0
+      end_line: 128
+      end_col: 0
+    fingerprint: 1d0334ffadf3a04bf80efbdcd5888090ab8ac5a46ba44fa635fb173300ac39b1
+    params:
+    - name: self
+    - name: build
+    returns: Plugin

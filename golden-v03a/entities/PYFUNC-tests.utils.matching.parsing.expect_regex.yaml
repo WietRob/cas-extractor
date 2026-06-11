@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.utils.matching.parsing.expect_regex
+kind: entity
+type: py.function
+name: expect_regex
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/utils/matching/parsing.py
+anchors:
+- type: symbol
+  value: tests.utils.matching.parsing.expect_regex
+- type: fingerprint
+  value: 13d7f1bc1102cf044e5ca7ed57e13b1f76eab9bec4d963409b314a51e059da4f
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils.matching.parsing

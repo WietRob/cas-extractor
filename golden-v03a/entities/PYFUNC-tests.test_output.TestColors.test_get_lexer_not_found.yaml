@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_output.TestColors.test_get_lexer_not_found
+kind: entity
+type: py.function
+name: test_get_lexer_not_found
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_output.py
+anchors:
+- type: symbol
+  value: tests.test_output.TestColors.test_get_lexer_not_found
+- type: fingerprint
+  value: 28e94de88114598e2caa79c2eb93c1715076a3f8f4e46632d4aa295f4a87e2e4
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_output.TestColors

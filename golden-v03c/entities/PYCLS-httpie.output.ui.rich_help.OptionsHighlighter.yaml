@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.output.ui.rich_help.OptionsHighlighter
+kind: entity
+type: py.class
+name: OptionsHighlighter
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/ui/rich_help.py
+anchors:
+- type: symbol
+  value: httpie.output.ui.rich_help.OptionsHighlighter
+- type: fingerprint
+  value: 7a0d7975dc475809f9a1ee7525cfce3ed2586b6a19aadb1cabc06359bd0033dc
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.ui.rich_help

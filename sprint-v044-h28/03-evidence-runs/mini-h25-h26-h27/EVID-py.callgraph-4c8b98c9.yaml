@@ -1,0 +1,34 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-4c8b98c9
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-23T13:06:35.999996+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://h28-test
+  root: /tmp/h28-verify
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.self.obj.foo
+  - symbol: test_h28.TestN4UnknownClass.run
+  - symbol: test_h28.create_unknown
+  edges:
+  - from: test_h28.TestN4UnknownClass.run
+    to: test_h28.create_unknown
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 219
+      start_col: 0
+      end_line: 219
+      end_col: 0
+  - from: test_h28.TestN4UnknownClass.run
+    to: ?.self.obj.foo
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 220
+      start_col: 0
+      end_line: 220
+      end_col: 0

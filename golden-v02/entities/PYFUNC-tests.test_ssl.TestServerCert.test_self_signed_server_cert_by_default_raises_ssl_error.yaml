@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_ssl.TestServerCert.test_self_signed_server_cert_by_default_raises_ssl_error
+kind: entity
+type: py.function
+name: test_self_signed_server_cert_by_default_raises_ssl_error
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_ssl.py
+anchors:
+- type: symbol
+  value: tests.test_ssl.TestServerCert.test_self_signed_server_cert_by_default_raises_ssl_error
+- type: fingerprint
+  value: be5b652a2f8f6b39275cfd9ae2cb5a4a104021f9444211cde1177d62299bfb3f
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_ssl.TestServerCert

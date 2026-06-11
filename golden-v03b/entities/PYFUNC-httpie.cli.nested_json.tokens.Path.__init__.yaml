@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.nested_json.tokens.Path.__init__
+kind: entity
+type: py.function
+name: __init__
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/nested_json/tokens.py
+anchors:
+- type: symbol
+  value: httpie.cli.nested_json.tokens.Path.__init__
+- type: fingerprint
+  value: 8f2dbba3a433d909e3f9e49115f246b616826fafb8b6b5aef49041616c327548
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.nested_json.tokens.Path

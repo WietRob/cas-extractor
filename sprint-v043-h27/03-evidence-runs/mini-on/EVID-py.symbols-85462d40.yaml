@@ -1,0 +1,45 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-85462d40
+kind: evidence
+type: py.symbols
+created_at: '2026-02-23T07:07:57.433324+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: /tmp/h27-verify
+  revision: git:test
+payload:
+  symbols:
+  - qualified: test_h27.TestH27ReassignWins.init_http
+    kind: method
+    file: test_h27.py
+    range:
+      start_line: 224
+      start_col: 0
+      end_line: 225
+      end_col: 0
+    fingerprint: ea6ba997161f84e2bb35a9dc53ab777b8d35f164c7385384124fc3509279c3f3
+    params:
+    - name: self
+  - qualified: test_h27.TestH27ReassignWins.prepare
+    kind: method
+    file: test_h27.py
+    range:
+      start_line: 227
+      start_col: 0
+      end_line: 228
+      end_col: 0
+    fingerprint: cad8d4eda23d0318b61451037c1821738b6c268ab0ee8cc9eb4d3b929e398705
+    params:
+    - name: self
+  - qualified: test_h27.TestH27ReassignWins.run
+    kind: method
+    file: test_h27.py
+    range:
+      start_line: 230
+      start_col: 0
+      end_line: 233
+      end_col: 0
+    fingerprint: 37143e25d332d9b85a080673f09fe95d10951c957a37d8408745f54bb3f9e0cc
+    params:
+    - name: self

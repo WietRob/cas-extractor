@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_tokens.test_request_single_verbose
+kind: entity
+type: py.function
+name: test_request_single_verbose
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_tokens.py
+anchors:
+- type: symbol
+  value: tests.test_tokens.test_request_single_verbose
+- type: fingerprint
+  value: b10b81b4f2a144890a679dfba0ccec7d36478765eca3eb082670b355e81b9e0e
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_tokens

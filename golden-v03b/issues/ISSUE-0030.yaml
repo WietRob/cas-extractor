@@ -1,0 +1,12 @@
+schema: cas.issue.v0.1
+id: ISSUE-0030
+kind: issue
+type: orphan
+applies_to:
+- PYMOD-functools
+summary: Import target 'functools' is stdlib (not in extracted entities)
+severity: info
+created_by: extractor:py.v0.1
+created_at: '2026-02-21T15:04:15.443496+00:00'
+evidence:
+- EVID-py.importgraph-2419455c

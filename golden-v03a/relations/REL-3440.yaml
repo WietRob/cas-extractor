@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-3440
+kind: relation
+type: calls
+from: PYFUNC-httpie.legacy.v3_1_0_session_cookie_format.pre_process
+to: PYFUNC-_.INSECURE_COOKIE_JAR_WARNING.format
+confidence:
+  level: E1
+  direction: confirmed
+evidence:
+- EVID-py.callgraph-ca83490b
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1

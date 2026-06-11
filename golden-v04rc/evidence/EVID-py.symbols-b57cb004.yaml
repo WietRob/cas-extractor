@@ -1,0 +1,59 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-b57cb004
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T08:37:44.501946+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.output.ui.rich_progress
+    kind: module
+    file: httpie/output/ui/rich_progress.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 141
+      end_col: 0
+    fingerprint: ae0f400be450be07ceb54f27b90cd7d6a0df1afbdb3a3875c1034cd2474928a5
+  - qualified: httpie.output.ui.rich_progress.BaseDisplay
+    kind: class
+    file: httpie/output/ui/rich_progress.py
+    range:
+      start_line: 11
+      start_col: 0
+      end_line: 52
+      end_col: 0
+    fingerprint: e8c1b1d061c14f5fc3457ef4f152fd20766ef065aae64b41fa30e19e6d7d022b
+    decorators:
+    - dataclass
+  - qualified: httpie.output.ui.rich_progress.DummyDisplay
+    kind: class
+    file: httpie/output/ui/rich_progress.py
+    range:
+      start_line: 55
+      start_col: 0
+      end_line: 59
+      end_col: 0
+    fingerprint: 4a88d323fa183c00abff10646074e6e8428f1930b5ba0c9d322036d30fc865e8
+  - qualified: httpie.output.ui.rich_progress.StatusDisplay
+    kind: class
+    file: httpie/output/ui/rich_progress.py
+    range:
+      start_line: 62
+      start_col: 0
+      end_line: 94
+      end_col: 0
+    fingerprint: 6aca1e3ca2c7c97aaf74eaea28f5903d8798ca0661a13b8faecaa61a2dc1ec1e
+  - qualified: httpie.output.ui.rich_progress.ProgressDisplay
+    kind: class
+    file: httpie/output/ui/rich_progress.py
+    range:
+      start_line: 97
+      start_col: 0
+      end_line: 141
+      end_col: 0
+    fingerprint: 2f7302fe60875394cef5f59106423c14d60bf01e3fa27c06c7582c117563ee2d

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-run_pipeline_timed.main.record
+kind: entity
+type: py.function
+name: record
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: run_pipeline_timed.py
+anchors:
+- type: symbol
+  value: run_pipeline_timed.main.record
+- type: fingerprint
+  value: 34fdc8650edc2bdcbc2e14b220c969f4b43215afd4372a606d428e3635c7747a
+  algo: sha256
+claims: []
+relations: []
+namespace: run_pipeline_timed.main

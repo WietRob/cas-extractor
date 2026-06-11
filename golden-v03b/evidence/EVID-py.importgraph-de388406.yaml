@@ -1,0 +1,31 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-de388406
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-21T15:03:55.406410+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  imports:
+  - from: httpie.internal.update_warnings
+    imports:
+    - json
+    - contextlib.nullcontext
+    - contextlib.suppress
+    - datetime.datetime
+    - datetime.timedelta
+    - pathlib.Path
+    - typing.Any
+    - typing.Optional
+    - typing.Callable
+    - requests
+    - httpie
+    - httpie.context.Environment
+    - httpie.context.LogLevel
+    - httpie.internal.__build_channel__.BUILD_CHANNEL
+    - httpie.internal.daemons.spawn_daemon
+    - httpie.utils.is_version_greater
+    - httpie.utils.open_with_lockfile

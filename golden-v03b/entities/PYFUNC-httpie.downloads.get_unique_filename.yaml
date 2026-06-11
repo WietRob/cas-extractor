@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.downloads.get_unique_filename
+kind: entity
+type: py.function
+name: get_unique_filename
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/downloads.py
+anchors:
+- type: symbol
+  value: httpie.downloads.get_unique_filename
+- type: fingerprint
+  value: 8c575e10d9842ebec26a746aef9d7d925721e43e8219588282bcf1e20d5692f0
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.downloads

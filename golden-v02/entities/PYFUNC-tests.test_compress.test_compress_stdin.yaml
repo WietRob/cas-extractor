@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_compress.test_compress_stdin
+kind: entity
+type: py.function
+name: test_compress_stdin
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_compress.py
+anchors:
+- type: symbol
+  value: tests.test_compress.test_compress_stdin
+- type: fingerprint
+  value: f35f9a191e18a99346c09cf9c70d0b3780835517a27bc7b2b25e5cc09fc468ea
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_compress

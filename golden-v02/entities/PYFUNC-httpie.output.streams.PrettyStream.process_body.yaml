@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.streams.PrettyStream.process_body
+kind: entity
+type: py.function
+name: process_body
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/output/streams.py
+anchors:
+- type: symbol
+  value: httpie.output.streams.PrettyStream.process_body
+- type: fingerprint
+  value: 164954b6ec1dde3ac20c094c9d8e17c1cc636d7adb6c7c63d6a2f607be4b7464
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.streams.PrettyStream

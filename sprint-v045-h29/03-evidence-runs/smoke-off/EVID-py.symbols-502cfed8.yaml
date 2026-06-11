@@ -1,0 +1,36 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-502cfed8
+kind: evidence
+type: py.symbols
+created_at: '2026-02-23T17:20:03.205937+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://cas_extractor
+  root: ./cas_extractor
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: resolvers
+    kind: module
+    file: resolvers/__init__.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 55
+      end_col: 0
+    fingerprint: 0f0290ffdf48f2a5b493876819eb6c35cb6f6184d631739a2c79cdec4f637f51
+  - qualified: resolvers.create_resolution_engine
+    kind: function
+    file: resolvers/__init__.py
+    range:
+      start_line: 37
+      start_col: 0
+      end_line: 55
+      end_col: 0
+    fingerprint: 74ec11a916ff0121cc834a50873607855fec809b3ad95a514f4c91c5e9c2a9a2
+    params:
+    - name: enable_h25
+      annotation: bool
+    - name: enable_h26_h27
+      annotation: bool
+    returns: ResolutionEngine

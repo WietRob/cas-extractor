@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_encoding.test_unicode_url_query_arg_item_verbose
+kind: entity
+type: py.function
+name: test_unicode_url_query_arg_item_verbose
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_encoding.py
+anchors:
+- type: symbol
+  value: tests.test_encoding.test_unicode_url_query_arg_item_verbose
+- type: fingerprint
+  value: b16ae3e35bfe2a73def0ccbf61466d6262b0337a06ad8be8056df5d90a3bdfb2
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_encoding

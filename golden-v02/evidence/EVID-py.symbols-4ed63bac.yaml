@@ -1,0 +1,77 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-4ed63bac
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:51:32.307692+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.output.streams.PrettyStream.__init__
+    kind: method
+    file: httpie/output/streams.py
+    range:
+      start_line: 181
+      start_col: 0
+      end_line: 188
+      end_col: 0
+    fingerprint: 867000a5a3271eba57277cb676098a70a159c72099b1f609d8de34547373373f
+    params:
+    - name: self
+    - name: conversion
+      annotation: Conversion
+    - name: formatting
+      annotation: Formatting
+  - qualified: httpie.output.streams.PrettyStream.get_headers
+    kind: method
+    file: httpie/output/streams.py
+    range:
+      start_line: 190
+      start_col: 0
+      end_line: 192
+      end_col: 0
+    fingerprint: 19b97fee7e01ca3c5714df4e58c648522332c31f5f2b6e26a17e5beb67cb5ca3
+    params:
+    - name: self
+    returns: bytes
+  - qualified: httpie.output.streams.PrettyStream.get_metadata
+    kind: method
+    file: httpie/output/streams.py
+    range:
+      start_line: 194
+      start_col: 0
+      end_line: 196
+      end_col: 0
+    fingerprint: fda4f8a9a92b07e54779932c83434c5a1cf3578ee84ddd097448b95ed80ff54d
+    params:
+    - name: self
+    returns: bytes
+  - qualified: httpie.output.streams.PrettyStream.iter_body
+    kind: method
+    file: httpie/output/streams.py
+    range:
+      start_line: 198
+      start_col: 0
+      end_line: 217
+      end_col: 0
+    fingerprint: 84aeaecfde1ca724c16f5246de91ec1eea2c0ce95b943c7c0b574a94bddf0638
+    params:
+    - name: self
+    returns: Iterable[bytes]
+  - qualified: httpie.output.streams.PrettyStream.process_body
+    kind: method
+    file: httpie/output/streams.py
+    range:
+      start_line: 219
+      start_col: 0
+      end_line: 225
+      end_col: 0
+    fingerprint: 164954b6ec1dde3ac20c094c9d8e17c1cc636d7adb6c7c63d6a2f607be4b7464
+    params:
+    - name: self
+    - name: chunk
+      annotation: Union[str, bytes]
+    returns: bytes

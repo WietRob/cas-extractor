@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-tests.test_offline
+kind: entity
+type: py.module
+name: test_offline
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_offline.py
+anchors:
+- type: symbol
+  value: tests.test_offline
+- type: fingerprint
+  value: 81872ab4e64f3ed5a6af8a5f15c0adfd2f457233aa4cfb6352f423eafc438377
+  algo: sha256
+claims: []
+relations: []
+namespace: tests

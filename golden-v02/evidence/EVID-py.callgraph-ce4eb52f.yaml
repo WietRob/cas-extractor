@@ -1,0 +1,407 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-ce4eb52f
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:34.398205+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.mocker.patch
+  - symbol: ?.request.getfixturevalue
+  - symbol: ?.status_file.exists
+  - symbol: ?.status_file.unlink
+  - symbol: ?.stream.write
+  - symbol: contextlib.suppress
+  - symbol: httpie.internal.daemons.spawn_daemon
+  - symbol: json.dump
+  - symbol: json.load
+  - symbol: pathlib.Path
+  - symbol: pytest.fail
+  - symbol: tempfile.gettempdir
+  - symbol: tests.test_update_warnings.check_update_warnings
+  - symbol: tests.test_update_warnings.fetch_update_mock
+  - symbol: tests.test_update_warnings.higher_build_channel
+  - symbol: tests.test_update_warnings.lower_build_channel
+  - symbol: tests.test_update_warnings.static_fetch_data
+  - symbol: tests.test_update_warnings.test_check_updates_disable_warnings
+  - symbol: tests.test_update_warnings.test_check_updates_first_invocation
+  - symbol: tests.test_update_warnings.test_check_updates_first_time_after_data_fetch
+  - symbol: tests.test_update_warnings.test_check_updates_first_time_after_data_fetch_unknown_build_channel
+  - symbol: tests.test_update_warnings.test_cli_check_updates
+  - symbol: tests.test_update_warnings.test_cli_check_updates_not_shown
+  - symbol: tests.test_update_warnings.test_daemon_runner
+  - symbol: tests.test_update_warnings.test_fetch
+  - symbol: tests.test_update_warnings.test_fetch_broken_json
+  - symbol: tests.test_update_warnings.test_fetch_dont_override_existing_layout
+  - symbol: tests.test_update_warnings.unknown_build_channel
+  - symbol: tests.test_update_warnings.with_warnings
+  - symbol: tests.test_update_warnings.without_warnings
+  - symbol: time.sleep
+  - symbol: utils.PersistentMockEnvironment
+  - symbol: utils.http
+  - symbol: utils.httpie
+  edges:
+  - from: tests.test_update_warnings.test_daemon_runner
+    to: httpie.internal.daemons.spawn_daemon
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 45
+      start_col: 0
+      end_line: 45
+      end_col: 0
+  - from: tests.test_update_warnings.test_daemon_runner
+    to: ?.status_file.exists
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 56
+      start_col: 0
+      end_line: 56
+      end_col: 0
+  - from: tests.test_update_warnings.test_fetch
+    to: utils.http
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 60
+      start_col: 0
+      end_line: 60
+      end_col: 0
+  - from: tests.test_update_warnings.test_fetch_dont_override_existing_layout
+    to: utils.http
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 88
+      start_col: 0
+      end_line: 88
+      end_col: 0
+  - from: tests.test_update_warnings.test_fetch_broken_json
+    to: utils.http
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 107
+      start_col: 0
+      end_line: 107
+      end_col: 0
+  - from: tests.test_update_warnings.test_check_updates_disable_warnings
+    to: utils.http
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 121
+      start_col: 0
+      end_line: 121
+      end_col: 0
+  - from: tests.test_update_warnings.test_check_updates_first_invocation
+    to: utils.http
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 129
+      start_col: 0
+      end_line: 129
+      end_col: 0
+  - from: tests.test_update_warnings.test_check_updates_first_time_after_data_fetch
+    to: ?.request.getfixturevalue
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 150
+      start_col: 0
+      end_line: 150
+      end_col: 0
+  - from: tests.test_update_warnings.test_check_updates_first_time_after_data_fetch
+    to: utils.http
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 151
+      start_col: 0
+      end_line: 151
+      end_col: 0
+  - from: tests.test_update_warnings.test_check_updates_first_time_after_data_fetch
+    to: utils.http
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 152
+      start_col: 0
+      end_line: 152
+      end_col: 0
+  - from: tests.test_update_warnings.test_check_updates_first_time_after_data_fetch_unknown_build_channel
+    to: utils.http
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 165
+      start_col: 0
+      end_line: 165
+      end_col: 0
+  - from: tests.test_update_warnings.test_check_updates_first_time_after_data_fetch_unknown_build_channel
+    to: utils.http
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 166
+      start_col: 0
+      end_line: 166
+      end_col: 0
+  - from: tests.test_update_warnings.test_cli_check_updates
+    to: utils.httpie
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 175
+      start_col: 0
+      end_line: 175
+      end_col: 0
+  - from: tests.test_update_warnings.test_cli_check_updates
+    to: tests.test_update_warnings.check_update_warnings
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 177
+      start_col: 0
+      end_line: 177
+      end_col: 0
+  - from: tests.test_update_warnings.test_cli_check_updates_not_shown
+    to: ?.request.getfixturevalue
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 189
+      start_col: 0
+      end_line: 189
+      end_col: 0
+  - from: tests.test_update_warnings.test_cli_check_updates_not_shown
+    to: utils.httpie
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 190
+      start_col: 0
+      end_line: 190
+      end_col: 0
+  - from: tests.test_update_warnings.with_warnings
+    to: utils.PersistentMockEnvironment
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 197
+      start_col: 0
+      end_line: 197
+      end_col: 0
+  - from: tests.test_update_warnings.without_warnings
+    to: utils.PersistentMockEnvironment
+    kind: call
+    edge_id: 17
+    range:
+      start_line: 205
+      start_col: 0
+      end_line: 205
+      end_col: 0
+  - from: tests.test_update_warnings.fetch_update_mock
+    to: ?.mocker.patch
+    kind: call
+    edge_id: 18
+    range:
+      start_line: 213
+      start_col: 0
+      end_line: 213
+      end_col: 0
+  - from: tests.test_update_warnings.static_fetch_data
+    to: ?.mocker.patch
+    kind: call
+    edge_id: 19
+    range:
+      start_line: 219
+      start_col: 0
+      end_line: 219
+      end_col: 0
+  - from: tests.test_update_warnings.unknown_build_channel
+    to: ?.mocker.patch
+    kind: call
+    edge_id: 20
+    range:
+      start_line: 230
+      start_col: 0
+      end_line: 230
+      end_col: 0
+  - from: tests.test_update_warnings.higher_build_channel
+    to: ?.mocker.patch
+    kind: call
+    edge_id: 21
+    range:
+      start_line: 235
+      start_col: 0
+      end_line: 235
+      end_col: 0
+  - from: tests.test_update_warnings.lower_build_channel
+    to: ?.mocker.patch
+    kind: call
+    edge_id: 22
+    range:
+      start_line: 240
+      start_col: 0
+      end_line: 240
+      end_col: 0
+  - from: tests.test_update_warnings.test_daemon_runner
+    to: pathlib.Path
+    kind: call
+    edge_id: 23
+    range:
+      start_line: 41
+      start_col: 0
+      end_line: 41
+      end_col: 0
+  - from: tests.test_update_warnings.test_daemon_runner
+    to: contextlib.suppress
+    kind: call
+    edge_id: 24
+    range:
+      start_line: 42
+      start_col: 0
+      end_line: 42
+      end_col: 0
+  - from: tests.test_update_warnings.test_daemon_runner
+    to: ?.status_file.unlink
+    kind: call
+    edge_id: 25
+    range:
+      start_line: 43
+      start_col: 0
+      end_line: 43
+      end_col: 0
+  - from: tests.test_update_warnings.test_daemon_runner
+    to: time.sleep
+    kind: call
+    edge_id: 26
+    range:
+      start_line: 48
+      start_col: 0
+      end_line: 48
+      end_col: 0
+  - from: tests.test_update_warnings.test_daemon_runner
+    to: ?.status_file.exists
+    kind: call
+    edge_id: 27
+    range:
+      start_line: 49
+      start_col: 0
+      end_line: 49
+      end_col: 0
+  - from: tests.test_update_warnings.test_daemon_runner
+    to: pytest.fail
+    kind: call
+    edge_id: 28
+    range:
+      start_line: 52
+      start_col: 0
+      end_line: 54
+      end_col: 0
+  - from: tests.test_update_warnings.test_fetch
+    to: json.load
+    kind: call
+    edge_id: 29
+    range:
+      start_line: 63
+      start_col: 0
+      end_line: 63
+      end_col: 0
+  - from: tests.test_update_warnings.test_fetch_dont_override_existing_layout
+    to: json.dump
+    kind: call
+    edge_id: 30
+    range:
+      start_line: 86
+      start_col: 0
+      end_line: 86
+      end_col: 0
+  - from: tests.test_update_warnings.test_fetch_dont_override_existing_layout
+    to: json.load
+    kind: call
+    edge_id: 31
+    range:
+      start_line: 91
+      start_col: 0
+      end_line: 91
+      end_col: 0
+  - from: tests.test_update_warnings.test_fetch_broken_json
+    to: ?.stream.write
+    kind: call
+    edge_id: 32
+    range:
+      start_line: 105
+      start_col: 0
+      end_line: 105
+      end_col: 0
+  - from: tests.test_update_warnings.test_fetch_broken_json
+    to: json.load
+    kind: call
+    edge_id: 33
+    range:
+      start_line: 110
+      start_col: 0
+      end_line: 110
+      end_col: 0
+  - from: tests.test_update_warnings.test_check_updates_disable_warnings
+    to: tests.test_update_warnings.check_update_warnings
+    kind: call
+    edge_id: 34
+    range:
+      start_line: 123
+      start_col: 0
+      end_line: 123
+      end_col: 0
+  - from: tests.test_update_warnings.test_check_updates_first_invocation
+    to: tests.test_update_warnings.check_update_warnings
+    kind: call
+    edge_id: 35
+    range:
+      start_line: 131
+      start_col: 0
+      end_line: 131
+      end_col: 0
+  - from: tests.test_update_warnings.test_check_updates_first_time_after_data_fetch
+    to: tests.test_update_warnings.check_update_warnings
+    kind: call
+    edge_id: 36
+    range:
+      start_line: 155
+      start_col: 0
+      end_line: 155
+      end_col: 0
+  - from: tests.test_update_warnings.test_check_updates_first_time_after_data_fetch_unknown_build_channel
+    to: tests.test_update_warnings.check_update_warnings
+    kind: call
+    edge_id: 37
+    range:
+      start_line: 169
+      start_col: 0
+      end_line: 169
+      end_col: 0
+  - from: tests.test_update_warnings.test_cli_check_updates_not_shown
+    to: tests.test_update_warnings.check_update_warnings
+    kind: call
+    edge_id: 38
+    range:
+      start_line: 192
+      start_col: 0
+      end_line: 192
+      end_col: 0
+  - from: tests.test_update_warnings.test_daemon_runner
+    to: tempfile.gettempdir
+    kind: call
+    edge_id: 39
+    range:
+      start_line: 41
+      start_col: 0
+      end_line: 41
+      end_col: 0

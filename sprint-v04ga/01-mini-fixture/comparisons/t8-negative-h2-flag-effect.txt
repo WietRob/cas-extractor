@@ -1,0 +1,12 @@
+=== T8: Negative H2 Flag Effect ===
+H2 unresolved patterns (?.self.<attr>.<method>) in TRUE mode:
+    to: ?.self.client.send
+    to: ?.self.client.send
+    to: ?.self.session.load
+    to: ?.self.handler.process
+
+H2 unresolved patterns in FALSE mode:
+  (none)
+
+Summary: TRUE has 4 H2 unresolved edges, FALSE has 0
+✅ PASS: H2 unresolved correctly skipped in FALSE mode

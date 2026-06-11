@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_ssl.TestServerCert.test_verify_false_OK
+kind: entity
+type: py.function
+name: test_verify_false_OK
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_ssl.py
+anchors:
+- type: symbol
+  value: tests.test_ssl.TestServerCert.test_verify_false_OK
+- type: fingerprint
+  value: 31452ad4c25a556eefb164269e498eaf35cf9b97c7a7a11328adb0f93f1c4940
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_ssl.TestServerCert

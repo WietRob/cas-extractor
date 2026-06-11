@@ -1,0 +1,54 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-051135ad
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T15:03:56.054156+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.ESCAPE_MAP.items
+  - symbol: extras.scripts.generate_man_pages
+  - symbol: extras.scripts.generate_man_pages.main
+  - symbol: pathlib.Path
+  - symbol: re.compile
+  edges:
+  - from: extras.scripts.generate_man_pages
+    to: re.compile
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 36
+      start_col: 0
+      end_line: 38
+      end_col: 0
+  - from: extras.scripts.generate_man_pages
+    to: extras.scripts.generate_man_pages.main
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 188
+      start_col: 0
+      end_line: 188
+      end_col: 0
+  - from: extras.scripts.generate_man_pages
+    to: ?.ESCAPE_MAP.items
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 30
+      start_col: 0
+      end_line: 30
+      end_col: 0
+  - from: extras.scripts.generate_man_pages
+    to: pathlib.Path
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 32
+      start_col: 0
+      end_line: 32
+      end_col: 0

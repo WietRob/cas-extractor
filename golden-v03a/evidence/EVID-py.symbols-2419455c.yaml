@@ -1,0 +1,196 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-2419455c
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:53.068135+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.uploads
+    kind: module
+    file: httpie/uploads.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 269
+      end_col: 0
+    fingerprint: 12371f6d59e71ea0c81b626969d8526044efc3b93f62dc7c3459379bcfee4927
+  - qualified: httpie.uploads.ChunkedStream
+    kind: class
+    file: httpie/uploads.py
+    range:
+      start_line: 20
+      start_col: 0
+      end_line: 22
+      end_col: 0
+    fingerprint: 2792e75ce9420c1242644c57530beaf2ed0ca556e6c0babdb69bc1c702b09bca
+  - qualified: httpie.uploads.ChunkedUploadStream
+    kind: class
+    file: httpie/uploads.py
+    range:
+      start_line: 25
+      start_col: 0
+      end_line: 41
+      end_col: 0
+    fingerprint: c1647bbaa82d1c7ddc37252ba4c36b4ca66d06ec1762a35aa67f53452acc39f2
+  - qualified: httpie.uploads.ChunkedMultipartUploadStream
+    kind: class
+    file: httpie/uploads.py
+    range:
+      start_line: 44
+      start_col: 0
+      end_line: 62
+      end_col: 0
+    fingerprint: ad7b6d18a3927690b4756f183b127607e915c8dab112c1004ec463d4547fe0ae
+  - qualified: httpie.uploads.as_bytes
+    kind: function
+    file: httpie/uploads.py
+    range:
+      start_line: 65
+      start_col: 0
+      end_line: 69
+      end_col: 0
+    fingerprint: 9f2886b838e82e2c0e9fa1af27e2470dcdc1e55251388121a6c64cb7fda53f31
+    params:
+    - name: data
+      annotation: Union[str, bytes]
+    returns: bytes
+  - qualified: httpie.uploads._wrap_function_with_callback
+    kind: function
+    file: httpie/uploads.py
+    range:
+      start_line: 75
+      start_col: 0
+      end_line: 84
+      end_col: 0
+    fingerprint: 06d478a09294dfccd29d7eca9d623389e25be330bcb53bd01a16c425be6937b6
+    params:
+    - name: func
+      annotation: Callable[..., Any]
+    - name: callback
+      annotation: CallbackT
+    returns: Callable[..., Any]
+  - qualified: httpie.uploads.is_stdin
+    kind: function
+    file: httpie/uploads.py
+    range:
+      start_line: 87
+      start_col: 0
+      end_line: 93
+      end_col: 0
+    fingerprint: 7bb67fb7c58cc55cac4551f55ac2364ea1f9dacb0e3997c4cc0452ba1164996a
+    params:
+    - name: file
+      annotation: IO
+    returns: bool
+  - qualified: httpie.uploads.observe_stdin_for_data_thread
+    kind: function
+    file: httpie/uploads.py
+    range:
+      start_line: 99
+      start_col: 0
+      end_line: 127
+      end_col: 0
+    fingerprint: d9e1597e23b45c2f7762efcddeab4e836678231356b508229d46d68fcaee8f73
+    params:
+    - name: env
+      annotation: Environment
+    - name: file
+      annotation: IO
+    - name: read_event
+      annotation: threading.Event
+    returns: None
+  - qualified: httpie.uploads._read_file_with_selectors
+    kind: function
+    file: httpie/uploads.py
+    range:
+      start_line: 130
+      start_col: 0
+      end_line: 143
+      end_col: 0
+    fingerprint: 6e8d5cfc8ed508fbbd32da85816b733f72b3dad5466aaeadae25ca9d94c8b1bb
+    params:
+    - name: file
+      annotation: IO
+    - name: read_event
+      annotation: threading.Event
+    returns: bytes
+  - qualified: httpie.uploads._prepare_file_for_upload
+    kind: function
+    file: httpie/uploads.py
+    range:
+      start_line: 146
+      start_col: 0
+      end_line: 188
+      end_col: 0
+    fingerprint: db6f09149a2b7b4686bf452de5e3221b0356183c8e770d5e2c0237be507425c6
+    params:
+    - name: env
+      annotation: Environment
+    - name: file
+      annotation: Union[IO, 'MultipartEncoder']
+    - name: callback
+      annotation: CallbackT
+    - name: chunked
+      annotation: bool
+    - name: content_length_header_value
+      annotation: Optional[int]
+    returns: Union[bytes, IO, ChunkedStream]
+  - qualified: httpie.uploads.prepare_request_body
+    kind: function
+    file: httpie/uploads.py
+    range:
+      start_line: 191
+      start_col: 0
+      end_line: 227
+      end_col: 0
+    fingerprint: 76691a6d86772b359fcd111dffc626b60dfc8fc85ea1278a28153d38963add24
+    params:
+    - name: env
+      annotation: Environment
+    - name: raw_body
+      annotation: Union[str, bytes, IO, 'MultipartEncoder', RequestDataDict]
+    - name: body_read_callback
+      annotation: CallbackT
+    - name: offline
+      annotation: bool
+    - name: chunked
+      annotation: bool
+    - name: content_length_header_value
+      annotation: Optional[int]
+    returns: Union[bytes, IO, 'MultipartEncoder', ChunkedStream]
+  - qualified: httpie.uploads.get_multipart_data_and_content_type
+    kind: function
+    file: httpie/uploads.py
+    range:
+      start_line: 230
+      start_col: 0
+      end_line: 249
+      end_col: 0
+    fingerprint: 944803e4d2ddab9e76764866bf63340d52251398a40cb407e0d8d9562627b1ce
+    params:
+    - name: data
+      annotation: MultipartRequestDataDict
+    - name: boundary
+      annotation: str
+    - name: content_type
+      annotation: str
+    returns: Tuple['MultipartEncoder', str]
+  - qualified: httpie.uploads.compress_request
+    kind: function
+    file: httpie/uploads.py
+    range:
+      start_line: 252
+      start_col: 0
+      end_line: 269
+      end_col: 0
+    fingerprint: 800b119b7f6d0ed4e401870daf748b76dc29233994b989ce7792a2830c44d3d7
+    params:
+    - name: request
+      annotation: requests.PreparedRequest
+    - name: always
+      annotation: bool

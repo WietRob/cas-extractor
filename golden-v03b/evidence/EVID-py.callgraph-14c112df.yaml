@@ -1,0 +1,56 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-14c112df
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T15:03:56.108034+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.message.encode
+  - symbol: ?.self.parse_known_args
+  - symbol: ?.super().__init__
+  - symbol: ?.super()._print_message
+  - symbol: httpie.cli.argparser.BaseHTTPieArgumentParser.__init__
+  - symbol: httpie.cli.argparser.BaseHTTPieArgumentParser._print_message
+  - symbol: httpie.cli.argparser.BaseHTTPieArgumentParser.parse_args
+  edges:
+  - from: httpie.cli.argparser.BaseHTTPieArgumentParser.__init__
+    to: ?.super().__init__
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 83
+      start_col: 0
+      end_line: 83
+      end_col: 0
+  - from: httpie.cli.argparser.BaseHTTPieArgumentParser.parse_args
+    to: ?.self.parse_known_args
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 97
+      start_col: 0
+      end_line: 97
+      end_col: 0
+  - from: httpie.cli.argparser.BaseHTTPieArgumentParser._print_message
+    to: ?.super()._print_message
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 125
+      start_col: 0
+      end_line: 125
+      end_col: 0
+  - from: httpie.cli.argparser.BaseHTTPieArgumentParser._print_message
+    to: ?.message.encode
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 124
+      start_col: 0
+      end_line: 124
+      end_col: 0

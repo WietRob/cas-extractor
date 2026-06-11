@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-cas_extractor.models.evidence.SourceInfo
+kind: entity
+type: py.class
+name: SourceInfo
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor/models/evidence.py
+anchors:
+- type: symbol
+  value: cas_extractor.models.evidence.SourceInfo
+- type: fingerprint
+  value: e9843e86007a05c0cf5276119f33afb610473de26a7eeb4ba0b8619a983eb2aa
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor.models.evidence

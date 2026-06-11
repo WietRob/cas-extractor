@@ -1,0 +1,21 @@
+schema: cas.entity.v0.1
+id: PYMOD-setup
+kind: entity
+type: py.module
+name: setup
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: setup.py
+anchors:
+- type: symbol
+  value: setup
+- type: fingerprint
+  value: 63b1b6ec63e2c75238305b86907f486e67adf3a1ae816fca6a26ddbfc4b394cf
+  algo: sha256
+claims: []
+relations: []

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.utils.Encoder.__init__
+kind: entity
+type: py.function
+name: __init__
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/utils/__init__.py
+anchors:
+- type: symbol
+  value: tests.utils.Encoder.__init__
+- type: fingerprint
+  value: 375da9a669705ddc3f081d40093e8e0ef5bb47aa4d4bec3ea885a10c3a7fa278
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils.Encoder

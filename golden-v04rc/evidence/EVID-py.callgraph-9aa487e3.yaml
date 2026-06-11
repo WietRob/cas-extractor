@@ -1,0 +1,167 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-9aa487e3
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-22T08:37:45.724359+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.r.count
+  - symbol: tests.test_redirects.test_follow_all_output_options_used_for_redirects
+  - symbol: tests.test_redirects.test_follow_all_redirects_shown
+  - symbol: tests.test_redirects.test_follow_output_options_used_for_redirects
+  - symbol: tests.test_redirects.test_follow_redirect_with_repost
+  - symbol: tests.test_redirects.test_follow_without_all_redirects_hidden
+  - symbol: tests.test_redirects.test_max_redirects
+  - symbol: tests.test_redirects.test_verbose_follow_redirect_with_repost
+  - symbol: utils.http
+  - symbol: utils.matching.assert_output_matches
+  edges:
+  - from: tests.test_redirects.test_follow_all_redirects_shown
+    to: utils.http
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 16
+      start_col: 0
+      end_line: 16
+      end_col: 0
+  - from: tests.test_redirects.test_follow_all_redirects_shown
+    to: ?.r.count
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 18
+      start_col: 0
+      end_line: 18
+      end_col: 0
+  - from: tests.test_redirects.test_follow_without_all_redirects_hidden
+    to: utils.http
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 24
+      start_col: 0
+      end_line: 24
+      end_col: 0
+  - from: tests.test_redirects.test_follow_output_options_used_for_redirects
+    to: utils.http
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 31
+      start_col: 0
+      end_line: 31
+      end_col: 0
+  - from: tests.test_redirects.test_follow_all_output_options_used_for_redirects
+    to: utils.http
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 37
+      start_col: 0
+      end_line: 41
+      end_col: 0
+  - from: tests.test_redirects.test_max_redirects
+    to: utils.http
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 61
+      start_col: 0
+      end_line: 66
+      end_col: 0
+  - from: tests.test_redirects.test_follow_redirect_with_repost
+    to: utils.http
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 73
+      start_col: 0
+      end_line: 82
+      end_col: 0
+  - from: tests.test_redirects.test_verbose_follow_redirect_with_repost
+    to: utils.http
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 92
+      start_col: 0
+      end_line: 102
+      end_col: 0
+  - from: tests.test_redirects.test_verbose_follow_redirect_with_repost
+    to: utils.matching.assert_output_matches
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 111
+      start_col: 0
+      end_line: 116
+      end_col: 0
+  - from: tests.test_redirects.test_follow_all_redirects_shown
+    to: ?.r.count
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 17
+      start_col: 0
+      end_line: 17
+      end_col: 0
+  - from: tests.test_redirects.test_follow_without_all_redirects_hidden
+    to: ?.r.count
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 25
+      start_col: 0
+      end_line: 25
+      end_col: 0
+  - from: tests.test_redirects.test_follow_output_options_used_for_redirects
+    to: ?.r.count
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 32
+      start_col: 0
+      end_line: 32
+      end_col: 0
+  - from: tests.test_redirects.test_follow_all_output_options_used_for_redirects
+    to: ?.r.count
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 42
+      start_col: 0
+      end_line: 42
+      end_col: 0
+  - from: tests.test_redirects.test_verbose_follow_redirect_with_repost
+    to: ?.r.count
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 107
+      start_col: 0
+      end_line: 107
+      end_col: 0
+  - from: tests.test_redirects.test_verbose_follow_redirect_with_repost
+    to: ?.r.count
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 108
+      start_col: 0
+      end_line: 108
+      end_col: 0
+  - from: tests.test_redirects.test_verbose_follow_redirect_with_repost
+    to: ?.r.count
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 109
+      start_col: 0
+      end_line: 109
+      end_col: 0

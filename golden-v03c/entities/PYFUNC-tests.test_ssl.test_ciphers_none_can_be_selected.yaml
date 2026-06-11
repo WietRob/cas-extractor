@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_ssl.test_ciphers_none_can_be_selected
+kind: entity
+type: py.function
+name: test_ciphers_none_can_be_selected
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_ssl.py
+anchors:
+- type: symbol
+  value: tests.test_ssl.test_ciphers_none_can_be_selected
+- type: fingerprint
+  value: 7470b389478fa613edfd24e90893255b83bdcf431fea689d4449cc3c183d74a1
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_ssl

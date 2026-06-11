@@ -1,0 +1,75 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-b62cab7c
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T12:13:53.914605+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: httpie.output.ui.rich_progress.BaseDisplay._print_summary
+  - symbol: httpie.output.ui.rich_progress.ProgressDisplay.start
+  - symbol: httpie.output.ui.rich_progress.ProgressDisplay.stop
+  - symbol: rich.progress.BarColumn
+  - symbol: rich.progress.DownloadColumn
+  - symbol: rich.progress.Progress
+  - symbol: rich.progress.TimeRemainingColumn
+  - symbol: rich.progress.TransferSpeedColumn
+  edges:
+  - from: httpie.output.ui.rich_progress.ProgressDisplay.start
+    to: rich.progress.Progress
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 111
+      start_col: 0
+      end_line: 123
+      end_col: 0
+  - from: httpie.output.ui.rich_progress.ProgressDisplay.start
+    to: rich.progress.BarColumn
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 113
+      start_col: 0
+      end_line: 113
+      end_col: 0
+  - from: httpie.output.ui.rich_progress.ProgressDisplay.start
+    to: rich.progress.DownloadColumn
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 117
+      start_col: 0
+      end_line: 117
+      end_col: 0
+  - from: httpie.output.ui.rich_progress.ProgressDisplay.start
+    to: rich.progress.TimeRemainingColumn
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 119
+      start_col: 0
+      end_line: 119
+      end_col: 0
+  - from: httpie.output.ui.rich_progress.ProgressDisplay.start
+    to: rich.progress.TransferSpeedColumn
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 120
+      start_col: 0
+      end_line: 120
+      end_col: 0
+  - from: httpie.output.ui.rich_progress.ProgressDisplay.stop
+    to: httpie.output.ui.rich_progress.BaseDisplay._print_summary
+    kind: method_call
+    edge_id: 5
+    range:
+      start_line: 137
+      start_col: 0
+      end_line: 141
+      end_col: 0

@@ -1,0 +1,30 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-22ace70b
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:10:20.586370+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+payload:
+  symbols:
+  - qualified: generate_artifacts
+    kind: module
+    file: generate_artifacts.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 42
+      end_col: 0
+    fingerprint: 7c1bfb4941e32d1970fc5d2a62439af8333dda361fb45b8094e7b09d787a772f
+  - qualified: generate_artifacts.main
+    kind: function
+    file: generate_artifacts.py
+    range:
+      start_line: 16
+      start_col: 0
+      end_line: 38
+      end_col: 0
+    fingerprint: a0072572dfd4b416e1bd3a8f8dd06c0b11158bc30625f5c6ec15412fcdb6d12c

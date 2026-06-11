@@ -1,0 +1,26 @@
+{
+  "schema_validate_evidence": {
+    "elapsed_s": 10.825,
+    "exit_code": 1,
+    "files": 671,
+    "ms_per_file": 16.1
+  },
+  "schema_validate_entities": {
+    "elapsed_s": 5.928,
+    "exit_code": 1,
+    "files": 1371,
+    "ms_per_file": 4.3
+  },
+  "schema_validate_relations": {
+    "elapsed_s": 16.519,
+    "exit_code": 1,
+    "files": 3530,
+    "ms_per_file": 4.7
+  },
+  "schema_validate_issues": {
+    "elapsed_s": 2.066,
+    "exit_code": 1,
+    "files": 452,
+    "ms_per_file": 4.6
+  }
+}

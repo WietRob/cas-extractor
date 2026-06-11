@@ -1,0 +1,44 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-9239ac47
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T12:13:54.105057+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.body.lstrip
+  - symbol: json.dumps
+  - symbol: json.loads
+  - symbol: tests.test_stream.SortJSONConverterPlugin.convert
+  edges:
+  - from: tests.test_stream.SortJSONConverterPlugin.convert
+    to: ?.body.lstrip
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 30
+      start_col: 0
+      end_line: 30
+      end_col: 0
+  - from: tests.test_stream.SortJSONConverterPlugin.convert
+    to: json.loads
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 31
+      start_col: 0
+      end_line: 31
+      end_col: 0
+  - from: tests.test_stream.SortJSONConverterPlugin.convert
+    to: json.dumps
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 32
+      start_col: 0
+      end_line: 32
+      end_col: 0

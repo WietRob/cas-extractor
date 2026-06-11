@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_json.test_nested_json_sparse_array
+kind: entity
+type: py.function
+name: test_nested_json_sparse_array
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_json.py
+anchors:
+- type: symbol
+  value: tests.test_json.test_nested_json_sparse_array
+- type: fingerprint
+  value: 7f40b5cc34b69b0a83cb30f2ea41232a5d17726fa3fe31b35c583d611bbca377
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_json

@@ -1,0 +1,81 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-79ce8191
+kind: evidence
+type: py.symbols
+created_at: '2026-02-23T17:20:03.206432+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://cas_extractor
+  root: ./cas_extractor
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: resolvers.base
+    kind: module
+    file: resolvers/base.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 233
+      end_col: 0
+    fingerprint: 5890560a6d0a9e00d7d347cf602006913898b4a666213e1243775b57e83b4047
+  - qualified: resolvers.base.CallContext
+    kind: class
+    file: resolvers/base.py
+    range:
+      start_line: 14
+      start_col: 0
+      end_line: 29
+      end_col: 0
+    fingerprint: 90dd106eef438d7f460c31aadaac85c693ef12c44230c20289e33dffd520b631
+    decorators:
+    - dataclass
+  - qualified: resolvers.base.ResolutionStep
+    kind: class
+    file: resolvers/base.py
+    range:
+      start_line: 33
+      start_col: 0
+      end_line: 39
+      end_col: 0
+    fingerprint: 99aa0289beb5a32964561cb439424ab1dc71f502d31dac829684a5ea22ac9e83
+    decorators:
+    - dataclass
+  - qualified: resolvers.base.ResolutionResult
+    kind: class
+    file: resolvers/base.py
+    range:
+      start_line: 43
+      start_col: 0
+      end_line: 50
+      end_col: 0
+    fingerprint: 04abef8189c30828a01d7f8a024c6ea41ce63d4e0a53daab5cb9646987be9ef2
+    decorators:
+    - dataclass
+  - qualified: resolvers.base.ClassInfo
+    kind: class
+    file: resolvers/base.py
+    range:
+      start_line: 53
+      start_col: 0
+      end_line: 76
+      end_col: 0
+    fingerprint: 90520dfd859600f9368548c149be754514333217033ac0dba5c1e6710fb6380c
+  - qualified: resolvers.base.BaseResolver
+    kind: class
+    file: resolvers/base.py
+    range:
+      start_line: 79
+      start_col: 0
+      end_line: 97
+      end_col: 0
+    fingerprint: b3943249e8f70c91452d57061fc180fd2a31df071cf22be607814307d1f36c02
+  - qualified: resolvers.base.ResolutionEngine
+    kind: class
+    file: resolvers/base.py
+    range:
+      start_line: 100
+      start_col: 0
+      end_line: 133
+      end_col: 0
+    fingerprint: 523a308cc8d0a3c0e152a17154ad54c5c49ad2eb035dfa3206f9d3666f033f83

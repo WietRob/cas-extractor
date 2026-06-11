@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.options.parser_to_parser_spec
+kind: entity
+type: py.function
+name: parser_to_parser_spec
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/options.py
+anchors:
+- type: symbol
+  value: httpie.cli.options.parser_to_parser_spec
+- type: fingerprint
+  value: 564db5d5850d1c6890b4d54875291daf42b932ae0dc2eb65099085ef7c03ec6f
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.options

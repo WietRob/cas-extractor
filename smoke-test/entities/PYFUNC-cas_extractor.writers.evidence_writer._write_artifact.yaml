@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-cas_extractor.writers.evidence_writer._write_artifact
+kind: entity
+type: py.function
+name: _write_artifact
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor/writers/evidence_writer.py
+anchors:
+- type: symbol
+  value: cas_extractor.writers.evidence_writer._write_artifact
+- type: fingerprint
+  value: cfe0084ad0b5b8ec9add11f0b7fe27421a1e6a003f0af9bf4ae7e3a2c6a19eab
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor.writers.evidence_writer

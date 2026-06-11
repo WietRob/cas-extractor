@@ -1,0 +1,9 @@
+=== T13: v0.4-rc Comparability Mode Metrics ===
+Source: golden-v04rc/evidence
+
+Total edges: 2814
+method_call: 208
+super_call: 8
+call: 2598
+Unresolved: 919
+H2 unresolved: 57

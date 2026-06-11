@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-3547
+kind: relation
+type: calls
+from: PYFUNC-tests.test_sessions.SessionTestBase.start_session
+to: PYFUNC-utils.mk_config_dir
+confidence:
+  level: E1
+  direction: confirmed
+evidence:
+- EVID-py.callgraph-cff18e77
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1

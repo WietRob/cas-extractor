@@ -1,0 +1,23 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-33e5939b
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T08:37:44.667531+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.utils.PersistentMockEnvironment.cleanup
+    kind: method
+    file: tests/utils/__init__.py
+    range:
+      start_line: 188
+      start_col: 0
+      end_line: 189
+      end_col: 0
+    fingerprint: 41e6988825d80abe9c90c850864ccb6305337464e0e1b91b796c8a836411466a
+    params:
+    - name: self

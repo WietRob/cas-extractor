@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.utils.MockEnvironment.config
+kind: entity
+type: py.function
+name: config
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/utils/__init__.py
+anchors:
+- type: symbol
+  value: tests.utils.MockEnvironment.config
+- type: fingerprint
+  value: 3b268b6878363a7a1fede2ce40ae6906ca6a15cd178fe368fde230f5ff7b504e
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils.MockEnvironment

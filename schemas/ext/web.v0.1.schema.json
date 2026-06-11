@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ext/web.v0.1.schema.json",
+  "title": "Extension: Web Metadata",
+  "description": "Web-specific metadata for entities",
+  "type": "object",
+  "properties": {
+    "jsx": {
+      "type": "boolean",
+      "description": "Whether entity uses JSX"
+    },
+    "hooks": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "React hooks used by this component"
+    },
+    "renders_client": {
+      "type": "boolean",
+      "description": "Client-side rendering"
+    },
+    "renders_server": {
+      "type": "boolean",
+      "description": "Server-side rendering"
+    },
+    "confidence": {
+      "$ref": "common.v0.1.schema.json#/$defs/confidence"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "$ref": "common.v0.1.schema.json#/$defs/evidence_ref"
+      }
+    }
+  },
+  "additionalProperties": false
+}

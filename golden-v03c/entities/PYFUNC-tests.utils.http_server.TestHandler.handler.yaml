@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.utils.http_server.TestHandler.handler
+kind: entity
+type: py.function
+name: handler
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/utils/http_server.py
+anchors:
+- type: symbol
+  value: tests.utils.http_server.TestHandler.handler
+- type: fingerprint
+  value: 27298d7b32b36a347b07fbbe1a2bea407c362cd881c84985b497614a5b293625
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils.http_server.TestHandler

@@ -1,0 +1,491 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-e134a496
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T15:03:56.446910+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.layout_type
+  - symbol: ?.r.count
+  - symbol: ?.request.getfixturevalue
+  - symbol: ?.session.load
+  - symbol: ?.session.save
+  - symbol: ?.stderr.count
+  - symbol: ?.stderr_data.encode
+  - symbol: httpie.sessions.Session
+  - symbol: json.dump
+  - symbol: json.load
+  - symbol: tests.test_sessions.basic_session
+  - symbol: tests.test_sessions.open_raw_session
+  - symbol: tests.test_sessions.open_session
+  - symbol: tests.test_sessions.read_stderr
+  - symbol: tests.test_sessions.test_cookie_security_warnings_on_raw_cookies
+  - symbol: tests.test_sessions.test_headers_old_layout_warning
+  - symbol: tests.test_sessions.test_old_session_cookie_layout_loading
+  - symbol: tests.test_sessions.test_old_session_cookie_layout_warning
+  - symbol: tests.test_sessions.test_old_session_header_layout_loading
+  - symbol: tests.test_sessions.test_old_session_version_saved_as_is
+  - symbol: tests.test_sessions.test_outdated_layout_mixed
+  - symbol: tests.test_sessions.test_secure_cookies_on_localhost
+  - symbol: tests.test_sessions.test_session_cookie_layout_preservation
+  - symbol: tests.test_sessions.test_session_cookie_layout_preservation_on_new_cookies
+  - symbol: tests.test_sessions.test_session_header_layout_preservation
+  - symbol: tests.test_sessions.test_session_header_layout_preservation_on_new_headers
+  - symbol: tests.test_sessions.test_session_multiple_headers_with_same_name
+  - symbol: utils.http
+  edges:
+  - from: tests.test_sessions.basic_session
+    to: utils.http
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 551
+      start_col: 0
+      end_line: 554
+      end_col: 0
+  - from: tests.test_sessions.open_session
+    to: httpie.sessions.Session
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 560
+      start_col: 0
+      end_line: 560
+      end_col: 0
+  - from: tests.test_sessions.open_session
+    to: ?.session.load
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 561
+      start_col: 0
+      end_line: 561
+      end_col: 0
+  - from: tests.test_sessions.test_old_session_cookie_layout_loading
+    to: utils.http
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 672
+      start_col: 0
+      end_line: 675
+      end_col: 0
+  - from: tests.test_sessions.test_session_cookie_layout_preservation_on_new_cookies
+    to: utils.http
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 701
+      start_col: 0
+      end_line: 704
+      end_col: 0
+  - from: tests.test_sessions.test_old_session_header_layout_loading
+    to: utils.http
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 765
+      start_col: 0
+      end_line: 768
+      end_col: 0
+  - from: tests.test_sessions.test_session_header_layout_preservation_on_new_headers
+    to: utils.http
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 792
+      start_col: 0
+      end_line: 796
+      end_col: 0
+  - from: tests.test_sessions.test_session_multiple_headers_with_same_name
+    to: utils.http
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 803
+      start_col: 0
+      end_line: 809
+      end_col: 0
+  - from: tests.test_sessions.test_session_multiple_headers_with_same_name
+    to: utils.http
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 811
+      start_col: 0
+      end_line: 815
+      end_col: 0
+  - from: tests.test_sessions.test_secure_cookies_on_localhost
+    to: ?.request.getfixturevalue
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 834
+      start_col: 0
+      end_line: 834
+      end_col: 0
+  - from: tests.test_sessions.test_secure_cookies_on_localhost
+    to: utils.http
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 836
+      start_col: 0
+      end_line: 841
+      end_col: 0
+  - from: tests.test_sessions.test_secure_cookies_on_localhost
+    to: utils.http
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 848
+      start_col: 0
+      end_line: 851
+      end_col: 0
+  - from: tests.test_sessions.open_session
+    to: ?.session.save
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 564
+      start_col: 0
+      end_line: 564
+      end_col: 0
+  - from: tests.test_sessions.open_raw_session
+    to: json.load
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 570
+      start_col: 0
+      end_line: 570
+      end_col: 0
+  - from: tests.test_sessions.read_stderr
+    to: ?.stderr_data.encode
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 583
+      start_col: 0
+      end_line: 583
+      end_col: 0
+  - from: tests.test_sessions.test_old_session_version_saved_as_is
+    to: tests.test_sessions.open_session
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 589
+      start_col: 0
+      end_line: 589
+      end_col: 0
+  - from: tests.test_sessions.test_old_session_version_saved_as_is
+    to: tests.test_sessions.open_session
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 592
+      start_col: 0
+      end_line: 592
+      end_col: 0
+  - from: tests.test_sessions.test_old_session_cookie_layout_warning
+    to: tests.test_sessions.open_session
+    kind: call
+    edge_id: 17
+    range:
+      start_line: 597
+      start_col: 0
+      end_line: 597
+      end_col: 0
+  - from: tests.test_sessions.test_old_session_cookie_layout_warning
+    to: tests.test_sessions.read_stderr
+    kind: call
+    edge_id: 18
+    range:
+      start_line: 602
+      start_col: 0
+      end_line: 602
+      end_col: 0
+  - from: tests.test_sessions.test_old_session_cookie_layout_warning
+    to: tests.test_sessions.open_session
+    kind: call
+    edge_id: 19
+    range:
+      start_line: 604
+      start_col: 0
+      end_line: 604
+      end_col: 0
+  - from: tests.test_sessions.test_cookie_security_warnings_on_raw_cookies
+    to: tests.test_sessions.open_raw_session
+    kind: call
+    edge_id: 20
+    range:
+      start_line: 653
+      start_col: 0
+      end_line: 653
+      end_col: 0
+  - from: tests.test_sessions.test_cookie_security_warnings_on_raw_cookies
+    to: tests.test_sessions.open_session
+    kind: call
+    edge_id: 21
+    range:
+      start_line: 656
+      start_col: 0
+      end_line: 656
+      end_col: 0
+  - from: tests.test_sessions.test_cookie_security_warnings_on_raw_cookies
+    to: tests.test_sessions.read_stderr
+    kind: call
+    edge_id: 22
+    range:
+      start_line: 658
+      start_col: 0
+      end_line: 658
+      end_col: 0
+  - from: tests.test_sessions.test_old_session_cookie_layout_loading
+    to: tests.test_sessions.open_session
+    kind: call
+    edge_id: 23
+    range:
+      start_line: 667
+      start_col: 0
+      end_line: 667
+      end_col: 0
+  - from: tests.test_sessions.test_session_cookie_layout_preservation
+    to: tests.test_sessions.open_session
+    kind: call
+    edge_id: 24
+    range:
+      start_line: 683
+      start_col: 0
+      end_line: 683
+      end_col: 0
+  - from: tests.test_sessions.test_session_cookie_layout_preservation
+    to: ?.layout_type
+    kind: call
+    edge_id: 25
+    range:
+      start_line: 684
+      start_col: 0
+      end_line: 684
+      end_col: 0
+  - from: tests.test_sessions.test_session_cookie_layout_preservation
+    to: ?.session.save
+    kind: call
+    edge_id: 26
+    range:
+      start_line: 686
+      start_col: 0
+      end_line: 686
+      end_col: 0
+  - from: tests.test_sessions.test_session_cookie_layout_preservation
+    to: tests.test_sessions.open_session
+    kind: call
+    edge_id: 27
+    range:
+      start_line: 688
+      start_col: 0
+      end_line: 688
+      end_col: 0
+  - from: tests.test_sessions.test_session_cookie_layout_preservation_on_new_cookies
+    to: tests.test_sessions.open_session
+    kind: call
+    edge_id: 28
+    range:
+      start_line: 696
+      start_col: 0
+      end_line: 696
+      end_col: 0
+  - from: tests.test_sessions.test_session_cookie_layout_preservation_on_new_cookies
+    to: ?.layout_type
+    kind: call
+    edge_id: 29
+    range:
+      start_line: 697
+      start_col: 0
+      end_line: 697
+      end_col: 0
+  - from: tests.test_sessions.test_session_cookie_layout_preservation_on_new_cookies
+    to: ?.session.save
+    kind: call
+    edge_id: 30
+    range:
+      start_line: 699
+      start_col: 0
+      end_line: 699
+      end_col: 0
+  - from: tests.test_sessions.test_session_cookie_layout_preservation_on_new_cookies
+    to: tests.test_sessions.open_session
+    kind: call
+    edge_id: 31
+    range:
+      start_line: 706
+      start_col: 0
+      end_line: 706
+      end_col: 0
+  - from: tests.test_sessions.test_headers_old_layout_warning
+    to: tests.test_sessions.open_raw_session
+    kind: call
+    edge_id: 32
+    range:
+      start_line: 731
+      start_col: 0
+      end_line: 731
+      end_col: 0
+  - from: tests.test_sessions.test_headers_old_layout_warning
+    to: tests.test_sessions.open_session
+    kind: call
+    edge_id: 33
+    range:
+      start_line: 734
+      start_col: 0
+      end_line: 734
+      end_col: 0
+  - from: tests.test_sessions.test_headers_old_layout_warning
+    to: tests.test_sessions.read_stderr
+    kind: call
+    edge_id: 34
+    range:
+      start_line: 736
+      start_col: 0
+      end_line: 736
+      end_col: 0
+  - from: tests.test_sessions.test_outdated_layout_mixed
+    to: tests.test_sessions.open_raw_session
+    kind: call
+    edge_id: 35
+    range:
+      start_line: 745
+      start_col: 0
+      end_line: 745
+      end_col: 0
+  - from: tests.test_sessions.test_outdated_layout_mixed
+    to: tests.test_sessions.open_session
+    kind: call
+    edge_id: 36
+    range:
+      start_line: 753
+      start_col: 0
+      end_line: 753
+      end_col: 0
+  - from: tests.test_sessions.test_outdated_layout_mixed
+    to: tests.test_sessions.read_stderr
+    kind: call
+    edge_id: 37
+    range:
+      start_line: 754
+      start_col: 0
+      end_line: 754
+      end_col: 0
+  - from: tests.test_sessions.test_old_session_header_layout_loading
+    to: tests.test_sessions.open_session
+    kind: call
+    edge_id: 38
+    range:
+      start_line: 760
+      start_col: 0
+      end_line: 760
+      end_col: 0
+  - from: tests.test_sessions.test_session_header_layout_preservation
+    to: tests.test_sessions.open_session
+    kind: call
+    edge_id: 39
+    range:
+      start_line: 776
+      start_col: 0
+      end_line: 776
+      end_col: 0
+  - from: tests.test_sessions.test_session_header_layout_preservation
+    to: ?.layout_type
+    kind: call
+    edge_id: 40
+    range:
+      start_line: 777
+      start_col: 0
+      end_line: 777
+      end_col: 0
+  - from: tests.test_sessions.test_session_header_layout_preservation
+    to: tests.test_sessions.open_session
+    kind: call
+    edge_id: 41
+    range:
+      start_line: 780
+      start_col: 0
+      end_line: 780
+      end_col: 0
+  - from: tests.test_sessions.test_session_header_layout_preservation_on_new_headers
+    to: tests.test_sessions.open_session
+    kind: call
+    edge_id: 42
+    range:
+      start_line: 788
+      start_col: 0
+      end_line: 788
+      end_col: 0
+  - from: tests.test_sessions.test_session_header_layout_preservation_on_new_headers
+    to: ?.layout_type
+    kind: call
+    edge_id: 43
+    range:
+      start_line: 789
+      start_col: 0
+      end_line: 789
+      end_col: 0
+  - from: tests.test_sessions.test_session_header_layout_preservation_on_new_headers
+    to: tests.test_sessions.open_session
+    kind: call
+    edge_id: 44
+    range:
+      start_line: 798
+      start_col: 0
+      end_line: 798
+      end_col: 0
+  - from: tests.test_sessions.test_session_multiple_headers_with_same_name
+    to: ?.r.count
+    kind: call
+    edge_id: 45
+    range:
+      start_line: 816
+      start_col: 0
+      end_line: 816
+      end_col: 0
+  - from: tests.test_sessions.test_secure_cookies_on_localhost
+    to: tests.test_sessions.open_session
+    kind: call
+    edge_id: 46
+    range:
+      start_line: 843
+      start_col: 0
+      end_line: 843
+      end_col: 0
+  - from: tests.test_sessions.open_raw_session
+    to: json.dump
+    kind: call
+    edge_id: 47
+    range:
+      start_line: 576
+      start_col: 0
+      end_line: 576
+      end_col: 0
+  - from: tests.test_sessions.test_old_session_cookie_layout_warning
+    to: tests.test_sessions.read_stderr
+    kind: call
+    edge_id: 48
+    range:
+      start_line: 605
+      start_col: 0
+      end_line: 605
+      end_col: 0
+  - from: tests.test_sessions.test_outdated_layout_mixed
+    to: ?.stderr.count
+    kind: call
+    edge_id: 49
+    range:
+      start_line: 756
+      start_col: 0
+      end_line: 756
+      end_col: 0

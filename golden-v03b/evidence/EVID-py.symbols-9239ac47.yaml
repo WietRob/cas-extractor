@@ -1,0 +1,38 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-9239ac47
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:55.245601+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.test_stream.SortJSONConverterPlugin.supports
+    kind: method
+    file: tests/test_stream.py
+    range:
+      start_line: 26
+      start_col: 0
+      end_line: 27
+      end_col: 0
+    fingerprint: 4b4a102a196d7013f0a7450a7c24dbf450752aea62f94998bc1e3d89a7dbcecd
+    decorators:
+    - classmethod
+    params:
+    - name: cls
+    - name: mime
+  - qualified: tests.test_stream.SortJSONConverterPlugin.convert
+    kind: method
+    file: tests/test_stream.py
+    range:
+      start_line: 29
+      start_col: 0
+      end_line: 32
+      end_col: 0
+    fingerprint: 258ff4e7d6235bef2520b71ebc202baeb75f0085f0c417023c0e0efa28328272
+    params:
+    - name: self
+    - name: body

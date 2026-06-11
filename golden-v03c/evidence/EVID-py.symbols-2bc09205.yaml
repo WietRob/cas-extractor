@@ -1,0 +1,39 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-2bc09205
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T17:44:04.292891+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.cli.argtypes.SessionNameValidator.__init__
+    kind: method
+    file: httpie/cli/argtypes.py
+    range:
+      start_line: 30
+      start_col: 0
+      end_line: 31
+      end_col: 0
+    fingerprint: 3f915c083065e876438f770593592edc9a7e1f3db043f1cc091d4f21620d110a
+    params:
+    - name: self
+    - name: error_message
+      annotation: str
+  - qualified: httpie.cli.argtypes.SessionNameValidator.__call__
+    kind: method
+    file: httpie/cli/argtypes.py
+    range:
+      start_line: 33
+      start_col: 0
+      end_line: 38
+      end_col: 0
+    fingerprint: b63b13745f3e147dfc9c2acec5c8306462e9a0f0bd1c1a77180470bf86375b1f
+    params:
+    - name: self
+    - name: value
+      annotation: str
+    returns: str

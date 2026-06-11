@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.sessions.Session.update_headers
+kind: entity
+type: py.function
+name: update_headers
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/sessions.py
+anchors:
+- type: symbol
+  value: httpie.sessions.Session.update_headers
+- type: fingerprint
+  value: bcf8de08c1502b52a4bf9d164901db99ed971c481606006f53a3b84d8dcc1968
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.sessions.Session

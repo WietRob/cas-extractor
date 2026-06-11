@@ -1,0 +1,84 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-878956ce
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:51:32.608070+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: tests.test_uploads.TestRequestBodyFromFilePath.test_request_body_from_file_by_path
+    kind: method
+    file: tests/test_uploads.py
+    range:
+      start_line: 342
+      start_col: 0
+      end_line: 350
+      end_col: 0
+    fingerprint: c1ed57b6f378a2d83ed394d149b4af29a4a547e951d8c31ae2a8e69e3bbb037a
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_uploads.TestRequestBodyFromFilePath.test_request_body_from_file_by_path_chunked
+    kind: method
+    file: tests/test_uploads.py
+    range:
+      start_line: 352
+      start_col: 0
+      end_line: 361
+      end_col: 0
+    fingerprint: e38b96a607cb377d1e817a359a3a9f0a333d64bcb704bed2a3e7287da05567de
+    params:
+    - name: self
+    - name: httpbin_with_chunked_support
+  - qualified: tests.test_uploads.TestRequestBodyFromFilePath.test_request_body_from_file_by_path_with_explicit_content_type
+    kind: method
+    file: tests/test_uploads.py
+    range:
+      start_line: 363
+      start_col: 0
+      end_line: 370
+      end_col: 0
+    fingerprint: e39768360e6733ccce1eb3bf6a14b05827b30b32a67edf40561bf4e572795c44
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_uploads.TestRequestBodyFromFilePath.test_request_body_from_file_by_path_no_field_name_allowed
+    kind: method
+    file: tests/test_uploads.py
+    range:
+      start_line: 372
+      start_col: 0
+      end_line: 377
+      end_col: 0
+    fingerprint: 32a6ac01c7437e25880ae9b0af502b081ba634908a8da8b7ae6b2c08bd03a60f
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_uploads.TestRequestBodyFromFilePath.test_request_body_from_file_by_path_no_data_items_allowed
+    kind: method
+    file: tests/test_uploads.py
+    range:
+      start_line: 379
+      start_col: 0
+      end_line: 390
+      end_col: 0
+    fingerprint: 43808c2808f43d192da9742d605a90b5947d35261c31bb0738386cce4066dad2
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_uploads.TestRequestBodyFromFilePath.test_multiple_request_bodies_from_file_by_path
+    kind: method
+    file: tests/test_uploads.py
+    range:
+      start_line: 392
+      start_col: 0
+      end_line: 403
+      end_col: 0
+    fingerprint: 722f49953e2b4462aec86cfa012eb914ad7d43f2af7c31108d563af25d9bd15e
+    params:
+    - name: self
+    - name: httpbin

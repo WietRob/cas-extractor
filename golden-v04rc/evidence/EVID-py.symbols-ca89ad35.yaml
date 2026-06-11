@@ -1,0 +1,79 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-ca89ad35
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T08:37:44.545889+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.test_auth_plugins
+    kind: module
+    file: tests/test_auth_plugins.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 135
+      end_col: 0
+    fingerprint: bed19957518ebaf518dd459aaab3926231ec3483ce0be2b7e4b79120b0efecfd
+  - qualified: tests.test_auth_plugins.basic_auth
+    kind: function
+    file: tests/test_auth_plugins.py
+    range:
+      start_line: 20
+      start_col: 0
+      end_line: 26
+      end_col: 0
+    fingerprint: 000a10b38b0a46b90c7acc85606cde52ee50bb77f53adc0cd31c7d28a40937db
+    params:
+    - name: header
+  - qualified: tests.test_auth_plugins.test_auth_plugin_parse_auth_false
+    kind: function
+    file: tests/test_auth_plugins.py
+    range:
+      start_line: 29
+      start_col: 0
+      end_line: 53
+      end_col: 0
+    fingerprint: 1cecd96b42358953d9859753c767ca0feaa1d463a7acfe5685d1d19114740ae8
+    params:
+    - name: httpbin
+  - qualified: tests.test_auth_plugins.test_auth_plugin_require_auth_false
+    kind: function
+    file: tests/test_auth_plugins.py
+    range:
+      start_line: 56
+      start_col: 0
+      end_line: 78
+      end_col: 0
+    fingerprint: 032e3e1d77f14dc32c494b4ef4b64651ea7061ab3da0ed44bc518b9c31312e98
+    params:
+    - name: httpbin
+  - qualified: tests.test_auth_plugins.test_auth_plugin_require_auth_false_and_auth_provided
+    kind: function
+    file: tests/test_auth_plugins.py
+    range:
+      start_line: 81
+      start_col: 0
+      end_line: 105
+      end_col: 0
+    fingerprint: a25e2cdcf99439fd16f009b4eee9ca39ae0f020638109ac35dfe45362fc1835f
+    params:
+    - name: httpbin
+  - qualified: tests.test_auth_plugins.test_auth_plugin_prompt_password_false
+    kind: function
+    file: tests/test_auth_plugins.py
+    range:
+      start_line: 110
+      start_col: 0
+      end_line: 135
+      end_col: 0
+    fingerprint: b85128780404d1724bfd58032faaf9db45465b40fe072a58db35159408ba1693
+    decorators:
+    - 'mock.patch(''httpie.cli.argtypes.AuthCredentials._getpass'', new=lambda self,
+      prompt: ''UNEXPECTED_PROMPT_RESPONSE'')'
+    params:
+    - name: httpbin

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.cli.argparser.BaseHTTPieArgumentParser
+kind: entity
+type: py.class
+name: BaseHTTPieArgumentParser
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/argparser.py
+anchors:
+- type: symbol
+  value: httpie.cli.argparser.BaseHTTPieArgumentParser
+- type: fingerprint
+  value: ea1ab9cb634f51d869aa3b0b11da3caeeed1353378ccbfe965cfa217f0f30c20
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.argparser

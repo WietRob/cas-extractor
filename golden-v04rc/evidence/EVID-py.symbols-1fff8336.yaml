@@ -1,0 +1,21 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-1fff8336
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T08:37:44.668250+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.utils.http.dump_stderr
+    kind: function
+    file: tests/utils/__init__.py
+    range:
+      start_line: 397
+      start_col: 0
+      end_line: 399
+      end_col: 0
+    fingerprint: 3aaa26ab60c5fcb1a0843ddd71e63358545689040c954e78dd8b7b7eae4a049a

@@ -1,0 +1,43 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-84f62281
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:52.958779+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.cli.requestitems.RequestItems.__init__
+    kind: method
+    file: httpie/cli/requestitems.py
+    range:
+      start_line: 26
+      start_col: 0
+      end_line: 34
+      end_col: 0
+    fingerprint: 3a8a6c185f45680e01b7eb909761b1ffbf564bb85975bc6c516e27117277621e
+    params:
+    - name: self
+    - name: request_type
+      annotation: Optional[RequestType]
+  - qualified: httpie.cli.requestitems.RequestItems.from_args
+    kind: method
+    file: httpie/cli/requestitems.py
+    range:
+      start_line: 37
+      start_col: 0
+      end_line: 120
+      end_col: 0
+    fingerprint: 08e3f1d95243af74068cc98bbc3d009db96dc0337da5c9b232af38e6988aa057
+    decorators:
+    - classmethod
+    params:
+    - name: cls
+    - name: request_item_args
+      annotation: List[KeyValueArg]
+    - name: request_type
+      annotation: Optional[RequestType]
+    returns: '''RequestItems'''

@@ -1,0 +1,160 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-133c8eb8
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T14:01:21.596801+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://cas-extractor
+  root: .
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.err.get
+  - symbol: ?.parser.add_argument
+  - symbol: ?.parser.parse_args
+  - symbol: ?.sem_result.summary
+  - symbol: ?.struct_result.summary
+  - symbol: ?.v.get
+  - symbol: argparse.ArgumentParser
+  - symbol: cas_extractor.validators.schema_validate.validate_structural
+  - symbol: cas_extractor.validators.semantic_validate.validate_semantic
+  - symbol: sys.exit
+  - symbol: validate
+  - symbol: validate.main
+  edges:
+  - from: validate.main
+    to: argparse.ArgumentParser
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 23
+      start_col: 0
+      end_line: 25
+      end_col: 0
+  - from: validate.main
+    to: ?.parser.add_argument
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 26
+      start_col: 0
+      end_line: 26
+      end_col: 0
+  - from: validate.main
+    to: ?.parser.add_argument
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 27
+      start_col: 0
+      end_line: 27
+      end_col: 0
+  - from: validate.main
+    to: ?.parser.add_argument
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 28
+      start_col: 0
+      end_line: 28
+      end_col: 0
+  - from: validate.main
+    to: ?.parser.add_argument
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 29
+      start_col: 0
+      end_line: 29
+      end_col: 0
+  - from: validate.main
+    to: ?.parser.parse_args
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 30
+      start_col: 0
+      end_line: 30
+      end_col: 0
+  - from: validate.main
+    to: cas_extractor.validators.schema_validate.validate_structural
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 38
+      start_col: 0
+      end_line: 38
+      end_col: 0
+  - from: validate.main
+    to: cas_extractor.validators.semantic_validate.validate_semantic
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 57
+      start_col: 0
+      end_line: 57
+      end_col: 0
+  - from: validate
+    to: validate.main
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 85
+      start_col: 0
+      end_line: 85
+      end_col: 0
+  - from: validate.main
+    to: ?.struct_result.summary
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 39
+      start_col: 0
+      end_line: 39
+      end_col: 0
+  - from: validate.main
+    to: ?.sem_result.summary
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 58
+      start_col: 0
+      end_line: 58
+      end_col: 0
+  - from: validate.main
+    to: sys.exit
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 78
+      start_col: 0
+      end_line: 78
+      end_col: 0
+  - from: validate.main
+    to: sys.exit
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 81
+      start_col: 0
+      end_line: 81
+      end_col: 0
+  - from: validate.main
+    to: ?.v.get
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 63
+      start_col: 0
+      end_line: 63
+      end_col: 0
+  - from: validate.main
+    to: ?.err.get
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 44
+      start_col: 0
+      end_line: 44
+      end_col: 0

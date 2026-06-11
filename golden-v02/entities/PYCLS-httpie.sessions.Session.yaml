@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.sessions.Session
+kind: entity
+type: py.class
+name: Session
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/sessions.py
+anchors:
+- type: symbol
+  value: httpie.sessions.Session
+- type: fingerprint
+  value: 582c0c45723bbc86dfa3b7024bed8d1da6140b18f341433d0b1a9ba7d8516b62
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.sessions

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.plugins.base.ConverterPlugin
+kind: entity
+type: py.class
+name: ConverterPlugin
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/plugins/base.py
+anchors:
+- type: symbol
+  value: httpie.plugins.base.ConverterPlugin
+- type: fingerprint
+  value: b2263b98a4e012ea4e113b1bcfd10727bbd4c1c6728978459fe967b2accdbf54
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.plugins.base

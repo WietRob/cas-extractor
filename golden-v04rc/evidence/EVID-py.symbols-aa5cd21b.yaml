@@ -1,0 +1,51 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-aa5cd21b
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T08:37:44.664988+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.utils.Encoder.__init__
+    kind: method
+    file: tests/utils/__init__.py
+    range:
+      start_line: 89
+      start_col: 0
+      end_line: 90
+      end_col: 0
+    fingerprint: 375da9a669705ddc3f081d40093e8e0ef5bb47aa4d4bec3ea885a10c3a7fa278
+    params:
+    - name: self
+  - qualified: tests.utils.Encoder.substitute
+    kind: method
+    file: tests/utils/__init__.py
+    range:
+      start_line: 92
+      start_col: 0
+      end_line: 95
+      end_col: 0
+    fingerprint: cc8774aa0a3bb5ca5865c9dbf92041b091a3916b29f1b335dabb6257268c8301
+    params:
+    - name: self
+    - name: data
+      annotation: bytes
+    returns: str
+  - qualified: tests.utils.Encoder.decode
+    kind: method
+    file: tests/utils/__init__.py
+    range:
+      start_line: 97
+      start_col: 0
+      end_line: 105
+      end_col: 0
+    fingerprint: 416876f19bf72e9a04013d828c4cec46fef885af0ef5f795ecd79926b8075e0b
+    params:
+    - name: self
+    - name: data
+      annotation: str
+    returns: Union[str, bytes]

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-tests.utils.matching.test_matching
+kind: entity
+type: py.module
+name: test_matching
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/utils/matching/test_matching.py
+anchors:
+- type: symbol
+  value: tests.utils.matching.test_matching
+- type: fingerprint
+  value: 871dcac40849444864911f6e6d6bbf8b766e393a0ba77bfea8e6836fcf0f567d
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils.matching

@@ -1,0 +1,73 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-4db63195
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:52.952495+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.cli.options.Argument.post_init
+    kind: method
+    file: httpie/cli/options.py
+    range:
+      start_line: 102
+      start_col: 0
+      end_line: 111
+      end_col: 0
+    fingerprint: 7c7ad27ab90918a38e94ffa136688663bcf276c9d215cbcc2f0c22732fe4ce16
+    params:
+    - name: self
+  - qualified: httpie.cli.options.Argument.serialize
+    kind: method
+    file: httpie/cli/options.py
+    range:
+      start_line: 113
+      start_col: 0
+      end_line: 165
+      end_col: 0
+    fingerprint: a4e8e88c8a1e5e044e481c03f8177c109449a5558e40de9b84dc0162694a1e1f
+    params:
+    - name: self
+    returns: Dict[str, Any]
+  - qualified: httpie.cli.options.Argument.is_positional
+    kind: method
+    file: httpie/cli/options.py
+    range:
+      start_line: 168
+      start_col: 0
+      end_line: 169
+      end_col: 0
+    fingerprint: 9d6479d6b8f92e2b0e65d3886717d367b8f59a9cb48476895b551c0992fffcdb
+    decorators:
+    - property
+    params:
+    - name: self
+  - qualified: httpie.cli.options.Argument.is_hidden
+    kind: method
+    file: httpie/cli/options.py
+    range:
+      start_line: 172
+      start_col: 0
+      end_line: 173
+      end_col: 0
+    fingerprint: 8a022f04dc7995df7af6190183aed3e252a7f59afd1d1ac212eb6b81d2b83e0d
+    decorators:
+    - property
+    params:
+    - name: self
+  - qualified: httpie.cli.options.Argument.__getattr__
+    kind: method
+    file: httpie/cli/options.py
+    range:
+      start_line: 175
+      start_col: 0
+      end_line: 179
+      end_col: 0
+    fingerprint: f6969acedc8789b6a879923ca84ddcd66c3d8b47152c4326990ba2dd0c3c349e
+    params:
+    - name: self
+    - name: attribute_name

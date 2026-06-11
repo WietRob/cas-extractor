@@ -1,0 +1,43 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-93d664ca
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:51:32.319294+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.output.ui.rich_palette
+    kind: module
+    file: httpie/output/ui/rich_palette.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 73
+      end_col: 0
+    fingerprint: 6503a93253203f65ff76385e8d02d0b77ff493676ec7efe7ee1f86df1ce0ac49
+  - qualified: httpie.output.ui.rich_palette._GenericColorCaster
+    kind: class
+    file: httpie/output/ui/rich_palette.py
+    range:
+      start_line: 26
+      start_col: 0
+      end_line: 42
+      end_col: 0
+    fingerprint: 705b29590b8ea7511d3b5c2c773ddf5122d03b141a5b398aa3886be4954c5edd
+  - qualified: httpie.output.ui.rich_palette._make_rich_color_theme
+    kind: function
+    file: httpie/output/ui/rich_palette.py
+    range:
+      start_line: 45
+      start_col: 0
+      end_line: 73
+      end_col: 0
+    fingerprint: a906adabd6a4e5c6c544a15b79ded00c73bd983369d6be04e72a0efed349f91e
+    params:
+    - name: style_name
+      annotation: Optional[str]
+    returns: '''Theme'''

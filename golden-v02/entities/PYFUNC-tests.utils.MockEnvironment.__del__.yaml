@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.utils.MockEnvironment.__del__
+kind: entity
+type: py.function
+name: __del__
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/utils/__init__.py
+anchors:
+- type: symbol
+  value: tests.utils.MockEnvironment.__del__
+- type: fingerprint
+  value: dcb6d8e4cfa1047d95c3c6bb27d6558837892f85d46422d1e72b96560d9422f9
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils.MockEnvironment

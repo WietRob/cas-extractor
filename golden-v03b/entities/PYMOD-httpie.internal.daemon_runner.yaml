@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.internal.daemon_runner
+kind: entity
+type: py.module
+name: daemon_runner
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/internal/daemon_runner.py
+anchors:
+- type: symbol
+  value: httpie.internal.daemon_runner
+- type: fingerprint
+  value: 0da1c0dc75eb547c7bf9b4994dc40cb6a35e1ccaabebeedbf9c780a1bfa98349
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.internal

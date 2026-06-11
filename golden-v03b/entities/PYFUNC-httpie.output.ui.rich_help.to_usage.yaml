@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.ui.rich_help.to_usage
+kind: entity
+type: py.function
+name: to_usage
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/ui/rich_help.py
+anchors:
+- type: symbol
+  value: httpie.output.ui.rich_help.to_usage
+- type: fingerprint
+  value: 344a510c306e1535e6eb3f528d2e0631c3a19241164c9e558200638602c768d7
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.ui.rich_help

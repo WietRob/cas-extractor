@@ -1,0 +1,131 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-a014606d
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T08:37:44.520647+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.sessions
+    kind: module
+    file: httpie/sessions.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 322
+      end_col: 0
+    fingerprint: f50f3450066f1089b48cac71f4a80ca53efc1a2580e2135a2d3df238a0158be8
+  - qualified: httpie.sessions.is_anonymous_session
+    kind: function
+    file: httpie/sessions.py
+    range:
+      start_line: 42
+      start_col: 0
+      end_line: 43
+      end_col: 0
+    fingerprint: dd86b26ee30bf5e263e8a1ece05c87a082f6fc30a0be9a3acc7fd6f4c9942765
+    params:
+    - name: session_name
+      annotation: str
+    returns: bool
+  - qualified: httpie.sessions.session_hostname_to_dirname
+    kind: function
+    file: httpie/sessions.py
+    range:
+      start_line: 46
+      start_col: 0
+      end_line: 53
+      end_col: 0
+    fingerprint: 35dc0143293a1c64c2888501ef34f4153f9f87449168e6442ac08c398d91cdf1
+    params:
+    - name: hostname
+      annotation: str
+    - name: session_name
+      annotation: str
+    returns: str
+  - qualified: httpie.sessions.strip_port
+    kind: function
+    file: httpie/sessions.py
+    range:
+      start_line: 56
+      start_col: 0
+      end_line: 57
+      end_col: 0
+    fingerprint: 4c4ac324abff437a98f358849fe28396c27ead46810b39f5308e7b893eec3e82
+    params:
+    - name: hostname
+      annotation: str
+    returns: str
+  - qualified: httpie.sessions.materialize_cookie
+    kind: function
+    file: httpie/sessions.py
+    range:
+      start_line: 60
+      start_col: 0
+      end_line: 72
+      end_col: 0
+    fingerprint: 18a59720d63fdcaf7844ac76c4af3d2ace5f4bf60dd0e4be6afa680b5b301cb3
+    params:
+    - name: cookie
+      annotation: Cookie
+    returns: Dict[str, Any]
+  - qualified: httpie.sessions.materialize_cookies
+    kind: function
+    file: httpie/sessions.py
+    range:
+      start_line: 75
+      start_col: 0
+      end_line: 79
+      end_col: 0
+    fingerprint: 929420193615eaa03c7128cd98b81921f5213abd73803efadb0e9646928bcf41
+    params:
+    - name: jar
+      annotation: RequestsCookieJar
+    returns: List[Dict[str, Any]]
+  - qualified: httpie.sessions.materialize_headers
+    kind: function
+    file: httpie/sessions.py
+    range:
+      start_line: 82
+      start_col: 0
+      end_line: 89
+      end_col: 0
+    fingerprint: 280cbe2b0f4dcbb2620316f1e63e43de2588c2ec09f3fd05f5ed17c2f9fd3459
+    params:
+    - name: headers
+      annotation: Dict[str, str]
+    returns: List[Dict[str, Any]]
+  - qualified: httpie.sessions.get_httpie_session
+    kind: function
+    file: httpie/sessions.py
+    range:
+      start_line: 92
+      start_col: 0
+      end_line: 121
+      end_col: 0
+    fingerprint: e867b66b204174e4d09d3dd329de6913746eed16bdc1c16e779a009f88c1acee
+    params:
+    - name: env
+      annotation: Environment
+    - name: config_dir
+      annotation: Path
+    - name: session_name
+      annotation: str
+    - name: host
+      annotation: Optional[str]
+    - name: url
+      annotation: str
+    returns: '''Session'''
+  - qualified: httpie.sessions.Session
+    kind: class
+    file: httpie/sessions.py
+    range:
+      start_line: 124
+      start_col: 0
+      end_line: 322
+      end_col: 0
+    fingerprint: 582c0c45723bbc86dfa3b7024bed8d1da6140b18f341433d0b1a9ba7d8516b62

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.plugins.manager.PluginManager.iter_entry_points
+kind: entity
+type: py.function
+name: iter_entry_points
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/plugins/manager.py
+anchors:
+- type: symbol
+  value: httpie.plugins.manager.PluginManager.iter_entry_points
+- type: fingerprint
+  value: 9a1f8e1ea25b8e2004d183fef2bc2fd15a4661194e72cfef6759b524994ba1ef
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.plugins.manager.PluginManager

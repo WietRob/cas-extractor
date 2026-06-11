@@ -1,0 +1,45 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-7de6ee8e
+kind: evidence
+type: py.symbols
+created_at: '2026-02-23T13:01:14.640246+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://h28-test
+  root: /tmp/h28-verify
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: test_h28.TestP6FactoryInChainH27.level2
+    kind: method
+    file: test_h28.py
+    range:
+      start_line: 161
+      start_col: 0
+      end_line: 162
+      end_col: 0
+    fingerprint: a948e4eed72921b0868e32894c09a730b50e4e5db341165a3cf9bb8e96fe4f4f
+    params:
+    - name: self
+  - qualified: test_h28.TestP6FactoryInChainH27.level1
+    kind: method
+    file: test_h28.py
+    range:
+      start_line: 164
+      start_col: 0
+      end_line: 165
+      end_col: 0
+    fingerprint: 544aa253bf82e7587fce8801eae9ad7a1fc1704f741a7ed0f27c71e3a7191ce5
+    params:
+    - name: self
+  - qualified: test_h28.TestP6FactoryInChainH27.run
+    kind: method
+    file: test_h28.py
+    range:
+      start_line: 167
+      start_col: 0
+      end_line: 169
+      end_col: 0
+    fingerprint: c84ddf02c043cc6e6ea7d1a53cb872c4239533f182f5ce23c4adc0b343a95ff9
+    params:
+    - name: self

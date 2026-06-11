@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-tests.test_cookie_on_redirects
+kind: entity
+type: py.module
+name: test_cookie_on_redirects
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_cookie_on_redirects.py
+anchors:
+- type: symbol
+  value: tests.test_cookie_on_redirects
+- type: fingerprint
+  value: 743e11df2f0d9f9b47fe6affb5d7898b3699580ec11cf683bc3091951d9b8c4d
+  algo: sha256
+claims: []
+relations: []
+namespace: tests

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_redirects.test_verbose_follow_redirect_with_repost
+kind: entity
+type: py.function
+name: test_verbose_follow_redirect_with_repost
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_redirects.py
+anchors:
+- type: symbol
+  value: tests.test_redirects.test_verbose_follow_redirect_with_repost
+- type: fingerprint
+  value: d087479d21135f079e9d69d80f27abb81c3fabae005fcda210c3a42c5247f56d
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_redirects

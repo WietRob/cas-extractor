@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.output.streams.PrettyStream
+kind: entity
+type: py.class
+name: PrettyStream
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/streams.py
+anchors:
+- type: symbol
+  value: httpie.output.streams.PrettyStream
+- type: fingerprint
+  value: f5f12ec78ce698162774766471877295d7a69077eaba41575a2f78c0298cd242
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.streams

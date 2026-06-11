@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_offline.test_offline
+kind: entity
+type: py.function
+name: test_offline
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_offline.py
+anchors:
+- type: symbol
+  value: tests.test_offline.test_offline
+- type: fingerprint
+  value: 4be9a2b1a85e74fc19d68d13a7efc1ba7b657fece73502e8aa1b1a488597f764
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_offline

@@ -1,0 +1,219 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-c862598b
+kind: evidence
+type: py.symbols
+created_at: '2026-02-23T07:07:57.420485+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: /tmp/h27-verify
+  revision: git:test
+payload:
+  symbols:
+  - qualified: test_h27
+    kind: module
+    file: test_h27.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 239
+      end_col: 0
+    fingerprint: ef6f47de342d64567082e95b58545e40f3c99befe90968676f5f6b0c9203beb4
+  - qualified: test_h27.HTTPClient
+    kind: class
+    file: test_h27.py
+    range:
+      start_line: 3
+      start_col: 0
+      end_line: 5
+      end_col: 0
+    fingerprint: d6802f2d2fcda29ff8ca4b0226fc804aa76af0875b38037ae8c9ae0b25dc5d11
+  - qualified: test_h27.WebSocketClient
+    kind: class
+    file: test_h27.py
+    range:
+      start_line: 7
+      start_col: 0
+      end_line: 9
+      end_col: 0
+    fingerprint: 8ecc5d7c9a9f39bc89449b75e4beac6151b8e7e76ef02197c87f9d2720ddc349
+  - qualified: test_h27.DataParser
+    kind: class
+    file: test_h27.py
+    range:
+      start_line: 11
+      start_col: 0
+      end_line: 13
+      end_col: 0
+    fingerprint: ae398f3be26b581ecfb74b9c91cb653194da561fba7a67ee3277af708966f430
+  - qualified: test_h27.CacheManager
+    kind: class
+    file: test_h27.py
+    range:
+      start_line: 15
+      start_col: 0
+      end_line: 17
+      end_col: 0
+    fingerprint: 30fec6acdd04f1502c885548d2b7841dcfa9f6f5309e3370550b31e4891e6987
+  - qualified: test_h27.TestH27TwoHop
+    kind: class
+    file: test_h27.py
+    range:
+      start_line: 20
+      start_col: 0
+      end_line: 29
+      end_col: 0
+    fingerprint: 3eb38791ee3ea6f11f670e67ee9d7e57baf00389bd044479736d4f9d86c7dadd
+  - qualified: test_h27.TestH27ThreeHop
+    kind: class
+    file: test_h27.py
+    range:
+      start_line: 32
+      start_col: 0
+      end_line: 44
+      end_col: 0
+    fingerprint: f72ffd0cd4142a4292c4286640b5680eb42343cc3e01b6db647950706c92feff
+  - qualified: test_h27.TestH27MultipleAttrs
+    kind: class
+    file: test_h27.py
+    range:
+      start_line: 47
+      start_col: 0
+      end_line: 58
+      end_col: 0
+    fingerprint: e36bd78353527e41b7003d3d0fabac1c6288de2c1d77f63380edfd8423c526fc
+  - qualified: test_h27.TestH27AnnAssign
+    kind: class
+    file: test_h27.py
+    range:
+      start_line: 61
+      start_col: 0
+      end_line: 70
+      end_col: 0
+    fingerprint: 43827fe435d248da4f63c243d9497c075cb985262290cc6a009b5f9da291f664
+  - qualified: test_h27.TestH27MergeWithH25
+    kind: class
+    file: test_h27.py
+    range:
+      start_line: 73
+      start_col: 0
+      end_line: 81
+      end_col: 0
+    fingerprint: 99a607506650e72fe14b9949ad7fd6ea7a97893035c44c6f4b021548858d8fc6
+  - qualified: test_h27.TestH27OverrideH2
+    kind: class
+    file: test_h27.py
+    range:
+      start_line: 84
+      start_col: 0
+      end_line: 96
+      end_col: 0
+    fingerprint: 31fd3143056ff389ec902cf7699b8a2663a3391afbe22481aa5afa8001dfc2e1
+  - qualified: test_h27.TestH27FanIn
+    kind: class
+    file: test_h27.py
+    range:
+      start_line: 99
+      start_col: 0
+      end_line: 111
+      end_col: 0
+    fingerprint: 824270fb35878d452d3a081eec98c562e6ba4e2a78cd744c5b9205f98a0cb337
+  - qualified: test_h27.TestH27Cycle
+    kind: class
+    file: test_h27.py
+    range:
+      start_line: 116
+      start_col: 0
+      end_line: 123
+      end_col: 0
+    fingerprint: c3180e751e9ca2304dcb283b093cd8598a10b9e0893700949f75c046408be9d5
+  - qualified: test_h27.TestH27DepthExceeded
+    kind: class
+    file: test_h27.py
+    range:
+      start_line: 126
+      start_col: 0
+      end_line: 141
+      end_col: 0
+    fingerprint: bce4f376ed30dd05514027cc42bbf1aacf286382571e9470c3aaa8062039234c
+  - qualified: test_h27.HelperClassH27
+    kind: class
+    file: test_h27.py
+    range:
+      start_line: 144
+      start_col: 0
+      end_line: 146
+      end_col: 0
+    fingerprint: 325ce3ee8198635eca88b1d3cc85bfe7179986325d29100da0d8f630404e7ba0
+  - qualified: test_h27.CallerClassH27
+    kind: class
+    file: test_h27.py
+    range:
+      start_line: 148
+      start_col: 0
+      end_line: 153
+      end_col: 0
+    fingerprint: 05c20cd897db9faf11937034fbdd029864f540af73c7975ac21e9a1ec47b1b55
+  - qualified: test_h27.TestH27Factory
+    kind: class
+    file: test_h27.py
+    range:
+      start_line: 157
+      start_col: 0
+      end_line: 166
+      end_col: 0
+    fingerprint: b10faf2625902a20f1662bd5b26bea23df583d3b0e76bb4cf0f5ae9274cdbef3
+  - qualified: test_h27.TestH27Conflict
+    kind: class
+    file: test_h27.py
+    range:
+      start_line: 169
+      start_col: 0
+      end_line: 185
+      end_col: 0
+    fingerprint: f9cafa0196d7b5e79867ffd626dd0f214fcd70d98d00b4ccb4c4c998c344048f
+  - qualified: test_h27.TestH27Unknown
+    kind: class
+    file: test_h27.py
+    range:
+      start_line: 188
+      start_col: 0
+      end_line: 197
+      end_col: 0
+    fingerprint: f7b7e56735b5f180917243d66cafd7da977d108de3343e41444a7f34a6c75e91
+  - qualified: test_h27.TestH27Conditional
+    kind: class
+    file: test_h27.py
+    range:
+      start_line: 200
+      start_col: 0
+      end_line: 211
+      end_col: 0
+    fingerprint: 003ba4e137063fa00304e5136f75a3c5f70ccd1340c6136489deeedc90b341fb
+  - qualified: test_h27.TestH27NoChain
+    kind: class
+    file: test_h27.py
+    range:
+      start_line: 214
+      start_col: 0
+      end_line: 220
+      end_col: 0
+    fingerprint: ef3aa36708f240f427a80c88160ac58272236be9fc8c9326379a95ff54036a21
+  - qualified: test_h27.TestH27ReassignWins
+    kind: class
+    file: test_h27.py
+    range:
+      start_line: 223
+      start_col: 0
+      end_line: 233
+      end_col: 0
+    fingerprint: 06e22ad74b819939f941b67233fee135cf0345f49bdbe589c36a1b2846cf89ad
+  - qualified: test_h27.TestH27NonExistent
+    kind: class
+    file: test_h27.py
+    range:
+      start_line: 236
+      start_col: 0
+      end_line: 239
+      end_col: 0
+    fingerprint: 96a32f6559626d5a28cfe2f0594089f2679410421981be0840d8bac2f4d698bb

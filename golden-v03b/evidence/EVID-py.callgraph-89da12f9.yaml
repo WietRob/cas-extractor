@@ -1,0 +1,24 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-89da12f9
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T15:03:56.333719+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: tests.test_auth_plugins.basic_auth
+  - symbol: tests.test_auth_plugins.test_auth_plugin_require_auth_false_and_auth_provided.Plugin.get_auth
+  edges:
+  - from: tests.test_auth_plugins.test_auth_plugin_require_auth_false_and_auth_provided.Plugin.get_auth
+    to: tests.test_auth_plugins.basic_auth
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 91
+      start_col: 0
+      end_line: 91
+      end_col: 0

@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-1834
+kind: relation
+type: calls
+from: PYFUNC-tests.test_cli.TestArgumentParser.test_guess_when_method_set_but_invalid_and_item_exists
+to: PYFUNC-argparse.Namespace
+confidence:
+  level: E1
+  direction: confirmed
+evidence:
+- EVID-py.callgraph-0152aad3
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1

@@ -1,0 +1,56 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-33596cfc
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T17:44:04.486611+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.test_sessions.TestCookieStorage.test_existing_and_new_cookies_sent_in_request
+    kind: method
+    file: tests/test_sessions.py
+    range:
+      start_line: 477
+      start_col: 0
+      end_line: 505
+      end_col: 0
+    fingerprint: b051b8ddc20cdc0dc3d78b43fc917257891bb69988e0cc900694deae99240a61
+    decorators:
+    - 'pytest.mark.parametrize([''specified_cookie_header'', ''new_cookies_dict'',
+      ''expected_effective_cookie_header''], [(''new=bar'', {''new'': ''bar''}, ''cookie1=foo;
+      cookie2=foo; new=bar''), (''new=bar;chocolate=milk'', {''new'': ''bar'', ''chocolate'':
+      ''milk''}, ''chocolate=milk; cookie1=foo; cookie2=foo; new=bar''), (''new=bar;
+      chocolate=milk'', {''new'': ''bar'', ''chocolate'': ''milk''}, ''chocolate=milk;
+      cookie1=foo; cookie2=foo; new=bar''), (''new=bar; chocolate=milk'', {''new'':
+      ''bar'', ''chocolate'': ''milk''}, ''cookie1=foo; cookie2=foo; new=bar; chocolate=milk''),
+      (''new=bar; chocolate=milk;;;'', {''new'': ''bar'', ''chocolate'': ''milk''},
+      ''chocolate=milk; cookie1=foo; cookie2=foo; new=bar'')])'
+    params:
+    - name: self
+    - name: specified_cookie_header
+    - name: new_cookies_dict
+    - name: expected_effective_cookie_header
+    - name: httpbin
+  - qualified: tests.test_sessions.TestCookieStorage.test_cookie_storage_priority
+    kind: method
+    file: tests/test_sessions.py
+    range:
+      start_line: 531
+      start_col: 0
+      end_line: 545
+      end_col: 0
+    fingerprint: fb9f6610f14ffb2fbba8676b169d1de8bb9753b98dae7b894f67e3143969fa35
+    decorators:
+    - pytest.mark.parametrize('cli_cookie, set_cookie, expected', [('', '/cookies/set/cookie1/bar',
+      'bar'), ('cookie1=not_foo', '/cookies/set/cookie1/bar', 'bar'), ('cookie1=not_foo',
+      '', 'not_foo'), ('', '', 'foo')])
+    params:
+    - name: self
+    - name: cli_cookie
+    - name: set_cookie
+    - name: expected
+    - name: httpbin

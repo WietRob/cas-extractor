@@ -1,0 +1,24 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-846fa853
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-21T12:10:20.615603+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+payload:
+  imports:
+  - from: run_pipeline_timed
+    imports:
+    - argparse
+    - sys
+    - subprocess
+    - os
+    - time
+    - json
+    - pathlib.Path
+    - collections.Counter
+    - datetime.datetime
+    - datetime.timezone

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.plugins.builtin.BuiltinAuthPlugin
+kind: entity
+type: py.class
+name: BuiltinAuthPlugin
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/plugins/builtin.py
+anchors:
+- type: symbol
+  value: httpie.plugins.builtin.BuiltinAuthPlugin
+- type: fingerprint
+  value: 46b878580b4b78e2812433042a0a2d502d284cbded27bdad29fe2a6afc9c881d
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.plugins.builtin

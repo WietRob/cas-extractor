@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-cas_extractor.validators.semantic_validate
+kind: entity
+type: py.module
+name: semantic_validate
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor/validators/semantic_validate.py
+anchors:
+- type: symbol
+  value: cas_extractor.validators.semantic_validate
+- type: fingerprint
+  value: 48c28736f79945fd30e928708f6c0141f4b193485d5ecfbbc59192d99fb81d0f
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor.validators

@@ -1,0 +1,34 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-2bc09205
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T12:13:53.772406+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: argparse.ArgumentError
+  - symbol: httpie.cli.argtypes.SessionNameValidator.__call__
+  - symbol: sessions.VALID_SESSION_NAME_PATTERN.search
+  edges:
+  - from: httpie.cli.argtypes.SessionNameValidator.__call__
+    to: argparse.ArgumentError
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 37
+      start_col: 0
+      end_line: 37
+      end_col: 0
+  - from: httpie.cli.argtypes.SessionNameValidator.__call__
+    to: sessions.VALID_SESSION_NAME_PATTERN.search
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 36
+      start_col: 0
+      end_line: 36
+      end_col: 0

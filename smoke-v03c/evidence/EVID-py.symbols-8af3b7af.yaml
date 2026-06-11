@@ -1,0 +1,139 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-8af3b7af
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T17:43:58.671649+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://cas-extractor
+  root: .
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: cas_extractor_writers_evidence_writer
+    kind: module
+    file: cas_extractor_writers_evidence_writer.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 270
+      end_col: 0
+    fingerprint: 4afa47decccfd9411eebf9acba0ea375b8e9ac5a4e18f424427b71474e159322
+  - qualified: cas_extractor_writers_evidence_writer.write_symbols_evidence
+    kind: function
+    file: cas_extractor_writers_evidence_writer.py
+    range:
+      start_line: 26
+      start_col: 0
+      end_line: 57
+      end_col: 0
+    fingerprint: 80671db188b341a0957c21a01c7f38a894bdbe55ddd0525d8e93c40061c440a0
+    params:
+    - name: symbols
+      annotation: list[SymbolEntry]
+    - name: source
+      annotation: SourceInfo
+    - name: out_dir
+      annotation: str
+    returns: list[str]
+  - qualified: cas_extractor_writers_evidence_writer.write_imports_evidence
+    kind: function
+    file: cas_extractor_writers_evidence_writer.py
+    range:
+      start_line: 60
+      start_col: 0
+      end_line: 107
+      end_col: 0
+    fingerprint: eba309e225c3308ae6e276bc94f9f37008eb048be9ef45d76f7f19408f9952ef
+    params:
+    - name: imports
+      annotation: list[ImportEntry]
+    - name: source
+      annotation: SourceInfo
+    - name: out_dir
+      annotation: str
+    returns: list[str]
+  - qualified: cas_extractor_writers_evidence_writer.write_calls_evidence
+    kind: function
+    file: cas_extractor_writers_evidence_writer.py
+    range:
+      start_line: 110
+      start_col: 0
+      end_line: 174
+      end_col: 0
+    fingerprint: 3d03f3a60392ef6dcd797af9df3033d5b666c68c9ae1e6f063584d9e7cb84803
+    params:
+    - name: calls
+      annotation: list[CallEntry]
+    - name: source
+      annotation: SourceInfo
+    - name: out_dir
+      annotation: str
+    returns: list[str]
+  - qualified: cas_extractor_writers_evidence_writer._resolution_to_kind
+    kind: function
+    file: cas_extractor_writers_evidence_writer.py
+    range:
+      start_line: 177
+      start_col: 0
+      end_line: 186
+      end_col: 0
+    fingerprint: 79d7480c9a98e11e1ce0abd45af352982949d99f073fd87bea0986c0997137c0
+    params:
+    - name: resolution
+      annotation: str
+    returns: str
+  - qualified: cas_extractor_writers_evidence_writer._write_artifact
+    kind: function
+    file: cas_extractor_writers_evidence_writer.py
+    range:
+      start_line: 191
+      start_col: 0
+      end_line: 218
+      end_col: 0
+    fingerprint: cfe0084ad0b5b8ec9add11f0b7fe27421a1e6a003f0af9bf4ae7e3a2c6a19eab
+    params:
+    - name: artifact
+      annotation: EvidenceArtifact
+    - name: out_dir
+      annotation: str
+    returns: str
+  - qualified: cas_extractor_writers_evidence_writer._symbol_to_dict
+    kind: function
+    file: cas_extractor_writers_evidence_writer.py
+    range:
+      start_line: 221
+      start_col: 0
+      end_line: 252
+      end_col: 0
+    fingerprint: e46ecb6e3b7c44d61ba1e6fd9a644ae77a5c41a3ded9d3620c209437dccc8116
+    params:
+    - name: sym
+      annotation: SymbolEntry
+    returns: dict[str, Any]
+  - qualified: cas_extractor_writers_evidence_writer._import_to_dict
+    kind: function
+    file: cas_extractor_writers_evidence_writer.py
+    range:
+      start_line: 255
+      start_col: 0
+      end_line: 261
+      end_col: 0
+    fingerprint: 12caf8993b8d947bcdc22395f012e6328b87ac8439cb1121496e168ad8458f0b
+    params:
+    - name: imp
+      annotation: ImportEntry
+    returns: dict[str, Any]
+  - qualified: cas_extractor_writers_evidence_writer._call_to_dict
+    kind: function
+    file: cas_extractor_writers_evidence_writer.py
+    range:
+      start_line: 264
+      start_col: 0
+      end_line: 270
+      end_col: 0
+    fingerprint: 53790bcef311e7998315591923760751d16c929f7da74797e64b72c845a15c0e
+    params:
+    - name: call
+      annotation: CallEntry
+    returns: dict[str, Any]

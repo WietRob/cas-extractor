@@ -1,0 +1,97 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-1c13d1ab
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T08:37:44.439501+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.config.Config.__init__
+    kind: method
+    file: httpie/config.py
+    range:
+      start_line: 143
+      start_col: 0
+      end_line: 146
+      end_col: 0
+    fingerprint: 9125051c477a8e71d5a54dfea59a286be0408664e6445384a00868b3cbb301db
+    params:
+    - name: self
+    - name: directory
+      annotation: Union[str, Path]
+  - qualified: httpie.config.Config.default_options
+    kind: method
+    file: httpie/config.py
+    range:
+      start_line: 149
+      start_col: 0
+      end_line: 150
+      end_col: 0
+    fingerprint: e8c0813c0d7b92731384853683e68e2af61ec6f67f52e6f7ad833c74ec96596d
+    decorators:
+    - property
+    params:
+    - name: self
+    returns: list
+  - qualified: httpie.config.Config._configured_path
+    kind: method
+    file: httpie/config.py
+    range:
+      start_line: 152
+      start_col: 0
+      end_line: 155
+      end_col: 0
+    fingerprint: 26eef4093ada737403483cb0cb8b6fe491d49079f6f56fb063b002337f9ec4c8
+    params:
+    - name: self
+    - name: config_option
+      annotation: str
+    - name: default
+      annotation: str
+    returns: None
+  - qualified: httpie.config.Config.plugins_dir
+    kind: method
+    file: httpie/config.py
+    range:
+      start_line: 158
+      start_col: 0
+      end_line: 159
+      end_col: 0
+    fingerprint: 09a333f86c710b62bcdf39ac9b732a392e321e650d72a3f3596167df940930d7
+    decorators:
+    - property
+    params:
+    - name: self
+    returns: Path
+  - qualified: httpie.config.Config.version_info_file
+    kind: method
+    file: httpie/config.py
+    range:
+      start_line: 162
+      start_col: 0
+      end_line: 163
+      end_col: 0
+    fingerprint: 007b09f67f71f01291378f6e6d456cfb4ef40943ff064f71d0d8fb3e50edc732
+    decorators:
+    - property
+    params:
+    - name: self
+    returns: Path
+  - qualified: httpie.config.Config.developer_mode
+    kind: method
+    file: httpie/config.py
+    range:
+      start_line: 166
+      start_col: 0
+      end_line: 172
+      end_col: 0
+    fingerprint: 1ca6ba1f652b62346d378b7e0d8c1afd76e4f88d8efb099cfda4e2d54ee27502
+    decorators:
+    - property
+    params:
+    - name: self
+    returns: bool

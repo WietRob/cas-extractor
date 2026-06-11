@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-tests.test_config
+kind: entity
+type: py.module
+name: test_config
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_config.py
+anchors:
+- type: symbol
+  value: tests.test_config
+- type: fingerprint
+  value: f11d97f47a788b72b7c4212a6577484a812f2c498891cef9604c230b6f26330c
+  algo: sha256
+claims: []
+relations: []
+namespace: tests

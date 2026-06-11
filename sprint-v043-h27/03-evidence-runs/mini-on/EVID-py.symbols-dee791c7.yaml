@@ -1,0 +1,23 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-dee791c7
+kind: evidence
+type: py.symbols
+created_at: '2026-02-23T07:07:57.432262+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: /tmp/h27-verify
+  revision: git:test
+payload:
+  symbols:
+  - qualified: test_h27.TestH27NonExistent.run
+    kind: method
+    file: test_h27.py
+    range:
+      start_line: 237
+      start_col: 0
+      end_line: 239
+      end_col: 0
+    fingerprint: ca38ea09269d240dc59edc429606a4dfb8d82380763c155ee1b40235ca388d11
+    params:
+    - name: self

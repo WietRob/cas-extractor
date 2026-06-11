@@ -1,0 +1,97 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-864e894f
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:51:32.421830+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: tests.test_cli.TestItemParsing.test_invalid_items
+    kind: method
+    file: tests/test_cli.py
+    range:
+      start_line: 25
+      start_col: 0
+      end_line: 28
+      end_col: 0
+    fingerprint: dad2a60542aceb458ecf4a5d10b9fe3ee143813a2d74e554a4c08b6e295e7902
+    params:
+    - name: self
+  - qualified: tests.test_cli.TestItemParsing.test_escape_separator
+    kind: method
+    file: tests/test_cli.py
+    range:
+      start_line: 30
+      start_col: 0
+      end_line: 52
+      end_col: 0
+    fingerprint: 320fadceb260196e6db9a9ba4106c96f83320eca4b1e2351e9693a44ef14b9f5
+    params:
+    - name: self
+  - qualified: tests.test_cli.TestItemParsing.test_backslash_before_non_special_character_does_not_escape
+    kind: method
+    file: tests/test_cli.py
+    range:
+      start_line: 59
+      start_col: 0
+      end_line: 64
+      end_col: 0
+    fingerprint: 579702e68a65d37a16e9787db6eb8b06a2ffa44f5987b3daaf1469c3e908cf19
+    decorators:
+    - pytest.mark.parametrize('string, key, sep, value', [('path=c:\\windows', 'path',
+      '=', 'c:\\windows'), ('path=c:\\windows\\', 'path', '=', 'c:\\windows\\'), ('path\\==c:\\windows',
+      'path=', '=', 'c:\\windows')])
+    params:
+    - name: self
+    - name: string
+    - name: key
+    - name: sep
+    - name: value
+  - qualified: tests.test_cli.TestItemParsing.test_escape_longsep
+    kind: method
+    file: tests/test_cli.py
+    range:
+      start_line: 66
+      start_col: 0
+      end_line: 72
+      end_col: 0
+    fingerprint: ca6cba33117bbf7f0ce6e32f13209acaa332f614639ab5eeda959f400e02f360
+    params:
+    - name: self
+  - qualified: tests.test_cli.TestItemParsing.test_valid_items
+    kind: method
+    file: tests/test_cli.py
+    range:
+      start_line: 74
+      start_col: 0
+      end_line: 128
+      end_col: 0
+    fingerprint: 7bb596a1f2484a1a60161208eec08f38acee220b3b33699d979b3827e4bf47c3
+    params:
+    - name: self
+  - qualified: tests.test_cli.TestItemParsing.test_multiple_file_fields_with_same_field_name
+    kind: method
+    file: tests/test_cli.py
+    range:
+      start_line: 130
+      start_col: 0
+      end_line: 135
+      end_col: 0
+    fingerprint: f8664a9e8f6c52392a2d645b28889d3781db39d25c681dacae064438408c30b8
+    params:
+    - name: self
+  - qualified: tests.test_cli.TestItemParsing.test_multiple_text_fields_with_same_field_name
+    kind: method
+    file: tests/test_cli.py
+    range:
+      start_line: 137
+      start_col: 0
+      end_line: 149
+      end_col: 0
+    fingerprint: 3f63552e10caad4d2f436e0eb6f70a715dd6e9ec23b4eaa6f7ee0d794eecb0e5
+    params:
+    - name: self

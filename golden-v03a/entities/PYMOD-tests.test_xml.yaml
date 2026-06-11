@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-tests.test_xml
+kind: entity
+type: py.module
+name: test_xml
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_xml.py
+anchors:
+- type: symbol
+  value: tests.test_xml
+- type: fingerprint
+  value: c6a027137db433f4f3d7da45c67fa3bc40b7d3d119c63b742d47d30ab496bea5
+  algo: sha256
+claims: []
+relations: []
+namespace: tests

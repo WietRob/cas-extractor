@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.writer.write_message
+kind: entity
+type: py.function
+name: write_message
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/writer.py
+anchors:
+- type: symbol
+  value: httpie.output.writer.write_message
+- type: fingerprint
+  value: 27902c95de7f6a181cf0350fe7928f6bf7c4cb6295231af4a3f7ceea099f8f02
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.writer

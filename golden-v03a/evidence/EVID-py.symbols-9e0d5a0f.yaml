@@ -1,0 +1,176 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-9e0d5a0f
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:53.108018+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: tests.test_cookie_on_redirects
+    kind: module
+    file: tests/test_cookie_on_redirects.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 250
+      end_col: 0
+    fingerprint: 743e11df2f0d9f9b47fe6affb5d7898b3699580ec11cf683bc3091951d9b8c4d
+  - qualified: tests.test_cookie_on_redirects.test_explicit_user_set_cookie
+    kind: function
+    file: tests/test_cookie_on_redirects.py
+    range:
+      start_line: 9
+      start_col: 0
+      end_line: 18
+      end_col: 0
+    fingerprint: 664e00b3c51bc38e41efd7d5d55d46f658f5f1f753b863c11be801a4a7378908
+    decorators:
+    - pytest.mark.parametrize('target_httpbin', ['httpbin', 'remote_httpbin'])
+    params:
+    - name: httpbin
+    - name: target_httpbin
+    - name: request
+  - qualified: tests.test_cookie_on_redirects.test_explicit_user_set_cookie_in_session
+    kind: function
+    file: tests/test_cookie_on_redirects.py
+    range:
+      start_line: 25
+      start_col: 0
+      end_line: 36
+      end_col: 0
+    fingerprint: 578d48baf0086a2fc336631c23a0f7cb55de379a4db8616a0275e80c866bec3e
+    decorators:
+    - pytest.mark.parametrize('target_httpbin', ['httpbin', 'remote_httpbin'])
+    params:
+    - name: tmp_path
+    - name: httpbin
+    - name: target_httpbin
+    - name: request
+  - qualified: tests.test_cookie_on_redirects.test_saved_user_set_cookie_in_session
+    kind: function
+    file: tests/test_cookie_on_redirects.py
+    range:
+      start_line: 43
+      start_col: 0
+      end_line: 60
+      end_col: 0
+    fingerprint: 89619abde25f7759320f257770c984196a26d15a30249dbdc267f26c6c63f784
+    decorators:
+    - pytest.mark.parametrize('target_httpbin', ['httpbin', 'remote_httpbin'])
+    params:
+    - name: tmp_path
+    - name: httpbin
+    - name: target_httpbin
+    - name: request
+  - qualified: tests.test_cookie_on_redirects.test_explicit_user_set_headers
+    kind: function
+    file: tests/test_cookie_on_redirects.py
+    range:
+      start_line: 68
+      start_col: 0
+      end_line: 87
+      end_col: 0
+    fingerprint: 2e823238b5f0f8efabf7a2dac1e81baa143fde94e80da08ae65871b5c6592456
+    decorators:
+    - pytest.mark.parametrize('target_httpbin', ['httpbin', 'remote_httpbin'])
+    - pytest.mark.parametrize('session', [True, False])
+    params:
+    - name: httpbin
+    - name: tmp_path
+    - name: target_httpbin
+    - name: session
+    - name: request
+  - qualified: tests.test_cookie_on_redirects.test_server_set_cookie_on_redirect_same_domain
+    kind: function
+    file: tests/test_cookie_on_redirects.py
+    range:
+      start_line: 91
+      start_col: 0
+      end_line: 104
+      end_col: 0
+    fingerprint: 2516b0364780f7560a23fc4bd304b68b86bf2db797e3240c9c86311159b30f44
+    decorators:
+    - pytest.mark.parametrize('session', [True, False])
+    params:
+    - name: tmp_path
+    - name: httpbin
+    - name: session
+  - qualified: tests.test_cookie_on_redirects.test_server_set_cookie_on_redirect_different_domain
+    kind: function
+    file: tests/test_cookie_on_redirects.py
+    range:
+      start_line: 108
+      start_col: 0
+      end_line: 126
+      end_col: 0
+    fingerprint: 43b430ada0f4a31f3fc0a0a6dc31f281dde83be924fcf3611bd0d12e288536d7
+    decorators:
+    - pytest.mark.parametrize('session', [True, False])
+    params:
+    - name: tmp_path
+    - name: http_server
+    - name: httpbin
+    - name: session
+  - qualified: tests.test_cookie_on_redirects.test_saved_session_cookies_on_same_domain
+    kind: function
+    file: tests/test_cookie_on_redirects.py
+    range:
+      start_line: 129
+      start_col: 0
+      end_line: 141
+      end_col: 0
+    fingerprint: ef91352d40369d68ec5eaf074ef02ea48be3a1c1a264dcdfa2f1c0cd8bc047f3
+    params:
+    - name: tmp_path
+    - name: httpbin
+  - qualified: tests.test_cookie_on_redirects.test_saved_session_cookies_on_different_domain
+    kind: function
+    file: tests/test_cookie_on_redirects.py
+    range:
+      start_line: 144
+      start_col: 0
+      end_line: 156
+      end_col: 0
+    fingerprint: a70f384edfcb047f48e5a1244b76486f4e5955a41afe1062198072fe01e0d0ee
+    params:
+    - name: tmp_path
+    - name: httpbin
+    - name: remote_httpbin
+  - qualified: tests.test_cookie_on_redirects.test_saved_session_cookies_on_redirect
+    kind: function
+    file: tests/test_cookie_on_redirects.py
+    range:
+      start_line: 197
+      start_col: 0
+      end_line: 218
+      end_col: 0
+    fingerprint: 32fe83cbd845a32696b6cce87833a088858664db9857671cfbc31574c6551f03
+    decorators:
+    - pytest.mark.parametrize(['initial_domain', 'first_request_domain', 'second_request_domain',
+      'expect_cookies'], [('httpbin', 'httpbin', 'httpbin', True), ('httpbin', 'remote_httpbin',
+      'remote_httpbin', False), ('httpbin', 'httpbin', 'remote_httpbin', False), ('httpbin',
+      'remote_httpbin', 'httpbin', True)])
+    params:
+    - name: tmp_path
+    - name: initial_domain
+    - name: first_request_domain
+    - name: second_request_domain
+    - name: expect_cookies
+    - name: request
+  - qualified: tests.test_cookie_on_redirects.test_saved_session_cookie_pool
+    kind: function
+    file: tests/test_cookie_on_redirects.py
+    range:
+      start_line: 221
+      start_col: 0
+      end_line: 250
+      end_col: 0
+    fingerprint: 423bd1f16a0c9e3f9571ce28f115c7580940d73a94938ea841afc6451a664d97
+    params:
+    - name: tmp_path
+    - name: httpbin
+    - name: remote_httpbin

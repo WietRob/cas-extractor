@@ -1,0 +1,33 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-74e9fe38
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T17:44:05.249120+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: datetime.timedelta
+  - symbol: httpie.internal.update_warnings
+  edges:
+  - from: httpie.internal.update_warnings
+    to: datetime.timedelta
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 18
+      start_col: 0
+      end_line: 18
+      end_col: 0
+  - from: httpie.internal.update_warnings
+    to: datetime.timedelta
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 19
+      start_col: 0
+      end_line: 19
+      end_col: 0

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.models.HTTPMessage.encoding
+kind: entity
+type: py.function
+name: encoding
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/models.py
+anchors:
+- type: symbol
+  value: httpie.models.HTTPMessage.encoding
+- type: fingerprint
+  value: 5d4c98be6061a2652f7840ef0bbf31569f65f98a0db32786fe5a403fdd7b51c5
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.models.HTTPMessage

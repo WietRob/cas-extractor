@@ -1,0 +1,489 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-a2f2027c
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:33.962867+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.PEP_503.sub
+  - symbol: ?.distribution.locate_file
+  - symbol: ?.installation_line.split
+  - symbol: ?.installation_line.startswith
+  - symbol: ?.known_plugins.items
+  - symbol: ?.last_line.partition
+  - symbol: ?.metadata_path.exists
+  - symbol: ?.metadata_path.iterdir
+  - symbol: ?.metadata_path.rmdir
+  - symbol: ?.pip_args.append
+  - symbol: ?.pip_args.extend
+  - symbol: ?.raw_stdout.decode
+  - symbol: ?.site_dir.iterdir
+  - symbol: ?.stderr.strip
+  - symbol: ?.stdout.decode
+  - symbol: ?.stdout.splitlines
+  - symbol: ?.target.rpartition
+  - symbol: collections.defaultdict
+  - symbol: contextlib.suppress
+  - symbol: httpie.compat.get_dist_name
+  - symbol: httpie.compat.importlib_metadata.distribution
+  - symbol: httpie.compat.importlib_metadata.version
+  - symbol: httpie.manager.cli.missing_subcommand
+  - symbol: httpie.manager.cli.parser.error
+  - symbol: httpie.manager.compat.run_pip
+  - symbol: httpie.manager.tasks.plugins.PluginInstaller.__init__
+  - symbol: httpie.manager.tasks.plugins.PluginInstaller._clear_metadata
+  - symbol: httpie.manager.tasks.plugins.PluginInstaller._install
+  - symbol: httpie.manager.tasks.plugins.PluginInstaller._uninstall
+  - symbol: httpie.manager.tasks.plugins.PluginInstaller.fail
+  - symbol: httpie.manager.tasks.plugins.PluginInstaller.install
+  - symbol: httpie.manager.tasks.plugins.PluginInstaller.list
+  - symbol: httpie.manager.tasks.plugins.PluginInstaller.run
+  - symbol: httpie.manager.tasks.plugins.PluginInstaller.setup_plugins_dir
+  - symbol: httpie.manager.tasks.plugins.PluginInstaller.uninstall
+  - symbol: httpie.manager.tasks.plugins.PluginInstaller.upgrade
+  - symbol: httpie.plugins.manager.enable_plugins
+  - symbol: httpie.plugins.registry.plugin_manager.iter_entry_points
+  - symbol: httpie.status.ExitStatus
+  - symbol: httpie.utils.get_site_paths
+  - symbol: os.unlink
+  - symbol: pathlib.Path
+  - symbol: shutil.rmtree
+  - symbol: textwrap.indent
+  edges:
+  - from: httpie.manager.tasks.plugins.PluginInstaller.__init__
+    to: httpie.manager.tasks.plugins.PluginInstaller.setup_plugins_dir
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 28
+      start_col: 0
+      end_line: 28
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller._install
+    to: ?.pip_args.extend
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 71
+      start_col: 0
+      end_line: 71
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller.install
+    to: httpie.manager.tasks.plugins.PluginInstaller._install
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 108
+      start_col: 0
+      end_line: 108
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller._clear_metadata
+    to: collections.defaultdict
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 115
+      start_col: 0
+      end_line: 115
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller._clear_metadata
+    to: httpie.utils.get_site_paths
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 116
+      start_col: 0
+      end_line: 116
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller.upgrade
+    to: httpie.manager.tasks.plugins.PluginInstaller._install
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 136
+      start_col: 0
+      end_line: 139
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller.upgrade
+    to: ?.raw_stdout.decode
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 143
+      start_col: 0
+      end_line: 143
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller.upgrade
+    to: ?.installation_line.startswith
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 145
+      start_col: 0
+      end_line: 145
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller.uninstall
+    to: httpie.status.ExitStatus
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 194
+      start_col: 0
+      end_line: 194
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller.list
+    to: collections.defaultdict
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 199
+      start_col: 0
+      end_line: 199
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller.list
+    to: httpie.plugins.registry.plugin_manager.iter_entry_points
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 201
+      start_col: 0
+      end_line: 201
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller.list
+    to: ?.known_plugins.items
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 206
+      start_col: 0
+      end_line: 206
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller._install
+    to: ?.pip_args.append
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 70
+      start_col: 0
+      end_line: 70
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller._install
+    to: httpie.manager.compat.run_pip
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 74
+      start_col: 0
+      end_line: 74
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller._install
+    to: ?.stdout.decode
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 81
+      start_col: 0
+      end_line: 81
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller._install
+    to: httpie.manager.tasks.plugins.PluginInstaller.fail
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 99
+      start_col: 0
+      end_line: 99
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller._clear_metadata
+    to: ?.site_dir.iterdir
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 117
+      start_col: 0
+      end_line: 117
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller._clear_metadata
+    to: ?.target.rpartition
+    kind: call
+    edge_id: 17
+    range:
+      start_line: 123
+      start_col: 0
+      end_line: 123
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller.upgrade
+    to: ?.stdout.splitlines
+    kind: call
+    edge_id: 18
+    range:
+      start_line: 144
+      start_col: 0
+      end_line: 144
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller.upgrade
+    to: httpie.manager.tasks.plugins.PluginInstaller._clear_metadata
+    kind: call
+    edge_id: 19
+    range:
+      start_line: 146
+      start_col: 0
+      end_line: 146
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller._uninstall
+    to: httpie.compat.importlib_metadata.distribution
+    kind: call
+    edge_id: 20
+    range:
+      start_line: 150
+      start_col: 0
+      end_line: 150
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller._uninstall
+    to: httpie.manager.tasks.plugins.PluginInstaller.fail
+    kind: call
+    edge_id: 21
+    range:
+      start_line: 159
+      start_col: 0
+      end_line: 161
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller._uninstall
+    to: httpie.manager.tasks.plugins.PluginInstaller.fail
+    kind: call
+    edge_id: 22
+    range:
+      start_line: 165
+      start_col: 0
+      end_line: 165
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller._uninstall
+    to: ?.metadata_path.exists
+    kind: call
+    edge_id: 23
+    range:
+      start_line: 177
+      start_col: 0
+      end_line: 177
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller._uninstall
+    to: ?.metadata_path.rmdir
+    kind: call
+    edge_id: 24
+    range:
+      start_line: 180
+      start_col: 0
+      end_line: 180
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller.list
+    to: httpie.compat.importlib_metadata.version
+    kind: call
+    edge_id: 25
+    range:
+      start_line: 209
+      start_col: 0
+      end_line: 209
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller.run
+    to: httpie.manager.cli.parser.error
+    kind: call
+    edge_id: 26
+    range:
+      start_line: 225
+      start_col: 0
+      end_line: 225
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller.run
+    to: httpie.plugins.manager.enable_plugins
+    kind: call
+    edge_id: 27
+    range:
+      start_line: 227
+      start_col: 0
+      end_line: 227
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller._install
+    to: ?.last_line.partition
+    kind: call
+    edge_id: 28
+    range:
+      start_line: 94
+      start_col: 0
+      end_line: 94
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller._uninstall
+    to: httpie.manager.tasks.plugins.PluginInstaller.fail
+    kind: call
+    edge_id: 29
+    range:
+      start_line: 152
+      start_col: 0
+      end_line: 152
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller._uninstall
+    to: pathlib.Path
+    kind: call
+    edge_id: 30
+    range:
+      start_line: 154
+      start_col: 0
+      end_line: 154
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller._uninstall
+    to: contextlib.suppress
+    kind: call
+    edge_id: 31
+    range:
+      start_line: 171
+      start_col: 0
+      end_line: 171
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller._uninstall
+    to: os.unlink
+    kind: call
+    edge_id: 32
+    range:
+      start_line: 172
+      start_col: 0
+      end_line: 172
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller.uninstall
+    to: httpie.manager.tasks.plugins.PluginInstaller._uninstall
+    kind: call
+    edge_id: 33
+    range:
+      start_line: 193
+      start_col: 0
+      end_line: 193
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller.list
+    to: httpie.compat.get_dist_name
+    kind: call
+    edge_id: 34
+    range:
+      start_line: 203
+      start_col: 0
+      end_line: 203
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller.run
+    to: httpie.manager.cli.missing_subcommand
+    kind: call
+    edge_id: 35
+    range:
+      start_line: 225
+      start_col: 0
+      end_line: 225
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller.run
+    to: httpie.manager.tasks.plugins.PluginInstaller.install
+    kind: call
+    edge_id: 36
+    range:
+      start_line: 229
+      start_col: 0
+      end_line: 229
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller._clear_metadata
+    to: shutil.rmtree
+    kind: call
+    edge_id: 37
+    range:
+      start_line: 130
+      start_col: 0
+      end_line: 130
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller.upgrade
+    to: ?.installation_line.split
+    kind: call
+    edge_id: 38
+    range:
+      start_line: 146
+      start_col: 0
+      end_line: 146
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller._uninstall
+    to: ?.distribution.locate_file
+    kind: call
+    edge_id: 39
+    range:
+      start_line: 154
+      start_col: 0
+      end_line: 154
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller._uninstall
+    to: ?.distribution.locate_file
+    kind: call
+    edge_id: 40
+    range:
+      start_line: 172
+      start_col: 0
+      end_line: 172
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller._uninstall
+    to: ?.metadata_path.iterdir
+    kind: call
+    edge_id: 41
+    range:
+      start_line: 178
+      start_col: 0
+      end_line: 178
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller.run
+    to: httpie.manager.tasks.plugins.PluginInstaller.upgrade
+    kind: call
+    edge_id: 42
+    range:
+      start_line: 231
+      start_col: 0
+      end_line: 231
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller._install
+    to: textwrap.indent
+    kind: call
+    edge_id: 43
+    range:
+      start_line: 91
+      start_col: 0
+      end_line: 91
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller.run
+    to: httpie.manager.tasks.plugins.PluginInstaller.uninstall
+    kind: call
+    edge_id: 44
+    range:
+      start_line: 233
+      start_col: 0
+      end_line: 233
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller._install
+    to: ?.stderr.strip
+    kind: call
+    edge_id: 45
+    range:
+      start_line: 93
+      start_col: 0
+      end_line: 93
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller._clear_metadata
+    to: ?.PEP_503.sub
+    kind: call
+    edge_id: 46
+    range:
+      start_line: 124
+      start_col: 0
+      end_line: 124
+      end_col: 0
+  - from: httpie.manager.tasks.plugins.PluginInstaller.run
+    to: httpie.manager.tasks.plugins.PluginInstaller.list
+    kind: call
+    edge_id: 47
+    range:
+      start_line: 235
+      start_col: 0
+      end_line: 235
+      end_col: 0

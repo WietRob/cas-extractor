@@ -1,0 +1,48 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-b463cc0c
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:53.091829+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: tests.test_binary.TestBinaryResponseData.test_binary_suppresses_when_terminal
+    kind: method
+    file: tests/test_binary.py
+    range:
+      start_line: 36
+      start_col: 0
+      end_line: 38
+      end_col: 0
+    fingerprint: a456d6838efe4b8143013ea21dc50b1ad6f0c7f209476311f33781244278add5
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_binary.TestBinaryResponseData.test_binary_suppresses_when_not_terminal_but_pretty
+    kind: method
+    file: tests/test_binary.py
+    range:
+      start_line: 40
+      start_col: 0
+      end_line: 43
+      end_col: 0
+    fingerprint: d47b0a6744673c62b158168e8dd669b4cc29d1e8d8327fbbe16198fe7e1914d6
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_binary.TestBinaryResponseData.test_binary_included_and_correct_when_suitable
+    kind: method
+    file: tests/test_binary.py
+    range:
+      start_line: 45
+      start_col: 0
+      end_line: 50
+      end_col: 0
+    fingerprint: 8e9f7946008b21156333892bf9b938b5d6e007598844a2b05560758659984e2a
+    params:
+    - name: self
+    - name: httpbin

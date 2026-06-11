@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.internal.update_warnings._update_checker.wrapper
+kind: entity
+type: py.function
+name: wrapper
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/internal/update_warnings.py
+anchors:
+- type: symbol
+  value: httpie.internal.update_warnings._update_checker.wrapper
+- type: fingerprint
+  value: 5a75394add49b3250c97f5404a0b05e836e338bad130035759ab8ab8043e44b4
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.internal.update_warnings._update_checker

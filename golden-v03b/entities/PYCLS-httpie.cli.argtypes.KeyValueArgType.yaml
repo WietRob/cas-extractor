@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.cli.argtypes.KeyValueArgType
+kind: entity
+type: py.class
+name: KeyValueArgType
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/argtypes.py
+anchors:
+- type: symbol
+  value: httpie.cli.argtypes.KeyValueArgType
+- type: fingerprint
+  value: b6fe2b57c9a7503e1a557847eafa0b56afd0dfd657bb954f03407822c560eac8
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.argtypes

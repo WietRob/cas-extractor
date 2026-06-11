@@ -1,0 +1,74 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-8e14ec35
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:33.892007+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.stderr.isatty
+  - symbol: ?.stdin.isatty
+  - symbol: ?.stdout.isatty
+  - symbol: argparse.Namespace
+  - symbol: curses.setupterm
+  - symbol: curses.tigetnum
+  - symbol: httpie.context.Environment
+  edges:
+  - from: httpie.context.Environment
+    to: argparse.Namespace
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 56
+      start_col: 0
+      end_line: 56
+      end_col: 0
+  - from: httpie.context.Environment
+    to: ?.stdout.isatty
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 63
+      start_col: 0
+      end_line: 63
+      end_col: 0
+  - from: httpie.context.Environment
+    to: ?.stderr.isatty
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 66
+      start_col: 0
+      end_line: 66
+      end_col: 0
+  - from: httpie.context.Environment
+    to: ?.stdin.isatty
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 60
+      start_col: 0
+      end_line: 60
+      end_col: 0
+  - from: httpie.context.Environment
+    to: curses.setupterm
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 76
+      start_col: 0
+      end_line: 76
+      end_col: 0
+  - from: httpie.context.Environment
+    to: curses.tigetnum
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 77
+      start_col: 0
+      end_line: 77
+      end_col: 0

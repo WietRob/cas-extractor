@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.models.HTTPMessage
+kind: entity
+type: py.class
+name: HTTPMessage
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/models.py
+anchors:
+- type: symbol
+  value: httpie.models.HTTPMessage
+- type: fingerprint
+  value: 1bbd08c5207161b6d149c57181df4e8f69c9e18c821cd5b6ed3d46ee45607b97
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.models

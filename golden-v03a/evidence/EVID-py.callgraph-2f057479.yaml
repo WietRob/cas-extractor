@@ -1,0 +1,84 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-2f057479
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T12:13:53.703874+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: docs.contributors.fetch
+  - symbol: docs.contributors.fetch.main
+  - symbol: docs.contributors.generate
+  - symbol: docs.contributors.generate.generate_snippets
+  - symbol: os.getenv
+  - symbol: pathlib.Path
+  - symbol: re.compile
+  - symbol: sys.exit
+  edges:
+  - from: docs.contributors.fetch
+    to: os.getenv
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 36
+      start_col: 0
+      end_line: 36
+      end_col: 0
+  - from: docs.contributors.fetch
+    to: re.compile
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 25
+      start_col: 0
+      end_line: 25
+      end_col: 0
+  - from: docs.contributors.fetch
+    to: pathlib.Path
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 30
+      start_col: 0
+      end_line: 30
+      end_col: 0
+  - from: docs.contributors.fetch
+    to: sys.exit
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 281
+      start_col: 0
+      end_line: 281
+      end_col: 0
+  - from: docs.contributors.fetch
+    to: docs.contributors.fetch.main
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 266
+      start_col: 0
+      end_line: 266
+      end_col: 0
+  - from: docs.contributors.generate
+    to: sys.exit
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 53
+      start_col: 0
+      end_line: 53
+      end_col: 0
+  - from: docs.contributors.generate
+    to: docs.contributors.generate.generate_snippets
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 44
+      start_col: 0
+      end_line: 44
+      end_col: 0

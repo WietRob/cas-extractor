@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.output.streams.BinarySuppressedError
+kind: entity
+type: py.class
+name: BinarySuppressedError
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/streams.py
+anchors:
+- type: symbol
+  value: httpie.output.streams.BinarySuppressedError
+- type: fingerprint
+  value: 95126a65f8cd533df041e51030240c217745d7745d1fdcd3d1744f0821b6664d
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.streams

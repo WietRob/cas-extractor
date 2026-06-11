@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.plugins.base.ConverterPlugin.supports
+kind: entity
+type: py.function
+name: supports
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/plugins/base.py
+anchors:
+- type: symbol
+  value: httpie.plugins.base.ConverterPlugin.supports
+- type: fingerprint
+  value: c698d69de22cd0e9ab6ced0693493ea7f1a60292c53b5f55bfef78fd1c0fa77e
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.plugins.base.ConverterPlugin

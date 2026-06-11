@@ -1,0 +1,24 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-8fb6d5f3
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:34.112117+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: setup
+  - symbol: setuptools.setup
+  edges:
+  - from: setup
+    to: setuptools.setup
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 3
+      start_col: 0
+      end_line: 3
+      end_col: 0

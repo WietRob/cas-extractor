@@ -1,0 +1,505 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-e786992f
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:34.341642+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.session_file.readlines
+  - symbol: ?.session_path.write_text
+  - symbol: httpie.plugins.builtin.HTTPBasicAuth.make_header
+  - symbol: httpie.plugins.registry.plugin_manager.register
+  - symbol: httpie.plugins.registry.plugin_manager.unregister
+  - symbol: json.dumps
+  - symbol: json.loads
+  - symbol: os.chdir
+  - symbol: os.getcwd
+  - symbol: tests.test_sessions.SessionTestBase.env
+  - symbol: tests.test_sessions.SessionTestBase.start_session
+  - symbol: tests.test_sessions.TestSession.test_auth_plugin_prompt_password_in_session
+  - symbol: tests.test_sessions.TestSession.test_auth_type_reused_in_session
+  - symbol: tests.test_sessions.TestSession.test_auth_type_stored_in_session_file
+  - symbol: tests.test_sessions.TestSession.test_download_in_session
+  - symbol: tests.test_sessions.TestSession.test_session_by_path
+  - symbol: tests.test_sessions.TestSession.test_session_default_header_value_overwritten
+  - symbol: tests.test_sessions.TestSession.test_session_ignored_header_prefixes
+  - symbol: tests.test_sessions.TestSession.test_session_unicode
+  - symbol: tests.test_sessions.TestSession.test_session_with_cookie_followed_by_another_header
+  - symbol: tests.test_sessions.TestSession.test_session_with_upload
+  - symbol: unittest.mock.patch
+  - symbol: utils.http
+  - symbol: utils.mk_config_dir
+  edges:
+  - from: tests.test_sessions.TestSession.test_session_ignored_header_prefixes
+    to: tests.test_sessions.SessionTestBase.start_session
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 174
+      start_col: 0
+      end_line: 174
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_session_ignored_header_prefixes
+    to: utils.http
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 175
+      start_col: 0
+      end_line: 178
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_session_ignored_header_prefixes
+    to: utils.http
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 180
+      start_col: 0
+      end_line: 181
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_session_with_upload
+    to: tests.test_sessions.SessionTestBase.start_session
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 187
+      start_col: 0
+      end_line: 187
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_session_with_upload
+    to: utils.http
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 188
+      start_col: 0
+      end_line: 189
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_session_by_path
+    to: tests.test_sessions.SessionTestBase.start_session
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 193
+      start_col: 0
+      end_line: 193
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_session_by_path
+    to: utils.http
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 195
+      start_col: 0
+      end_line: 196
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_session_by_path
+    to: utils.http
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 199
+      start_col: 0
+      end_line: 200
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_session_with_cookie_followed_by_another_header
+    to: tests.test_sessions.SessionTestBase.start_session
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 208
+      start_col: 0
+      end_line: 208
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_session_with_cookie_followed_by_another_header
+    to: ?.session_path.write_text
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 216
+      start_col: 0
+      end_line: 216
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_session_with_cookie_followed_by_another_header
+    to: utils.http
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 217
+      start_col: 0
+      end_line: 218
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_session_unicode
+    to: tests.test_sessions.SessionTestBase.start_session
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 223
+      start_col: 0
+      end_line: 223
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_session_unicode
+    to: utils.http
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 225
+      start_col: 0
+      end_line: 227
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_session_unicode
+    to: utils.http
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 230
+      start_col: 0
+      end_line: 231
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_session_default_header_value_overwritten
+    to: tests.test_sessions.SessionTestBase.start_session
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 241
+      start_col: 0
+      end_line: 241
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_session_default_header_value_overwritten
+    to: utils.http
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 243
+      start_col: 0
+      end_line: 245
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_session_default_header_value_overwritten
+    to: utils.http
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 249
+      start_col: 0
+      end_line: 249
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_download_in_session
+    to: tests.test_sessions.SessionTestBase.start_session
+    kind: call
+    edge_id: 17
+    range:
+      start_line: 255
+      start_col: 0
+      end_line: 255
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_download_in_session
+    to: os.getcwd
+    kind: call
+    edge_id: 18
+    range:
+      start_line: 256
+      start_col: 0
+      end_line: 256
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_download_in_session
+    to: os.chdir
+    kind: call
+    edge_id: 19
+    range:
+      start_line: 257
+      start_col: 0
+      end_line: 257
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_auth_type_reused_in_session
+    to: tests.test_sessions.SessionTestBase.start_session
+    kind: call
+    edge_id: 20
+    range:
+      start_line: 273
+      start_col: 0
+      end_line: 273
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_auth_type_reused_in_session
+    to: httpie.plugins.registry.plugin_manager.register
+    kind: call
+    edge_id: 21
+    range:
+      start_line: 286
+      start_col: 0
+      end_line: 286
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_auth_type_reused_in_session
+    to: utils.http
+    kind: call
+    edge_id: 22
+    range:
+      start_line: 288
+      start_col: 0
+      end_line: 295
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_auth_type_reused_in_session
+    to: utils.http
+    kind: call
+    edge_id: 23
+    range:
+      start_line: 297
+      start_col: 0
+      end_line: 301
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_auth_type_reused_in_session
+    to: httpie.plugins.registry.plugin_manager.unregister
+    kind: call
+    edge_id: 24
+    range:
+      start_line: 304
+      start_col: 0
+      end_line: 304
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_auth_plugin_prompt_password_in_session
+    to: tests.test_sessions.SessionTestBase.start_session
+    kind: call
+    edge_id: 25
+    range:
+      start_line: 307
+      start_col: 0
+      end_line: 307
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_auth_plugin_prompt_password_in_session
+    to: httpie.plugins.registry.plugin_manager.register
+    kind: call
+    edge_id: 26
+    range:
+      start_line: 317
+      start_col: 0
+      end_line: 317
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_auth_plugin_prompt_password_in_session
+    to: utils.http
+    kind: call
+    edge_id: 27
+    range:
+      start_line: 331
+      start_col: 0
+      end_line: 334
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_auth_plugin_prompt_password_in_session
+    to: httpie.plugins.registry.plugin_manager.unregister
+    kind: call
+    edge_id: 28
+    range:
+      start_line: 344
+      start_col: 0
+      end_line: 344
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_auth_type_stored_in_session_file
+    to: utils.mk_config_dir
+    kind: call
+    edge_id: 29
+    range:
+      start_line: 347
+      start_col: 0
+      end_line: 347
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_auth_type_stored_in_session_file
+    to: httpie.plugins.registry.plugin_manager.register
+    kind: call
+    edge_id: 30
+    range:
+      start_line: 357
+      start_col: 0
+      end_line: 357
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_auth_type_stored_in_session_file
+    to: utils.http
+    kind: call
+    edge_id: 31
+    range:
+      start_line: 358
+      start_col: 0
+      end_line: 363
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_auth_type_stored_in_session_file
+    to: json.loads
+    kind: call
+    edge_id: 32
+    range:
+      start_line: 364
+      start_col: 0
+      end_line: 364
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_auth_type_stored_in_session_file
+    to: httpie.plugins.registry.plugin_manager.unregister
+    kind: call
+    edge_id: 33
+    range:
+      start_line: 367
+      start_col: 0
+      end_line: 367
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_session_with_cookie_followed_by_another_header
+    to: json.dumps
+    kind: call
+    edge_id: 34
+    range:
+      start_line: 216
+      start_col: 0
+      end_line: 216
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_session_unicode
+    to: httpie.plugins.builtin.HTTPBasicAuth.make_header
+    kind: call
+    edge_id: 35
+    range:
+      start_line: 236
+      start_col: 0
+      end_line: 236
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_download_in_session
+    to: utils.http
+    kind: call
+    edge_id: 36
+    range:
+      start_line: 259
+      start_col: 0
+      end_line: 260
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_download_in_session
+    to: os.chdir
+    kind: call
+    edge_id: 37
+    range:
+      start_line: 262
+      start_col: 0
+      end_line: 262
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_auth_plugin_prompt_password_in_session
+    to: unittest.mock.patch
+    kind: call
+    edge_id: 38
+    range:
+      start_line: 319
+      start_col: 0
+      end_line: 322
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_auth_plugin_prompt_password_in_session
+    to: utils.http
+    kind: call
+    edge_id: 39
+    range:
+      start_line: 323
+      start_col: 0
+      end_line: 329
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_session_ignored_header_prefixes
+    to: tests.test_sessions.SessionTestBase.env
+    kind: call
+    edge_id: 40
+    range:
+      start_line: 178
+      start_col: 0
+      end_line: 178
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_session_ignored_header_prefixes
+    to: tests.test_sessions.SessionTestBase.env
+    kind: call
+    edge_id: 41
+    range:
+      start_line: 181
+      start_col: 0
+      end_line: 181
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_session_with_upload
+    to: tests.test_sessions.SessionTestBase.env
+    kind: call
+    edge_id: 42
+    range:
+      start_line: 189
+      start_col: 0
+      end_line: 189
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_session_by_path
+    to: tests.test_sessions.SessionTestBase.env
+    kind: call
+    edge_id: 43
+    range:
+      start_line: 196
+      start_col: 0
+      end_line: 196
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_session_by_path
+    to: tests.test_sessions.SessionTestBase.env
+    kind: call
+    edge_id: 44
+    range:
+      start_line: 200
+      start_col: 0
+      end_line: 200
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_session_with_cookie_followed_by_another_header
+    to: tests.test_sessions.SessionTestBase.env
+    kind: call
+    edge_id: 45
+    range:
+      start_line: 218
+      start_col: 0
+      end_line: 218
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_session_unicode
+    to: tests.test_sessions.SessionTestBase.env
+    kind: call
+    edge_id: 46
+    range:
+      start_line: 227
+      start_col: 0
+      end_line: 227
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_session_unicode
+    to: tests.test_sessions.SessionTestBase.env
+    kind: call
+    edge_id: 47
+    range:
+      start_line: 231
+      start_col: 0
+      end_line: 231
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_session_default_header_value_overwritten
+    to: tests.test_sessions.SessionTestBase.env
+    kind: call
+    edge_id: 48
+    range:
+      start_line: 245
+      start_col: 0
+      end_line: 245
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_session_default_header_value_overwritten
+    to: tests.test_sessions.SessionTestBase.env
+    kind: call
+    edge_id: 49
+    range:
+      start_line: 249
+      start_col: 0
+      end_line: 249
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_auth_plugin_prompt_password_in_session
+    to: ?.session_file.readlines
+    kind: call
+    edge_id: 50
+    range:
+      start_line: 340
+      start_col: 0
+      end_line: 340
+      end_col: 0
+  - from: tests.test_sessions.TestSession.test_download_in_session
+    to: tests.test_sessions.SessionTestBase.env
+    kind: call
+    edge_id: 51
+    range:
+      start_line: 260
+      start_col: 0
+      end_line: 260
+      end_col: 0

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.manager.tasks.plugins.PluginInstaller._uninstall
+kind: entity
+type: py.function
+name: _uninstall
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/manager/tasks/plugins.py
+anchors:
+- type: symbol
+  value: httpie.manager.tasks.plugins.PluginInstaller._uninstall
+- type: fingerprint
+  value: 388d2396f18227eba4799e0f93b5aeb0eba1bcb4b1c45283cf8093970662f219
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.manager.tasks.plugins.PluginInstaller

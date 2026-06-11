@@ -1,0 +1,32 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-ca44d7f7
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:54.906065+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: extras.packaging.linux.scripts.hooks.hook-pip
+    kind: module
+    file: extras/packaging/linux/scripts/hooks/hook-pip.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 14
+      end_col: 0
+    fingerprint: ef777ed4a4a2d7e243ec1b8839df374897f7ec4884e39942cfe126321a3dd267
+  - qualified: extras.packaging.linux.scripts.hooks.hook-pip.hook
+    kind: function
+    file: extras/packaging/linux/scripts/hooks/hook-pip.py
+    range:
+      start_line: 4
+      start_col: 0
+      end_line: 14
+      end_col: 0
+    fingerprint: e9ac637e913ac206b43ac026859fca5b1c87354fed20d2445e8decaa225230a0
+    params:
+    - name: hook_api

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_meta.test_meta_elapsed_time
+kind: entity
+type: py.function
+name: test_meta_elapsed_time
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_meta.py
+anchors:
+- type: symbol
+  value: tests.test_meta.test_meta_elapsed_time
+- type: fingerprint
+  value: 4f6f79e86b70ca6f88b81d08ced0f63fd404394d2414e447d108dc942d236814
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_meta

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_offline.test_offline_chunked
+kind: entity
+type: py.function
+name: test_offline_chunked
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_offline.py
+anchors:
+- type: symbol
+  value: tests.test_offline.test_offline_chunked
+- type: fingerprint
+  value: 3ed5bceade5fd6fbd6af9855f2dcb234b219774f55d2ccb1352dbbc553733f3d
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_offline

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.streams.BaseStream.iter_body
+kind: entity
+type: py.function
+name: iter_body
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/streams.py
+anchors:
+- type: symbol
+  value: httpie.output.streams.BaseStream.iter_body
+- type: fingerprint
+  value: 76fed6087de316085b88fa9abeb9964ab5e02dfe00dbee92a7c073ce00ec2d92
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.streams.BaseStream

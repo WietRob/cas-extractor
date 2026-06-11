@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.models.HTTPRequest.headers
+kind: entity
+type: py.function
+name: headers
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/models.py
+anchors:
+- type: symbol
+  value: httpie.models.HTTPRequest.headers
+- type: fingerprint
+  value: 88c020c2ce0fd3f0a64527b6c82be97b79bf29d4e9843be92b60335d781ed722
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.models.HTTPRequest

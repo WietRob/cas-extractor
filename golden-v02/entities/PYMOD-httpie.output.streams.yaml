@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.output.streams
+kind: entity
+type: py.module
+name: streams
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/output/streams.py
+anchors:
+- type: symbol
+  value: httpie.output.streams
+- type: fingerprint
+  value: 1e2ddce33e3d3d29a2537058c6445b0d87425d5c8e4629fd1be365f81f1ce797
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output

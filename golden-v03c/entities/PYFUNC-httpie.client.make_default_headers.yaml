@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.client.make_default_headers
+kind: entity
+type: py.function
+name: make_default_headers
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/client.py
+anchors:
+- type: symbol
+  value: httpie.client.make_default_headers
+- type: fingerprint
+  value: 38c44dc6b4e82ff754157390149095b3cb6ab6189cf29d6a2a509c9919c51619
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.client

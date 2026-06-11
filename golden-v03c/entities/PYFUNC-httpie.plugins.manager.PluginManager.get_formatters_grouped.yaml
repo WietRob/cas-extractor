@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.plugins.manager.PluginManager.get_formatters_grouped
+kind: entity
+type: py.function
+name: get_formatters_grouped
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/plugins/manager.py
+anchors:
+- type: symbol
+  value: httpie.plugins.manager.PluginManager.get_formatters_grouped
+- type: fingerprint
+  value: 83da9f0ca5b550fd7099f071eeef726cec428e3308934f8b6ba09cc3f159b64d
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.plugins.manager.PluginManager

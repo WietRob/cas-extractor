@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-tests.utils.FakeBytesIOBuffer
+kind: entity
+type: py.class
+name: FakeBytesIOBuffer
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/utils/__init__.py
+anchors:
+- type: symbol
+  value: tests.utils.FakeBytesIOBuffer
+- type: fingerprint
+  value: ae9bfecd02864e3c4a17ac5cc8d378a9d16d056c8c475b6d2d36934dd153efad
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils

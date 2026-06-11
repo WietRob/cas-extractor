@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_httpie.test_headers_multiple_omit
+kind: entity
+type: py.function
+name: test_headers_multiple_omit
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_httpie.py
+anchors:
+- type: symbol
+  value: tests.test_httpie.test_headers_multiple_omit
+- type: fingerprint
+  value: 263e52ec7bb7d4905412ecd897ad023766a385acfdfe94e732ad4aa9bcd88258
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_httpie

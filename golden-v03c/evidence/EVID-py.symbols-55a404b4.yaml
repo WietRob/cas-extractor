@@ -1,0 +1,145 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-55a404b4
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T17:44:04.287396+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.cli.argtypes
+    kind: module
+    file: httpie/cli/argtypes.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 275
+      end_col: 0
+    fingerprint: 0cb14438e8977ea7a2887b2bab7fd0199caecd2c607a1a52c7a3ef61f08ed2b6
+  - qualified: httpie.cli.argtypes.KeyValueArg
+    kind: class
+    file: httpie/cli/argtypes.py
+    range:
+      start_line: 12
+      start_col: 0
+      end_line: 25
+      end_col: 0
+    fingerprint: 9d4b3273ffe759316024742fbc2eb266e3622b477ceefd1cef5561eb9e0074c2
+  - qualified: httpie.cli.argtypes.SessionNameValidator
+    kind: class
+    file: httpie/cli/argtypes.py
+    range:
+      start_line: 28
+      start_col: 0
+      end_line: 38
+      end_col: 0
+    fingerprint: 8a83f468fc6620f9f08b2ffd2a68c3e00bcb8270a72262b54c2787b434bb82e3
+  - qualified: httpie.cli.argtypes.Escaped
+    kind: class
+    file: httpie/cli/argtypes.py
+    range:
+      start_line: 41
+      start_col: 0
+      end_line: 45
+      end_col: 0
+    fingerprint: d8665f3c02459db1614e01f1684a00aa1111225a0547a2a8eac0e2d0d5d6f509
+  - qualified: httpie.cli.argtypes.KeyValueArgType
+    kind: class
+    file: httpie/cli/argtypes.py
+    range:
+      start_line: 48
+      start_col: 0
+      end_line: 130
+      end_col: 0
+    fingerprint: b6fe2b57c9a7503e1a557847eafa0b56afd0dfd657bb954f03407822c560eac8
+  - qualified: httpie.cli.argtypes.PromptMixin
+    kind: class
+    file: httpie/cli/argtypes.py
+    range:
+      start_line: 133
+      start_col: 0
+      end_line: 145
+      end_col: 0
+    fingerprint: ba696cb00c57d68d0b408b4af17163a017d77a5f7bf9952fed49d6a1a5a2f1e1
+  - qualified: httpie.cli.argtypes.SSLCredentials
+    kind: class
+    file: httpie/cli/argtypes.py
+    range:
+      start_line: 148
+      start_col: 0
+      end_line: 155
+      end_col: 0
+    fingerprint: 9c239273080dd289eee327a31007dd048c59613300d3da27e2efe8b10c25621c
+  - qualified: httpie.cli.argtypes.AuthCredentials
+    kind: class
+    file: httpie/cli/argtypes.py
+    range:
+      start_line: 158
+      start_col: 0
+      end_line: 165
+      end_col: 0
+    fingerprint: 4fa9b44ef1143549603c8199c006a2e00f140b493d470a798f17b05c186818cd
+  - qualified: httpie.cli.argtypes.AuthCredentialsArgType
+    kind: class
+    file: httpie/cli/argtypes.py
+    range:
+      start_line: 168
+      start_col: 0
+      end_line: 188
+      end_col: 0
+    fingerprint: 8da1a84b0ec3882b79000c9c89771dacb809e3cdfbb6701d0d3de58733ba0db3
+  - qualified: httpie.cli.argtypes.readable_file_arg
+    kind: function
+    file: httpie/cli/argtypes.py
+    range:
+      start_line: 194
+      start_col: 0
+      end_line: 199
+      end_col: 0
+    fingerprint: c120482ad9a3605bcedc1772ada5fe40d2ff5e4fabbea198f9e87f257b02432a
+    params:
+    - name: filename
+  - qualified: httpie.cli.argtypes.parse_format_options
+    kind: function
+    file: httpie/cli/argtypes.py
+    range:
+      start_line: 202
+      start_col: 0
+      end_line: 253
+      end_col: 0
+    fingerprint: 244e4e28ab568f56ac859ac926f9abf85c9b95a37e4181cf77a07ec5a7d6f198
+    params:
+    - name: s
+      annotation: str
+    - name: defaults
+      annotation: Optional[dict]
+    returns: dict
+  - qualified: httpie.cli.argtypes.response_charset_type
+    kind: function
+    file: httpie/cli/argtypes.py
+    range:
+      start_line: 262
+      start_col: 0
+      end_line: 268
+      end_col: 0
+    fingerprint: 87d8a88a043650f879afa296cb43cbb9e8a48b9008f64fee0db978f5be52efc0
+    params:
+    - name: encoding
+      annotation: str
+    returns: str
+  - qualified: httpie.cli.argtypes.response_mime_type
+    kind: function
+    file: httpie/cli/argtypes.py
+    range:
+      start_line: 271
+      start_col: 0
+      end_line: 275
+      end_col: 0
+    fingerprint: 26f46c5541f250c8c1736b9e7ef6a3c22e8828fd9e437da096a970b87b8072fb
+    params:
+    - name: mime_type
+      annotation: str
+    returns: str

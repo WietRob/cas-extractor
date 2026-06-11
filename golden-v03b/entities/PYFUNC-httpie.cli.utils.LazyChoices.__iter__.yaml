@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.utils.LazyChoices.__iter__
+kind: entity
+type: py.function
+name: __iter__
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/utils.py
+anchors:
+- type: symbol
+  value: httpie.cli.utils.LazyChoices.__iter__
+- type: fingerprint
+  value: 3f5ba3aba8ba4ec403ed4bedfbd0e42989fe1d74e61c7974dc31c84007c9928a
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.utils.LazyChoices

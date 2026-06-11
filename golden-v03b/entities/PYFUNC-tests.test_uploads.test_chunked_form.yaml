@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_uploads.test_chunked_form
+kind: entity
+type: py.function
+name: test_chunked_form
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_uploads.py
+anchors:
+- type: symbol
+  value: tests.test_uploads.test_chunked_form
+- type: fingerprint
+  value: 4c7d4cac1d61e306ab47fcdede01ca2c07aa807eaddd5697849128e363eeb361
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_uploads

@@ -1,0 +1,33 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-8ffcb061
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T12:13:53.776603+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.lines.append
+  - symbol: httpie.cli.nested_json.errors.NestedJSONSyntaxError.__str__
+  edges:
+  - from: httpie.cli.nested_json.errors.NestedJSONSyntaxError.__str__
+    to: ?.lines.append
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 22
+      start_col: 0
+      end_line: 22
+      end_col: 0
+  - from: httpie.cli.nested_json.errors.NestedJSONSyntaxError.__str__
+    to: ?.lines.append
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 23
+      start_col: 0
+      end_line: 26
+      end_col: 0

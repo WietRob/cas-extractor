@@ -1,0 +1,65 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-76054b00
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-23T07:07:57.451705+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: /tmp/h27-verify
+  revision: git:test
+payload:
+  nodes:
+  - symbol: test_h27.HTTPClient
+  - symbol: test_h27.HTTPClient.send
+  - symbol: test_h27.TestH27OverrideH2.__init__
+  - symbol: test_h27.TestH27OverrideH2.prepare
+  - symbol: test_h27.TestH27OverrideH2.reconnect
+  - symbol: test_h27.TestH27OverrideH2.run
+  - symbol: test_h27.WebSocketClient
+  edges:
+  - from: test_h27.TestH27OverrideH2.__init__
+    to: test_h27.HTTPClient
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 86
+      start_col: 0
+      end_line: 86
+      end_col: 0
+  - from: test_h27.TestH27OverrideH2.reconnect
+    to: test_h27.WebSocketClient
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 89
+      start_col: 0
+      end_line: 89
+      end_col: 0
+  - from: test_h27.TestH27OverrideH2.prepare
+    to: test_h27.TestH27OverrideH2.reconnect
+    kind: method_call
+    edge_id: 2
+    range:
+      start_line: 92
+      start_col: 0
+      end_line: 92
+      end_col: 0
+  - from: test_h27.TestH27OverrideH2.run
+    to: test_h27.TestH27OverrideH2.prepare
+    kind: method_call
+    edge_id: 3
+    range:
+      start_line: 95
+      start_col: 0
+      end_line: 95
+      end_col: 0
+  - from: test_h27.TestH27OverrideH2.run
+    to: test_h27.HTTPClient.send
+    kind: method_call
+    edge_id: 4
+    range:
+      start_line: 96
+      start_col: 0
+      end_line: 96
+      end_col: 0

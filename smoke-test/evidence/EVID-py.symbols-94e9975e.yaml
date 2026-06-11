@@ -1,0 +1,212 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-94e9975e
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:35:57.327294+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+payload:
+  symbols:
+  - qualified: cas_extractor_extractors_python_calls
+    kind: module
+    file: cas_extractor_extractors_python_calls.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 447
+      end_col: 0
+    fingerprint: 01087195f096a760239458ebb1f7ba96210aa77f59e269a888fcbed4fe6d1aa1
+  - qualified: cas_extractor_extractors_python_calls.extract_calls
+    kind: function
+    file: cas_extractor_extractors_python_calls.py
+    range:
+      start_line: 27
+      start_col: 0
+      end_line: 118
+      end_col: 0
+    fingerprint: 8414078a74f9251f2fa229a4aa1b72f39553e5a19248f3e7a9aefc0f6704273e
+    params:
+    - name: repo_root
+      annotation: str
+    returns: Iterator[CallEntry]
+  - qualified: cas_extractor_extractors_python_calls.ClassInfo
+    kind: class
+    file: cas_extractor_extractors_python_calls.py
+    range:
+      start_line: 121
+      start_col: 0
+      end_line: 128
+      end_col: 0
+    fingerprint: fdb36d4d456f5279b9fd74d1896976477adaa85ba692bb3bcd81574e9c5db8b9
+  - qualified: cas_extractor_extractors_python_calls._annotate_parents
+    kind: function
+    file: cas_extractor_extractors_python_calls.py
+    range:
+      start_line: 131
+      start_col: 0
+      end_line: 135
+      end_col: 0
+    fingerprint: 690a9aa3bd25e4e0ee7fa1652e278eff148ad6919bd55cd4413f1951d9f4b501
+    params:
+    - name: tree
+      annotation: ast.AST
+    returns: None
+  - qualified: cas_extractor_extractors_python_calls._extract_calls_from_tree
+    kind: function
+    file: cas_extractor_extractors_python_calls.py
+    range:
+      start_line: 138
+      start_col: 0
+      end_line: 179
+      end_col: 0
+    fingerprint: ce5f7058a4a7ef09487ac2aa2141a9f91fe1ad717b8400f880763176f7f56d81
+    params:
+    - name: tree
+      annotation: ast.Module
+    - name: source_lines
+      annotation: list[str]
+    - name: rel_file
+      annotation: str
+    - name: module_qname
+      annotation: str
+    - name: local_symbols
+      annotation: set[str]
+    - name: local_imports
+      annotation: dict[str, str]
+    - name: local_classes
+      annotation: dict[str, 'ClassInfo']
+    - name: all_classes
+      annotation: dict[str, 'ClassInfo']
+    returns: Iterator[CallEntry]
+  - qualified: cas_extractor_extractors_python_calls._resolve_call
+    kind: function
+    file: cas_extractor_extractors_python_calls.py
+    range:
+      start_line: 182
+      start_col: 0
+      end_line: 279
+      end_col: 0
+    fingerprint: f89deb48dd02432a4504e999ba5e6bc2c6f96bd3aa884144e1c4d01fde5b33b7
+    params:
+    - name: func_node
+      annotation: ast.expr
+    - name: module_qname
+      annotation: str
+    - name: local_symbols
+      annotation: set[str]
+    - name: local_imports
+      annotation: dict[str, str]
+    - name: local_classes
+      annotation: dict[str, 'ClassInfo']
+    - name: all_classes
+      annotation: dict[str, 'ClassInfo']
+    - name: enclosing_class
+      annotation: '''ClassInfo | None'''
+    returns: tuple[str | None, str]
+  - qualified: cas_extractor_extractors_python_calls._resolve_in_bases
+    kind: function
+    file: cas_extractor_extractors_python_calls.py
+    range:
+      start_line: 282
+      start_col: 0
+      end_line: 297
+      end_col: 0
+    fingerprint: e8dca7fbccd10aeb5f38d927504a6c387347ced41bdeda863f53b45dab98eba2
+    params:
+    - name: method_name
+      annotation: str
+    - name: class_info
+      annotation: '''ClassInfo'''
+    - name: local_classes
+      annotation: dict[str, 'ClassInfo']
+    - name: all_classes
+      annotation: dict[str, 'ClassInfo']
+    - name: local_imports
+      annotation: dict[str, str]
+    returns: str | None
+  - qualified: cas_extractor_extractors_python_calls._resolve_super_method
+    kind: function
+    file: cas_extractor_extractors_python_calls.py
+    range:
+      start_line: 300
+      start_col: 0
+      end_line: 315
+      end_col: 0
+    fingerprint: 825799889bc3db64067eb5f43fdbe66f5419e91212c289db18205c6ce50abdb1
+    params:
+    - name: method_name
+      annotation: str
+    - name: class_info
+      annotation: '''ClassInfo'''
+    - name: local_classes
+      annotation: dict[str, 'ClassInfo']
+    - name: all_classes
+      annotation: dict[str, 'ClassInfo']
+    - name: local_imports
+      annotation: dict[str, str]
+    returns: str | None
+  - qualified: cas_extractor_extractors_python_calls._find_class_by_name
+    kind: function
+    file: cas_extractor_extractors_python_calls.py
+    range:
+      start_line: 318
+      start_col: 0
+      end_line: 342
+      end_col: 0
+    fingerprint: 5f195ebd47401f2e61ee2e39fd51180001240c9c986ddcb9a3c397b4dbb91c1f
+    params:
+    - name: name
+      annotation: str
+    - name: local_classes
+      annotation: dict[str, 'ClassInfo']
+    - name: all_classes
+      annotation: dict[str, 'ClassInfo']
+    - name: local_imports
+      annotation: dict[str, str]
+    returns: '''ClassInfo | None'''
+  - qualified: cas_extractor_extractors_python_calls._find_enclosing_context
+    kind: function
+    file: cas_extractor_extractors_python_calls.py
+    range:
+      start_line: 345
+      start_col: 0
+      end_line: 406
+      end_col: 0
+    fingerprint: bda9a4de5d2e201086cb5b6492bf7f659e4a78c7ff94343f71e79c789140c806
+    params:
+    - name: node
+      annotation: ast.AST
+    - name: module_qname
+      annotation: str
+    returns: tuple[str, 'ClassInfo | None']
+  - qualified: cas_extractor_extractors_python_calls._path_to_module
+    kind: function
+    file: cas_extractor_extractors_python_calls.py
+    range:
+      start_line: 409
+      start_col: 0
+      end_line: 415
+      end_col: 0
+    fingerprint: 392cfe62bde75c17336d1d3260c406710004db53390333b19e2b8b8b8a748a97
+    params:
+    - name: rel_path
+      annotation: Path
+    returns: str
+  - qualified: cas_extractor_extractors_python_calls._extract_source
+    kind: function
+    file: cas_extractor_extractors_python_calls.py
+    range:
+      start_line: 418
+      start_col: 0
+      end_line: 421
+      end_col: 0
+    fingerprint: 9e8d1c87159a2062fe1ae4ab01d57681aaa037677e77ca794780132cfadea412
+    params:
+    - name: source_lines
+      annotation: list[str]
+    - name: node
+      annotation: ast.AST
+    returns: str

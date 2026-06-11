@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_sessions.TestSession.test_auth_type_stored_in_session_file
+kind: entity
+type: py.function
+name: test_auth_type_stored_in_session_file
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_sessions.py
+anchors:
+- type: symbol
+  value: tests.test_sessions.TestSession.test_auth_type_stored_in_session_file
+- type: fingerprint
+  value: 68ace5c973777d1558fd46b823ba043d4a600ea4f0809d0f7c91772584db3181
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_sessions.TestSession

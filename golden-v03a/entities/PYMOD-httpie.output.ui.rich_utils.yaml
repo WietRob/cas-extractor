@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.output.ui.rich_utils
+kind: entity
+type: py.module
+name: rich_utils
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/output/ui/rich_utils.py
+anchors:
+- type: symbol
+  value: httpie.output.ui.rich_utils
+- type: fingerprint
+  value: 90cac0c04968fff01b0a23784074c942f0e86948efba004bbac5888ab8651fe0
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.ui

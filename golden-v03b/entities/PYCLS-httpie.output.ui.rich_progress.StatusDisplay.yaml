@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.output.ui.rich_progress.StatusDisplay
+kind: entity
+type: py.class
+name: StatusDisplay
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/ui/rich_progress.py
+anchors:
+- type: symbol
+  value: httpie.output.ui.rich_progress.StatusDisplay
+- type: fingerprint
+  value: 6aca1e3ca2c7c97aaf74eaea28f5903d8798ca0661a13b8faecaa61a2dc1ec1e
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.ui.rich_progress

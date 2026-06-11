@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.manager.__main__
+kind: entity
+type: py.module
+name: __main__
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/manager/__main__.py
+anchors:
+- type: symbol
+  value: httpie.manager.__main__
+- type: fingerprint
+  value: 60d2e77639f8066ac086f84166ecbf472abd81d1b9a3ea6c05b6e5c7395f0fcd
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.manager

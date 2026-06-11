@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.formatters.colors.get_available_styles
+kind: entity
+type: py.function
+name: get_available_styles
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/output/formatters/colors.py
+anchors:
+- type: symbol
+  value: httpie.output.formatters.colors.get_available_styles
+- type: fingerprint
+  value: 077dfc10aa37dd5b83aaeae1a50b2abacbbeed856102a7b08cb15641c8aa33f0
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.formatters.colors

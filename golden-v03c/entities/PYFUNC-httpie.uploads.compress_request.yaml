@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.uploads.compress_request
+kind: entity
+type: py.function
+name: compress_request
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/uploads.py
+anchors:
+- type: symbol
+  value: httpie.uploads.compress_request
+- type: fingerprint
+  value: 800b119b7f6d0ed4e401870daf748b76dc29233994b989ce7792a2830c44d3d7
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.uploads

@@ -1,0 +1,484 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-1698dfb6
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:53.127816+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: tests.test_httpie
+    kind: module
+    file: tests/test_httpie.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 372
+      end_col: 0
+    fingerprint: 56cee75fc9f2a9a5efea119f7aa9e355b0b4b1fbc71598cf2e20c870f805e547
+  - qualified: tests.test_httpie.test_main_entry_point
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 17
+      start_col: 0
+      end_line: 20
+      end_col: 0
+    fingerprint: 80bd50eaa08697195113f089e150664a99ce2791bc9d77fc7f3221a1bbdef15b
+  - qualified: tests.test_httpie.test_main_entry_point_keyboard_interrupt
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 24
+      start_col: 0
+      end_line: 27
+      end_col: 0
+    fingerprint: b08e0305c62378b764638a6e26fcc133d163071f7d99ca76d1073a56b65e14a5
+    decorators:
+    - mock.patch('httpie.core.main')
+    params:
+    - name: main
+  - qualified: tests.test_httpie.test_debug
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 30
+      start_col: 0
+      end_line: 33
+      end_col: 0
+    fingerprint: fd51609d1c1e8ddf65a1463ba4506e80628dadc7247a7dec20041ffab2149d1f
+  - qualified: tests.test_httpie.test_help
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 36
+      start_col: 0
+      end_line: 39
+      end_col: 0
+    fingerprint: 67354e4f1c923962130d14c7d3726240a9908529103622d3cc7ccc56b7c2c7ba
+  - qualified: tests.test_httpie.test_version
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 42
+      start_col: 0
+      end_line: 45
+      end_col: 0
+    fingerprint: 742ffd30b16fae48a51c0d691c73d062f4da9b735b0e978466dfd0942cd99ecd
+  - qualified: tests.test_httpie.test_GET
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 48
+      start_col: 0
+      end_line: 50
+      end_col: 0
+    fingerprint: 22a9131d4cadb74f61f01018335c5604315771a78a2777cc5e401967e40bdd73
+    params:
+    - name: httpbin_both
+  - qualified: tests.test_httpie.test_path_dot_normalization
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 53
+      start_col: 0
+      end_line: 59
+      end_col: 0
+    fingerprint: d1b7d42a33d1c2bd11ce7f65d352956b9898bda0d31cc84a2d900cc1543afa62
+  - qualified: tests.test_httpie.test_path_as_is
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 62
+      start_col: 0
+      end_line: 69
+      end_col: 0
+    fingerprint: d68b2387a53d5156fea9931a03ae8f563208359799ddb34e7b97c347a96b6abf
+  - qualified: tests.test_httpie.test_DELETE
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 72
+      start_col: 0
+      end_line: 74
+      end_col: 0
+    fingerprint: f19523ec31c83f7fc73c43e268f7346e26c3c222bd1d03f70dba648309a6938a
+    params:
+    - name: httpbin_both
+  - qualified: tests.test_httpie.test_PUT
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 77
+      start_col: 0
+      end_line: 80
+      end_col: 0
+    fingerprint: 2664f13713acec1300a186d3c789a7745ea68052efac78f0d5503b58d6c37724
+    params:
+    - name: httpbin_both
+  - qualified: tests.test_httpie.test_POST_JSON_data
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 83
+      start_col: 0
+      end_line: 86
+      end_col: 0
+    fingerprint: b20275d5541dbe41629d4b6b5ec30f2f6bdf2a0d556f3db03e2a7772cf97c603
+    params:
+    - name: httpbin_both
+  - qualified: tests.test_httpie.test_POST_form
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 89
+      start_col: 0
+      end_line: 92
+      end_col: 0
+    fingerprint: 3138e9b9cab4219deb80543ee6652a17b026d5a8eb9ee10ab5fb4b94d0c8615a
+    params:
+    - name: httpbin_both
+  - qualified: tests.test_httpie.test_POST_form_multiple_values
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 95
+      start_col: 0
+      end_line: 100
+      end_col: 0
+    fingerprint: aeef9a82d0be96fd0f0372678826ff3adb33122e21f14fe50bf7c3ea9f724faa
+    params:
+    - name: httpbin_both
+  - qualified: tests.test_httpie.test_POST_raw
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 103
+      start_col: 0
+      end_line: 106
+      end_col: 0
+    fingerprint: b9d617f6dcfb1f2582224a81499bf4c031d61cfa7b747e071da3a9df948d9e4f
+    params:
+    - name: httpbin_both
+  - qualified: tests.test_httpie.test_POST_stdin
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 109
+      start_col: 0
+      end_line: 116
+      end_col: 0
+    fingerprint: d8ca21d67a61f117043946072e35f38e457a4443676b93d52ddcf70ba8baa1f4
+    params:
+    - name: httpbin_both
+  - qualified: tests.test_httpie.test_POST_file
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 119
+      start_col: 0
+      end_line: 122
+      end_col: 0
+    fingerprint: 302222ce8692fcafc7510866ec2510046b393b9603afd0488bf8adc49b89b423
+    params:
+    - name: httpbin_both
+  - qualified: tests.test_httpie.test_form_POST_file_redirected_stdin
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 125
+      start_col: 0
+      end_line: 143
+      end_col: 0
+    fingerprint: d44d9a183beaefa85c40bf705bdf8b3babf10385465f6504ce2c89cc153eff12
+    params:
+    - name: httpbin
+  - qualified: tests.test_httpie.test_raw_POST_key_values_supplied
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 146
+      start_col: 0
+      end_line: 156
+      end_col: 0
+    fingerprint: c3fab92226b0b7ce7e807f32a12c94d49768ca70cba4d5707e9e9151e722e035
+    params:
+    - name: httpbin
+  - qualified: tests.test_httpie.test_raw_POST_redirected_stdin
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 159
+      start_col: 0
+      end_line: 172
+      end_col: 0
+    fingerprint: 55da88f734fa0b4113f366b610cd2ca842da861d3fb2e9e12b7a3e40a0eff17d
+    params:
+    - name: httpbin
+  - qualified: tests.test_httpie.test_headers
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 175
+      start_col: 0
+      end_line: 179
+      end_col: 0
+    fingerprint: a808746f1f66e3b88f3fbf242924f273da2684e19350de221c627587c8a02c34
+    params:
+    - name: httpbin_both
+  - qualified: tests.test_httpie.test_headers_unset
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 182
+      start_col: 0
+      end_line: 187
+      end_col: 0
+    fingerprint: 94c8fd55b4dbefc590e9248c4212d6f168a38bcba7492a603921fd0ff158bc11
+    params:
+    - name: httpbin_both
+  - qualified: tests.test_httpie.test_unset_host_header
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 191
+      start_col: 0
+      end_line: 196
+      end_col: 0
+    fingerprint: 53417907db8e3b9705eafd56e627f9d9fdabd6542b55675fd6fcb98548dfa146
+    decorators:
+    - pytest.mark.skip('unimplemented')
+    params:
+    - name: httpbin_both
+  - qualified: tests.test_httpie.test_unset_useragent_header
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 199
+      start_col: 0
+      end_line: 204
+      end_col: 0
+    fingerprint: c309d345c6009e970ca59edc31a9a15fe6037a914db55b3f6b583d720a56dd6d
+    params:
+    - name: httpbin_both
+  - qualified: tests.test_httpie.test_headers_empty_value
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 207
+      start_col: 0
+      end_line: 212
+      end_col: 0
+    fingerprint: 0a87e597d89009a776e45607cf1ed36fad129b1798e0dea02583828fe939dc4a
+    params:
+    - name: httpbin_both
+  - qualified: tests.test_httpie.test_headers_empty_value_with_value_gives_error
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 215
+      start_col: 0
+      end_line: 217
+      end_col: 0
+    fingerprint: f54187ad598522ee917baa84cf1a97398c9456f1005df72c63b0db2bfd92d1d6
+    params:
+    - name: httpbin
+  - qualified: tests.test_httpie.test_headers_omit
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 220
+      start_col: 0
+      end_line: 222
+      end_col: 0
+    fingerprint: 125354930de1f7cad0b8f3d9784366ebfbf6249c9770640ac9856f6ca4a6e68e
+    params:
+    - name: httpbin_both
+  - qualified: tests.test_httpie.test_headers_multiple_omit
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 225
+      start_col: 0
+      end_line: 230
+      end_col: 0
+    fingerprint: 263e52ec7bb7d4905412ecd897ad023766a385acfdfe94e732ad4aa9bcd88258
+    params:
+    - name: httpbin_both
+  - qualified: tests.test_httpie.test_headers_same_after_omit
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 233
+      start_col: 0
+      end_line: 236
+      end_col: 0
+    fingerprint: 27312e958193ba78b136fc40e624a4c55cf15e72eeedfe6eb959c8d330156406
+    params:
+    - name: httpbin_both
+  - qualified: tests.test_httpie.test_headers_fully_omit
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 239
+      start_col: 0
+      end_line: 242
+      end_col: 0
+    fingerprint: 435889694a6aac0a87a12db71f10e2cdbc18fe9946248525a6b8d41efc23c6c5
+    params:
+    - name: httpbin_both
+  - qualified: tests.test_httpie.test_headers_multiple_values
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 245
+      start_col: 0
+      end_line: 247
+      end_col: 0
+    fingerprint: 92bc131efe6fd6c8df4747c0822688bcb70302a5332be08d072817d441c55945
+    params:
+    - name: httpbin_both
+  - qualified: tests.test_httpie.test_headers_multiple_values_repeated
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 250
+      start_col: 0
+      end_line: 253
+      end_col: 0
+    fingerprint: 5bd2299e17a26c502cb04afd58a2158d0ea50f298622c6c7e18b97e6d25d2efb
+    params:
+    - name: httpbin_both
+  - qualified: tests.test_httpie.test_headers_multiple_values_with_empty
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 270
+      start_col: 0
+      end_line: 272
+      end_col: 0
+    fingerprint: d1238b2521faaa7e1364b929c00c84bac013401e427423c64983ee4dfb7ade65
+    decorators:
+    - pytest.mark.parametrize('headers, expected', [(['Foo;', 'Foo:bar'], ',bar'),
+      (['Foo:bar', 'Foo;'], 'bar,'), (['Foo:bar', 'Foo;', 'Foo:baz'], 'bar,,baz')])
+    params:
+    - name: httpbin_both
+    - name: headers
+    - name: expected
+  - qualified: tests.test_httpie.test_headers_multiple_values_mixed
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 275
+      start_col: 0
+      end_line: 279
+      end_col: 0
+    fingerprint: 9a40162d6e13652d71f914d1fe73b8d8e62bad3ee9e06b0ffe0bd2c4b355c167
+    params:
+    - name: httpbin_both
+  - qualified: tests.test_httpie.test_headers_preserve_prepared_headers
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 282
+      start_col: 0
+      end_line: 285
+      end_col: 0
+    fingerprint: bd29a6c0196a6503b938ba381bbe03ddeac6ccc6fde19001bd5cbbee87ab95a0
+    params:
+    - name: httpbin_both
+  - qualified: tests.test_httpie.test_headers_multiple_headers_representation
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 289
+      start_col: 0
+      end_line: 299
+      end_col: 0
+    fingerprint: bba03e55fd63d7b8567939b655b3a032cf11b176978369703c9ee7a946cda9d7
+    decorators:
+    - pytest.mark.parametrize('pretty', ['format', 'none'])
+    params:
+    - name: httpbin_both
+    - name: pretty
+  - qualified: tests.test_httpie.test_response_headers_multiple
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 302
+      start_col: 0
+      end_line: 305
+      end_col: 0
+    fingerprint: 2fbc9cd686ed8744a6ea19add97b43c0e1a3d380522bba015698d5c778153172
+    params:
+    - name: http_server
+  - qualified: tests.test_httpie.test_response_headers_multiple_repeated
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 308
+      start_col: 0
+      end_line: 312
+      end_col: 0
+    fingerprint: 686f3fcd6e023a65895bf179970d27b0e4a86781066cce266f6fd0c4e4f71058
+    params:
+    - name: http_server
+  - qualified: tests.test_httpie.test_response_headers_multiple_representation
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 316
+      start_col: 0
+      end_line: 326
+      end_col: 0
+    fingerprint: 9cb5887c3096c118b64a968ac999b5bb404d66dc97e389077750155e09d1ec0f
+    decorators:
+    - pytest.mark.parametrize('pretty', ['format', 'none'])
+    params:
+    - name: http_server
+    - name: pretty
+  - qualified: tests.test_httpie.test_json_input_preserve_order
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 329
+      start_col: 0
+      end_line: 334
+      end_col: 0
+    fingerprint: b97ca1eb20714d76fcfbfd1171f747e31eae8404d96ad1eb55aae2d825f2bceb
+    params:
+    - name: httpbin_both
+  - qualified: tests.test_httpie.test_options_content_length_preservation
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 355
+      start_col: 0
+      end_line: 362
+      end_col: 0
+    fingerprint: fed69fb84af62fa22cee51e4e4b9130aeb3fbf28103c3e1fc8f0f25cb883ec8e
+    decorators:
+    - pytest.mark.parametrize('extra_args, expected_content_length', [(['Content-Length:0'],
+      '0'), (['Content-Length:xxx'], 'xxx'), (['--raw=data'], '4'), (['query[param]=something'],
+      '33')])
+    params:
+    - name: httpbin
+    - name: extra_args
+    - name: expected_content_length
+  - qualified: tests.test_httpie.test_options_dropping_redundant_content_length
+    kind: function
+    file: tests/test_httpie.py
+    range:
+      start_line: 366
+      start_col: 0
+      end_line: 372
+      end_col: 0
+    fingerprint: b5d1f7f97f62bc4a423cedaca5c777331c58e21ca2af8e40259850b68d3aa891
+    decorators:
+    - pytest.mark.parametrize('method', ['options', 'Options', 'OPTIONS'])
+    params:
+    - name: httpbin
+    - name: method

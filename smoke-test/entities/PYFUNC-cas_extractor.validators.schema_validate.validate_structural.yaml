@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-cas_extractor.validators.schema_validate.validate_structural
+kind: entity
+type: py.function
+name: validate_structural
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor/validators/schema_validate.py
+anchors:
+- type: symbol
+  value: cas_extractor.validators.schema_validate.validate_structural
+- type: fingerprint
+  value: f8667552cfecd0f7be813450b26756ef928c409738e005375bed9404d1374fcd
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor.validators.schema_validate

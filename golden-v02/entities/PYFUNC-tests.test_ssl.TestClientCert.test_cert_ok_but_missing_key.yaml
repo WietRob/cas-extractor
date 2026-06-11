@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_ssl.TestClientCert.test_cert_ok_but_missing_key
+kind: entity
+type: py.function
+name: test_cert_ok_but_missing_key
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_ssl.py
+anchors:
+- type: symbol
+  value: tests.test_ssl.TestClientCert.test_cert_ok_but_missing_key
+- type: fingerprint
+  value: ae0c2c13cf10bfb2d2a922c89ee2c2a0b4968385c0061b38f0bb32fdf3b87dcb
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_ssl.TestClientCert

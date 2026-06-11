@@ -1,0 +1,513 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-fc78dd6d
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T12:13:54.006608+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.downloader.chunk_downloaded
+  - symbol: ?.downloader.failed
+  - symbol: ?.downloader.finish
+  - symbol: ?.downloader.pre_request
+  - symbol: ?.downloader.start
+  - symbol: ?.fh.write
+  - symbol: httpie.downloads.Downloader
+  - symbol: os.chdir
+  - symbol: os.getcwd
+  - symbol: os.listdir
+  - symbol: tempfile.TemporaryDirectory
+  - symbol: tests.test_downloads.Response
+  - symbol: tests.test_downloads.TestDownloads.test_actual_download
+  - symbol: tests.test_downloads.TestDownloads.test_download_interrupted
+  - symbol: tests.test_downloads.TestDownloads.test_download_no_Content_Length
+  - symbol: tests.test_downloads.TestDownloads.test_download_output_from_content_disposition
+  - symbol: tests.test_downloads.TestDownloads.test_download_resumed
+  - symbol: tests.test_downloads.TestDownloads.test_download_with_Content_Length
+  - symbol: tests.test_downloads.TestDownloads.test_download_with_redirect_original_url_used_for_filename
+  - symbol: time.sleep
+  - symbol: urllib.request.urlopen
+  - symbol: utils.MockEnvironment
+  - symbol: utils.http
+  edges:
+  - from: tests.test_downloads.TestDownloads.test_actual_download
+    to: utils.MockEnvironment
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 128
+      start_col: 0
+      end_line: 128
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_actual_download
+    to: utils.http
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 129
+      start_col: 0
+      end_line: 129
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_with_redirect_original_url_used_for_filename
+    to: os.getcwd
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 253
+      start_col: 0
+      end_line: 253
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_with_Content_Length
+    to: httpie.downloads.Downloader
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 135
+      start_col: 0
+      end_line: 135
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_with_Content_Length
+    to: ?.downloader.start
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 136
+      start_col: 0
+      end_line: 142
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_with_Content_Length
+    to: time.sleep
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 143
+      start_col: 0
+      end_line: 143
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_with_Content_Length
+    to: ?.downloader.chunk_downloaded
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 144
+      start_col: 0
+      end_line: 144
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_with_Content_Length
+    to: time.sleep
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 145
+      start_col: 0
+      end_line: 145
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_with_Content_Length
+    to: ?.downloader.chunk_downloaded
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 146
+      start_col: 0
+      end_line: 146
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_with_Content_Length
+    to: ?.downloader.finish
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 147
+      start_col: 0
+      end_line: 147
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_no_Content_Length
+    to: httpie.downloads.Downloader
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 152
+      start_col: 0
+      end_line: 152
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_no_Content_Length
+    to: ?.downloader.start
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 153
+      start_col: 0
+      end_line: 156
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_no_Content_Length
+    to: time.sleep
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 157
+      start_col: 0
+      end_line: 157
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_no_Content_Length
+    to: ?.downloader.chunk_downloaded
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 158
+      start_col: 0
+      end_line: 158
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_no_Content_Length
+    to: ?.downloader.finish
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 159
+      start_col: 0
+      end_line: 159
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_output_from_content_disposition
+    to: tempfile.TemporaryDirectory
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 163
+      start_col: 0
+      end_line: 163
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_output_from_content_disposition
+    to: os.getcwd
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 164
+      start_col: 0
+      end_line: 164
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_output_from_content_disposition
+    to: os.chdir
+    kind: call
+    edge_id: 17
+    range:
+      start_line: 165
+      start_col: 0
+      end_line: 165
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_interrupted
+    to: httpie.downloads.Downloader
+    kind: call
+    edge_id: 18
+    range:
+      start_line: 192
+      start_col: 0
+      end_line: 192
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_interrupted
+    to: ?.downloader.start
+    kind: call
+    edge_id: 19
+    range:
+      start_line: 193
+      start_col: 0
+      end_line: 199
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_interrupted
+    to: ?.downloader.chunk_downloaded
+    kind: call
+    edge_id: 20
+    range:
+      start_line: 200
+      start_col: 0
+      end_line: 200
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_interrupted
+    to: ?.downloader.finish
+    kind: call
+    edge_id: 21
+    range:
+      start_line: 201
+      start_col: 0
+      end_line: 201
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_resumed
+    to: tempfile.TemporaryDirectory
+    kind: call
+    edge_id: 22
+    range:
+      start_line: 205
+      start_col: 0
+      end_line: 205
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_with_redirect_original_url_used_for_filename
+    to: tempfile.TemporaryDirectory
+    kind: call
+    edge_id: 23
+    range:
+      start_line: 254
+      start_col: 0
+      end_line: 254
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_with_redirect_original_url_used_for_filename
+    to: os.chdir
+    kind: call
+    edge_id: 24
+    range:
+      start_line: 255
+      start_col: 0
+      end_line: 255
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_output_from_content_disposition
+    to: httpie.downloads.Downloader
+    kind: call
+    edge_id: 25
+    range:
+      start_line: 168
+      start_col: 0
+      end_line: 168
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_output_from_content_disposition
+    to: ?.downloader.start
+    kind: call
+    edge_id: 26
+    range:
+      start_line: 169
+      start_col: 0
+      end_line: 178
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_output_from_content_disposition
+    to: ?.downloader.chunk_downloaded
+    kind: call
+    edge_id: 27
+    range:
+      start_line: 179
+      start_col: 0
+      end_line: 179
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_output_from_content_disposition
+    to: ?.downloader.finish
+    kind: call
+    edge_id: 28
+    range:
+      start_line: 180
+      start_col: 0
+      end_line: 180
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_output_from_content_disposition
+    to: ?.downloader.failed
+    kind: call
+    edge_id: 29
+    range:
+      start_line: 181
+      start_col: 0
+      end_line: 181
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_output_from_content_disposition
+    to: os.chdir
+    kind: call
+    edge_id: 30
+    range:
+      start_line: 188
+      start_col: 0
+      end_line: 188
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_resumed
+    to: httpie.downloads.Downloader
+    kind: call
+    edge_id: 31
+    range:
+      start_line: 212
+      start_col: 0
+      end_line: 212
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_resumed
+    to: ?.downloader.start
+    kind: call
+    edge_id: 32
+    range:
+      start_line: 213
+      start_col: 0
+      end_line: 219
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_resumed
+    to: ?.downloader.chunk_downloaded
+    kind: call
+    edge_id: 33
+    range:
+      start_line: 220
+      start_col: 0
+      end_line: 220
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_resumed
+    to: ?.downloader.finish
+    kind: call
+    edge_id: 34
+    range:
+      start_line: 221
+      start_col: 0
+      end_line: 221
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_resumed
+    to: ?.downloader.failed
+    kind: call
+    edge_id: 35
+    range:
+      start_line: 222
+      start_col: 0
+      end_line: 222
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_resumed
+    to: ?.fh.write
+    kind: call
+    edge_id: 36
+    range:
+      start_line: 227
+      start_col: 0
+      end_line: 227
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_resumed
+    to: httpie.downloads.Downloader
+    kind: call
+    edge_id: 37
+    range:
+      start_line: 231
+      start_col: 0
+      end_line: 231
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_resumed
+    to: ?.downloader.pre_request
+    kind: call
+    edge_id: 38
+    range:
+      start_line: 235
+      start_col: 0
+      end_line: 235
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_resumed
+    to: ?.downloader.start
+    kind: call
+    edge_id: 39
+    range:
+      start_line: 239
+      start_col: 0
+      end_line: 246
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_resumed
+    to: ?.downloader.chunk_downloaded
+    kind: call
+    edge_id: 40
+    range:
+      start_line: 247
+      start_col: 0
+      end_line: 247
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_resumed
+    to: ?.downloader.finish
+    kind: call
+    edge_id: 41
+    range:
+      start_line: 248
+      start_col: 0
+      end_line: 248
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_with_redirect_original_url_used_for_filename
+    to: utils.http
+    kind: call
+    edge_id: 42
+    range:
+      start_line: 258
+      start_col: 0
+      end_line: 258
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_with_redirect_original_url_used_for_filename
+    to: os.chdir
+    kind: call
+    edge_id: 43
+    range:
+      start_line: 261
+      start_col: 0
+      end_line: 261
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_with_Content_Length
+    to: tests.test_downloads.Response
+    kind: call
+    edge_id: 44
+    range:
+      start_line: 138
+      start_col: 0
+      end_line: 141
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_no_Content_Length
+    to: tests.test_downloads.Response
+    kind: call
+    edge_id: 45
+    range:
+      start_line: 154
+      start_col: 0
+      end_line: 154
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_interrupted
+    to: tests.test_downloads.Response
+    kind: call
+    edge_id: 46
+    range:
+      start_line: 194
+      start_col: 0
+      end_line: 197
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_with_redirect_original_url_used_for_filename
+    to: os.listdir
+    kind: call
+    edge_id: 47
+    range:
+      start_line: 257
+      start_col: 0
+      end_line: 257
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_with_redirect_original_url_used_for_filename
+    to: os.listdir
+    kind: call
+    edge_id: 48
+    range:
+      start_line: 259
+      start_col: 0
+      end_line: 259
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_actual_download
+    to: urllib.request.urlopen
+    kind: call
+    edge_id: 49
+    range:
+      start_line: 127
+      start_col: 0
+      end_line: 127
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_output_from_content_disposition
+    to: tests.test_downloads.Response
+    kind: call
+    edge_id: 50
+    range:
+      start_line: 170
+      start_col: 0
+      end_line: 176
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_resumed
+    to: tests.test_downloads.Response
+    kind: call
+    edge_id: 51
+    range:
+      start_line: 214
+      start_col: 0
+      end_line: 217
+      end_col: 0
+  - from: tests.test_downloads.TestDownloads.test_download_resumed
+    to: tests.test_downloads.Response
+    kind: call
+    edge_id: 52
+    range:
+      start_line: 240
+      start_col: 0
+      end_line: 244
+      end_col: 0

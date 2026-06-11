@@ -1,0 +1,457 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-9863e7b4
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-22T08:37:45.718108+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.dummy_plugin.build
+  - symbol: ?.dummy_plugin.dump
+  - symbol: ?.httpie_plugins
+  - symbol: ?.httpie_plugins_success
+  - symbol: ?.interface.is_installed
+  - symbol: ?.interface.make_dummy_plugin
+  - symbol: ?.plugin.dump
+  - symbol: pytest.warns
+  - symbol: tests.test_plugins_cli.test_broken_plugins
+  - symbol: tests.test_plugins_cli.test_plugin_installation_with_custom_config
+  - symbol: tests.test_plugins_cli.test_plugins_double_uninstall
+  - symbol: tests.test_plugins_cli.test_plugins_installation
+  - symbol: tests.test_plugins_cli.test_plugins_installation_failed
+  - symbol: tests.test_plugins_cli.test_plugins_listing
+  - symbol: tests.test_plugins_cli.test_plugins_listing_after_uninstall
+  - symbol: tests.test_plugins_cli.test_plugins_listing_multiple
+  - symbol: tests.test_plugins_cli.test_plugins_uninstall
+  - symbol: tests.test_plugins_cli.test_plugins_uninstall_non_existent
+  - symbol: tests.test_plugins_cli.test_plugins_uninstall_specific
+  - symbol: tests.test_plugins_cli.test_plugins_upgrade
+  - symbol: tests.utils.plugins_cli.parse_listing
+  edges:
+  - from: tests.test_plugins_cli.test_plugins_installation
+    to: ?.httpie_plugins_success
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 10
+      start_col: 0
+      end_line: 10
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugins_installation
+    to: ?.interface.is_installed
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 15
+      start_col: 0
+      end_line: 15
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugin_installation_with_custom_config
+    to: ?.httpie_plugins_success
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 23
+      start_col: 0
+      end_line: 23
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugin_installation_with_custom_config
+    to: ?.interface.is_installed
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 28
+      start_col: 0
+      end_line: 28
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugins_listing
+    to: ?.httpie_plugins_success
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 34
+      start_col: 0
+      end_line: 34
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugins_listing
+    to: tests.utils.plugins_cli.parse_listing
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 35
+      start_col: 0
+      end_line: 35
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugins_listing_multiple
+    to: ?.httpie_plugins_success
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 45
+      start_col: 0
+      end_line: 45
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugins_listing_multiple
+    to: tests.utils.plugins_cli.parse_listing
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 46
+      start_col: 0
+      end_line: 46
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugins_uninstall
+    to: ?.httpie_plugins_success
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 57
+      start_col: 0
+      end_line: 57
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugins_uninstall
+    to: ?.httpie_plugins_success
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 58
+      start_col: 0
+      end_line: 58
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugins_listing_after_uninstall
+    to: ?.httpie_plugins_success
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 64
+      start_col: 0
+      end_line: 64
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugins_listing_after_uninstall
+    to: ?.httpie_plugins_success
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 65
+      start_col: 0
+      end_line: 65
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugins_listing_after_uninstall
+    to: tests.utils.plugins_cli.parse_listing
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 67
+      start_col: 0
+      end_line: 67
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugins_uninstall_specific
+    to: ?.interface.make_dummy_plugin
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 73
+      start_col: 0
+      end_line: 73
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugins_uninstall_specific
+    to: ?.interface.make_dummy_plugin
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 74
+      start_col: 0
+      end_line: 74
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugins_uninstall_specific
+    to: ?.interface.make_dummy_plugin
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 75
+      start_col: 0
+      end_line: 75
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugins_uninstall_specific
+    to: ?.httpie_plugins_success
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 77
+      start_col: 0
+      end_line: 77
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugins_uninstall_specific
+    to: ?.httpie_plugins_success
+    kind: call
+    edge_id: 17
+    range:
+      start_line: 78
+      start_col: 0
+      end_line: 78
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugins_uninstall_specific
+    to: ?.interface.is_installed
+    kind: call
+    edge_id: 18
+    range:
+      start_line: 80
+      start_col: 0
+      end_line: 80
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugins_uninstall_specific
+    to: ?.interface.is_installed
+    kind: call
+    edge_id: 19
+    range:
+      start_line: 81
+      start_col: 0
+      end_line: 81
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugins_installation_failed
+    to: ?.interface.make_dummy_plugin
+    kind: call
+    edge_id: 20
+    range:
+      start_line: 87
+      start_col: 0
+      end_line: 87
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugins_installation_failed
+    to: ?.httpie_plugins
+    kind: call
+    edge_id: 21
+    range:
+      start_line: 88
+      start_col: 0
+      end_line: 88
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugins_uninstall_non_existent
+    to: ?.interface.make_dummy_plugin
+    kind: call
+    edge_id: 22
+    range:
+      start_line: 96
+      start_col: 0
+      end_line: 96
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugins_uninstall_non_existent
+    to: ?.httpie_plugins
+    kind: call
+    edge_id: 23
+    range:
+      start_line: 97
+      start_col: 0
+      end_line: 97
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugins_double_uninstall
+    to: ?.httpie_plugins_success
+    kind: call
+    edge_id: 24
+    range:
+      start_line: 108
+      start_col: 0
+      end_line: 108
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugins_double_uninstall
+    to: ?.httpie_plugins_success
+    kind: call
+    edge_id: 25
+    range:
+      start_line: 109
+      start_col: 0
+      end_line: 109
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugins_double_uninstall
+    to: ?.httpie_plugins
+    kind: call
+    edge_id: 26
+    range:
+      start_line: 111
+      start_col: 0
+      end_line: 111
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugins_upgrade
+    to: ?.httpie_plugins_success
+    kind: call
+    edge_id: 27
+    range:
+      start_line: 124
+      start_col: 0
+      end_line: 124
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugins_upgrade
+    to: ?.dummy_plugin.build
+    kind: call
+    edge_id: 28
+    range:
+      start_line: 128
+      start_col: 0
+      end_line: 128
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugins_upgrade
+    to: ?.httpie_plugins_success
+    kind: call
+    edge_id: 29
+    range:
+      start_line: 130
+      start_col: 0
+      end_line: 130
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugins_upgrade
+    to: tests.utils.plugins_cli.parse_listing
+    kind: call
+    edge_id: 30
+    range:
+      start_line: 131
+      start_col: 0
+      end_line: 131
+      end_col: 0
+  - from: tests.test_plugins_cli.test_broken_plugins
+    to: ?.httpie_plugins_success
+    kind: call
+    edge_id: 31
+    range:
+      start_line: 137
+      start_col: 0
+      end_line: 137
+      end_col: 0
+  - from: tests.test_plugins_cli.test_broken_plugins
+    to: tests.utils.plugins_cli.parse_listing
+    kind: call
+    edge_id: 32
+    range:
+      start_line: 154
+      start_col: 0
+      end_line: 154
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugins_listing
+    to: ?.httpie_plugins_success
+    kind: call
+    edge_id: 33
+    range:
+      start_line: 35
+      start_col: 0
+      end_line: 35
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugins_listing_multiple
+    to: ?.httpie_plugins_success
+    kind: call
+    edge_id: 34
+    range:
+      start_line: 46
+      start_col: 0
+      end_line: 46
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugins_uninstall
+    to: ?.interface.is_installed
+    kind: call
+    edge_id: 35
+    range:
+      start_line: 59
+      start_col: 0
+      end_line: 59
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugins_listing_after_uninstall
+    to: ?.httpie_plugins_success
+    kind: call
+    edge_id: 36
+    range:
+      start_line: 67
+      start_col: 0
+      end_line: 67
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugins_uninstall_specific
+    to: ?.interface.is_installed
+    kind: call
+    edge_id: 37
+    range:
+      start_line: 82
+      start_col: 0
+      end_line: 82
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugins_upgrade
+    to: ?.httpie_plugins_success
+    kind: call
+    edge_id: 38
+    range:
+      start_line: 131
+      start_col: 0
+      end_line: 131
+      end_col: 0
+  - from: tests.test_plugins_cli.test_broken_plugins
+    to: pytest.warns
+    kind: call
+    edge_id: 39
+    range:
+      start_line: 139
+      start_col: 0
+      end_line: 145
+      end_col: 0
+  - from: tests.test_plugins_cli.test_broken_plugins
+    to: tests.utils.plugins_cli.parse_listing
+    kind: call
+    edge_id: 40
+    range:
+      start_line: 146
+      start_col: 0
+      end_line: 146
+      end_col: 0
+  - from: tests.test_plugins_cli.test_broken_plugins
+    to: pytest.warns
+    kind: call
+    edge_id: 41
+    range:
+      start_line: 150
+      start_col: 0
+      end_line: 150
+      end_col: 0
+  - from: tests.test_plugins_cli.test_broken_plugins
+    to: ?.httpie_plugins_success
+    kind: call
+    edge_id: 42
+    range:
+      start_line: 151
+      start_col: 0
+      end_line: 151
+      end_col: 0
+  - from: tests.test_plugins_cli.test_broken_plugins
+    to: ?.httpie_plugins_success
+    kind: call
+    edge_id: 43
+    range:
+      start_line: 154
+      start_col: 0
+      end_line: 154
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugins_listing
+    to: ?.dummy_plugin.dump
+    kind: call
+    edge_id: 44
+    range:
+      start_line: 38
+      start_col: 0
+      end_line: 38
+      end_col: 0
+  - from: tests.test_plugins_cli.test_plugins_listing_multiple
+    to: ?.plugin.dump
+    kind: call
+    edge_id: 45
+    range:
+      start_line: 49
+      start_col: 0
+      end_line: 49
+      end_col: 0
+  - from: tests.test_plugins_cli.test_broken_plugins
+    to: ?.httpie_plugins_success
+    kind: call
+    edge_id: 46
+    range:
+      start_line: 146
+      start_col: 0
+      end_line: 146
+      end_col: 0

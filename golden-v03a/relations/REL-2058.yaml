@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-2058
+kind: relation
+type: calls
+from: PYFUNC-tests.test_output.test_ensure_status_code_is_shown_on_all_themes
+to: PYFUNC-utils.MockEnvironment
+confidence:
+  level: E1
+  direction: confirmed
+evidence:
+- EVID-py.callgraph-1c7faa4c
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1

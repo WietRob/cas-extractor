@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_output.test_output_option
+kind: entity
+type: py.function
+name: test_output_option
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_output.py
+anchors:
+- type: symbol
+  value: tests.test_output.test_output_option
+- type: fingerprint
+  value: 4a3e171d8b171564a9b0a290d031033e3e634672281db6878fb1eeef8366208d
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_output

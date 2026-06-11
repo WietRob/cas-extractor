@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.core.program.request_body_read_callback
+kind: entity
+type: py.function
+name: request_body_read_callback
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/core.py
+anchors:
+- type: symbol
+  value: httpie.core.program.request_body_read_callback
+- type: fingerprint
+  value: c625e748c611874aa2594d53c6e02e74403cd08db46066608b9c7b912a519e78
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.core.program

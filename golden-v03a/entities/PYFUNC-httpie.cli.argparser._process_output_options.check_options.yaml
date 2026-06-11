@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.argparser._process_output_options.check_options
+kind: entity
+type: py.function
+name: check_options
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/cli/argparser.py
+anchors:
+- type: symbol
+  value: httpie.cli.argparser._process_output_options.check_options
+- type: fingerprint
+  value: 4503a886bdf321d978dfd518c1e65ab4ea5efaf38d142bb55ed3907c86f39df2
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.argparser._process_output_options

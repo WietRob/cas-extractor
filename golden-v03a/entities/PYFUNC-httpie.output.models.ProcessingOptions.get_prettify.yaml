@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.models.ProcessingOptions.get_prettify
+kind: entity
+type: py.function
+name: get_prettify
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/output/models.py
+anchors:
+- type: symbol
+  value: httpie.output.models.ProcessingOptions.get_prettify
+- type: fingerprint
+  value: 7287dff30f7c7ec2250490710c0d1965a8096035a913005e0d4d860d830c5287
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.models.ProcessingOptions

@@ -1,0 +1,30 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-502cfed8
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-23T17:20:10.913303+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://cas_extractor
+  root: ./cas_extractor
+  revision: git:HEAD
+payload:
+  imports:
+  - from: resolvers
+    imports:
+    - cas_extractor.resolvers.base.ResolutionEngine
+    - cas_extractor.resolvers.base.CallContext
+    - cas_extractor.resolvers.base.ResolutionResult
+    - cas_extractor.resolvers.base.ResolutionStep
+    - cas_extractor.resolvers.base.BaseResolver
+    - cas_extractor.resolvers.base.ClassInfo
+    - cas_extractor.resolvers.static.StaticResolver
+    - cas_extractor.resolvers.static.SelfDispatchResolver
+    - cas_extractor.resolvers.static.ClsDispatchResolver
+    - cas_extractor.resolvers.static.SuperDispatchResolver
+    - cas_extractor.resolvers.heuristics.LocalVarResolver
+    - cas_extractor.resolvers.heuristics.ConstructorResolver
+    - cas_extractor.resolvers.heuristics.ClassInitSelfAttrResolver
+    - cas_extractor.resolvers.heuristics.MethodLocalSelfAttrResolver
+    - cas_extractor.resolvers.heuristics.PropagatedSelfAttrResolver
+    - cas_extractor.resolvers.heuristics.UnresolvedSelfAttrResolver

@@ -1,0 +1,206 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-9863e7b4
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T17:44:04.475528+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.test_plugins_cli
+    kind: module
+    file: tests/test_plugins_cli.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 155
+      end_col: 0
+    fingerprint: b7e7b78fb47581ea7859cb188993ce9d5827d359f650602b794b44d230a92b65
+  - qualified: tests.test_plugins_cli.test_plugins_installation
+    kind: function
+    file: tests/test_plugins_cli.py
+    range:
+      start_line: 9
+      start_col: 0
+      end_line: 15
+      end_col: 0
+    fingerprint: 168f0aecfd731ed50e6c244acea96e7ef5697ce04bbbbd8645ddb5631ceac912
+    decorators:
+    - pytest.mark.requires_installation
+    - pytest.mark.parametrize('cli_mode', [True, False])
+    params:
+    - name: httpie_plugins_success
+    - name: interface
+    - name: dummy_plugin
+    - name: cli_mode
+  - qualified: tests.test_plugins_cli.test_plugin_installation_with_custom_config
+    kind: function
+    file: tests/test_plugins_cli.py
+    range:
+      start_line: 19
+      start_col: 0
+      end_line: 28
+      end_col: 0
+    fingerprint: e3b333188e93f879e5506dc33cdcf1eba1b40e0c3ab21fae414ba00cf8d0e367
+    decorators:
+    - pytest.mark.requires_installation
+    params:
+    - name: httpie_plugins_success
+    - name: interface
+    - name: dummy_plugin
+  - qualified: tests.test_plugins_cli.test_plugins_listing
+    kind: function
+    file: tests/test_plugins_cli.py
+    range:
+      start_line: 33
+      start_col: 0
+      end_line: 39
+      end_col: 0
+    fingerprint: 7b076252c26b57d9efb4275b405db1c1ac1b4d709601ff0258b3d76f4c8ee173
+    decorators:
+    - pytest.mark.requires_installation
+    - pytest.mark.parametrize('cli_mode', [True, False])
+    params:
+    - name: httpie_plugins_success
+    - name: interface
+    - name: dummy_plugin
+    - name: cli_mode
+  - qualified: tests.test_plugins_cli.test_plugins_listing_multiple
+    kind: function
+    file: tests/test_plugins_cli.py
+    range:
+      start_line: 43
+      start_col: 0
+      end_line: 51
+      end_col: 0
+    fingerprint: 5fd2eb8c66cf8325c1757740c8badc73a1d26b16a189cbc3bf74cbf90339845f
+    decorators:
+    - pytest.mark.requires_installation
+    params:
+    - name: interface
+    - name: httpie_plugins_success
+    - name: dummy_plugins
+  - qualified: tests.test_plugins_cli.test_plugins_uninstall
+    kind: function
+    file: tests/test_plugins_cli.py
+    range:
+      start_line: 56
+      start_col: 0
+      end_line: 59
+      end_col: 0
+    fingerprint: 990da3e86cc9a52d4807e20a30c979746da6d041712bc9cd29276f5049c7582a
+    decorators:
+    - pytest.mark.requires_installation
+    - pytest.mark.parametrize('cli_mode', [True, False])
+    params:
+    - name: interface
+    - name: httpie_plugins_success
+    - name: dummy_plugin
+    - name: cli_mode
+  - qualified: tests.test_plugins_cli.test_plugins_listing_after_uninstall
+    kind: function
+    file: tests/test_plugins_cli.py
+    range:
+      start_line: 63
+      start_col: 0
+      end_line: 68
+      end_col: 0
+    fingerprint: a75c696ab761f5cc89c4dbceed75766c007eff2383a41ffd4d8a55aecc95390c
+    decorators:
+    - pytest.mark.requires_installation
+    params:
+    - name: interface
+    - name: httpie_plugins_success
+    - name: dummy_plugin
+  - qualified: tests.test_plugins_cli.test_plugins_uninstall_specific
+    kind: function
+    file: tests/test_plugins_cli.py
+    range:
+      start_line: 72
+      start_col: 0
+      end_line: 82
+      end_col: 0
+    fingerprint: fad4316e0a9881b8413727633a4d549d659bcb53e38231ce7f54cddc16caa1ec
+    decorators:
+    - pytest.mark.requires_installation
+    params:
+    - name: interface
+    - name: httpie_plugins_success
+  - qualified: tests.test_plugins_cli.test_plugins_installation_failed
+    kind: function
+    file: tests/test_plugins_cli.py
+    range:
+      start_line: 86
+      start_col: 0
+      end_line: 91
+      end_col: 0
+    fingerprint: 8eeac337015dbc47402e13a124f2188f45d6526c01adcaae23508729ddbffc55
+    decorators:
+    - pytest.mark.requires_installation
+    params:
+    - name: httpie_plugins
+    - name: interface
+  - qualified: tests.test_plugins_cli.test_plugins_uninstall_non_existent
+    kind: function
+    file: tests/test_plugins_cli.py
+    range:
+      start_line: 95
+      start_col: 0
+      end_line: 103
+      end_col: 0
+    fingerprint: dcbfa1b274bdaa8be3f6982751054e61af7c98c34fd4e813d66a121dd8a6a146
+    decorators:
+    - pytest.mark.requires_installation
+    params:
+    - name: httpie_plugins
+    - name: interface
+  - qualified: tests.test_plugins_cli.test_plugins_double_uninstall
+    kind: function
+    file: tests/test_plugins_cli.py
+    range:
+      start_line: 107
+      start_col: 0
+      end_line: 117
+      end_col: 0
+    fingerprint: f5c9a26b355644f6ca7847042d253c540a2d17702d9f92f58fd4dd487dfb975f
+    decorators:
+    - pytest.mark.requires_installation
+    params:
+    - name: httpie_plugins
+    - name: httpie_plugins_success
+    - name: dummy_plugin
+  - qualified: tests.test_plugins_cli.test_plugins_upgrade
+    kind: function
+    file: tests/test_plugins_cli.py
+    range:
+      start_line: 123
+      start_col: 0
+      end_line: 132
+      end_col: 0
+    fingerprint: b20380345184067662f6ac241d941d491a5f02fb0bf8b2470841c4446776fc84
+    decorators:
+    - pytest.mark.skip(reason='Doesn’t work in CI')
+    - pytest.mark.requires_installation
+    params:
+    - name: httpie_plugins
+    - name: httpie_plugins_success
+    - name: dummy_plugin
+  - qualified: tests.test_plugins_cli.test_broken_plugins
+    kind: function
+    file: tests/test_plugins_cli.py
+    range:
+      start_line: 136
+      start_col: 0
+      end_line: 155
+      end_col: 0
+    fingerprint: 3e38f0bc747ab0bc761a202aa1b58a4319a331de368564db2e4b8eb3e7df4c5a
+    decorators:
+    - pytest.mark.requires_installation
+    params:
+    - name: httpie_plugins
+    - name: httpie_plugins_success
+    - name: dummy_plugin
+    - name: broken_plugin

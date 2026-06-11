@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.utils.Encoder.decode
+kind: entity
+type: py.function
+name: decode
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/utils/__init__.py
+anchors:
+- type: symbol
+  value: tests.utils.Encoder.decode
+- type: fingerprint
+  value: 416876f19bf72e9a04013d828c4cec46fef885af0ef5f795ecd79926b8075e0b
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils.Encoder

@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-3196
+kind: relation
+type: calls
+from: PYFUNC-tests.test_cookie_on_redirects.test_server_set_cookie_on_redirect_same_domain
+to: PYFUNC-utils.http
+confidence:
+  level: E1
+  direction: confirmed
+evidence:
+- EVID-py.callgraph-9e0d5a0f
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1

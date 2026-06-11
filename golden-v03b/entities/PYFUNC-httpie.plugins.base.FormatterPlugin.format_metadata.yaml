@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.plugins.base.FormatterPlugin.format_metadata
+kind: entity
+type: py.function
+name: format_metadata
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/plugins/base.py
+anchors:
+- type: symbol
+  value: httpie.plugins.base.FormatterPlugin.format_metadata
+- type: fingerprint
+  value: e6897db062dfdbd0ca29139c2bc92a4c4debef0002e29ea2d9dd250648065630
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.plugins.base.FormatterPlugin

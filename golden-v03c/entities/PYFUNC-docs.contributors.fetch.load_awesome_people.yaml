@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-docs.contributors.fetch.load_awesome_people
+kind: entity
+type: py.function
+name: load_awesome_people
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: docs/contributors/fetch.py
+anchors:
+- type: symbol
+  value: docs.contributors.fetch.load_awesome_people
+- type: fingerprint
+  value: 1ed0bac7cbe5e95b717a6cfb429ee6f67dcf17e6257c6d4e8a87bedaf26deb26
+  algo: sha256
+claims: []
+relations: []
+namespace: docs.contributors.fetch

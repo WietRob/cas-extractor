@@ -1,0 +1,23 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-3b4ee18f
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T11:17:16.887344+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: /tmp/h25-verify
+  revision: git:test
+payload:
+  symbols:
+  - qualified: test_h25.TestH25Reassign.reconnect
+    kind: method
+    file: test_h25.py
+    range:
+      start_line: 34
+      start_col: 0
+      end_line: 37
+      end_col: 0
+    fingerprint: affc85a8264fc53d72ea5ca1dc0d795e82de6e62df15b8a8ad8a9538e0fec454
+    params:
+    - name: self

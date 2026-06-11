@@ -1,0 +1,33 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-8e14ec35
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-21T12:13:53.318169+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  imports:
+  - from: httpie.context
+    imports:
+    - argparse
+    - sys
+    - os
+    - warnings
+    - contextlib.contextmanager
+    - pathlib.Path
+    - typing.Iterator
+    - typing.IO
+    - typing.Optional
+    - typing.TYPE_CHECKING
+    - enum.Enum
+    - httpie.compat.is_windows
+    - httpie.compat.cached_property
+    - httpie.config.DEFAULT_CONFIG_DIR
+    - httpie.config.Config
+    - httpie.config.ConfigFileError
+    - httpie.encoding.UTF8
+    - httpie.utils.repr_dict
+    - httpie.output.ui.palette.GenericColor

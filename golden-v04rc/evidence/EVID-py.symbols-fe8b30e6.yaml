@@ -1,0 +1,193 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-fe8b30e6
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T08:37:44.369661+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: docs.contributors.fetch
+    kind: module
+    file: docs/contributors/fetch.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 281
+      end_col: 0
+    fingerprint: e2c6262a8b2b73699de680ea24415918288e40e4c03336d2ca16367b57411bfb
+  - qualified: docs.contributors.fetch.FinishedForNow
+    kind: class
+    file: docs/contributors/fetch.py
+    range:
+      start_line: 40
+      start_col: 0
+      end_line: 41
+      end_col: 0
+    fingerprint: e1557997d712cc8332e3e812c127c01e7615c77826792e96cc1449d6f26bd253
+  - qualified: docs.contributors.fetch.main
+    kind: function
+    file: docs/contributors/fetch.py
+    range:
+      start_line: 44
+      start_col: 0
+      end_line: 68
+      end_col: 0
+    fingerprint: b2f7b94b9fe75135ba789e1e4fa2a209c49be42b2f8d23be0231c72791577d0d
+    params:
+    - name: previous_release
+      annotation: str
+    - name: current_release
+      annotation: str
+    returns: int
+  - qualified: docs.contributors.fetch.find_committers
+    kind: function
+    file: docs/contributors/fetch.py
+    range:
+      start_line: 71
+      start_col: 0
+      end_line: 98
+      end_col: 0
+    fingerprint: 80fff442024da638cfd6206a92c17068c7a02ddfbcf8d83a0845e47bb1ede133
+    params:
+    - name: since
+      annotation: str
+    - name: until
+      annotation: str
+    returns: FullNames
+  - qualified: docs.contributors.fetch.find_reporters
+    kind: function
+    file: docs/contributors/fetch.py
+    range:
+      start_line: 101
+      start_col: 0
+      end_line: 126
+      end_col: 0
+    fingerprint: 5ea23d3c4d6368bfb0572bfb4983d89c57f1674531921779a659fb880b00dd01
+    params:
+    - name: since
+      annotation: str
+    - name: until
+      annotation: str
+    returns: GitHubLogins
+  - qualified: docs.contributors.fetch.merge_all_the_people
+    kind: function
+    file: docs/contributors/fetch.py
+    range:
+      start_line: 129
+      start_col: 0
+      end_line: 177
+      end_col: 0
+    fingerprint: 92a9934cf389106bb54b0260612460abe9c5a35c278f43bb7086cd439d351880
+    params:
+    - name: release
+      annotation: str
+    - name: contributors
+      annotation: People
+    - name: committers
+      annotation: FullNames
+    - name: reporters
+      annotation: GitHubLogins
+    returns: None
+  - qualified: docs.contributors.fetch.release_date
+    kind: function
+    file: docs/contributors/fetch.py
+    range:
+      start_line: 180
+      start_col: 0
+      end_line: 182
+      end_col: 0
+    fingerprint: 51173dda537881c63bad7a5898a5442211765df9b751d095cd531e61adf098d9
+    params:
+    - name: release
+      annotation: str
+    returns: str
+  - qualified: docs.contributors.fetch.load_awesome_people
+    kind: function
+    file: docs/contributors/fetch.py
+    range:
+      start_line: 185
+      start_col: 0
+      end_line: 190
+      end_col: 0
+    fingerprint: 1ed0bac7cbe5e95b717a6cfb429ee6f67dcf17e6257c6d4e8a87bedaf26deb26
+    returns: People
+  - qualified: docs.contributors.fetch.fetch
+    kind: function
+    file: docs/contributors/fetch.py
+    range:
+      start_line: 193
+      start_col: 0
+      end_line: 215
+      end_col: 0
+    fingerprint: f5d589d8385a4d42417bb80430c3f7995400b06bd8ad1ddce1f1d031fda0c84a
+    params:
+    - name: url
+      annotation: str
+    - name: params
+      annotation: Optional[Dict[str, str]]
+    returns: UserInfo
+  - qualified: docs.contributors.fetch.new_person
+    kind: function
+    file: docs/contributors/fetch.py
+    range:
+      start_line: 218
+      start_col: 0
+      end_line: 221
+      end_col: 0
+    fingerprint: e321d48c2b66d42ee4367688458b79517b10264fd7b31fe959ce41ee5b74c23c
+    returns: Person
+  - qualified: docs.contributors.fetch.user
+    kind: function
+    file: docs/contributors/fetch.py
+    range:
+      start_line: 224
+      start_col: 0
+      end_line: 238
+      end_col: 0
+    fingerprint: d8bf782952da1a9f4d5a4c94db2589120eefa8e20cf2315924bab6f47f1b828d
+    params:
+    - name: fullname
+      annotation: Optional[str]
+    - name: github_username
+      annotation: Optional[str]
+    returns: UserInfo
+  - qualified: docs.contributors.fetch.fetch_missing_users_details
+    kind: function
+    file: docs/contributors/fetch.py
+    range:
+      start_line: 241
+      start_col: 0
+      end_line: 249
+      end_col: 0
+    fingerprint: 4815a18730886278f6fd3efe329329cd878c150020fb99dd8bb90fe6d8f2e34d
+    params:
+    - name: people
+      annotation: People
+    returns: None
+  - qualified: docs.contributors.fetch.save_awesome_people
+    kind: function
+    file: docs/contributors/fetch.py
+    range:
+      start_line: 252
+      start_col: 0
+      end_line: 255
+      end_col: 0
+    fingerprint: d7f4533c8d0cd19fc4d4661dd336154a59e4399f202d80cebf61126e155b47fd
+    params:
+    - name: people
+      annotation: People
+    returns: None
+  - qualified: docs.contributors.fetch.debug
+    kind: function
+    file: docs/contributors/fetch.py
+    range:
+      start_line: 258
+      start_col: 0
+      end_line: 260
+      end_col: 0
+    fingerprint: 687b11fec07e2437c7b7aa807f08197224db16b8a352dac5593e1593b4a9932b
+    returns: None

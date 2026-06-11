@@ -1,0 +1,36 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-b0be1e89
+kind: evidence
+type: py.symbols
+created_at: '2026-02-23T17:19:36.825442+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://h28-test
+  root: /tmp/h28-verify
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: test_h28.TestN7ClassmethodFactory.create
+    kind: method
+    file: test_h28.py
+    range:
+      start_line: 254
+      start_col: 0
+      end_line: 255
+      end_col: 0
+    fingerprint: 5ad4512e6e844e86a23b031f0babe9cd7716d82366077abc6edd0f432df2b2b4
+    decorators:
+    - classmethod
+    params:
+    - name: cls
+  - qualified: test_h28.TestN7ClassmethodFactory.run
+    kind: method
+    file: test_h28.py
+    range:
+      start_line: 257
+      start_col: 0
+      end_line: 259
+      end_col: 0
+    fingerprint: c81227ed73e5040ba611906c2417f6ce4101b5d7b6c156da2be6cffdcd005138
+    params:
+    - name: self

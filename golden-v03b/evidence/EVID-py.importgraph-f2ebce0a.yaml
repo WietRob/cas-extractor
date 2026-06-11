@@ -1,0 +1,21 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-f2ebce0a
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-21T15:03:55.407638+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  imports:
+  - from: httpie.manager.cli
+    imports:
+    - textwrap.dedent
+    - httpie.cli.argparser.HTTPieManagerArgumentParser
+    - httpie.cli.options.Qualifiers
+    - httpie.cli.options.ARGPARSE_QUALIFIER_MAP
+    - httpie.cli.options.map_qualifiers
+    - httpie.cli.options.parser_to_parser_spec
+    - httpie.__version__

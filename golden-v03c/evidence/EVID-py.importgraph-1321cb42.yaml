@@ -1,0 +1,26 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-1321cb42
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-21T17:44:04.614965+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  imports:
+  - from: httpie.internal.daemons
+    imports:
+    - inspect
+    - os
+    - platform
+    - sys
+    - httpie.__main__
+    - contextlib.suppress
+    - subprocess.Popen
+    - subprocess.DEVNULL
+    - typing.Dict
+    - typing.List
+    - httpie.compat.is_frozen
+    - httpie.compat.is_windows

@@ -1,0 +1,24 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-09dab20d
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T17:44:05.266457+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: httpie.manager.tasks.plugins
+  - symbol: re.compile
+  edges:
+  - from: httpie.manager.tasks.plugins
+    to: re.compile
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 18
+      start_col: 0
+      end_line: 18
+      end_col: 0

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_encoding.test_charset_text_pairs
+kind: entity
+type: py.function
+name: test_charset_text_pairs
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_encoding.py
+anchors:
+- type: symbol
+  value: tests.test_encoding.test_charset_text_pairs
+- type: fingerprint
+  value: 1473399cd62884ebf368593c7f1da39dbeaa4302c582a8997f4703bbca472fb0
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_encoding

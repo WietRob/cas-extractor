@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.utils.matching.parsing.make_headers_re
+kind: entity
+type: py.function
+name: make_headers_re
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/utils/matching/parsing.py
+anchors:
+- type: symbol
+  value: tests.utils.matching.parsing.make_headers_re
+- type: fingerprint
+  value: cd9e5e1c388f7ec438d34d3c573823ec9bcbc835e35475020f4f56022bcb8bb9
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils.matching.parsing

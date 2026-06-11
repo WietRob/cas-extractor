@@ -1,0 +1,102 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-fc78dd6d
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:55.173265+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.test_downloads.TestDownloads.test_actual_download
+    kind: method
+    file: tests/test_downloads.py
+    range:
+      start_line: 125
+      start_col: 0
+      end_line: 131
+      end_col: 0
+    fingerprint: 3eec0b2e467a5034e35623d5842e09899b9b5442beb81b4dbe6e8d52b86ff4fd
+    params:
+    - name: self
+    - name: httpbin_both
+    - name: httpbin
+  - qualified: tests.test_downloads.TestDownloads.test_download_with_Content_Length
+    kind: method
+    file: tests/test_downloads.py
+    range:
+      start_line: 133
+      start_col: 0
+      end_line: 148
+      end_col: 0
+    fingerprint: b26fc717be8b236e19879b9eeb8253264cf364fb486fa50e3b8a4bddbc154d19
+    params:
+    - name: self
+    - name: mock_env
+    - name: httpbin_both
+  - qualified: tests.test_downloads.TestDownloads.test_download_no_Content_Length
+    kind: method
+    file: tests/test_downloads.py
+    range:
+      start_line: 150
+      start_col: 0
+      end_line: 160
+      end_col: 0
+    fingerprint: f8f5e2be37aff1935ea9b7638da6ce24c4ee30c52f027bb8b217a281ce5c519e
+    params:
+    - name: self
+    - name: mock_env
+    - name: httpbin_both
+  - qualified: tests.test_downloads.TestDownloads.test_download_output_from_content_disposition
+    kind: method
+    file: tests/test_downloads.py
+    range:
+      start_line: 162
+      start_col: 0
+      end_line: 188
+      end_col: 0
+    fingerprint: c7e6eb1c71307dce724a28877d9d4e040fec67730a585864a5a2e54f295cb471
+    params:
+    - name: self
+    - name: mock_env
+    - name: httpbin_both
+  - qualified: tests.test_downloads.TestDownloads.test_download_interrupted
+    kind: method
+    file: tests/test_downloads.py
+    range:
+      start_line: 190
+      start_col: 0
+      end_line: 202
+      end_col: 0
+    fingerprint: ecd6536b849dc69556fcc74d6a9d3a484d373dcdb139b16b84d7d5c8e04a65b7
+    params:
+    - name: self
+    - name: mock_env
+    - name: httpbin_both
+  - qualified: tests.test_downloads.TestDownloads.test_download_resumed
+    kind: method
+    file: tests/test_downloads.py
+    range:
+      start_line: 204
+      start_col: 0
+      end_line: 248
+      end_col: 0
+    fingerprint: 5510a926cb69d71ef4ce9ad1fb76ff8c9fa5d5b9cec17947144f6bf5b4910075
+    params:
+    - name: self
+    - name: mock_env
+    - name: httpbin_both
+  - qualified: tests.test_downloads.TestDownloads.test_download_with_redirect_original_url_used_for_filename
+    kind: method
+    file: tests/test_downloads.py
+    range:
+      start_line: 250
+      start_col: 0
+      end_line: 261
+      end_col: 0
+    fingerprint: 75121ad25420c350dd84953b5e404a7d4fb4c655c5b4ab80cbf6b649c0c04af1
+    params:
+    - name: self
+    - name: httpbin

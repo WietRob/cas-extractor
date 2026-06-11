@@ -1,0 +1,20 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-e2ce21ad
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-21T11:51:32.884195+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  imports:
+  - from: httpie.output.processing
+    imports:
+    - re
+    - typing.Optional
+    - typing.List
+    - httpie.plugins.ConverterPlugin
+    - httpie.plugins.registry.plugin_manager
+    - httpie.context.Environment

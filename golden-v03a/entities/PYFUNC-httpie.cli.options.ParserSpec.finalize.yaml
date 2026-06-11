@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.options.ParserSpec.finalize
+kind: entity
+type: py.function
+name: finalize
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/cli/options.py
+anchors:
+- type: symbol
+  value: httpie.cli.options.ParserSpec.finalize
+- type: fingerprint
+  value: 192812f44a17563e4421ff2897aa8d8bec3e7613c4b68a254c307ef8541750cf
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.options.ParserSpec

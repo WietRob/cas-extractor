@@ -1,0 +1,44 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-fa3a7c3b
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-23T13:08:12.535050+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://cas_extractor
+  root: ./cas_extractor
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.self.generic_visit
+  - symbol: utils.fingerprint._ASTNormalizer.visit_ClassDef
+  - symbol: utils.fingerprint._ASTNormalizer.visit_Expr
+  - symbol: utils.fingerprint._ASTNormalizer.visit_FunctionDef
+  edges:
+  - from: utils.fingerprint._ASTNormalizer.visit_FunctionDef
+    to: ?.self.generic_visit
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 19
+      start_col: 0
+      end_line: 19
+      end_col: 0
+  - from: utils.fingerprint._ASTNormalizer.visit_ClassDef
+    to: ?.self.generic_visit
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 26
+      start_col: 0
+      end_line: 26
+      end_col: 0
+  - from: utils.fingerprint._ASTNormalizer.visit_Expr
+    to: ?.self.generic_visit
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 39
+      start_col: 0
+      end_line: 39
+      end_col: 0

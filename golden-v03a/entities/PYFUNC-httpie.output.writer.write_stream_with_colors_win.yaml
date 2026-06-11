@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.writer.write_stream_with_colors_win
+kind: entity
+type: py.function
+name: write_stream_with_colors_win
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/output/writer.py
+anchors:
+- type: symbol
+  value: httpie.output.writer.write_stream_with_colors_win
+- type: fingerprint
+  value: d4e6482ad01ca5c1b5f4b8c15f735887602e7dffc32f8ec9dfc5cf1f1ec718ed
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.writer

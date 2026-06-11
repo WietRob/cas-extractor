@@ -1,0 +1,144 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-e15ea6c4
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:55.259331+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.test_uploads.TestMultipartFormDataFileUpload.test_non_existent_file_raises_parse_error
+    kind: method
+    file: tests/test_uploads.py
+    range:
+      start_line: 192
+      start_col: 0
+      end_line: 195
+      end_col: 0
+    fingerprint: e1a17317548329c4a1bc9dd44ee08a6b2fce4ca0f387707b2b3dfca8aa3c1a09
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_uploads.TestMultipartFormDataFileUpload.test_upload_ok
+    kind: method
+    file: tests/test_uploads.py
+    range:
+      start_line: 197
+      start_col: 0
+      end_line: 206
+      end_col: 0
+    fingerprint: 34869a50d5e2a095dfba1470f85278e94a4a2a5bd9c620af1eaa64fbdb55c0bc
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_uploads.TestMultipartFormDataFileUpload.test_upload_multiple_fields_with_the_same_name
+    kind: method
+    file: tests/test_uploads.py
+    range:
+      start_line: 208
+      start_col: 0
+      end_line: 218
+      end_col: 0
+    fingerprint: 077a87c2d112d1268876a5a92818d79c75e182d90ba445c9776785197ddcab46
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_uploads.TestMultipartFormDataFileUpload.test_upload_custom_content_type
+    kind: method
+    file: tests/test_uploads.py
+    range:
+      start_line: 220
+      start_col: 0
+      end_line: 232
+      end_col: 0
+    fingerprint: 59b64588b366060814956a3fc1815c52a432f7d0b7d612e0ecf1b3e6c986ce4e
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_uploads.TestMultipartFormDataFileUpload.test_form_no_files_urlencoded
+    kind: method
+    file: tests/test_uploads.py
+    range:
+      start_line: 234
+      start_col: 0
+      end_line: 243
+      end_col: 0
+    fingerprint: a8651ac360084885152d4d5b5c4a7bba202a80268f87832be35501290719bbc9
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_uploads.TestMultipartFormDataFileUpload.test_multipart
+    kind: method
+    file: tests/test_uploads.py
+    range:
+      start_line: 245
+      start_col: 0
+      end_line: 255
+      end_col: 0
+    fingerprint: 7df9a43a20f8d567c4c10ad765408a11195c6ac921af99e459a8d69ab23a5c15
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_uploads.TestMultipartFormDataFileUpload.test_form_multipart_custom_boundary
+    kind: method
+    file: tests/test_uploads.py
+    range:
+      start_line: 257
+      start_col: 0
+      end_line: 269
+      end_col: 0
+    fingerprint: 8e277e770b4ba8b88c54713fe64f1b3bb4e87dfea0063adf36db579fa5ff8920
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_uploads.TestMultipartFormDataFileUpload.test_multipart_custom_content_type_boundary_added
+    kind: method
+    file: tests/test_uploads.py
+    range:
+      start_line: 271
+      start_col: 0
+      end_line: 284
+      end_col: 0
+    fingerprint: 7d21cc65644f7277e271604fcb08517a79083bce705b83bf3bcd248da608fc2a
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_uploads.TestMultipartFormDataFileUpload.test_multipart_custom_content_type_boundary_preserved
+    kind: method
+    file: tests/test_uploads.py
+    range:
+      start_line: 286
+      start_col: 0
+      end_line: 301
+      end_col: 0
+    fingerprint: da116a28f5d3052cd92641fb8693d702908146695afc38489f29e5435b761763
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_uploads.TestMultipartFormDataFileUpload.test_multipart_chunked
+    kind: method
+    file: tests/test_uploads.py
+    range:
+      start_line: 303
+      start_col: 0
+      end_line: 314
+      end_col: 0
+    fingerprint: 814fddc0630fdb43c7c288c501835bcfacf53813fdbd09345a0aef0872af1e9d
+    params:
+    - name: self
+    - name: httpbin_with_chunked_support
+  - qualified: tests.test_uploads.TestMultipartFormDataFileUpload.test_multipart_preserve_order
+    kind: method
+    file: tests/test_uploads.py
+    range:
+      start_line: 316
+      start_col: 0
+      end_line: 333
+      end_col: 0
+    fingerprint: 89cc0a6de40cd328610d67daec7868d3e8cd5d8d4a39dc507f5d6439a55e85a9
+    params:
+    - name: self
+    - name: httpbin

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.context
+kind: entity
+type: py.module
+name: context
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/context.py
+anchors:
+- type: symbol
+  value: httpie.context
+- type: fingerprint
+  value: c2c83a48d7bd009d1d4320725224db3a4daa01f6ffff7ff5df0a14a7f71410df
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie

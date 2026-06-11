@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-tests.test_output.TestFormatOptions
+kind: entity
+type: py.class
+name: TestFormatOptions
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_output.py
+anchors:
+- type: symbol
+  value: tests.test_output.TestFormatOptions
+- type: fingerprint
+  value: ff640260d8db76dfed7b56d77ebf28839d9fd2593a8202e58ad1641a363e0587
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_output

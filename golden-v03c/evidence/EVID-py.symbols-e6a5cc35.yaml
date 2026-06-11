@@ -1,0 +1,42 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-e6a5cc35
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T17:44:04.403318+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.uploads.ChunkedUploadStream.__init__
+    kind: method
+    file: httpie/uploads.py
+    range:
+      start_line: 26
+      start_col: 0
+      end_line: 34
+      end_col: 0
+    fingerprint: 4e2089bb10b88ffe9a786a9bc965b83ddc36c547214a34c8c3e7a3cea23a6a4b
+    params:
+    - name: self
+    - name: stream
+      annotation: Iterable
+    - name: callback
+      annotation: Callable
+    - name: event
+      annotation: Optional[threading.Event]
+    returns: None
+  - qualified: httpie.uploads.ChunkedUploadStream.__iter__
+    kind: method
+    file: httpie/uploads.py
+    range:
+      start_line: 36
+      start_col: 0
+      end_line: 41
+      end_col: 0
+    fingerprint: 0a0340e1835deeac56c15358a90d54654d1b2ac9052e25ff569ac938dc0bb67d
+    params:
+    - name: self
+    returns: Iterable[Union[str, bytes]]

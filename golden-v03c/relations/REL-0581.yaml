@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-0581
+kind: relation
+type: contains
+from: PYMOD-httpie.output.ui.man_pages
+to: PYFUNC-httpie.output.ui.man_pages.is_available
+confidence:
+  level: E0
+  direction: confirmed
+evidence:
+- EVID-py.symbols-702df344
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1

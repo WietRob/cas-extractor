@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_auth.test_missing_auth
+kind: entity
+type: py.function
+name: test_missing_auth
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_auth.py
+anchors:
+- type: symbol
+  value: tests.test_auth.test_missing_auth
+- type: fingerprint
+  value: 5cf4952ce871006b3086cdf012dfb4c30113304e91fa8a86833187b20ba7321a
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_auth

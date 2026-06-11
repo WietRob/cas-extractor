@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.utils.plugins_cli.Plugin.dump
+kind: entity
+type: py.function
+name: dump
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/utils/plugins_cli.py
+anchors:
+- type: symbol
+  value: tests.utils.plugins_cli.Plugin.dump
+- type: fingerprint
+  value: ddfcde12c7b403ebd7415fd63b65d27b640c4cc5042c63fc2f4d035568a3a5d0
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils.plugins_cli.Plugin

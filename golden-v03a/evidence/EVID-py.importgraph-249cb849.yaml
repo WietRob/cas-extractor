@@ -1,0 +1,39 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-249cb849
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-21T12:13:53.334599+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  imports:
+  - from: httpie.utils
+    imports:
+    - os
+    - base64
+    - json
+    - mimetypes
+    - re
+    - sys
+    - time
+    - tempfile
+    - sysconfig
+    - collections.OrderedDict
+    - contextlib.contextmanager
+    - http.cookiejar.parse_ns_headers
+    - pathlib.Path
+    - pprint.pformat
+    - urllib.parse.urlsplit
+    - typing.Any
+    - typing.List
+    - typing.Optional
+    - typing.Tuple
+    - typing.Generator
+    - typing.Callable
+    - typing.Iterable
+    - typing.IO
+    - typing.TypeVar
+    - requests.auth

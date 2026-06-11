@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-extract_python.main
+kind: entity
+type: py.function
+name: main
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: extract_python.py
+anchors:
+- type: symbol
+  value: extract_python.main
+- type: fingerprint
+  value: 723b67de70f715b01190944a308127921d0796768c5395b0a1e07a56fe4455ed
+  algo: sha256
+claims: []
+relations: []
+namespace: extract_python

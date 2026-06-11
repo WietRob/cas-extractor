@@ -1,0 +1,30 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-07541b28
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-21T12:13:53.327894+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  imports:
+  - from: httpie.output.streams
+    imports:
+    - abc.ABCMeta
+    - abc.abstractmethod
+    - itertools.chain
+    - typing.Callable
+    - typing.Iterable
+    - typing.Optional
+    - typing.Union
+    - httpie.output.processing.Conversion
+    - httpie.output.processing.Formatting
+    - httpie.context.Environment
+    - httpie.encoding.smart_decode
+    - httpie.encoding.smart_encode
+    - httpie.encoding.UTF8
+    - httpie.models.HTTPMessage
+    - httpie.models.OutputOptions
+    - httpie.utils.parse_content_type_header

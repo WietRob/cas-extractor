@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_update_warnings.test_fetch_broken_json
+kind: entity
+type: py.function
+name: test_fetch_broken_json
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_update_warnings.py
+anchors:
+- type: symbol
+  value: tests.test_update_warnings.test_fetch_broken_json
+- type: fingerprint
+  value: 65b593647cf498e9f86c13c30321260d2bdd7e06286522462f45d27951405ee1
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_update_warnings

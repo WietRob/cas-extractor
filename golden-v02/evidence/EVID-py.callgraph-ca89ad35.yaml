@@ -1,0 +1,138 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-ca89ad35
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:34.127849+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: httpie.plugins.registry.plugin_manager.register
+  - symbol: httpie.plugins.registry.plugin_manager.unregister
+  - symbol: tests.test_auth_plugins.test_auth_plugin_parse_auth_false
+  - symbol: tests.test_auth_plugins.test_auth_plugin_prompt_password_false
+  - symbol: tests.test_auth_plugins.test_auth_plugin_require_auth_false
+  - symbol: tests.test_auth_plugins.test_auth_plugin_require_auth_false_and_auth_provided
+  - symbol: unittest.mock.patch
+  - symbol: utils.http
+  edges:
+  - from: tests.test_auth_plugins.test_auth_plugin_prompt_password_false
+    to: unittest.mock.patch
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 108
+      start_col: 0
+      end_line: 109
+      end_col: 0
+  - from: tests.test_auth_plugins.test_auth_plugin_parse_auth_false
+    to: httpie.plugins.registry.plugin_manager.register
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 41
+      start_col: 0
+      end_line: 41
+      end_col: 0
+  - from: tests.test_auth_plugins.test_auth_plugin_require_auth_false
+    to: httpie.plugins.registry.plugin_manager.register
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 68
+      start_col: 0
+      end_line: 68
+      end_col: 0
+  - from: tests.test_auth_plugins.test_auth_plugin_require_auth_false_and_auth_provided
+    to: httpie.plugins.registry.plugin_manager.register
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 93
+      start_col: 0
+      end_line: 93
+      end_col: 0
+  - from: tests.test_auth_plugins.test_auth_plugin_prompt_password_false
+    to: httpie.plugins.registry.plugin_manager.register
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 122
+      start_col: 0
+      end_line: 122
+      end_col: 0
+  - from: tests.test_auth_plugins.test_auth_plugin_parse_auth_false
+    to: utils.http
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 43
+      start_col: 0
+      end_line: 49
+      end_col: 0
+  - from: tests.test_auth_plugins.test_auth_plugin_parse_auth_false
+    to: httpie.plugins.registry.plugin_manager.unregister
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 53
+      start_col: 0
+      end_line: 53
+      end_col: 0
+  - from: tests.test_auth_plugins.test_auth_plugin_require_auth_false
+    to: utils.http
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 70
+      start_col: 0
+      end_line: 74
+      end_col: 0
+  - from: tests.test_auth_plugins.test_auth_plugin_require_auth_false
+    to: httpie.plugins.registry.plugin_manager.unregister
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 78
+      start_col: 0
+      end_line: 78
+      end_col: 0
+  - from: tests.test_auth_plugins.test_auth_plugin_require_auth_false_and_auth_provided
+    to: utils.http
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 95
+      start_col: 0
+      end_line: 101
+      end_col: 0
+  - from: tests.test_auth_plugins.test_auth_plugin_require_auth_false_and_auth_provided
+    to: httpie.plugins.registry.plugin_manager.unregister
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 105
+      start_col: 0
+      end_line: 105
+      end_col: 0
+  - from: tests.test_auth_plugins.test_auth_plugin_prompt_password_false
+    to: utils.http
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 125
+      start_col: 0
+      end_line: 131
+      end_col: 0
+  - from: tests.test_auth_plugins.test_auth_plugin_prompt_password_false
+    to: httpie.plugins.registry.plugin_manager.unregister
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 135
+      start_col: 0
+      end_line: 135
+      end_col: 0

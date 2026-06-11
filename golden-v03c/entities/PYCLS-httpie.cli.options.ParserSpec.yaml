@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.cli.options.ParserSpec
+kind: entity
+type: py.class
+name: ParserSpec
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/options.py
+anchors:
+- type: symbol
+  value: httpie.cli.options.ParserSpec
+- type: fingerprint
+  value: 000389730180af8a4d9248866c638bb2742cdb0e31a5061bf77403c84b58f6cb
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.options

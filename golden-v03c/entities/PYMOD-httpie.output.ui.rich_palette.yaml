@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.output.ui.rich_palette
+kind: entity
+type: py.module
+name: rich_palette
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/ui/rich_palette.py
+anchors:
+- type: symbol
+  value: httpie.output.ui.rich_palette
+- type: fingerprint
+  value: 6503a93253203f65ff76385e8d02d0b77ff493676ec7efe7ee1f86df1ce0ac49
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.ui

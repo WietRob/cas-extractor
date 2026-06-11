@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_auth.test_auth_plugin_netrc_parse
+kind: entity
+type: py.function
+name: test_auth_plugin_netrc_parse
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_auth.py
+anchors:
+- type: symbol
+  value: tests.test_auth.test_auth_plugin_netrc_parse
+- type: fingerprint
+  value: a8ceb41b33a3bcf32750f12e83b107a9d19cdfda308d9c634827318dc768a617
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_auth

@@ -1,0 +1,54 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-062cdfb1
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-26T06:25:56.369168+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://gates
+  root: ./sprint-v050-engine/02-fixtures
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.self.client.send
+  - symbol: test_gate_A2_h27_transitive.Service.init_client
+  - symbol: test_gate_A2_h27_transitive.Service.prepare
+  - symbol: test_gate_A2_h27_transitive.Service.run
+  - symbol: test_gate_A2_h27_transitive.make_client
+  edges:
+  - from: test_gate_A2_h27_transitive.Service.init_client
+    to: test_gate_A2_h27_transitive.make_client
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 12
+      start_col: 0
+      end_line: 12
+      end_col: 0
+  - from: test_gate_A2_h27_transitive.Service.prepare
+    to: test_gate_A2_h27_transitive.Service.init_client
+    kind: method_call
+    edge_id: 1
+    range:
+      start_line: 15
+      start_col: 0
+      end_line: 15
+      end_col: 0
+  - from: test_gate_A2_h27_transitive.Service.run
+    to: test_gate_A2_h27_transitive.Service.prepare
+    kind: method_call
+    edge_id: 2
+    range:
+      start_line: 18
+      start_col: 0
+      end_line: 18
+      end_col: 0
+  - from: test_gate_A2_h27_transitive.Service.run
+    to: ?.self.client.send
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 19
+      start_col: 0
+      end_line: 19
+      end_col: 0

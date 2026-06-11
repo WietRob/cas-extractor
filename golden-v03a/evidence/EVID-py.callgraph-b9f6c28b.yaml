@@ -1,0 +1,163 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-b9f6c28b
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T12:13:53.797191+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.f.read
+  - symbol: exceptions.ParseError
+  - symbol: httpie.cli.requestitems.load_json
+  - symbol: httpie.cli.requestitems.load_text_file
+  - symbol: httpie.cli.requestitems.process_data_embed_file_contents_arg
+  - symbol: httpie.cli.requestitems.process_data_embed_raw_json_file_arg
+  - symbol: httpie.cli.requestitems.process_data_nested_json_embed_args
+  - symbol: httpie.cli.requestitems.process_data_raw_json_embed_arg
+  - symbol: httpie.cli.requestitems.process_embed_header_arg
+  - symbol: httpie.cli.requestitems.process_embed_query_param_arg
+  - symbol: httpie.cli.requestitems.process_empty_header_arg
+  - symbol: httpie.cli.requestitems.process_file_upload_arg
+  - symbol: nested_json.interpret_nested_json
+  - symbol: utils.get_content_type
+  - symbol: utils.load_json_preserve_order_and_dupe_keys
+  edges:
+  - from: httpie.cli.requestitems.process_empty_header_arg
+    to: exceptions.ParseError
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 137
+      start_col: 0
+      end_line: 139
+      end_col: 0
+  - from: httpie.cli.requestitems.process_data_embed_file_contents_arg
+    to: httpie.cli.requestitems.load_text_file
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 194
+      start_col: 0
+      end_line: 194
+      end_col: 0
+  - from: httpie.cli.requestitems.process_data_embed_raw_json_file_arg
+    to: httpie.cli.requestitems.load_text_file
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 198
+      start_col: 0
+      end_line: 198
+      end_col: 0
+  - from: httpie.cli.requestitems.process_data_embed_raw_json_file_arg
+    to: httpie.cli.requestitems.load_json
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 199
+      start_col: 0
+      end_line: 199
+      end_col: 0
+  - from: httpie.cli.requestitems.process_data_raw_json_embed_arg
+    to: httpie.cli.requestitems.load_json
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 204
+      start_col: 0
+      end_line: 204
+      end_col: 0
+  - from: httpie.cli.requestitems.process_data_nested_json_embed_args
+    to: nested_json.interpret_nested_json
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 209
+      start_col: 0
+      end_line: 209
+      end_col: 0
+  - from: httpie.cli.requestitems.load_json
+    to: utils.load_json_preserve_order_and_dupe_keys
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 228
+      start_col: 0
+      end_line: 228
+      end_col: 0
+  - from: httpie.cli.requestitems.process_embed_header_arg
+    to: httpie.cli.requestitems.load_text_file
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 131
+      start_col: 0
+      end_line: 131
+      end_col: 0
+  - from: httpie.cli.requestitems.process_embed_query_param_arg
+    to: httpie.cli.requestitems.load_text_file
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 147
+      start_col: 0
+      end_line: 147
+      end_col: 0
+  - from: httpie.cli.requestitems.process_file_upload_arg
+    to: exceptions.ParseError
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 157
+      start_col: 0
+      end_line: 157
+      end_col: 0
+  - from: httpie.cli.requestitems.process_file_upload_arg
+    to: utils.get_content_type
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 161
+      start_col: 0
+      end_line: 161
+      end_col: 0
+  - from: httpie.cli.requestitems.load_text_file
+    to: exceptions.ParseError
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 218
+      start_col: 0
+      end_line: 218
+      end_col: 0
+  - from: httpie.cli.requestitems.load_text_file
+    to: exceptions.ParseError
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 220
+      start_col: 0
+      end_line: 223
+      end_col: 0
+  - from: httpie.cli.requestitems.load_json
+    to: exceptions.ParseError
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 230
+      start_col: 0
+      end_line: 230
+      end_col: 0
+  - from: httpie.cli.requestitems.load_text_file
+    to: ?.f.read
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 216
+      start_col: 0
+      end_line: 216
+      end_col: 0

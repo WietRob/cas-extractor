@@ -1,0 +1,45 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-f6e892fc
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:51:32.396594+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: tests.fixtures
+    kind: module
+    file: tests/fixtures/__init__.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 66
+      end_col: 0
+    fingerprint: 7be620994382283ed558580b50da902f4186a857bf8f3ca319d6a02246e5bd8c
+  - qualified: tests.fixtures.patharg
+    kind: function
+    file: tests/fixtures/__init__.py
+    range:
+      start_line: 11
+      start_col: 0
+      end_line: 17
+      end_col: 0
+    fingerprint: cde35430c5d34b4d6a3ce0716c0f08fac65f1046ea2237d8ffb279d72338de4a
+    params:
+    - name: path
+  - qualified: tests.fixtures.read_session_file
+    kind: function
+    file: tests/fixtures/__init__.py
+    range:
+      start_line: 58
+      start_col: 0
+      end_line: 66
+      end_col: 0
+    fingerprint: 953e06d061679152cad9edf2e2899de7f93d05d268847eb1343bbec7f39353b4
+    params:
+    - name: session_file
+      annotation: Path
+    returns: Any

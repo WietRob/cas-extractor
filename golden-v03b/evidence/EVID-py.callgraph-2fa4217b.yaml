@@ -1,0 +1,65 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-2fa4217b
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T15:03:56.154996+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.group.finalize
+  - symbol: ?.group.serialize
+  - symbol: httpie.cli.options.Group
+  - symbol: httpie.cli.options.ParserSpec.add_group
+  - symbol: httpie.cli.options.ParserSpec.finalize
+  - symbol: httpie.cli.options.ParserSpec.serialize
+  - symbol: textwrap.dedent
+  edges:
+  - from: httpie.cli.options.ParserSpec.add_group
+    to: httpie.cli.options.Group
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 60
+      start_col: 0
+      end_line: 60
+      end_col: 0
+  - from: httpie.cli.options.ParserSpec.finalize
+    to: textwrap.dedent
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 52
+      start_col: 0
+      end_line: 52
+      end_col: 0
+  - from: httpie.cli.options.ParserSpec.finalize
+    to: textwrap.dedent
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 54
+      start_col: 0
+      end_line: 54
+      end_col: 0
+  - from: httpie.cli.options.ParserSpec.finalize
+    to: ?.group.finalize
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 56
+      start_col: 0
+      end_line: 56
+      end_col: 0
+  - from: httpie.cli.options.ParserSpec.serialize
+    to: ?.group.serialize
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 68
+      start_col: 0
+      end_line: 68
+      end_col: 0

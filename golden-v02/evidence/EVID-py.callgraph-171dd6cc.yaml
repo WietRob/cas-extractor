@@ -1,0 +1,97 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-171dd6cc
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:33.839179+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: enum.auto
+  - symbol: httpie.cli.nested_json.tokens.PathAction
+  - symbol: httpie.cli.nested_json.tokens.TokenKind
+  edges:
+  - from: httpie.cli.nested_json.tokens.TokenKind
+    to: enum.auto
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 12
+      start_col: 0
+      end_line: 12
+      end_col: 0
+  - from: httpie.cli.nested_json.tokens.TokenKind
+    to: enum.auto
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 13
+      start_col: 0
+      end_line: 13
+      end_col: 0
+  - from: httpie.cli.nested_json.tokens.TokenKind
+    to: enum.auto
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 14
+      start_col: 0
+      end_line: 14
+      end_col: 0
+  - from: httpie.cli.nested_json.tokens.TokenKind
+    to: enum.auto
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 15
+      start_col: 0
+      end_line: 15
+      end_col: 0
+  - from: httpie.cli.nested_json.tokens.TokenKind
+    to: enum.auto
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 16
+      start_col: 0
+      end_line: 16
+      end_col: 0
+  - from: httpie.cli.nested_json.tokens.PathAction
+    to: enum.auto
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 45
+      start_col: 0
+      end_line: 45
+      end_col: 0
+  - from: httpie.cli.nested_json.tokens.PathAction
+    to: enum.auto
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 46
+      start_col: 0
+      end_line: 46
+      end_col: 0
+  - from: httpie.cli.nested_json.tokens.PathAction
+    to: enum.auto
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 47
+      start_col: 0
+      end_line: 47
+      end_col: 0
+  - from: httpie.cli.nested_json.tokens.PathAction
+    to: enum.auto
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 49
+      start_col: 0
+      end_line: 49
+      end_col: 0

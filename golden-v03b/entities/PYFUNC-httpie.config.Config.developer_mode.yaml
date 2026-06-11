@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.config.Config.developer_mode
+kind: entity
+type: py.function
+name: developer_mode
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/config.py
+anchors:
+- type: symbol
+  value: httpie.config.Config.developer_mode
+- type: fingerprint
+  value: 1ca6ba1f652b62346d378b7e0d8c1afd76e4f88d8efb099cfda4e2d54ee27502
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.config.Config

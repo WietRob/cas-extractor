@@ -1,0 +1,138 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-e786992f
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:53.173571+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: tests.test_sessions.TestSession.test_session_ignored_header_prefixes
+    kind: method
+    file: tests/test_sessions.py
+    range:
+      start_line: 173
+      start_col: 0
+      end_line: 184
+      end_col: 0
+    fingerprint: de4372e74430214e47ba1b0f69b430909a55a98e75778f105e0ff80c9e9b894e
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_sessions.TestSession.test_session_with_upload
+    kind: method
+    file: tests/test_sessions.py
+    range:
+      start_line: 186
+      start_col: 0
+      end_line: 190
+      end_col: 0
+    fingerprint: 953fbb3a6b44cab97d03b8e43b4685093715c31468b596cb1b28c39e556e2c33
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_sessions.TestSession.test_session_by_path
+    kind: method
+    file: tests/test_sessions.py
+    range:
+      start_line: 192
+      start_col: 0
+      end_line: 202
+      end_col: 0
+    fingerprint: 40125d6043808da70946dc90587353188ba7f396cc558b7337967f0a29e427aa
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_sessions.TestSession.test_session_with_cookie_followed_by_another_header
+    kind: method
+    file: tests/test_sessions.py
+    range:
+      start_line: 204
+      start_col: 0
+      end_line: 220
+      end_col: 0
+    fingerprint: 3d9a2e419cc47c7cdca20f29e74065835f3b5d12a6eeb0bfd3cd69347835a60d
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_sessions.TestSession.test_session_unicode
+    kind: method
+    file: tests/test_sessions.py
+    range:
+      start_line: 222
+      start_col: 0
+      end_line: 238
+      end_col: 0
+    fingerprint: bb87f470faafe6edc36c208dd5bd074873813a8e6e1498775dedde88d16a4221
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_sessions.TestSession.test_session_default_header_value_overwritten
+    kind: method
+    file: tests/test_sessions.py
+    range:
+      start_line: 240
+      start_col: 0
+      end_line: 251
+      end_col: 0
+    fingerprint: ab70dd5bd6c6e201aa6fc4ceb8b97240fb84ad85ce9665ae887c09d9074c7018
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_sessions.TestSession.test_download_in_session
+    kind: method
+    file: tests/test_sessions.py
+    range:
+      start_line: 253
+      start_col: 0
+      end_line: 262
+      end_col: 0
+    fingerprint: 615229c41a2c45bdc1592eb738c0f764587f9d1e3c080750284f620dafb32757
+    params:
+    - name: self
+    - name: tmp_path
+    - name: httpbin
+  - qualified: tests.test_sessions.TestSession.test_auth_type_reused_in_session
+    kind: method
+    file: tests/test_sessions.py
+    range:
+      start_line: 272
+      start_col: 0
+      end_line: 304
+      end_col: 0
+    fingerprint: 8db1ca609ae460d531293c5f71ab4c78688ea2581282dade94fa61e5bc646caf
+    decorators:
+    - pytest.mark.parametrize('auth_require_param, auth_parse_param', [(False, False),
+      (False, True), (True, False)])
+    params:
+    - name: self
+    - name: auth_require_param
+    - name: auth_parse_param
+    - name: httpbin
+  - qualified: tests.test_sessions.TestSession.test_auth_plugin_prompt_password_in_session
+    kind: method
+    file: tests/test_sessions.py
+    range:
+      start_line: 306
+      start_col: 0
+      end_line: 344
+      end_col: 0
+    fingerprint: 4b25cebef6140dce005c2e1cace456e6e0ab9d60b256df0bb58b48e91108fc53
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_sessions.TestSession.test_auth_type_stored_in_session_file
+    kind: method
+    file: tests/test_sessions.py
+    range:
+      start_line: 346
+      start_col: 0
+      end_line: 367
+      end_col: 0
+    fingerprint: 68ace5c973777d1558fd46b823ba043d4a600ea4f0809d0f7c91772584db3181
+    params:
+    - name: self
+    - name: httpbin

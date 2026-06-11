@@ -1,0 +1,84 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-f80db722
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T17:44:04.439008+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.test_defaults.TestImplicitHTTPMethod.test_implicit_GET
+    kind: method
+    file: tests/test_defaults.py
+    range:
+      start_line: 29
+      start_col: 0
+      end_line: 31
+      end_col: 0
+    fingerprint: 8d6d83862d084646a9f8383fbdfcdfeac1c26bf3e0482877e86a032e06d08859
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_defaults.TestImplicitHTTPMethod.test_implicit_GET_with_headers
+    kind: method
+    file: tests/test_defaults.py
+    range:
+      start_line: 33
+      start_col: 0
+      end_line: 36
+      end_col: 0
+    fingerprint: c3768674df1b70229906809230b67191989c386682aca076204f394be3b42218
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_defaults.TestImplicitHTTPMethod.test_implicit_POST_json
+    kind: method
+    file: tests/test_defaults.py
+    range:
+      start_line: 38
+      start_col: 0
+      end_line: 41
+      end_col: 0
+    fingerprint: 96aa71e1f528f0dc59f50a67de4f53994fbd4abdfba9198429fa61306fce3215
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_defaults.TestImplicitHTTPMethod.test_implicit_POST_form
+    kind: method
+    file: tests/test_defaults.py
+    range:
+      start_line: 43
+      start_col: 0
+      end_line: 46
+      end_col: 0
+    fingerprint: 92a29fc3bba38d42396f330c5dac83acfc5760eaa5f2103a2e89c2ea10eecdce
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_defaults.TestImplicitHTTPMethod.test_implicit_POST_raw
+    kind: method
+    file: tests/test_defaults.py
+    range:
+      start_line: 48
+      start_col: 0
+      end_line: 51
+      end_col: 0
+    fingerprint: 963edfc3b8ed8226ec49165e6055557fb4c697d36037eb421640f2dcff36abf4
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_defaults.TestImplicitHTTPMethod.test_implicit_POST_stdin
+    kind: method
+    file: tests/test_defaults.py
+    range:
+      start_line: 53
+      start_col: 0
+      end_line: 59
+      end_col: 0
+    fingerprint: d9816c031f368533c8b29409f4e88027ef822cadae9515b03aeb91a1968b8338
+    params:
+    - name: self
+    - name: httpbin

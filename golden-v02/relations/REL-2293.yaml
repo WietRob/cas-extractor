@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-2293
+kind: relation
+type: calls
+from: PYFUNC-tests.test_sessions.TestCookieStorage.test_existing_and_new_cookies_sent_in_request
+to: PYFUNC-_.line.split
+confidence:
+  level: E1
+  direction: confirmed
+evidence:
+- EVID-py.callgraph-33596cfc
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1

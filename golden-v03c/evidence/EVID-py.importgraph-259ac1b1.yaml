@@ -1,0 +1,21 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-259ac1b1
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-21T17:44:04.612620+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  imports:
+  - from: httpie.compat
+    imports:
+    - sys
+    - ssl.SSLContext
+    - typing.Any
+    - typing.Optional
+    - typing.Iterable
+    - httpie.cookies.HTTPieCookiePolicy
+    - http.cookiejar

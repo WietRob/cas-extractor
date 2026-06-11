@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_sessions.test_session_header_layout_preservation_on_new_headers
+kind: entity
+type: py.function
+name: test_session_header_layout_preservation_on_new_headers
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_sessions.py
+anchors:
+- type: symbol
+  value: tests.test_sessions.test_session_header_layout_preservation_on_new_headers
+- type: fingerprint
+  value: d6649f5227afafc9a18c5b1b95d619b1a4bc9d3b5bd459c04ce20aab4e0e5473
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_sessions

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.utils.JsonDictPreservingDuplicateKeys._ensure_items_used
+kind: entity
+type: py.function
+name: _ensure_items_used
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/utils.py
+anchors:
+- type: symbol
+  value: httpie.utils.JsonDictPreservingDuplicateKeys._ensure_items_used
+- type: fingerprint
+  value: 7c91250328ee5141146e5ed7c27425d57e78ece4d9a629df923d70f6a910ffef
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.utils.JsonDictPreservingDuplicateKeys

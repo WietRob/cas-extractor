@@ -1,0 +1,153 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-f2ebce0a
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T15:03:56.216770+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.actions.add_parser
+  - symbol: ?.argument.copy
+  - symbol: ?.argument.pop
+  - symbol: ?.base.keys
+  - symbol: ?.command_parser.add_argument
+  - symbol: ?.definitions.items
+  - symbol: ?.group.add_argument
+  - symbol: ?.parent_parser.add_subparsers
+  - symbol: ?.properties.copy
+  - symbol: ?.properties.pop
+  - symbol: ?.spec.add_group
+  - symbol: httpie.cli.options.map_qualifiers
+  - symbol: httpie.manager.cli.generate_subparsers
+  - symbol: httpie.manager.cli.missing_subcommand
+  edges:
+  - from: httpie.manager.cli.generate_subparsers
+    to: ?.parent_parser.add_subparsers
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 107
+      start_col: 0
+      end_line: 109
+      end_col: 0
+  - from: httpie.manager.cli.generate_subparsers
+    to: ?.definitions.items
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 110
+      start_col: 0
+      end_line: 110
+      end_col: 0
+  - from: httpie.manager.cli.generate_subparsers
+    to: ?.properties.copy
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 112
+      start_col: 0
+      end_line: 112
+      end_col: 0
+  - from: httpie.manager.cli.generate_subparsers
+    to: ?.actions.add_parser
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 115
+      start_col: 0
+      end_line: 115
+      end_col: 0
+  - from: httpie.manager.cli.generate_subparsers
+    to: ?.spec.add_group
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 121
+      start_col: 0
+      end_line: 121
+      end_col: 0
+  - from: httpie.manager.cli.missing_subcommand
+    to: ?.base.keys
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 101
+      start_col: 0
+      end_line: 101
+      end_col: 0
+  - from: httpie.manager.cli.generate_subparsers
+    to: ?.properties.pop
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 114
+      start_col: 0
+      end_line: 114
+      end_col: 0
+  - from: httpie.manager.cli.generate_subparsers
+    to: ?.properties.pop
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 114
+      start_col: 0
+      end_line: 114
+      end_col: 0
+  - from: httpie.manager.cli.generate_subparsers
+    to: httpie.manager.cli.generate_subparsers
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 118
+      start_col: 0
+      end_line: 118
+      end_col: 0
+  - from: httpie.manager.cli.generate_subparsers
+    to: ?.argument.copy
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 123
+      start_col: 0
+      end_line: 123
+      end_col: 0
+  - from: httpie.manager.cli.generate_subparsers
+    to: ?.argument.pop
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 124
+      start_col: 0
+      end_line: 124
+      end_col: 0
+  - from: httpie.manager.cli.generate_subparsers
+    to: ?.command_parser.add_argument
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 125
+      start_col: 0
+      end_line: 125
+      end_col: 0
+  - from: httpie.manager.cli.generate_subparsers
+    to: ?.group.add_argument
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 126
+      start_col: 0
+      end_line: 126
+      end_col: 0
+  - from: httpie.manager.cli.generate_subparsers
+    to: httpie.cli.options.map_qualifiers
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 125
+      start_col: 0
+      end_line: 125
+      end_col: 0

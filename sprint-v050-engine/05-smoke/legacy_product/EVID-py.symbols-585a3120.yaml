@@ -1,0 +1,66 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-585a3120
+kind: evidence
+type: py.symbols
+created_at: '2026-02-26T06:35:11.426617+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://product
+  root: ./cas_extractor
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: resolvers.static
+    kind: module
+    file: resolvers/static.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 305
+      end_col: 0
+    fingerprint: 5f1760cca3e4c3449179469d92db63d449d9828bbee17fe06c35b508a8e25977
+  - qualified: resolvers.static.StaticResolver
+    kind: class
+    file: resolvers/static.py
+    range:
+      start_line: 15
+      start_col: 0
+      end_line: 73
+      end_col: 0
+    fingerprint: 12a565892e0405ffed7efbfa2189a6ff16eec1c6c274e5e85441bd8ab89e0678
+  - qualified: resolvers.static.QualifiedAttrResolver
+    kind: class
+    file: resolvers/static.py
+    range:
+      start_line: 76
+      start_col: 0
+      end_line: 154
+      end_col: 0
+    fingerprint: 19a383729f275a73b6ed1a34c2c6695961ef4c383a27941e66e0e4b14f5fab80
+  - qualified: resolvers.static.SelfDispatchResolver
+    kind: class
+    file: resolvers/static.py
+    range:
+      start_line: 157
+      start_col: 0
+      end_line: 194
+      end_col: 0
+    fingerprint: 758e48c56edf4ea084d9cc8da3cc94c99abe41184f7775e4aa63880d796f09b6
+  - qualified: resolvers.static.ClsDispatchResolver
+    kind: class
+    file: resolvers/static.py
+    range:
+      start_line: 197
+      start_col: 0
+      end_line: 234
+      end_col: 0
+    fingerprint: 97173b08f572b09ab7cc33487dfbc83d7b5591a64ef6aa706b1572ce9581c6d0
+  - qualified: resolvers.static.SuperDispatchResolver
+    kind: class
+    file: resolvers/static.py
+    range:
+      start_line: 237
+      start_col: 0
+      end_line: 305
+      end_col: 0
+    fingerprint: b2d3d7c5004d155a2d84eef195943d8c1acc92ccac7bc0a309bd700fb7ddf4bf

@@ -1,0 +1,36 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-1ae02148
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:51:32.428119+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: tests.test_cli.TestNoOptions.test_valid_no_options
+    kind: method
+    file: tests/test_cli.py
+    range:
+      start_line: 322
+      start_col: 0
+      end_line: 324
+      end_col: 0
+    fingerprint: e8da6cfc3c3a31c41094cc38d467b523223fd252800630722c6699ddea588d99
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_cli.TestNoOptions.test_invalid_no_options
+    kind: method
+    file: tests/test_cli.py
+    range:
+      start_line: 326
+      start_col: 0
+      end_line: 331
+      end_col: 0
+    fingerprint: 4e637fed45e6d90da53cab9e8109d9673e4f9572b6c64000b328a760445cda42
+    params:
+    - name: self
+    - name: httpbin

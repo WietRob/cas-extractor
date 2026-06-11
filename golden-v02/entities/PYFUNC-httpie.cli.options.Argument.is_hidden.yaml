@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.options.Argument.is_hidden
+kind: entity
+type: py.function
+name: is_hidden
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/cli/options.py
+anchors:
+- type: symbol
+  value: httpie.cli.options.Argument.is_hidden
+- type: fingerprint
+  value: 8a022f04dc7995df7af6190183aed3e252a7f59afd1d1ac212eb6b81d2b83e0d
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.options.Argument

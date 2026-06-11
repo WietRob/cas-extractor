@@ -1,0 +1,215 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-c86d2e84
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T17:44:05.519188+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: assert_output_does_not_match
+  - symbol: assert_output_matches
+  - symbol: tests.utils.matching.test_matching.test_assert_output_matches_body_and_separator
+  - symbol: tests.utils.matching.test_matching.test_assert_output_matches_body_n
+  - symbol: tests.utils.matching.test_matching.test_assert_output_matches_body_n_body
+  - symbol: tests.utils.matching.test_matching.test_assert_output_matches_body_r
+  - symbol: tests.utils.matching.test_matching.test_assert_output_matches_body_r_body
+  - symbol: tests.utils.matching.test_matching.test_assert_output_matches_body_unmatched_crlf
+  - symbol: tests.utils.matching.test_matching.test_assert_output_matches_body_unmatched_separator
+  - symbol: tests.utils.matching.test_matching.test_assert_output_matches_headers_and_body
+  - symbol: tests.utils.matching.test_matching.test_assert_output_matches_headers_and_separator
+  - symbol: tests.utils.matching.test_matching.test_assert_output_matches_headers_incomplete
+  - symbol: tests.utils.matching.test_matching.test_assert_output_matches_headers_unterminated
+  - symbol: tests.utils.matching.test_matching.test_assert_output_matches_headers_with_body_and_separator
+  - symbol: tests.utils.matching.test_matching.test_assert_output_matches_multipart_body
+  - symbol: tests.utils.matching.test_matching.test_assert_output_matches_multipart_body_with_separator
+  - symbol: tests.utils.matching.test_matching.test_assert_output_matches_multiple_messages
+  - symbol: tests.utils.matching.test_matching.test_assert_output_matches_multiple_separators
+  - symbol: tests.utils.matching.test_matching.test_assert_output_matches_request_headers
+  - symbol: tests.utils.matching.test_matching.test_assert_output_matches_response_headers
+  - symbol: tests.utils.matching.test_matching.test_assert_output_matches_response_meta
+  - symbol: tests.utils.matching.test_matching.test_assert_output_matches_whole_response
+  edges:
+  - from: tests.utils.matching.test_matching.test_assert_output_matches_headers_incomplete
+    to: assert_output_does_not_match
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 12
+      start_col: 0
+      end_line: 12
+      end_col: 0
+  - from: tests.utils.matching.test_matching.test_assert_output_matches_headers_unterminated
+    to: assert_output_does_not_match
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 16
+      start_col: 0
+      end_line: 23
+      end_col: 0
+  - from: tests.utils.matching.test_matching.test_assert_output_matches_response_headers
+    to: assert_output_matches
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 27
+      start_col: 0
+      end_line: 34
+      end_col: 0
+  - from: tests.utils.matching.test_matching.test_assert_output_matches_request_headers
+    to: assert_output_matches
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 38
+      start_col: 0
+      end_line: 45
+      end_col: 0
+  - from: tests.utils.matching.test_matching.test_assert_output_matches_headers_and_separator
+    to: assert_output_matches
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 49
+      start_col: 0
+      end_line: 57
+      end_col: 0
+  - from: tests.utils.matching.test_matching.test_assert_output_matches_body_unmatched_crlf
+    to: assert_output_does_not_match
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 61
+      start_col: 0
+      end_line: 61
+      end_col: 0
+  - from: tests.utils.matching.test_matching.test_assert_output_matches_body_unmatched_separator
+    to: assert_output_does_not_match
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 65
+      start_col: 0
+      end_line: 65
+      end_col: 0
+  - from: tests.utils.matching.test_matching.test_assert_output_matches_body_and_separator
+    to: assert_output_matches
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 69
+      start_col: 0
+      end_line: 69
+      end_col: 0
+  - from: tests.utils.matching.test_matching.test_assert_output_matches_body_r
+    to: assert_output_matches
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 73
+      start_col: 0
+      end_line: 73
+      end_col: 0
+  - from: tests.utils.matching.test_matching.test_assert_output_matches_body_n
+    to: assert_output_matches
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 77
+      start_col: 0
+      end_line: 77
+      end_col: 0
+  - from: tests.utils.matching.test_matching.test_assert_output_matches_body_r_body
+    to: assert_output_matches
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 81
+      start_col: 0
+      end_line: 81
+      end_col: 0
+  - from: tests.utils.matching.test_matching.test_assert_output_matches_body_n_body
+    to: assert_output_matches
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 85
+      start_col: 0
+      end_line: 85
+      end_col: 0
+  - from: tests.utils.matching.test_matching.test_assert_output_matches_headers_and_body
+    to: assert_output_matches
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 89
+      start_col: 0
+      end_line: 97
+      end_col: 0
+  - from: tests.utils.matching.test_matching.test_assert_output_matches_headers_with_body_and_separator
+    to: assert_output_matches
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 101
+      start_col: 0
+      end_line: 108
+      end_col: 0
+  - from: tests.utils.matching.test_matching.test_assert_output_matches_response_meta
+    to: assert_output_matches
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 112
+      start_col: 0
+      end_line: 118
+      end_col: 0
+  - from: tests.utils.matching.test_matching.test_assert_output_matches_whole_response
+    to: assert_output_matches
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 122
+      start_col: 0
+      end_line: 131
+      end_col: 0
+  - from: tests.utils.matching.test_matching.test_assert_output_matches_multiple_messages
+    to: assert_output_matches
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 135
+      start_col: 0
+      end_line: 158
+      end_col: 0
+  - from: tests.utils.matching.test_matching.test_assert_output_matches_multipart_body
+    to: assert_output_matches
+    kind: call
+    edge_id: 17
+    range:
+      start_line: 182
+      start_col: 0
+      end_line: 182
+      end_col: 0
+  - from: tests.utils.matching.test_matching.test_assert_output_matches_multipart_body_with_separator
+    to: assert_output_matches
+    kind: call
+    edge_id: 18
+    range:
+      start_line: 207
+      start_col: 0
+      end_line: 207
+      end_col: 0
+  - from: tests.utils.matching.test_matching.test_assert_output_matches_multiple_separators
+    to: assert_output_matches
+    kind: call
+    edge_id: 19
+    range:
+      start_line: 211
+      start_col: 0
+      end_line: 214
+      end_col: 0

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_output.TestFormatOptions.test_parse_format_options_errors
+kind: entity
+type: py.function
+name: test_parse_format_options_errors
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_output.py
+anchors:
+- type: symbol
+  value: tests.test_output.TestFormatOptions.test_parse_format_options_errors
+- type: fingerprint
+  value: a9c4e36244443eb3a3952391d7f8d949c1e5da3c128ed8b74f6c092c197ec33c
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_output.TestFormatOptions

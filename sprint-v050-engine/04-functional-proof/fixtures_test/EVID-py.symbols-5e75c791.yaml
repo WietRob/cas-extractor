@@ -1,0 +1,21 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-5e75c791
+kind: evidence
+type: py.symbols
+created_at: '2026-02-25T07:23:45.912538+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://fixtures
+  root: ./sprint-v050-engine/02-fixtures
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: test_h13_qualified_attr
+    kind: module
+    file: test_h13_qualified_attr.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 6
+      end_col: 0
+    fingerprint: 4d6013e8d865720222d64d76c7bbc8d821d3656d7901f64c3467785a9f9ce783

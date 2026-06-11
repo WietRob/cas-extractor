@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.cli.dicts
+kind: entity
+type: py.module
+name: dicts
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/cli/dicts.py
+anchors:
+- type: symbol
+  value: httpie.cli.dicts
+- type: fingerprint
+  value: 31a326510165d77603e218edb5afb20255f7b13e5fa35bd885e63a22c1f2a6d2
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli

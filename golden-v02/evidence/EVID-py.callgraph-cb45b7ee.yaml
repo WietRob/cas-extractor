@@ -1,0 +1,105 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-cb45b7ee
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:33.916075+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: httpie.downloads.DownloadStatus
+  - symbol: httpie.downloads.Downloader.__init__
+  - symbol: httpie.downloads.Downloader._get_output_file_from_response
+  - symbol: httpie.downloads.Downloader.start
+  - symbol: httpie.downloads.filename_from_content_disposition
+  - symbol: httpie.downloads.filename_from_url
+  - symbol: httpie.downloads.get_unique_filename
+  - symbol: httpie.downloads.parse_content_range
+  - symbol: models.HTTPResponse
+  - symbol: models.OutputOptions.from_message
+  - symbol: output.streams.RawStream
+  edges:
+  - from: httpie.downloads.Downloader.__init__
+    to: httpie.downloads.DownloadStatus
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 181
+      start_col: 0
+      end_line: 181
+      end_col: 0
+  - from: httpie.downloads.Downloader.start
+    to: models.OutputOptions.from_message
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 247
+      start_col: 0
+      end_line: 247
+      end_col: 0
+  - from: httpie.downloads.Downloader.start
+    to: output.streams.RawStream
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 248
+      start_col: 0
+      end_line: 252
+      end_col: 0
+  - from: httpie.downloads.Downloader._get_output_file_from_response
+    to: httpie.downloads.get_unique_filename
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 303
+      start_col: 0
+      end_line: 303
+      end_col: 0
+  - from: httpie.downloads.Downloader.start
+    to: httpie.downloads.Downloader._get_output_file_from_response
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 227
+      start_col: 0
+      end_line: 230
+      end_col: 0
+  - from: httpie.downloads.Downloader._get_output_file_from_response
+    to: httpie.downloads.filename_from_content_disposition
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 296
+      start_col: 0
+      end_line: 297
+      end_col: 0
+  - from: httpie.downloads.Downloader._get_output_file_from_response
+    to: httpie.downloads.filename_from_url
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 299
+      start_col: 0
+      end_line: 302
+      end_col: 0
+  - from: httpie.downloads.Downloader.start
+    to: httpie.downloads.parse_content_range
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 234
+      start_col: 0
+      end_line: 237
+      end_col: 0
+  - from: httpie.downloads.Downloader.start
+    to: models.HTTPResponse
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 249
+      start_col: 0
+      end_line: 249
+      end_col: 0

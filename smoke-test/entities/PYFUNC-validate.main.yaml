@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-validate.main
+kind: entity
+type: py.function
+name: main
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: validate.py
+anchors:
+- type: symbol
+  value: validate.main
+- type: fingerprint
+  value: d0f0a58c4cf5e075377b6e08264d47eb1e8a63312d74b31a61351668b396b2b3
+  algo: sha256
+claims: []
+relations: []
+namespace: validate

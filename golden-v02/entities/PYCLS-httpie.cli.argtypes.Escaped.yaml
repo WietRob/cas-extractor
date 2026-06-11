@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.cli.argtypes.Escaped
+kind: entity
+type: py.class
+name: Escaped
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/cli/argtypes.py
+anchors:
+- type: symbol
+  value: httpie.cli.argtypes.Escaped
+- type: fingerprint
+  value: d8665f3c02459db1614e01f1684a00aa1111225a0547a2a8eac0e2d0d5d6f509
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.argtypes

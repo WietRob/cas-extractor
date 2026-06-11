@@ -1,0 +1,41 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-3bbb109b
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:55.263898+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.test_windows
+    kind: module
+    file: tests/test_windows.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 25
+      end_col: 0
+    fingerprint: 502ca420653aa2d86dc9d14eb57cc49667d093cf80bad346e2cc46cfb524e09f
+  - qualified: tests.test_windows.TestWindowsOnly
+    kind: class
+    file: tests/test_windows.py
+    range:
+      start_line: 9
+      start_col: 0
+      end_line: 15
+      end_col: 0
+    fingerprint: 84fe5c6c1e47b8e9c1a1d885af73beb7778d817ef31b5583118859fecede97a2
+    decorators:
+    - pytest.mark.skipif(not is_windows, reason='windows-only')
+  - qualified: tests.test_windows.TestFakeWindows
+    kind: class
+    file: tests/test_windows.py
+    range:
+      start_line: 18
+      start_col: 0
+      end_line: 25
+      end_col: 0
+    fingerprint: 7c39c90b0a3bf44163785f61da2e18b18d79564ebb42d89dc3227a023ca7d991

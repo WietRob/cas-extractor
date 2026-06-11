@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.output.writer
+kind: entity
+type: py.module
+name: writer
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/writer.py
+anchors:
+- type: symbol
+  value: httpie.output.writer
+- type: fingerprint
+  value: 8430215bc79cc21f1feafea08b4ae23dcb1721d449a493c49e870d89cff3ef51
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output

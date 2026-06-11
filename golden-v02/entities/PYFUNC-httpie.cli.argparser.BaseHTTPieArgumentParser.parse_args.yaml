@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.argparser.BaseHTTPieArgumentParser.parse_args
+kind: entity
+type: py.function
+name: parse_args
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/cli/argparser.py
+anchors:
+- type: symbol
+  value: httpie.cli.argparser.BaseHTTPieArgumentParser.parse_args
+- type: fingerprint
+  value: c245c431cfcc929947eaee49d0f65e8e43ca75455d86628498093e3f2b3e2740
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.argparser.BaseHTTPieArgumentParser

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.processing.Formatting.format_body
+kind: entity
+type: py.function
+name: format_body
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/processing.py
+anchors:
+- type: symbol
+  value: httpie.output.processing.Formatting.format_body
+- type: fingerprint
+  value: 97654b701df8930aa6ad271e54b56f0bcbf5760f4d8dc5846e28cad5845a2188
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.processing.Formatting

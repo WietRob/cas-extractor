@@ -1,0 +1,22 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-fc7a501d
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-22T08:37:44.810639+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  imports:
+  - from: tests.test_transport_plugin
+    imports:
+    - io.BytesIO
+    - requests.adapters.BaseAdapter
+    - requests.models.Response
+    - requests.utils.get_encoding_from_headers
+    - httpie.plugins.TransportPlugin
+    - httpie.plugins.registry.plugin_manager
+    - tests.utils.HTTP_OK
+    - tests.utils.http

@@ -1,0 +1,23 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-cc33ac63
+kind: evidence
+type: py.symbols
+created_at: '2026-02-23T13:06:35.983234+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://h28-test
+  root: /tmp/h28-verify
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: test_h28.TestP2FactoryToLocalVar.run
+    kind: method
+    file: test_h28.py
+    range:
+      start_line: 118
+      start_col: 0
+      end_line: 120
+      end_col: 0
+    fingerprint: 7674295ef23df66f96ca970eefd7bcb9df79574234ef31b1a396d756f5846937
+    params:
+    - name: self

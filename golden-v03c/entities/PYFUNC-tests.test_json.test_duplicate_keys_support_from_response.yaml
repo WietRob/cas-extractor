@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_json.test_duplicate_keys_support_from_response
+kind: entity
+type: py.function
+name: test_duplicate_keys_support_from_response
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_json.py
+anchors:
+- type: symbol
+  value: tests.test_json.test_duplicate_keys_support_from_response
+- type: fingerprint
+  value: 5d27037d899720082eac48627d7eb01b40b09943688e18cbe773a5347fffc6d1
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_json

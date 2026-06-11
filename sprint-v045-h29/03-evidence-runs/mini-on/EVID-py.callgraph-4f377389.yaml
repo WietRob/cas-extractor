@@ -1,0 +1,37 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-4f377389
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-23T17:19:36.850449+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://h28-test
+  root: /tmp/h28-verify
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.self.handler.handle
+  - symbol: test_h28.TestP3FactoryInInit.__init__
+  - symbol: test_h28.TestP3FactoryInInit.run
+  - symbol: test_h28.create_handler
+  edges:
+  - from: test_h28.TestP3FactoryInInit.__init__
+    to: test_h28.create_handler
+    kind: call
+    edge_id: 0
+    resolution_source: module-level
+    range:
+      start_line: 127
+      start_col: 0
+      end_line: 127
+      end_col: 0
+  - from: test_h28.TestP3FactoryInInit.run
+    to: ?.self.handler.handle
+    kind: call
+    edge_id: 1
+    resolution_source: unresolved
+    range:
+      start_line: 130
+      start_col: 0
+      end_line: 130
+      end_col: 0

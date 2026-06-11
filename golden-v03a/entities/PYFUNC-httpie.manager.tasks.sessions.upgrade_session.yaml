@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.manager.tasks.sessions.upgrade_session
+kind: entity
+type: py.function
+name: upgrade_session
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/manager/tasks/sessions.py
+anchors:
+- type: symbol
+  value: httpie.manager.tasks.sessions.upgrade_session
+- type: fingerprint
+  value: beb35b82a9d84033fc47ae408519fcb431beb3978f73384aaddb12d8f8672962
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.manager.tasks.sessions

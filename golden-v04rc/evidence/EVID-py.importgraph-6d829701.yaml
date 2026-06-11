@@ -1,0 +1,21 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-6d829701
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-22T08:37:44.808896+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  imports:
+  - from: tests.test_regressions
+    imports:
+    - pytest
+    - httpie.compat.is_windows
+    - tests.utils.matching.assert_output_matches
+    - tests.utils.matching.Expect
+    - tests.utils.HTTP_OK
+    - tests.utils.MockEnvironment
+    - tests.utils.http

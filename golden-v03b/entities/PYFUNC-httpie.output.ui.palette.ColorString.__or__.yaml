@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.ui.palette.ColorString.__or__
+kind: entity
+type: py.function
+name: __or__
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/ui/palette.py
+anchors:
+- type: symbol
+  value: httpie.output.ui.palette.ColorString.__or__
+- type: fingerprint
+  value: 49ce05d18c79ae8c433c01799558289b53c110264e8c2d3d46f4b51c74e67d23
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.ui.palette.ColorString

@@ -1,7 +1,6 @@
 """Tests for EKP Core — CanonicalArtifact."""
 
 import pytest
-from datetime import datetime
 
 from ekp.core.artifact import (
     CanonicalArtifact,
@@ -14,11 +13,11 @@ class TestCanonicalArtifact:
     def test_create_requirement(self):
         a = CanonicalArtifact(
             artifact_id="REQ-001",
-            artifact_type="requirement",
+            artifact_type="req",
             title="System shall provide login",
         )
         assert a.artifact_id == "REQ-001"
-        assert a.artifact_type == "requirement"
+        assert a.artifact_type == "req"
         assert a.status == "draft"
 
     def test_create_sw_unit(self):
@@ -34,7 +33,7 @@ class TestCanonicalArtifact:
         with pytest.raises(ValueError, match="artifact_id must start with REQ"):
             CanonicalArtifact(
                 artifact_id="WRONG-001",
-                artifact_type="requirement",
+                artifact_type="req",
                 title="Invalid ID",
             )
 
@@ -53,23 +52,40 @@ class TestCanonicalArtifact:
         assert restored.title == original.title
         assert restored.status == original.status
 
-    def test_serialization_includes_timestamps(self):
+    def test_serialization_no_timestamps(self):
         a = CanonicalArtifact(
             artifact_id="ARCH-001",
-            artifact_type="architecture",
+            artifact_type="arch",
             title="System Architecture",
         )
         d = a.to_dict()
-        assert "created_at" in d
-        assert "updated_at" in d
-        datetime.fromisoformat(d["created_at"])
+        assert "created_at" not in d
+        assert "updated_at" not in d
 
     def test_artifact_types_registry(self):
-        assert "requirement" in ARTIFACT_TYPES
-        assert "architecture" in ARTIFACT_TYPES
+        assert "req" in ARTIFACT_TYPES
+        assert "arch" in ARTIFACT_TYPES
         assert "sw_unit" in ARTIFACT_TYPES
         assert "test" in ARTIFACT_TYPES
 
     def test_type_prefixes(self):
-        assert TYPE_PREFIXES["requirement"] == "REQ"
+        assert TYPE_PREFIXES["req"] == "REQ"
         assert TYPE_PREFIXES["sw_unit"] == "SWU"
+
+    def test_owner_optional(self):
+        a = CanonicalArtifact(
+            artifact_id="REQ-002",
+            artifact_type="req",
+            title="Optional Owner",
+            owner=None,
+        )
+        assert a.owner is None
+
+    def test_metadata_field(self):
+        a = CanonicalArtifact(
+            artifact_id="REQ-003",
+            artifact_type="req",
+            title="With Metadata",
+            metadata={"priority": "high", "safety": "ASIL-B"},
+        )
+        assert a.metadata["priority"] == "high"

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-cas_extractor.extractors.python_imports._resolve_relative_import
+kind: entity
+type: py.function
+name: _resolve_relative_import
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor/extractors/python_imports.py
+anchors:
+- type: symbol
+  value: cas_extractor.extractors.python_imports._resolve_relative_import
+- type: fingerprint
+  value: ed7e5370bf3c5391e3d6887b38053e8214f1b89e4b5561cfb3b1ef47412b7647
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor.extractors.python_imports

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-tests.test_regressions
+kind: entity
+type: py.module
+name: test_regressions
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_regressions.py
+anchors:
+- type: symbol
+  value: tests.test_regressions
+- type: fingerprint
+  value: f4700934554f07605b23701d4338330986b051c2a0c079cfde24cd40c7024921
+  algo: sha256
+claims: []
+relations: []
+namespace: tests

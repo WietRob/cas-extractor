@@ -1,0 +1,32 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-0f6c6856
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-21T17:44:04.618521+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  imports:
+  - from: httpie.models
+    imports:
+    - time.monotonic
+    - requests
+    - urllib3.util.SKIP_HEADER
+    - urllib3.util.SKIPPABLE_HEADERS
+    - enum.Enum
+    - enum.auto
+    - typing.Iterable
+    - typing.Union
+    - typing.NamedTuple
+    - urllib.parse.urlsplit
+    - httpie.cli.constants.OUT_REQ_BODY
+    - httpie.cli.constants.OUT_REQ_HEAD
+    - httpie.cli.constants.OUT_RESP_BODY
+    - httpie.cli.constants.OUT_RESP_HEAD
+    - httpie.cli.constants.OUT_RESP_META
+    - httpie.compat.cached_property
+    - httpie.utils.split_cookies
+    - httpie.utils.parse_content_type_header

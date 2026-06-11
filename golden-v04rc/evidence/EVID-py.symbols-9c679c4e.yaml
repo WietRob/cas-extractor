@@ -1,0 +1,64 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-9c679c4e
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T08:37:44.452486+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.encoding
+    kind: module
+    file: httpie/encoding.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 50
+      end_col: 0
+    fingerprint: be9655c7c10a91dc85a37726943204cba968b5ac13aba5c35d2135bae5d5067b
+  - qualified: httpie.encoding.detect_encoding
+    kind: function
+    file: httpie/encoding.py
+    range:
+      start_line: 11
+      start_col: 0
+      end_line: 29
+      end_col: 0
+    fingerprint: aa589b33552db8ba15b654c03e8aa7ad0ed1b3bfbfdd4ac5bd589fe450f742ea
+    params:
+    - name: content
+      annotation: ContentBytes
+    returns: str
+  - qualified: httpie.encoding.smart_decode
+    kind: function
+    file: httpie/encoding.py
+    range:
+      start_line: 32
+      start_col: 0
+      end_line: 41
+      end_col: 0
+    fingerprint: ec8882c14ecd5936e26dd0d7d2a441db1acbe67080a4f443c1c5b17cff4545ae
+    params:
+    - name: content
+      annotation: ContentBytes
+    - name: encoding
+      annotation: str
+    returns: Tuple[str, str]
+  - qualified: httpie.encoding.smart_encode
+    kind: function
+    file: httpie/encoding.py
+    range:
+      start_line: 44
+      start_col: 0
+      end_line: 50
+      end_col: 0
+    fingerprint: 99668b0e79aa6d211367a591265e000dc53ba3198d08f5af2843168bef2bb4a6
+    params:
+    - name: content
+      annotation: str
+    - name: encoding
+      annotation: str
+    returns: bytes

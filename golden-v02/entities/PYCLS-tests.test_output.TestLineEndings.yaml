@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-tests.test_output.TestLineEndings
+kind: entity
+type: py.class
+name: TestLineEndings
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_output.py
+anchors:
+- type: symbol
+  value: tests.test_output.TestLineEndings
+- type: fingerprint
+  value: ea7e018eab0bfe0c4f0f89664ee4991519043ecdad47a503d1405333b9ea62b5
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_output

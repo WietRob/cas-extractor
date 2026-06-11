@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_cli.TestItemParsing.test_backslash_before_non_special_character_does_not_escape
+kind: entity
+type: py.function
+name: test_backslash_before_non_special_character_does_not_escape
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_cli.py
+anchors:
+- type: symbol
+  value: tests.test_cli.TestItemParsing.test_backslash_before_non_special_character_does_not_escape
+- type: fingerprint
+  value: 579702e68a65d37a16e9787db6eb8b06a2ffa44f5987b3daaf1469c3e908cf19
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_cli.TestItemParsing

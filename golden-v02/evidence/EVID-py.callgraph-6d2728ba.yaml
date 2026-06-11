@@ -1,0 +1,296 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-6d2728ba
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:34.166819+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.getter.assert_called
+  - symbol: ?.getter.assert_not_called
+  - symbol: ?.getter.reset_mock
+  - symbol: ?.help_formatter.assert_called_once_with
+  - symbol: ?.help_formatter.assert_not_called
+  - symbol: ?.parser.add_argument
+  - symbol: ?.parser.parse_args
+  - symbol: ?.parser.register
+  - symbol: argparse.ArgumentParser
+  - symbol: pytest.raises
+  - symbol: tests.test_cli_utils.test_lazy_choices
+  - symbol: tests.test_cli_utils.test_lazy_choices_help
+  - symbol: unittest.mock.Mock
+  edges:
+  - from: tests.test_cli_utils.test_lazy_choices
+    to: unittest.mock.Mock
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 8
+      start_col: 0
+      end_line: 8
+      end_col: 0
+  - from: tests.test_cli_utils.test_lazy_choices
+    to: argparse.ArgumentParser
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 12
+      start_col: 0
+      end_line: 12
+      end_col: 0
+  - from: tests.test_cli_utils.test_lazy_choices
+    to: ?.parser.register
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 13
+      start_col: 0
+      end_line: 13
+      end_col: 0
+  - from: tests.test_cli_utils.test_lazy_choices
+    to: ?.parser.add_argument
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 14
+      start_col: 0
+      end_line: 20
+      end_col: 0
+  - from: tests.test_cli_utils.test_lazy_choices
+    to: ?.parser.add_argument
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 21
+      start_col: 0
+      end_line: 29
+      end_col: 0
+  - from: tests.test_cli_utils.test_lazy_choices
+    to: ?.getter.assert_not_called
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 32
+      start_col: 0
+      end_line: 32
+      end_col: 0
+  - from: tests.test_cli_utils.test_lazy_choices
+    to: ?.parser.parse_args
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 35
+      start_col: 0
+      end_line: 35
+      end_col: 0
+  - from: tests.test_cli_utils.test_lazy_choices
+    to: ?.getter.assert_not_called
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 36
+      start_col: 0
+      end_line: 36
+      end_col: 0
+  - from: tests.test_cli_utils.test_lazy_choices
+    to: ?.parser.parse_args
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 38
+      start_col: 0
+      end_line: 38
+      end_col: 0
+  - from: tests.test_cli_utils.test_lazy_choices
+    to: ?.getter.assert_not_called
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 39
+      start_col: 0
+      end_line: 39
+      end_col: 0
+  - from: tests.test_cli_utils.test_lazy_choices
+    to: ?.parser.parse_args
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 42
+      start_col: 0
+      end_line: 42
+      end_col: 0
+  - from: tests.test_cli_utils.test_lazy_choices
+    to: ?.getter.assert_called
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 43
+      start_col: 0
+      end_line: 43
+      end_col: 0
+  - from: tests.test_cli_utils.test_lazy_choices
+    to: ?.getter.reset_mock
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 44
+      start_col: 0
+      end_line: 44
+      end_col: 0
+  - from: tests.test_cli_utils.test_lazy_choices
+    to: ?.getter.assert_called
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 48
+      start_col: 0
+      end_line: 48
+      end_col: 0
+  - from: tests.test_cli_utils.test_lazy_choices
+    to: ?.getter.reset_mock
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 49
+      start_col: 0
+      end_line: 49
+      end_col: 0
+  - from: tests.test_cli_utils.test_lazy_choices_help
+    to: unittest.mock.Mock
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 53
+      start_col: 0
+      end_line: 53
+      end_col: 0
+  - from: tests.test_cli_utils.test_lazy_choices_help
+    to: argparse.ArgumentParser
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 60
+      start_col: 0
+      end_line: 60
+      end_col: 0
+  - from: tests.test_cli_utils.test_lazy_choices_help
+    to: ?.parser.register
+    kind: call
+    edge_id: 17
+    range:
+      start_line: 61
+      start_col: 0
+      end_line: 61
+      end_col: 0
+  - from: tests.test_cli_utils.test_lazy_choices_help
+    to: ?.parser.add_argument
+    kind: call
+    edge_id: 18
+    range:
+      start_line: 62
+      start_col: 0
+      end_line: 70
+      end_col: 0
+  - from: tests.test_cli_utils.test_lazy_choices_help
+    to: ?.getter.assert_not_called
+    kind: call
+    edge_id: 19
+    range:
+      start_line: 73
+      start_col: 0
+      end_line: 73
+      end_col: 0
+  - from: tests.test_cli_utils.test_lazy_choices_help
+    to: ?.parser.parse_args
+    kind: call
+    edge_id: 20
+    range:
+      start_line: 76
+      start_col: 0
+      end_line: 76
+      end_col: 0
+  - from: tests.test_cli_utils.test_lazy_choices_help
+    to: ?.getter.assert_not_called
+    kind: call
+    edge_id: 21
+    range:
+      start_line: 77
+      start_col: 0
+      end_line: 77
+      end_col: 0
+  - from: tests.test_cli_utils.test_lazy_choices_help
+    to: ?.help_formatter.assert_not_called
+    kind: call
+    edge_id: 22
+    range:
+      start_line: 78
+      start_col: 0
+      end_line: 78
+      end_col: 0
+  - from: tests.test_cli_utils.test_lazy_choices_help
+    to: ?.parser.parse_args
+    kind: call
+    edge_id: 23
+    range:
+      start_line: 80
+      start_col: 0
+      end_line: 80
+      end_col: 0
+  - from: tests.test_cli_utils.test_lazy_choices_help
+    to: ?.help_formatter.assert_not_called
+    kind: call
+    edge_id: 24
+    range:
+      start_line: 81
+      start_col: 0
+      end_line: 81
+      end_col: 0
+  - from: tests.test_cli_utils.test_lazy_choices_help
+    to: ?.help_formatter.assert_called_once_with
+    kind: call
+    edge_id: 25
+    range:
+      start_line: 86
+      start_col: 0
+      end_line: 86
+      end_col: 0
+  - from: tests.test_cli_utils.test_lazy_choices
+    to: pytest.raises
+    kind: call
+    edge_id: 26
+    range:
+      start_line: 46
+      start_col: 0
+      end_line: 46
+      end_col: 0
+  - from: tests.test_cli_utils.test_lazy_choices
+    to: ?.parser.parse_args
+    kind: call
+    edge_id: 27
+    range:
+      start_line: 47
+      start_col: 0
+      end_line: 47
+      end_col: 0
+  - from: tests.test_cli_utils.test_lazy_choices_help
+    to: pytest.raises
+    kind: call
+    edge_id: 28
+    range:
+      start_line: 84
+      start_col: 0
+      end_line: 84
+      end_col: 0
+  - from: tests.test_cli_utils.test_lazy_choices_help
+    to: ?.parser.parse_args
+    kind: call
+    edge_id: 29
+    range:
+      start_line: 85
+      start_col: 0
+      end_line: 85
+      end_col: 0

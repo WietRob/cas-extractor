@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-cas_extractor.writers.evidence_writer.write_imports_evidence
+kind: entity
+type: py.function
+name: write_imports_evidence
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor/writers/evidence_writer.py
+anchors:
+- type: symbol
+  value: cas_extractor.writers.evidence_writer.write_imports_evidence
+- type: fingerprint
+  value: eba309e225c3308ae6e276bc94f9f37008eb048be9ef45d76f7f19408f9952ef
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor.writers.evidence_writer

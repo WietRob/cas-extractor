@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-1219
+kind: relation
+type: contains
+from: PYCLS-tests.test_downloads.TestDownloads
+to: PYFUNC-tests.test_downloads.TestDownloads.test_download_no_Content_Length
+confidence:
+  level: E0
+  direction: confirmed
+evidence:
+- EVID-py.symbols-fc78dd6d
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1

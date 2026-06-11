@@ -1,0 +1,34 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-cc33ac63
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-23T12:58:49.602485+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://h28-test
+  root: /tmp/h28-verify
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.svc.process
+  - symbol: test_h28.TestP2FactoryToLocalVar.run
+  - symbol: test_h28.create_data_service
+  edges:
+  - from: test_h28.TestP2FactoryToLocalVar.run
+    to: test_h28.create_data_service
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 119
+      start_col: 0
+      end_line: 119
+      end_col: 0
+  - from: test_h28.TestP2FactoryToLocalVar.run
+    to: ?.svc.process
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 120
+      start_col: 0
+      end_line: 120
+      end_col: 0

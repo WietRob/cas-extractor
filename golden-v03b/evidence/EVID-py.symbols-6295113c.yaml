@@ -1,0 +1,46 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-6295113c
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:55.114496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.status
+    kind: module
+    file: httpie/status.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 40
+      end_col: 0
+    fingerprint: babe1806e64266a2a298647e4d2d5e08de9cd61906789483aa0a01d4c887e476
+  - qualified: httpie.status.ExitStatus
+    kind: class
+    file: httpie/status.py
+    range:
+      start_line: 5
+      start_col: 0
+      end_line: 20
+      end_col: 0
+    fingerprint: f164d4496304a2872854d98ec7e646e64d7a366ca4ac281e9ab74f750fee1b88
+    decorators:
+    - unique
+  - qualified: httpie.status.http_status_to_exit_status
+    kind: function
+    file: httpie/status.py
+    range:
+      start_line: 23
+      start_col: 0
+      end_line: 40
+      end_col: 0
+    fingerprint: f4676ed4bdf2b3ccfa869333a35df94af6695f29ab8a68176ca3afced0a8b686
+    params:
+    - name: http_status
+      annotation: int
+    - name: follow
+    returns: ExitStatus

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-cas_extractor_extractors_python_calls.ClassInfo
+kind: entity
+type: py.class
+name: ClassInfo
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor_extractors_python_calls.py
+anchors:
+- type: symbol
+  value: cas_extractor_extractors_python_calls.ClassInfo
+- type: fingerprint
+  value: fdb36d4d456f5279b9fd74d1896976477adaa85ba692bb3bcd81574e9c5db8b9
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor_extractors_python_calls

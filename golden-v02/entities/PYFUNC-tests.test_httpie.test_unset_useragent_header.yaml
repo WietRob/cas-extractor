@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_httpie.test_unset_useragent_header
+kind: entity
+type: py.function
+name: test_unset_useragent_header
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_httpie.py
+anchors:
+- type: symbol
+  value: tests.test_httpie.test_unset_useragent_header
+- type: fingerprint
+  value: c309d345c6009e970ca59edc31a9a15fe6037a914db55b3f6b583d720a56dd6d
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_httpie

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.output.streams.DataSuppressedError
+kind: entity
+type: py.class
+name: DataSuppressedError
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/output/streams.py
+anchors:
+- type: symbol
+  value: httpie.output.streams.DataSuppressedError
+- type: fingerprint
+  value: af310bb81a3138314a748e1ccb64e09ed6136a4b57b9cda2aa3abcb03a2edd32
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.streams

@@ -1,0 +1,64 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-29e35395
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:51:32.657994+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: tests.utils.plugins_cli.Plugin.build
+    kind: method
+    file: tests/utils/plugins_cli.py
+    range:
+      start_line: 44
+      start_col: 0
+      end_line: 85
+      end_col: 0
+    fingerprint: 93ea6cfe22c1523f2351a2cf53f4681d46de23527d6e5cff2ce91ef9c0c7e96c
+    params:
+    - name: self
+    returns: None
+  - qualified: tests.utils.plugins_cli.Plugin.dump
+    kind: method
+    file: tests/utils/plugins_cli.py
+    range:
+      start_line: 87
+      start_col: 0
+      end_line: 94
+      end_col: 0
+    fingerprint: ddfcde12c7b403ebd7415fd63b65d27b640c4cc5042c63fc2f4d035568a3a5d0
+    params:
+    - name: self
+    returns: Dict[str, Any]
+  - qualified: tests.utils.plugins_cli.Plugin.path
+    kind: method
+    file: tests/utils/plugins_cli.py
+    range:
+      start_line: 97
+      start_col: 0
+      end_line: 98
+      end_col: 0
+    fingerprint: 82f740ce78ce7dc5bf360d2abec9f348f4280eb80c7096816286ef93c7226a80
+    decorators:
+    - property
+    params:
+    - name: self
+    returns: Path
+  - qualified: tests.utils.plugins_cli.Plugin.import_name
+    kind: method
+    file: tests/utils/plugins_cli.py
+    range:
+      start_line: 101
+      start_col: 0
+      end_line: 102
+      end_col: 0
+    fingerprint: 4998c812844037f1c5f69786b8825768581f818f7f2b3ebec4a41b735e25b580
+    decorators:
+    - property
+    params:
+    - name: self
+    returns: str

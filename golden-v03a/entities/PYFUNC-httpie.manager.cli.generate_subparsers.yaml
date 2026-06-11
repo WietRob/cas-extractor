@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.manager.cli.generate_subparsers
+kind: entity
+type: py.function
+name: generate_subparsers
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/manager/cli.py
+anchors:
+- type: symbol
+  value: httpie.manager.cli.generate_subparsers
+- type: fingerprint
+  value: ba8bcc1c076864def0dfba2349d463bd6e65c029cf57992bcfe4bb630a0b094a
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.manager.cli

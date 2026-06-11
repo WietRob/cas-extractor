@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.manager.cli
+kind: entity
+type: py.module
+name: cli
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/manager/cli.py
+anchors:
+- type: symbol
+  value: httpie.manager.cli
+- type: fingerprint
+  value: eec75559d9a098dc6d521d4af6bde684f9b06f921d42eea9cec809c24ed8cf1c
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.manager

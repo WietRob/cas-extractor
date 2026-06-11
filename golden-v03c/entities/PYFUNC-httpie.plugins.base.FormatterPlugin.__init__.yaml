@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.plugins.base.FormatterPlugin.__init__
+kind: entity
+type: py.function
+name: __init__
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/plugins/base.py
+anchors:
+- type: symbol
+  value: httpie.plugins.base.FormatterPlugin.__init__
+- type: fingerprint
+  value: 93c4557761b4be8001d68f0c758e806c9be5d49a94a6ecec553423789dd571e7
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.plugins.base.FormatterPlugin

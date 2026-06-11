@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-0001
+kind: relation
+type: contains
+from: PYMOD-cas_extractor.utils.ids
+to: PYFUNC-cas_extractor.utils.ids.reset_counters
+confidence:
+  level: E0
+  direction: confirmed
+evidence:
+- EVID-py.symbols-03e76fbc
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1

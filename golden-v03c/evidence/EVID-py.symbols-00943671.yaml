@@ -1,0 +1,74 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-00943671
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T17:44:04.298412+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.cli.nested_json.interpret
+    kind: module
+    file: httpie/cli/nested_json/interpret.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 129
+      end_col: 0
+    fingerprint: 7cdee2bab3c938758ff07a9d90d5702ded2d64ad2b6f62dbd5e5389456ded026
+  - qualified: httpie.cli.nested_json.interpret.interpret_nested_json
+    kind: function
+    file: httpie/cli/nested_json/interpret.py
+    range:
+      start_line: 23
+      start_col: 0
+      end_line: 27
+      end_col: 0
+    fingerprint: bbb3a66cb5bb9698d339f4687e44d1cbac28dcefa602f81ae3c0d4eb4130e5b9
+    params:
+    - name: pairs
+      annotation: Iterable[Tuple[str, str]]
+    returns: dict
+  - qualified: httpie.cli.nested_json.interpret.interpret
+    kind: function
+    file: httpie/cli/nested_json/interpret.py
+    range:
+      start_line: 30
+      start_col: 0
+      end_line: 104
+      end_col: 0
+    fingerprint: 52cb1fc529206bff7a875119e1e7450c352d6231ae140d4b859273a8dd579439
+    params:
+    - name: context
+      annotation: Any
+    - name: key
+      annotation: str
+    - name: value
+      annotation: Any
+    returns: Any
+  - qualified: httpie.cli.nested_json.interpret.wrap_with_dict
+    kind: function
+    file: httpie/cli/nested_json/interpret.py
+    range:
+      start_line: 107
+      start_col: 0
+      end_line: 116
+      end_col: 0
+    fingerprint: c2f9462b9939e36e63f12910775d7bcf2d4ef0fe5b1f8d1b776509f914897355
+    params:
+    - name: context
+  - qualified: httpie.cli.nested_json.interpret.unwrap_top_level_list_if_needed
+    kind: function
+    file: httpie/cli/nested_json/interpret.py
+    range:
+      start_line: 119
+      start_col: 0
+      end_line: 129
+      end_col: 0
+    fingerprint: 82d58ed04a420e0d00dd2648433bd9e25f8262321725d9a363ab1e4d66a3ef66
+    params:
+    - name: data
+      annotation: dict

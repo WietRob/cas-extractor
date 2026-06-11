@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.internal.daemon_runner.run_daemon_task
+kind: entity
+type: py.function
+name: run_daemon_task
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/internal/daemon_runner.py
+anchors:
+- type: symbol
+  value: httpie.internal.daemon_runner.run_daemon_task
+- type: fingerprint
+  value: a2570d632694501d2d1d88ef33707b9c0501c3d93cf6e1abc2d5691641146d29
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.internal.daemon_runner

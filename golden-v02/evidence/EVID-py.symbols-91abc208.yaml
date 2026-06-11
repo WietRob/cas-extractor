@@ -1,0 +1,26 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-91abc208
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:51:32.100322+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: extras.profiling.run.LocalCommandEnvironment.on_repo
+    kind: method
+    file: extras/profiling/run.py
+    range:
+      start_line: 144
+      start_col: 0
+      end_line: 145
+      end_col: 0
+    fingerprint: 04ad6e69715b975ab0c0d9cd7dc8dfcabb6db92378165c7cda954571c56444de
+    decorators:
+    - contextmanager
+    params:
+    - name: self
+    returns: Generator[Path, None, None]

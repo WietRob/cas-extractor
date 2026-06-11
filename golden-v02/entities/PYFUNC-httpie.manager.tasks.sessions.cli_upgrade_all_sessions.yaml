@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.manager.tasks.sessions.cli_upgrade_all_sessions
+kind: entity
+type: py.function
+name: cli_upgrade_all_sessions
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/manager/tasks/sessions.py
+anchors:
+- type: symbol
+  value: httpie.manager.tasks.sessions.cli_upgrade_all_sessions
+- type: fingerprint
+  value: 7c64fa5a5f68204fa81ac1d25e511c8a3df561c90ad00eaf9cd37b6141a1dc32
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.manager.tasks.sessions

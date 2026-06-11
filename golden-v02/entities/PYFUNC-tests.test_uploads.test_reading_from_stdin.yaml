@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_uploads.test_reading_from_stdin
+kind: entity
+type: py.function
+name: test_reading_from_stdin
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_uploads.py
+anchors:
+- type: symbol
+  value: tests.test_uploads.test_reading_from_stdin
+- type: fingerprint
+  value: d03ff87f4d72b8a6a96934598563b1a47f215055ff7f1f006ece5e07796086f2
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_uploads

@@ -1,0 +1,55 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-735f48d9
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T17:44:05.259171+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.OLD_HEADER_STORE_WARNING.format
+  - symbol: ?.headers.items
+  - symbol: ?.session.warn_legacy_usage
+  - symbol: httpie.legacy.v3_2_0_session_header_format.fix_layout
+  - symbol: httpie.legacy.v3_2_0_session_header_format.pre_process
+  - symbol: httpie.sessions.materialize_headers
+  edges:
+  - from: httpie.legacy.v3_2_0_session_header_format.fix_layout
+    to: httpie.sessions.materialize_headers
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 73
+      start_col: 0
+      end_line: 73
+      end_col: 0
+  - from: httpie.legacy.v3_2_0_session_header_format.pre_process
+    to: ?.OLD_HEADER_STORE_WARNING.format
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 40
+      start_col: 0
+      end_line: 40
+      end_col: 0
+  - from: httpie.legacy.v3_2_0_session_header_format.pre_process
+    to: ?.session.warn_legacy_usage
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 44
+      start_col: 0
+      end_line: 44
+      end_col: 0
+  - from: httpie.legacy.v3_2_0_session_header_format.pre_process
+    to: ?.headers.items
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 32
+      start_col: 0
+      end_line: 32
+      end_col: 0

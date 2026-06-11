@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-tests.test_output.TestVerboseFlag
+kind: entity
+type: py.class
+name: TestVerboseFlag
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_output.py
+anchors:
+- type: symbol
+  value: tests.test_output.TestVerboseFlag
+- type: fingerprint
+  value: ca04b8a1b5d8909d09317c48fa1839d4beabfc901c89a5171686e0b9b15d7815
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_output

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cookies.HTTPieCookiePolicy._is_local_host
+kind: entity
+type: py.function
+name: _is_local_host
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cookies.py
+anchors:
+- type: symbol
+  value: httpie.cookies.HTTPieCookiePolicy._is_local_host
+- type: fingerprint
+  value: 3441f5258ff578c66232e5249796b4effbf66af88183680416b7b21134f02875
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cookies.HTTPieCookiePolicy

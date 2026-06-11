@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.sessions.Session.remove_cookies
+kind: entity
+type: py.function
+name: remove_cookies
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/sessions.py
+anchors:
+- type: symbol
+  value: httpie.sessions.Session.remove_cookies
+- type: fingerprint
+  value: 6c705d90513a931a0a45c21a053390e49d5d01452619a50bb3c2e79173f44386
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.sessions.Session

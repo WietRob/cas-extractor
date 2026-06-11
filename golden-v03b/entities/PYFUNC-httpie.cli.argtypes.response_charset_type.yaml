@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.argtypes.response_charset_type
+kind: entity
+type: py.function
+name: response_charset_type
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/argtypes.py
+anchors:
+- type: symbol
+  value: httpie.cli.argtypes.response_charset_type
+- type: fingerprint
+  value: 87d8a88a043650f879afa296cb43cbb9e8a48b9008f64fee0db978f5be52efc0
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.argtypes

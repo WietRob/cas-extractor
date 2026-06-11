@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.utils.http_server.chunked_drip
+kind: entity
+type: py.function
+name: chunked_drip
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/utils/http_server.py
+anchors:
+- type: symbol
+  value: tests.utils.http_server.chunked_drip
+- type: fingerprint
+  value: 05b98e7be807e54f1ac9bc1a73c58715f0e2608e610fc8a6d619d411bfc7562d
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils.http_server

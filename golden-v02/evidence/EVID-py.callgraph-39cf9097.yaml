@@ -1,0 +1,24 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-39cf9097
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:34.397411+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: tests.test_transport_plugin.FakeAdapter
+  - symbol: tests.test_transport_plugin.FakeTransportPlugin.get_adapter
+  edges:
+  - from: tests.test_transport_plugin.FakeTransportPlugin.get_adapter
+    to: tests.test_transport_plugin.FakeAdapter
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 34
+      start_col: 0
+      end_line: 34
+      end_col: 0

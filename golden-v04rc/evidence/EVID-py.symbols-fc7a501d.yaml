@@ -1,0 +1,50 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-fc7a501d
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T08:37:44.647653+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.test_transport_plugin
+    kind: module
+    file: tests/test_transport_plugin.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 45
+      end_col: 0
+    fingerprint: 01846c18173661131a91903a49a8b4f35c33290d29945cb4d8abd0e958a5c0a1
+  - qualified: tests.test_transport_plugin.FakeAdapter
+    kind: class
+    file: tests/test_transport_plugin.py
+    range:
+      start_line: 15
+      start_col: 0
+      end_line: 25
+      end_col: 0
+    fingerprint: 636bf04ed424c7b58eb87d56d645f07c0f0e5b61e73b9eef9c46a4f0141515ef
+  - qualified: tests.test_transport_plugin.FakeTransportPlugin
+    kind: class
+    file: tests/test_transport_plugin.py
+    range:
+      start_line: 28
+      start_col: 0
+      end_line: 34
+      end_col: 0
+    fingerprint: 43bbc2a1687008d4fce365c00c82cebf7bda0f4f809002ca12bf66b8b736ddba
+  - qualified: tests.test_transport_plugin.test_transport_from_requests_response
+    kind: function
+    file: tests/test_transport_plugin.py
+    range:
+      start_line: 37
+      start_col: 0
+      end_line: 45
+      end_col: 0
+    fingerprint: fc073cf5ce65270a535c49953581b07229b86f61c4e78a8434607ecf15fe8ff9
+    params:
+    - name: httpbin

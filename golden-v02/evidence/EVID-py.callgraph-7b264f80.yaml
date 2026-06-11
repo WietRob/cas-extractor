@@ -1,0 +1,54 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-7b264f80
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:34.021466+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.body.extend
+  - symbol: ?.converter.convert
+  - symbol: httpie.output.streams.BinarySuppressedError
+  - symbol: httpie.output.streams.BufferedPrettyStream.iter_body
+  - symbol: httpie.output.streams.PrettyStream.process_body
+  edges:
+  - from: httpie.output.streams.BufferedPrettyStream.iter_body
+    to: ?.body.extend
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 249
+      start_col: 0
+      end_line: 249
+      end_col: 0
+  - from: httpie.output.streams.BufferedPrettyStream.iter_body
+    to: ?.converter.convert
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 252
+      start_col: 0
+      end_line: 252
+      end_col: 0
+  - from: httpie.output.streams.BufferedPrettyStream.iter_body
+    to: httpie.output.streams.PrettyStream.process_body
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 254
+      start_col: 0
+      end_line: 254
+      end_col: 0
+  - from: httpie.output.streams.BufferedPrettyStream.iter_body
+    to: httpie.output.streams.BinarySuppressedError
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 248
+      start_col: 0
+      end_line: 248
+      end_col: 0

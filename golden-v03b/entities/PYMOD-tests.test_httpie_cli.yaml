@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-tests.test_httpie_cli
+kind: entity
+type: py.module
+name: test_httpie_cli
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_httpie_cli.py
+anchors:
+- type: symbol
+  value: tests.test_httpie_cli
+- type: fingerprint
+  value: b221413d6cd694638d0b306c5639a6422b7f89bb1892085c52e8441bfcea44fc
+  algo: sha256
+claims: []
+relations: []
+namespace: tests

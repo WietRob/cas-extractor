@@ -1,0 +1,156 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "cas.entity.v0.1.schema.json",
+  "title": "CAS Entity v0.1",
+  "description": "Entity artifacts - interpreted code units with claims and relations",
+  "type": "object",
+  "required": ["schema", "id", "kind", "type", "name", "status", "created_at", "created_by", "source", "anchors"],
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "cas.entity.v0.1"
+    },
+    "id": {
+      "$ref": "common.v0.1.schema.json#/$defs/entity_id"
+    },
+    "kind": {
+      "type": "string",
+      "const": "entity"
+    },
+    "type": {
+      "$ref": "common.v0.1.schema.json#/$defs/entity_type"
+    },
+    "name": {
+      "type": "string",
+      "description": "Short name of the entity"
+    },
+    "namespace": {
+      "type": "string",
+      "description": "Optional namespace/module path"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "reviewed", "approved"],
+      "description": "Lifecycle status"
+    },
+    "created_at": {
+      "$ref": "common.v0.1.schema.json#/$defs/timestamp"
+    },
+    "created_by": {
+      "type": "string",
+      "description": "Creator identifier: extractor:py.v0.1, agent:X, human:name"
+    },
+    "source": {
+      "$ref": "common.v0.1.schema.json#/$defs/source"
+    },
+    "anchors": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "common.v0.1.schema.json#/$defs/anchor"
+      }
+    },
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "kind", "statement", "confidence"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Local claim ID within entity: CLM-001"
+          },
+          "kind": {
+            "$ref": "common.v0.1.schema.json#/$defs/claim_kind"
+          },
+          "statement": {
+            "type": "string",
+            "description": "Factual claim statement"
+          },
+          "confidence": {
+            "$ref": "common.v0.1.schema.json#/$defs/confidence"
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "$ref": "common.v0.1.schema.json#/$defs/evidence_ref"
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "relations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["type", "to", "confidence"],
+        "properties": {
+          "type": {
+            "$ref": "common.v0.1.schema.json#/$defs/relation_type"
+          },
+          "to": {
+            "type": "string",
+            "description": "Target entity ID"
+          },
+          "confidence": {
+            "$ref": "common.v0.1.schema.json#/$defs/confidence"
+          },
+          "evidence": {
+            "type": "array",
+            "items": {
+              "$ref": "common.v0.1.schema.json#/$defs/evidence_ref"
+            }
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "interface": {
+      "type": "object",
+      "properties": {
+        "params": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "kind"],
+            "properties": {
+              "name": { "type": "string" },
+              "kind": { "$ref": "common.v0.1.schema.json#/$defs/param_kind" }
+            },
+            "additionalProperties": false
+          }
+        },
+        "returns": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["kind"],
+            "properties": {
+              "kind": { "$ref": "common.v0.1.schema.json#/$defs/return_kind" },
+              "shape": { "$ref": "common.v0.1.schema.json#/$defs/value_shape" }
+            },
+            "additionalProperties": false
+          }
+        },
+        "throws": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "ext": {
+      "type": "object",
+      "description": "Namespaced extensions - must have registered schema",
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

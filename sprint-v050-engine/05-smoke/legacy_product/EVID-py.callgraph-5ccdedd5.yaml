@@ -1,0 +1,142 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-5ccdedd5
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-26T06:35:11.678969+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://product
+  root: ./cas_extractor
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.data.get
+  - symbol: ?.schemas.items
+  - symbol: ?.schemas_path.rglob
+  - symbol: ?.sdata.get
+  - symbol: ?.validator.iter_errors
+  - symbol: json.load
+  - symbol: jsonschema.Draft202012Validator
+  - symbol: pathlib.Path
+  - symbol: validators.schema_validate.StructuralValidationResult
+  - symbol: validators.schema_validate._load_schemas
+  - symbol: validators.schema_validate.validate_structural
+  - symbol: yaml.safe_load
+  edges:
+  - from: validators.schema_validate.validate_structural
+    to: validators.schema_validate._load_schemas
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 55
+      start_col: 0
+      end_line: 55
+      end_col: 0
+  - from: validators.schema_validate.validate_structural
+    to: validators.schema_validate.StructuralValidationResult
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 56
+      start_col: 0
+      end_line: 56
+      end_col: 0
+  - from: validators.schema_validate._load_schemas
+    to: pathlib.Path
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 129
+      start_col: 0
+      end_line: 129
+      end_col: 0
+  - from: validators.schema_validate._load_schemas
+    to: ?.schemas_path.rglob
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 131
+      start_col: 0
+      end_line: 131
+      end_col: 0
+  - from: validators.schema_validate.validate_structural
+    to: validators.schema_validate.StructuralValidationResult
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 46
+      start_col: 0
+      end_line: 46
+      end_col: 0
+  - from: validators.schema_validate.validate_structural
+    to: ?.data.get
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 81
+      start_col: 0
+      end_line: 81
+      end_col: 0
+  - from: validators.schema_validate.validate_structural
+    to: pathlib.Path
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 58
+      start_col: 0
+      end_line: 58
+      end_col: 0
+  - from: validators.schema_validate.validate_structural
+    to: yaml.safe_load
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 62
+      start_col: 0
+      end_line: 62
+      end_col: 0
+  - from: validators.schema_validate.validate_structural
+    to: ?.schemas.items
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 88
+      start_col: 0
+      end_line: 88
+      end_col: 0
+  - from: validators.schema_validate.validate_structural
+    to: jsonschema.Draft202012Validator
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 93
+      start_col: 0
+      end_line: 93
+      end_col: 0
+  - from: validators.schema_validate._load_schemas
+    to: json.load
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 134
+      start_col: 0
+      end_line: 134
+      end_col: 0
+  - from: validators.schema_validate.validate_structural
+    to: ?.sdata.get
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 89
+      start_col: 0
+      end_line: 89
+      end_col: 0
+  - from: validators.schema_validate.validate_structural
+    to: ?.validator.iter_errors
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 94
+      start_col: 0
+      end_line: 94
+      end_col: 0

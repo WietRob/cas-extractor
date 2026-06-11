@@ -1,0 +1,115 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-cd4bca5c
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T12:13:53.886938+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.body.find
+  - symbol: ?.body.splitlines
+  - symbol: ?.body.startswith
+  - symbol: ?.document.toprettyxml
+  - symbol: ?.line.strip
+  - symbol: ?.lines.insert
+  - symbol: ?.lines.pop
+  - symbol: ?.raw_body.strip
+  - symbol: defusedxml.minidom.parseString
+  - symbol: httpie.output.formatters.xml.parse_declaration
+  - symbol: httpie.output.formatters.xml.parse_xml
+  - symbol: httpie.output.formatters.xml.pretty_xml
+  edges:
+  - from: httpie.output.formatters.xml.parse_xml
+    to: defusedxml.minidom.parseString
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 17
+      start_col: 0
+      end_line: 17
+      end_col: 0
+  - from: httpie.output.formatters.xml.parse_declaration
+    to: ?.raw_body.strip
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 21
+      start_col: 0
+      end_line: 21
+      end_col: 0
+  - from: httpie.output.formatters.xml.parse_declaration
+    to: ?.body.startswith
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 23
+      start_col: 0
+      end_line: 23
+      end_col: 0
+  - from: httpie.output.formatters.xml.parse_declaration
+    to: ?.body.find
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 24
+      start_col: 0
+      end_line: 24
+      end_col: 0
+  - from: httpie.output.formatters.xml.pretty_xml
+    to: httpie.output.formatters.xml.parse_declaration
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 45
+      start_col: 0
+      end_line: 45
+      end_col: 0
+  - from: httpie.output.formatters.xml.pretty_xml
+    to: ?.lines.pop
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 46
+      start_col: 0
+      end_line: 46
+      end_col: 0
+  - from: httpie.output.formatters.xml.pretty_xml
+    to: ?.document.toprettyxml
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 38
+      start_col: 0
+      end_line: 38
+      end_col: 0
+  - from: httpie.output.formatters.xml.pretty_xml
+    to: ?.body.splitlines
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 41
+      start_col: 0
+      end_line: 41
+      end_col: 0
+  - from: httpie.output.formatters.xml.pretty_xml
+    to: ?.line.strip
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 41
+      start_col: 0
+      end_line: 41
+      end_col: 0
+  - from: httpie.output.formatters.xml.pretty_xml
+    to: ?.lines.insert
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 48
+      start_col: 0
+      end_line: 48
+      end_col: 0

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.sessions.Session.auth
+kind: entity
+type: py.function
+name: auth
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/sessions.py
+anchors:
+- type: symbol
+  value: httpie.sessions.Session.auth
+- type: fingerprint
+  value: bb39ec561ab727b170fadfd069d5b459cb86589ff7921edffc174d854a193729
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.sessions.Session

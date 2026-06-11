@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.manager.cli.missing_subcommand
+kind: entity
+type: py.function
+name: missing_subcommand
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/manager/cli.py
+anchors:
+- type: symbol
+  value: httpie.manager.cli.missing_subcommand
+- type: fingerprint
+  value: ef5065cb3e3ae054b6c55be4a803b1822901ad2e18c5ce0d5f52f6ac20c728cd
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.manager.cli

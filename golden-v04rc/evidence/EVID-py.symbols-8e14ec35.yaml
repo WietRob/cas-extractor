@@ -1,0 +1,39 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-8e14ec35
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T08:37:44.440833+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.context
+    kind: module
+    file: httpie/context.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 217
+      end_col: 0
+    fingerprint: c2c83a48d7bd009d1d4320725224db3a4daa01f6ffff7ff5df0a14a7f71410df
+  - qualified: httpie.context.LogLevel
+    kind: class
+    file: httpie/context.py
+    range:
+      start_line: 27
+      start_col: 0
+      end_line: 30
+      end_col: 0
+    fingerprint: 0ce609d56d846e801c58e0a71f03cbf99174a814360a0e6057b743fa3e6d463f
+  - qualified: httpie.context.Environment
+    kind: class
+    file: httpie/context.py
+    range:
+      start_line: 46
+      start_col: 0
+      end_line: 217
+      end_col: 0
+    fingerprint: b2bd40eece832901389f0cf34411711b1c9c2eb5b9da8eeeb042bcb3961d3b91

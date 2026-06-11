@@ -1,0 +1,66 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-ca83490b
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:54.997964+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.legacy.v3_1_0_session_cookie_format
+    kind: module
+    file: httpie/legacy/v3_1_0_session_cookie_format.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 100
+      end_col: 0
+    fingerprint: fa288c782e7d4b3ff4d1ae26df618abd8e9e40ae55e340a65dd23766fd2e098c
+  - qualified: httpie.legacy.v3_1_0_session_cookie_format.pre_process
+    kind: function
+    file: httpie/legacy/v3_1_0_session_cookie_format.py
+    range:
+      start_line: 36
+      start_col: 0
+      end_line: 64
+      end_col: 0
+    fingerprint: 8358eb75a7a191055d90e990a809f42cbf0ed5f3f6dc0840da60665a64e7039b
+    params:
+    - name: session
+      annotation: '''Session'''
+    - name: cookies
+      annotation: Any
+    returns: List[Dict[str, Any]]
+  - qualified: httpie.legacy.v3_1_0_session_cookie_format.post_process
+    kind: function
+    file: httpie/legacy/v3_1_0_session_cookie_format.py
+    range:
+      start_line: 67
+      start_col: 0
+      end_line: 81
+      end_col: 0
+    fingerprint: 26052962a1f99140aedfb46be191c6010808c9388d17e8a04d769ed8bf875217
+    params:
+    - name: normalized_cookies
+      annotation: List[Dict[str, Any]]
+    returns: Any
+  - qualified: httpie.legacy.v3_1_0_session_cookie_format.fix_layout
+    kind: function
+    file: httpie/legacy/v3_1_0_session_cookie_format.py
+    range:
+      start_line: 84
+      start_col: 0
+      end_line: 100
+      end_col: 0
+    fingerprint: d682cc2e18a47dbcc691bb64e2c0e38b2992a0aceff48f24cce32197bb5188f8
+    params:
+    - name: session
+      annotation: '''Session'''
+    - name: hostname
+      annotation: str
+    - name: args
+      annotation: argparse.Namespace
+    returns: None

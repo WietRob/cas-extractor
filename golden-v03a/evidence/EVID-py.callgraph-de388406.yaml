@@ -1,0 +1,335 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-de388406
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T12:13:53.844644+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.UPDATE_MESSAGE_FORMAT.format
+  - symbol: ?.current_date.isoformat
+  - symbol: ?.data.setdefault
+  - symbol: ?.env.log_error
+  - symbol: ?.file.exists
+  - symbol: ?.response.json
+  - symbol: ?.response.raise_for_status
+  - symbol: contextlib.nullcontext
+  - symbol: contextlib.suppress
+  - symbol: datetime.datetime.fromisoformat
+  - symbol: datetime.datetime.now
+  - symbol: httpie.internal.daemons.spawn_daemon
+  - symbol: httpie.internal.update_warnings._fetch_updates
+  - symbol: httpie.internal.update_warnings._get_suppress_context
+  - symbol: httpie.internal.update_warnings._get_update_status
+  - symbol: httpie.internal.update_warnings._read_data_error_free
+  - symbol: httpie.internal.update_warnings.check_updates
+  - symbol: httpie.internal.update_warnings.fetch_updates
+  - symbol: httpie.internal.update_warnings.get_update_status
+  - symbol: httpie.internal.update_warnings.maybe_fetch_updates
+  - symbol: httpie.utils.is_version_greater
+  - symbol: httpie.utils.open_with_lockfile
+  - symbol: json.dump
+  - symbol: json.load
+  - symbol: requests.get
+  edges:
+  - from: httpie.internal.update_warnings._fetch_updates
+    to: httpie.internal.update_warnings._read_data_error_free
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 42
+      start_col: 0
+      end_line: 42
+      end_col: 0
+  - from: httpie.internal.update_warnings._fetch_updates
+    to: requests.get
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 44
+      start_col: 0
+      end_line: 44
+      end_col: 0
+  - from: httpie.internal.update_warnings._fetch_updates
+    to: ?.response.raise_for_status
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 45
+      start_col: 0
+      end_line: 45
+      end_col: 0
+  - from: httpie.internal.update_warnings._fetch_updates
+    to: ?.data.setdefault
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 47
+      start_col: 0
+      end_line: 47
+      end_col: 0
+  - from: httpie.internal.update_warnings._fetch_updates
+    to: ?.response.json
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 49
+      start_col: 0
+      end_line: 49
+      end_col: 0
+  - from: httpie.internal.update_warnings.maybe_fetch_updates
+    to: httpie.internal.update_warnings._read_data_error_free
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 66
+      start_col: 0
+      end_line: 66
+      end_col: 0
+  - from: httpie.internal.update_warnings.maybe_fetch_updates
+    to: httpie.internal.update_warnings.fetch_updates
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 75
+      start_col: 0
+      end_line: 75
+      end_col: 0
+  - from: httpie.internal.update_warnings.check_updates
+    to: httpie.internal.update_warnings._get_update_status
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 146
+      start_col: 0
+      end_line: 146
+      end_col: 0
+  - from: httpie.internal.update_warnings.check_updates
+    to: datetime.datetime.now
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 158
+      start_col: 0
+      end_line: 158
+      end_col: 0
+  - from: httpie.internal.update_warnings.check_updates
+    to: ?.env.log_error
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 167
+      start_col: 0
+      end_line: 167
+      end_col: 0
+  - from: httpie.internal.update_warnings.check_updates
+    to: ?.current_date.isoformat
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 168
+      start_col: 0
+      end_line: 168
+      end_col: 0
+  - from: httpie.internal.update_warnings._fetch_updates
+    to: httpie.utils.open_with_lockfile
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 51
+      start_col: 0
+      end_line: 51
+      end_col: 0
+  - from: httpie.internal.update_warnings._fetch_updates
+    to: json.dump
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 52
+      start_col: 0
+      end_line: 52
+      end_col: 0
+  - from: httpie.internal.update_warnings.fetch_updates
+    to: httpie.internal.daemons.spawn_daemon
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 57
+      start_col: 0
+      end_line: 57
+      end_col: 0
+  - from: httpie.internal.update_warnings.fetch_updates
+    to: httpie.internal.update_warnings._fetch_updates
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 59
+      start_col: 0
+      end_line: 59
+      end_col: 0
+  - from: httpie.internal.update_warnings.maybe_fetch_updates
+    to: datetime.datetime.now
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 69
+      start_col: 0
+      end_line: 69
+      end_col: 0
+  - from: httpie.internal.update_warnings.maybe_fetch_updates
+    to: datetime.datetime.fromisoformat
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 70
+      start_col: 0
+      end_line: 70
+      end_col: 0
+  - from: httpie.internal.update_warnings._get_suppress_context
+    to: contextlib.nullcontext
+    kind: call
+    edge_id: 17
+    range:
+      start_line: 86
+      start_col: 0
+      end_line: 86
+      end_col: 0
+  - from: httpie.internal.update_warnings._get_suppress_context
+    to: contextlib.suppress
+    kind: call
+    edge_id: 18
+    range:
+      start_line: 88
+      start_col: 0
+      end_line: 88
+      end_col: 0
+  - from: httpie.internal.update_warnings._get_update_status
+    to: ?.file.exists
+    kind: call
+    edge_id: 19
+    range:
+      start_line: 111
+      start_col: 0
+      end_line: 111
+      end_col: 0
+  - from: httpie.internal.update_warnings._get_update_status
+    to: httpie.internal.update_warnings._get_suppress_context
+    kind: call
+    edge_id: 20
+    range:
+      start_line: 114
+      start_col: 0
+      end_line: 114
+      end_col: 0
+  - from: httpie.internal.update_warnings._get_update_status
+    to: ?.UPDATE_MESSAGE_FORMAT.format
+    kind: call
+    edge_id: 21
+    range:
+      start_line: 129
+      start_col: 0
+      end_line: 132
+      end_col: 0
+  - from: httpie.internal.update_warnings.get_update_status
+    to: httpie.internal.update_warnings._get_update_status
+    kind: call
+    edge_id: 22
+    range:
+      start_line: 137
+      start_col: 0
+      end_line: 137
+      end_col: 0
+  - from: httpie.internal.update_warnings.check_updates
+    to: httpie.utils.open_with_lockfile
+    kind: call
+    edge_id: 23
+    range:
+      start_line: 153
+      start_col: 0
+      end_line: 153
+      end_col: 0
+  - from: httpie.internal.update_warnings.check_updates
+    to: json.load
+    kind: call
+    edge_id: 24
+    range:
+      start_line: 154
+      start_col: 0
+      end_line: 154
+      end_col: 0
+  - from: httpie.internal.update_warnings.check_updates
+    to: httpie.utils.open_with_lockfile
+    kind: call
+    edge_id: 25
+    range:
+      start_line: 170
+      start_col: 0
+      end_line: 170
+      end_col: 0
+  - from: httpie.internal.update_warnings.check_updates
+    to: json.dump
+    kind: call
+    edge_id: 26
+    range:
+      start_line: 171
+      start_col: 0
+      end_line: 171
+      end_col: 0
+  - from: httpie.internal.update_warnings._read_data_error_free
+    to: json.load
+    kind: call
+    edge_id: 27
+    range:
+      start_line: 35
+      start_col: 0
+      end_line: 35
+      end_col: 0
+  - from: httpie.internal.update_warnings._fetch_updates
+    to: datetime.datetime.now
+    kind: call
+    edge_id: 28
+    range:
+      start_line: 48
+      start_col: 0
+      end_line: 48
+      end_col: 0
+  - from: httpie.internal.update_warnings._get_update_status
+    to: httpie.utils.open_with_lockfile
+    kind: call
+    edge_id: 29
+    range:
+      start_line: 117
+      start_col: 0
+      end_line: 117
+      end_col: 0
+  - from: httpie.internal.update_warnings._get_update_status
+    to: json.load
+    kind: call
+    edge_id: 30
+    range:
+      start_line: 118
+      start_col: 0
+      end_line: 118
+      end_col: 0
+  - from: httpie.internal.update_warnings._get_update_status
+    to: httpie.utils.is_version_greater
+    kind: call
+    edge_id: 31
+    range:
+      start_line: 126
+      start_col: 0
+      end_line: 126
+      end_col: 0
+  - from: httpie.internal.update_warnings.check_updates
+    to: datetime.datetime.fromisoformat
+    kind: call
+    edge_id: 32
+    range:
+      start_line: 162
+      start_col: 0
+      end_line: 162
+      end_col: 0

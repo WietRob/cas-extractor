@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-tests.test_transport_plugin.FakeTransportPlugin
+kind: entity
+type: py.class
+name: FakeTransportPlugin
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_transport_plugin.py
+anchors:
+- type: symbol
+  value: tests.test_transport_plugin.FakeTransportPlugin
+- type: fingerprint
+  value: 43bbc2a1687008d4fce365c00c82cebf7bda0f4f809002ca12bf66b8b736ddba
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_transport_plugin

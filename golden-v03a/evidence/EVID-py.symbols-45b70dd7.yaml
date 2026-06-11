@@ -1,0 +1,69 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-45b70dd7
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:53.034974+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.output.ui.rich_help
+    kind: module
+    file: httpie/output/ui/rich_help.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 230
+      end_col: 0
+    fingerprint: 880105e8f7bced88e9d5c89780006836f92e1c1ba85f551e093395770a519003
+  - qualified: httpie.output.ui.rich_help.OptionsHighlighter
+    kind: class
+    file: httpie/output/ui/rich_help.py
+    range:
+      start_line: 44
+      start_col: 0
+      end_line: 48
+      end_col: 0
+    fingerprint: 7a0d7975dc475809f9a1ee7525cfce3ed2586b6a19aadb1cabc06359bd0033dc
+  - qualified: httpie.output.ui.rich_help.unpack_argument
+    kind: function
+    file: httpie/output/ui/rich_help.py
+    range:
+      start_line: 54
+      start_col: 0
+      end_line: 69
+      end_col: 0
+    fingerprint: d441e11550dfac8689c4071fd110337765a3831e07696cf43fe002089b6f1963
+    params:
+    - name: argument
+      annotation: Argument
+    returns: Tuple[Text, Text]
+  - qualified: httpie.output.ui.rich_help.to_usage
+    kind: function
+    file: httpie/output/ui/rich_help.py
+    range:
+      start_line: 72
+      start_col: 0
+      end_line: 123
+      end_col: 0
+    fingerprint: 344a510c306e1535e6eb3f528d2e0631c3a19241164c9e558200638602c768d7
+    params:
+    - name: spec
+      annotation: ParserSpec
+    returns: RenderableType
+  - qualified: httpie.output.ui.rich_help.to_help_message
+    kind: function
+    file: httpie/output/ui/rich_help.py
+    range:
+      start_line: 128
+      start_col: 0
+      end_line: 230
+      end_col: 0
+    fingerprint: 6175331c77654567e58854efbd13d4b5685e5b06489d822d93212ba7c26e4408
+    params:
+    - name: spec
+      annotation: ParserSpec
+    returns: Iterable[RenderableType]

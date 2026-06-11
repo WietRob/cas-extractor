@@ -1,0 +1,45 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-a5d66ed3
+kind: evidence
+type: py.symbols
+created_at: '2026-02-23T13:01:14.640864+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://h28-test
+  root: /tmp/h28-verify
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: test_h28.TestP7H28OverridesH2.__init__
+    kind: method
+    file: test_h28.py
+    range:
+      start_line: 175
+      start_col: 0
+      end_line: 176
+      end_col: 0
+    fingerprint: 1f257cf09753858235af1cb309e073f1de2a801c757789f1d23471974a1f4e05
+    params:
+    - name: self
+  - qualified: test_h28.TestP7H28OverridesH2.setup
+    kind: method
+    file: test_h28.py
+    range:
+      start_line: 178
+      start_col: 0
+      end_line: 179
+      end_col: 0
+    fingerprint: 7338016a24102bac466c919ebc79247e8edcff36ba54f462a5d259113bf2129a
+    params:
+    - name: self
+  - qualified: test_h28.TestP7H28OverridesH2.run
+    kind: method
+    file: test_h28.py
+    range:
+      start_line: 181
+      start_col: 0
+      end_line: 183
+      end_col: 0
+    fingerprint: 35ee314bf232fe7fdcd1e5898dd44c046b7420563ac3a104686c013fc74267ef
+    params:
+    - name: self

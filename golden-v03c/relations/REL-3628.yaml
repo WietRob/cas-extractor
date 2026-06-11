@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-3628
+kind: relation
+type: calls
+from: PYFUNC-tests.conftest.httpbin_with_chunked_support
+to: PYFUNC-pytest.fixture
+confidence:
+  level: E1
+  direction: confirmed
+evidence:
+- EVID-py.callgraph-d03b13a5
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1

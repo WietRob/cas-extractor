@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-tests.test_binary.TestBinaryRequestData
+kind: entity
+type: py.class
+name: TestBinaryRequestData
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_binary.py
+anchors:
+- type: symbol
+  value: tests.test_binary.TestBinaryRequestData
+- type: fingerprint
+  value: 775a6e9dae856023374ab696d2f27f3bd531a5fcdea6f2218f827e5ba2e78703
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_binary

@@ -1,0 +1,74 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-51469ee1
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-22T08:37:45.448973+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.existing_values.remove
+  - symbol: ?.self.getone
+  - symbol: ?.self.popall
+  - symbol: ?.self.popone
+  - symbol: ?.super().add
+  - symbol: httpie.cli.dicts.HTTPHeadersDict.add
+  - symbol: httpie.cli.dicts.HTTPHeadersDict.remove_item
+  edges:
+  - from: httpie.cli.dicts.HTTPHeadersDict.add
+    to: ?.super().add
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 36
+      start_col: 0
+      end_line: 36
+      end_col: 0
+  - from: httpie.cli.dicts.HTTPHeadersDict.remove_item
+    to: ?.self.popall
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 42
+      start_col: 0
+      end_line: 42
+      end_col: 0
+  - from: httpie.cli.dicts.HTTPHeadersDict.remove_item
+    to: ?.existing_values.remove
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 43
+      start_col: 0
+      end_line: 43
+      end_col: 0
+  - from: httpie.cli.dicts.HTTPHeadersDict.add
+    to: ?.self.popone
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 34
+      start_col: 0
+      end_line: 34
+      end_col: 0
+  - from: httpie.cli.dicts.HTTPHeadersDict.remove_item
+    to: httpie.cli.dicts.HTTPHeadersDict.add
+    kind: method_call
+    edge_id: 4
+    range:
+      start_line: 46
+      start_col: 0
+      end_line: 46
+      end_col: 0
+  - from: httpie.cli.dicts.HTTPHeadersDict.add
+    to: ?.self.getone
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 33
+      start_col: 0
+      end_line: 33
+      end_col: 0

@@ -1,0 +1,116 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-30ce5fce
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:55.020447+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.output.formatters.colors.ColorFormatter.__init__
+    kind: method
+    file: httpie/output/formatters/colors.py
+    range:
+      start_line: 51
+      start_col: 0
+      end_line: 79
+      end_col: 0
+    fingerprint: 0912272719a38a200a835ddd40793720d7e1eaa986e2ae807d015ced23e1776b
+    params:
+    - name: self
+    - name: env
+      annotation: Environment
+    - name: explicit_json
+    - name: color_scheme
+  - qualified: httpie.output.formatters.colors.ColorFormatter.format_headers
+    kind: method
+    file: httpie/output/formatters/colors.py
+    range:
+      start_line: 81
+      start_col: 0
+      end_line: 86
+      end_col: 0
+    fingerprint: 2040e08e6c8e23eb98b15b229c4afab1a4490fc8d3b738eaa47f8712d9c6c2af
+    params:
+    - name: self
+    - name: headers
+      annotation: str
+    returns: str
+  - qualified: httpie.output.formatters.colors.ColorFormatter.format_body
+    kind: method
+    file: httpie/output/formatters/colors.py
+    range:
+      start_line: 88
+      start_col: 0
+      end_line: 96
+      end_col: 0
+    fingerprint: 7089119193d9a85015a6a97e23a5ac86fe17a1c36ea0ca6b25c93eb236042af8
+    params:
+    - name: self
+    - name: body
+      annotation: str
+    - name: mime
+      annotation: str
+    returns: str
+  - qualified: httpie.output.formatters.colors.ColorFormatter.format_metadata
+    kind: method
+    file: httpie/output/formatters/colors.py
+    range:
+      start_line: 98
+      start_col: 0
+      end_line: 103
+      end_col: 0
+    fingerprint: ca148b9497455c77a01bf23b2595d24c644cee89fe7b54ba87d9e462dc6e1d79
+    params:
+    - name: self
+    - name: metadata
+      annotation: str
+    returns: str
+  - qualified: httpie.output.formatters.colors.ColorFormatter.get_lexer_for_body
+    kind: method
+    file: httpie/output/formatters/colors.py
+    range:
+      start_line: 105
+      start_col: 0
+      end_line: 113
+      end_col: 0
+    fingerprint: 7c0b67b5688978f308fc833c216018b17e707844d984bd34148f760e7b91269b
+    params:
+    - name: self
+    - name: mime
+      annotation: str
+    - name: body
+      annotation: str
+    returns: Optional[Type[Lexer]]
+  - qualified: httpie.output.formatters.colors.ColorFormatter.get_formatters
+    kind: method
+    file: httpie/output/formatters/colors.py
+    range:
+      start_line: 115
+      start_col: 0
+      end_line: 132
+      end_col: 0
+    fingerprint: 363afd2091ca56e272ca33ebc89d2113b6b6f79487bae75ddc41922fcb11204e
+    params:
+    - name: self
+    - name: color_scheme
+      annotation: str
+    returns: Tuple[pygments.formatter.Formatter, pygments.formatter.Formatter, bool]
+  - qualified: httpie.output.formatters.colors.ColorFormatter.get_style_class
+    kind: method
+    file: httpie/output/formatters/colors.py
+    range:
+      start_line: 135
+      start_col: 0
+      end_line: 139
+      end_col: 0
+    fingerprint: 4be90b1cfd6d604a8e799a1be6b2f503fbb3148115cec7350f329b0caa32b60a
+    decorators:
+    - staticmethod
+    params:
+    - name: color_scheme
+      annotation: str
+    returns: Type[pygments.style.Style]

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-tests.utils.BaseCLIResponse
+kind: entity
+type: py.class
+name: BaseCLIResponse
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/utils/__init__.py
+anchors:
+- type: symbol
+  value: tests.utils.BaseCLIResponse
+- type: fingerprint
+  value: da799e65b7a3611ded49210b722241a43ef8a9b89191fad32b58038abec449b1
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils

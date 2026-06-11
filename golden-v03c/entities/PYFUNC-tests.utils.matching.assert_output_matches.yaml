@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.utils.matching.assert_output_matches
+kind: entity
+type: py.function
+name: assert_output_matches
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/utils/matching/__init__.py
+anchors:
+- type: symbol
+  value: tests.utils.matching.assert_output_matches
+- type: fingerprint
+  value: ddc359569a3237057b675dc1a8dffe0a70f3d87a47bdc3d9d299ab66b04c69f8
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils.matching

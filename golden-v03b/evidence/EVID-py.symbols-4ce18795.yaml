@@ -1,0 +1,182 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-4ce18795
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:55.267547+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.utils
+    kind: module
+    file: tests/utils/__init__.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 455
+      end_col: 0
+    fingerprint: 2759bc6481723755a77f96dc2fbb59e9e9c66944bd743a65660f6dfd30b301c3
+  - qualified: tests.utils.strip_colors
+    kind: function
+    file: tests/utils/__init__.py
+    range:
+      start_line: 57
+      start_col: 0
+      end_line: 58
+      end_col: 0
+    fingerprint: de710e9e421c261bd5204e48c280182d9fafe63b6ee0f13da7f63b8fc2019eaa
+    params:
+    - name: colorized_msg
+      annotation: str
+    returns: str
+  - qualified: tests.utils.mk_config_dir
+    kind: function
+    file: tests/utils/__init__.py
+    range:
+      start_line: 61
+      start_col: 0
+      end_line: 63
+      end_col: 0
+    fingerprint: 9d427ef716555a1be5dcb8e084f62fb81ea85217d0191144fc6821c46c72c681
+    returns: Path
+  - qualified: tests.utils.add_auth
+    kind: function
+    file: tests/utils/__init__.py
+    range:
+      start_line: 66
+      start_col: 0
+      end_line: 68
+      end_col: 0
+    fingerprint: 7431b7d9eefe533a191bd5956334d8fb25a2c087b7ab0270e8facff212408b6f
+    params:
+    - name: url
+    - name: auth
+  - qualified: tests.utils.Encoder
+    kind: class
+    file: tests/utils/__init__.py
+    range:
+      start_line: 71
+      start_col: 0
+      end_line: 105
+      end_col: 0
+    fingerprint: b70fe507525debe95887fd92f9427bc680bc4fc1c438f5fcf933df5edb974fec
+  - qualified: tests.utils.FakeBytesIOBuffer
+    kind: class
+    file: tests/utils/__init__.py
+    range:
+      start_line: 108
+      start_col: 0
+      end_line: 121
+      end_col: 0
+    fingerprint: ae9bfecd02864e3c4a17ac5cc8d378a9d16d056c8c475b6d2d36934dd153efad
+  - qualified: tests.utils.StdinBytesIO
+    kind: class
+    file: tests/utils/__init__.py
+    range:
+      start_line: 124
+      start_col: 0
+      end_line: 126
+      end_col: 0
+    fingerprint: 9ce2144e834b9b8d98662b0c94885ff07df8a09ed15eae2b1c071368787465cf
+  - qualified: tests.utils.MockEnvironment
+    kind: class
+    file: tests/utils/__init__.py
+    range:
+      start_line: 129
+      start_col: 0
+      end_line: 184
+      end_col: 0
+    fingerprint: d8a54008554c1ee0ea620ad110950dc606bc5615230ca0e30296a67012b49be6
+  - qualified: tests.utils.PersistentMockEnvironment
+    kind: class
+    file: tests/utils/__init__.py
+    range:
+      start_line: 187
+      start_col: 0
+      end_line: 189
+      end_col: 0
+    fingerprint: 8faed98f0e4fb93647e0e209cba5342616a9aa26f0d8eb092fa27ea51a832ca5
+  - qualified: tests.utils.BaseCLIResponse
+    kind: class
+    file: tests/utils/__init__.py
+    range:
+      start_line: 192
+      start_col: 0
+      end_line: 227
+      end_col: 0
+    fingerprint: da799e65b7a3611ded49210b722241a43ef8a9b89191fad32b58038abec449b1
+  - qualified: tests.utils.BytesCLIResponse
+    kind: class
+    file: tests/utils/__init__.py
+    range:
+      start_line: 230
+      start_col: 0
+      end_line: 238
+      end_col: 0
+    fingerprint: a246e8f51d5434b619a1042bd6fbdf9ae9ddda6257bf2530d2c5735b88629fce
+  - qualified: tests.utils.StrCLIResponse
+    kind: class
+    file: tests/utils/__init__.py
+    range:
+      start_line: 241
+      start_col: 0
+      end_line: 272
+      end_col: 0
+    fingerprint: 73247bf77461160359d1cc8038e41d2317bf4cbc57d65a826c7c5e34866bf6c4
+  - qualified: tests.utils.ExitStatusError
+    kind: class
+    file: tests/utils/__init__.py
+    range:
+      start_line: 275
+      start_col: 0
+      end_line: 276
+      end_col: 0
+    fingerprint: 345ff1d9a65b270aa7c7b6706a170e2046a8f6b108f4a8c29857a4aafcdd1dce
+  - qualified: tests.utils.mock_env
+    kind: function
+    file: tests/utils/__init__.py
+    range:
+      start_line: 280
+      start_col: 0
+      end_line: 283
+      end_col: 0
+    fingerprint: 7ae877f17d73d53ac6b7a437b6ee70577706c046e41ee0c55f36b1475f461995
+    decorators:
+    - pytest.fixture
+    returns: MockEnvironment
+  - qualified: tests.utils.normalize_args
+    kind: function
+    file: tests/utils/__init__.py
+    range:
+      start_line: 286
+      start_col: 0
+      end_line: 287
+      end_col: 0
+    fingerprint: 071b26f83e8560ea574d33801814c202c5b90191f3f2209c6eb940bfa493ed0c
+    params:
+    - name: args
+      annotation: Iterable[Any]
+    returns: List[str]
+  - qualified: tests.utils.httpie
+    kind: function
+    file: tests/utils/__init__.py
+    range:
+      start_line: 290
+      start_col: 0
+      end_line: 323
+      end_col: 0
+    fingerprint: 25d8c46bf9c96fbf74a052b31ab6e20bad2ae8340934773bd04e8f21d07560c1
+    returns: StrCLIResponse
+  - qualified: tests.utils.http
+    kind: function
+    file: tests/utils/__init__.py
+    range:
+      start_line: 326
+      start_col: 0
+      end_line: 455
+      end_col: 0
+    fingerprint: 904f5b0b63ee7b949bb86173ccbd6d422a103b9be75bb1411d1438700ccc3637
+    returns: Union[StrCLIResponse, BytesCLIResponse]

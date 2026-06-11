@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_httpie.test_main_entry_point_keyboard_interrupt
+kind: entity
+type: py.function
+name: test_main_entry_point_keyboard_interrupt
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_httpie.py
+anchors:
+- type: symbol
+  value: tests.test_httpie.test_main_entry_point_keyboard_interrupt
+- type: fingerprint
+  value: b08e0305c62378b764638a6e26fcc133d163071f7d99ca76d1073a56b65e14a5
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_httpie

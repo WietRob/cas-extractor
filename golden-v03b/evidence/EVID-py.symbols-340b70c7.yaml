@@ -1,0 +1,21 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-340b70c7
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:55.136936+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.test_auth_plugins.test_auth_plugin_require_auth_false.Plugin
+    kind: class
+    file: tests/test_auth_plugins.py
+    range:
+      start_line: 58
+      start_col: 0
+      end_line: 66
+      end_col: 0
+    fingerprint: c04ca0b74d9e19a70e13d76e951e8a077837810f235f1ab891e5d5d929817308

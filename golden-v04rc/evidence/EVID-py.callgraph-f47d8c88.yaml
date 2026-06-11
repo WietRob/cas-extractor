@@ -1,0 +1,141 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-f47d8c88
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-22T08:37:45.808624+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.final_boundary_re.search
+  - symbol: ?.match.end
+  - symbol: ?.s.index
+  - symbol: ?.s.lower
+  - symbol: re.compile
+  - symbol: tests.utils.matching.parsing.OutputMatchingError
+  - symbol: tests.utils.matching.parsing.expect_body
+  - symbol: tests.utils.matching.parsing.expect_regex
+  - symbol: tests.utils.matching.parsing.expect_token
+  - symbol: tests.utils.matching.parsing.expect_tokens
+  - symbol: tests.utils.matching.parsing.make_headers_re
+  edges:
+  - from: tests.utils.matching.parsing.make_headers_re
+    to: re.compile
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 29
+      start_col: 0
+      end_line: 37
+      end_col: 0
+  - from: tests.utils.matching.parsing.expect_tokens
+    to: tests.utils.matching.parsing.expect_token
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 58
+      start_col: 0
+      end_line: 58
+      end_col: 0
+  - from: tests.utils.matching.parsing.expect_tokens
+    to: tests.utils.matching.parsing.OutputMatchingError
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 60
+      start_col: 0
+      end_line: 60
+      end_col: 0
+  - from: tests.utils.matching.parsing.expect_token
+    to: tests.utils.matching.parsing.expect_body
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 65
+      start_col: 0
+      end_line: 65
+      end_col: 0
+  - from: tests.utils.matching.parsing.expect_token
+    to: tests.utils.matching.parsing.expect_regex
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 67
+      start_col: 0
+      end_line: 67
+      end_col: 0
+  - from: tests.utils.matching.parsing.expect_regex
+    to: tests.utils.matching.parsing.OutputMatchingError
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 74
+      start_col: 0
+      end_line: 74
+      end_col: 0
+  - from: tests.utils.matching.parsing.expect_body
+    to: ?.s.lower
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 83
+      start_col: 0
+      end_line: 83
+      end_col: 0
+  - from: tests.utils.matching.parsing.expect_body
+    to: re.compile
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 85
+      start_col: 0
+      end_line: 85
+      end_col: 0
+  - from: tests.utils.matching.parsing.expect_body
+    to: ?.final_boundary_re.search
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 86
+      start_col: 0
+      end_line: 86
+      end_col: 0
+  - from: tests.utils.matching.parsing.expect_body
+    to: ?.s.index
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 90
+      start_col: 0
+      end_line: 90
+      end_col: 0
+  - from: tests.utils.matching.parsing.expect_regex
+    to: ?.match.end
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 75
+      start_col: 0
+      end_line: 75
+      end_col: 0
+  - from: tests.utils.matching.parsing.expect_body
+    to: tests.utils.matching.parsing.OutputMatchingError
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 96
+      start_col: 0
+      end_line: 96
+      end_col: 0
+  - from: tests.utils.matching.parsing.expect_body
+    to: ?.match.end
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 88
+      start_col: 0
+      end_line: 88
+      end_col: 0

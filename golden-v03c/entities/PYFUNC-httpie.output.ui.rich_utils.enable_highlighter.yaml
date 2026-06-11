@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.ui.rich_utils.enable_highlighter
+kind: entity
+type: py.function
+name: enable_highlighter
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/ui/rich_utils.py
+anchors:
+- type: symbol
+  value: httpie.output.ui.rich_utils.enable_highlighter
+- type: fingerprint
+  value: c2d76b7cca3bfce6a6c9acda961cd93971d692e2c46f2a89fc6ae0141b59b6f2
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.ui.rich_utils

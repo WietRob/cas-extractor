@@ -1,0 +1,25 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-2c7465c3
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:51:32.246554+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.manager.compat.PipError.__init__
+    kind: method
+    file: httpie/manager/compat.py
+    range:
+      start_line: 13
+      start_col: 0
+      end_line: 15
+      end_col: 0
+    fingerprint: f9ec39c3c80eb48597a7b609281f18cf03e7bdba7944a6d0ab913e318c8fd819
+    params:
+    - name: self
+    - name: stdout
+    - name: stderr

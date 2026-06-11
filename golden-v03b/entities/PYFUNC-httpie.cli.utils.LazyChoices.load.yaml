@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.utils.LazyChoices.load
+kind: entity
+type: py.function
+name: load
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/utils.py
+anchors:
+- type: symbol
+  value: httpie.cli.utils.LazyChoices.load
+- type: fingerprint
+  value: 70401e59ae22414c209dab8a7d84cec81221d0740bbc4faf3ab3a6a16647c1f7
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.utils.LazyChoices

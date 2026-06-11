@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_json.test_json_formatter_with_body_preceded_by_non_json_data
+kind: entity
+type: py.function
+name: test_json_formatter_with_body_preceded_by_non_json_data
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_json.py
+anchors:
+- type: symbol
+  value: tests.test_json.test_json_formatter_with_body_preceded_by_non_json_data
+- type: fingerprint
+  value: dbc7afd902ff8442a1e2c95c529a0260b3f0a8a5979cda88c3a60df4dc1006b5
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_json

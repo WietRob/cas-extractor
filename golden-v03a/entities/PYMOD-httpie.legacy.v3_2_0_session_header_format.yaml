@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.legacy.v3_2_0_session_header_format
+kind: entity
+type: py.module
+name: v3_2_0_session_header_format
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/legacy/v3_2_0_session_header_format.py
+anchors:
+- type: symbol
+  value: httpie.legacy.v3_2_0_session_header_format
+- type: fingerprint
+  value: 495c0dd41cb5665d8c71c60aacd45066ff42de8cd6c6e72bf1e4c37516622b34
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.legacy

@@ -1,0 +1,158 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-d9aceecd
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:54.977726+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.context.Environment.__init__
+    kind: method
+    file: httpie/context.py
+    range:
+      start_line: 93
+      start_col: 0
+      end_line: 121
+      end_col: 0
+    fingerprint: e6a331d79d1d0ba161efc6c761fd57d6119e874ed6e7ee9c511e5c607be0c28c
+    params:
+    - name: self
+    - name: devnull
+  - qualified: httpie.context.Environment.__str__
+    kind: method
+    file: httpie/context.py
+    range:
+      start_line: 123
+      start_col: 0
+      end_line: 132
+      end_col: 0
+    fingerprint: 93fcb0677cf87d4ca68dedc4cf90a5c5eda35828dc0e0bc09fdd5781b0d8e352
+    params:
+    - name: self
+  - qualified: httpie.context.Environment.__repr__
+    kind: method
+    file: httpie/context.py
+    range:
+      start_line: 134
+      start_col: 0
+      end_line: 135
+      end_col: 0
+    fingerprint: e4a579212af7519e2807b4f3fc8eef1fb03b01815b695f6cacebd1607d894679
+    params:
+    - name: self
+  - qualified: httpie.context.Environment.config
+    kind: method
+    file: httpie/context.py
+    range:
+      start_line: 140
+      start_col: 0
+      end_line: 149
+      end_col: 0
+    fingerprint: 68339c69c3d2c1e7abc4a59dd067a96ecd040135148b157b613527b5c9b62b25
+    decorators:
+    - property
+    params:
+    - name: self
+    returns: Config
+  - qualified: httpie.context.Environment.devnull
+    kind: method
+    file: httpie/context.py
+    range:
+      start_line: 152
+      start_col: 0
+      end_line: 155
+      end_col: 0
+    fingerprint: bba14cf5c4f95cc366964aae32b73f96a9dcd0738dc5c617eb6472c62a680114
+    decorators:
+    - property
+    params:
+    - name: self
+    returns: IO
+  - qualified: httpie.context.Environment.as_silent
+    kind: method
+    file: httpie/context.py
+    range:
+      start_line: 158
+      start_col: 0
+      end_line: 168
+      end_col: 0
+    fingerprint: 126492e412caf5871556fa47edd62bd53c7ec3760dfc0b627864771e2fb28bbb
+    decorators:
+    - contextmanager
+    params:
+    - name: self
+    returns: Iterator[None]
+  - qualified: httpie.context.Environment.log_error
+    kind: method
+    file: httpie/context.py
+    range:
+      start_line: 170
+      start_col: 0
+      end_line: 182
+      end_col: 0
+    fingerprint: 2f4d87e15f4a52fa54486be8fe52a4ffb2f44ec31ff1a8d7c7476e4dcf61bb3b
+    params:
+    - name: self
+    - name: msg
+      annotation: str
+    - name: level
+      annotation: LogLevel
+    returns: None
+  - qualified: httpie.context.Environment.apply_warnings_filter
+    kind: method
+    file: httpie/context.py
+    range:
+      start_line: 184
+      start_col: 0
+      end_line: 186
+      end_col: 0
+    fingerprint: e798167c62379c5e85d70546cf24dc3149fd4e04c467e1aa31258bea4abed065
+    params:
+    - name: self
+    returns: None
+  - qualified: httpie.context.Environment._make_rich_console
+    kind: method
+    file: httpie/context.py
+    range:
+      start_line: 188
+      start_col: 0
+      end_line: 205
+      end_col: 0
+    fingerprint: 4aba195b3f8a0605c1f1324a42c798be7dab6ef1d3d0c50f436a65ae94948254
+    params:
+    - name: self
+    - name: file
+      annotation: IO[str]
+    - name: force_terminal
+      annotation: bool
+    returns: '''Console'''
+  - qualified: httpie.context.Environment.rich_console
+    kind: method
+    file: httpie/context.py
+    range:
+      start_line: 212
+      start_col: 0
+      end_line: 213
+      end_col: 0
+    fingerprint: 772086c5fc8117fc888b8b6079cd78191c558b7840b7a847302330459a4b90f7
+    decorators:
+    - cached_property
+    params:
+    - name: self
+  - qualified: httpie.context.Environment.rich_error_console
+    kind: method
+    file: httpie/context.py
+    range:
+      start_line: 216
+      start_col: 0
+      end_line: 217
+      end_col: 0
+    fingerprint: bad1dfb25a7d93395549b50b8224ff79fc82b4eb34f1142efa12e5c7a2602f11
+    decorators:
+    - cached_property
+    params:
+    - name: self

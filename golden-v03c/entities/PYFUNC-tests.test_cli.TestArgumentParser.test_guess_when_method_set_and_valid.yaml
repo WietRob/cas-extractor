@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_cli.TestArgumentParser.test_guess_when_method_set_and_valid
+kind: entity
+type: py.function
+name: test_guess_when_method_set_and_valid
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_cli.py
+anchors:
+- type: symbol
+  value: tests.test_cli.TestArgumentParser.test_guess_when_method_set_and_valid
+- type: fingerprint
+  value: 4e92af893308551394523229ee0658f935bc32dd8e8557156559a46a0585f018
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_cli.TestArgumentParser

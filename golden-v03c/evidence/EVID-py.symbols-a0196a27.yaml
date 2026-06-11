@@ -1,0 +1,71 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-a0196a27
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T17:44:04.517328+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.utils.MockEnvironment.__init__
+    kind: method
+    file: tests/utils/__init__.py
+    range:
+      start_line: 137
+      start_col: 0
+      end_line: 156
+      end_col: 0
+    fingerprint: 1d833a0f5de403d241b1309bbcc518345cf4642812793435b4912b8bd6dc4369
+    params:
+    - name: self
+    - name: create_temp_config_dir
+  - qualified: tests.utils.MockEnvironment.config
+    kind: method
+    file: tests/utils/__init__.py
+    range:
+      start_line: 159
+      start_col: 0
+      end_line: 163
+      end_col: 0
+    fingerprint: 3b268b6878363a7a1fede2ce40ae6906ca6a15cd178fe368fde230f5ff7b504e
+    decorators:
+    - property
+    params:
+    - name: self
+    returns: Config
+  - qualified: tests.utils.MockEnvironment.create_temp_config_dir
+    kind: method
+    file: tests/utils/__init__.py
+    range:
+      start_line: 165
+      start_col: 0
+      end_line: 167
+      end_col: 0
+    fingerprint: 4fbcfb9f06cb6b45a719b70d059cd83f1f206717d000b09e88d8dcd97752b3d9
+    params:
+    - name: self
+  - qualified: tests.utils.MockEnvironment.cleanup
+    kind: method
+    file: tests/utils/__init__.py
+    range:
+      start_line: 169
+      start_col: 0
+      end_line: 177
+      end_col: 0
+    fingerprint: f39cb63d610558feefd3f1d1825e25eb64ff19d3add1ed29e98d44e5e5ef98c0
+    params:
+    - name: self
+  - qualified: tests.utils.MockEnvironment.__del__
+    kind: method
+    file: tests/utils/__init__.py
+    range:
+      start_line: 179
+      start_col: 0
+      end_line: 184
+      end_col: 0
+    fingerprint: dcb6d8e4cfa1047d95c3c6bb27d6558837892f85d46422d1e72b96560d9422f9
+    params:
+    - name: self

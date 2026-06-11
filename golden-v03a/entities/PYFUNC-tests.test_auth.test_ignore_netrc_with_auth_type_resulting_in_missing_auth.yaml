@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_auth.test_ignore_netrc_with_auth_type_resulting_in_missing_auth
+kind: entity
+type: py.function
+name: test_ignore_netrc_with_auth_type_resulting_in_missing_auth
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_auth.py
+anchors:
+- type: symbol
+  value: tests.test_auth.test_ignore_netrc_with_auth_type_resulting_in_missing_auth
+- type: fingerprint
+  value: 1a282ff4818e0f9f5226a32afebe45c77f4302d25a4cbeffc7be6be6888ce24f
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_auth

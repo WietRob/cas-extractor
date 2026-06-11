@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-tests.test_compress
+kind: entity
+type: py.module
+name: test_compress
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_compress.py
+anchors:
+- type: symbol
+  value: tests.test_compress
+- type: fingerprint
+  value: d33129f82da3c6a25708f6f9526fb01b5657f6428279e93b59aaedb1d329323e
+  algo: sha256
+claims: []
+relations: []
+namespace: tests

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.utils._max_age_to_expires
+kind: entity
+type: py.function
+name: _max_age_to_expires
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/utils.py
+anchors:
+- type: symbol
+  value: httpie.utils._max_age_to_expires
+- type: fingerprint
+  value: e95d41caaf18401dbab0f6788a875dec93799c1e04ef69a1f16abdf56e932c5a
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.utils

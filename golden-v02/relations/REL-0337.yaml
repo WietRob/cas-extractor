@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-0337
+kind: relation
+type: contains
+from: PYMOD-httpie.cli.exceptions
+to: PYCLS-httpie.cli.exceptions.ParseError
+confidence:
+  level: E0
+  direction: confirmed
+evidence:
+- EVID-py.symbols-3c935c59
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1

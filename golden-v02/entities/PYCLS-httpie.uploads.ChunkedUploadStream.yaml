@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.uploads.ChunkedUploadStream
+kind: entity
+type: py.class
+name: ChunkedUploadStream
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/uploads.py
+anchors:
+- type: symbol
+  value: httpie.uploads.ChunkedUploadStream
+- type: fingerprint
+  value: c1647bbaa82d1c7ddc37252ba4c36b4ca66d06ec1762a35aa67f53452acc39f2
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.uploads

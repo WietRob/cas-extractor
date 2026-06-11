@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.conftest.httpbin_secure_untrusted
+kind: entity
+type: py.function
+name: httpbin_secure_untrusted
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/conftest.py
+anchors:
+- type: symbol
+  value: tests.conftest.httpbin_secure_untrusted
+- type: fingerprint
+  value: d093c048134dfc7517e62090303ad6264e2b7d64200ecd1545f0ace520fe4171
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.conftest

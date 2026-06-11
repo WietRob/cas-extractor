@@ -1,0 +1,270 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-17a5a3d2
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T17:44:05.317230+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.buf.write
+  - symbol: ?.chunk.decode
+  - symbol: ?.headers.get
+  - symbol: ?.message_type
+  - symbol: ?.outfile.flush
+  - symbol: ?.outfile.write
+  - symbol: ?.output_options.any
+  - symbol: ?.processing_options.get_prettify
+  - symbol: ?.stream_class
+  - symbol: ?.stream_kwargs.update
+  - symbol: cli.dicts.HTTPHeadersDict
+  - symbol: httpie.output.writer.build_output_stream_for_message
+  - symbol: httpie.output.writer.get_stream_type_and_kwargs
+  - symbol: httpie.output.writer.write_message
+  - symbol: httpie.output.writer.write_raw_data
+  - symbol: httpie.output.writer.write_stream
+  - symbol: httpie.output.writer.write_stream_with_colors_win
+  - symbol: models.OutputOptions.from_message
+  - symbol: models.ProcessingOptions
+  - symbol: processing.Conversion
+  - symbol: processing.Formatting
+  - symbol: requests.PreparedRequest
+  - symbol: utils.parse_content_type_header
+  edges:
+  - from: httpie.output.writer.write_raw_data
+    to: requests.PreparedRequest
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 108
+      start_col: 0
+      end_line: 108
+      end_col: 0
+  - from: httpie.output.writer.write_raw_data
+    to: models.OutputOptions.from_message
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 112
+      start_col: 0
+      end_line: 112
+      end_col: 0
+  - from: httpie.output.writer.write_raw_data
+    to: httpie.output.writer.write_message
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 113
+      start_col: 0
+      end_line: 119
+      end_col: 0
+  - from: httpie.output.writer.build_output_stream_for_message
+    to: httpie.output.writer.get_stream_type_and_kwargs
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 133
+      start_col: 0
+      end_line: 138
+      end_col: 0
+  - from: httpie.output.writer.get_stream_type_and_kwargs
+    to: ?.processing_options.get_prettify
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 163
+      start_col: 0
+      end_line: 163
+      end_col: 0
+  - from: httpie.output.writer.write_message
+    to: ?.output_options.any
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 34
+      start_col: 0
+      end_line: 34
+      end_col: 0
+  - from: httpie.output.writer.write_message
+    to: httpie.output.writer.build_output_stream_for_message
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 37
+      start_col: 0
+      end_line: 43
+      end_col: 0
+  - from: httpie.output.writer.write_stream
+    to: ?.buf.write
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 74
+      start_col: 0
+      end_line: 74
+      end_col: 0
+  - from: httpie.output.writer.write_raw_data
+    to: cli.dicts.HTTPHeadersDict
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 111
+      start_col: 0
+      end_line: 111
+      end_col: 0
+  - from: httpie.output.writer.build_output_stream_for_message
+    to: ?.stream_kwargs.update
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 140
+      start_col: 0
+      end_line: 140
+      end_col: 0
+  - from: httpie.output.writer.build_output_stream_for_message
+    to: ?.stream_class
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 141
+      start_col: 0
+      end_line: 145
+      end_col: 0
+  - from: httpie.output.writer.get_stream_type_and_kwargs
+    to: ?.headers.get
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 167
+      start_col: 0
+      end_line: 167
+      end_col: 0
+  - from: httpie.output.writer.write_message
+    to: httpie.output.writer.write_stream_with_colors_win
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 50
+      start_col: 0
+      end_line: 50
+      end_col: 0
+  - from: httpie.output.writer.write_message
+    to: httpie.output.writer.write_stream
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 52
+      start_col: 0
+      end_line: 52
+      end_col: 0
+  - from: httpie.output.writer.write_stream
+    to: ?.outfile.flush
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 76
+      start_col: 0
+      end_line: 76
+      end_col: 0
+  - from: httpie.output.writer.write_stream_with_colors_win
+    to: ?.outfile.write
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 93
+      start_col: 0
+      end_line: 93
+      end_col: 0
+  - from: httpie.output.writer.write_stream_with_colors_win
+    to: ?.outfile.flush
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 97
+      start_col: 0
+      end_line: 97
+      end_col: 0
+  - from: httpie.output.writer.get_stream_type_and_kwargs
+    to: utils.parse_content_type_header
+    kind: call
+    edge_id: 17
+    range:
+      start_line: 169
+      start_col: 0
+      end_line: 169
+      end_col: 0
+  - from: httpie.output.writer.get_stream_type_and_kwargs
+    to: ?.stream_kwargs.update
+    kind: call
+    edge_id: 18
+    range:
+      start_line: 187
+      start_col: 0
+      end_line: 190
+      end_col: 0
+  - from: httpie.output.writer.get_stream_type_and_kwargs
+    to: ?.stream_kwargs.update
+    kind: call
+    edge_id: 19
+    range:
+      start_line: 193
+      start_col: 0
+      end_line: 202
+      end_col: 0
+  - from: httpie.output.writer.write_message
+    to: ?.processing_options.get_prettify
+    kind: call
+    edge_id: 20
+    range:
+      start_line: 49
+      start_col: 0
+      end_line: 49
+      end_col: 0
+  - from: httpie.output.writer.write_stream_with_colors_win
+    to: ?.chunk.decode
+    kind: call
+    edge_id: 21
+    range:
+      start_line: 93
+      start_col: 0
+      end_line: 93
+      end_col: 0
+  - from: httpie.output.writer.write_raw_data
+    to: models.ProcessingOptions
+    kind: call
+    edge_id: 22
+    range:
+      start_line: 117
+      start_col: 0
+      end_line: 117
+      end_col: 0
+  - from: httpie.output.writer.build_output_stream_for_message
+    to: ?.message_type
+    kind: call
+    edge_id: 23
+    range:
+      start_line: 142
+      start_col: 0
+      end_line: 142
+      end_col: 0
+  - from: httpie.output.writer.get_stream_type_and_kwargs
+    to: processing.Conversion
+    kind: call
+    edge_id: 24
+    range:
+      start_line: 194
+      start_col: 0
+      end_line: 194
+      end_col: 0
+  - from: httpie.output.writer.get_stream_type_and_kwargs
+    to: processing.Formatting
+    kind: call
+    edge_id: 25
+    range:
+      start_line: 195
+      start_col: 0
+      end_line: 201
+      end_col: 0

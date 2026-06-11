@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-3734
+kind: relation
+type: calls
+from: PYFUNC-tests.test_tokens.test_terminal_request_body_response_body
+to: PYFUNC-utils.http
+confidence:
+  level: E1
+  direction: confirmed
+evidence:
+- EVID-py.callgraph-e3fe5588
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1

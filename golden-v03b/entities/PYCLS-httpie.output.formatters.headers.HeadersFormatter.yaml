@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.output.formatters.headers.HeadersFormatter
+kind: entity
+type: py.class
+name: HeadersFormatter
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/formatters/headers.py
+anchors:
+- type: symbol
+  value: httpie.output.formatters.headers.HeadersFormatter
+- type: fingerprint
+  value: f62fe6fdfdb6e2ec80772e2041c7485f8ef1c13c2bdb3280a9053c4c827ee58f
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.formatters.headers

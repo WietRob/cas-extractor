@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.cli.dicts.RequestJSONDataDict
+kind: entity
+type: py.class
+name: RequestJSONDataDict
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/dicts.py
+anchors:
+- type: symbol
+  value: httpie.cli.dicts.RequestJSONDataDict
+- type: fingerprint
+  value: b2eb7792f02f37d16a470333dfdd2479b8e5a5ba2e7335b31f9852c4d3ed4a1d
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.dicts

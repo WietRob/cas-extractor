@@ -1,0 +1,188 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-7027fcc7
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T12:13:54.020577+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: pytest.raises
+  - symbol: requests.Request
+  - symbol: requests.exceptions.ConnectionError
+  - symbol: socket.gaierror
+  - symbol: tests.test_errors.test_error
+  - symbol: tests.test_errors.test_error_custom_dns
+  - symbol: tests.test_errors.test_error_traceback
+  - symbol: tests.test_errors.test_max_headers_limit
+  - symbol: tests.test_errors.test_max_headers_no_limit
+  - symbol: tests.test_errors.test_response_charset_option_unknown_encoding
+  - symbol: tests.test_errors.test_response_mime_option_invalid_mime_type
+  - symbol: unittest.mock.patch
+  - symbol: utils.http
+  edges:
+  - from: tests.test_errors.test_error
+    to: unittest.mock.patch
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 12
+      start_col: 0
+      end_line: 12
+      end_col: 0
+  - from: tests.test_errors.test_error_traceback
+    to: unittest.mock.patch
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 27
+      start_col: 0
+      end_line: 27
+      end_col: 0
+  - from: tests.test_errors.test_error_custom_dns
+    to: unittest.mock.patch
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 36
+      start_col: 0
+      end_line: 36
+      end_col: 0
+  - from: tests.test_errors.test_error
+    to: requests.exceptions.ConnectionError
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 14
+      start_col: 0
+      end_line: 14
+      end_col: 0
+  - from: tests.test_errors.test_error
+    to: requests.Request
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 15
+      start_col: 0
+      end_line: 15
+      end_col: 0
+  - from: tests.test_errors.test_error
+    to: utils.http
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 17
+      start_col: 0
+      end_line: 17
+      end_col: 0
+  - from: tests.test_errors.test_error_traceback
+    to: requests.exceptions.ConnectionError
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 29
+      start_col: 0
+      end_line: 29
+      end_col: 0
+  - from: tests.test_errors.test_error_traceback
+    to: requests.Request
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 30
+      start_col: 0
+      end_line: 30
+      end_col: 0
+  - from: tests.test_errors.test_error_custom_dns
+    to: requests.exceptions.ConnectionError
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 42
+      start_col: 0
+      end_line: 42
+      end_col: 0
+  - from: tests.test_errors.test_error_custom_dns
+    to: socket.gaierror
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 43
+      start_col: 0
+      end_line: 43
+      end_col: 0
+  - from: tests.test_errors.test_error_custom_dns
+    to: utils.http
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 46
+      start_col: 0
+      end_line: 46
+      end_col: 0
+  - from: tests.test_errors.test_response_charset_option_unknown_encoding
+    to: utils.http
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 62
+      start_col: 0
+      end_line: 66
+      end_col: 0
+  - from: tests.test_errors.test_response_mime_option_invalid_mime_type
+    to: utils.http
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 71
+      start_col: 0
+      end_line: 75
+      end_col: 0
+  - from: tests.test_errors.test_error_traceback
+    to: pytest.raises
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 32
+      start_col: 0
+      end_line: 32
+      end_col: 0
+  - from: tests.test_errors.test_error_traceback
+    to: utils.http
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 33
+      start_col: 0
+      end_line: 33
+      end_col: 0
+  - from: tests.test_errors.test_max_headers_limit
+    to: pytest.raises
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 52
+      start_col: 0
+      end_line: 52
+      end_col: 0
+  - from: tests.test_errors.test_max_headers_limit
+    to: utils.http
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 53
+      start_col: 0
+      end_line: 53
+      end_col: 0
+  - from: tests.test_errors.test_max_headers_no_limit
+    to: utils.http
+    kind: call
+    edge_id: 17
+    range:
+      start_line: 58
+      start_col: 0
+      end_line: 58
+      end_col: 0

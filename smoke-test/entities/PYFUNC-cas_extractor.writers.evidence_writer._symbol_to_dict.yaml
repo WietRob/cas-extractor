@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-cas_extractor.writers.evidence_writer._symbol_to_dict
+kind: entity
+type: py.function
+name: _symbol_to_dict
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor/writers/evidence_writer.py
+anchors:
+- type: symbol
+  value: cas_extractor.writers.evidence_writer._symbol_to_dict
+- type: fingerprint
+  value: 9bc4545cf2a91b41db159a23cba79b581522e6359c27c74d3afdb4f8bd532252
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor.writers.evidence_writer

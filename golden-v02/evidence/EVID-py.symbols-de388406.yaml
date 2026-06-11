@@ -1,0 +1,141 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-de388406
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:51:32.231695+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.internal.update_warnings
+    kind: module
+    file: httpie/internal/update_warnings.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 171
+      end_col: 0
+    fingerprint: 51c5278e73dc0d01d6e85a64fb027f5c1c5e3144877ebba913ab91db99a7325a
+  - qualified: httpie.internal.update_warnings._read_data_error_free
+    kind: function
+    file: httpie/internal/update_warnings.py
+    range:
+      start_line: 31
+      start_col: 0
+      end_line: 37
+      end_col: 0
+    fingerprint: 56d431ca15cb3b4a946c189d3da66aff2eb5702d8b74eb1331c4f6ce88c3244e
+    params:
+    - name: file
+      annotation: Path
+    returns: Any
+  - qualified: httpie.internal.update_warnings._fetch_updates
+    kind: function
+    file: httpie/internal/update_warnings.py
+    range:
+      start_line: 40
+      start_col: 0
+      end_line: 52
+      end_col: 0
+    fingerprint: af64eb7e4a0839b6e348af5f8c028e5bea126d058040fe4d7e71d2125fea0756
+    params:
+    - name: env
+      annotation: Environment
+    returns: str
+  - qualified: httpie.internal.update_warnings.fetch_updates
+    kind: function
+    file: httpie/internal/update_warnings.py
+    range:
+      start_line: 55
+      start_col: 0
+      end_line: 59
+      end_col: 0
+    fingerprint: ee2121ce1dddbd6eef0078fe994d294a062de0322ecb25b86473fe0a23cc339e
+    params:
+    - name: env
+      annotation: Environment
+    - name: lazy
+      annotation: bool
+  - qualified: httpie.internal.update_warnings.maybe_fetch_updates
+    kind: function
+    file: httpie/internal/update_warnings.py
+    range:
+      start_line: 62
+      start_col: 0
+      end_line: 75
+      end_col: 0
+    fingerprint: 758040d3713f7791e9ab7ddf1b74bb3be45496b23929a2fdeda4a78f756a4e8e
+    params:
+    - name: env
+      annotation: Environment
+    returns: None
+  - qualified: httpie.internal.update_warnings._get_suppress_context
+    kind: function
+    file: httpie/internal/update_warnings.py
+    range:
+      start_line: 78
+      start_col: 0
+      end_line: 88
+      end_col: 0
+    fingerprint: 6507100c62c0ae630e39d93962cf591ce7c10563cf845c028a1667dd5704fb9c
+    params:
+    - name: env
+      annotation: Environment
+    returns: Any
+  - qualified: httpie.internal.update_warnings._update_checker
+    kind: function
+    file: httpie/internal/update_warnings.py
+    range:
+      start_line: 91
+      start_col: 0
+      end_line: 104
+      end_col: 0
+    fingerprint: 886e2073156ebab0e34f629988f4826179735ff0f4e13959977bbff391a49f58
+    params:
+    - name: func
+      annotation: Callable[[Environment], None]
+    returns: Callable[[Environment], None]
+  - qualified: httpie.internal.update_warnings._get_update_status
+    kind: function
+    file: httpie/internal/update_warnings.py
+    range:
+      start_line: 107
+      start_col: 0
+      end_line: 133
+      end_col: 0
+    fingerprint: 8424608493c1ace8bd16a0efa3b35a610deef3ca1af3c5069d84a9dc6d11cc79
+    params:
+    - name: env
+      annotation: Environment
+    returns: Optional[str]
+  - qualified: httpie.internal.update_warnings.get_update_status
+    kind: function
+    file: httpie/internal/update_warnings.py
+    range:
+      start_line: 136
+      start_col: 0
+      end_line: 137
+      end_col: 0
+    fingerprint: b8b0666dc08f78a3c0741aed2cd9b73b43feea28b7adc67a641587d80b85f3f9
+    params:
+    - name: env
+      annotation: Environment
+    returns: str
+  - qualified: httpie.internal.update_warnings.check_updates
+    kind: function
+    file: httpie/internal/update_warnings.py
+    range:
+      start_line: 141
+      start_col: 0
+      end_line: 171
+      end_col: 0
+    fingerprint: bcdf7d1f946d5774cc6d2cba2c3c86ad995ab596f856cd708e174e477efb81f2
+    decorators:
+    - _update_checker
+    params:
+    - name: env
+      annotation: Environment
+    returns: None

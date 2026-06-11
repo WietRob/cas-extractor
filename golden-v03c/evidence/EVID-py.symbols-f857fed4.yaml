@@ -1,0 +1,25 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-f857fed4
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T17:44:04.342743+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.manager.compat._discover_system_pip._check_pip_version
+    kind: function
+    file: httpie/manager/compat.py
+    range:
+      start_line: 25
+      start_col: 0
+      end_line: 31
+      end_col: 0
+    fingerprint: 6a1d46b16e04b6be35973cafc2f42c9295e82df4834dc87eea42c30adf84e2c4
+    params:
+    - name: pip_location
+      annotation: Optional[str]
+    returns: bool

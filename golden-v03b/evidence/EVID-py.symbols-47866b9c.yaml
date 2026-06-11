@@ -1,0 +1,83 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-47866b9c
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:55.049107+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.output.ui.rich_progress.BaseDisplay.start
+    kind: method
+    file: httpie/output/ui/rich_progress.py
+    range:
+      start_line: 14
+      start_col: 0
+      end_line: 17
+      end_col: 0
+    fingerprint: 570ee6bd64eea639edb60ef20e08cbccfd390f00a86aa0f54b9ff74f73c9b8ec
+    params:
+    - name: self
+    returns: None
+  - qualified: httpie.output.ui.rich_progress.BaseDisplay.update
+    kind: method
+    file: httpie/output/ui/rich_progress.py
+    range:
+      start_line: 19
+      start_col: 0
+      end_line: 20
+      end_col: 0
+    fingerprint: 71d3ac80eb746902e763d08dbcb07cb23a28c62ffad5064083cba4b258afb1c7
+    params:
+    - name: self
+    - name: steps
+      annotation: float
+    returns: None
+  - qualified: httpie.output.ui.rich_progress.BaseDisplay.stop
+    kind: method
+    file: httpie/output/ui/rich_progress.py
+    range:
+      start_line: 22
+      start_col: 0
+      end_line: 23
+      end_col: 0
+    fingerprint: 3e8737a72a2ca4dfdc3275722c54fe82c550d91c4d4a5499394e544bd0464f39
+    params:
+    - name: self
+    - name: time_spent
+      annotation: float
+    returns: None
+  - qualified: httpie.output.ui.rich_progress.BaseDisplay.console
+    kind: method
+    file: httpie/output/ui/rich_progress.py
+    range:
+      start_line: 26
+      start_col: 0
+      end_line: 28
+      end_col: 0
+    fingerprint: d23cae82dd746696b051661b3a2f6ae69ce0caabbde105502cf59acef4678989
+    decorators:
+    - property
+    params:
+    - name: self
+    returns: '''Console'''
+  - qualified: httpie.output.ui.rich_progress.BaseDisplay._print_summary
+    kind: method
+    file: httpie/output/ui/rich_progress.py
+    range:
+      start_line: 30
+      start_col: 0
+      end_line: 52
+      end_col: 0
+    fingerprint: 4a4cfff874c3732649fff9bde317a0d896fbd4e477052e9e25c218f1e9f488ca
+    params:
+    - name: self
+    - name: is_finished
+      annotation: bool
+    - name: observed_steps
+      annotation: int
+    - name: time_spent
+      annotation: float

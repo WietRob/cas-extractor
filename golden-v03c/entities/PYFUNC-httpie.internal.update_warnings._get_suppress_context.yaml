@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.internal.update_warnings._get_suppress_context
+kind: entity
+type: py.function
+name: _get_suppress_context
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/internal/update_warnings.py
+anchors:
+- type: symbol
+  value: httpie.internal.update_warnings._get_suppress_context
+- type: fingerprint
+  value: 6507100c62c0ae630e39d93962cf591ce7c10563cf845c028a1667dd5704fb9c
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.internal.update_warnings

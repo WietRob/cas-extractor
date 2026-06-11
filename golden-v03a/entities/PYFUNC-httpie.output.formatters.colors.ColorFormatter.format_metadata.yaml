@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.formatters.colors.ColorFormatter.format_metadata
+kind: entity
+type: py.function
+name: format_metadata
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/output/formatters/colors.py
+anchors:
+- type: symbol
+  value: httpie.output.formatters.colors.ColorFormatter.format_metadata
+- type: fingerprint
+  value: ca148b9497455c77a01bf23b2595d24c644cee89fe7b54ba87d9e462dc6e1d79
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.formatters.colors.ColorFormatter

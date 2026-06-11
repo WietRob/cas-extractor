@@ -1,0 +1,174 @@
+============================================================
+CAS Validator v0.1
+============================================================
+
+--- Stage 1: Structural (JSON Schema) ---
+[PASS] Structural: 6245/6245 valid, 0 errors, 0 warnings
+
+--- Stage 2: Semantic (Rules R1–R6) ---
+[FAIL] Semantic: 6245 artifacts checked, 2551 violations
+
+Violations:
+  ⚠ [R5] REL-0133
+    Relation source 'PYMOD-httpie.cli.nested_json.parse.parse' not found in entities
+  ⚠ [R5] REL-0134
+    Relation source 'PYMOD-httpie.cli.nested_json.parse.parse' not found in entities
+  ⚠ [R5] REL-0135
+    Relation source 'PYMOD-httpie.cli.nested_json.parse.parse' not found in entities
+  ⚠ [R5] REL-0147
+    Relation source 'PYMOD-tests.test_sessions.Plugin' not found in entities
+  ⚠ [R5] REL-0148
+    Relation source 'PYMOD-tests.test_sessions.Plugin' not found in entities
+  ⚠ [R5] REL-0149
+    Relation source 'PYMOD-tests.test_sessions.Plugin' not found in entities
+  ⚠ [R5] REL-0226
+    Relation source 'PYMOD-tests.utils.http' not found in entities
+  ⚠ [R5] REL-0235
+    Relation source 'PYMOD-tests.test_auth_plugins.basic_auth' not found in entities
+  ⚠ [R5] REL-0270
+    Relation source 'PYMOD-tests.test_sessions.test_auth_plugin_prompt_password_in_session' not found in entities
+  ⚠ [R5] REL-0274
+    Relation source 'PYMOD-tests.utils.plugins_cli.httpie_plugins' not found in entities
+  ⚠ [R5] REL-0279
+    Relation source 'PYMOD-httpie.utils.is_version_greater' not found in entities
+  ⚠ [R5] REL-0292
+    Relation source 'PYMOD-tests.test_auth_plugins.Plugin' not found in entities
+  ⚠ [R5] REL-0293
+    Relation source 'PYMOD-tests.test_auth_plugins.Plugin' not found in entities
+  ⚠ [R5] REL-0294
+    Relation source 'PYMOD-tests.test_auth_plugins.Plugin' not found in entities
+  ⚠ [R5] REL-0295
+    Relation source 'PYMOD-tests.test_auth_plugins.Plugin' not found in entities
+  ⚠ [R5] REL-0316
+    Relation source 'PYMOD-tests.test_auth_plugins.test_auth_plugin_require_auth_false' not found in entities
+  ⚠ [R5] REL-0321
+    Relation source 'PYMOD-tests.test_auth_plugins.test_auth_plugin_prompt_password_false' not found in entities
+  ⚠ [R5] REL-0362
+    Relation source 'PYMOD-tests.test_output.test_header_formatting_options' not found in entities
+  ⚠ [R5] REL-0388
+    Relation source 'PYMOD-tests.test_auth_plugins.test_auth_plugin_require_auth_false_and_auth_provided' not found in entities
+  ⚠ [R5] REL-0405
+    Relation source 'PYMOD-httpie.cli.nested_json.interpret.interpret' not found in entities
+  ⚠ [R5] REL-0406
+    Relation source 'PYMOD-httpie.cli.nested_json.interpret.interpret' not found in entities
+  ⚠ [R5] REL-0407
+    Relation source 'PYMOD-tests.test_downloads.test_unique_filename' not found in entities
+  ⚠ [R5] REL-0528
+    Relation source 'PYMOD-tests.test_output.test_quiet_on_python_warnings' not found in entities
+  ⚠ [R5] REL-0570
+    Relation source 'PYMOD-tests.test_downloads.attempts' not found in entities
+  ⚠ [R5] REL-0633
+    Relation source 'PYMOD-httpie.core.raw_main' not found in entities
+  ⚠ [R5] REL-0657
+    Relation source 'PYMOD-httpie.cli.nested_json.parse.tokenize' not found in entities
+  ⚠ [R5] REL-0658
+    Relation source 'PYMOD-httpie.cli.nested_json.parse.tokenize' not found in entities
+  ⚠ [R5] REL-0660
+    Relation source 'PYMOD-tests.test_auth_plugins.test_auth_plugin_parse_auth_false' not found in entities
+  ⚠ [R5] REL-0674
+    Relation source 'PYMOD-tests.test_sessions.test_auth_type_stored_in_session_file' not found in entities
+  ⚠ [R5] REL-0702
+    Relation source 'PYMOD-httpie.uploads._wrap_function_with_callback' not found in entities
+  ⚠ [R5] REL-0703
+    Relation source 'PYMOD-httpie.cli.requestitems.convert_json_value_to_form_if_needed' not found in entities
+  ⚠ [R5] REL-0717
+    Relation source 'PYMOD-httpie.core.program' not found in entities
+  ⚠ [R5] REL-0718
+    Relation source 'PYMOD-httpie.core.program' not found in entities
+  ⚠ [R5] REL-0744
+    Relation source 'PYMOD-tests.utils.http_server.handler' not found in entities
+  ⚠ [R5] REL-0785
+    Relation source 'PYMOD-tests.utils.plugins_cli.parse_listing' not found in entities
+  ⚠ [R5] REL-0786
+    Relation source 'PYMOD-tests.utils.plugins_cli.parse_listing' not found in entities
+  ⚠ [R5] REL-0801
+    Relation source 'PYMOD-tests.test_cli_ui.ignore_terminal_size' not found in entities
+  ⚠ [R5] REL-0811
+    Relation source 'PYMOD-httpie.cli.argparser._process_output_options' not found in entities
+  ⚠ [R5] REL-0826
+    Relation source 'PYMOD-tests.test_cookie.MockServerRequestHandler' not found in entities
+  ⚠ [R5] REL-0874
+    Relation source 'PYMOD-tests.utils.plugins_cli.httpie_plugins_success' not found in entities
+  ⚠ [R5] REL-0886
+    Relation source 'PYMOD-httpie.utils.get_expired_cookies' not found in entities
+  ⚠ [R5] REL-0975
+    Relation source 'PYMOD-tests.test_sessions.test_auth_type_reused_in_session' not found in entities
+  ⚠ [R5] REL-0988
+    Relation source 'PYMOD-httpie.internal.update_warnings._update_checker' not found in entities
+  ⚠ [R5] REL-1100
+    Relation source 'PYMOD-tests.test_cookie.test_cookie_parser' not found in entities
+  ⚠ [R5] REL-1127
+    Relation source 'PYMOD-httpie.output.formatters.colors.make_style' not found in entities
+  ⚠ [R5] REL-1148
+    Relation source 'PYMOD-extras.profiling.run.run' not found in entities
+  ⚠ [R5] REL-1190
+    Relation source 'PYMOD-httpie.manager.compat._discover_system_pip' not found in entities
+  ⚠ [R5] REL-1227
+    Relation source 'PYMOD-httpie.uploads.observe_stdin_for_data_thread' not found in entities
+  ⚠ [R5] REL-1244
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1246
+    Relation target 'PYMOD-json' not found in entities
+  ⚠ [R5] REL-1247
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1248
+    Relation target 'PYMOD-pygments' not found in entities
+  ⚠ [R5] REL-1251
+    Relation target 'PYMOD-abc' not found in entities
+  ⚠ [R5] REL-1252
+    Relation target 'PYMOD-itertools' not found in entities
+  ⚠ [R5] REL-1253
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1256
+    Relation target 'PYMOD-time' not found in entities
+  ⚠ [R5] REL-1257
+    Relation target 'PYMOD-requests' not found in entities
+  ⚠ [R5] REL-1258
+    Relation target 'PYMOD-urllib3' not found in entities
+  ⚠ [R5] REL-1259
+    Relation target 'PYMOD-enum' not found in entities
+  ⚠ [R5] REL-1260
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1261
+    Relation target 'PYMOD-urllib' not found in entities
+  ⚠ [R5] REL-1263
+    Relation target 'PYMOD-enum' not found in entities
+  ⚠ [R5] REL-1264
+    Relation target 'PYMOD-re' not found in entities
+  ⚠ [R5] REL-1265
+    Relation target 'PYMOD-inspect' not found in entities
+  ⚠ [R5] REL-1266
+    Relation target 'PYMOD-os' not found in entities
+  ⚠ [R5] REL-1267
+    Relation target 'PYMOD-platform' not found in entities
+  ⚠ [R5] REL-1268
+    Relation target 'PYMOD-sys' not found in entities
+  ⚠ [R5] REL-1270
+    Relation target 'PYMOD-contextlib' not found in entities
+  ⚠ [R5] REL-1271
+    Relation target 'PYMOD-subprocess' not found in entities
+  ⚠ [R5] REL-1272
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1273
+    Relation target 'PYMOD-io' not found in entities
+  ⚠ [R5] REL-1274
+    Relation target 'PYMOD-unittest' not found in entities
+  ⚠ [R5] REL-1275
+    Relation target 'PYMOD-pytest' not found in entities
+  ⚠ [R5] REL-1278
+    Relation target 'PYMOD-enum' not found in entities
+  ⚠ [R5] REL-1279
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1280
+    Relation target 'PYMOD-errno' not found in entities
+  ⚠ [R5] REL-1281
+    Relation target 'PYMOD-requests' not found in entities
+  ⚠ [R5] REL-1282
+    Relation target 'PYMOD-typing' not found in entities
+  ⚠ [R5] REL-1285
+    Relation target 'PYMOD-json' not found in entities
+  ⚠ [R5] REL-1286
+    Relation target 'PYMOD-pytest' not found in entities
+  ⚠ [R5] REL-1287
+    Relation target 'PYMOD-responses' not found in entities
+  ⚠ [R5] REL-1288

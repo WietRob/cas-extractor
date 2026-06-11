@@ -1,0 +1,105 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-85448724
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T08:37:44.497204+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.output.ui.palette
+    kind: module
+    file: httpie/output/ui/palette.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 269
+      end_col: 0
+    fingerprint: 3fd203112cb23b3d4717c58501cc061778eb91de8037574f9ea23fece75f3859
+  - qualified: httpie.output.ui.palette.Styles
+    kind: class
+    file: httpie/output/ui/palette.py
+    range:
+      start_line: 11
+      start_col: 0
+      end_line: 13
+      end_col: 0
+    fingerprint: 4ddc8e971d728e0d4d742c99dd0403f11171d2d969aae2cb88e1feb4306b5aa4
+  - qualified: httpie.output.ui.palette.PieStyle
+    kind: class
+    file: httpie/output/ui/palette.py
+    range:
+      start_line: 16
+      start_col: 0
+      end_line: 19
+      end_col: 0
+    fingerprint: a934ff4d75966456eb06c7da7e12cc25aa1d189960228d0e9bcd6a1c09261095
+  - qualified: httpie.output.ui.palette.ColorString
+    kind: class
+    file: httpie/output/ui/palette.py
+    range:
+      start_line: 32
+      start_col: 0
+      end_line: 52
+      end_col: 0
+    fingerprint: 17e8da89d6d3d27a24476c5a627a01c95bcfa16c742f744f7a728abb0a901717
+  - qualified: httpie.output.ui.palette.PieColor
+    kind: class
+    file: httpie/output/ui/palette.py
+    range:
+      start_line: 55
+      start_col: 0
+      end_line: 71
+      end_col: 0
+    fingerprint: 6b7ae02c22aa190c9fc8233296c4fc398fd85bc00e89f1d79949d9ce16e9aca7
+  - qualified: httpie.output.ui.palette.GenericColor
+    kind: class
+    file: httpie/output/ui/palette.py
+    range:
+      start_line: 74
+      start_col: 0
+      end_line: 101
+      end_col: 0
+    fingerprint: 83c15ba1633735438c3d1cd54ccb4126b365a6ae31defe6f90d68b70c4f9e80e
+  - qualified: httpie.output.ui.palette._StyledGenericColor
+    kind: class
+    file: httpie/output/ui/palette.py
+    range:
+      start_line: 105
+      start_col: 0
+      end_line: 107
+      end_col: 0
+    fingerprint: 33423b7f99df1a592e244bb1601d8fcdb69ff1aec15aa1656f4d4ba21d5c5dec
+    decorators:
+    - dataclass
+  - qualified: httpie.output.ui.palette.boldify
+    kind: function
+    file: httpie/output/ui/palette.py
+    range:
+      start_line: 255
+      start_col: 0
+      end_line: 256
+      end_col: 0
+    fingerprint: d455332589811485e56d4d133d00142bb104777500f6c1e4e560a489fb1a7c3f
+    params:
+    - name: color
+      annotation: PieColor
+    returns: str
+  - qualified: httpie.output.ui.palette.get_color
+    kind: function
+    file: httpie/output/ui/palette.py
+    range:
+      start_line: 260
+      start_col: 0
+      end_line: 269
+      end_col: 0
+    fingerprint: a86c1f4c46555c70b079b575a82be58b4663ff4e0e3146af6ca7634999f39925
+    params:
+    - name: color
+      annotation: PieColor
+    - name: shade
+      annotation: str
+    returns: Optional[str]

@@ -1,0 +1,121 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-02bdf4eb
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-22T08:37:45.755236+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: pytest.raises
+  - symbol: tests.test_ssl.TestServerCert.test_self_signed_server_cert_by_default_raises_ssl_error
+  - symbol: tests.test_ssl.TestServerCert.test_verify_custom_ca_bundle_invalid_bundle
+  - symbol: tests.test_ssl.TestServerCert.test_verify_custom_ca_bundle_invalid_path
+  - symbol: tests.test_ssl.TestServerCert.test_verify_custom_ca_bundle_path
+  - symbol: tests.test_ssl.TestServerCert.test_verify_false_OK
+  - symbol: tests.test_ssl.TestServerCert.test_verify_no_OK
+  - symbol: urllib3.disable_warnings
+  - symbol: utils.http
+  edges:
+  - from: tests.test_ssl.TestServerCert.test_verify_no_OK
+    to: urllib3.disable_warnings
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 112
+      start_col: 0
+      end_line: 112
+      end_col: 0
+  - from: tests.test_ssl.TestServerCert.test_verify_no_OK
+    to: utils.http
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 113
+      start_col: 0
+      end_line: 113
+      end_col: 0
+  - from: tests.test_ssl.TestServerCert.test_verify_false_OK
+    to: urllib3.disable_warnings
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 118
+      start_col: 0
+      end_line: 118
+      end_col: 0
+  - from: tests.test_ssl.TestServerCert.test_verify_false_OK
+    to: utils.http
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 119
+      start_col: 0
+      end_line: 119
+      end_col: 0
+  - from: tests.test_ssl.TestServerCert.test_verify_custom_ca_bundle_path
+    to: utils.http
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 125
+      start_col: 0
+      end_line: 125
+      end_col: 0
+  - from: tests.test_ssl.TestServerCert.test_self_signed_server_cert_by_default_raises_ssl_error
+    to: pytest.raises
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 132
+      start_col: 0
+      end_line: 132
+      end_col: 0
+  - from: tests.test_ssl.TestServerCert.test_self_signed_server_cert_by_default_raises_ssl_error
+    to: utils.http
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 133
+      start_col: 0
+      end_line: 133
+      end_col: 0
+  - from: tests.test_ssl.TestServerCert.test_verify_custom_ca_bundle_invalid_path
+    to: pytest.raises
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 137
+      start_col: 0
+      end_line: 137
+      end_col: 0
+  - from: tests.test_ssl.TestServerCert.test_verify_custom_ca_bundle_invalid_path
+    to: utils.http
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 138
+      start_col: 0
+      end_line: 138
+      end_col: 0
+  - from: tests.test_ssl.TestServerCert.test_verify_custom_ca_bundle_invalid_bundle
+    to: pytest.raises
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 141
+      start_col: 0
+      end_line: 141
+      end_col: 0
+  - from: tests.test_ssl.TestServerCert.test_verify_custom_ca_bundle_invalid_bundle
+    to: utils.http
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 142
+      start_col: 0
+      end_line: 142
+      end_col: 0

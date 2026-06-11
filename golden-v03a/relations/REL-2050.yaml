@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-2050
+kind: relation
+type: calls
+from: PYFUNC-httpie.config.Config._configured_path
+to: PYFUNC-pathlib.Path
+confidence:
+  level: E1
+  direction: confirmed
+evidence:
+- EVID-py.callgraph-1c13d1ab
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1

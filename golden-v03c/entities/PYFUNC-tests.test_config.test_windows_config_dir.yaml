@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_config.test_windows_config_dir
+kind: entity
+type: py.function
+name: test_windows_config_dir
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_config.py
+anchors:
+- type: symbol
+  value: tests.test_config.test_windows_config_dir
+- type: fingerprint
+  value: 162aaf0e2895e984279cbd5408094f11d99b25adb09152778adea26dd0ceed54
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_config

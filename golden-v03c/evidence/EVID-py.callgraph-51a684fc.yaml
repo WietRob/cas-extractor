@@ -1,0 +1,192 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-51a684fc
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T17:44:05.208380+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.abstract_options.serialize
+  - symbol: ?.concrete_group.add_argument
+  - symbol: ?.concrete_group.add_mutually_exclusive_group
+  - symbol: ?.concrete_parser.add_argument_group
+  - symbol: ?.concrete_parser.register
+  - symbol: ?.configuration.items
+  - symbol: ?.parser_type
+  - symbol: dataclasses.field
+  - symbol: enum.auto
+  - symbol: httpie.cli.options.Group
+  - symbol: httpie.cli.options.ParserSpec
+  - symbol: httpie.cli.options.Qualifiers
+  - symbol: httpie.cli.options.drop_keys
+  - symbol: httpie.cli.options.map_qualifiers
+  - symbol: httpie.cli.options.parser_to_parser_spec
+  - symbol: httpie.cli.options.to_argparse
+  - symbol: httpie.cli.options.to_data
+  edges:
+  - from: httpie.cli.options.Qualifiers
+    to: enum.auto
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 13
+      start_col: 0
+      end_line: 13
+      end_col: 0
+  - from: httpie.cli.options.Qualifiers
+    to: enum.auto
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 14
+      start_col: 0
+      end_line: 14
+      end_col: 0
+  - from: httpie.cli.options.Qualifiers
+    to: enum.auto
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 15
+      start_col: 0
+      end_line: 15
+      end_col: 0
+  - from: httpie.cli.options.Qualifiers
+    to: enum.auto
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 16
+      start_col: 0
+      end_line: 16
+      end_col: 0
+  - from: httpie.cli.options.ParserSpec
+    to: dataclasses.field
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 46
+      start_col: 0
+      end_line: 46
+      end_col: 0
+  - from: httpie.cli.options.Group
+    to: dataclasses.field
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 77
+      start_col: 0
+      end_line: 77
+      end_col: 0
+  - from: httpie.cli.options.to_argparse
+    to: ?.parser_type
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 197
+      start_col: 0
+      end_line: 201
+      end_col: 0
+  - from: httpie.cli.options.to_argparse
+    to: ?.concrete_parser.register
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 203
+      start_col: 0
+      end_line: 203
+      end_col: 0
+  - from: httpie.cli.options.to_argparse
+    to: ?.concrete_parser.register
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 204
+      start_col: 0
+      end_line: 204
+      end_col: 0
+  - from: httpie.cli.options.parser_to_parser_spec
+    to: httpie.cli.options.ParserSpec
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 244
+      start_col: 0
+      end_line: 249
+      end_col: 0
+  - from: httpie.cli.options.to_argparse
+    to: ?.concrete_parser.add_argument_group
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 207
+      start_col: 0
+      end_line: 209
+      end_col: 0
+  - from: httpie.cli.options.to_data
+    to: ?.abstract_options.serialize
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 239
+      start_col: 0
+      end_line: 239
+      end_col: 0
+  - from: httpie.cli.options.map_qualifiers
+    to: ?.configuration.items
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 24
+      start_col: 0
+      end_line: 24
+      end_col: 0
+  - from: httpie.cli.options.drop_keys
+    to: ?.configuration.items
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 33
+      start_col: 0
+      end_line: 33
+      end_col: 0
+  - from: httpie.cli.options.to_argparse
+    to: ?.concrete_group.add_mutually_exclusive_group
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 211
+      start_col: 0
+      end_line: 211
+      end_col: 0
+  - from: httpie.cli.options.to_argparse
+    to: ?.concrete_group.add_argument
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 214
+      start_col: 0
+      end_line: 219
+      end_col: 0
+  - from: httpie.cli.options.to_argparse
+    to: httpie.cli.options.drop_keys
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 216
+      start_col: 0
+      end_line: 218
+      end_col: 0
+  - from: httpie.cli.options.to_argparse
+    to: httpie.cli.options.map_qualifiers
+    kind: call
+    edge_id: 17
+    range:
+      start_line: 216
+      start_col: 0
+      end_line: 218
+      end_col: 0

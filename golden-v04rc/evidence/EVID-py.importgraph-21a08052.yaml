@@ -1,0 +1,17 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-21a08052
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-22T08:37:44.798384+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  imports:
+  - from: httpie.plugins.builtin
+    imports:
+    - base64.b64encode
+    - requests.auth
+    - httpie.plugins.base.AuthPlugin

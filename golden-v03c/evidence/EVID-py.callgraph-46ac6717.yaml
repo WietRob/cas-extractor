@@ -1,0 +1,124 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-46ac6717
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T17:44:05.249604+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.parser.add_argument
+  - symbol: ?.parser.parse_known_args
+  - symbol: ?.status_file.touch
+  - symbol: argparse.ArgumentParser
+  - symbol: contextlib.redirect_stderr
+  - symbol: contextlib.redirect_stdout
+  - symbol: httpie.internal.daemon_runner._check_status
+  - symbol: httpie.internal.daemon_runner._parse_options
+  - symbol: httpie.internal.daemon_runner.run_daemon_task
+  - symbol: httpie.internal.update_warnings._get_suppress_context
+  - symbol: pathlib.Path
+  - symbol: tempfile.gettempdir
+  edges:
+  - from: httpie.internal.daemon_runner._check_status
+    to: ?.status_file.touch
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 21
+      start_col: 0
+      end_line: 21
+      end_col: 0
+  - from: httpie.internal.daemon_runner._parse_options
+    to: argparse.ArgumentParser
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 31
+      start_col: 0
+      end_line: 31
+      end_col: 0
+  - from: httpie.internal.daemon_runner._parse_options
+    to: ?.parser.add_argument
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 32
+      start_col: 0
+      end_line: 32
+      end_col: 0
+  - from: httpie.internal.daemon_runner._parse_options
+    to: ?.parser.add_argument
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 33
+      start_col: 0
+      end_line: 33
+      end_col: 0
+  - from: httpie.internal.daemon_runner.run_daemon_task
+    to: httpie.internal.daemon_runner._parse_options
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 42
+      start_col: 0
+      end_line: 42
+      end_col: 0
+  - from: httpie.internal.daemon_runner._check_status
+    to: pathlib.Path
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 20
+      start_col: 0
+      end_line: 20
+      end_col: 0
+  - from: httpie.internal.daemon_runner._parse_options
+    to: ?.parser.parse_known_args
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 34
+      start_col: 0
+      end_line: 34
+      end_col: 0
+  - from: httpie.internal.daemon_runner.run_daemon_task
+    to: contextlib.redirect_stdout
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 46
+      start_col: 0
+      end_line: 46
+      end_col: 0
+  - from: httpie.internal.daemon_runner.run_daemon_task
+    to: contextlib.redirect_stderr
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 46
+      start_col: 0
+      end_line: 46
+      end_col: 0
+  - from: httpie.internal.daemon_runner._check_status
+    to: tempfile.gettempdir
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 20
+      start_col: 0
+      end_line: 20
+      end_col: 0
+  - from: httpie.internal.daemon_runner.run_daemon_task
+    to: httpie.internal.update_warnings._get_suppress_context
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 47
+      start_col: 0
+      end_line: 47
+      end_col: 0

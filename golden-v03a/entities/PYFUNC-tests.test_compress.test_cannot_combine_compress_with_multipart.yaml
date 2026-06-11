@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_compress.test_cannot_combine_compress_with_multipart
+kind: entity
+type: py.function
+name: test_cannot_combine_compress_with_multipart
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_compress.py
+anchors:
+- type: symbol
+  value: tests.test_compress.test_cannot_combine_compress_with_multipart
+- type: fingerprint
+  value: 2549faa5c47a974d95f89cd6a5a97a1418323bbe6bbec65ec67ac1580b1af0bf
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_compress

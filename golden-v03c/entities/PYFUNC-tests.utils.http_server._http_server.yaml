@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.utils.http_server._http_server
+kind: entity
+type: py.function
+name: _http_server
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/utils/http_server.py
+anchors:
+- type: symbol
+  value: tests.utils.http_server._http_server
+- type: fingerprint
+  value: c43d0e211464a3877250b1e6e4f5e906520fe0eb6f13d1b24a45547e5eb68cb4
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils.http_server

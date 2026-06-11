@@ -1,0 +1,37 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-a014606d
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-22T08:37:44.799311+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  imports:
+  - from: httpie.sessions
+    imports:
+    - os
+    - re
+    - http.cookies.SimpleCookie
+    - http.cookiejar.Cookie
+    - pathlib.Path
+    - typing.Any
+    - typing.Dict
+    - typing.List
+    - typing.Optional
+    - typing.Union
+    - requests.auth.AuthBase
+    - requests.cookies.RequestsCookieJar
+    - requests.cookies.remove_cookie_by_name
+    - httpie.context.Environment
+    - httpie.context.LogLevel
+    - httpie.cookies.HTTPieCookiePolicy
+    - httpie.cli.dicts.HTTPHeadersDict
+    - httpie.config.BaseConfigDict
+    - httpie.config.DEFAULT_CONFIG_DIR
+    - httpie.utils.url_as_host
+    - httpie.plugins.registry.plugin_manager
+    - httpie.legacy.v3_1_0_session_cookie_format
+    - httpie.legacy.v3_2_0_session_header_format

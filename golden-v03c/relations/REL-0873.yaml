@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-0873
+kind: relation
+type: contains
+from: PYMOD-httpie.cli.utils
+to: PYCLS-httpie.cli.utils.LazyChoices
+confidence:
+  level: E0
+  direction: confirmed
+evidence:
+- EVID-py.symbols-be694e9a
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1

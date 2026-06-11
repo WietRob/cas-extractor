@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.formatters.xml.pretty_xml
+kind: entity
+type: py.function
+name: pretty_xml
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/output/formatters/xml.py
+anchors:
+- type: symbol
+  value: httpie.output.formatters.xml.pretty_xml
+- type: fingerprint
+  value: 888e8f2fa210d8cfd8e5892fe3b715c5488cd5e33761916ff0a25805633b167c
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.formatters.xml

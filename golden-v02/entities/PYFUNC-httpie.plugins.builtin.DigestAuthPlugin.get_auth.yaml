@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.plugins.builtin.DigestAuthPlugin.get_auth
+kind: entity
+type: py.function
+name: get_auth
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/plugins/builtin.py
+anchors:
+- type: symbol
+  value: httpie.plugins.builtin.DigestAuthPlugin.get_auth
+- type: fingerprint
+  value: 22465addd9786cb068f0997c5ceb79a3753175a88b34c2fb518aa08aefec6441
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.plugins.builtin.DigestAuthPlugin

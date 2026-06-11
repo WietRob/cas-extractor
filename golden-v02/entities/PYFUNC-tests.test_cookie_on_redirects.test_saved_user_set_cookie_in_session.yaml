@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_cookie_on_redirects.test_saved_user_set_cookie_in_session
+kind: entity
+type: py.function
+name: test_saved_user_set_cookie_in_session
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_cookie_on_redirects.py
+anchors:
+- type: symbol
+  value: tests.test_cookie_on_redirects.test_saved_user_set_cookie_in_session
+- type: fingerprint
+  value: 89619abde25f7759320f257770c984196a26d15a30249dbdc267f26c6c63f784
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_cookie_on_redirects

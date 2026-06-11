@@ -1,0 +1,36 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-c9ec3f7b
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T17:44:04.370828+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.output.streams.RawStream.__init__
+    kind: method
+    file: httpie/output/streams.py
+    range:
+      start_line: 94
+      start_col: 0
+      end_line: 96
+      end_col: 0
+    fingerprint: 5ec5251cf1ab35e4957abc17f279b3d04fcca52444f9fffc37f015577b491d66
+    params:
+    - name: self
+    - name: chunk_size
+  - qualified: httpie.output.streams.RawStream.iter_body
+    kind: method
+    file: httpie/output/streams.py
+    range:
+      start_line: 98
+      start_col: 0
+      end_line: 99
+      end_col: 0
+    fingerprint: 74c300663c0eb64871d133b699aa42d4e14f450eac695e2cb1e5f3f6624c15cc
+    params:
+    - name: self
+    returns: Iterable[bytes]

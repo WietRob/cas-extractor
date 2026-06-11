@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.downloads.Downloader
+kind: entity
+type: py.class
+name: Downloader
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/downloads.py
+anchors:
+- type: symbol
+  value: httpie.downloads.Downloader
+- type: fingerprint
+  value: 36e759b9f4933f704480bb1d26c0da6003bf25fc200e81e64ff73fcaa1750c9f
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.downloads

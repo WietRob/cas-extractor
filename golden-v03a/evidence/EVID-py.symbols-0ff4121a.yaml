@@ -1,0 +1,39 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-0ff4121a
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:52.938523+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.cli.constants
+    kind: module
+    file: httpie/cli/constants.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 134
+      end_col: 0
+    fingerprint: 9cf7ea0406e9e8506bbf7214c56a7be3c7b763d82e4ab95bd52c6a193452810f
+  - qualified: httpie.cli.constants.PrettyOptions
+    kind: class
+    file: httpie/cli/constants.py
+    range:
+      start_line: 96
+      start_col: 0
+      end_line: 97
+      end_col: 0
+    fingerprint: 3aa01248bc655a02553eb465c8921b014b550e008be308a9d29d64bb56247d13
+  - qualified: httpie.cli.constants.RequestType
+    kind: class
+    file: httpie/cli/constants.py
+    range:
+      start_line: 131
+      start_col: 0
+      end_line: 134
+      end_col: 0
+    fingerprint: 7458df7ba0af48b1df3cc966d005a72c7fdc93c6cb6f456ce4ff573ddaa39dad

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.internal.update_warnings.get_update_status
+kind: entity
+type: py.function
+name: get_update_status
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/internal/update_warnings.py
+anchors:
+- type: symbol
+  value: httpie.internal.update_warnings.get_update_status
+- type: fingerprint
+  value: b8b0666dc08f78a3c0741aed2cd9b73b43feea28b7adc67a641587d80b85f3f9
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.internal.update_warnings

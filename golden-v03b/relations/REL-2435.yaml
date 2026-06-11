@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-2435
+kind: relation
+type: calls
+from: PYFUNC-httpie.cli.options.Group.add_argument
+to: PYFUNC-httpie.cli.options.Argument
+confidence:
+  level: E1
+  direction: confirmed
+evidence:
+- EVID-py.callgraph-470b3bec
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1

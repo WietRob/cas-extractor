@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-tests.test_meta
+kind: entity
+type: py.module
+name: test_meta
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_meta.py
+anchors:
+- type: symbol
+  value: tests.test_meta
+- type: fingerprint
+  value: 9614b7062a75d4b349f6292727ab55bc952ba24fb72bc09429e93a0b77cdf7dd
+  algo: sha256
+claims: []
+relations: []
+namespace: tests

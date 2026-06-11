@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.context.Environment._make_rich_console
+kind: entity
+type: py.function
+name: _make_rich_console
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/context.py
+anchors:
+- type: symbol
+  value: httpie.context.Environment._make_rich_console
+- type: fingerprint
+  value: 4aba195b3f8a0605c1f1324a42c798be7dab6ef1d3d0c50f436a65ae94948254
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.context.Environment

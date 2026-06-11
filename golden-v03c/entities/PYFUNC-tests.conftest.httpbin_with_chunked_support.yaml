@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.conftest.httpbin_with_chunked_support
+kind: entity
+type: py.function
+name: httpbin_with_chunked_support
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/conftest.py
+anchors:
+- type: symbol
+  value: tests.conftest.httpbin_with_chunked_support
+- type: fingerprint
+  value: 8aabc28aa136acd50534a44436de2e25cdc7aec4c642e5b44641da5487afa821
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.conftest

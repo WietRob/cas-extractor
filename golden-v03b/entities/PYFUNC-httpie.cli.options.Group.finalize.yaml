@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.options.Group.finalize
+kind: entity
+type: py.function
+name: finalize
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/options.py
+anchors:
+- type: symbol
+  value: httpie.cli.options.Group.finalize
+- type: fingerprint
+  value: 9860b42985b8ff6fd354b976dbed1851283557bd7961a1afa2ae76e7b9f58e62
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.options.Group

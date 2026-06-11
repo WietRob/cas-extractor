@@ -1,0 +1,214 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-1cf98a3d
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:53.060740+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.sessions.Session.__init__
+    kind: method
+    file: httpie/sessions.py
+    range:
+      start_line: 128
+      start_col: 0
+      end_line: 156
+      end_col: 0
+    fingerprint: 526f24b17fd3526cc212cdfa2dcac74a960267fe490012be349197eeb287328b
+    params:
+    - name: self
+    - name: path
+      annotation: Union[str, Path]
+    - name: env
+      annotation: Environment
+    - name: bound_host
+      annotation: str
+    - name: session_id
+      annotation: str
+    - name: suppress_legacy_warnings
+      annotation: bool
+  - qualified: httpie.sessions.Session._add_cookies
+    kind: method
+    file: httpie/sessions.py
+    range:
+      start_line: 158
+      start_col: 0
+      end_line: 168
+      end_col: 0
+    fingerprint: ceea842cad3042963fd915dbd835eb441a43dde4c18e3c0e76cf2a85c984b6b6
+    params:
+    - name: self
+    - name: cookies
+      annotation: List[Dict[str, Any]]
+    returns: None
+  - qualified: httpie.sessions.Session.pre_process_data
+    kind: method
+    file: httpie/sessions.py
+    range:
+      start_line: 170
+      start_col: 0
+      end_line: 183
+      end_col: 0
+    fingerprint: 5ff14d3e7cc3dbc156b6265d5c4591738672da9e45bf67312268c999456ff19d
+    params:
+    - name: self
+    - name: data
+      annotation: Dict[str, Any]
+    returns: Dict[str, Any]
+  - qualified: httpie.sessions.Session.post_process_data
+    kind: method
+    file: httpie/sessions.py
+    range:
+      start_line: 185
+      start_col: 0
+      end_line: 198
+      end_col: 0
+    fingerprint: d38a5e473a3cd3db1b26e246314575de87194a123c25c17350a46c4356713a7c
+    params:
+    - name: self
+    - name: data
+      annotation: Dict[str, Any]
+    returns: Dict[str, Any]
+  - qualified: httpie.sessions.Session._compute_new_headers
+    kind: method
+    file: httpie/sessions.py
+    range:
+      start_line: 200
+      start_col: 0
+      end_line: 228
+      end_col: 0
+    fingerprint: f1fbb884228946cff4c2c3e20c326374565d65b71c9cfd210b044565bfaea885
+    params:
+    - name: self
+    - name: request_headers
+      annotation: HTTPHeadersDict
+    returns: HTTPHeadersDict
+  - qualified: httpie.sessions.Session.update_headers
+    kind: method
+    file: httpie/sessions.py
+    range:
+      start_line: 230
+      start_col: 0
+      end_line: 248
+      end_col: 0
+    fingerprint: bcf8de08c1502b52a4bf9d164901db99ed971c481606006f53a3b84d8dcc1968
+    params:
+    - name: self
+    - name: request_headers
+      annotation: HTTPHeadersDict
+  - qualified: httpie.sessions.Session.headers
+    kind: method
+    file: httpie/sessions.py
+    range:
+      start_line: 251
+      start_col: 0
+      end_line: 252
+      end_col: 0
+    fingerprint: ffbd0cd3052ac5d9b57621150a8681b4e4eba9a026c9f78a36159ca60dcad7a4
+    decorators:
+    - property
+    params:
+    - name: self
+    returns: HTTPHeadersDict
+  - qualified: httpie.sessions.Session.cookies
+    kind: method
+    file: httpie/sessions.py
+    range:
+      start_line: 255
+      start_col: 0
+      end_line: 257
+      end_col: 0
+    fingerprint: 6db49af729506d06327c62473ea9799bad8c33d9ffa768890e4b80f16354bc37
+    decorators:
+    - property
+    params:
+    - name: self
+    returns: RequestsCookieJar
+  - qualified: httpie.sessions.Session.cookies
+    kind: method
+    file: httpie/sessions.py
+    range:
+      start_line: 260
+      start_col: 0
+      end_line: 261
+      end_col: 0
+    fingerprint: 577b93e4d076825338410b98d4fe2e72e0f69f2c7608009a08edb15873f0d264
+    decorators:
+    - cookies.setter
+    params:
+    - name: self
+    - name: jar
+      annotation: RequestsCookieJar
+  - qualified: httpie.sessions.Session.remove_cookies
+    kind: method
+    file: httpie/sessions.py
+    range:
+      start_line: 263
+      start_col: 0
+      end_line: 270
+      end_col: 0
+    fingerprint: 6c705d90513a931a0a45c21a053390e49d5d01452619a50bb3c2e79173f44386
+    params:
+    - name: self
+    - name: cookies
+      annotation: List[Dict[str, str]]
+  - qualified: httpie.sessions.Session.auth
+    kind: method
+    file: httpie/sessions.py
+    range:
+      start_line: 273
+      start_col: 0
+      end_line: 299
+      end_col: 0
+    fingerprint: d51626de9db2e3624d72e7cdd9b5379db476f7d6eadd26fbae4278578789c08b
+    decorators:
+    - property
+    params:
+    - name: self
+    returns: Optional[AuthBase]
+  - qualified: httpie.sessions.Session.auth
+    kind: method
+    file: httpie/sessions.py
+    range:
+      start_line: 302
+      start_col: 0
+      end_line: 304
+      end_col: 0
+    fingerprint: bb39ec561ab727b170fadfd069d5b459cb86589ff7921edffc174d854a193729
+    decorators:
+    - auth.setter
+    params:
+    - name: self
+    - name: auth
+      annotation: dict
+  - qualified: httpie.sessions.Session.is_anonymous
+    kind: method
+    file: httpie/sessions.py
+    range:
+      start_line: 307
+      start_col: 0
+      end_line: 308
+      end_col: 0
+    fingerprint: 358bc93bc6abc229fd7f01e976d4bdb1f858c2f4fe2f543e33db44cbec1ec45a
+    decorators:
+    - property
+    params:
+    - name: self
+  - qualified: httpie.sessions.Session.warn_legacy_usage
+    kind: method
+    file: httpie/sessions.py
+    range:
+      start_line: 310
+      start_col: 0
+      end_line: 322
+      end_col: 0
+    fingerprint: 2c1ee99614c924af274eebe0e7fae026ffa4be0352f54b369b8026dd9c1cf47e
+    params:
+    - name: self
+    - name: warning
+      annotation: str
+    returns: None

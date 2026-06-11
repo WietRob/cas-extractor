@@ -1,0 +1,30 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-37794d40
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-26T06:24:53.109938+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://gates
+  root: ./sprint-v050-engine/02-fixtures
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: test_h27_real.Service.init_client
+  - symbol: test_h27_real.make_client
+  edges:
+  - from: test_h27_real.Service.init_client
+    to: test_h27_real.make_client
+    kind: call
+    edge_id: 0
+    resolution_detail:
+      trace:
+      - heuristic: static
+        pattern: local_function_call
+        inferred_type: null
+        reasoning: Found function 'make_client' in local module
+    range:
+      start_line: 15
+      start_col: 0
+      end_line: 15
+      end_col: 0

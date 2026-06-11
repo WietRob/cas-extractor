@@ -1,0 +1,47 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-e2c645c5
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:53.042116+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.output.utils
+    kind: module
+    file: httpie/output/utils.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 37
+      end_col: 0
+    fingerprint: fc30ddbe4e387dbd80cfdfb1c3e02013e83774010297a0e19a84374f44ec2e93
+  - qualified: httpie.output.utils.load_prefixed_json
+    kind: function
+    file: httpie/output/utils.py
+    range:
+      start_line: 9
+      start_col: 0
+      end_line: 24
+      end_col: 0
+    fingerprint: 86d7f96f2cabf02629bfe9730371af4899498f3ed2eeb7f238682852340f8dbc
+    params:
+    - name: data
+      annotation: str
+    returns: Tuple[str, json.JSONDecoder]
+  - qualified: httpie.output.utils.parse_prefixed_json
+    kind: function
+    file: httpie/output/utils.py
+    range:
+      start_line: 27
+      start_col: 0
+      end_line: 37
+      end_col: 0
+    fingerprint: aeb3d7596cf08657519433cd11013f6d2d8420194a544b207c0e1640ae2ba83c
+    params:
+    - name: data
+      annotation: str
+    returns: Tuple[str, str]

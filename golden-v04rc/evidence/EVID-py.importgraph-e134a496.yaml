@@ -1,0 +1,39 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-e134a496
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-22T08:37:44.809273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  imports:
+  - from: tests.test_sessions
+    imports:
+    - json
+    - os
+    - shutil
+    - contextlib.contextmanager
+    - datetime.datetime
+    - unittest.mock
+    - pathlib.Path
+    - typing.Iterator
+    - pytest
+    - tests.fixtures.FILE_PATH_ARG
+    - tests.fixtures.UNICODE
+    - httpie.context.Environment
+    - httpie.encoding.UTF8
+    - httpie.plugins.AuthPlugin
+    - httpie.plugins.builtin.HTTPBasicAuth
+    - httpie.plugins.registry.plugin_manager
+    - httpie.sessions.Session
+    - httpie.utils.get_expired_cookies
+    - tests.test_auth_plugins.basic_auth
+    - tests.utils.DUMMY_HOST
+    - tests.utils.HTTP_OK
+    - tests.utils.MockEnvironment
+    - tests.utils.http
+    - tests.utils.mk_config_dir
+    - base64.b64encode

@@ -1,0 +1,53 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-d8c5a398
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T15:03:56.210343+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.func
+  - symbol: httpie.internal.update_warnings._get_suppress_context
+  - symbol: httpie.internal.update_warnings._update_checker.wrapper
+  - symbol: httpie.internal.update_warnings.maybe_fetch_updates
+  edges:
+  - from: httpie.internal.update_warnings._update_checker.wrapper
+    to: httpie.internal.update_warnings._get_suppress_context
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 98
+      start_col: 0
+      end_line: 98
+      end_col: 0
+  - from: httpie.internal.update_warnings._update_checker.wrapper
+    to: ?.func
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 99
+      start_col: 0
+      end_line: 99
+      end_col: 0
+  - from: httpie.internal.update_warnings._update_checker.wrapper
+    to: httpie.internal.update_warnings._get_suppress_context
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 101
+      start_col: 0
+      end_line: 101
+      end_col: 0
+  - from: httpie.internal.update_warnings._update_checker.wrapper
+    to: httpie.internal.update_warnings.maybe_fetch_updates
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 102
+      start_col: 0
+      end_line: 102
+      end_col: 0

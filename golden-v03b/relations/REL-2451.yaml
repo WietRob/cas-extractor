@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-2451
+kind: relation
+type: calls
+from: PYFUNC-httpie.cli.nested_json.interpret.interpret.object_for
+to: PYFUNC-parse.assert_cant_happen
+confidence:
+  level: E1
+  direction: confirmed
+evidence:
+- EVID-py.callgraph-492f8657
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1

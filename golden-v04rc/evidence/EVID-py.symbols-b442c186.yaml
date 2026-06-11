@@ -1,0 +1,51 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-b442c186
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T08:37:44.404099+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.cli.argtypes.KeyValueArgType.__init__
+    kind: method
+    file: httpie/cli/argtypes.py
+    range:
+      start_line: 58
+      start_col: 0
+      end_line: 62
+      end_col: 0
+    fingerprint: c050e992daf1841c0bc70c7461c9d7c3de1e93cd731a7cc9a7db8b2a870beea9
+    params:
+    - name: self
+  - qualified: httpie.cli.argtypes.KeyValueArgType.__call__
+    kind: method
+    file: httpie/cli/argtypes.py
+    range:
+      start_line: 64
+      start_col: 0
+      end_line: 108
+      end_col: 0
+    fingerprint: d7ee27e95c417b6b4610b5b7f41cc2f36d5ec707d0259675efbedc7d9a3ef659
+    params:
+    - name: self
+    - name: s
+      annotation: str
+    returns: KeyValueArg
+  - qualified: httpie.cli.argtypes.KeyValueArgType.tokenize
+    kind: method
+    file: httpie/cli/argtypes.py
+    range:
+      start_line: 110
+      start_col: 0
+      end_line: 130
+      end_col: 0
+    fingerprint: d9d9c7381622f9d094fd020973271c4b5100b6856db67e45a99c041c9cd7437c
+    params:
+    - name: self
+    - name: s
+      annotation: str
+    returns: List[Union[str, Escaped]]

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.encoding.smart_encode
+kind: entity
+type: py.function
+name: smart_encode
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/encoding.py
+anchors:
+- type: symbol
+  value: httpie.encoding.smart_encode
+- type: fingerprint
+  value: 99668b0e79aa6d211367a591265e000dc53ba3198d08f5af2843168bef2bb4a6
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.encoding

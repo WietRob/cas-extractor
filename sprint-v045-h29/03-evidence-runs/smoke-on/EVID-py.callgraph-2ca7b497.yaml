@@ -1,0 +1,70 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-2ca7b497
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-23T17:20:11.134496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://cas_extractor
+  root: ./cas_extractor
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.c.isalnum
+  - symbol: ?.evidence_type.lower
+  - symbol: ?.prefix_map.get
+  - symbol: ?.scope.encode
+  - symbol: hashlib.sha256
+  - symbol: utils.ids.entity_id
+  - symbol: utils.ids.evidence_id
+  edges:
+  - from: utils.ids.entity_id
+    to: ?.prefix_map.get
+    kind: call
+    edge_id: 0
+    resolution_source: unresolved
+    range:
+      start_line: 33
+      start_col: 0
+      end_line: 33
+      end_col: 0
+  - from: utils.ids.evidence_id
+    to: ?.evidence_type.lower
+    kind: call
+    edge_id: 1
+    resolution_source: unresolved
+    range:
+      start_line: 42
+      start_col: 0
+      end_line: 42
+      end_col: 0
+  - from: utils.ids.evidence_id
+    to: hashlib.sha256
+    kind: call
+    edge_id: 2
+    resolution_source: module-level
+    range:
+      start_line: 44
+      start_col: 0
+      end_line: 44
+      end_col: 0
+  - from: utils.ids.entity_id
+    to: ?.c.isalnum
+    kind: call
+    edge_id: 3
+    resolution_source: unresolved
+    range:
+      start_line: 35
+      start_col: 0
+      end_line: 35
+      end_col: 0
+  - from: utils.ids.evidence_id
+    to: ?.scope.encode
+    kind: call
+    edge_id: 4
+    resolution_source: unresolved
+    range:
+      start_line: 44
+      start_col: 0
+      end_line: 44
+      end_col: 0

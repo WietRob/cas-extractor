@@ -1,0 +1,169 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-6c0b3d61
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T08:37:44.652993+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.test_uploads
+    kind: module
+    file: tests/test_uploads.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 403
+      end_col: 0
+    fingerprint: 735bfa206fde481abb02e9be392ddc34cfd15ab6dd6a7c2a7fa38645b145d211
+  - qualified: tests.test_uploads.test_chunked_json
+    kind: function
+    file: tests/test_uploads.py
+    range:
+      start_line: 24
+      start_col: 0
+      end_line: 33
+      end_col: 0
+    fingerprint: 274d642841fcfe68f8d315d795d400981b19959e2b320c9225da34d26ae3a4d5
+    params:
+    - name: httpbin_with_chunked_support
+  - qualified: tests.test_uploads.test_chunked_form
+    kind: function
+    file: tests/test_uploads.py
+    range:
+      start_line: 36
+      start_col: 0
+      end_line: 46
+      end_col: 0
+    fingerprint: 4c7d4cac1d61e306ab47fcdede01ca2c07aa807eaddd5697849128e363eeb361
+    params:
+    - name: httpbin_with_chunked_support
+  - qualified: tests.test_uploads.test_chunked_stdin
+    kind: function
+    file: tests/test_uploads.py
+    range:
+      start_line: 49
+      start_col: 0
+      end_line: 61
+      end_col: 0
+    fingerprint: f99e453da9ae1075c85955f4bb36b311cb6e3d0e6c523dbe7d2b0425499b9adf
+    params:
+    - name: httpbin_with_chunked_support
+  - qualified: tests.test_uploads.test_chunked_stdin_multiple_chunks
+    kind: function
+    file: tests/test_uploads.py
+    range:
+      start_line: 64
+      start_col: 0
+      end_line: 79
+      end_col: 0
+    fingerprint: be03264ded4fec237907a22ebfd56b52104f72bd1a5696b01f38983ca761ec27
+    params:
+    - name: httpbin_with_chunked_support
+  - qualified: tests.test_uploads.test_chunked_raw
+    kind: function
+    file: tests/test_uploads.py
+    range:
+      start_line: 82
+      start_col: 0
+      end_line: 91
+      end_col: 0
+    fingerprint: 315e92ff5e4405301df0e54b711fd336569fa44f70b76de95476a7208dfc2d24
+    params:
+    - name: httpbin_with_chunked_support
+  - qualified: tests.test_uploads.stdin_processes
+    kind: function
+    file: tests/test_uploads.py
+    range:
+      start_line: 95
+      start_col: 0
+      end_line: 122
+      end_col: 0
+    fingerprint: 933e66a59e0872712b91a101133f4ef4fc420ca32a609897e40d151ca20b22ce
+    decorators:
+    - contextlib.contextmanager
+    params:
+    - name: httpbin
+  - qualified: tests.test_uploads.test_reading_from_stdin
+    kind: function
+    file: tests/test_uploads.py
+    range:
+      start_line: 128
+      start_col: 0
+      end_line: 141
+      end_col: 0
+    fingerprint: d03ff87f4d72b8a6a96934598563b1a47f215055ff7f1f006ece5e07796086f2
+    decorators:
+    - pytest.mark.parametrize('wait', (True, False))
+    - pytest.mark.requires_external_processes
+    - pytest.mark.skipif(is_windows, reason="Windows doesn't support select() calls
+      into files")
+    params:
+    - name: httpbin
+    - name: wait
+  - qualified: tests.test_uploads.test_stdin_read_warning
+    kind: function
+    file: tests/test_uploads.py
+    range:
+      start_line: 146
+      start_col: 0
+      end_line: 157
+      end_col: 0
+    fingerprint: 58acd7a92b79943506c4791ca148ad0e8db7c13d5782a86dc197d900bb0252e2
+    decorators:
+    - pytest.mark.requires_external_processes
+    - pytest.mark.skipif(is_windows, reason="Windows doesn't support select() calls
+      into files")
+    params:
+    - name: httpbin
+  - qualified: tests.test_uploads.test_stdin_read_warning_with_quiet
+    kind: function
+    file: tests/test_uploads.py
+    range:
+      start_line: 162
+      start_col: 0
+      end_line: 173
+      end_col: 0
+    fingerprint: 4539387e44c8b2cd3bcc82bc89fd09f7bc659956afa200d49fe6a3f07bc5a3cf
+    decorators:
+    - pytest.mark.requires_external_processes
+    - pytest.mark.skipif(is_windows, reason="Windows doesn't support select() calls
+      into files")
+    params:
+    - name: httpbin
+  - qualified: tests.test_uploads.test_stdin_read_warning_blocking_exit
+    kind: function
+    file: tests/test_uploads.py
+    range:
+      start_line: 178
+      start_col: 0
+      end_line: 187
+      end_col: 0
+    fingerprint: 42628c01dcd068a8e0919e7def981c3a7796f9c3ee3b3a594ec7c4af3f8ae6fb
+    decorators:
+    - pytest.mark.requires_external_processes
+    - pytest.mark.skipif(is_windows, reason="Windows doesn't support select() calls
+      into files")
+    params:
+    - name: httpbin
+  - qualified: tests.test_uploads.TestMultipartFormDataFileUpload
+    kind: class
+    file: tests/test_uploads.py
+    range:
+      start_line: 190
+      start_col: 0
+      end_line: 333
+      end_col: 0
+    fingerprint: d5482a757c2e6016e51a0faf2a875afe23371881316cbd883781b658820d8375
+  - qualified: tests.test_uploads.TestRequestBodyFromFilePath
+    kind: class
+    file: tests/test_uploads.py
+    range:
+      start_line: 336
+      start_col: 0
+      end_line: 403
+      end_col: 0
+    fingerprint: e83e5c86216c301a84145b914f188ac9c1ab1704b45c035cba107ceadbe5f8ff

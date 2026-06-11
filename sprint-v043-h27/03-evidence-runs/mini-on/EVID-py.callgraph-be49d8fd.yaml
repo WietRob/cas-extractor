@@ -1,0 +1,64 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-be49d8fd
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-23T07:07:57.450395+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: /tmp/h27-verify
+  revision: git:test
+payload:
+  nodes:
+  - symbol: test_h27.DataParser
+  - symbol: test_h27.DataParser.parse
+  - symbol: test_h27.HTTPClient
+  - symbol: test_h27.HTTPClient.send
+  - symbol: test_h27.TestH27MergeWithH25.init_parser
+  - symbol: test_h27.TestH27MergeWithH25.run
+  edges:
+  - from: test_h27.TestH27MergeWithH25.init_parser
+    to: test_h27.DataParser
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 75
+      start_col: 0
+      end_line: 75
+      end_col: 0
+  - from: test_h27.TestH27MergeWithH25.run
+    to: test_h27.HTTPClient
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 78
+      start_col: 0
+      end_line: 78
+      end_col: 0
+  - from: test_h27.TestH27MergeWithH25.run
+    to: test_h27.TestH27MergeWithH25.init_parser
+    kind: method_call
+    edge_id: 2
+    range:
+      start_line: 79
+      start_col: 0
+      end_line: 79
+      end_col: 0
+  - from: test_h27.TestH27MergeWithH25.run
+    to: test_h27.HTTPClient.send
+    kind: method_call
+    edge_id: 3
+    range:
+      start_line: 80
+      start_col: 0
+      end_line: 80
+      end_col: 0
+  - from: test_h27.TestH27MergeWithH25.run
+    to: test_h27.DataParser.parse
+    kind: method_call
+    edge_id: 4
+    range:
+      start_line: 81
+      start_col: 0
+      end_line: 81
+      end_col: 0

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.streams.PrettyStream.__init__
+kind: entity
+type: py.function
+name: __init__
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/output/streams.py
+anchors:
+- type: symbol
+  value: httpie.output.streams.PrettyStream.__init__
+- type: fingerprint
+  value: 867000a5a3271eba57277cb676098a70a159c72099b1f609d8de34547373373f
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.streams.PrettyStream

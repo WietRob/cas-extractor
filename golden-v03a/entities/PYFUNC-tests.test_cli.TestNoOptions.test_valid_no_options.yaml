@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_cli.TestNoOptions.test_valid_no_options
+kind: entity
+type: py.function
+name: test_valid_no_options
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_cli.py
+anchors:
+- type: symbol
+  value: tests.test_cli.TestNoOptions.test_valid_no_options
+- type: fingerprint
+  value: e8da6cfc3c3a31c41094cc38d467b523223fd252800630722c6699ddea588d99
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_cli.TestNoOptions

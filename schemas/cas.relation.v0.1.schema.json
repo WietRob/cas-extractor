@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "cas.relation.v0.1.schema.json",
+  "title": "CAS Relation v0.1",
+  "description": "Standalone relation artifacts for large graphs",
+  "type": "object",
+  "required": ["schema", "id", "kind", "type", "from", "to", "confidence"],
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "cas.relation.v0.1"
+    },
+    "id": {
+      "$ref": "common.v0.1.schema.json#/$defs/relation_id"
+    },
+    "kind": {
+      "type": "string",
+      "const": "relation"
+    },
+    "type": {
+      "$ref": "common.v0.1.schema.json#/$defs/relation_type"
+    },
+    "from": {
+      "type": "string",
+      "description": "Source entity ID"
+    },
+    "to": {
+      "type": "string",
+      "description": "Target entity ID"
+    },
+    "confidence": {
+      "$ref": "common.v0.1.schema.json#/$defs/confidence"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "$ref": "common.v0.1.schema.json#/$defs/evidence_ref"
+      }
+    },
+    "created_at": {
+      "$ref": "common.v0.1.schema.json#/$defs/timestamp"
+    },
+    "created_by": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": false
+}

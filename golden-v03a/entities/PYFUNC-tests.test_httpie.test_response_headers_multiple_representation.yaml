@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_httpie.test_response_headers_multiple_representation
+kind: entity
+type: py.function
+name: test_response_headers_multiple_representation
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_httpie.py
+anchors:
+- type: symbol
+  value: tests.test_httpie.test_response_headers_multiple_representation
+- type: fingerprint
+  value: 9cb5887c3096c118b64a968ac999b5bb404d66dc97e389077750155e09d1ec0f
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_httpie

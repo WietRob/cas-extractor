@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.plugins.manager.PluginManager.get_transport_plugins
+kind: entity
+type: py.function
+name: get_transport_plugins
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/plugins/manager.py
+anchors:
+- type: symbol
+  value: httpie.plugins.manager.PluginManager.get_transport_plugins
+- type: fingerprint
+  value: 19a08dd5296e0edf19ff394a278da44ba5696601580d2947a36e931ddeba544f
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.plugins.manager.PluginManager

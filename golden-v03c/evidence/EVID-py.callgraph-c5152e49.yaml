@@ -1,0 +1,75 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-c5152e49
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T17:44:05.277624+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.body.encode
+  - symbol: ?.headers.insert
+  - symbol: ?.headers.items
+  - symbol: ?.name.lower
+  - symbol: ?.value.decode
+  - symbol: httpie.models.HTTPRequest.body
+  - symbol: httpie.models.HTTPRequest.headers
+  - symbol: urllib.parse.urlsplit
+  edges:
+  - from: httpie.models.HTTPRequest.headers
+    to: urllib.parse.urlsplit
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 141
+      start_col: 0
+      end_line: 141
+      end_col: 0
+  - from: httpie.models.HTTPRequest.headers
+    to: ?.headers.insert
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 159
+      start_col: 0
+      end_line: 159
+      end_col: 0
+  - from: httpie.models.HTTPRequest.body
+    to: ?.body.encode
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 168
+      start_col: 0
+      end_line: 168
+      end_col: 0
+  - from: httpie.models.HTTPRequest.headers
+    to: ?.headers.items
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 155
+      start_col: 0
+      end_line: 155
+      end_col: 0
+  - from: httpie.models.HTTPRequest.headers
+    to: ?.value.decode
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 154
+      start_col: 0
+      end_line: 154
+      end_col: 0
+  - from: httpie.models.HTTPRequest.headers
+    to: ?.name.lower
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 156
+      start_col: 0
+      end_line: 156
+      end_col: 0

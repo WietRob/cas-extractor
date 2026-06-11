@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_regressions.test_verbose_redirected_stdout_separator
+kind: entity
+type: py.function
+name: test_verbose_redirected_stdout_separator
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_regressions.py
+anchors:
+- type: symbol
+  value: tests.test_regressions.test_verbose_redirected_stdout_separator
+- type: fingerprint
+  value: a5e7e82a8df751a750fa8ff62a264c4c923165bf74c420f56d0f553a96a3edb8
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_regressions

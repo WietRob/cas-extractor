@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.ssl_.HTTPieCertificate
+kind: entity
+type: py.class
+name: HTTPieCertificate
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/ssl_.py
+anchors:
+- type: symbol
+  value: httpie.ssl_.HTTPieCertificate
+- type: fingerprint
+  value: b9eef82d23a4599a639200d2db131902fbf26e505ee4bba7b7fc46b77438367f
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.ssl_

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_sessions.TestCookieStorage.test_cookie_storage_priority
+kind: entity
+type: py.function
+name: test_cookie_storage_priority
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_sessions.py
+anchors:
+- type: symbol
+  value: tests.test_sessions.TestCookieStorage.test_cookie_storage_priority
+- type: fingerprint
+  value: fb9f6610f14ffb2fbba8676b169d1de8bb9753b98dae7b894f67e3143969fa35
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_sessions.TestCookieStorage

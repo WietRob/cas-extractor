@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_cli.TestSchemes.test_invalid_scheme_via_via_default_scheme
+kind: entity
+type: py.function
+name: test_invalid_scheme_via_via_default_scheme
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_cli.py
+anchors:
+- type: symbol
+  value: tests.test_cli.TestSchemes.test_invalid_scheme_via_via_default_scheme
+- type: fingerprint
+  value: 99298a7473137ab51b3cccc2da9c142e0cfabe0ee6646209ce9a8fba302a6461
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_cli.TestSchemes

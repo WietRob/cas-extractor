@@ -1,0 +1,58 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-db0fe5d4
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T17:44:04.389286+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.plugins.manager
+    kind: module
+    file: httpie/plugins/manager.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 121
+      end_col: 0
+    fingerprint: 9321f11cbdc18934816eb438f88ae00ed032b699073945c2b0084fdee390eed9
+  - qualified: httpie.plugins.manager._load_directories
+    kind: function
+    file: httpie/plugins/manager.py
+    range:
+      start_line: 28
+      start_col: 0
+      end_line: 38
+      end_col: 0
+    fingerprint: 2be54c3cdb7b3699fef35b6cbf273aebb60b3f324accbfc5c29d7683cc44cfe1
+    decorators:
+    - contextmanager
+    params:
+    - name: site_dirs
+      annotation: Iterable[Path]
+    returns: Iterator[None]
+  - qualified: httpie.plugins.manager.enable_plugins
+    kind: function
+    file: httpie/plugins/manager.py
+    range:
+      start_line: 41
+      start_col: 0
+      end_line: 45
+      end_col: 0
+    fingerprint: 262632b25fa32db399b8176321a60365b7752e09e2fa13a5df8d8912f00c6c76
+    params:
+    - name: plugins_dir
+      annotation: Optional[Path]
+    returns: ContextManager[None]
+  - qualified: httpie.plugins.manager.PluginManager
+    kind: class
+    file: httpie/plugins/manager.py
+    range:
+      start_line: 48
+      start_col: 0
+      end_line: 121
+      end_col: 0
+    fingerprint: 0a3a1ce617cfa6412d58f8232f4005c312838a2e45a48a5dc65935612f77b7af

@@ -1,0 +1,6 @@
+=== T7: Positive H2 Cases (identical in both modes) ===
+✅ test_h2.HTTPClient.send: present in both modes
+✅ test_h2.ClassB.foo: present in both modes
+✅ test_h2.Session.load: present in both modes
+✅ test_h2.DownloadStatus.started: present in both modes
+✅ test_h2.DownloadStatus.finished: present in both modes

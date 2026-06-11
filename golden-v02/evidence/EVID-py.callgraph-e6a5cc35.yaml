@@ -1,0 +1,24 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-e6a5cc35
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:34.098306+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.self.callback
+  - symbol: httpie.uploads.ChunkedUploadStream.__iter__
+  edges:
+  - from: httpie.uploads.ChunkedUploadStream.__iter__
+    to: ?.self.callback
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 40
+      start_col: 0
+      end_line: 40
+      end_col: 0

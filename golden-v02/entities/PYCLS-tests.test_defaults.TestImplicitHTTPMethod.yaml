@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-tests.test_defaults.TestImplicitHTTPMethod
+kind: entity
+type: py.class
+name: TestImplicitHTTPMethod
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_defaults.py
+anchors:
+- type: symbol
+  value: tests.test_defaults.TestImplicitHTTPMethod
+- type: fingerprint
+  value: cee6a22fd4f2722632e17abe0b987b773e0de52ae61ae48dd83fb599652eaa6f
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_defaults

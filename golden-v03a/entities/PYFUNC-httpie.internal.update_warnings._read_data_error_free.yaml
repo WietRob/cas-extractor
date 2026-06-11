@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.internal.update_warnings._read_data_error_free
+kind: entity
+type: py.function
+name: _read_data_error_free
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/internal/update_warnings.py
+anchors:
+- type: symbol
+  value: httpie.internal.update_warnings._read_data_error_free
+- type: fingerprint
+  value: 56d431ca15cb3b4a946c189d3da66aff2eb5702d8b74eb1331c4f6ce88c3244e
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.internal.update_warnings

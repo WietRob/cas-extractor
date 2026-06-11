@@ -1,0 +1,84 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-f3c8ea5c
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:51:32.259411+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.manager.tasks.sessions
+    kind: module
+    file: httpie/manager/tasks/sessions.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 86
+      end_col: 0
+    fingerprint: 741762d862c13986ed5c32869dad68f93dd7f1a8c30257e6f993368e0d9fc54a
+  - qualified: httpie.manager.tasks.sessions.cli_sessions
+    kind: function
+    file: httpie/manager/tasks/sessions.py
+    range:
+      start_line: 17
+      start_col: 0
+      end_line: 27
+      end_col: 0
+    fingerprint: 8c761179968d74379ed482d9f5c9168defa31fc46fc98750359fd4e54d899ad0
+    params:
+    - name: env
+      annotation: Environment
+    - name: args
+      annotation: argparse.Namespace
+    returns: ExitStatus
+  - qualified: httpie.manager.tasks.sessions.upgrade_session
+    kind: function
+    file: httpie/manager/tasks/sessions.py
+    range:
+      start_line: 30
+      start_col: 0
+      end_line: 60
+      end_col: 0
+    fingerprint: beb35b82a9d84033fc47ae408519fcb431beb3978f73384aaddb12d8f8672962
+    params:
+    - name: env
+      annotation: Environment
+    - name: args
+      annotation: argparse.Namespace
+    - name: hostname
+      annotation: str
+    - name: session_name
+      annotation: str
+  - qualified: httpie.manager.tasks.sessions.cli_upgrade_session
+    kind: function
+    file: httpie/manager/tasks/sessions.py
+    range:
+      start_line: 63
+      start_col: 0
+      end_line: 69
+      end_col: 0
+    fingerprint: c1a8e0dfba401e7428026941543385efa5a6fe8a7e2aa53cd41be3943968736e
+    params:
+    - name: env
+      annotation: Environment
+    - name: args
+      annotation: argparse.Namespace
+    returns: ExitStatus
+  - qualified: httpie.manager.tasks.sessions.cli_upgrade_all_sessions
+    kind: function
+    file: httpie/manager/tasks/sessions.py
+    range:
+      start_line: 72
+      start_col: 0
+      end_line: 86
+      end_col: 0
+    fingerprint: 7c64fa5a5f68204fa81ac1d25e511c8a3df561c90ad00eaf9cd37b6141a1dc32
+    params:
+    - name: env
+      annotation: Environment
+    - name: args
+      annotation: argparse.Namespace
+    returns: ExitStatus

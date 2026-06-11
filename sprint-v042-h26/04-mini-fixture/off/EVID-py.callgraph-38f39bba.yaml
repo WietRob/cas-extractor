@@ -1,0 +1,64 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-38f39bba
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-23T05:34:05.979995+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: /tmp/h26-verify
+  revision: git:test
+payload:
+  nodes:
+  - symbol: ?.self.client.send
+  - symbol: test_h26.HTTPClient
+  - symbol: test_h26.TestH26DepthExceeded.level1
+  - symbol: test_h26.TestH26DepthExceeded.level2
+  - symbol: test_h26.TestH26DepthExceeded.level3
+  - symbol: test_h26.TestH26DepthExceeded.run
+  edges:
+  - from: test_h26.TestH26DepthExceeded.level1
+    to: test_h26.HTTPClient
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 141
+      start_col: 0
+      end_line: 141
+      end_col: 0
+  - from: test_h26.TestH26DepthExceeded.level2
+    to: test_h26.TestH26DepthExceeded.level1
+    kind: method_call
+    edge_id: 1
+    range:
+      start_line: 144
+      start_col: 0
+      end_line: 144
+      end_col: 0
+  - from: test_h26.TestH26DepthExceeded.level3
+    to: test_h26.TestH26DepthExceeded.level2
+    kind: method_call
+    edge_id: 2
+    range:
+      start_line: 147
+      start_col: 0
+      end_line: 147
+      end_col: 0
+  - from: test_h26.TestH26DepthExceeded.run
+    to: test_h26.TestH26DepthExceeded.level3
+    kind: method_call
+    edge_id: 3
+    range:
+      start_line: 150
+      start_col: 0
+      end_line: 150
+      end_col: 0
+  - from: test_h26.TestH26DepthExceeded.run
+    to: ?.self.client.send
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 151
+      start_col: 0
+      end_line: 151
+      end_col: 0

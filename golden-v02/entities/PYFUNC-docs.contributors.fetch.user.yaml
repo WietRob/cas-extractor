@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-docs.contributors.fetch.user
+kind: entity
+type: py.function
+name: user
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: docs/contributors/fetch.py
+anchors:
+- type: symbol
+  value: docs.contributors.fetch.user
+- type: fingerprint
+  value: d8bf782952da1a9f4d5a4c94db2589120eefa8e20cf2315924bab6f47f1b828d
+  algo: sha256
+claims: []
+relations: []
+namespace: docs.contributors.fetch

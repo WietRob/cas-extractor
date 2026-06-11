@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.manager.tasks.plugins
+kind: entity
+type: py.module
+name: plugins
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/manager/tasks/plugins.py
+anchors:
+- type: symbol
+  value: httpie.manager.tasks.plugins
+- type: fingerprint
+  value: 4d58de529418c8c4945e61377689060b87231013d7e3989bbd79405bb08a07c4
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.manager.tasks

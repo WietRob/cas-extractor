@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-cas_extractor_extractors_python_calls._annotate_parents
+kind: entity
+type: py.function
+name: _annotate_parents
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor_extractors_python_calls.py
+anchors:
+- type: symbol
+  value: cas_extractor_extractors_python_calls._annotate_parents
+- type: fingerprint
+  value: 690a9aa3bd25e4e0ee7fa1652e278eff148ad6919bd55cd4413f1951d9f4b501
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor_extractors_python_calls

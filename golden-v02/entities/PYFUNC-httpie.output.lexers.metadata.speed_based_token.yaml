@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.lexers.metadata.speed_based_token
+kind: entity
+type: py.function
+name: speed_based_token
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/output/lexers/metadata.py
+anchors:
+- type: symbol
+  value: httpie.output.lexers.metadata.speed_based_token
+- type: fingerprint
+  value: 384ccff1837f7562c4fd995eb34b45f1f0775a80a6cc508a8c318141d0cb8e1f
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.lexers.metadata

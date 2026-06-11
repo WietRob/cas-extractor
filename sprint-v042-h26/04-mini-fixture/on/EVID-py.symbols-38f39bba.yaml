@@ -1,0 +1,56 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-38f39bba
+kind: evidence
+type: py.symbols
+created_at: '2026-02-23T05:34:25.611931+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: /tmp/h26-verify
+  revision: git:test
+payload:
+  symbols:
+  - qualified: test_h26.TestH26DepthExceeded.level1
+    kind: method
+    file: test_h26.py
+    range:
+      start_line: 140
+      start_col: 0
+      end_line: 141
+      end_col: 0
+    fingerprint: e4577c9d082c49f10363fa42e8323ae2a66e2651ab4d10344fe627c3837d610d
+    params:
+    - name: self
+  - qualified: test_h26.TestH26DepthExceeded.level2
+    kind: method
+    file: test_h26.py
+    range:
+      start_line: 143
+      start_col: 0
+      end_line: 144
+      end_col: 0
+    fingerprint: 7a256887823eeb7e82a1ed66f89350117e5d9377062a6197ffe583e9940288f0
+    params:
+    - name: self
+  - qualified: test_h26.TestH26DepthExceeded.level3
+    kind: method
+    file: test_h26.py
+    range:
+      start_line: 146
+      start_col: 0
+      end_line: 147
+      end_col: 0
+    fingerprint: ac26daf01c9d1e3589dfc12bda2fc8751dc5b015477a6ead0465c2c750e4a692
+    params:
+    - name: self
+  - qualified: test_h26.TestH26DepthExceeded.run
+    kind: method
+    file: test_h26.py
+    range:
+      start_line: 149
+      start_col: 0
+      end_line: 151
+      end_col: 0
+    fingerprint: a7b2a477200cedec2641ae85279a4fdd0ed1b7e28afa0f4799c69c124f1e8c33
+    params:
+    - name: self

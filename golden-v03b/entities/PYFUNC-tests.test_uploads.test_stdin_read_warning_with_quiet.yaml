@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_uploads.test_stdin_read_warning_with_quiet
+kind: entity
+type: py.function
+name: test_stdin_read_warning_with_quiet
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_uploads.py
+anchors:
+- type: symbol
+  value: tests.test_uploads.test_stdin_read_warning_with_quiet
+- type: fingerprint
+  value: 4539387e44c8b2cd3bcc82bc89fd09f7bc659956afa200d49fe6a3f07bc5a3cf
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_uploads

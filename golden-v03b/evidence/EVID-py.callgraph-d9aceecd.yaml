@@ -1,0 +1,197 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-d9aceecd
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T15:03:56.181516+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.actual.items
+  - symbol: ?.actual.update
+  - symbol: ?.config.is_new
+  - symbol: ?.config.load
+  - symbol: ?.key.startswith
+  - symbol: ?.kwargs.keys
+  - symbol: ?.kwargs.pop
+  - symbol: ?.rich_console.print
+  - symbol: ?.stderr.isatty
+  - symbol: config.Config
+  - symbol: httpie.context.Environment.__init__
+  - symbol: httpie.context.Environment.__str__
+  - symbol: httpie.context.Environment._make_rich_console
+  - symbol: httpie.context.Environment.apply_warnings_filter
+  - symbol: httpie.context.Environment.config
+  - symbol: httpie.context.Environment.log_error
+  - symbol: httpie.context.Environment.rich_console
+  - symbol: httpie.context.Environment.rich_error_console
+  - symbol: httpie.output.ui.rich_palette._make_rich_color_theme
+  - symbol: rich.console.Console
+  - symbol: utils.repr_dict
+  - symbol: warnings.simplefilter
+  edges:
+  - from: httpie.context.Environment.__init__
+    to: ?.kwargs.pop
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 121
+      start_col: 0
+      end_line: 121
+      end_col: 0
+  - from: httpie.context.Environment.__str__
+    to: ?.actual.update
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 126
+      start_col: 0
+      end_line: 126
+      end_col: 0
+  - from: httpie.context.Environment.__str__
+    to: utils.repr_dict
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 128
+      start_col: 0
+      end_line: 132
+      end_col: 0
+  - from: httpie.context.Environment.log_error
+    to: httpie.context.Environment._make_rich_console
+    kind: method_call
+    edge_id: 3
+    range:
+      start_line: 175
+      start_col: 0
+      end_line: 175
+      end_col: 0
+  - from: httpie.context.Environment.log_error
+    to: ?.rich_console.print
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 176
+      start_col: 0
+      end_line: 182
+      end_col: 0
+  - from: httpie.context.Environment._make_rich_console
+    to: httpie.output.ui.rich_palette._make_rich_color_theme
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 197
+      start_col: 0
+      end_line: 197
+      end_col: 0
+  - from: httpie.context.Environment._make_rich_console
+    to: rich.console.Console
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 200
+      start_col: 0
+      end_line: 205
+      end_col: 0
+  - from: httpie.context.Environment.rich_console
+    to: httpie.context.Environment._make_rich_console
+    kind: method_call
+    edge_id: 7
+    range:
+      start_line: 213
+      start_col: 0
+      end_line: 213
+      end_col: 0
+  - from: httpie.context.Environment.rich_error_console
+    to: httpie.context.Environment._make_rich_console
+    kind: method_call
+    edge_id: 8
+    range:
+      start_line: 217
+      start_col: 0
+      end_line: 217
+      end_col: 0
+  - from: httpie.context.Environment.config
+    to: config.Config
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 143
+      start_col: 0
+      end_line: 143
+      end_col: 0
+  - from: httpie.context.Environment.apply_warnings_filter
+    to: warnings.simplefilter
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 186
+      start_col: 0
+      end_line: 186
+      end_col: 0
+  - from: httpie.context.Environment.config
+    to: ?.config.is_new
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 144
+      start_col: 0
+      end_line: 144
+      end_col: 0
+  - from: httpie.context.Environment.log_error
+    to: ?.stderr.isatty
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 175
+      start_col: 0
+      end_line: 175
+      end_col: 0
+  - from: httpie.context.Environment.__init__
+    to: ?.kwargs.keys
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 99
+      start_col: 0
+      end_line: 99
+      end_col: 0
+  - from: httpie.context.Environment.__str__
+    to: ?.actual.items
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 130
+      start_col: 0
+      end_line: 130
+      end_col: 0
+  - from: httpie.context.Environment.config
+    to: ?.config.load
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 146
+      start_col: 0
+      end_line: 146
+      end_col: 0
+  - from: httpie.context.Environment.__str__
+    to: ?.key.startswith
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 131
+      start_col: 0
+      end_line: 131
+      end_col: 0
+  - from: httpie.context.Environment.config
+    to: httpie.context.Environment.log_error
+    kind: method_call
+    edge_id: 17
+    range:
+      start_line: 148
+      start_col: 0
+      end_line: 148
+      end_col: 0

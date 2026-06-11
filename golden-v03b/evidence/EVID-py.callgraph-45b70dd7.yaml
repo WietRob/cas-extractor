@@ -1,0 +1,582 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-45b70dd7
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T15:03:56.268775+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.MORE_INFO_COMMANDS.rstrip
+  - symbol: ?.argument.serialize
+  - symbol: ?.group_rows.items
+  - symbol: ?.metavar.append
+  - symbol: ?.opt1.append
+  - symbol: ?.options_highlighter
+  - symbol: ?.options_rows.append
+  - symbol: ?.options_rows.extend
+  - symbol: ?.options_table.add_row
+  - symbol: ?.raw_form.get
+  - symbol: ?.shown_arguments.sort
+  - symbol: ?.text.append
+  - symbol: ?.whitelist.intersection
+  - symbol: httpie.output.ui.rich_help.to_help_message
+  - symbol: httpie.output.ui.rich_help.to_usage
+  - symbol: httpie.output.ui.rich_help.unpack_argument
+  - symbol: rich.padding.Padding
+  - symbol: rich.table.Table
+  - symbol: rich.text.Text
+  - symbol: textwrap.shorten
+  edges:
+  - from: httpie.output.ui.rich_help.to_usage
+    to: ?.shown_arguments.sort
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 87
+      start_col: 0
+      end_line: 87
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_usage
+    to: rich.text.Text
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 89
+      start_col: 0
+      end_line: 89
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: rich.table.Table
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 202
+      start_col: 0
+      end_line: 202
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: ?.group_rows.items
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 203
+      start_col: 0
+      end_line: 203
+      end_col: 0
+  - from: httpie.output.ui.rich_help.unpack_argument
+    to: rich.text.Text
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 69
+      start_col: 0
+      end_line: 69
+      end_col: 0
+  - from: httpie.output.ui.rich_help.unpack_argument
+    to: rich.text.Text
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 69
+      start_col: 0
+      end_line: 69
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_usage
+    to: ?.text.append
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 91
+      start_col: 0
+      end_line: 91
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_usage
+    to: ?.whitelist.intersection
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 93
+      start_col: 0
+      end_line: 93
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_usage
+    to: ?.argument.serialize
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 115
+      start_col: 0
+      end_line: 115
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_usage
+    to: ?.raw_form.get
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 116
+      start_col: 0
+      end_line: 116
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: rich.padding.Padding
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 131
+      start_col: 0
+      end_line: 134
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: rich.padding.Padding
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 136
+      start_col: 0
+      end_line: 139
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: rich.padding.Padding
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 140
+      start_col: 0
+      end_line: 140
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: ?.options_table.add_row
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 204
+      start_col: 0
+      end_line: 204
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: ?.options_table.add_row
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 205
+      start_col: 0
+      end_line: 209
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: ?.options_table.add_row
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 210
+      start_col: 0
+      end_line: 210
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: rich.padding.Padding
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 214
+      start_col: 0
+      end_line: 217
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: rich.padding.Padding
+    kind: call
+    edge_id: 17
+    range:
+      start_line: 218
+      start_col: 0
+      end_line: 218
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: rich.padding.Padding
+    kind: call
+    edge_id: 18
+    range:
+      start_line: 219
+      start_col: 0
+      end_line: 222
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: rich.padding.Padding
+    kind: call
+    edge_id: 19
+    range:
+      start_line: 223
+      start_col: 0
+      end_line: 226
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: rich.padding.Padding
+    kind: call
+    edge_id: 20
+    range:
+      start_line: 227
+      start_col: 0
+      end_line: 230
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_usage
+    to: ?.text.append
+    kind: call
+    edge_id: 21
+    range:
+      start_line: 101
+      start_col: 0
+      end_line: 101
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_usage
+    to: ?.text.append
+    kind: call
+    edge_id: 22
+    range:
+      start_line: 117
+      start_col: 0
+      end_line: 117
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_usage
+    to: ?.text.append
+    kind: call
+    edge_id: 23
+    range:
+      start_line: 118
+      start_col: 0
+      end_line: 121
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: ?.options_highlighter
+    kind: call
+    edge_id: 24
+    range:
+      start_line: 132
+      start_col: 0
+      end_line: 132
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: rich.text.Text
+    kind: call
+    edge_id: 25
+    range:
+      start_line: 137
+      start_col: 0
+      end_line: 137
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: httpie.output.ui.rich_help.to_usage
+    kind: call
+    edge_id: 26
+    range:
+      start_line: 140
+      start_col: 0
+      end_line: 140
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: httpie.output.ui.rich_help.unpack_argument
+    kind: call
+    edge_id: 27
+    range:
+      start_line: 150
+      start_col: 0
+      end_line: 150
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: rich.text.Text
+    kind: call
+    edge_id: 28
+    range:
+      start_line: 156
+      start_col: 0
+      end_line: 156
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: ?.metavar.append
+    kind: call
+    edge_id: 29
+    range:
+      start_line: 157
+      start_col: 0
+      end_line: 157
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: ?.argument.serialize
+    kind: call
+    edge_id: 30
+    range:
+      start_line: 162
+      start_col: 0
+      end_line: 162
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: ?.raw_form.get
+    kind: call
+    edge_id: 31
+    range:
+      start_line: 163
+      start_col: 0
+      end_line: 163
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: ?.raw_form.get
+    kind: call
+    edge_id: 32
+    range:
+      start_line: 164
+      start_col: 0
+      end_line: 164
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: ?.options_rows.append
+    kind: call
+    edge_id: 33
+    range:
+      start_line: 181
+      start_col: 0
+      end_line: 181
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: rich.text.Text
+    kind: call
+    edge_id: 34
+    range:
+      start_line: 204
+      start_col: 0
+      end_line: 204
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: rich.text.Text
+    kind: call
+    edge_id: 35
+    range:
+      start_line: 204
+      start_col: 0
+      end_line: 204
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: rich.text.Text
+    kind: call
+    edge_id: 36
+    range:
+      start_line: 204
+      start_col: 0
+      end_line: 204
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: rich.text.Text
+    kind: call
+    edge_id: 37
+    range:
+      start_line: 206
+      start_col: 0
+      end_line: 206
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: rich.text.Text
+    kind: call
+    edge_id: 38
+    range:
+      start_line: 207
+      start_col: 0
+      end_line: 207
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: rich.text.Text
+    kind: call
+    edge_id: 39
+    range:
+      start_line: 208
+      start_col: 0
+      end_line: 208
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: rich.text.Text
+    kind: call
+    edge_id: 40
+    range:
+      start_line: 210
+      start_col: 0
+      end_line: 210
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: rich.text.Text
+    kind: call
+    edge_id: 41
+    range:
+      start_line: 210
+      start_col: 0
+      end_line: 210
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: rich.text.Text
+    kind: call
+    edge_id: 42
+    range:
+      start_line: 210
+      start_col: 0
+      end_line: 210
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: ?.options_table.add_row
+    kind: call
+    edge_id: 43
+    range:
+      start_line: 212
+      start_col: 0
+      end_line: 212
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: rich.text.Text
+    kind: call
+    edge_id: 44
+    range:
+      start_line: 215
+      start_col: 0
+      end_line: 215
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: rich.text.Text
+    kind: call
+    edge_id: 45
+    range:
+      start_line: 220
+      start_col: 0
+      end_line: 220
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: ?.MORE_INFO_COMMANDS.rstrip
+    kind: call
+    edge_id: 46
+    range:
+      start_line: 224
+      start_col: 0
+      end_line: 224
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_usage
+    to: ?.whitelist.intersection
+    kind: call
+    edge_id: 47
+    range:
+      start_line: 82
+      start_col: 0
+      end_line: 82
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_usage
+    to: ?.text.append
+    kind: call
+    edge_id: 48
+    range:
+      start_line: 103
+      start_col: 0
+      end_line: 106
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_usage
+    to: ?.text.append
+    kind: call
+    edge_id: 49
+    range:
+      start_line: 108
+      start_col: 0
+      end_line: 113
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: ?.opt1.append
+    kind: call
+    edge_id: 50
+    range:
+      start_line: 152
+      start_col: 0
+      end_line: 152
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: ?.opt1.append
+    kind: call
+    edge_id: 51
+    range:
+      start_line: 153
+      start_col: 0
+      end_line: 153
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: rich.text.Text
+    kind: call
+    edge_id: 52
+    range:
+      start_line: 160
+      start_col: 0
+      end_line: 160
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: textwrap.shorten
+    kind: call
+    edge_id: 53
+    range:
+      start_line: 166
+      start_col: 0
+      end_line: 169
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: rich.padding.Padding
+    kind: call
+    edge_id: 54
+    range:
+      start_line: 173
+      start_col: 0
+      end_line: 176
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: ?.options_highlighter
+    kind: call
+    edge_id: 55
+    range:
+      start_line: 178
+      start_col: 0
+      end_line: 178
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: ?.options_rows.extend
+    kind: call
+    edge_id: 56
+    range:
+      start_line: 183
+      start_col: 0
+      end_line: 198
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: ?.options_highlighter
+    kind: call
+    edge_id: 57
+    range:
+      start_line: 174
+      start_col: 0
+      end_line: 174
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: ?.raw_form.get
+    kind: call
+    edge_id: 58
+    range:
+      start_line: 167
+      start_col: 0
+      end_line: 167
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: rich.padding.Padding
+    kind: call
+    edge_id: 59
+    range:
+      start_line: 186
+      start_col: 0
+      end_line: 192
+      end_col: 0
+  - from: httpie.output.ui.rich_help.to_help_message
+    to: rich.text.Text
+    kind: call
+    edge_id: 60
+    range:
+      start_line: 187
+      start_col: 0
+      end_line: 190
+      end_col: 0

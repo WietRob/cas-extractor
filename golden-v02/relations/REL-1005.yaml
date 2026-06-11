@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-1005
+kind: relation
+type: contains
+from: PYMOD-tests.test_json
+to: PYFUNC-tests.test_json.test_simple_json_arguments_with_non_json
+confidence:
+  level: E0
+  direction: confirmed
+evidence:
+- EVID-py.symbols-da6eae61
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1

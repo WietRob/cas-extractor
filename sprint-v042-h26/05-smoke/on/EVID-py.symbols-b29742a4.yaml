@@ -1,0 +1,380 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-b29742a4
+kind: evidence
+type: py.symbols
+created_at: '2026-02-23T05:35:52.892546+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://cas_extractor
+  root: cas_extractor
+  revision: git:test
+payload:
+  symbols:
+  - qualified: extractors.python_calls
+    kind: module
+    file: extractors/python_calls.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 1026
+      end_col: 0
+    fingerprint: 6cfd3a60221b7078f482d907c583674659e382ab460d17474a0162b366efe6ce
+  - qualified: extractors.python_calls.extract_calls
+    kind: function
+    file: extractors/python_calls.py
+    range:
+      start_line: 43
+      start_col: 0
+      end_line: 186
+      end_col: 0
+    fingerprint: 0510c94ed3ca18d9408b5938ed8998704b20c29599dd0015a3b8ec27bd4d87c8
+    params:
+    - name: repo_root
+      annotation: str
+    - name: emit_unresolved_self_attr
+      annotation: bool
+    - name: enable_h25_self_attr_noninit
+      annotation: bool
+    - name: enable_h26_self_attr_intermethod
+      annotation: bool
+    - name: h26_max_helper_depth
+      annotation: int
+    returns: Iterator[CallEntry]
+  - qualified: extractors.python_calls.ClassInfo
+    kind: class
+    file: extractors/python_calls.py
+    range:
+      start_line: 189
+      start_col: 0
+      end_line: 214
+      end_col: 0
+    fingerprint: 90520dfd859600f9368548c149be754514333217033ac0dba5c1e6710fb6380c
+  - qualified: extractors.python_calls._annotate_parents
+    kind: function
+    file: extractors/python_calls.py
+    range:
+      start_line: 217
+      start_col: 0
+      end_line: 221
+      end_col: 0
+    fingerprint: 690a9aa3bd25e4e0ee7fa1652e278eff148ad6919bd55cd4413f1951d9f4b501
+    params:
+    - name: tree
+      annotation: ast.AST
+    returns: None
+  - qualified: extractors.python_calls._build_local_var_types
+    kind: function
+    file: extractors/python_calls.py
+    range:
+      start_line: 224
+      start_col: 0
+      end_line: 259
+      end_col: 0
+    fingerprint: 058f6ee9a3e3fd912812341f81f6cc58d384668a25632c5ac1822d6ec19f04b4
+    params:
+    - name: func_node
+      annotation: ast.FunctionDef | ast.AsyncFunctionDef
+    - name: local_classes
+      annotation: dict[str, 'ClassInfo']
+    - name: local_imports
+      annotation: dict[str, str]
+    - name: all_classes
+      annotation: dict[str, 'ClassInfo']
+    returns: dict[str, str]
+  - qualified: extractors.python_calls._infer_class_from_expr
+    kind: function
+    file: extractors/python_calls.py
+    range:
+      start_line: 262
+      start_col: 0
+      end_line: 278
+      end_col: 0
+    fingerprint: a914512571413c6f3117724a8426bdb72d7f1da38b5c0ec7354e1aa5cb0a38f3
+    params:
+    - name: expr
+      annotation: ast.expr
+    - name: local_classes
+      annotation: dict[str, 'ClassInfo']
+    - name: local_imports
+      annotation: dict[str, str]
+    - name: all_classes
+      annotation: dict[str, 'ClassInfo']
+    returns: str | None
+  - qualified: extractors.python_calls._find_enclosing_func_node
+    kind: function
+    file: extractors/python_calls.py
+    range:
+      start_line: 281
+      start_col: 0
+      end_line: 291
+      end_col: 0
+    fingerprint: b84c8ead21e0b3e15242ad2f142c315c0bc243b322161b8616f5866b66d3570e
+    params:
+    - name: node
+      annotation: ast.AST
+    returns: ast.FunctionDef | ast.AsyncFunctionDef | None
+  - qualified: extractors.python_calls._build_init_self_attr_types
+    kind: function
+    file: extractors/python_calls.py
+    range:
+      start_line: 294
+      start_col: 0
+      end_line: 342
+      end_col: 0
+    fingerprint: 51fe1cdd3ba4ee73f31931bbf13e8244e953d3fe7eb74f0becf6dfd7e55edb81
+    params:
+    - name: class_node
+      annotation: ast.ClassDef
+    - name: local_classes
+      annotation: dict[str, 'ClassInfo']
+    - name: local_imports
+      annotation: dict[str, str]
+    - name: all_classes
+      annotation: dict[str, 'ClassInfo']
+    returns: dict[str, str]
+  - qualified: extractors.python_calls._build_method_local_self_attr_types
+    kind: function
+    file: extractors/python_calls.py
+    range:
+      start_line: 345
+      start_col: 0
+      end_line: 386
+      end_col: 0
+    fingerprint: 0240e93938cd20a896b1c43936911cd1449bdd362e384661edec62689ce418d7
+    params:
+    - name: func_node
+      annotation: ast.FunctionDef | ast.AsyncFunctionDef
+    - name: local_classes
+      annotation: dict[str, 'ClassInfo']
+    - name: local_imports
+      annotation: dict[str, str]
+    - name: all_classes
+      annotation: dict[str, 'ClassInfo']
+    returns: dict[str, str]
+  - qualified: extractors.python_calls._build_class_method_summaries
+    kind: function
+    file: extractors/python_calls.py
+    range:
+      start_line: 389
+      start_col: 0
+      end_line: 405
+      end_col: 0
+    fingerprint: 7759cd2bb794f61751a2ffa06edc2dda5fdd706952a5d7c42519984e41a11fe0
+    params:
+    - name: class_node
+      annotation: ast.ClassDef
+    - name: local_classes
+      annotation: dict[str, 'ClassInfo']
+    - name: local_imports
+      annotation: dict[str, str]
+    - name: all_classes
+      annotation: dict[str, 'ClassInfo']
+    returns: dict[str, dict[str, str]]
+  - qualified: extractors.python_calls._get_self_calls_in_method
+    kind: function
+    file: extractors/python_calls.py
+    range:
+      start_line: 408
+      start_col: 0
+      end_line: 427
+      end_col: 0
+    fingerprint: 979216426051e80485294d42e3f74e48ff6d160974f3882d59b37307f18858a4
+    params:
+    - name: func_node
+      annotation: ast.FunctionDef | ast.AsyncFunctionDef
+    - name: class_methods
+      annotation: set[str]
+    returns: list[str]
+  - qualified: extractors.python_calls._propagate_self_attr_summaries
+    kind: function
+    file: extractors/python_calls.py
+    range:
+      start_line: 430
+      start_col: 0
+      end_line: 482
+      end_col: 0
+    fingerprint: 0333d6422fa37bde37b3e09ca0bc52fdb80e2857372d960bf19954c1ade4e5f1
+    params:
+    - name: class_node
+      annotation: ast.ClassDef
+    - name: initial_summaries
+      annotation: dict[str, dict[str, str]]
+    - name: class_methods
+      annotation: set[str]
+    - name: max_depth
+      annotation: int
+    returns: dict[str, dict[str, str | None]]
+  - qualified: extractors.python_calls._extract_calls_from_tree
+    kind: function
+    file: extractors/python_calls.py
+    range:
+      start_line: 485
+      start_col: 0
+      end_line: 585
+      end_col: 0
+    fingerprint: 37f31945bfbbe122b45cb2e6ca29dbd6ac365e120118c0ec27507ac4fe3ec2dc
+    params:
+    - name: tree
+      annotation: ast.Module
+    - name: source_lines
+      annotation: list[str]
+    - name: rel_file
+      annotation: str
+    - name: module_qname
+      annotation: str
+    - name: local_symbols
+      annotation: set[str]
+    - name: local_imports
+      annotation: dict[str, str]
+    - name: local_classes
+      annotation: dict[str, 'ClassInfo']
+    - name: all_classes
+      annotation: dict[str, 'ClassInfo']
+    - name: emit_unresolved_self_attr
+      annotation: bool
+    - name: enable_h25_self_attr_noninit
+      annotation: bool
+    - name: enable_h26_self_attr_intermethod
+      annotation: bool
+    - name: h26_max_helper_depth
+      annotation: int
+    returns: Iterator[CallEntry]
+  - qualified: extractors.python_calls._resolve_call
+    kind: function
+    file: extractors/python_calls.py
+    range:
+      start_line: 588
+      start_col: 0
+      end_line: 775
+      end_col: 0
+    fingerprint: c70f0f1ad10ef4fc1f86ef2ae382089feac10243fc335884c7c35e31ee162ee6
+    params:
+    - name: func_node
+      annotation: ast.expr
+    - name: module_qname
+      annotation: str
+    - name: local_symbols
+      annotation: set[str]
+    - name: local_imports
+      annotation: dict[str, str]
+    - name: local_classes
+      annotation: dict[str, 'ClassInfo']
+    - name: all_classes
+      annotation: dict[str, 'ClassInfo']
+    - name: enclosing_class
+      annotation: '''ClassInfo | None'''
+    - name: local_var_types
+      annotation: dict[str, str] | None
+    - name: method_local_self_attr_types
+      annotation: dict[str, str] | None
+    - name: propagated_self_attr_types
+      annotation: dict[str, str | None] | None
+    - name: emit_unresolved_self_attr
+      annotation: bool
+    returns: tuple[str | None, str]
+  - qualified: extractors.python_calls._resolve_in_bases
+    kind: function
+    file: extractors/python_calls.py
+    range:
+      start_line: 778
+      start_col: 0
+      end_line: 795
+      end_col: 0
+    fingerprint: e8dca7fbccd10aeb5f38d927504a6c387347ced41bdeda863f53b45dab98eba2
+    params:
+    - name: method_name
+      annotation: str
+    - name: class_info
+      annotation: '''ClassInfo'''
+    - name: local_classes
+      annotation: dict[str, 'ClassInfo']
+    - name: all_classes
+      annotation: dict[str, 'ClassInfo']
+    - name: local_imports
+      annotation: dict[str, str]
+    returns: str | None
+  - qualified: extractors.python_calls._resolve_super_method
+    kind: function
+    file: extractors/python_calls.py
+    range:
+      start_line: 798
+      start_col: 0
+      end_line: 815
+      end_col: 0
+    fingerprint: 825799889bc3db64067eb5f43fdbe66f5419e91212c289db18205c6ce50abdb1
+    params:
+    - name: method_name
+      annotation: str
+    - name: class_info
+      annotation: '''ClassInfo'''
+    - name: local_classes
+      annotation: dict[str, 'ClassInfo']
+    - name: all_classes
+      annotation: dict[str, 'ClassInfo']
+    - name: local_imports
+      annotation: dict[str, str]
+    returns: str | None
+  - qualified: extractors.python_calls._find_class_by_name
+    kind: function
+    file: extractors/python_calls.py
+    range:
+      start_line: 818
+      start_col: 0
+      end_line: 842
+      end_col: 0
+    fingerprint: 5f195ebd47401f2e61ee2e39fd51180001240c9c986ddcb9a3c397b4dbb91c1f
+    params:
+    - name: name
+      annotation: str
+    - name: local_classes
+      annotation: dict[str, 'ClassInfo']
+    - name: all_classes
+      annotation: dict[str, 'ClassInfo']
+    - name: local_imports
+      annotation: dict[str, str]
+    returns: '''ClassInfo | None'''
+  - qualified: extractors.python_calls._find_enclosing_context
+    kind: function
+    file: extractors/python_calls.py
+    range:
+      start_line: 845
+      start_col: 0
+      end_line: 905
+      end_col: 0
+    fingerprint: f1554046c16f62e66821ca0655bfb62cbf0477f4a18c3971e5e42267e02374a7
+    params:
+    - name: node
+      annotation: ast.AST
+    - name: module_qname
+      annotation: str
+    - name: all_classes
+      annotation: dict[str, 'ClassInfo']
+    returns: tuple[str, 'ClassInfo | None']
+  - qualified: extractors.python_calls._path_to_module
+    kind: function
+    file: extractors/python_calls.py
+    range:
+      start_line: 908
+      start_col: 0
+      end_line: 914
+      end_col: 0
+    fingerprint: 392cfe62bde75c17336d1d3260c406710004db53390333b19e2b8b8b8a748a97
+    params:
+    - name: rel_path
+      annotation: Path
+    returns: str
+  - qualified: extractors.python_calls._extract_source
+    kind: function
+    file: extractors/python_calls.py
+    range:
+      start_line: 917
+      start_col: 0
+      end_line: 924
+      end_col: 0
+    fingerprint: 9e8d1c87159a2062fe1ae4ab01d57681aaa037677e77ca794780132cfadea412
+    params:
+    - name: source_lines
+      annotation: list[str]
+    - name: node
+      annotation: ast.AST
+    returns: str

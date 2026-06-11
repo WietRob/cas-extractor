@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-2657
+kind: relation
+type: calls
+from: PYFUNC-extras.profiling.run
+to: PYFUNC-pathlib.Path
+confidence:
+  level: E1
+  direction: confirmed
+evidence:
+- EVID-py.callgraph-5b55cb87
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1

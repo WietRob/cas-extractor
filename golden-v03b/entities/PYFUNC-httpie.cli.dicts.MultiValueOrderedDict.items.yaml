@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.dicts.MultiValueOrderedDict.items
+kind: entity
+type: py.function
+name: items
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/dicts.py
+anchors:
+- type: symbol
+  value: httpie.cli.dicts.MultiValueOrderedDict.items
+- type: fingerprint
+  value: f072de93552146f26127f37a294612275691df4295382c288ed16a90c96a838a
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.dicts.MultiValueOrderedDict

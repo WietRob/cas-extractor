@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.utils.load_json_preserve_order_and_dupe_keys
+kind: entity
+type: py.function
+name: load_json_preserve_order_and_dupe_keys
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/utils.py
+anchors:
+- type: symbol
+  value: httpie.utils.load_json_preserve_order_and_dupe_keys
+- type: fingerprint
+  value: ac667745752f7f715a6311b2654ec528671c30284c901d0b64b6cdcde3e8f41f
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.utils

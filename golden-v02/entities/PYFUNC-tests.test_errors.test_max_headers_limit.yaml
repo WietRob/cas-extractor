@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_errors.test_max_headers_limit
+kind: entity
+type: py.function
+name: test_max_headers_limit
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_errors.py
+anchors:
+- type: symbol
+  value: tests.test_errors.test_max_headers_limit
+- type: fingerprint
+  value: 717fbfd81c9cec475a2e16b2443fa640bed044f38831aa49d4abb9fc10545a8a
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_errors

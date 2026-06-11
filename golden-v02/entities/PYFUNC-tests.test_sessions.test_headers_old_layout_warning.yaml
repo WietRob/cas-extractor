@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_sessions.test_headers_old_layout_warning
+kind: entity
+type: py.function
+name: test_headers_old_layout_warning
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_sessions.py
+anchors:
+- type: symbol
+  value: tests.test_sessions.test_headers_old_layout_warning
+- type: fingerprint
+  value: 28fded706d5b8ce63ab480df7d3ae7f9f9a107c88081e9ee12114b8141a5b6f1
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_sessions

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.internal.update_warnings.maybe_fetch_updates
+kind: entity
+type: py.function
+name: maybe_fetch_updates
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/internal/update_warnings.py
+anchors:
+- type: symbol
+  value: httpie.internal.update_warnings.maybe_fetch_updates
+- type: fingerprint
+  value: 758040d3713f7791e9ab7ddf1b74bb3be45496b23929a2fdeda4a78f756a4e8e
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.internal.update_warnings

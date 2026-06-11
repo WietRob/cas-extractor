@@ -1,0 +1,145 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-00ae6298
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T15:03:56.241708+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.lexer_names.append
+  - symbol: ?.lexer_names.extend
+  - symbol: ?.mime.split
+  - symbol: ?.mime_types.extend
+  - symbol: ?.raw_styles.items
+  - symbol: ?.subtype.split
+  - symbol: httpie.output.formatters.colors.ColorFormatter
+  - symbol: httpie.output.formatters.colors.format_value
+  - symbol: httpie.output.formatters.colors.get_lexer
+  - symbol: httpie.output.formatters.colors.make_style
+  - symbol: httpie.output.formatters.colors.make_styles
+  - symbol: json.loads
+  - symbol: lexers.json.EnhancedJsonLexer
+  - symbol: lexers.metadata.MetadataLexer
+  - symbol: ui.palette.SHADE_TO_PIE_STYLE.items
+  edges:
+  - from: httpie.output.formatters.colors.ColorFormatter
+    to: lexers.metadata.MetadataLexer
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 49
+      start_col: 0
+      end_line: 49
+      end_col: 0
+  - from: httpie.output.formatters.colors.get_lexer
+    to: ?.mime.split
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 149
+      start_col: 0
+      end_line: 149
+      end_col: 0
+  - from: httpie.output.formatters.colors.make_styles
+    to: ui.palette.SHADE_TO_PIE_STYLE.items
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 374
+      start_col: 0
+      end_line: 374
+      end_col: 0
+  - from: httpie.output.formatters.colors.get_lexer
+    to: ?.lexer_names.append
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 151
+      start_col: 0
+      end_line: 151
+      end_col: 0
+  - from: httpie.output.formatters.colors.get_lexer
+    to: ?.subtype.split
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 153
+      start_col: 0
+      end_line: 153
+      end_col: 0
+  - from: httpie.output.formatters.colors.get_lexer
+    to: ?.lexer_names.extend
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 154
+      start_col: 0
+      end_line: 154
+      end_col: 0
+  - from: httpie.output.formatters.colors.get_lexer
+    to: ?.mime_types.extend
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 155
+      start_col: 0
+      end_line: 158
+      end_col: 0
+  - from: httpie.output.formatters.colors.get_lexer
+    to: ?.lexer_names.append
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 163
+      start_col: 0
+      end_line: 163
+      end_col: 0
+  - from: httpie.output.formatters.colors.get_lexer
+    to: lexers.json.EnhancedJsonLexer
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 192
+      start_col: 0
+      end_line: 192
+      end_col: 0
+  - from: httpie.output.formatters.colors.get_lexer
+    to: json.loads
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 183
+      start_col: 0
+      end_line: 183
+      end_col: 0
+  - from: httpie.output.formatters.colors.make_style
+    to: httpie.output.formatters.colors.format_value
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 364
+      start_col: 0
+      end_line: 364
+      end_col: 0
+  - from: httpie.output.formatters.colors.make_styles
+    to: httpie.output.formatters.colors.make_style
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 376
+      start_col: 0
+      end_line: 376
+      end_col: 0
+  - from: httpie.output.formatters.colors.make_style
+    to: ?.raw_styles.items
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 365
+      start_col: 0
+      end_line: 365
+      end_col: 0

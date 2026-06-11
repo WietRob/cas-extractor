@@ -1,0 +1,30 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-033332ea
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:52.923167+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.__main__
+    kind: module
+    file: httpie/__main__.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 19
+      end_col: 0
+    fingerprint: 9f877bde238b983a40a70864d58c06bdc407ddb45e9e0096f6110d0b16609b8c
+  - qualified: httpie.__main__.main
+    kind: function
+    file: httpie/__main__.py
+    range:
+      start_line: 6
+      start_col: 0
+      end_line: 14
+      end_col: 0
+    fingerprint: 1bd84782f35d7d1aba0f54d7d8a5de337a0d08d9e47b2be6a057487cf5374f6d

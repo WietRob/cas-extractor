@@ -1,0 +1,23 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-491eea5a
+kind: evidence
+type: py.symbols
+created_at: '2026-02-23T13:04:32.060788+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://h28-test
+  root: /tmp/h28-verify
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: test_h28.TestEdgeH25Wins.run
+    kind: method
+    file: test_h28.py
+    range:
+      start_line: 308
+      start_col: 0
+      end_line: 311
+      end_col: 0
+    fingerprint: 32e539423411fbcecf328d1c42b613a9dcf93ef98e6f1c300ca86e1bf6812872
+    params:
+    - name: self

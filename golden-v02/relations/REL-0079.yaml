@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-0079
+kind: relation
+type: contains
+from: PYCLS-httpie.ssl_.HTTPieHTTPSAdapter
+to: PYFUNC-httpie.ssl_.HTTPieHTTPSAdapter.get_default_ciphers_names
+confidence:
+  level: E0
+  direction: confirmed
+evidence:
+- EVID-py.symbols-0fae11a9
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1

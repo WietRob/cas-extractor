@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-tests.test_ssl.TestServerCert
+kind: entity
+type: py.class
+name: TestServerCert
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_ssl.py
+anchors:
+- type: symbol
+  value: tests.test_ssl.TestServerCert
+- type: fingerprint
+  value: 376fde7c25149d8d9e4c9b22db45ad276c175b32b5506ac2c78c305adee1ea4c
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_ssl

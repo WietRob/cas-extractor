@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.utils.url_as_host
+kind: entity
+type: py.function
+name: url_as_host
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/utils.py
+anchors:
+- type: symbol
+  value: httpie.utils.url_as_host
+- type: fingerprint
+  value: cdc57979fd44a8a12ed400d7cf39aaa182de09c6e80659d831de767b3e9a4247
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.utils

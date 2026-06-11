@@ -1,0 +1,17 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-9863e7b4
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-21T12:13:53.342728+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  imports:
+  - from: tests.test_plugins_cli
+    imports:
+    - pytest
+    - httpie.status.ExitStatus
+    - tests.utils.plugins_cli.parse_listing

@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-0015
+kind: relation
+type: contains
+from: PYMOD-httpie.output.formatters.colors
+to: PYCLS-httpie.output.formatters.colors.ColorFormatter
+confidence:
+  level: E0
+  direction: confirmed
+evidence:
+- EVID-py.symbols-00ae6298
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1

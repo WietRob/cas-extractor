@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.streams.EncodedStream.encoding
+kind: entity
+type: py.function
+name: encoding
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/streams.py
+anchors:
+- type: symbol
+  value: httpie.output.streams.EncodedStream.encoding
+- type: fingerprint
+  value: 002437376fd48c893e6cc4fc3f46f5ba6435da93f507567a591f97a205e4317d
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.streams.EncodedStream

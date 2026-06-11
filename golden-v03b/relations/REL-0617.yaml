@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-0617
+kind: relation
+type: contains
+from: PYCLS-httpie.output.streams.BufferedPrettyStream
+to: PYFUNC-httpie.output.streams.BufferedPrettyStream.iter_body
+confidence:
+  level: E0
+  direction: confirmed
+evidence:
+- EVID-py.symbols-7b264f80
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1

@@ -1,0 +1,87 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-02bdf4eb
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T08:37:44.640577+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.test_ssl.TestServerCert.test_verify_no_OK
+    kind: method
+    file: tests/test_ssl.py
+    range:
+      start_line: 110
+      start_col: 0
+      end_line: 114
+      end_col: 0
+    fingerprint: 00329eac7f4c47d5cb2e4cb750561bf5973770bbf34b892f603f345949019f63
+    params:
+    - name: self
+    - name: httpbin_secure
+  - qualified: tests.test_ssl.TestServerCert.test_verify_false_OK
+    kind: method
+    file: tests/test_ssl.py
+    range:
+      start_line: 117
+      start_col: 0
+      end_line: 120
+      end_col: 0
+    fingerprint: 31452ad4c25a556eefb164269e498eaf35cf9b97c7a7a11328adb0f93f1c4940
+    decorators:
+    - pytest.mark.parametrize('verify_value', ['false', 'fALse'])
+    params:
+    - name: self
+    - name: httpbin_secure
+    - name: verify_value
+  - qualified: tests.test_ssl.TestServerCert.test_verify_custom_ca_bundle_path
+    kind: method
+    file: tests/test_ssl.py
+    range:
+      start_line: 122
+      start_col: 0
+      end_line: 126
+      end_col: 0
+    fingerprint: e4422e93b091abeb6b9d5606fb2cd82965ab2e9c2f645b48d09eaa4aa615d162
+    params:
+    - name: self
+    - name: httpbin_secure_untrusted
+  - qualified: tests.test_ssl.TestServerCert.test_self_signed_server_cert_by_default_raises_ssl_error
+    kind: method
+    file: tests/test_ssl.py
+    range:
+      start_line: 128
+      start_col: 0
+      end_line: 133
+      end_col: 0
+    fingerprint: be5b652a2f8f6b39275cfd9ae2cb5a4a104021f9444211cde1177d62299bfb3f
+    params:
+    - name: self
+    - name: httpbin_secure_untrusted
+  - qualified: tests.test_ssl.TestServerCert.test_verify_custom_ca_bundle_invalid_path
+    kind: method
+    file: tests/test_ssl.py
+    range:
+      start_line: 135
+      start_col: 0
+      end_line: 138
+      end_col: 0
+    fingerprint: 9d5d5a881a9455b453c3858de88a0b4dd6ff30ce8d61744eb29843b79016ac51
+    params:
+    - name: self
+    - name: httpbin_secure
+  - qualified: tests.test_ssl.TestServerCert.test_verify_custom_ca_bundle_invalid_bundle
+    kind: method
+    file: tests/test_ssl.py
+    range:
+      start_line: 140
+      start_col: 0
+      end_line: 142
+      end_col: 0
+    fingerprint: ac0ff931ceda5cfad829a9f46b9574d9802a6bc5671fef3e7d0a578cd08a8f55
+    params:
+    - name: self
+    - name: httpbin_secure

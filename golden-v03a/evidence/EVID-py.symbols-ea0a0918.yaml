@@ -1,0 +1,23 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-ea0a0918
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:53.012681+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.output.formatters.colors.make_style.format_value
+    kind: function
+    file: httpie/output/formatters/colors.py
+    range:
+      start_line: 355
+      start_col: 0
+      end_line: 359
+      end_col: 0
+    fingerprint: 2f57fc0b3213ad92f4b39ae673687c0b104734c5fd7f4c8a48ebc368a228999a
+    params:
+    - name: value

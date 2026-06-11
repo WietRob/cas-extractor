@@ -1,0 +1,54 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-f1ad9b96
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-22T08:37:45.393825+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: extras.packaging.linux.scripts.http_cli
+  - symbol: extras.packaging.linux.scripts.httpie_cli
+  - symbol: httpie.__main__.main
+  - symbol: httpie.manager.__main__.main
+  - symbol: sys.exit
+  edges:
+  - from: extras.packaging.linux.scripts.http_cli
+    to: sys.exit
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 5
+      start_col: 0
+      end_line: 5
+      end_col: 0
+  - from: extras.packaging.linux.scripts.http_cli
+    to: httpie.__main__.main
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 5
+      start_col: 0
+      end_line: 5
+      end_col: 0
+  - from: extras.packaging.linux.scripts.httpie_cli
+    to: sys.exit
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 5
+      start_col: 0
+      end_line: 5
+      end_col: 0
+  - from: extras.packaging.linux.scripts.httpie_cli
+    to: httpie.manager.__main__.main
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 5
+      start_col: 0
+      end_line: 5
+      end_col: 0

@@ -1,0 +1,21 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-e749f415
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T17:44:04.433826+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.test_cookie.test_cookie_parser.MockServerRequestHandler
+    kind: class
+    file: tests/test_cookie.py
+    range:
+      start_line: 27
+      start_col: 0
+      end_line: 42
+      end_col: 0
+    fingerprint: a23c1b23c0f234e0b42d1fa4f11ff5de5ec1c8358485099f64d3e4d131faa249

@@ -1,0 +1,48 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-65361b13
+kind: evidence
+type: py.symbols
+created_at: '2026-02-26T06:33:52.158230+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://gates
+  root: ./sprint-v050-engine/02-fixtures
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: test_h28_real
+    kind: module
+    file: test_h28_real.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 15
+      end_col: 0
+    fingerprint: 8baf837cff976fa1234eb0b2af56e25f4d3387fbe3930a96ad70bc835953f8e4
+  - qualified: test_h28_real.Builder
+    kind: class
+    file: test_h28_real.py
+    range:
+      start_line: 4
+      start_col: 0
+      end_line: 6
+      end_col: 0
+    fingerprint: c0b8ef0fbf3ff39e45c8f0db523c1a2ac09d1f4b062668d3e2ecbf214e73b15f
+  - qualified: test_h28_real.builder_factory
+    kind: function
+    file: test_h28_real.py
+    range:
+      start_line: 9
+      start_col: 0
+      end_line: 10
+      end_col: 0
+    fingerprint: 0b8450827c0162e5b5fb7b292aae63b0893699eebfb5a1101ec336bd0dcad50c
+  - qualified: test_h28_real.main
+    kind: function
+    file: test_h28_real.py
+    range:
+      start_line: 13
+      start_col: 0
+      end_line: 15
+      end_col: 0
+    fingerprint: b995e0de5e52b322d10bf097f49c38957b453729b7c049c4ad23d1f396d1b85e

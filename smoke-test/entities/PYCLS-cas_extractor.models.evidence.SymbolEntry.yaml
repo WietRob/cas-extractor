@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-cas_extractor.models.evidence.SymbolEntry
+kind: entity
+type: py.class
+name: SymbolEntry
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor/models/evidence.py
+anchors:
+- type: symbol
+  value: cas_extractor.models.evidence.SymbolEntry
+- type: fingerprint
+  value: 23ea87088784495914f4fd443b87f3653b2fb64a6b27affe193d4eeb41efe9b0
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor.models.evidence

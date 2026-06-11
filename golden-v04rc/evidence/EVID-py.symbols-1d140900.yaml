@@ -1,0 +1,137 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-1d140900
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T08:37:44.637508+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.test_ssl
+    kind: module
+    file: tests/test_ssl.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 211
+      end_col: 0
+    fingerprint: f221a9ce61b4201a48a3b0a1637e57c1e4be03ac321d27a946434b6c80a765f7
+  - qualified: tests.test_ssl.test_ssl_version
+    kind: function
+    file: tests/test_ssl.py
+    range:
+      start_line: 54
+      start_col: 0
+      end_line: 74
+      end_col: 0
+    fingerprint: 158b1fc643b65efdfc48e32994d0db67a7cb6b0c913e31c15c86e800a7896f4d
+    decorators:
+    - pytest.mark.parametrize('ssl_version', AVAILABLE_SSL_VERSION_ARG_MAPPING.keys())
+    params:
+    - name: httpbin_secure
+    - name: ssl_version
+  - qualified: tests.test_ssl.TestClientCert
+    kind: class
+    file: tests/test_ssl.py
+    range:
+      start_line: 77
+      start_col: 0
+      end_line: 105
+      end_col: 0
+    fingerprint: bbe4dfe933aff27fcc6a9607dd19f0a1eb8b4e226d1d74a28f2986a355e4776f
+  - qualified: tests.test_ssl.TestServerCert
+    kind: class
+    file: tests/test_ssl.py
+    range:
+      start_line: 108
+      start_col: 0
+      end_line: 142
+      end_col: 0
+    fingerprint: 376fde7c25149d8d9e4c9b22db45ad276c175b32b5506ac2c78c305adee1ea4c
+  - qualified: tests.test_ssl.test_ciphers
+    kind: function
+    file: tests/test_ssl.py
+    range:
+      start_line: 145
+      start_col: 0
+      end_line: 151
+      end_col: 0
+    fingerprint: 4e970d016c31e1a1e0f67d2d83a092d2c31abd42bcf86c75c7e98a58c5f5a974
+    params:
+    - name: httpbin_secure
+  - qualified: tests.test_ssl.test_ciphers_none_can_be_selected
+    kind: function
+    file: tests/test_ssl.py
+    range:
+      start_line: 155
+      start_col: 0
+      end_line: 168
+      end_col: 0
+    fingerprint: 7470b389478fa613edfd24e90893255b83bdcf431fea689d4449cc3c183d74a1
+    decorators:
+    - pytest.mark.skipif(IS_PYOPENSSL, reason='pyOpenSSL uses a different message
+      format.')
+    params:
+    - name: httpbin_secure
+  - qualified: tests.test_ssl.test_pyopenssl_presence
+    kind: function
+    file: tests/test_ssl.py
+    range:
+      start_line: 171
+      start_col: 0
+      end_line: 177
+      end_col: 0
+    fingerprint: 1edfe5009a4c1da9948d9a340b84cb1cd71e53f355d51857eaf2e0ed593c80ac
+  - qualified: tests.test_ssl.test_password_protected_cert_prompt
+    kind: function
+    file: tests/test_ssl.py
+    range:
+      start_line: 182
+      start_col: 0
+      end_line: 186
+      end_col: 0
+    fingerprint: cb90cdcbc6af60dfe2f37bd9bd1ffe8ecb06d5dcbd9f569ba2f008d671e295d2
+    decorators:
+    - 'mock.patch(''httpie.cli.argtypes.SSLCredentials._prompt_password'', new=lambda
+      self, prompt: PWD_CLIENT_PASS)'
+    params:
+    - name: httpbin_secure
+  - qualified: tests.test_ssl.test_password_protected_cert_prompt_invalid
+    kind: function
+    file: tests/test_ssl.py
+    range:
+      start_line: 191
+      start_col: 0
+      end_line: 195
+      end_col: 0
+    fingerprint: f1018e57fa98cc57f7bee6c2168b1e206d380c60a205c7b21fd8d700b366aac9
+    decorators:
+    - 'mock.patch(''httpie.cli.argtypes.SSLCredentials._prompt_password'', new=lambda
+      self, prompt: PWD_CLIENT_INVALID_PASS)'
+    params:
+    - name: httpbin_secure
+  - qualified: tests.test_ssl.test_password_protected_cert_cli_arg
+    kind: function
+    file: tests/test_ssl.py
+    range:
+      start_line: 198
+      start_col: 0
+      end_line: 203
+      end_col: 0
+    fingerprint: 4e612f8fc51704e2fc5df67f4614d0fdf733e524605fae9e87a87fec53c40d81
+    params:
+    - name: httpbin_secure
+  - qualified: tests.test_ssl.test_password_protected_cert_cli_arg_invalid
+    kind: function
+    file: tests/test_ssl.py
+    range:
+      start_line: 206
+      start_col: 0
+      end_line: 211
+      end_col: 0
+    fingerprint: 90fc163c48489a643fe56857eb0def6c86072c1216c356959c71d43d9b0e00cf
+    params:
+    - name: httpbin_secure

@@ -1,0 +1,38 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-a426cd74
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:53.224007+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: tests.utils.plugins_cli.parse_listing.parse_entry_point
+    kind: function
+    file: tests/utils/plugins_cli.py
+    range:
+      start_line: 135
+      start_col: 0
+      end_line: 137
+      end_col: 0
+    fingerprint: 6b62bf43e0d4ca702e25f8750be5d6fa4c4696058d299f463f7ff710a54dcbea
+    params:
+    - name: line
+      annotation: str
+    returns: Tuple[str, str]
+  - qualified: tests.utils.plugins_cli.parse_listing.parse_plugin
+    kind: function
+    file: tests/utils/plugins_cli.py
+    range:
+      start_line: 139
+      start_col: 0
+      end_line: 141
+      end_col: 0
+    fingerprint: bfb54a94cb3ca69b8a22d97169c50be4205aa7500397f6f0c17e34c623d23e00
+    params:
+    - name: line
+      annotation: str
+    returns: Tuple[str, str]

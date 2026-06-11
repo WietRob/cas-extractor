@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-tests.test_cookie
+kind: entity
+type: py.module
+name: test_cookie
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_cookie.py
+anchors:
+- type: symbol
+  value: tests.test_cookie
+- type: fingerprint
+  value: 1623eba2c1558746e245fb4582571b07deea8f6dd077eb3d9f03e9fb54971320
+  algo: sha256
+claims: []
+relations: []
+namespace: tests

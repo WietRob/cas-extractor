@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_plugins_cli.test_plugins_installation_failed
+kind: entity
+type: py.function
+name: test_plugins_installation_failed
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_plugins_cli.py
+anchors:
+- type: symbol
+  value: tests.test_plugins_cli.test_plugins_installation_failed
+- type: fingerprint
+  value: 8eeac337015dbc47402e13a124f2188f45d6526c01adcaae23508729ddbffc55
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_plugins_cli

@@ -1,0 +1,23 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-4ac55185
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:51:32.468087+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: tests.test_downloads.test_unique_filename.attempts
+    kind: function
+    file: tests/test_downloads.py
+    range:
+      start_line: 106
+      start_col: 0
+      end_line: 115
+      end_col: 0
+    fingerprint: ac098de87bb4bb9f7c5222d131ed82a5ef61a6fb0c4c39ffb47215b7b5a12314
+    params:
+    - name: unique_on_attempt

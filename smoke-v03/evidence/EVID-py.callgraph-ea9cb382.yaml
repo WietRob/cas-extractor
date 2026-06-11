@@ -1,0 +1,474 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-ea9cb382
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T12:10:20.692558+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+payload:
+  nodes:
+  - symbol: ?.base_names.append
+  - symbol: ?.class_parts.append
+  - symbol: ?.class_parts.reverse
+  - symbol: ?.classes.items
+  - symbol: ?.func_parts.append
+  - symbol: ?.func_parts.reverse
+  - symbol: ?.methods.add
+  - symbol: ?.module_classes.get
+  - symbol: ?.module_classes.items
+  - symbol: ?.module_imports.get
+  - symbol: ?.module_symbols.get
+  - symbol: ?.p.startswith
+  - symbol: ?.py_file.read_text
+  - symbol: ?.py_file.relative_to
+  - symbol: ?.py_files.append
+  - symbol: ?.root.rglob
+  - symbol: ?.source.splitlines
+  - symbol: ?.src_text.strip
+  - symbol: ?.symbols.add
+  - symbol: ast.iter_child_nodes
+  - symbol: ast.parse
+  - symbol: ast.unparse
+  - symbol: ast.walk
+  - symbol: cas_extractor.extractors.python_calls.ClassInfo
+  - symbol: cas_extractor.extractors.python_calls._annotate_parents
+  - symbol: cas_extractor.extractors.python_calls._extract_calls_from_tree
+  - symbol: cas_extractor.extractors.python_calls._extract_source
+  - symbol: cas_extractor.extractors.python_calls._find_class_by_name
+  - symbol: cas_extractor.extractors.python_calls._find_enclosing_context
+  - symbol: cas_extractor.extractors.python_calls._path_to_module
+  - symbol: cas_extractor.extractors.python_calls._resolve_call
+  - symbol: cas_extractor.extractors.python_calls._resolve_in_bases
+  - symbol: cas_extractor.extractors.python_calls._resolve_super_method
+  - symbol: cas_extractor.extractors.python_calls.extract_calls
+  - symbol: cas_extractor.models.evidence.Anchor
+  - symbol: cas_extractor.models.evidence.CallEntry
+  - symbol: cas_extractor.utils.fingerprint.fingerprint_ast
+  - symbol: pathlib.Path
+  edges:
+  - from: cas_extractor.extractors.python_calls.extract_calls
+    to: ?.module_classes.items
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 110
+      start_col: 0
+      end_line: 110
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls._annotate_parents
+    to: ast.walk
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 154
+      start_col: 0
+      end_line: 154
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls._extract_calls_from_tree
+    to: ast.walk
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 171
+      start_col: 0
+      end_line: 171
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls._find_enclosing_context
+    to: ?.func_parts.reverse
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 431
+      start_col: 0
+      end_line: 431
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls.extract_calls
+    to: ?.root.rglob
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 49
+      start_col: 0
+      end_line: 49
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls.extract_calls
+    to: ?.py_file.relative_to
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 50
+      start_col: 0
+      end_line: 50
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls.extract_calls
+    to: ?.py_files.append
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 59
+      start_col: 0
+      end_line: 59
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls.extract_calls
+    to: cas_extractor.extractors.python_calls._path_to_module
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 68
+      start_col: 0
+      end_line: 68
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls.extract_calls
+    to: ast.walk
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 73
+      start_col: 0
+      end_line: 73
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls.extract_calls
+    to: ?.classes.items
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 111
+      start_col: 0
+      end_line: 111
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls.extract_calls
+    to: cas_extractor.extractors.python_calls._annotate_parents
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 122
+      start_col: 0
+      end_line: 122
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls.extract_calls
+    to: ?.source.splitlines
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 123
+      start_col: 0
+      end_line: 123
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls.extract_calls
+    to: cas_extractor.extractors.python_calls._path_to_module
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 124
+      start_col: 0
+      end_line: 124
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls.extract_calls
+    to: ?.module_symbols.get
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 125
+      start_col: 0
+      end_line: 125
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls.extract_calls
+    to: ?.module_imports.get
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 126
+      start_col: 0
+      end_line: 126
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls.extract_calls
+    to: ?.module_classes.get
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 127
+      start_col: 0
+      end_line: 127
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls._annotate_parents
+    to: ast.iter_child_nodes
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 155
+      start_col: 0
+      end_line: 155
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls._extract_calls_from_tree
+    to: cas_extractor.extractors.python_calls._find_enclosing_context
+    kind: call
+    edge_id: 17
+    range:
+      start_line: 176
+      start_col: 0
+      end_line: 176
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls._extract_calls_from_tree
+    to: cas_extractor.extractors.python_calls._resolve_call
+    kind: call
+    edge_id: 18
+    range:
+      start_line: 178
+      start_col: 0
+      end_line: 186
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls._extract_calls_from_tree
+    to: cas_extractor.extractors.python_calls._extract_source
+    kind: call
+    edge_id: 19
+    range:
+      start_line: 191
+      start_col: 0
+      end_line: 191
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls._extract_calls_from_tree
+    to: cas_extractor.models.evidence.Anchor
+    kind: call
+    edge_id: 20
+    range:
+      start_line: 192
+      start_col: 0
+      end_line: 198
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls._resolve_in_bases
+    to: cas_extractor.extractors.python_calls._find_class_by_name
+    kind: call
+    edge_id: 21
+    range:
+      start_line: 354
+      start_col: 0
+      end_line: 356
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls._resolve_super_method
+    to: cas_extractor.extractors.python_calls._find_class_by_name
+    kind: call
+    edge_id: 22
+    range:
+      start_line: 374
+      start_col: 0
+      end_line: 376
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls._find_enclosing_context
+    to: ?.class_parts.reverse
+    kind: call
+    edge_id: 23
+    range:
+      start_line: 449
+      start_col: 0
+      end_line: 449
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls._find_enclosing_context
+    to: cas_extractor.extractors.python_calls.ClassInfo
+    kind: call
+    edge_id: 24
+    range:
+      start_line: 464
+      start_col: 0
+      end_line: 468
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls.extract_calls
+    to: pathlib.Path
+    kind: call
+    edge_id: 25
+    range:
+      start_line: 37
+      start_col: 0
+      end_line: 37
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls.extract_calls
+    to: ?.py_file.read_text
+    kind: call
+    edge_id: 26
+    range:
+      start_line: 63
+      start_col: 0
+      end_line: 63
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls.extract_calls
+    to: ast.parse
+    kind: call
+    edge_id: 27
+    range:
+      start_line: 64
+      start_col: 0
+      end_line: 64
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls.extract_calls
+    to: ?.py_file.read_text
+    kind: call
+    edge_id: 28
+    range:
+      start_line: 117
+      start_col: 0
+      end_line: 117
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls.extract_calls
+    to: ast.parse
+    kind: call
+    edge_id: 29
+    range:
+      start_line: 118
+      start_col: 0
+      end_line: 118
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls.extract_calls
+    to: cas_extractor.extractors.python_calls._extract_calls_from_tree
+    kind: call
+    edge_id: 30
+    range:
+      start_line: 129
+      start_col: 0
+      end_line: 138
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls._extract_calls_from_tree
+    to: cas_extractor.models.evidence.CallEntry
+    kind: call
+    edge_id: 31
+    range:
+      start_line: 200
+      start_col: 0
+      end_line: 205
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls._find_enclosing_context
+    to: ?.func_parts.append
+    kind: call
+    edge_id: 32
+    range:
+      start_line: 424
+      start_col: 0
+      end_line: 424
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls.extract_calls
+    to: ?.symbols.add
+    kind: call
+    edge_id: 33
+    range:
+      start_line: 75
+      start_col: 0
+      end_line: 75
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls._resolve_call
+    to: cas_extractor.extractors.python_calls._resolve_super_method
+    kind: call
+    edge_id: 34
+    range:
+      start_line: 286
+      start_col: 0
+      end_line: 292
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls._find_enclosing_context
+    to: ?.func_parts.append
+    kind: call
+    edge_id: 35
+    range:
+      start_line: 426
+      start_col: 0
+      end_line: 426
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls._find_enclosing_context
+    to: ?.class_parts.append
+    kind: call
+    edge_id: 36
+    range:
+      start_line: 447
+      start_col: 0
+      end_line: 447
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls._find_enclosing_context
+    to: ?.methods.add
+    kind: call
+    edge_id: 37
+    range:
+      start_line: 455
+      start_col: 0
+      end_line: 455
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls._find_enclosing_context
+    to: ?.base_names.append
+    kind: call
+    edge_id: 38
+    range:
+      start_line: 460
+      start_col: 0
+      end_line: 460
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls.extract_calls
+    to: ?.p.startswith
+    kind: call
+    edge_id: 39
+    range:
+      start_line: 53
+      start_col: 0
+      end_line: 53
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls.extract_calls
+    to: ?.symbols.add
+    kind: call
+    edge_id: 40
+    range:
+      start_line: 77
+      start_col: 0
+      end_line: 77
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls.extract_calls
+    to: cas_extractor.extractors.python_calls.ClassInfo
+    kind: call
+    edge_id: 41
+    range:
+      start_line: 78
+      start_col: 0
+      end_line: 82
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls._extract_calls_from_tree
+    to: ?.src_text.strip
+    kind: call
+    edge_id: 42
+    range:
+      start_line: 197
+      start_col: 0
+      end_line: 197
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls._extract_calls_from_tree
+    to: cas_extractor.utils.fingerprint.fingerprint_ast
+    kind: call
+    edge_id: 43
+    range:
+      start_line: 197
+      start_col: 0
+      end_line: 197
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls._resolve_call
+    to: cas_extractor.extractors.python_calls._resolve_in_bases
+    kind: call
+    edge_id: 44
+    range:
+      start_line: 259
+      start_col: 0
+      end_line: 265
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls._find_enclosing_context
+    to: ast.unparse
+    kind: call
+    edge_id: 45
+    range:
+      start_line: 460
+      start_col: 0
+      end_line: 460
+      end_col: 0
+  - from: cas_extractor.extractors.python_calls.extract_calls
+    to: ast.unparse
+    kind: call
+    edge_id: 46
+    range:
+      start_line: 90
+      start_col: 0
+      end_line: 90
+      end_col: 0

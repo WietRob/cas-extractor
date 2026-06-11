@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.manager.compat.run_pip
+kind: entity
+type: py.function
+name: run_pip
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/manager/compat.py
+anchors:
+- type: symbol
+  value: httpie.manager.compat.run_pip
+- type: fingerprint
+  value: 7b90bd77f6bfa70c6f9fd481ead31103ba2c911a5b6892ef088f355a5de9d30a
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.manager.compat

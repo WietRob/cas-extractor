@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.sessions.Session.post_process_data
+kind: entity
+type: py.function
+name: post_process_data
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/sessions.py
+anchors:
+- type: symbol
+  value: httpie.sessions.Session.post_process_data
+- type: fingerprint
+  value: d38a5e473a3cd3db1b26e246314575de87194a123c25c17350a46c4356713a7c
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.sessions.Session

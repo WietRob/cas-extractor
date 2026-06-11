@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_uploads.TestMultipartFormDataFileUpload.test_form_no_files_urlencoded
+kind: entity
+type: py.function
+name: test_form_no_files_urlencoded
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_uploads.py
+anchors:
+- type: symbol
+  value: tests.test_uploads.TestMultipartFormDataFileUpload.test_form_no_files_urlencoded
+- type: fingerprint
+  value: a8651ac360084885152d4d5b5c4a7bba202a80268f87832be35501290719bbc9
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_uploads.TestMultipartFormDataFileUpload

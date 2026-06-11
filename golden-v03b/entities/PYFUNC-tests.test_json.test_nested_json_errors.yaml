@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_json.test_nested_json_errors
+kind: entity
+type: py.function
+name: test_nested_json_errors
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_json.py
+anchors:
+- type: symbol
+  value: tests.test_json.test_nested_json_errors
+- type: fingerprint
+  value: 2fc7630b575d2556ea4404b1c6519006fd8afb76151bfb3a599b809bce1a966d
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_json

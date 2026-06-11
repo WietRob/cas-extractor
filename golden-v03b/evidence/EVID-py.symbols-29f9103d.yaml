@@ -1,0 +1,25 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-29f9103d
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:55.126635+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.utils.is_version_greater.split_version
+    kind: function
+    file: httpie/utils.py
+    range:
+      start_line: 300
+      start_col: 0
+      end_line: 307
+      end_col: 0
+    fingerprint: cb8f5ab9cddf98e290a0938c39dcfbffe2320fe7343bfb19a032630051b4bffb
+    params:
+    - name: version
+      annotation: str
+    returns: Tuple[int, ...]

@@ -1,0 +1,62 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-23469cb5
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-26T06:35:11.667504+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://product
+  root: ./cas_extractor
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: cas_extractor.resolvers.base.ResolutionResult
+  - symbol: cas_extractor.resolvers.base.ResolutionStep
+  - symbol: resolvers.heuristics.ClassInitSelfAttrResolver._is_self_attr_call
+  - symbol: resolvers.heuristics.ClassInitSelfAttrResolver.try_resolve
+  edges:
+  - from: resolvers.heuristics.ClassInitSelfAttrResolver.try_resolve
+    to: cas_extractor.resolvers.base.ResolutionResult
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 156
+      start_col: 0
+      end_line: 168
+      end_col: 0
+  - from: resolvers.heuristics.ClassInitSelfAttrResolver.try_resolve
+    to: resolvers.heuristics.ClassInitSelfAttrResolver._is_self_attr_call
+    kind: method_call
+    edge_id: 1
+    range:
+      start_line: 123
+      start_col: 0
+      end_line: 123
+      end_col: 0
+  - from: resolvers.heuristics.ClassInitSelfAttrResolver.try_resolve
+    to: cas_extractor.resolvers.base.ResolutionResult
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 134
+      start_col: 0
+      end_line: 139
+      end_col: 0
+  - from: resolvers.heuristics.ClassInitSelfAttrResolver.try_resolve
+    to: cas_extractor.resolvers.base.ResolutionResult
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 147
+      start_col: 0
+      end_line: 152
+      end_col: 0
+  - from: resolvers.heuristics.ClassInitSelfAttrResolver.try_resolve
+    to: cas_extractor.resolvers.base.ResolutionStep
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 161
+      start_col: 0
+      end_line: 166
+      end_col: 0

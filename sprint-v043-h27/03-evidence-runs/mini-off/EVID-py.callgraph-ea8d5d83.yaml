@@ -1,0 +1,84 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-ea8d5d83
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-23T07:07:57.444727+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: /tmp/h27-verify
+  revision: git:test
+payload:
+  nodes:
+  - symbol: ?.self.client.send
+  - symbol: test_h27.HTTPClient
+  - symbol: test_h27.TestH27Conflict.init_http
+  - symbol: test_h27.TestH27Conflict.init_ws
+  - symbol: test_h27.TestH27Conflict.run
+  - symbol: test_h27.TestH27Conflict.setup_http
+  - symbol: test_h27.TestH27Conflict.setup_ws
+  - symbol: test_h27.WebSocketClient
+  edges:
+  - from: test_h27.TestH27Conflict.init_http
+    to: test_h27.HTTPClient
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 171
+      start_col: 0
+      end_line: 171
+      end_col: 0
+  - from: test_h27.TestH27Conflict.init_ws
+    to: test_h27.WebSocketClient
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 174
+      start_col: 0
+      end_line: 174
+      end_col: 0
+  - from: test_h27.TestH27Conflict.setup_http
+    to: test_h27.TestH27Conflict.init_http
+    kind: method_call
+    edge_id: 2
+    range:
+      start_line: 177
+      start_col: 0
+      end_line: 177
+      end_col: 0
+  - from: test_h27.TestH27Conflict.setup_ws
+    to: test_h27.TestH27Conflict.init_ws
+    kind: method_call
+    edge_id: 3
+    range:
+      start_line: 180
+      start_col: 0
+      end_line: 180
+      end_col: 0
+  - from: test_h27.TestH27Conflict.run
+    to: test_h27.TestH27Conflict.setup_http
+    kind: method_call
+    edge_id: 4
+    range:
+      start_line: 183
+      start_col: 0
+      end_line: 183
+      end_col: 0
+  - from: test_h27.TestH27Conflict.run
+    to: test_h27.TestH27Conflict.setup_ws
+    kind: method_call
+    edge_id: 5
+    range:
+      start_line: 184
+      start_col: 0
+      end_line: 184
+      end_col: 0
+  - from: test_h27.TestH27Conflict.run
+    to: ?.self.client.send
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 185
+      start_col: 0
+      end_line: 185
+      end_col: 0

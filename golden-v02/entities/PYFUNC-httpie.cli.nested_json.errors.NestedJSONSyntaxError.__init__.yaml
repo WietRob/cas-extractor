@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.nested_json.errors.NestedJSONSyntaxError.__init__
+kind: entity
+type: py.function
+name: __init__
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/cli/nested_json/errors.py
+anchors:
+- type: symbol
+  value: httpie.cli.nested_json.errors.NestedJSONSyntaxError.__init__
+- type: fingerprint
+  value: a21a6fb30c844c1421a12ba4ccf4d65de980a326b7c675f11a69cb43cfd55064
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.nested_json.errors.NestedJSONSyntaxError

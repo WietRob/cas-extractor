@@ -1,0 +1,41 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-d4a413f0
+kind: evidence
+type: py.symbols
+created_at: '2026-02-26T06:35:11.423707+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://product
+  root: ./cas_extractor
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: resolvers.heuristics.FactoryReturnResolver.__init__
+    kind: method
+    file: resolvers/heuristics.py
+    range:
+      start_line: 342
+      start_col: 0
+      end_line: 346
+      end_col: 0
+    fingerprint: dd07edbafc3b47e7251a2af2bd22690120f28e61738093b3d317fb74d697e386
+    params:
+    - name: self
+    - name: enabled
+      annotation: bool
+    - name: factory_return_types
+      annotation: dict[str, str] | None
+  - qualified: resolvers.heuristics.FactoryReturnResolver.try_resolve
+    kind: method
+    file: resolvers/heuristics.py
+    range:
+      start_line: 348
+      start_col: 0
+      end_line: 391
+      end_col: 0
+    fingerprint: b518daa98e7925f9dc9eb9dedb7e957584b0ae7d60c0c931cbeefb2f2d30c74d
+    params:
+    - name: self
+    - name: context
+      annotation: CallContext
+    returns: ResolutionResult | None

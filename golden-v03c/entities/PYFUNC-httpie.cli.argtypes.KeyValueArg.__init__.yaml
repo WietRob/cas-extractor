@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.argtypes.KeyValueArg.__init__
+kind: entity
+type: py.function
+name: __init__
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/argtypes.py
+anchors:
+- type: symbol
+  value: httpie.cli.argtypes.KeyValueArg.__init__
+- type: fingerprint
+  value: ccbe990bb0c3a8ac9c856ca3651cdcde2b948eeccec527a1491bb71b57473466
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.argtypes.KeyValueArg

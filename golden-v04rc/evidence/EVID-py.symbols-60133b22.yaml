@@ -1,0 +1,77 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-60133b22
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T08:37:44.632133+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.test_sessions.TestExpiredCookies.test_removes_expired_cookies_from_session_obj
+    kind: method
+    file: tests/test_sessions.py
+    range:
+      start_line: 379
+      start_col: 0
+      end_line: 383
+      end_col: 0
+    fingerprint: 37b69b0734f0f4300c18c8ddabc70c174464ce541dacd091ceefa88fa5129d29
+    decorators:
+    - 'pytest.mark.parametrize(''initial_cookie, expired_cookie'', [({''id'': {''value'':
+      123}}, {''name'': ''id''}), ({''id'': {''value'': 123}}, {''name'': ''token''})])'
+    params:
+    - name: self
+    - name: initial_cookie
+    - name: expired_cookie
+    - name: httpbin
+    - name: mock_env
+  - qualified: tests.test_sessions.TestExpiredCookies.test_expired_cookies
+    kind: method
+    file: tests/test_sessions.py
+    range:
+      start_line: 385
+      start_col: 0
+      end_line: 395
+      end_col: 0
+    fingerprint: 342b2ddd8d545d2e0960d74ef8e5243613c7b9ad4e31b16cebf891d2966db415
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_sessions.TestExpiredCookies.test_get_expired_cookies_using_max_age
+    kind: method
+    file: tests/test_sessions.py
+    range:
+      start_line: 397
+      start_col: 0
+      end_line: 402
+      end_col: 0
+    fingerprint: eea81dcd122cf5871c523dd70cda49a1dbecbc6f3ac95865dabf447ab2fd2695
+    params:
+    - name: self
+  - qualified: tests.test_sessions.TestExpiredCookies.test_get_expired_cookies_manages_multiple_cookie_headers
+    kind: method
+    file: tests/test_sessions.py
+    range:
+      start_line: 442
+      start_col: 0
+      end_line: 443
+      end_col: 0
+    fingerprint: 716d97ee148777a5436001cd4ecc501000035e1ae4ba13491f9da68bf5f04364
+    decorators:
+    - 'pytest.mark.parametrize(''cookies, now, expected_expired'', [(''hello=world;
+      Path=/; Expires=Thu, 01-Jan-1970 00:00:00 GMT; HttpOnly'', None, [{''name'':
+      ''hello'', ''path'': ''/''}]), (''hello=world; Path=/; Expires=Thu, 01-Jan-1970
+      00:00:00 GMT; HttpOnly, pea=pod; Path=/ab; Expires=Thu, 01-Jan-1970 00:00:00
+      GMT; HttpOnly'', None, [{''name'': ''hello'', ''path'': ''/''}, {''name'': ''pea'',
+      ''path'': ''/ab''}]), (''pfg=; Expires=Sat, 19-Sep-2020 06:58:14 GMT+0000; Max-Age=0;
+      path=/; domain=.tumblr.com; secure; HttpOnly'', None, []), (''hello=world; Path=/;
+      Expires=Fri, 12 Jun 2020 12:28:55 GMT; HttpOnly'', datetime(2020, 6, 11).timestamp(),
+      [])])'
+    params:
+    - name: self
+    - name: cookies
+    - name: now
+    - name: expected_expired

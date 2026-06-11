@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_cli.TestArgumentParser.test_guess_when_method_set_but_invalid_and_item_exists
+kind: entity
+type: py.function
+name: test_guess_when_method_set_but_invalid_and_item_exists
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_cli.py
+anchors:
+- type: symbol
+  value: tests.test_cli.TestArgumentParser.test_guess_when_method_set_but_invalid_and_item_exists
+- type: fingerprint
+  value: 469a54949e47e176b5fb38a0c392a09738ab65bd207a69dd3723cd774c53e353
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_cli.TestArgumentParser

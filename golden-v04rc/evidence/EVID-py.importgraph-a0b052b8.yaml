@@ -1,0 +1,31 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-a0b052b8
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-22T08:37:44.805083+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  imports:
+  - from: tests.test_downloads
+    imports:
+    - os
+    - tempfile
+    - time
+    - requests
+    - unittest.mock
+    - urllib.request.urlopen
+    - pytest
+    - requests.structures.CaseInsensitiveDict
+    - httpie.downloads.parse_content_range
+    - httpie.downloads.filename_from_content_disposition
+    - httpie.downloads.filename_from_url
+    - httpie.downloads.get_unique_filename
+    - httpie.downloads.ContentRangeError
+    - httpie.downloads.Downloader
+    - httpie.downloads.PARTIAL_CONTENT
+    - tests.utils.http
+    - tests.utils.MockEnvironment

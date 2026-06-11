@@ -1,0 +1,133 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-efd67d2a
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T12:13:53.999839+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: tests.test_defaults.TestAutoContentTypeAndAcceptHeaders.test_GET_explicit_JSON_explicit_headers
+  - symbol: tests.test_defaults.TestAutoContentTypeAndAcceptHeaders.test_GET_no_data_no_auto_headers
+  - symbol: tests.test_defaults.TestAutoContentTypeAndAcceptHeaders.test_GET_with_data_auto_JSON_headers
+  - symbol: tests.test_defaults.TestAutoContentTypeAndAcceptHeaders.test_POST_explicit_JSON_JSON_ACCEPT
+  - symbol: tests.test_defaults.TestAutoContentTypeAndAcceptHeaders.test_POST_form_Content_Type_override
+  - symbol: tests.test_defaults.TestAutoContentTypeAndAcceptHeaders.test_POST_form_auto_Content_Type
+  - symbol: tests.test_defaults.TestAutoContentTypeAndAcceptHeaders.test_POST_no_data_no_auto_headers
+  - symbol: tests.test_defaults.TestAutoContentTypeAndAcceptHeaders.test_POST_with_data_auto_JSON_headers
+  - symbol: tests.test_defaults.TestAutoContentTypeAndAcceptHeaders.test_print_only_body_when_stdout_redirected_by_default
+  - symbol: tests.test_defaults.TestAutoContentTypeAndAcceptHeaders.test_print_overridable_when_stdout_redirected
+  - symbol: utils.MockEnvironment
+  - symbol: utils.http
+  edges:
+  - from: tests.test_defaults.TestAutoContentTypeAndAcceptHeaders.test_GET_no_data_no_auto_headers
+    to: utils.http
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 72
+      start_col: 0
+      end_line: 72
+      end_col: 0
+  - from: tests.test_defaults.TestAutoContentTypeAndAcceptHeaders.test_POST_no_data_no_auto_headers
+    to: utils.http
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 79
+      start_col: 0
+      end_line: 79
+      end_col: 0
+  - from: tests.test_defaults.TestAutoContentTypeAndAcceptHeaders.test_POST_with_data_auto_JSON_headers
+    to: utils.http
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 85
+      start_col: 0
+      end_line: 85
+      end_col: 0
+  - from: tests.test_defaults.TestAutoContentTypeAndAcceptHeaders.test_GET_with_data_auto_JSON_headers
+    to: utils.http
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 92
+      start_col: 0
+      end_line: 92
+      end_col: 0
+  - from: tests.test_defaults.TestAutoContentTypeAndAcceptHeaders.test_POST_explicit_JSON_JSON_ACCEPT
+    to: utils.http
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 98
+      start_col: 0
+      end_line: 98
+      end_col: 0
+  - from: tests.test_defaults.TestAutoContentTypeAndAcceptHeaders.test_GET_explicit_JSON_explicit_headers
+    to: utils.http
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 106
+      start_col: 0
+      end_line: 108
+      end_col: 0
+  - from: tests.test_defaults.TestAutoContentTypeAndAcceptHeaders.test_POST_form_auto_Content_Type
+    to: utils.http
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 114
+      start_col: 0
+      end_line: 114
+      end_col: 0
+  - from: tests.test_defaults.TestAutoContentTypeAndAcceptHeaders.test_POST_form_Content_Type_override
+    to: utils.http
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 119
+      start_col: 0
+      end_line: 120
+      end_col: 0
+  - from: tests.test_defaults.TestAutoContentTypeAndAcceptHeaders.test_print_only_body_when_stdout_redirected_by_default
+    to: utils.MockEnvironment
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 125
+      start_col: 0
+      end_line: 125
+      end_col: 0
+  - from: tests.test_defaults.TestAutoContentTypeAndAcceptHeaders.test_print_only_body_when_stdout_redirected_by_default
+    to: utils.http
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 126
+      start_col: 0
+      end_line: 126
+      end_col: 0
+  - from: tests.test_defaults.TestAutoContentTypeAndAcceptHeaders.test_print_overridable_when_stdout_redirected
+    to: utils.MockEnvironment
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 130
+      start_col: 0
+      end_line: 130
+      end_col: 0
+  - from: tests.test_defaults.TestAutoContentTypeAndAcceptHeaders.test_print_overridable_when_stdout_redirected
+    to: utils.http
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 131
+      start_col: 0
+      end_line: 131
+      end_col: 0

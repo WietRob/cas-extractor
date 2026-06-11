@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.adapters.HTTPieHTTPAdapter
+kind: entity
+type: py.class
+name: HTTPieHTTPAdapter
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/adapters.py
+anchors:
+- type: symbol
+  value: httpie.adapters.HTTPieHTTPAdapter
+- type: fingerprint
+  value: 717c7a99cf14dacdced1ef8e6ee03438c20e0b79d81ee091807272055c08b5cd
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.adapters

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-tests.test_cli.TestSchemes
+kind: entity
+type: py.class
+name: TestSchemes
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_cli.py
+anchors:
+- type: symbol
+  value: tests.test_cli.TestSchemes
+- type: fingerprint
+  value: 4d9909ed85824d9b0b79cda3fc987059d0ef849740ac833ed149a25e1d72e058
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_cli

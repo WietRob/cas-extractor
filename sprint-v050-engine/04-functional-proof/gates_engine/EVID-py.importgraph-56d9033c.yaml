@@ -1,0 +1,15 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-56d9033c
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-26T06:24:53.100769+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://gates
+  root: ./sprint-v050-engine/02-fixtures
+  revision: git:HEAD
+payload:
+  imports:
+  - from: test_gate_C_qualified_attr
+    imports:
+    - ast

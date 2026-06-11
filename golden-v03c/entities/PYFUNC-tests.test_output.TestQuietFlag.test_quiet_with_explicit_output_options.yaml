@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_output.TestQuietFlag.test_quiet_with_explicit_output_options
+kind: entity
+type: py.function
+name: test_quiet_with_explicit_output_options
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_output.py
+anchors:
+- type: symbol
+  value: tests.test_output.TestQuietFlag.test_quiet_with_explicit_output_options
+- type: fingerprint
+  value: bd04c5d186470cb2bd45851dad2f3656176d1d918604d62dff33cfd0f985049b
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_output.TestQuietFlag

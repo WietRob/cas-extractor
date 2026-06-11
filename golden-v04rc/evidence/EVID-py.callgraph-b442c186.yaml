@@ -1,0 +1,94 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-b442c186
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-22T08:37:45.444407+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.found.keys
+  - symbol: ?.self.key_value_class
+  - symbol: ?.token.find
+  - symbol: ?.token.split
+  - symbol: ?.tokens.extend
+  - symbol: argparse.ArgumentTypeError
+  - symbol: httpie.cli.argtypes.Escaped
+  - symbol: httpie.cli.argtypes.KeyValueArgType.__call__
+  - symbol: httpie.cli.argtypes.KeyValueArgType.tokenize
+  edges:
+  - from: httpie.cli.argtypes.KeyValueArgType.__call__
+    to: httpie.cli.argtypes.KeyValueArgType.tokenize
+    kind: method_call
+    edge_id: 0
+    range:
+      start_line: 73
+      start_col: 0
+      end_line: 73
+      end_col: 0
+  - from: httpie.cli.argtypes.KeyValueArgType.__call__
+    to: ?.self.key_value_class
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 108
+      start_col: 0
+      end_line: 108
+      end_col: 0
+  - from: httpie.cli.argtypes.KeyValueArgType.__call__
+    to: argparse.ArgumentTypeError
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 106
+      start_col: 0
+      end_line: 106
+      end_col: 0
+  - from: httpie.cli.argtypes.KeyValueArgType.__call__
+    to: ?.token.find
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 87
+      start_col: 0
+      end_line: 87
+      end_col: 0
+  - from: httpie.cli.argtypes.KeyValueArgType.__call__
+    to: ?.token.split
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 95
+      start_col: 0
+      end_line: 95
+      end_col: 0
+  - from: httpie.cli.argtypes.KeyValueArgType.tokenize
+    to: ?.tokens.extend
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 127
+      start_col: 0
+      end_line: 127
+      end_col: 0
+  - from: httpie.cli.argtypes.KeyValueArgType.__call__
+    to: ?.found.keys
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 93
+      start_col: 0
+      end_line: 93
+      end_col: 0
+  - from: httpie.cli.argtypes.KeyValueArgType.tokenize
+    to: httpie.cli.argtypes.Escaped
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 127
+      start_col: 0
+      end_line: 127
+      end_col: 0

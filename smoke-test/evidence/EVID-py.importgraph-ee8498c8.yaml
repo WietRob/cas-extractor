@@ -1,0 +1,20 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-ee8498c8
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-21T11:35:57.534295+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+payload:
+  imports:
+  - from: cas_extractor.models.evidence
+    imports:
+    - __future__.annotations
+    - dataclasses.dataclass
+    - dataclasses.field
+    - typing.Any
+    - typing.Optional
+    - enum.Enum

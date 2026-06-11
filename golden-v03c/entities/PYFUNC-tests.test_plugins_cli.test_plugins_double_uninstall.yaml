@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_plugins_cli.test_plugins_double_uninstall
+kind: entity
+type: py.function
+name: test_plugins_double_uninstall
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_plugins_cli.py
+anchors:
+- type: symbol
+  value: tests.test_plugins_cli.test_plugins_double_uninstall
+- type: fingerprint
+  value: f5c9a26b355644f6ca7847042d253c540a2d17702d9f92f58fd4dd487dfb975f
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_plugins_cli

@@ -1,0 +1,26 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-b22c4e66
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:51:32.315537+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.output.ui.palette.ColorString.__or__
+    kind: method
+    file: httpie/output/ui/palette.py
+    range:
+      start_line: 33
+      start_col: 0
+      end_line: 52
+      end_col: 0
+    fingerprint: 49ce05d18c79ae8c433c01799558289b53c110264e8c2d3d46f4b51c74e67d23
+    params:
+    - name: self
+    - name: other
+      annotation: str
+    returns: '''ColorString'''

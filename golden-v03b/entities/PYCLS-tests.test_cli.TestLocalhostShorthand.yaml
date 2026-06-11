@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-tests.test_cli.TestLocalhostShorthand
+kind: entity
+type: py.class
+name: TestLocalhostShorthand
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_cli.py
+anchors:
+- type: symbol
+  value: tests.test_cli.TestLocalhostShorthand
+- type: fingerprint
+  value: 66656e5c6c03a8f8b8dc4b07a70772ff69f79552f113e32a9d32216ae849750b
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_cli

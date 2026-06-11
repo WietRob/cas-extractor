@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-2034
+kind: relation
+type: calls
+from: PYFUNC-tests.test_stream.test_encoded_stream
+to: PYFUNC-utils.http
+confidence:
+  level: E1
+  direction: confirmed
+evidence:
+- EVID-py.callgraph-1bb8a72f
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1

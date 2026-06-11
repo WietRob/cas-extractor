@@ -1,0 +1,36 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-82ff2ea3
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:55.006719+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.manager.tasks.export_args
+    kind: module
+    file: httpie/manager/tasks/export_args.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 27
+      end_col: 0
+    fingerprint: af3dc53f75f25b9e5ea1b8ed8d12596a3d5b209b251c84a08e34373a648d3eb2
+  - qualified: httpie.manager.tasks.export_args.cli_export_args
+    kind: function
+    file: httpie/manager/tasks/export_args.py
+    range:
+      start_line: 16
+      start_col: 0
+      end_line: 27
+      end_col: 0
+    fingerprint: ead05d824aea906b7d889d4a37489b865c1255a3e38a82a22a51995e9dc56c46
+    params:
+    - name: env
+      annotation: Environment
+    - name: args
+      annotation: argparse.Namespace
+    returns: ExitStatus

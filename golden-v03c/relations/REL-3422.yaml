@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-3422
+kind: relation
+type: calls
+from: PYFUNC-httpie.output.ui.rich_progress.ProgressDisplay.start
+to: PYFUNC-_.self.progress_bar.start
+confidence:
+  level: E1
+  direction: confirmed
+evidence:
+- EVID-py.callgraph-b62cab7c
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1

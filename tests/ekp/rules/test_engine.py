@@ -47,7 +47,7 @@ class TestReqWithoutVerification:
         artifacts = [
             CanonicalArtifact(
                 artifact_id="REQ-001",
-                artifact_type="requirement",
+                artifact_type="req",
                 title="Brake shall stop vehicle",
                 compliance_tags=["ISO26262", "ASIL-D"],
             ),
@@ -62,7 +62,7 @@ class TestReqWithoutVerification:
         artifacts = [
             CanonicalArtifact(
                 artifact_id="REQ-001",
-                artifact_type="requirement",
+                artifact_type="req",
                 title="Brake shall stop vehicle",
                 compliance_tags=["ISO26262", "ASIL-D"],
             ),
@@ -88,7 +88,7 @@ class TestReqWithoutVerification:
         artifacts = [
             CanonicalArtifact(
                 artifact_id="REQ-002",
-                artifact_type="requirement",
+                artifact_type="req",
                 title="UI shall be blue",
                 compliance_tags=["UI"],  # Not safety-relevant
             ),
@@ -101,19 +101,19 @@ class TestReqWithoutVerification:
         artifacts = [
             CanonicalArtifact(
                 artifact_id="REQ-001",
-                artifact_type="requirement",
+                artifact_type="req",
                 title="Safety Req 1",
                 compliance_tags=["ASIL-A"],
             ),
             CanonicalArtifact(
                 artifact_id="REQ-002",
-                artifact_type="requirement",
+                artifact_type="req",
                 title="Safety Req 2",
                 compliance_tags=["safety"],
             ),
             CanonicalArtifact(
                 artifact_id="REQ-003",
-                artifact_type="requirement",
+                artifact_type="req",
                 title="Non-safety Req",
                 compliance_tags=["info"],
             ),

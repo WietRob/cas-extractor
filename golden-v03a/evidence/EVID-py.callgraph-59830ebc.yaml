@@ -1,0 +1,213 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-59830ebc
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T12:13:53.949512+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.BIN_FILE_PATH.read_bytes
+  - symbol: ?.FILE_PATH.read_text
+  - symbol: ?.JSON_FILE_PATH.read_text
+  - symbol: ?.NAKED_BASE_TEMPLATE.format
+  - symbol: datetime.datetime
+  - symbol: httpie.cli.constants.PRETTY_MAP.keys
+  - symbol: httpie.output.formatters.xml.parse_xml
+  - symbol: httpie.output.formatters.xml.pretty_xml
+  - symbol: httpie.utils.url_as_host
+  - symbol: json.dumps
+  - symbol: os.getenv
+  - symbol: pathlib.Path
+  - symbol: re.compile
+  - symbol: tests.fixtures
+  - symbol: tests.fixtures.patharg
+  - symbol: tests.test_cli_ui
+  - symbol: tests.test_httpie_cli
+  - symbol: tests.test_stream
+  - symbol: tests.test_update_warnings
+  - symbol: tests.utils
+  edges:
+  - from: tests.fixtures
+    to: tests.fixtures.patharg
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 39
+      start_col: 0
+      end_line: 39
+      end_col: 0
+  - from: tests.fixtures
+    to: tests.fixtures.patharg
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 40
+      start_col: 0
+      end_line: 40
+      end_col: 0
+  - from: tests.fixtures
+    to: tests.fixtures.patharg
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 41
+      start_col: 0
+      end_line: 41
+      end_col: 0
+  - from: tests.fixtures
+    to: ?.JSON_FILE_PATH.read_text
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 51
+      start_col: 0
+      end_line: 51
+      end_col: 0
+  - from: tests.fixtures
+    to: ?.BIN_FILE_PATH.read_bytes
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 52
+      start_col: 0
+      end_line: 52
+      end_col: 0
+  - from: tests.fixtures
+    to: httpie.output.formatters.xml.pretty_xml
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 55
+      start_col: 0
+      end_line: 55
+      end_col: 0
+  - from: tests.fixtures
+    to: pathlib.Path
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 20
+      start_col: 0
+      end_line: 20
+      end_col: 0
+  - from: tests.fixtures
+    to: httpie.output.formatters.xml.parse_xml
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 55
+      start_col: 0
+      end_line: 55
+      end_col: 0
+  - from: tests.fixtures
+    to: ?.FILE_PATH.read_text
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 46
+      start_col: 0
+      end_line: 46
+      end_col: 0
+  - from: tests.test_cli_ui
+    to: ?.NAKED_BASE_TEMPLATE.format
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 18
+      start_col: 0
+      end_line: 21
+      end_col: 0
+  - from: tests.test_cli_ui
+    to: ?.NAKED_BASE_TEMPLATE.format
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 23
+      start_col: 0
+      end_line: 26
+      end_col: 0
+  - from: tests.test_cli_ui
+    to: ?.NAKED_BASE_TEMPLATE.format
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 28
+      start_col: 0
+      end_line: 31
+      end_col: 0
+  - from: tests.test_httpie_cli
+    to: json.dumps
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 65
+      start_col: 0
+      end_line: 65
+      end_col: 0
+  - from: tests.test_httpie_cli
+    to: json.dumps
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 70
+      start_col: 0
+      end_line: 70
+      end_col: 0
+  - from: tests.test_stream
+    to: httpie.cli.constants.PRETTY_MAP.keys
+    kind: call
+    edge_id: 14
+    range:
+      start_line: 21
+      start_col: 0
+      end_line: 21
+      end_col: 0
+  - from: tests.test_update_warnings
+    to: datetime.datetime
+    kind: call
+    edge_id: 15
+    range:
+      start_line: 23
+      start_col: 0
+      end_line: 23
+      end_col: 0
+  - from: tests.utils
+    to: re.compile
+    kind: call
+    edge_id: 16
+    range:
+      start_line: 39
+      start_col: 0
+      end_line: 39
+      end_col: 0
+  - from: tests.utils
+    to: httpie.utils.url_as_host
+    kind: call
+    edge_id: 17
+    range:
+      start_line: 50
+      start_col: 0
+      end_line: 50
+      end_col: 0
+  - from: tests.utils
+    to: os.getenv
+    kind: call
+    edge_id: 18
+    range:
+      start_line: 34
+      start_col: 0
+      end_line: 34
+      end_col: 0
+  - from: tests.utils
+    to: pathlib.Path
+    kind: call
+    edge_id: 19
+    range:
+      start_line: 36
+      start_col: 0
+      end_line: 36
+      end_col: 0

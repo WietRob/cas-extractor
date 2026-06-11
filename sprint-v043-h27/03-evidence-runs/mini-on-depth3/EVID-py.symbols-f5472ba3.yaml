@@ -1,0 +1,45 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-f5472ba3
+kind: evidence
+type: py.symbols
+created_at: '2026-02-23T07:09:23.338279+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: /tmp/h27-verify
+  revision: git:test
+payload:
+  symbols:
+  - qualified: test_h27.TestH27MultipleAttrs.init_all
+    kind: method
+    file: test_h27.py
+    range:
+      start_line: 48
+      start_col: 0
+      end_line: 50
+      end_col: 0
+    fingerprint: 7ef6b5794020a1b3d1746af0c70ae10493b79ff56d589ef06a25c1456b7b6bbd
+    params:
+    - name: self
+  - qualified: test_h27.TestH27MultipleAttrs.setup
+    kind: method
+    file: test_h27.py
+    range:
+      start_line: 52
+      start_col: 0
+      end_line: 53
+      end_col: 0
+    fingerprint: f0f440657c3365d7cbd5548895869e6273f9f22f45d0f42428db84f2d344fdfe
+    params:
+    - name: self
+  - qualified: test_h27.TestH27MultipleAttrs.run
+    kind: method
+    file: test_h27.py
+    range:
+      start_line: 55
+      start_col: 0
+      end_line: 58
+      end_col: 0
+    fingerprint: bee10a0835418ca2285788915fd07b4e8ca68b4b9abd52cb0f2494ae60aa3a2f
+    params:
+    - name: self

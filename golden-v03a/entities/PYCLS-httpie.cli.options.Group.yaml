@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.cli.options.Group
+kind: entity
+type: py.class
+name: Group
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/cli/options.py
+anchors:
+- type: symbol
+  value: httpie.cli.options.Group
+- type: fingerprint
+  value: e063cb92bb5f16d44951f4741160cc58dd4684eebb02a0b05fd41cda7cf4851b
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.options

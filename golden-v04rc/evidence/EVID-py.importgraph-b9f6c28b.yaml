@@ -1,0 +1,50 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-b9f6c28b
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-22T08:37:44.783670+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  imports:
+  - from: httpie.cli.requestitems
+    imports:
+    - os
+    - functools
+    - typing.Callable
+    - typing.Dict
+    - typing.IO
+    - typing.List
+    - typing.Optional
+    - typing.Tuple
+    - typing.Union
+    - httpie.cli.argtypes.KeyValueArg
+    - httpie.cli.constants.SEPARATORS_GROUP_MULTIPART
+    - httpie.cli.constants.SEPARATOR_DATA_EMBED_FILE_CONTENTS
+    - httpie.cli.constants.SEPARATOR_DATA_EMBED_RAW_JSON_FILE
+    - httpie.cli.constants.SEPARATOR_GROUP_NESTED_JSON_ITEMS
+    - httpie.cli.constants.SEPARATOR_DATA_RAW_JSON
+    - httpie.cli.constants.SEPARATOR_DATA_STRING
+    - httpie.cli.constants.SEPARATOR_FILE_UPLOAD
+    - httpie.cli.constants.SEPARATOR_FILE_UPLOAD_TYPE
+    - httpie.cli.constants.SEPARATOR_HEADER
+    - httpie.cli.constants.SEPARATOR_HEADER_EMPTY
+    - httpie.cli.constants.SEPARATOR_HEADER_EMBED
+    - httpie.cli.constants.SEPARATOR_QUERY_PARAM
+    - httpie.cli.constants.SEPARATOR_QUERY_EMBED_FILE
+    - httpie.cli.constants.RequestType
+    - httpie.cli.dicts.BaseMultiDict
+    - httpie.cli.dicts.MultipartRequestDataDict
+    - httpie.cli.dicts.RequestDataDict
+    - httpie.cli.dicts.RequestFilesDict
+    - httpie.cli.dicts.HTTPHeadersDict
+    - httpie.cli.dicts.RequestJSONDataDict
+    - httpie.cli.dicts.RequestQueryParamsDict
+    - httpie.cli.exceptions.ParseError
+    - httpie.cli.nested_json.interpret_nested_json
+    - httpie.utils.get_content_type
+    - httpie.utils.load_json_preserve_order_and_dupe_keys
+    - httpie.utils.split_iterable

@@ -12,25 +12,11 @@ from ..base import Rule, Violation, Severity
 
 
 class ReqWithoutVerification(Rule):
-    """
-    Rule: Safety-relevant requirements must have verification tests.
-
-    Triggers when:
-    - Artifact is a requirement
-    - Artifact has safety-relevant compliance tag (ISO26262, ASIL, etc.)
-    - No 'verifies' link exists from this requirement to any test
-
-    Does NOT trigger when:
-    - Requirement has no safety tags (informational only)
-    - Requirement has at least one 'verifies' link
-    """
-
     rule_id = "REQ_WITHOUT_VERIFICATION"
     description = "Safety-relevant requirement must have verification test"
     severity = Severity.ERROR
     aspice_ref = "SYS.5 / SWE.5"
 
-    # Compliance tags that indicate safety relevance (lowercase for matching)
     SAFETY_TAGS = frozenset(
         {
             "iso26262",
@@ -47,9 +33,6 @@ class ReqWithoutVerification(Rule):
     def evaluate(
         self, artifacts: list[CanonicalArtifact], links: list[TraceLink]
     ) -> list[Violation]:
-        """Find requirements without verification."""
-
-        # Build index: requirement_id → [test_ids that verify it]
         req_to_tests: dict[str, list[str]] = {}
         for link in links:
             if link.relation_type == "verifies":
@@ -61,11 +44,9 @@ class ReqWithoutVerification(Rule):
         violations: list[Violation] = []
 
         for artifact in artifacts:
-            # Only check requirements
-            if artifact.artifact_type != "requirement":
+            if artifact.artifact_type != "req":
                 continue
 
-            # Check if safety-relevant
             is_safety_relevant = any(
                 self._is_safety_tag(tag) for tag in artifact.compliance_tags
             )
@@ -73,7 +54,6 @@ class ReqWithoutVerification(Rule):
             if not is_safety_relevant:
                 continue
 
-            # Check if has verification
             tests = req_to_tests.get(artifact.artifact_id, [])
             if not tests:
                 violations.append(

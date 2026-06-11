@@ -1,0 +1,24 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-aa421ff3
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T17:44:05.229276+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: httpie.compat.cached_property.__get__
+  - symbol: httpie.compat.cached_property.func
+  edges:
+  - from: httpie.compat.cached_property.__get__
+    to: httpie.compat.cached_property.func
+    kind: method_call
+    edge_id: 0
+    range:
+      start_line: 66
+      start_col: 0
+      end_line: 66
+      end_col: 0

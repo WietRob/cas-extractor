@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-1069
+kind: relation
+type: contains
+from: PYMOD-tests.test_tokens
+to: PYFUNC-tests.test_tokens.test_raw_request_headers_response_body
+confidence:
+  level: E0
+  direction: confirmed
+evidence:
+- EVID-py.symbols-e3fe5588
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1

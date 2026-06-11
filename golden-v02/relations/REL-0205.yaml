@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-0205
+kind: relation
+type: contains
+from: PYMOD-tests.test_ssl
+to: PYFUNC-tests.test_ssl.test_ciphers_none_can_be_selected
+confidence:
+  level: E0
+  direction: confirmed
+evidence:
+- EVID-py.symbols-1d140900
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1

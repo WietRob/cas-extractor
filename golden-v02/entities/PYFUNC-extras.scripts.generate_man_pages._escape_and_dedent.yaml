@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-extras.scripts.generate_man_pages._escape_and_dedent
+kind: entity
+type: py.function
+name: _escape_and_dedent
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: extras/scripts/generate_man_pages.py
+anchors:
+- type: symbol
+  value: extras.scripts.generate_man_pages._escape_and_dedent
+- type: fingerprint
+  value: edc64ed228daed7731cb60596d14e40c0d18da72611b16bb0d287d6d5d7787bc
+  algo: sha256
+claims: []
+relations: []
+namespace: extras.scripts.generate_man_pages

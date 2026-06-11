@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.uploads._wrap_function_with_callback.wrapped
+kind: entity
+type: py.function
+name: wrapped
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/uploads.py
+anchors:
+- type: symbol
+  value: httpie.uploads._wrap_function_with_callback.wrapped
+- type: fingerprint
+  value: aed66958f8788988dbcc8462200024fa3016dcd7370dc36fad8f073e6f910a8d
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.uploads._wrap_function_with_callback

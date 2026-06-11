@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_sessions.TestSessionFlow.test_session_read_only
+kind: entity
+type: py.function
+name: test_session_read_only
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_sessions.py
+anchors:
+- type: symbol
+  value: tests.test_sessions.TestSessionFlow.test_session_read_only
+- type: fingerprint
+  value: 707e5fb2d38837d448122a15dd6a073e2f4579b1d23d3c4b99b3b5cfa4baee3c
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_sessions.TestSessionFlow

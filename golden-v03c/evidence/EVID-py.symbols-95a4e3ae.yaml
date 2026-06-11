@@ -1,0 +1,70 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-95a4e3ae
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T17:44:04.365388+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.output.processing.Formatting.__init__
+    kind: method
+    file: httpie/output/processing.py
+    range:
+      start_line: 29
+      start_col: 0
+      end_line: 42
+      end_col: 0
+    fingerprint: 03eb1483ba23b750d77b0d336aa6bf0aed9b1753f0cba4c038dcd4254f39a372
+    params:
+    - name: self
+    - name: groups
+      annotation: List[str]
+    - name: env
+  - qualified: httpie.output.processing.Formatting.format_headers
+    kind: method
+    file: httpie/output/processing.py
+    range:
+      start_line: 44
+      start_col: 0
+      end_line: 47
+      end_col: 0
+    fingerprint: 112b3ba1b8315954b627826c57458460adbb84ca6bc63e296a3a7ea6aa212a13
+    params:
+    - name: self
+    - name: headers
+      annotation: str
+    returns: str
+  - qualified: httpie.output.processing.Formatting.format_body
+    kind: method
+    file: httpie/output/processing.py
+    range:
+      start_line: 49
+      start_col: 0
+      end_line: 53
+      end_col: 0
+    fingerprint: 97654b701df8930aa6ad271e54b56f0bcbf5760f4d8dc5846e28cad5845a2188
+    params:
+    - name: self
+    - name: content
+      annotation: str
+    - name: mime
+      annotation: str
+    returns: str
+  - qualified: httpie.output.processing.Formatting.format_metadata
+    kind: method
+    file: httpie/output/processing.py
+    range:
+      start_line: 55
+      start_col: 0
+      end_line: 58
+      end_col: 0
+    fingerprint: db42a703c0200293f2719a1b72cf119059a759813c53838c1570e867211eec92
+    params:
+    - name: self
+    - name: metadata
+      annotation: str
+    returns: str

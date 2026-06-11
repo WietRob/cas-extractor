@@ -1,0 +1,49 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-f06f271f
+kind: evidence
+type: py.symbols
+created_at: '2026-02-26T06:25:56.357882+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://gates
+  root: ./sprint-v050-engine/02-fixtures
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: test_gate_A2_h27_transitive
+    kind: module
+    file: test_gate_A2_h27_transitive.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 19
+      end_col: 0
+    fingerprint: d97c965610a37ba4d5258ed71e5f5ee81a328fa574186cfe590ef498876b70cb
+  - qualified: test_gate_A2_h27_transitive.Client
+    kind: class
+    file: test_gate_A2_h27_transitive.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 3
+      end_col: 0
+    fingerprint: 39b10b0ec37a1103508bc3705b5590dde7e8de4cfede9a2f2685e7049deb7b29
+  - qualified: test_gate_A2_h27_transitive.make_client
+    kind: function
+    file: test_gate_A2_h27_transitive.py
+    range:
+      start_line: 6
+      start_col: 0
+      end_line: 7
+      end_col: 0
+    fingerprint: dafa8de468b6da8724b410083e7b69e1b61e5577959248d54189a7ad2d6aae97
+    returns: Client
+  - qualified: test_gate_A2_h27_transitive.Service
+    kind: class
+    file: test_gate_A2_h27_transitive.py
+    range:
+      start_line: 10
+      start_col: 0
+      end_line: 19
+      end_col: 0
+    fingerprint: 1f64a8656adb283fd0757f1fb2c2bdc247a28401c01b69376b9293cb790ab679

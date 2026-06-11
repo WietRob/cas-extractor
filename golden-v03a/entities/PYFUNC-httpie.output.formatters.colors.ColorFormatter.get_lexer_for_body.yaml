@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.formatters.colors.ColorFormatter.get_lexer_for_body
+kind: entity
+type: py.function
+name: get_lexer_for_body
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/output/formatters/colors.py
+anchors:
+- type: symbol
+  value: httpie.output.formatters.colors.ColorFormatter.get_lexer_for_body
+- type: fingerprint
+  value: 7c0b67b5688978f308fc833c216018b17e707844d984bd34148f760e7b91269b
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.formatters.colors.ColorFormatter

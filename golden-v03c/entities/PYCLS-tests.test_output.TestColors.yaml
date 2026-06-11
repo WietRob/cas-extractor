@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-tests.test_output.TestColors
+kind: entity
+type: py.class
+name: TestColors
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_output.py
+anchors:
+- type: symbol
+  value: tests.test_output.TestColors
+- type: fingerprint
+  value: b681017c9511b61864f224ef16305caa5d1ff3b164c10a3abb8c6869191ecc01
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_output

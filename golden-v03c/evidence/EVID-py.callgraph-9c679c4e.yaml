@@ -1,0 +1,55 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-9c679c4e
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T17:44:05.248397+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.content.decode
+  - symbol: ?.content.encode
+  - symbol: charset_normalizer.from_bytes
+  - symbol: httpie.encoding.detect_encoding
+  - symbol: httpie.encoding.smart_decode
+  - symbol: httpie.encoding.smart_encode
+  edges:
+  - from: httpie.encoding.smart_encode
+    to: ?.content.encode
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 50
+      start_col: 0
+      end_line: 50
+      end_col: 0
+  - from: httpie.encoding.smart_decode
+    to: httpie.encoding.detect_encoding
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 40
+      start_col: 0
+      end_line: 40
+      end_col: 0
+  - from: httpie.encoding.smart_decode
+    to: ?.content.decode
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 41
+      start_col: 0
+      end_line: 41
+      end_col: 0
+  - from: httpie.encoding.detect_encoding
+    to: charset_normalizer.from_bytes
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 26
+      start_col: 0
+      end_line: 26
+      end_col: 0

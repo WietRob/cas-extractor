@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.requestitems.process_embed_query_param_arg
+kind: entity
+type: py.function
+name: process_embed_query_param_arg
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/cli/requestitems.py
+anchors:
+- type: symbol
+  value: httpie.cli.requestitems.process_embed_query_param_arg
+- type: fingerprint
+  value: c74093f8d35eb18c74173d46d257a4d62fc06d25e6ab51148004797f497e91a3
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.requestitems

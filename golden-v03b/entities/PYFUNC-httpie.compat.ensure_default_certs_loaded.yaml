@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.compat.ensure_default_certs_loaded
+kind: entity
+type: py.function
+name: ensure_default_certs_loaded
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/compat.py
+anchors:
+- type: symbol
+  value: httpie.compat.ensure_default_certs_loaded
+- type: fingerprint
+  value: c68f0f6b326991a051c63a14b30744cb44d2c90139c26de6abf8ad598aca245e
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.compat

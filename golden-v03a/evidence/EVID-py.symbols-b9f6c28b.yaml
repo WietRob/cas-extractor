@@ -1,0 +1,215 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-b9f6c28b
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:52.955502+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.cli.requestitems
+    kind: module
+    file: httpie/cli/requestitems.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 230
+      end_col: 0
+    fingerprint: f2dc0211db49e7261d647faf867d2c9ec2d04d8909097ddaa0d96d2b4dc29c80
+  - qualified: httpie.cli.requestitems.RequestItems
+    kind: class
+    file: httpie/cli/requestitems.py
+    range:
+      start_line: 24
+      start_col: 0
+      end_line: 120
+      end_col: 0
+    fingerprint: 5ccea8eb033dde93e1d54a1d115cd9ba0dc490a047c878b0d40359404c349da3
+  - qualified: httpie.cli.requestitems.process_header_arg
+    kind: function
+    file: httpie/cli/requestitems.py
+    range:
+      start_line: 126
+      start_col: 0
+      end_line: 127
+      end_col: 0
+    fingerprint: f98705ed7ccd79608bc16fd27d9918b2fe7ca80062fda05a2c4a2b76326401f1
+    params:
+    - name: arg
+      annotation: KeyValueArg
+    returns: Optional[str]
+  - qualified: httpie.cli.requestitems.process_embed_header_arg
+    kind: function
+    file: httpie/cli/requestitems.py
+    range:
+      start_line: 130
+      start_col: 0
+      end_line: 131
+      end_col: 0
+    fingerprint: 78a4f79caf74d48f0fea8461550a8732259518c5ffa52f96a4cb5939e1cd730f
+    params:
+    - name: arg
+      annotation: KeyValueArg
+    returns: str
+  - qualified: httpie.cli.requestitems.process_empty_header_arg
+    kind: function
+    file: httpie/cli/requestitems.py
+    range:
+      start_line: 134
+      start_col: 0
+      end_line: 139
+      end_col: 0
+    fingerprint: db0dfbb919ef8b0bfa96854a92491a908a6deb788d4ee04a4b8c39b53ee7ca9d
+    params:
+    - name: arg
+      annotation: KeyValueArg
+    returns: str
+  - qualified: httpie.cli.requestitems.process_query_param_arg
+    kind: function
+    file: httpie/cli/requestitems.py
+    range:
+      start_line: 142
+      start_col: 0
+      end_line: 143
+      end_col: 0
+    fingerprint: 0bdb0d87683fa3f0784c38d24076883f3fcee5ee2161b48721b41120e75aa9d5
+    params:
+    - name: arg
+      annotation: KeyValueArg
+    returns: str
+  - qualified: httpie.cli.requestitems.process_embed_query_param_arg
+    kind: function
+    file: httpie/cli/requestitems.py
+    range:
+      start_line: 146
+      start_col: 0
+      end_line: 147
+      end_col: 0
+    fingerprint: c74093f8d35eb18c74173d46d257a4d62fc06d25e6ab51148004797f497e91a3
+    params:
+    - name: arg
+      annotation: KeyValueArg
+    returns: str
+  - qualified: httpie.cli.requestitems.process_file_upload_arg
+    kind: function
+    file: httpie/cli/requestitems.py
+    range:
+      start_line: 150
+      start_col: 0
+      end_line: 162
+      end_col: 0
+    fingerprint: c2da0d091682b5263ed070dd801f85b1b408c7fd80871f25adb0a5cdd8bac939
+    params:
+    - name: arg
+      annotation: KeyValueArg
+    returns: Tuple[str, IO, str]
+  - qualified: httpie.cli.requestitems.convert_json_value_to_form_if_needed
+    kind: function
+    file: httpie/cli/requestitems.py
+    range:
+      start_line: 165
+      start_col: 0
+      end_line: 186
+      end_col: 0
+    fingerprint: f0a39a981d3bbe6e0d8e94f3742371dd7b0b22045035fe08949c82bf08d2ba17
+    params:
+    - name: in_json_mode
+      annotation: bool
+    - name: processor
+      annotation: Callable[[KeyValueArg], JSONType]
+    returns: Callable[[], str]
+  - qualified: httpie.cli.requestitems.process_data_item_arg
+    kind: function
+    file: httpie/cli/requestitems.py
+    range:
+      start_line: 189
+      start_col: 0
+      end_line: 190
+      end_col: 0
+    fingerprint: b588972b356e9b5b6976d808f98283cca79c8c931aa5028898bbcc3d446ca455
+    params:
+    - name: arg
+      annotation: KeyValueArg
+    returns: str
+  - qualified: httpie.cli.requestitems.process_data_embed_file_contents_arg
+    kind: function
+    file: httpie/cli/requestitems.py
+    range:
+      start_line: 193
+      start_col: 0
+      end_line: 194
+      end_col: 0
+    fingerprint: c46a6ab6854c46364b8e2dce11dc499d5b267faddb93ef7b7cd0991710d03f3f
+    params:
+    - name: arg
+      annotation: KeyValueArg
+    returns: str
+  - qualified: httpie.cli.requestitems.process_data_embed_raw_json_file_arg
+    kind: function
+    file: httpie/cli/requestitems.py
+    range:
+      start_line: 197
+      start_col: 0
+      end_line: 200
+      end_col: 0
+    fingerprint: 0e7ede888658a4fcfbd2d1246fbf3b359ee9ff4edbfc5cb0c385733b6c0b36a5
+    params:
+    - name: arg
+      annotation: KeyValueArg
+    returns: JSONType
+  - qualified: httpie.cli.requestitems.process_data_raw_json_embed_arg
+    kind: function
+    file: httpie/cli/requestitems.py
+    range:
+      start_line: 203
+      start_col: 0
+      end_line: 205
+      end_col: 0
+    fingerprint: 89c964b60551ec3a3ba47a68c119de92d3b5e5fc44c5d45533754fe2cc6a0dc4
+    params:
+    - name: arg
+      annotation: KeyValueArg
+    returns: JSONType
+  - qualified: httpie.cli.requestitems.process_data_nested_json_embed_args
+    kind: function
+    file: httpie/cli/requestitems.py
+    range:
+      start_line: 208
+      start_col: 0
+      end_line: 209
+      end_col: 0
+    fingerprint: 73017e90fc735c1395e06047f8344bae67abd1e1ae4de89063818d68ad9f4907
+    params:
+    - name: pairs
+    returns: Dict[str, JSONType]
+  - qualified: httpie.cli.requestitems.load_text_file
+    kind: function
+    file: httpie/cli/requestitems.py
+    range:
+      start_line: 212
+      start_col: 0
+      end_line: 223
+      end_col: 0
+    fingerprint: 49698032eb8793d97198f2230836d9106184c224433ee377781680e3f48750b1
+    params:
+    - name: item
+      annotation: KeyValueArg
+    returns: str
+  - qualified: httpie.cli.requestitems.load_json
+    kind: function
+    file: httpie/cli/requestitems.py
+    range:
+      start_line: 226
+      start_col: 0
+      end_line: 230
+      end_col: 0
+    fingerprint: 6ad27f9fe8b3a929aa743f24f259d15f0c89c5efefeda7facf92c624ad0c43a1
+    params:
+    - name: arg
+      annotation: KeyValueArg
+    - name: contents
+      annotation: str
+    returns: JSONType

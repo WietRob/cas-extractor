@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ext/data_access.v0.1.schema.json",
+  "title": "Extension: Data Access Metadata",
+  "description": "Data access patterns for entities",
+  "type": "object",
+  "properties": {
+    "reads_from": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Data sources this entity reads from"
+    },
+    "writes_to": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Data sinks this entity writes to"
+    },
+    "orm": {
+      "type": "string",
+      "enum": ["sqlalchemy", "django-orm", "prisma", "sequelize", "none", "unknown"],
+      "description": "ORM used if any"
+    },
+    "confidence": {
+      "$ref": "common.v0.1.schema.json#/$defs/confidence"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "$ref": "common.v0.1.schema.json#/$defs/evidence_ref"
+      }
+    }
+  },
+  "additionalProperties": false
+}

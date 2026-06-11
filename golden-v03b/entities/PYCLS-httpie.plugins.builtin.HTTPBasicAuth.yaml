@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.plugins.builtin.HTTPBasicAuth
+kind: entity
+type: py.class
+name: HTTPBasicAuth
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/plugins/builtin.py
+anchors:
+- type: symbol
+  value: httpie.plugins.builtin.HTTPBasicAuth
+- type: fingerprint
+  value: ae7f3882fea4ebd24f60bda062c2e1bf5100e69459da606d9bc2b962d9eeae54
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.plugins.builtin

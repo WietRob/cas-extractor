@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.client.collect_messages
+kind: entity
+type: py.function
+name: collect_messages
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/client.py
+anchors:
+- type: symbol
+  value: httpie.client.collect_messages
+- type: fingerprint
+  value: eefe65521b47fc5c1ee3540ad3b1cb9f4eb105c0c64b27c15864e4614e7c9766
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.client

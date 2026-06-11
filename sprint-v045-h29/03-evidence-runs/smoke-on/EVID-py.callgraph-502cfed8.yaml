@@ -1,0 +1,236 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-502cfed8
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-23T17:20:11.120497+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://cas_extractor
+  root: ./cas_extractor
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.engine.register
+  - symbol: cas_extractor.resolvers.base.ResolutionEngine
+  - symbol: cas_extractor.resolvers.heuristics.ClassInitSelfAttrResolver
+  - symbol: cas_extractor.resolvers.heuristics.ConstructorResolver
+  - symbol: cas_extractor.resolvers.heuristics.LocalVarResolver
+  - symbol: cas_extractor.resolvers.heuristics.MethodLocalSelfAttrResolver
+  - symbol: cas_extractor.resolvers.heuristics.PropagatedSelfAttrResolver
+  - symbol: cas_extractor.resolvers.heuristics.UnresolvedSelfAttrResolver
+  - symbol: cas_extractor.resolvers.static.ClsDispatchResolver
+  - symbol: cas_extractor.resolvers.static.SelfDispatchResolver
+  - symbol: cas_extractor.resolvers.static.StaticResolver
+  - symbol: cas_extractor.resolvers.static.SuperDispatchResolver
+  - symbol: resolvers.create_resolution_engine
+  edges:
+  - from: resolvers.create_resolution_engine
+    to: cas_extractor.resolvers.base.ResolutionEngine
+    kind: call
+    edge_id: 0
+    resolution_source: module-level
+    range:
+      start_line: 42
+      start_col: 0
+      end_line: 42
+      end_col: 0
+  - from: resolvers.create_resolution_engine
+    to: ?.engine.register
+    kind: call
+    edge_id: 1
+    resolution_source: unresolved
+    range:
+      start_line: 44
+      start_col: 0
+      end_line: 44
+      end_col: 0
+  - from: resolvers.create_resolution_engine
+    to: ?.engine.register
+    kind: call
+    edge_id: 2
+    resolution_source: unresolved
+    range:
+      start_line: 45
+      start_col: 0
+      end_line: 45
+      end_col: 0
+  - from: resolvers.create_resolution_engine
+    to: ?.engine.register
+    kind: call
+    edge_id: 3
+    resolution_source: unresolved
+    range:
+      start_line: 46
+      start_col: 0
+      end_line: 46
+      end_col: 0
+  - from: resolvers.create_resolution_engine
+    to: ?.engine.register
+    kind: call
+    edge_id: 4
+    resolution_source: unresolved
+    range:
+      start_line: 47
+      start_col: 0
+      end_line: 47
+      end_col: 0
+  - from: resolvers.create_resolution_engine
+    to: ?.engine.register
+    kind: call
+    edge_id: 5
+    resolution_source: unresolved
+    range:
+      start_line: 48
+      start_col: 0
+      end_line: 48
+      end_col: 0
+  - from: resolvers.create_resolution_engine
+    to: ?.engine.register
+    kind: call
+    edge_id: 6
+    resolution_source: unresolved
+    range:
+      start_line: 49
+      start_col: 0
+      end_line: 49
+      end_col: 0
+  - from: resolvers.create_resolution_engine
+    to: ?.engine.register
+    kind: call
+    edge_id: 7
+    resolution_source: unresolved
+    range:
+      start_line: 50
+      start_col: 0
+      end_line: 50
+      end_col: 0
+  - from: resolvers.create_resolution_engine
+    to: ?.engine.register
+    kind: call
+    edge_id: 8
+    resolution_source: unresolved
+    range:
+      start_line: 51
+      start_col: 0
+      end_line: 51
+      end_col: 0
+  - from: resolvers.create_resolution_engine
+    to: ?.engine.register
+    kind: call
+    edge_id: 9
+    resolution_source: unresolved
+    range:
+      start_line: 52
+      start_col: 0
+      end_line: 52
+      end_col: 0
+  - from: resolvers.create_resolution_engine
+    to: ?.engine.register
+    kind: call
+    edge_id: 10
+    resolution_source: unresolved
+    range:
+      start_line: 53
+      start_col: 0
+      end_line: 53
+      end_col: 0
+  - from: resolvers.create_resolution_engine
+    to: cas_extractor.resolvers.static.StaticResolver
+    kind: call
+    edge_id: 11
+    resolution_source: module-level
+    range:
+      start_line: 44
+      start_col: 0
+      end_line: 44
+      end_col: 0
+  - from: resolvers.create_resolution_engine
+    to: cas_extractor.resolvers.heuristics.LocalVarResolver
+    kind: call
+    edge_id: 12
+    resolution_source: module-level
+    range:
+      start_line: 45
+      start_col: 0
+      end_line: 45
+      end_col: 0
+  - from: resolvers.create_resolution_engine
+    to: cas_extractor.resolvers.heuristics.MethodLocalSelfAttrResolver
+    kind: call
+    edge_id: 13
+    resolution_source: module-level
+    range:
+      start_line: 46
+      start_col: 0
+      end_line: 46
+      end_col: 0
+  - from: resolvers.create_resolution_engine
+    to: cas_extractor.resolvers.heuristics.PropagatedSelfAttrResolver
+    kind: call
+    edge_id: 14
+    resolution_source: module-level
+    range:
+      start_line: 47
+      start_col: 0
+      end_line: 47
+      end_col: 0
+  - from: resolvers.create_resolution_engine
+    to: cas_extractor.resolvers.heuristics.ClassInitSelfAttrResolver
+    kind: call
+    edge_id: 15
+    resolution_source: module-level
+    range:
+      start_line: 48
+      start_col: 0
+      end_line: 48
+      end_col: 0
+  - from: resolvers.create_resolution_engine
+    to: cas_extractor.resolvers.heuristics.ConstructorResolver
+    kind: call
+    edge_id: 16
+    resolution_source: module-level
+    range:
+      start_line: 49
+      start_col: 0
+      end_line: 49
+      end_col: 0
+  - from: resolvers.create_resolution_engine
+    to: cas_extractor.resolvers.static.SelfDispatchResolver
+    kind: call
+    edge_id: 17
+    resolution_source: module-level
+    range:
+      start_line: 50
+      start_col: 0
+      end_line: 50
+      end_col: 0
+  - from: resolvers.create_resolution_engine
+    to: cas_extractor.resolvers.static.ClsDispatchResolver
+    kind: call
+    edge_id: 18
+    resolution_source: module-level
+    range:
+      start_line: 51
+      start_col: 0
+      end_line: 51
+      end_col: 0
+  - from: resolvers.create_resolution_engine
+    to: cas_extractor.resolvers.static.SuperDispatchResolver
+    kind: call
+    edge_id: 19
+    resolution_source: module-level
+    range:
+      start_line: 52
+      start_col: 0
+      end_line: 52
+      end_col: 0
+  - from: resolvers.create_resolution_engine
+    to: cas_extractor.resolvers.heuristics.UnresolvedSelfAttrResolver
+    kind: call
+    edge_id: 20
+    resolution_source: module-level
+    range:
+      start_line: 53
+      start_col: 0
+      end_line: 53
+      end_col: 0

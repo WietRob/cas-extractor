@@ -1,0 +1,25 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-d8c5a398
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T08:37:44.458527+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.internal.update_warnings._update_checker.wrapper
+    kind: function
+    file: httpie/internal/update_warnings.py
+    range:
+      start_line: 97
+      start_col: 0
+      end_line: 102
+      end_col: 0
+    fingerprint: 5a75394add49b3250c97f5404a0b05e836e338bad130035759ab8ab8043e44b4
+    params:
+    - name: env
+      annotation: Environment
+    returns: None

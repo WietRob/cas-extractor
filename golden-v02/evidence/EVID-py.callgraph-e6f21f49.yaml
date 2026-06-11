@@ -1,0 +1,94 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-e6f21f49
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:33.746943+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.OPTION_HIGHLIGHT_RE.sub
+  - symbol: extras.scripts.generate_man_pages.ManPageBuilder.add_options
+  - symbol: extras.scripts.generate_man_pages.ManPageBuilder.boldify
+  - symbol: extras.scripts.generate_man_pages.ManPageBuilder.format_desc
+  - symbol: extras.scripts.generate_man_pages.ManPageBuilder.section
+  - symbol: extras.scripts.generate_man_pages.ManPageBuilder.set_name
+  - symbol: extras.scripts.generate_man_pages.ManPageBuilder.underline
+  - symbol: extras.scripts.generate_man_pages.ManPageBuilder.write
+  - symbol: extras.scripts.generate_man_pages._escape_and_dedent
+  edges:
+  - from: extras.scripts.generate_man_pages.ManPageBuilder.format_desc
+    to: extras.scripts.generate_man_pages._escape_and_dedent
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 70
+      start_col: 0
+      end_line: 70
+      end_col: 0
+  - from: extras.scripts.generate_man_pages.ManPageBuilder.format_desc
+    to: ?.OPTION_HIGHLIGHT_RE.sub
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 71
+      start_col: 0
+      end_line: 75
+      end_col: 0
+  - from: extras.scripts.generate_man_pages.ManPageBuilder.add_options
+    to: extras.scripts.generate_man_pages.ManPageBuilder.write
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 85
+      start_col: 0
+      end_line: 85
+      end_col: 0
+  - from: extras.scripts.generate_man_pages.ManPageBuilder.section
+    to: extras.scripts.generate_man_pages.ManPageBuilder.write
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 92
+      start_col: 0
+      end_line: 92
+      end_col: 0
+  - from: extras.scripts.generate_man_pages.ManPageBuilder.set_name
+    to: extras.scripts.generate_man_pages.ManPageBuilder.section
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 58
+      start_col: 0
+      end_line: 58
+      end_col: 0
+  - from: extras.scripts.generate_man_pages.ManPageBuilder.set_name
+    to: extras.scripts.generate_man_pages.ManPageBuilder.write
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 59
+      start_col: 0
+      end_line: 59
+      end_col: 0
+  - from: extras.scripts.generate_man_pages.ManPageBuilder.format_desc
+    to: extras.scripts.generate_man_pages.ManPageBuilder.boldify
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 73
+      start_col: 0
+      end_line: 73
+      end_col: 0
+  - from: extras.scripts.generate_man_pages.ManPageBuilder.add_options
+    to: extras.scripts.generate_man_pages.ManPageBuilder.underline
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 84
+      start_col: 0
+      end_line: 84
+      end_col: 0

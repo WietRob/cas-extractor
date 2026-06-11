@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.config.BaseConfigDict.pre_process_data
+kind: entity
+type: py.function
+name: pre_process_data
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/config.py
+anchors:
+- type: symbol
+  value: httpie.config.BaseConfigDict.pre_process_data
+- type: fingerprint
+  value: 06c71d4d9ba65d02d21ec833727df9e23a156705befff44dcf41cdf4e6f34d59
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.config.BaseConfigDict

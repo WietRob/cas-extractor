@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_output.TestLineEndings._validate_crlf
+kind: entity
+type: py.function
+name: _validate_crlf
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_output.py
+anchors:
+- type: symbol
+  value: tests.test_output.TestLineEndings._validate_crlf
+- type: fingerprint
+  value: fb54ef439ceee5e9f109ce4f1cf4c0faf0511868d4b5d456cddf320d63d0e41e
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_output.TestLineEndings

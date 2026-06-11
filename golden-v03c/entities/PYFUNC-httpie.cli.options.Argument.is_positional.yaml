@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.options.Argument.is_positional
+kind: entity
+type: py.function
+name: is_positional
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/cli/options.py
+anchors:
+- type: symbol
+  value: httpie.cli.options.Argument.is_positional
+- type: fingerprint
+  value: 9d6479d6b8f92e2b0e65d3886717d367b8f59a9cb48476895b551c0992fffcdb
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.options.Argument

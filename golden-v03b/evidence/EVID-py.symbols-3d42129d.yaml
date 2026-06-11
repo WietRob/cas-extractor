@@ -1,0 +1,50 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-3d42129d
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:55.163849+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.test_defaults
+    kind: module
+    file: tests/test_defaults.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 132
+      end_col: 0
+    fingerprint: 742701b79c1682d99174732f4cdc7937a05ee2a85ba33c972ffa3cfaa824ab08
+  - qualified: tests.test_defaults.test_default_headers_case_insensitive
+    kind: function
+    file: tests/test_defaults.py
+    range:
+      start_line: 12
+      start_col: 0
+      end_line: 24
+      end_col: 0
+    fingerprint: f1d15f64a5589f05d1287a6b174c6e0e7ae2c5e42b4e45913178eb3f997e79e6
+    params:
+    - name: httpbin
+  - qualified: tests.test_defaults.TestImplicitHTTPMethod
+    kind: class
+    file: tests/test_defaults.py
+    range:
+      start_line: 28
+      start_col: 0
+      end_line: 59
+      end_col: 0
+    fingerprint: cee6a22fd4f2722632e17abe0b987b773e0de52ae61ae48dd83fb599652eaa6f
+  - qualified: tests.test_defaults.TestAutoContentTypeAndAcceptHeaders
+    kind: class
+    file: tests/test_defaults.py
+    range:
+      start_line: 62
+      start_col: 0
+      end_line: 132
+      end_col: 0
+    fingerprint: 072a41e23a53d446b512464afe09fea26070f1f6cf6cf0a371a36ecba3afd87d

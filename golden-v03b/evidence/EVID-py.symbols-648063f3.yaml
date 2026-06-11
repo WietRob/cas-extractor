@@ -1,0 +1,24 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-648063f3
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:55.291594+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.utils.plugins_cli.EntryPoint.dump
+    kind: method
+    file: tests/utils/plugins_cli.py
+    range:
+      start_line: 32
+      start_col: 0
+      end_line: 33
+      end_col: 0
+    fingerprint: 661687ca2c1a31fa503f93102814d4641f22a093efdac7465f1c323d5baae7b8
+    params:
+    - name: self
+    returns: Dict[str, str]

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.cli.dicts.HTTPHeadersDict.remove_item
+kind: entity
+type: py.function
+name: remove_item
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/cli/dicts.py
+anchors:
+- type: symbol
+  value: httpie.cli.dicts.HTTPHeadersDict.remove_item
+- type: fingerprint
+  value: b9722673228e40e49fa32e3494aea902804544da2920611dccb63a7c6a87301f
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.cli.dicts.HTTPHeadersDict

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_ssl.TestServerCert.test_verify_custom_ca_bundle_invalid_path
+kind: entity
+type: py.function
+name: test_verify_custom_ca_bundle_invalid_path
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_ssl.py
+anchors:
+- type: symbol
+  value: tests.test_ssl.TestServerCert.test_verify_custom_ca_bundle_invalid_path
+- type: fingerprint
+  value: 9d5d5a881a9455b453c3858de88a0b4dd6ff30ce8d61744eb29843b79016ac51
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_ssl.TestServerCert

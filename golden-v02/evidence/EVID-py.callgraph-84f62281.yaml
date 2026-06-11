@@ -1,0 +1,153 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-84f62281
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:33.858207+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.processor_func
+  - symbol: ?.target_dict.add
+  - symbol: ?.target_dict.update
+  - symbol: dicts.HTTPHeadersDict
+  - symbol: dicts.MultipartRequestDataDict
+  - symbol: dicts.RequestDataDict
+  - symbol: dicts.RequestFilesDict
+  - symbol: dicts.RequestJSONDataDict
+  - symbol: dicts.RequestQueryParamsDict
+  - symbol: httpie.cli.requestitems.RequestItems
+  - symbol: httpie.cli.requestitems.RequestItems.__init__
+  - symbol: httpie.cli.requestitems.RequestItems.from_args
+  - symbol: httpie.cli.requestitems.convert_json_value_to_form_if_needed
+  - symbol: utils.split_iterable
+  edges:
+  - from: httpie.cli.requestitems.RequestItems.__init__
+    to: dicts.HTTPHeadersDict
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 27
+      start_col: 0
+      end_line: 27
+      end_col: 0
+  - from: httpie.cli.requestitems.RequestItems.__init__
+    to: dicts.RequestFilesDict
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 31
+      start_col: 0
+      end_line: 31
+      end_col: 0
+  - from: httpie.cli.requestitems.RequestItems.__init__
+    to: dicts.RequestQueryParamsDict
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 32
+      start_col: 0
+      end_line: 32
+      end_col: 0
+  - from: httpie.cli.requestitems.RequestItems.__init__
+    to: dicts.MultipartRequestDataDict
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 34
+      start_col: 0
+      end_line: 34
+      end_col: 0
+  - from: httpie.cli.requestitems.RequestItems.from_args
+    to: httpie.cli.requestitems.RequestItems
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 42
+      start_col: 0
+      end_line: 42
+      end_col: 0
+  - from: httpie.cli.requestitems.RequestItems.__init__
+    to: dicts.RequestJSONDataDict
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 30
+      start_col: 0
+      end_line: 30
+      end_col: 0
+  - from: httpie.cli.requestitems.RequestItems.__init__
+    to: dicts.RequestDataDict
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 30
+      start_col: 0
+      end_line: 30
+      end_col: 0
+  - from: httpie.cli.requestitems.RequestItems.from_args
+    to: utils.split_iterable
+    kind: call
+    edge_id: 7
+    range:
+      start_line: 97
+      start_col: 0
+      end_line: 100
+      end_col: 0
+  - from: httpie.cli.requestitems.RequestItems.from_args
+    to: ?.processor_func
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 110
+      start_col: 0
+      end_line: 110
+      end_col: 0
+  - from: httpie.cli.requestitems.RequestItems.from_args
+    to: httpie.cli.requestitems.convert_json_value_to_form_if_needed
+    kind: call
+    edge_id: 9
+    range:
+      start_line: 81
+      start_col: 0
+      end_line: 84
+      end_col: 0
+  - from: httpie.cli.requestitems.RequestItems.from_args
+    to: httpie.cli.requestitems.convert_json_value_to_form_if_needed
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 88
+      start_col: 0
+      end_line: 91
+      end_col: 0
+  - from: httpie.cli.requestitems.RequestItems.from_args
+    to: ?.processor_func
+    kind: call
+    edge_id: 11
+    range:
+      start_line: 104
+      start_col: 0
+      end_line: 104
+      end_col: 0
+  - from: httpie.cli.requestitems.RequestItems.from_args
+    to: ?.target_dict.update
+    kind: call
+    edge_id: 12
+    range:
+      start_line: 105
+      start_col: 0
+      end_line: 105
+      end_col: 0
+  - from: httpie.cli.requestitems.RequestItems.from_args
+    to: ?.target_dict.add
+    kind: call
+    edge_id: 13
+    range:
+      start_line: 116
+      start_col: 0
+      end_line: 116
+      end_col: 0

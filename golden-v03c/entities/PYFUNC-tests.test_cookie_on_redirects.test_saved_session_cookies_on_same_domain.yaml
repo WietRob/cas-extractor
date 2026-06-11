@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_cookie_on_redirects.test_saved_session_cookies_on_same_domain
+kind: entity
+type: py.function
+name: test_saved_session_cookies_on_same_domain
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_cookie_on_redirects.py
+anchors:
+- type: symbol
+  value: tests.test_cookie_on_redirects.test_saved_session_cookies_on_same_domain
+- type: fingerprint
+  value: ef91352d40369d68ec5eaf074ef02ea48be3a1c1a264dcdfa2f1c0cd8bc047f3
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_cookie_on_redirects

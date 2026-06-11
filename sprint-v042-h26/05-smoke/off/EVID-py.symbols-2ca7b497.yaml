@@ -1,0 +1,92 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-2ca7b497
+kind: evidence
+type: py.symbols
+created_at: '2026-02-23T05:35:52.917246+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://cas_extractor
+  root: cas_extractor
+  revision: git:test
+payload:
+  symbols:
+  - qualified: utils.ids
+    kind: module
+    file: utils/ids.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 59
+      end_col: 0
+    fingerprint: 6a2fe27a73949c4a13833d9b2ff880474a53faaea0ebffa41d1d6c3af4c3e850
+  - qualified: utils.ids.reset_counters
+    kind: function
+    file: utils/ids.py
+    range:
+      start_line: 17
+      start_col: 0
+      end_line: 21
+      end_col: 0
+    fingerprint: b6137a7bff344a31cdebc0bbde60a07e64ecf1d8fcb26c29320e17f501a9f92c
+  - qualified: utils.ids.entity_id
+    kind: function
+    file: utils/ids.py
+    range:
+      start_line: 24
+      start_col: 0
+      end_line: 36
+      end_col: 0
+    fingerprint: 87170ea8f7587fa2911995c8d2dfd2b93f9d11dae3cd1d9232c2be8c115565db
+    params:
+    - name: kind
+      annotation: str
+    - name: qualified_name
+      annotation: str
+    returns: str
+  - qualified: utils.ids.evidence_id
+    kind: function
+    file: utils/ids.py
+    range:
+      start_line: 39
+      start_col: 0
+      end_line: 45
+      end_col: 0
+    fingerprint: 8332cf3d113338e31f86b75254aae58728c33b665c9c1d3fa136691326d89542
+    params:
+    - name: evidence_type
+      annotation: str
+    - name: scope
+      annotation: str
+    returns: str
+  - qualified: utils.ids.relation_id
+    kind: function
+    file: utils/ids.py
+    range:
+      start_line: 48
+      start_col: 0
+      end_line: 52
+      end_col: 0
+    fingerprint: 3fa2dee6acc80624e36c2ee1f6548f6d65b03c4b1032fa8f913b210a7c447eea
+    params:
+    - name: rel_type
+      annotation: str
+    - name: source_id
+      annotation: str
+    - name: target_id
+      annotation: str
+    returns: str
+  - qualified: utils.ids.issue_id
+    kind: function
+    file: utils/ids.py
+    range:
+      start_line: 55
+      start_col: 0
+      end_line: 59
+      end_col: 0
+    fingerprint: e7c3961bf9eecc44d7a816690a56168d2e8a8ce98d454e61b3419e5da59ea92e
+    params:
+    - name: kind
+      annotation: str
+    - name: target_id
+      annotation: str
+    returns: str

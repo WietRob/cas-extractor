@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.config.BaseConfigDict.is_new
+kind: entity
+type: py.function
+name: is_new
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/config.py
+anchors:
+- type: symbol
+  value: httpie.config.BaseConfigDict.is_new
+- type: fingerprint
+  value: 58e5fb63d616ee54820243d571148703c7a64623015b2f18228eff3921965f9b
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.config.BaseConfigDict

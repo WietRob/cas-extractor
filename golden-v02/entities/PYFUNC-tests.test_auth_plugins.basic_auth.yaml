@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_auth_plugins.basic_auth
+kind: entity
+type: py.function
+name: basic_auth
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_auth_plugins.py
+anchors:
+- type: symbol
+  value: tests.test_auth_plugins.basic_auth
+- type: fingerprint
+  value: 000a10b38b0a46b90c7acc85606cde52ee50bb77f53adc0cd31c7d28a40937db
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_auth_plugins

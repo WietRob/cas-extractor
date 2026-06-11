@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.config.Config.version_info_file
+kind: entity
+type: py.function
+name: version_info_file
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/config.py
+anchors:
+- type: symbol
+  value: httpie.config.Config.version_info_file
+- type: fingerprint
+  value: 007b09f67f71f01291378f6e6d456cfb4ef40943ff064f71d0d8fb3e50edc732
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.config.Config

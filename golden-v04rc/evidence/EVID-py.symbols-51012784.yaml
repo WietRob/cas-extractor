@@ -1,0 +1,68 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-51012784
+kind: evidence
+type: py.symbols
+created_at: '2026-02-22T08:37:44.386078+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: extras.scripts.generate_man_pages
+    kind: module
+    file: extras/scripts/generate_man_pages.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 188
+      end_col: 0
+    fingerprint: 9a4e80820d8fdb15a6dde5b890dabffb8eaf63aa7b588496ec38d01fb59a2d4f
+  - qualified: extras.scripts.generate_man_pages.ManPageBuilder
+    kind: class
+    file: extras/scripts/generate_man_pages.py
+    range:
+      start_line: 41
+      start_col: 0
+      end_line: 101
+      end_col: 0
+    fingerprint: f7b9b4ec2c14679dcf9bae12fbee11022a997623139f1fb9c418f5763e2a93a5
+  - qualified: extras.scripts.generate_man_pages._escape_and_dedent
+    kind: function
+    file: extras/scripts/generate_man_pages.py
+    range:
+      start_line: 104
+      start_col: 0
+      end_line: 113
+      end_col: 0
+    fingerprint: edc64ed228daed7731cb60596d14e40c0d18da72611b16bb0d287d6d5d7787bc
+    params:
+    - name: text
+      annotation: str
+    returns: str
+  - qualified: extras.scripts.generate_man_pages.to_man_page
+    kind: function
+    file: extras/scripts/generate_man_pages.py
+    range:
+      start_line: 116
+      start_col: 0
+      end_line: 174
+      end_col: 0
+    fingerprint: a035e79aae7deff55ad88f9b8cdb3ef3d20374096415775998a96f5158f2bdb8
+    params:
+    - name: program_name
+      annotation: str
+    - name: spec
+      annotation: ParserSpec
+    returns: str
+  - qualified: extras.scripts.generate_man_pages.main
+    kind: function
+    file: extras/scripts/generate_man_pages.py
+    range:
+      start_line: 177
+      start_col: 0
+      end_line: 184
+      end_col: 0
+    fingerprint: 3624122a5e8b9a7d483f56685b173b6a38f50ce115361691fd4ab8c571510d76
+    returns: None

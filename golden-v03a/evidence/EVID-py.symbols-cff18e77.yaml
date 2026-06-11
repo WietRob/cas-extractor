@@ -1,0 +1,47 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-cff18e77
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T12:13:53.170591+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: tests.test_sessions.SessionTestBase.start_session
+    kind: method
+    file: tests/test_sessions.py
+    range:
+      start_line: 27
+      start_col: 0
+      end_line: 29
+      end_col: 0
+    fingerprint: 2060e7276e2b13c35bf2a011de18542940232430789e1e3e251a72b2883bce64
+    params:
+    - name: self
+    - name: httpbin
+  - qualified: tests.test_sessions.SessionTestBase.teardown_method
+    kind: method
+    file: tests/test_sessions.py
+    range:
+      start_line: 31
+      start_col: 0
+      end_line: 32
+      end_col: 0
+    fingerprint: 344967800dc20b202ed93f1d64617e3ff9016e24523c958dda111f3a711a5429
+    params:
+    - name: self
+    - name: method
+  - qualified: tests.test_sessions.SessionTestBase.env
+    kind: method
+    file: tests/test_sessions.py
+    range:
+      start_line: 34
+      start_col: 0
+      end_line: 43
+      end_col: 0
+    fingerprint: 695c54a28616576e8ccfcc1ef342b09cc665cc91b897764309fbdc4b3887ae83
+    params:
+    - name: self

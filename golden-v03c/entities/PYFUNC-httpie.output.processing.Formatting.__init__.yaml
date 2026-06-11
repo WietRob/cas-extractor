@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.processing.Formatting.__init__
+kind: entity
+type: py.function
+name: __init__
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/processing.py
+anchors:
+- type: symbol
+  value: httpie.output.processing.Formatting.__init__
+- type: fingerprint
+  value: 03eb1483ba23b750d77b0d336aa6bf0aed9b1753f0cba4c038dcd4254f39a372
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.processing.Formatting

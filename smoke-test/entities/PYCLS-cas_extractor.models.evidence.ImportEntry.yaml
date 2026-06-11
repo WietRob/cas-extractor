@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-cas_extractor.models.evidence.ImportEntry
+kind: entity
+type: py.class
+name: ImportEntry
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor/models/evidence.py
+anchors:
+- type: symbol
+  value: cas_extractor.models.evidence.ImportEntry
+- type: fingerprint
+  value: 9cb20d63525821469f3d4e894de74d171a1775975d6ba2fa41121f84db7f8680
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor.models.evidence

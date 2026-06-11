@@ -1,0 +1,25 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-424ab105
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-21T11:51:32.858206+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  imports:
+  - from: httpie.cli.nested_json.parse
+    imports:
+    - typing.Iterator
+    - httpie.cli.nested_json.errors.NestedJSONSyntaxError
+    - httpie.cli.nested_json.tokens.EMPTY_STRING
+    - httpie.cli.nested_json.tokens.BACKSLASH
+    - httpie.cli.nested_json.tokens.TokenKind
+    - httpie.cli.nested_json.tokens.OPERATORS
+    - httpie.cli.nested_json.tokens.SPECIAL_CHARS
+    - httpie.cli.nested_json.tokens.LITERAL_TOKENS
+    - httpie.cli.nested_json.tokens.Token
+    - httpie.cli.nested_json.tokens.PathAction
+    - httpie.cli.nested_json.tokens.Path

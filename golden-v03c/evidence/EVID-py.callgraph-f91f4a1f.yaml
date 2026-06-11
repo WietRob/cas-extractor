@@ -1,0 +1,128 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-f91f4a1f
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T17:44:05.230782+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  nodes:
+  - symbol: ?.self.get
+  - symbol: ?.self.path.exists
+  - symbol: ?.self.path.write_text
+  - symbol: ?.self.setdefault
+  - symbol: ?.self.update
+  - symbol: ?.super().__init__
+  - symbol: httpie.config.BaseConfigDict.__init__
+  - symbol: httpie.config.BaseConfigDict.ensure_directory
+  - symbol: httpie.config.BaseConfigDict.is_new
+  - symbol: httpie.config.BaseConfigDict.load
+  - symbol: httpie.config.BaseConfigDict.post_process_data
+  - symbol: httpie.config.BaseConfigDict.pre_process_data
+  - symbol: httpie.config.BaseConfigDict.save
+  - symbol: httpie.config.BaseConfigDict.version
+  - symbol: httpie.config.read_raw_config
+  - symbol: json.dumps
+  edges:
+  - from: httpie.config.BaseConfigDict.__init__
+    to: ?.super().__init__
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 86
+      start_col: 0
+      end_line: 86
+      end_col: 0
+  - from: httpie.config.BaseConfigDict.load
+    to: httpie.config.read_raw_config
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 105
+      start_col: 0
+      end_line: 105
+      end_col: 0
+  - from: httpie.config.BaseConfigDict.save
+    to: ?.self.setdefault
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 111
+      start_col: 0
+      end_line: 111
+      end_col: 0
+  - from: httpie.config.BaseConfigDict.save
+    to: httpie.config.BaseConfigDict.ensure_directory
+    kind: method_call
+    edge_id: 3
+    range:
+      start_line: 120
+      start_col: 0
+      end_line: 120
+      end_col: 0
+  - from: httpie.config.BaseConfigDict.save
+    to: json.dumps
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 122
+      start_col: 0
+      end_line: 127
+      end_col: 0
+  - from: httpie.config.BaseConfigDict.save
+    to: ?.self.path.write_text
+    kind: call
+    edge_id: 5
+    range:
+      start_line: 128
+      start_col: 0
+      end_line: 128
+      end_col: 0
+  - from: httpie.config.BaseConfigDict.is_new
+    to: ?.self.path.exists
+    kind: call
+    edge_id: 6
+    range:
+      start_line: 93
+      start_col: 0
+      end_line: 93
+      end_col: 0
+  - from: httpie.config.BaseConfigDict.load
+    to: httpie.config.BaseConfigDict.pre_process_data
+    kind: method_call
+    edge_id: 7
+    range:
+      start_line: 107
+      start_col: 0
+      end_line: 107
+      end_col: 0
+  - from: httpie.config.BaseConfigDict.load
+    to: ?.self.update
+    kind: call
+    edge_id: 8
+    range:
+      start_line: 108
+      start_col: 0
+      end_line: 108
+      end_col: 0
+  - from: httpie.config.BaseConfigDict.save
+    to: httpie.config.BaseConfigDict.post_process_data
+    kind: method_call
+    edge_id: 9
+    range:
+      start_line: 123
+      start_col: 0
+      end_line: 123
+      end_col: 0
+  - from: httpie.config.BaseConfigDict.version
+    to: ?.self.get
+    kind: call
+    edge_id: 10
+    range:
+      start_line: 132
+      start_col: 0
+      end_line: 134
+      end_col: 0

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-cas_extractor.extractors.python_imports
+kind: entity
+type: py.module
+name: python_imports
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor/extractors/python_imports.py
+anchors:
+- type: symbol
+  value: cas_extractor.extractors.python_imports
+- type: fingerprint
+  value: 1aaafaa0f183a607bffcb2f85a282e0d0958b89cd4fd547c14402ff5111abf19
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor.extractors

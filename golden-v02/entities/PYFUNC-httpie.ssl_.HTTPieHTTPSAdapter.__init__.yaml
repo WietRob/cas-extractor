@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.ssl_.HTTPieHTTPSAdapter.__init__
+kind: entity
+type: py.function
+name: __init__
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/ssl_.py
+anchors:
+- type: symbol
+  value: httpie.ssl_.HTTPieHTTPSAdapter.__init__
+- type: fingerprint
+  value: 4fd9ca272ef5333aa95a028610117f35213f96d509fd2a0d4de9bd35e704578c
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.ssl_.HTTPieHTTPSAdapter

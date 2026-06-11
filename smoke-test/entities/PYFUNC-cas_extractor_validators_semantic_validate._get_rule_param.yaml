@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-cas_extractor_validators_semantic_validate._get_rule_param
+kind: entity
+type: py.function
+name: _get_rule_param
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: cas_extractor_validators_semantic_validate.py
+anchors:
+- type: symbol
+  value: cas_extractor_validators_semantic_validate._get_rule_param
+- type: fingerprint
+  value: 8e64be2b170f871afa8c3745ef0deb8fd6f51b7cf7fc3685ab1bbf714d99f002
+  algo: sha256
+claims: []
+relations: []
+namespace: cas_extractor_validators_semantic_validate

@@ -1,0 +1,36 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-a55c2c7f
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T17:44:04.344132+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.manager.tasks.check_updates
+    kind: module
+    file: httpie/manager/tasks/check_updates.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 10
+      end_col: 0
+    fingerprint: e66a5716fad7eb6ee690f1d8e5696aba3aeee54f7ec797d33afa4ffd0293bf16
+  - qualified: httpie.manager.tasks.check_updates.cli_check_updates
+    kind: function
+    file: httpie/manager/tasks/check_updates.py
+    range:
+      start_line: 7
+      start_col: 0
+      end_line: 10
+      end_col: 0
+    fingerprint: 0dd2e7fced7f728fd6fc377bee4e391e1c6b5c1733782bf686f026b0a452ecdd
+    params:
+    - name: env
+      annotation: Environment
+    - name: args
+      annotation: argparse.Namespace
+    returns: ExitStatus

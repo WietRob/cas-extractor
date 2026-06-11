@@ -1,0 +1,21 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-975996be
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:54.907011+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: extras.packaging.linux.scripts.httpie_cli
+    kind: module
+    file: extras/packaging/linux/scripts/httpie_cli.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 5
+      end_col: 0
+    fingerprint: 4b9d39cfb9e4ad0d6d3cc526f3af53b793d00425689fd6c6087913d7f367aad2

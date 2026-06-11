@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_defaults.TestImplicitHTTPMethod.test_implicit_POST_raw
+kind: entity
+type: py.function
+name: test_implicit_POST_raw
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: tests/test_defaults.py
+anchors:
+- type: symbol
+  value: tests.test_defaults.TestImplicitHTTPMethod.test_implicit_POST_raw
+- type: fingerprint
+  value: 963edfc3b8ed8226ec49165e6055557fb4c697d36037eb421640f2dcff36abf4
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_defaults.TestImplicitHTTPMethod

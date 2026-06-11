@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_sessions.SessionTestBase.teardown_method
+kind: entity
+type: py.function
+name: teardown_method
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_sessions.py
+anchors:
+- type: symbol
+  value: tests.test_sessions.SessionTestBase.teardown_method
+- type: fingerprint
+  value: 344967800dc20b202ed93f1d64617e3ff9016e24523c958dda111f3a711a5429
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_sessions.SessionTestBase

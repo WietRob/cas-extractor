@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.output.formatters.headers.HeadersFormatter.format_headers
+kind: entity
+type: py.function
+name: format_headers
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/formatters/headers.py
+anchors:
+- type: symbol
+  value: httpie.output.formatters.headers.HeadersFormatter.format_headers
+- type: fingerprint
+  value: e9e0eadab51f9dbb31a6fe2da955d58cca3d6e74f999a50f42e91a90373c81e9
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.formatters.headers.HeadersFormatter

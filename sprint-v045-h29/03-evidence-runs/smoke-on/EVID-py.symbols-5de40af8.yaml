@@ -1,0 +1,75 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-5de40af8
+kind: evidence
+type: py.symbols
+created_at: '2026-02-23T17:20:10.885201+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://cas_extractor
+  root: ./cas_extractor
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: resolvers.heuristics
+    kind: module
+    file: resolvers/heuristics.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 333
+      end_col: 0
+    fingerprint: ff5413c8613d1be4f170498a1c1457cf90fd6828e95ffe74876f977759f366d1
+  - qualified: resolvers.heuristics.LocalVarResolver
+    kind: class
+    file: resolvers/heuristics.py
+    range:
+      start_line: 14
+      start_col: 0
+      end_line: 52
+      end_col: 0
+    fingerprint: 5d9680a78322abd4012a4081b6d537a135a5b9c0619b6d78a911a786cfcdb131
+  - qualified: resolvers.heuristics.ConstructorResolver
+    kind: class
+    file: resolvers/heuristics.py
+    range:
+      start_line: 55
+      start_col: 0
+      end_line: 113
+      end_col: 0
+    fingerprint: 97bbba6b82d15be22579768d2dab8b81f5658e8a81355952180976abd574c609
+  - qualified: resolvers.heuristics.ClassInitSelfAttrResolver
+    kind: class
+    file: resolvers/heuristics.py
+    range:
+      start_line: 116
+      start_col: 0
+      end_line: 177
+      end_col: 0
+    fingerprint: e2cd009cffbe51b71b9ec5b45f1f9137b3fb689bb21aaa62da037e220050e200
+  - qualified: resolvers.heuristics.MethodLocalSelfAttrResolver
+    kind: class
+    file: resolvers/heuristics.py
+    range:
+      start_line: 180
+      start_col: 0
+      end_line: 233
+      end_col: 0
+    fingerprint: 08bc217227746923d10eb932793c5dc815f5a9560d6c05826e1ddf3a940d97dd
+  - qualified: resolvers.heuristics.PropagatedSelfAttrResolver
+    kind: class
+    file: resolvers/heuristics.py
+    range:
+      start_line: 236
+      start_col: 0
+      end_line: 293
+      end_col: 0
+    fingerprint: 9e5a5f02ad765e3b9186889e0a5bbf1a87b6c2570054b50b7357ca23366b1aa5
+  - qualified: resolvers.heuristics.UnresolvedSelfAttrResolver
+    kind: class
+    file: resolvers/heuristics.py
+    range:
+      start_line: 296
+      start_col: 0
+      end_line: 333
+      end_col: 0
+    fingerprint: 8db48686747a3d25e4f911c4fb77ed279331fe13a257483a67db4c2d7ff0bd33

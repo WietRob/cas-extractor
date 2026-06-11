@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.utils.http_server.random_encoding
+kind: entity
+type: py.function
+name: random_encoding
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/utils/http_server.py
+anchors:
+- type: symbol
+  value: tests.utils.http_server.random_encoding
+- type: fingerprint
+  value: e88c1db482e93e02828227f4c7f912cc0d8c3ec7f7722faae80363c76943bbee
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.utils.http_server

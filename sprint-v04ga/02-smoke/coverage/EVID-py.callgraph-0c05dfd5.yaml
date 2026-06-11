@@ -1,0 +1,24 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-0c05dfd5
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-22T10:13:16.934713+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://cas_extractor
+  root: cas_extractor
+  revision: git:test
+payload:
+  nodes:
+  - symbol: generators.artifact_generator
+  - symbol: re.compile
+  edges:
+  - from: generators.artifact_generator
+    to: re.compile
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 46
+      start_col: 0
+      end_line: 49
+      end_col: 0

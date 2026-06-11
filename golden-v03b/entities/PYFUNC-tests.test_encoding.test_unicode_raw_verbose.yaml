@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-tests.test_encoding.test_unicode_raw_verbose
+kind: entity
+type: py.function
+name: test_unicode_raw_verbose
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: tests/test_encoding.py
+anchors:
+- type: symbol
+  value: tests.test_encoding.test_unicode_raw_verbose
+- type: fingerprint
+  value: 413b68d1c73d081263f16d901d59ed7c0e25c7b702782451730ae3c3bff7cb1f
+  algo: sha256
+claims: []
+relations: []
+namespace: tests.test_encoding

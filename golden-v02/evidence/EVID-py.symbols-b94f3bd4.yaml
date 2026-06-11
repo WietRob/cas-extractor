@@ -1,0 +1,23 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-b94f3bd4
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T11:51:32.367132+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  symbols:
+  - qualified: httpie.ssl_.HTTPieCertificate.to_raw_cert
+    kind: method
+    file: httpie/ssl_.py
+    range:
+      start_line: 34
+      start_col: 0
+      end_line: 37
+      end_col: 0
+    fingerprint: 491cd20810fd2d65a49924a64c486f8929168445492837a7d35b85021e38bb62
+    params:
+    - name: self

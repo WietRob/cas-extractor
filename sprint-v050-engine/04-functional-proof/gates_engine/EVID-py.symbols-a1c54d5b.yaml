@@ -1,0 +1,49 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-a1c54d5b
+kind: evidence
+type: py.symbols
+created_at: '2026-02-26T06:24:53.095121+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://gates
+  root: ./sprint-v050-engine/02-fixtures
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: test_gate_B_h28
+    kind: module
+    file: test_gate_B_h28.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 12
+      end_col: 0
+    fingerprint: c158d5127859869005099a02b8bc0951366bf3eedb34bc229d43495670887812
+  - qualified: test_gate_B_h28.Builder
+    kind: class
+    file: test_gate_B_h28.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 3
+      end_col: 0
+    fingerprint: c0b8ef0fbf3ff39e45c8f0db523c1a2ac09d1f4b062668d3e2ecbf214e73b15f
+  - qualified: test_gate_B_h28.builder_factory
+    kind: function
+    file: test_gate_B_h28.py
+    range:
+      start_line: 6
+      start_col: 0
+      end_line: 7
+      end_col: 0
+    fingerprint: f18f7379a141db266fc0aaaccab4465b495f746d78f0e5d81c8628c7eaac1ba9
+    returns: Builder
+  - qualified: test_gate_B_h28.main
+    kind: function
+    file: test_gate_B_h28.py
+    range:
+      start_line: 10
+      start_col: 0
+      end_line: 12
+      end_col: 0
+    fingerprint: b995e0de5e52b322d10bf097f49c38957b453729b7c049c4ad23d1f396d1b85e

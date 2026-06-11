@@ -1,0 +1,12 @@
+schema: cas.issue.v0.1
+id: ISSUE-0047
+kind: issue
+type: orphan
+applies_to:
+- PYMOD-charset_normalizer
+summary: Import target 'charset_normalizer' is third_party (not in extracted entities)
+severity: info
+created_by: extractor:py.v0.1
+created_at: '2026-02-21T11:51:53.372273+00:00'
+evidence:
+- EVID-py.importgraph-59fa6948

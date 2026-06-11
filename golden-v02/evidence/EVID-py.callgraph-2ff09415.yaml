@@ -1,0 +1,62 @@
+schema: cas.evidence.v0.1
+id: EVID-py.callgraph-2ff09415
+kind: evidence
+type: py.callgraph
+created_at: '2026-02-21T11:51:33.989499+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  nodes:
+  - symbol: ?.PIE_STYLES.keys
+  - symbol: httpie.output.formatters.colors
+  - symbol: httpie.output.formatters.colors.make_styles
+  - symbol: ui.palette.ColorString
+  edges:
+  - from: httpie.output.formatters.colors
+    to: ui.palette.ColorString
+    kind: call
+    edge_id: 0
+    range:
+      start_line: 27
+      start_col: 0
+      end_line: 27
+      end_col: 0
+  - from: httpie.output.formatters.colors
+    to: ui.palette.ColorString
+    kind: call
+    edge_id: 1
+    range:
+      start_line: 28
+      start_col: 0
+      end_line: 28
+      end_col: 0
+  - from: httpie.output.formatters.colors
+    to: httpie.output.formatters.colors.make_styles
+    kind: call
+    edge_id: 2
+    range:
+      start_line: 386
+      start_col: 0
+      end_line: 386
+      end_col: 0
+  - from: httpie.output.formatters.colors
+    to: ?.PIE_STYLES.keys
+    kind: call
+    edge_id: 3
+    range:
+      start_line: 388
+      start_col: 0
+      end_line: 388
+      end_col: 0
+  - from: httpie.output.formatters.colors
+    to: ?.PIE_STYLES.keys
+    kind: call
+    edge_id: 4
+    range:
+      start_line: 387
+      start_col: 0
+      end_line: 387
+      end_col: 0

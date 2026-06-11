@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYMOD-httpie.output.formatters.headers
+kind: entity
+type: py.module
+name: headers
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/output/formatters/headers.py
+anchors:
+- type: symbol
+  value: httpie.output.formatters.headers
+- type: fingerprint
+  value: db1a8daa8128e27299f4e3a596cb77ef6411cfe03827fac0f4b158a3c9788ab7
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.output.formatters

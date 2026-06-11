@@ -1,0 +1,112 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-00c702d7
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:55.208168+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: tests.test_output.TestFormatOptions.test_header_formatting_options
+    kind: method
+    file: tests/test_output.py
+    range:
+      start_line: 381
+      start_col: 0
+      end_line: 393
+      end_col: 0
+    fingerprint: b0fbcc02afd330f46a50c8ee3af07b94fb567bb5c499ac99500372e136319032
+    params:
+    - name: self
+  - qualified: tests.test_output.TestFormatOptions.test_json_formatting_options
+    kind: method
+    file: tests/test_output.py
+    range:
+      start_line: 414
+      start_col: 0
+      end_line: 420
+      end_col: 0
+    fingerprint: 392f53f11888811288e60185398d1d9fced690b71df7f79f5b391fa3d32cb2ee
+    decorators:
+    - 'pytest.mark.parametrize(''options, expected_json'', [(''json.sort_keys:true,json.indent:4'',
+      json.dumps({''a'': 0, ''b'': 0}, indent=4)), (''json.sort_keys:false,json.indent:2'',
+      json.dumps({''b'': 0, ''a'': 0}, indent=2)), (''json.format:false'', json.dumps({''b'':
+      0, ''a'': 0}))])'
+    params:
+    - name: self
+    - name: options
+      annotation: str
+    - name: expected_json
+      annotation: str
+  - qualified: tests.test_output.TestFormatOptions.test_parse_format_options
+    kind: method
+    file: tests/test_output.py
+    range:
+      start_line: 432
+      start_col: 0
+      end_line: 434
+      end_col: 0
+    fingerprint: 2e6daf1bb6cef397ca5a631dec0dfe23ffc566616c30f98a0587eb8b46a3c795
+    decorators:
+    - 'pytest.mark.parametrize(''defaults, options_string, expected'', [({''foo'':
+      {''bar'': 1}}, ''foo.bar:2'', {''foo'': {''bar'': 2}}), ({''foo'': {''bar'':
+      True}}, ''foo.bar:false'', {''foo'': {''bar'': False}}), ({''foo'': {''bar'':
+      ''a''}}, ''foo.bar:b'', {''foo'': {''bar'': ''b''}})])'
+    params:
+    - name: self
+    - name: defaults
+    - name: options_string
+    - name: expected
+  - qualified: tests.test_output.TestFormatOptions.test_parse_format_options_errors
+    kind: method
+    file: tests/test_output.py
+    range:
+      start_line: 444
+      start_col: 0
+      end_line: 451
+      end_col: 0
+    fingerprint: a9c4e36244443eb3a3952391d7f8d949c1e5da3c128ed8b74f6c092c197ec33c
+    decorators:
+    - pytest.mark.parametrize('options_string, expected_error', [('foo:2', 'invalid
+      option'), ('foo.baz:2', 'invalid key'), ('foo.bar:false', 'expected int got
+      bool')])
+    params:
+    - name: self
+    - name: options_string
+    - name: expected_error
+  - qualified: tests.test_output.TestFormatOptions.test_format_options_accumulation
+    kind: method
+    file: tests/test_output.py
+    range:
+      start_line: 594
+      start_col: 0
+      end_line: 599
+      end_col: 0
+    fingerprint: fc4deb7bd81def19eb0f02d438f4be8157770e3443aa2704652274f31434ed7a
+    decorators:
+    - 'pytest.mark.parametrize(''args, expected_format_options'', [([''--format-options'',
+      ''headers.sort:false,json.sort_keys:false'', ''--format-options=json.indent:10''],
+      {''headers'': {''sort'': False}, ''json'': {''sort_keys'': False, ''indent'':
+      10, ''format'': True}, ''xml'': {''format'': True, ''indent'': 2}}), ([''--unsorted''],
+      {''headers'': {''sort'': False}, ''json'': {''sort_keys'': False, ''indent'':
+      4, ''format'': True}, ''xml'': {''format'': True, ''indent'': 2}}), ([''--format-options=headers.sort:true'',
+      ''--unsorted'', ''--format-options=headers.sort:true''], {''headers'': {''sort'':
+      True}, ''json'': {''sort_keys'': False, ''indent'': 4, ''format'': True}, ''xml'':
+      {''format'': True, ''indent'': 2}}), ([''--no-format-options'', ''--format-options=headers.sort:true'',
+      ''--unsorted'', ''--format-options=headers.sort:true''], PARSED_DEFAULT_FORMAT_OPTIONS),
+      ([''--format-options=json.indent:2'', ''--format-options=xml.format:false'',
+      ''--format-options=xml.indent:4'', ''--unsorted'', ''--no-unsorted''], {''headers'':
+      {''sort'': True}, ''json'': {''sort_keys'': True, ''indent'': 2, ''format'':
+      True}, ''xml'': {''format'': False, ''indent'': 4}}), ([''--format-options=json.indent:2'',
+      ''--unsorted'', ''--sorted''], {''headers'': {''sort'': True}, ''json'': {''sort_keys'':
+      True, ''indent'': 2, ''format'': True}, ''xml'': {''format'': True, ''indent'':
+      2}}), ([''--format-options=json.indent:2'', ''--sorted'', ''--no-sorted'', ''--no-unsorted''],
+      {''headers'': {''sort'': True}, ''json'': {''sort_keys'': True, ''indent'':
+      2, ''format'': True}, ''xml'': {''format'': True, ''indent'': 2}})])'
+    params:
+    - name: self
+    - name: args
+    - name: expected_format_options

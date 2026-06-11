@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYCLS-httpie.plugins.builtin.DigestAuthPlugin
+kind: entity
+type: py.class
+name: DigestAuthPlugin
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/plugins/builtin.py
+anchors:
+- type: symbol
+  value: httpie.plugins.builtin.DigestAuthPlugin
+- type: fingerprint
+  value: e57115064c37bec5d1f5bf1908913efd923176792f8abec31cfa5b7f16a9b303
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.plugins.builtin

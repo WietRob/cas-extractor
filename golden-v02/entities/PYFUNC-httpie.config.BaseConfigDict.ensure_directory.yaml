@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.config.BaseConfigDict.ensure_directory
+kind: entity
+type: py.function
+name: ensure_directory
+status: draft
+created_at: '2026-02-21T11:51:53.372273+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/config.py
+anchors:
+- type: symbol
+  value: httpie.config.BaseConfigDict.ensure_directory
+- type: fingerprint
+  value: 872be0c2195763ac473837fb86c392ed5180762fce9ff483dc556107d794df9a
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.config.BaseConfigDict

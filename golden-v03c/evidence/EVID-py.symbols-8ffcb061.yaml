@@ -1,0 +1,43 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-8ffcb061
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T17:44:04.297833+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.cli.nested_json.errors.NestedJSONSyntaxError.__init__
+    kind: method
+    file: httpie/cli/nested_json/errors.py
+    range:
+      start_line: 7
+      start_col: 0
+      end_line: 17
+      end_col: 0
+    fingerprint: a21a6fb30c844c1421a12ba4ccf4d65de980a326b7c675f11a69cb43cfd55064
+    params:
+    - name: self
+    - name: source
+      annotation: str
+    - name: token
+      annotation: Optional[Token]
+    - name: message
+      annotation: str
+    - name: message_kind
+      annotation: str
+    returns: None
+  - qualified: httpie.cli.nested_json.errors.NestedJSONSyntaxError.__str__
+    kind: method
+    file: httpie/cli/nested_json/errors.py
+    range:
+      start_line: 19
+      start_col: 0
+      end_line: 27
+      end_col: 0
+    fingerprint: fc32849f01fb34a390ccee250f027e18f2bcd0c7d99db714bf40bba718f1c5d2
+    params:
+    - name: self

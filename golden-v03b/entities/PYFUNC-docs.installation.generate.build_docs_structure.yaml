@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-docs.installation.generate.build_docs_structure
+kind: entity
+type: py.function
+name: build_docs_structure
+status: draft
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: docs/installation/generate.py
+anchors:
+- type: symbol
+  value: docs.installation.generate.build_docs_structure
+- type: fingerprint
+  value: f143fd4e6e15e53304a018fee837443550ad50c732908b6341e2e29e908e87e2
+  algo: sha256
+claims: []
+relations: []
+namespace: docs.installation.generate

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.downloads.Downloader.__init__
+kind: entity
+type: py.function
+name: __init__
+status: draft
+created_at: '2026-02-21T12:14:11.146218+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+  file: httpie/downloads.py
+anchors:
+- type: symbol
+  value: httpie.downloads.Downloader.__init__
+- type: fingerprint
+  value: e93064951835a2bd9723608ddd14bc1de9cdd03b15c1dfc7a9e3e04f653c8fda
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.downloads.Downloader

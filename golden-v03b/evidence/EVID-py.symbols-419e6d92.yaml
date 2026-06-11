@@ -1,0 +1,43 @@
+schema: cas.evidence.v0.1
+id: EVID-py.symbols-419e6d92
+kind: evidence
+type: py.symbols
+created_at: '2026-02-21T15:03:54.938962+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  symbols:
+  - qualified: httpie.cli.definition
+    kind: module
+    file: httpie/cli/definition.py
+    range:
+      start_line: 1
+      start_col: 0
+      end_line: 956
+      end_col: 0
+    fingerprint: d22950e21281ab2396944081fa60a5498168c2e5264b28b267116542327719bc
+  - qualified: httpie.cli.definition.format_style_help
+    kind: function
+    file: httpie/cli/definition.py
+    range:
+      start_line: 249
+      start_col: 0
+      end_line: 277
+      end_col: 0
+    fingerprint: 7327491e303d7b73ac679711a690420f10eb8af27f651ac6e8aa293a2f8f1eb0
+    params:
+    - name: available_styles
+  - qualified: httpie.cli.definition.format_auth_help
+    kind: function
+    file: httpie/cli/definition.py
+    range:
+      start_line: 626
+      start_col: 0
+      end_line: 666
+      end_col: 0
+    fingerprint: 819c0011a53ff0854fabb20910579cdda3851efbada4ade9cd9eefe2b3db5758
+    params:
+    - name: auth_plugins_mapping

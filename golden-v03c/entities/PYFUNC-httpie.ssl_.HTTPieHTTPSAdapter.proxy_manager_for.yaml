@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.ssl_.HTTPieHTTPSAdapter.proxy_manager_for
+kind: entity
+type: py.function
+name: proxy_manager_for
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/ssl_.py
+anchors:
+- type: symbol
+  value: httpie.ssl_.HTTPieHTTPSAdapter.proxy_manager_for
+- type: fingerprint
+  value: 519d9fdff2145409901ad46d4d8ea469331e633967a4567d5a05ca92d48c56bc
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.ssl_.HTTPieHTTPSAdapter

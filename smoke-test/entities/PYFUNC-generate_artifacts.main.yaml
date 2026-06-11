@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-generate_artifacts.main
+kind: entity
+type: py.function
+name: main
+status: draft
+created_at: '2026-02-21T11:36:14.490679+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://test
+  root: .
+  revision: git:test
+  file: generate_artifacts.py
+anchors:
+- type: symbol
+  value: generate_artifacts.main
+- type: fingerprint
+  value: a0072572dfd4b416e1bd3a8f8dd06c0b11158bc30625f5c6ec15412fcdb6d12c
+  algo: sha256
+claims: []
+relations: []
+namespace: generate_artifacts

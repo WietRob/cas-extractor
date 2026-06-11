@@ -1,0 +1,42 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-1c7faa4c
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-21T11:51:32.917539+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:5b604c3
+payload:
+  imports:
+  - from: tests.test_output
+    imports:
+    - argparse
+    - pathlib.Path
+    - unittest.mock
+    - json
+    - os
+    - io
+    - warnings
+    - urllib.request.urlopen
+    - pytest
+    - requests
+    - responses
+    - httpie.cli.argtypes.PARSED_DEFAULT_FORMAT_OPTIONS
+    - httpie.cli.argtypes.parse_format_options
+    - httpie.cli.definition.parser
+    - httpie.encoding.UTF8
+    - httpie.output.formatters.colors.get_lexer
+    - httpie.output.formatters.colors.PIE_STYLE_NAMES
+    - httpie.output.formatters.colors.BUNDLED_STYLES
+    - httpie.status.ExitStatus
+    - tests.fixtures.XML_DATA_RAW
+    - tests.fixtures.XML_DATA_FORMATTED
+    - tests.utils.COLOR
+    - tests.utils.CRLF
+    - tests.utils.HTTP_OK
+    - tests.utils.MockEnvironment
+    - tests.utils.http
+    - tests.utils.DUMMY_URL
+    - tests.utils.strip_colors

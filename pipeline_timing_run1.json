@@ -1,0 +1,15 @@
+{
+  "extraction": {
+    "elapsed_s": 10.323,
+    "exit_code": 0,
+    "evidence_files": 671
+  },
+  "generate_artifacts": {
+    "elapsed_s": 36.501,
+    "exit_code": 0,
+    "entities": 1371,
+    "relations": 3530,
+    "issues": 452,
+    "total": 5353
+  }
+}

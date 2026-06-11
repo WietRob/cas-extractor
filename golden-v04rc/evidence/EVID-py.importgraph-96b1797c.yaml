@@ -1,0 +1,30 @@
+schema: cas.evidence.v0.1
+id: EVID-py.importgraph-96b1797c
+kind: evidence
+type: py.importgraph
+created_at: '2026-02-22T08:37:44.803884+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+payload:
+  imports:
+  - from: tests.test_config
+    imports:
+    - pathlib.Path
+    - pytest
+    - _pytest.monkeypatch.MonkeyPatch
+    - httpie.compat.is_windows
+    - httpie.encoding.UTF8
+    - httpie.config.Config
+    - httpie.config.DEFAULT_CONFIG_DIRNAME
+    - httpie.config.DEFAULT_RELATIVE_LEGACY_CONFIG_DIR
+    - httpie.config.DEFAULT_RELATIVE_XDG_CONFIG_HOME
+    - httpie.config.DEFAULT_WINDOWS_CONFIG_DIR
+    - httpie.config.ENV_HTTPIE_CONFIG_DIR
+    - httpie.config.ENV_XDG_CONFIG_HOME
+    - httpie.config.get_default_config_dir
+    - tests.utils.HTTP_OK
+    - tests.utils.MockEnvironment
+    - tests.utils.http

@@ -1,0 +1,22 @@
+schema: cas.entity.v0.1
+id: PYFUNC-httpie.manager.tasks.check_updates.cli_check_updates
+kind: entity
+type: py.function
+name: cli_check_updates
+status: draft
+created_at: '2026-02-21T17:44:17.350021+00:00'
+created_by: extractor:py.v0.1
+source:
+  repo: repo://httpie
+  root: /tmp/httpie
+  revision: git:HEAD
+  file: httpie/manager/tasks/check_updates.py
+anchors:
+- type: symbol
+  value: httpie.manager.tasks.check_updates.cli_check_updates
+- type: fingerprint
+  value: 0dd2e7fced7f728fd6fc377bee4e391e1c6b5c1733782bf686f026b0a452ecdd
+  algo: sha256
+claims: []
+relations: []
+namespace: httpie.manager.tasks.check_updates

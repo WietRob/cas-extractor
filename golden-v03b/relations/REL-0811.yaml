@@ -1,0 +1,13 @@
+schema: cas.relation.v0.1
+id: REL-0811
+kind: relation
+type: contains
+from: PYMOD-httpie.cli.argparser._process_output_options
+to: PYFUNC-httpie.cli.argparser._process_output_options.check_options
+confidence:
+  level: E0
+  direction: confirmed
+evidence:
+- EVID-py.symbols-ab0cabd8
+created_at: '2026-02-21T15:04:15.443496+00:00'
+created_by: extractor:py.v0.1
